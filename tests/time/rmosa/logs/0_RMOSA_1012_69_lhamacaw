@@ -1,0 +1,243 @@
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: macaw.businessLayer.Variable
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/69_lhamacaw/evosuite-files/evosuite.properties
+* Connecting to master process on port 2863
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 01:30:23.949 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 01:30:23.957 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 01:30:23.992 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 01:30:24.072 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 01:30:24.094 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 01:30:24.095 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 01:30:24.097 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 01:30:24.097 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 01:30:24.099 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 01:30:24.099 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 01:30:24.100 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 01:30:24.113 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 01:30:24.116 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 01:30:24.221 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 01:30:24.261 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+* Finished analyzing classpath
+* Generating tests for class macaw.businessLayer.Variable
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1012
+* Starting evolution
+[MASTER] 01:30:30.924 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was macaw.businessLayer.Variable.updateOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)V: Line 353
+[MASTER] 01:30:30.924 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was macaw.businessLayer.Variable.updateOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)V: Line 354
+[MASTER] 01:30:30.924 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was macaw.businessLayer.Variable.updateOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)V: Line 366
+[MASTER] 01:30:30.924 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was macaw.businessLayer.Variable.findOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)Lmacaw/businessLayer/OntologyTerm;: Line 370
+[MASTER] 01:30:30.924 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was macaw.businessLayer.Variable.findOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)Lmacaw/businessLayer/OntologyTerm;: Line 376
+[MASTER] 01:30:30.928 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was macaw.businessLayer.Variable.getDisplayItemIdentifier()Ljava/lang/String;: Line 1279
+[MASTER] 01:30:30.931 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 138: macaw.businessLayer.Variable.updateOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)V:354 - ReplaceVariable itemToUpdate -> revisedOntologyTerm
+[MASTER] 01:30:30.931 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 139: macaw.businessLayer.Variable.updateOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)V:354 - ReplaceComparisonOperator = null -> != null
+[MASTER] 01:30:30.931 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 164: macaw.businessLayer.Variable.findOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)Lmacaw/businessLayer/OntologyTerm;:370 - ReplaceComparisonOperator == -> !=
+[MASTER] 01:30:30.933 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 440: macaw.businessLayer.Variable.getDisplayItemIdentifier()Ljava/lang/String;:1279 - InsertUnaryOp Negation
+[MASTER] 01:30:30.933 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 441: macaw.businessLayer.Variable.getDisplayItemIdentifier()Ljava/lang/String;:1279 - InsertUnaryOp +1
+[MASTER] 01:30:30.933 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 442: macaw.businessLayer.Variable.getDisplayItemIdentifier()Ljava/lang/String;:1279 - InsertUnaryOp -1
+[MASTER] 01:30:30.934 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] macaw.businessLayer.Variable.setIdentifier(I)V
+[MASTER] 01:30:30.935 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] macaw.businessLayer.Variable.getCleaningStatus()Ljava/lang/String;
+[MASTER] 01:30:30.935 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] macaw.businessLayer.Variable.setCleaningDescription(Ljava/lang/String;)V
+[MASTER] 01:30:30.936 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] macaw.businessLayer.Variable.updateOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)V
+[MASTER] 01:30:30.937 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] macaw.businessLayer.Variable.getDisplayItemIdentifier()Ljava/lang/String;
+[MASTER] 01:30:30.937 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] macaw.businessLayer.Variable.clone()Ljava/lang/Object;
+[MASTER] 01:30:30.937 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] macaw.businessLayer.Variable.getDisplayName()Ljava/lang/String;
+[MASTER] 01:30:30.946 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] macaw.businessLayer.Variable.setIdentifier(I)V
+[MASTER] 01:30:30.946 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] macaw.businessLayer.Variable.getCleaningStatus()Ljava/lang/String;
+[MASTER] 01:30:30.951 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] macaw.businessLayer.Variable.setCleaningDescription(Ljava/lang/String;)V
+[MASTER] 01:30:30.952 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] macaw.businessLayer.Variable.updateOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)V
+[MASTER] 01:30:30.966 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] macaw.businessLayer.Variable.getDisplayItemIdentifier()Ljava/lang/String;
+[MASTER] 01:30:30.967 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] macaw.businessLayer.Variable.clone()Ljava/lang/Object;
+[MASTER] 01:30:30.976 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] macaw.businessLayer.Variable.getDisplayName()Ljava/lang/String;
+[MASTER] 01:30:30.977 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch macaw.businessLayer.Variable.getCleaningStatus()Ljava/lang/String;: root-Branch in context: macaw.businessLayer.Variable:getCleaningStatus()Ljava/lang/String;
+[MASTER] 01:30:30.977 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch macaw.businessLayer.Variable.updateOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)V: I9 Branch 8 IFNULL L354 - true in context: macaw.businessLayer.Variable:updateOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)V
+[MASTER] 01:30:30.977 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch macaw.businessLayer.Variable.findOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)Lmacaw/businessLayer/OntologyTerm;: I14 Branch 10 IFEQ L370 - true in context: 
+[MASTER] 01:30:30.977 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch macaw.businessLayer.Variable.getDisplayItemIdentifier()Ljava/lang/String;: root-Branch in context: macaw.businessLayer.Variable:getDisplayItemIdentifier()Ljava/lang/String;
+[MASTER] 01:30:31.601 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was macaw.businessLayer.Variable.getValueLabels()Ljava/util/ArrayList;: Line 258
+[MASTER] 01:30:31.602 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was macaw.businessLayer.Variable.addOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)V: Line 336
+[MASTER] 01:30:31.603 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was macaw.businessLayer.Variable.addOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)V: Line 337
+[MASTER] 01:30:31.616 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was macaw.businessLayer.Variable.addOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)V: root-Branch
+[MASTER] 01:30:31.617 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was macaw.businessLayer.Variable.getValueLabels()Ljava/util/ArrayList;: root-Branch
+[MASTER] 01:30:31.652 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: macaw.businessLayer.Variable.getValueLabels()Ljava/util/ArrayList;:NonNull:java.util.ArrayList:isEmpty()Z:True
+[MASTER] 01:30:31.652 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: macaw.businessLayer.Variable.getValueLabels()Ljava/util/ArrayList;:NonNull:java.util.ArrayList:size()I:Zero
+[MASTER] 01:30:31.652 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: macaw.businessLayer.Variable.getAlternativeVariable()Lmacaw/businessLayer/Variable;:Null
+[MASTER] 01:30:31.652 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: macaw.businessLayer.Variable.getLabel()Ljava/lang/String;:EmptyString
+[MASTER] 01:30:31.677 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] macaw.businessLayer.Variable.getValueLabels()Ljava/util/ArrayList;
+[MASTER] 01:30:31.677 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] macaw.businessLayer.Variable.addOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)V
+[MASTER] 01:30:31.677 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] macaw.businessLayer.Variable.setCodeBookNumber(Ljava/lang/String;)V
+[MASTER] 01:30:31.687 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] macaw.businessLayer.Variable.getAlternativeVariable()Lmacaw/businessLayer/Variable;
+[MASTER] 01:30:31.688 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] macaw.businessLayer.Variable.getLabel()Ljava/lang/String;
+[MASTER] 01:30:31.688 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] macaw.businessLayer.Variable.setLabel(Ljava/lang/String;)V
+[MASTER] 01:30:31.688 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] macaw.businessLayer.Variable.getValueLabels()Ljava/util/ArrayList;
+[MASTER] 01:30:31.689 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] macaw.businessLayer.Variable.addOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)V
+[MASTER] 01:30:31.689 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] macaw.businessLayer.Variable.setCodeBookNumber(Ljava/lang/String;)V
+[MASTER] 01:30:31.689 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] macaw.businessLayer.Variable.getAlternativeVariable()Lmacaw/businessLayer/Variable;
+[MASTER] 01:30:31.690 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] macaw.businessLayer.Variable.getLabel()Ljava/lang/String;
+[MASTER] 01:30:31.690 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] macaw.businessLayer.Variable.setLabel(Ljava/lang/String;)V
+[MASTER] 01:30:31.690 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch macaw.businessLayer.Variable.getValueLabels()Ljava/util/ArrayList;: root-Branch in context: macaw.businessLayer.Variable:getValueLabels()Ljava/util/ArrayList;
+[MASTER] 01:30:31.690 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch macaw.businessLayer.Variable.setLabel(Ljava/lang/String;)V: root-Branch in context: macaw.businessLayer.Variable:setLabel(Ljava/lang/String;)V
+[MASTER] 01:30:31.690 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch macaw.businessLayer.Variable.getAlternativeVariable()Lmacaw/businessLayer/Variable;: root-Branch in context: macaw.businessLayer.Variable:getAlternativeVariable()Lmacaw/businessLayer/Variable;
+[MASTER] 01:30:31.690 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch macaw.businessLayer.Variable.addOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)V: root-Branch in context: macaw.businessLayer.Variable:addOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)V
+[MASTER] 01:30:31.690 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch macaw.businessLayer.Variable.getLabel()Ljava/lang/String;: root-Branch in context: macaw.businessLayer.Variable:getLabel()Ljava/lang/String;
+[MASTER] 01:30:31.691 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch macaw.businessLayer.Variable.setCodeBookNumber(Ljava/lang/String;)V: root-Branch in context: macaw.businessLayer.Variable:setCodeBookNumber(Ljava/lang/String;)V
+[MASTER] 01:30:32.448 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was macaw.businessLayer.Variable.addSupportingDocument(Lmacaw/businessLayer/SupportingDocument;)V: Line 298
+[MASTER] 01:30:32.448 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was macaw.businessLayer.Variable.addSupportingDocument(Lmacaw/businessLayer/SupportingDocument;)V: Line 299
+[MASTER] 01:30:32.448 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was macaw.businessLayer.Variable.containsOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)Z: Line 316
+[MASTER] 01:30:32.448 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was macaw.businessLayer.Variable.containsOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)Z: Line 317
+[MASTER] 01:30:32.448 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was macaw.businessLayer.Variable.containsOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)Z: Line 325
+[MASTER] 01:30:32.463 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was macaw.businessLayer.Variable.addSupportingDocument(Lmacaw/businessLayer/SupportingDocument;)V: root-Branch
+[MASTER] 01:30:32.463 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was macaw.businessLayer.Variable.containsOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)Z: I14 Branch 4 IFEQ L317 - true
+[MASTER] 01:30:32.464 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 119: macaw.businessLayer.Variable.containsOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)Z:317 - ReplaceComparisonOperator == -> !=
+[MASTER] 01:30:32.464 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 133: macaw.businessLayer.Variable.containsOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)Z:325 - ReplaceConstant - 0 -> 1
+[MASTER] 01:30:32.465 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 255: macaw.businessLayer.Variable.setForm(Ljava/lang/String;)V:502 - ReplaceVariable form -> columnEnd
+[MASTER] 01:30:32.465 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 256: macaw.businessLayer.Variable.setForm(Ljava/lang/String;)V:502 - ReplaceVariable form -> notes
+[MASTER] 01:30:32.465 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 257: macaw.businessLayer.Variable.setForm(Ljava/lang/String;)V:502 - ReplaceVariable form -> form
+[MASTER] 01:30:32.465 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 258: macaw.businessLayer.Variable.setForm(Ljava/lang/String;)V:502 - ReplaceVariable form -> codeBookNumber
+[MASTER] 01:30:32.465 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 259: macaw.businessLayer.Variable.setForm(Ljava/lang/String;)V:502 - ReplaceVariable form -> columnStart
+[MASTER] 01:30:32.465 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 260: macaw.businessLayer.Variable.setForm(Ljava/lang/String;)V:502 - ReplaceVariable form -> questionNumber
+[MASTER] 01:30:32.466 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: macaw.businessLayer.Variable.containsOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)Z:False
+[MASTER] 01:30:32.466 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] macaw.businessLayer.Variable.addSupportingDocument(Lmacaw/businessLayer/SupportingDocument;)V
+[MASTER] 01:30:32.467 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] macaw.businessLayer.Variable.containsOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)Z
+[MASTER] 01:30:32.467 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] macaw.businessLayer.Variable.addSupportingDocument(Lmacaw/businessLayer/SupportingDocument;)V
+[MASTER] 01:30:32.467 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] macaw.businessLayer.Variable.containsOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)Z
+[MASTER] 01:30:32.468 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch macaw.businessLayer.Variable.containsOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)Z: I14 Branch 4 IFEQ L317 - true in context: macaw.businessLayer.Variable:containsOntologyTerm(Lmacaw/businessLayer/OntologyTerm;)Z
+[MASTER] 01:30:32.468 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch macaw.businessLayer.Variable.addSupportingDocument(Lmacaw/businessLayer/SupportingDocument;)V: root-Branch in context: macaw.businessLayer.Variable:addSupportingDocument(Lmacaw/businessLayer/SupportingDocument;)V
+[MASTER] 01:30:48.845 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] macaw.businessLayer.Variable.setName(Ljava/lang/String;)V
+[MASTER] 01:30:59.596 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 276: macaw.businessLayer.Variable.getNotes()Ljava/lang/String;:521 - ReplaceVariable notes -> questionNumber
+[MASTER] 01:31:12.287 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: macaw.businessLayer.Variable.getOntologyTerms()Ljava/util/ArrayList;:Null
+[MASTER] 01:32:01.192 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+* Search finished after 125s and 195 generations, 72261 statements, best individual has fitness: 1312.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 87%
+* Total number of goals: 412
+* Number of covered goals: 358
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 95%
+* Total number of goals: 153
+* Number of covered goals: 145
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 14
+* Number of covered goals: 14
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 88%
+* Total number of goals: 533
+* Number of covered goals: 469
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 65%
+* Total number of goals: 116
+* Number of covered goals: 75
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 67
+* Number of covered goals: 67
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 67
+* Number of covered goals: 67
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 94%
+* Total number of goals: 153
+* Number of covered goals: 144
+* Generated 108 tests with total length 1086
+* Resulting test suite's coverage: 89% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 69%
+* Compiling and checking tests
+* Writing JUnit test case 'Variable_ESTest' to /home/ubuntu/termite/rmosa/tests/s1012/69_lhamacaw/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: macaw.businessLayer.SupportingDocument
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/69_lhamacaw/evosuite-files/evosuite.properties
+* Connecting to master process on port 2867
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 01:34:30.951 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 01:34:30.973 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 01:34:30.985 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 01:34:30.986 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 01:34:31.009 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 01:34:31.016 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 01:34:31.019 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 01:34:31.047 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 01:34:31.066 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 01:34:31.343 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 01:34:31.344 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 01:34:31.369 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 01:34:31.423 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 01:34:31.445 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 01:34:31.446 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+* Finished analyzing classpath
+* Generating tests for class macaw.businessLayer.SupportingDocument
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1012
+* Starting evolution
+* Search finished after 122s and 140 generations, 377577 statements, best individual has fitness: 96.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 104
+* Number of covered goals: 104
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 38
+* Number of covered goals: 38
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 3
+* Number of covered goals: 3
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 97%
+* Total number of goals: 129
+* Number of covered goals: 125
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 76%
+* Total number of goals: 34
+* Number of covered goals: 26
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 20
+* Number of covered goals: 20
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 20
+* Number of covered goals: 20
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 38
+* Number of covered goals: 38
+* Generated 33 tests with total length 236
+* Resulting test suite's coverage: 97% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 41%
+* Compiling and checking tests
+* Writing JUnit test case 'SupportingDocument_ESTest' to /home/ubuntu/termite/rmosa/tests/s1012/69_lhamacaw/evosuite-tests
+* Done!
+
+* Computation finished

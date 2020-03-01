@@ -1,0 +1,288 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.databene.jdbacl.DBUtil
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/13_jdbacl/evosuite-files/evosuite.properties
+* Connecting to master process on port 21010
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 08:41:10.203 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.SQLType
+[MASTER] 08:41:12.036 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 08:41:12.052 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 08:41:12.055 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 08:41:12.281 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 08:41:12.283 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 08:41:12.283 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 08:41:18.984 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 08:41:18.988 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 08:41:18.989 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 08:41:18.997 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 08:41:18.999 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 08:41:19.000 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 08:41:19.001 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 08:41:19.002 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 08:41:19.003 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 08:41:20.078 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToDoubleFunction
+[MASTER] 08:41:20.079 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToIntFunction
+[MASTER] 08:41:20.080 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToLongFunction
+[MASTER] 08:41:20.227 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 08:41:23.140 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class org.databene.jdbacl.DBUtil
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/13_jdbacl/src/main/java/org/databene/jdbacl/DBUtil.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1025
+* Starting evolution
+[MASTER] 08:41:47.198 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: org.databene.jdbacl.DBUtil.getOpenConnectionCount()I:Zero
+[MASTER] 08:41:47.199 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.databene.jdbacl.DBUtil.getOpenConnectionCount()I
+[MASTER] 08:41:47.203 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.databene.jdbacl.DBUtil.getOpenConnectionCount()I
+[MASTER] 08:41:47.204 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.DBUtil.getOpenConnectionCount()I: root-Branch in context: org.databene.jdbacl.DBUtil:getOpenConnectionCount()I
+[MASTER] 08:42:02.680 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.firebirdsql.gds.impl.GDSHelper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class org.firebirdsql.jdbc.FBConnection canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 08:42:06.738 [logback-2] ERROR TestCluster - Failed to check cache for org.databene.jdbacl.model.CompositeDBObject<C> : Type points to itself
+[MASTER] 08:42:18.986 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.getOpenConnectionCount()I: Line 201
+[MASTER] 08:42:18.989 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.getOpenStatementCount()I: Line 258
+[MASTER] 08:42:18.990 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.getOpenPreparedStatementCount()I: Line 262
+[MASTER] 08:42:18.993 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: Line 612
+[MASTER] 08:42:18.994 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: Line 613
+[MASTER] 08:42:18.995 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: Line 614
+[MASTER] 08:42:18.997 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: Line 622
+[MASTER] 08:42:18.998 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: Line 623
+[MASTER] 08:42:18.999 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: Line 624
+[MASTER] 08:42:19.000 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: Line 625
+[MASTER] 08:42:19.001 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: Line 626
+[MASTER] 08:42:19.002 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: Line 627
+[MASTER] 08:42:19.004 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: Line 628
+[MASTER] 08:42:19.005 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: Line 629
+[MASTER] 08:42:19.006 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: Line 631
+[MASTER] 08:42:19.007 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: Line 632
+[MASTER] 08:42:19.008 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: Line 633
+[MASTER] 08:42:19.010 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: Line 635
+[MASTER] 08:42:19.011 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: Line 637
+[MASTER] 08:42:19.012 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: Line 640
+[MASTER] 08:42:19.013 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: Line 641
+[MASTER] 08:42:19.015 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: Line 644
+[MASTER] 08:42:19.016 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: Line 646
+[MASTER] 08:42:19.017 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.getOpenStatementCount()I: root-Branch
+[MASTER] 08:42:19.019 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.getOpenPreparedStatementCount()I: root-Branch
+[MASTER] 08:42:19.020 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.getOpenConnectionCount()I: root-Branch
+[MASTER] 08:42:19.021 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: I11 Branch 67 IFEQ L614 - true
+[MASTER] 08:42:19.022 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: I68 Branch 69 IFNE L626 - false
+[MASTER] 08:42:19.024 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: I70 Branch 70 IFNE L626 - true
+[MASTER] 08:42:19.025 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: I84 Branch 73 IFNE L627 - false
+[MASTER] 08:42:19.026 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: I94 Branch 74 IFEQ L629 - true
+[MASTER] 08:42:19.028 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: I106 Branch 75 IFEQ L631 - false
+[MASTER] 08:42:19.030 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: I112 Branch 76 IFLE L632 - true
+[MASTER] 08:42:19.031 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: I127 Branch 77 IFEQ L633 - true
+[MASTER] 08:42:19.032 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: I148 Branch 79 IFEQ L635 - true
+[MASTER] 08:42:19.033 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: I181 Branch 81 IFNE L640 - false
+[MASTER] 08:42:19.034 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: I185 Branch 82 IFEQ L641 - true
+[MASTER] 08:42:19.037 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 454: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:612 - ReplaceConstant - 1 -> 0
+[MASTER] 08:42:19.038 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 455: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:614 - ReplaceComparisonOperator == -> !=
+[MASTER] 08:42:19.039 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 493: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:626 - ReplaceVariable c -> r
+[MASTER] 08:42:19.040 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 495: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:626 - InsertUnaryOp Negation of c
+[MASTER] 08:42:19.042 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 496: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:626 - InsertUnaryOp IINC 1 c
+[MASTER] 08:42:19.044 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 497: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:626 - InsertUnaryOp IINC -1 c
+[MASTER] 08:42:19.046 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 498: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:626 - ReplaceComparisonOperator != -> -1
+[MASTER] 08:42:19.047 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 501: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:626 - ReplaceVariable r -> p
+[MASTER] 08:42:19.048 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 502: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:626 - ReplaceVariable r -> c
+[MASTER] 08:42:19.049 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 503: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:626 - ReplaceVariable r -> s
+[MASTER] 08:42:19.050 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 504: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:626 - InsertUnaryOp Negation of r
+[MASTER] 08:42:19.052 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 505: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:626 - InsertUnaryOp IINC 1 r
+[MASTER] 08:42:19.053 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 506: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:626 - InsertUnaryOp IINC -1 r
+[MASTER] 08:42:19.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 508: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:626 - ReplaceComparisonOperator != -> <
+[MASTER] 08:42:19.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 529: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:626 - ReplaceConstant - 0 -> 1
+[MASTER] 08:42:19.056 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 531: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:627 - InsertUnaryOp Negation of success
+[MASTER] 08:42:19.058 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 532: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:627 - InsertUnaryOp IINC 1 success
+[MASTER] 08:42:19.059 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 533: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:627 - InsertUnaryOp IINC -1 success
+[MASTER] 08:42:19.060 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 534: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:627 - ReplaceComparisonOperator != -> ==
+[MASTER] 08:42:19.061 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 536: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:629 - ReplaceVariable c -> r
+[MASTER] 08:42:19.063 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 538: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:629 - InsertUnaryOp Negation of c
+[MASTER] 08:42:19.064 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 539: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:629 - InsertUnaryOp IINC 1 c
+[MASTER] 08:42:19.065 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 540: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:629 - InsertUnaryOp IINC -1 c
+[MASTER] 08:42:19.066 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 541: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:629 - ReplaceComparisonOperator == -> -2
+[MASTER] 08:42:19.067 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 551: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:631 - ReplaceVariable r -> p
+[MASTER] 08:42:19.068 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 552: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:631 - ReplaceVariable r -> c
+[MASTER] 08:42:19.070 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 553: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:631 - ReplaceVariable r -> s
+[MASTER] 08:42:19.074 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 554: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:631 - InsertUnaryOp Negation of r
+[MASTER] 08:42:19.076 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 555: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:631 - InsertUnaryOp IINC 1 r
+[MASTER] 08:42:19.077 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 556: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:631 - InsertUnaryOp IINC -1 r
+[MASTER] 08:42:19.078 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 558: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:631 - ReplaceComparisonOperator == -> >=
+[MASTER] 08:42:19.080 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 562: org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V:632 - ReplaceComparisonOperator <= -> <
+[MASTER] 08:42:19.082 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V
+[MASTER] 08:42:19.083 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V
+[MASTER] 08:42:19.085 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: I106 Branch 75 IFEQ L631 - false in context: org.databene.jdbacl.DBUtil:assertAllDbResourcesClosed(Z)V
+[MASTER] 08:42:19.086 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: I185 Branch 82 IFEQ L641 - true in context: org.databene.jdbacl.DBUtil:assertAllDbResourcesClosed(Z)V
+[MASTER] 08:42:19.088 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: I148 Branch 79 IFEQ L635 - true in context: org.databene.jdbacl.DBUtil:assertAllDbResourcesClosed(Z)V
+[MASTER] 08:42:19.089 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: I84 Branch 73 IFNE L627 - false in context: org.databene.jdbacl.DBUtil:assertAllDbResourcesClosed(Z)V
+[MASTER] 08:42:19.090 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: I181 Branch 81 IFNE L640 - false in context: org.databene.jdbacl.DBUtil:assertAllDbResourcesClosed(Z)V
+[MASTER] 08:42:19.091 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: I68 Branch 69 IFNE L626 - false in context: org.databene.jdbacl.DBUtil:assertAllDbResourcesClosed(Z)V
+[MASTER] 08:42:19.092 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: I127 Branch 77 IFEQ L633 - true in context: org.databene.jdbacl.DBUtil:assertAllDbResourcesClosed(Z)V
+[MASTER] 08:42:19.094 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: I11 Branch 67 IFEQ L614 - true in context: org.databene.jdbacl.DBUtil:assertAllDbResourcesClosed(Z)V
+[MASTER] 08:42:19.095 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: I94 Branch 74 IFEQ L629 - true in context: org.databene.jdbacl.DBUtil:assertAllDbResourcesClosed(Z)V
+[MASTER] 08:42:19.096 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: I112 Branch 76 IFLE L632 - true in context: org.databene.jdbacl.DBUtil:assertAllDbResourcesClosed(Z)V
+[MASTER] 08:42:19.097 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.DBUtil.assertAllDbResourcesClosed(Z)V: I70 Branch 70 IFNE L626 - true in context: org.databene.jdbacl.DBUtil:assertAllDbResourcesClosed(Z)V
+* Search finished after 122s and 43 generations, 15973 statements, best individual has fitness: 7224.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 62%
+* Total number of goals: 324
+* Number of covered goals: 200
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 53%
+* Total number of goals: 197
+* Number of covered goals: 105
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 51
+* Number of covered goals: 51
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 53%
+* Total number of goals: 700
+* Number of covered goals: 368
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 9%
+* Total number of goals: 255
+* Number of covered goals: 22
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 94%
+* Total number of goals: 51
+* Number of covered goals: 48
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 92%
+* Total number of goals: 51
+* Number of covered goals: 47
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 42%
+* Total number of goals: 197
+* Number of covered goals: 82
+* Generated 86 tests with total length 1075
+* Resulting test suite's coverage: 51% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 7%
+* Compiling and checking tests
+[MASTER] 08:43:56.402 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.LocalGDSImpl: no jaybird21 in java.library.path
+[MASTER] 08:43:56.730 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.JniGDSImpl: Could not initialize class org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 08:43:56.787 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.EmbeddedGDSImpl: org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 08:43:57.767 [logback-2] ERROR ClassResetter - java.lang.NoClassDefFoundError: Could not initialize class org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 08:43:59.633 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.EmbeddedGDSImpl: no jaybird21 in java.library.path
+[MASTER] 08:44:00.719 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.LocalGDSImpl: org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 08:44:02.996 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.derby.iapi.types.SqlXmlUtil: org/apache/xml/utils/PrefixResolver
+* Permissions denied during test execution: 
+  - java.io.FilePermission: 
+         write /dev/random: 1
+  - java.net.SocketPermission: 
+         resolve java.lang.String@0000000016: 1
+         resolve java.lang.String@0000000128: 1
+         resolve java.lang.String@0000000015: 3
+         and other 3 cases of action/name for this exception class
+  - java.sql.SQLPermission: 
+         deregisterDriver: 1
+* Writing JUnit test case 'DBUtil_ESTest' to /home/ubuntu/termite/qmosa/tests/s1025/13_jdbacl/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.databene.jdbacl.SQLUtil
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/13_jdbacl/evosuite-files/evosuite.properties
+* Connecting to master process on port 21008
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 09:00:05.593 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 09:00:05.605 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 09:00:05.627 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 09:00:05.693 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 09:00:05.694 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 09:00:05.696 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 09:00:08.424 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.SQLType
+[MASTER] 09:00:09.378 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 09:00:09.379 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 09:00:09.381 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 09:00:09.381 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 09:00:09.395 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 09:00:09.396 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 09:00:09.397 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 09:00:09.398 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 09:00:09.399 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 09:00:13.935 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToDoubleFunction
+[MASTER] 09:00:13.935 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToIntFunction
+[MASTER] 09:00:13.936 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToLongFunction
+[MASTER] 09:00:16.311 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 09:00:20.431 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class org.databene.jdbacl.SQLUtil
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/13_jdbacl/src/main/java/org/databene/jdbacl/SQLUtil.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1025
+* Starting evolution
+[MASTER] 09:00:31.036 [logback-2] ERROR TestCluster - Failed to check cache for org.databene.jdbacl.model.CompositeDBObject<C> : Type points to itself
+[MASTER] 09:00:39.662 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.ownerDotComponent(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;: I7 Branch 50 IFNULL L381 - true
+[MASTER] 09:00:39.668 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.ownerDotComponent(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;: I7 Branch 50 IFNULL L381 - true in context: org.databene.jdbacl.SQLUtil:ownerDotComponent(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;
+[MASTER] 09:01:02.567 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 455
+[MASTER] 09:01:02.595 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I167 Branch 79 LOOKUPSWITCH L451 Case 39 - true
+[MASTER] 09:01:02.732 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I167 Branch 79 LOOKUPSWITCH L451 Case 39 - true in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+* Search finished after 123s and 30 generations, 17880 statements, best individual has fitness: 3368.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 71%
+* Total number of goals: 251
+* Number of covered goals: 178
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 72%
+* Total number of goals: 188
+* Number of covered goals: 135
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 35
+* Number of covered goals: 35
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 70%
+* Total number of goals: 595
+* Number of covered goals: 417
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 48%
+* Total number of goals: 94
+* Number of covered goals: 45
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 92%
+* Total number of goals: 39
+* Number of covered goals: 36
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 92%
+* Total number of goals: 39
+* Number of covered goals: 36
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 69%
+* Total number of goals: 188
+* Number of covered goals: 130
+* Generated 75 tests with total length 1317
+* Resulting test suite's coverage: 71% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 47%
+* Compiling and checking tests
+[MASTER] 09:02:58.571 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.JniGDSImpl: no jaybird21 in java.library.path
+[MASTER] 09:02:59.150 [logback-2] ERROR ClassResetter - java.lang.NoClassDefFoundError: Could not initialize class org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 09:03:00.068 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.derby.iapi.types.SqlXmlUtil: org/apache/xml/utils/PrefixResolver
+* Writing JUnit test case 'SQLUtil_ESTest' to /home/ubuntu/termite/qmosa/tests/s1025/13_jdbacl/evosuite-tests
+* Done!
+
+* Computation finished

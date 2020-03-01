@@ -1,0 +1,432 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.firebirdsql.jdbc.FBCachedFetcher
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/110_firebird/evosuite-files/evosuite.properties
+* Connecting to master process on port 13426
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 19:31:26.131 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 19:31:26.149 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 19:31:26.165 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 19:31:26.326 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.SQLType
+[MASTER] 19:31:26.879 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 19:31:26.879 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 19:31:26.881 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 19:31:27.485 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 19:31:27.500 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 19:31:27.501 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 19:31:27.548 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 19:31:27.549 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 19:31:27.549 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 19:31:27.549 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 19:31:27.551 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 19:31:27.552 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 19:31:27.688 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 19:31:27.771 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class org.firebirdsql.jdbc.FBCachedFetcher
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/110_firebird/src/main/java/org/firebirdsql/jdbc/FBCachedFetcher.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1019
+* Starting evolution
+[MASTER] 19:32:15.987 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class org.firebirdsql.jdbc.FBConnection canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 19:32:24.363 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+Nov 18, 2019 7:38:05 PM sun.rmi.transport.tcp.TCPTransport$AcceptLoop executeAcceptLoop
+WARNING: RMI TCP Accept-5207: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5207] throws
+java.lang.OutOfMemoryError: unable to create new native thread
+	at java.lang.Thread.start0(Native Method)
+	at java.lang.Thread.start(Thread.java:717)
+	at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:957)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1378)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:420)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:748)
+
+[MASTER] 19:38:06.263 [logback-2] ERROR ClientNodeImpl - Error when exporting statistics: TotalExceptionsTimeline=0
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketException: Connection reset
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:307) ~[na:1.8.0_201]
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202) ~[na:1.8.0_201]
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:129) ~[na:1.8.0_201]
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227) ~[na:1.8.0_201]
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179) ~[na:1.8.0_201]
+	at com.sun.proxy.$Proxy7.evosuite_collectStatistics(Unknown Source) ~[na:na]
+	at org.evosuite.rmi.service.ClientNodeImpl$2.run(ClientNodeImpl.java:358) ~[evosuite.jar:1.0.6]
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_201]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_201]
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246) ~[na:1.8.0_201]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265) ~[na:1.8.0_201]
+	at java.io.DataInputStream.readByte(DataInputStream.java:265) ~[na:1.8.0_201]
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246) ~[na:1.8.0_201]
+	... 6 common frames omitted
+[MASTER] 19:44:12.779 [logback-2] ERROR AbstractStatement - Error assigning value of type Callable[] defined at statement Callable<Object>[] callableArray0 = (Callable<Object>[]) Array.newInstance(Callable.class, 6), assignment statement: callableArray0[0] = (Callable<Object>) callableArray0; SUT=org.firebirdsql.jdbc.FBCachedFetcher
+Nov 18, 2019 7:45:44 PM sun.rmi.transport.tcp.TCPTransport$AcceptLoop executeAcceptLoop
+WARNING: RMI TCP Accept-5207: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5207] throws
+java.lang.OutOfMemoryError: unable to create new native thread
+	at java.lang.Thread.start0(Native Method)
+	at java.lang.Thread.start(Thread.java:717)
+	at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:957)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1378)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:420)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:748)
+
+[MASTER] 19:45:44.026 [logback-2] ERROR ClientNodeImpl - Cannot inform master of change of state
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketException: Connection reset
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:307) ~[na:1.8.0_201]
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202) ~[na:1.8.0_201]
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:129) ~[na:1.8.0_201]
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227) ~[na:1.8.0_201]
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179) ~[na:1.8.0_201]
+	at com.sun.proxy.$Proxy7.evosuite_informChangeOfStateInClient(Unknown Source) ~[na:na]
+	at org.evosuite.rmi.service.ClientNodeImpl.changeState(ClientNodeImpl.java:218) ~[evosuite.jar:1.0.6]
+	at org.evosuite.ProgressMonitor.updateStatus(ProgressMonitor.java:72) [evosuite.jar:1.0.6]
+	at org.evosuite.ProgressMonitor.iteration(ProgressMonitor.java:105) [evosuite.jar:1.0.6]
+	at org.evosuite.ga.metaheuristics.GeneticAlgorithm.notifyIteration(GeneticAlgorithm.java:859) [evosuite.jar:1.0.6]
+	at org.evosuite.ga.metaheuristics.mosa.MOSA.generateSolution(MOSA.java:198) [evosuite.jar:1.0.6]
+	at org.evosuite.strategy.MOSuiteStrategy.generateTests(MOSuiteStrategy.java:113) [evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.generateTests(TestSuiteGenerator.java:653) [evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:236) [evosuite.jar:1.0.6]
+	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:145) [evosuite.jar:1.0.6]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_201]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_201]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_201]
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246) ~[na:1.8.0_201]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265) ~[na:1.8.0_201]
+	at java.io.DataInputStream.readByte(DataInputStream.java:265) ~[na:1.8.0_201]
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246) ~[na:1.8.0_201]
+	... 19 common frames omitted
+Nov 18, 2019 7:45:44 PM sun.rmi.transport.tcp.TCPTransport$AcceptLoop executeAcceptLoop
+WARNING: RMI TCP Accept-5207: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5207] throws
+java.lang.OutOfMemoryError: unable to create new native thread
+	at java.lang.Thread.start0(Native Method)
+	at java.lang.Thread.start(Thread.java:717)
+	at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:957)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1378)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:420)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:748)
+
+[MASTER] 19:45:44.377 [logback-2] ERROR ClientNodeImpl - Cannot inform master of change of state
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketException: Connection reset
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:307) ~[na:1.8.0_201]
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202) ~[na:1.8.0_201]
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:129) ~[na:1.8.0_201]
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227) ~[na:1.8.0_201]
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179) ~[na:1.8.0_201]
+	at com.sun.proxy.$Proxy7.evosuite_collectStatistics(Unknown Source) ~[na:na]
+	at org.evosuite.rmi.service.ClientNodeImpl.updateStatistics(ClientNodeImpl.java:237) ~[evosuite.jar:1.0.6]
+	at org.evosuite.statistics.StatisticsSender.sendIndividualToMaster(StatisticsSender.java:77) [evosuite.jar:1.0.6]
+	at org.evosuite.statistics.StatisticsListener$1.run(StatisticsListener.java:71) [evosuite.jar:1.0.6]
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_201]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_201]
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246) ~[na:1.8.0_201]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265) ~[na:1.8.0_201]
+	at java.io.DataInputStream.readByte(DataInputStream.java:265) ~[na:1.8.0_201]
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246) ~[na:1.8.0_201]
+	... 8 common frames omitted
+* Search finished after 855s and 39 generations, 31692 statements, best individual has fitness: 1640.0
+Nov 18, 2019 7:47:55 PM sun.rmi.transport.tcp.TCPTransport$AcceptLoop executeAcceptLoop
+WARNING: RMI TCP Accept-5207: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5207] throws
+java.lang.OutOfMemoryError: unable to create new native thread
+	at java.lang.Thread.start0(Native Method)
+	at java.lang.Thread.start(Thread.java:717)
+	at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:957)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1378)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:420)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:748)
+
+[MASTER] 19:47:55.158 [logback-2] ERROR ClientNodeImpl - Cannot inform master of change of state
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketException: Connection reset
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:307) ~[na:1.8.0_201]
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202) ~[na:1.8.0_201]
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:129) ~[na:1.8.0_201]
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227) ~[na:1.8.0_201]
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179) ~[na:1.8.0_201]
+	at com.sun.proxy.$Proxy7.evosuite_informChangeOfStateInClient(Unknown Source) ~[na:na]
+	at org.evosuite.rmi.service.ClientNodeImpl.changeState(ClientNodeImpl.java:218) [evosuite.jar:1.0.6]
+	at org.evosuite.rmi.service.ClientNodeImpl.changeState(ClientNodeImpl.java:204) [evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.postProcessTests(TestSuiteGenerator.java:452) [evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:238) [evosuite.jar:1.0.6]
+	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:145) [evosuite.jar:1.0.6]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_201]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_201]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_201]
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246) ~[na:1.8.0_201]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265) ~[na:1.8.0_201]
+	at java.io.DataInputStream.readByte(DataInputStream.java:265) ~[na:1.8.0_201]
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246) ~[na:1.8.0_201]
+	... 15 common frames omitted
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 63%
+* Total number of goals: 158
+* Number of covered goals: 100
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 51%
+* Total number of goals: 118
+* Number of covered goals: 60
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 14
+* Number of covered goals: 14
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 96%
+* Total number of goals: 347
+* Number of covered goals: 333
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 89%
+* Total number of goals: 28
+* Number of covered goals: 25
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 22
+* Number of covered goals: 22
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 22
+* Number of covered goals: 22
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 40%
+* Total number of goals: 118
+* Number of covered goals: 47
+* Generated 41 tests with total length 1098
+* Resulting test suite's coverage: 75% (average coverage for all fitness functions)
+* Generating assertions
+Nov 18, 2019 7:51:21 PM sun.rmi.transport.tcp.TCPTransport$AcceptLoop executeAcceptLoop
+WARNING: RMI TCP Accept-5207: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5207] throws
+java.lang.OutOfMemoryError: unable to create new native thread
+	at java.lang.Thread.start0(Native Method)
+	at java.lang.Thread.start(Thread.java:717)
+	at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:957)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1378)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:420)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:748)
+
+Nov 18, 2019 7:51:21 PM sun.rmi.transport.tcp.TCPTransport$AcceptLoop executeAcceptLoop
+WARNING: RMI TCP Accept-5207: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5207] throws
+java.lang.OutOfMemoryError: unable to create new native thread
+	at java.lang.Thread.start0(Native Method)
+	at java.lang.Thread.start(Thread.java:717)
+	at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:957)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1378)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:420)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:748)
+
+Nov 18, 2019 7:51:22 PM sun.rmi.transport.tcp.TCPTransport$AcceptLoop executeAcceptLoop
+WARNING: RMI TCP Accept-5207: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5207] throws
+java.lang.OutOfMemoryError: unable to create new native thread
+	at java.lang.Thread.start0(Native Method)
+	at java.lang.Thread.start(Thread.java:717)
+	at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:957)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1378)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:420)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:748)
+
+Nov 18, 2019 7:51:24 PM sun.rmi.transport.tcp.TCPTransport$AcceptLoop executeAcceptLoop
+WARNING: RMI TCP Accept-5207: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5207] throws
+java.lang.OutOfMemoryError: unable to create new native thread
+	at java.lang.Thread.start0(Native Method)
+	at java.lang.Thread.start(Thread.java:717)
+	at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:957)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1378)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:420)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:748)
+
+Nov 18, 2019 7:51:28 PM sun.rmi.transport.tcp.TCPTransport$AcceptLoop executeAcceptLoop
+WARNING: RMI TCP Accept-5207: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5207] throws
+java.lang.OutOfMemoryError: unable to create new native thread
+	at java.lang.Thread.start0(Native Method)
+	at java.lang.Thread.start(Thread.java:717)
+	at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:957)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1378)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:420)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:748)
+
+Nov 18, 2019 7:51:36 PM sun.rmi.transport.tcp.TCPTransport$AcceptLoop executeAcceptLoop
+WARNING: RMI TCP Accept-5207: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5207] throws
+java.lang.OutOfMemoryError: unable to create new native thread
+	at java.lang.Thread.start0(Native Method)
+	at java.lang.Thread.start(Thread.java:717)
+	at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:957)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1378)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:420)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:748)
+
+Nov 18, 2019 7:51:52 PM sun.rmi.transport.tcp.TCPTransport$AcceptLoop executeAcceptLoop
+WARNING: RMI TCP Accept-5207: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5207] throws
+java.lang.OutOfMemoryError: unable to create new native thread
+	at java.lang.Thread.start0(Native Method)
+	at java.lang.Thread.start(Thread.java:717)
+	at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:957)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1378)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:420)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:748)
+
+Nov 18, 2019 7:52:24 PM sun.rmi.transport.tcp.TCPTransport$AcceptLoop executeAcceptLoop
+WARNING: RMI TCP Accept-5207: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5207] throws
+java.lang.OutOfMemoryError: unable to create new native thread
+	at java.lang.Thread.start0(Native Method)
+	at java.lang.Thread.start(Thread.java:717)
+	at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:957)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1378)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:420)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:748)
+
+[MASTER] 19:54:37.550 [logback-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.8374791666666667% of time used, but only 2/41 tests minimized), falling back to using all assertions
+[MASTER] 19:55:56.790 [logback-1] WARN  SimpleMutationAssertionGenerator - Reached maximum time to generate assertions, aborting assertion generation
+* Resulting test suite's mutation score: 15%
+Nov 18, 2019 7:55:56 PM sun.rmi.transport.tcp.TCPTransport$AcceptLoop executeAcceptLoop
+WARNING: RMI TCP Accept-5207: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5207] throws
+java.lang.OutOfMemoryError: unable to create new native thread
+	at java.lang.Thread.start0(Native Method)
+	at java.lang.Thread.start(Thread.java:717)
+	at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:957)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1378)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:420)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377)
+	at java.lang.Thread.run(Thread.java:748)
+
+* Compiling and checking tests
+[MASTER] 19:55:56.796 [logback-2] ERROR ClientNodeImpl - Cannot inform master of change of state
+java.rmi.ConnectIOException: error during JRMP connection establishment; nested exception is: 
+	java.net.SocketException: Connection reset
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:307) ~[na:1.8.0_201]
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:202) ~[na:1.8.0_201]
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:129) ~[na:1.8.0_201]
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227) ~[na:1.8.0_201]
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179) ~[na:1.8.0_201]
+	at com.sun.proxy.$Proxy7.evosuite_collectStatistics(Unknown Source) ~[na:na]
+	at org.evosuite.rmi.service.ClientNodeImpl.updateStatistics(ClientNodeImpl.java:237) ~[evosuite.jar:1.0.6]
+	at org.evosuite.statistics.StatisticsSender.sendIndividualToMaster(StatisticsSender.java:77) [evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.postProcessTests(TestSuiteGenerator.java:522) [evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:238) [evosuite.jar:1.0.6]
+	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:145) [evosuite.jar:1.0.6]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_201]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210) ~[na:1.8.0_201]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_201]
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246) ~[na:1.8.0_201]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265) ~[na:1.8.0_201]
+	at java.io.DataInputStream.readByte(DataInputStream.java:265) ~[na:1.8.0_201]
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:246) ~[na:1.8.0_201]
+	... 15 common frames omitted
+[MASTER] 19:56:57.010 [logback-1] WARN  TestSuiteGenerator - JUnit checking timed out
+* Writing JUnit test case 'FBCachedFetcher_ESTest' to /home/ubuntu/termite/qmosa/tests/s1019/110_firebird/evosuite-tests
+[MASTER] 19:58:21.700 [main] ERROR ExternalProcessHandler - Class org.firebirdsql.jdbc.FBCachedFetcher. Clients have not finished yet, although a timeout occurred.
+ClientNode: WRITING_TESTS
+
+* Computation finished
+[MASTER] 19:58:21.704 [Thread-3] ERROR ExternalProcessHandler - Exception while reading output of client process. Stream closed
+[MASTER] 19:58:21.805 [main] ERROR SearchStatistics - No obtained value for output variable: Total_Goals
+[MASTER] 19:58:22.811 [main] ERROR SearchStatistics - Not going to write down statistics data, as some are missing
+[MASTER] 19:58:22.913 [main] ERROR TestGeneration - failed to write statistics data
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Cannot create GC thread. Out of system resources.
+# An error report file with more information is saved as:
+# /home/ubuntu/termite/projects/110_firebird/hs_err_pid10780.log
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.firebirdsql.encodings.EncodingFactory
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/110_firebird/evosuite-files/evosuite.properties
+* Connecting to master process on port 13428
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class org.firebirdsql.encodings.EncodingFactory
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/110_firebird/src/main/java/org/firebirdsql/encodings/EncodingFactory.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1019
+* Starting evolution
+* Search finished after 842s and 330 generations, 112124 statements, best individual has fitness: 624.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 94%
+* Total number of goals: 242
+* Number of covered goals: 228
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 96%
+* Total number of goals: 195
+* Number of covered goals: 188
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 5
+* Number of covered goals: 5
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 91%
+* Total number of goals: 387
+* Number of covered goals: 351
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 48%
+* Total number of goals: 25
+* Number of covered goals: 12
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 96%
+* Total number of goals: 195
+* Number of covered goals: 188
+* Generated 101 tests with total length 606
+* Resulting test suite's coverage: 93% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 31%
+* Compiling and checking tests
+* Writing JUnit test case 'EncodingFactory_ESTest' to /home/ubuntu/termite/qmosa/tests/s1019/110_firebird/evosuite-tests
+* Done!
+
+* Computation finished

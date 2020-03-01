@@ -1,0 +1,99 @@
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: Newzgrabber.Base64Decoder
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/99_newzgrabber/evosuite-files/evosuite.properties
+* Connecting to master process on port 19146
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 15:32:37.911 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 15:32:37.939 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 15:32:37.950 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 15:32:40.860 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 15:32:40.941 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 15:32:40.942 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 15:32:47.176 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 15:32:47.304 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 15:32:47.310 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 15:32:47.310 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 15:32:47.315 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 15:32:47.315 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 15:32:47.316 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 15:32:47.319 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 15:32:47.321 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 15:32:47.550 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+* Finished analyzing classpath
+* Generating tests for class Newzgrabber.Base64Decoder
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 267
+* Using seed 1016
+* Starting evolution
+[MASTER] 15:32:57.476 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Newzgrabber.Base64Decoder.<init>(LNewzgrabber/BufferedCustomInputStream;Ljava/io/OutputStream;)V: Line 13
+[MASTER] 15:32:57.477 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Newzgrabber.Base64Decoder.<init>(LNewzgrabber/BufferedCustomInputStream;Ljava/io/OutputStream;)V: Line 10
+[MASTER] 15:32:57.477 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Newzgrabber.Base64Decoder.<init>(LNewzgrabber/BufferedCustomInputStream;Ljava/io/OutputStream;)V: Line 14
+[MASTER] 15:32:57.477 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Newzgrabber.Base64Decoder.<init>(LNewzgrabber/BufferedCustomInputStream;Ljava/io/OutputStream;)V: Line 15
+[MASTER] 15:32:57.478 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Newzgrabber.Base64Decoder.<init>(LNewzgrabber/BufferedCustomInputStream;Ljava/io/OutputStream;)V: Line 16
+[MASTER] 15:32:57.478 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Newzgrabber.Base64Decoder.decodeStream()V: Line 20
+[MASTER] 15:32:57.478 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Newzgrabber.Base64Decoder.decodeStream()V: Line 21
+[MASTER] 15:32:57.478 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Newzgrabber.Base64Decoder.decodeStream()V: Line 23
+[MASTER] 15:32:57.478 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 0: Newzgrabber.Base64Decoder.decodeStream()V:21 - InsertUnaryOp Negation
+[MASTER] 15:32:57.480 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1: Newzgrabber.Base64Decoder.decodeStream()V:21 - ReplaceComparisonOperator == -> !=
+[MASTER] 15:32:57.481 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] Newzgrabber.Base64Decoder.<init>(LNewzgrabber/BufferedCustomInputStream;Ljava/io/OutputStream;)V
+[MASTER] 15:32:57.481 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] Newzgrabber.Base64Decoder.decodeStream()V
+[MASTER] 15:32:57.481 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Newzgrabber.Base64Decoder.<init>(LNewzgrabber/BufferedCustomInputStream;Ljava/io/OutputStream;)V
+[MASTER] 15:32:57.481 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Newzgrabber.Base64Decoder.decodeStream()V
+[MASTER] 15:32:57.481 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch Newzgrabber.Base64Decoder.<init>(LNewzgrabber/BufferedCustomInputStream;Ljava/io/OutputStream;)V: root-Branch in context: Newzgrabber.Base64Decoder:<init>(LNewzgrabber/BufferedCustomInputStream;Ljava/io/OutputStream;)V
+[MASTER] 15:32:57.481 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch Newzgrabber.Base64Decoder.decodeStream()V: I7 Branch 1 IFEQ L21 - true in context: Newzgrabber.Base64Decoder:decodeStream()V
+[MASTER] 15:33:00.722 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.ChronoLocalDate
+* Search finished after 201s and 128 generations, 76416 statements, best individual has fitness: 320.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 76%
+* Total number of goals: 76
+* Number of covered goals: 58
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 83%
+* Total number of goals: 59
+* Number of covered goals: 49
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 97%
+* Total number of goals: 69
+* Number of covered goals: 67
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 100% (no goals)
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 83%
+* Total number of goals: 59
+* Number of covered goals: 49
+* Generated 18 tests with total length 169
+* Resulting test suite's coverage: 85% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 39%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 18
+* Writing JUnit test case 'Base64Decoder_ESTest' to /home/ubuntu/termite/mosa/tests/s1016/99_newzgrabber/evosuite-tests
+* Done!
+
+* Computation finished

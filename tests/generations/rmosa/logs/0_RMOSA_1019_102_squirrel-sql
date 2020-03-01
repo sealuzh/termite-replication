@@ -1,0 +1,186 @@
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/102_squirrel-sql/evosuite-files/evosuite.properties
+* Connecting to master process on port 13433
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 21:52:15.793 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.SQLType
+[MASTER] 21:52:16.244 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 21:52:16.249 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 21:52:16.250 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 21:52:17.994 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 21:52:17.995 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 21:52:17.996 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 21:52:20.111 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 21:52:20.143 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 21:52:20.143 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 21:52:23.339 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 21:52:23.342 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 21:52:23.345 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 21:52:23.345 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 21:52:23.349 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 21:52:23.351 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 21:52:24.875 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 21:52:27.496 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1019
+* Starting evolution
+[MASTER] 21:52:51.048 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class com.gargoylesoftware.base.resource.jdbc.ConnectionWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 21:53:34.827 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.gargoylesoftware.base.resource.jdbc.ConnectionWrapper due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.gargoylesoftware.base.resource.jdbc.CallableStatementWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.gargoylesoftware.base.resource.jdbc.ConnectionWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 21:53:35.215 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.gargoylesoftware.base.resource.jdbc.CallableStatementWrapper due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.gargoylesoftware.base.resource.jdbc.ConnectionWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.gargoylesoftware.base.resource.jdbc.CallableStatementWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 21:53:44.916 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil.getSchemaFromDbObject(Lnet/sourceforge/squirrel_sql/fw/sql/IDatabaseObjectInfo;Lnet/sourceforge/squirrel_sql/client/session/schemainfo/SchemaInfo;)Lnet/sourceforge/squirrel_sql/fw/sql/IDatabaseObjectInfo;
+[MASTER] 21:53:57.938 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 21:54:46.324 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for com.gargoylesoftware.base.resource.jdbc.ConnectionWrapper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class com.gargoylesoftware.base.resource.jdbc.CallableStatementWrapper canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 21:55:09.994 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil.deleteDataInExistingTable(Lnet/sourceforge/squirrel_sql/client/session/ISession;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+[MASTER] 21:56:16.687 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil.getColumnType(Lnet/sourceforge/squirrel_sql/fw/sql/ISQLConnection;Lnet/sourceforge/squirrel_sql/fw/sql/ITableInfo;I)I
+* Search finished after 237s and 271 generations, 87458 statements, best individual has fitness: 18088.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 16%
+* Total number of goals: 792
+* Number of covered goals: 129
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 14%
+* Total number of goals: 463
+* Number of covered goals: 66
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 43
+* Number of covered goals: 43
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 25%
+* Total number of goals: 906
+* Number of covered goals: 222
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 25%
+* Total number of goals: 122
+* Number of covered goals: 30
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 98%
+* Total number of goals: 48
+* Number of covered goals: 47
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 96%
+* Total number of goals: 48
+* Number of covered goals: 46
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 14%
+* Total number of goals: 463
+* Number of covered goals: 66
+* Generated 92 tests with total length 290
+* Resulting test suite's coverage: 22% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 12%
+* Compiling and checking tests
+[MASTER] 21:56:49.987 [logback-2] ERROR ClassStateSupport - Could not initialize org.jboss.net.protocol.resource.ResourceURLConnection: org/jboss/logging/Logger
+* Permissions denied during test execution: 
+  - java.net.URLPermission: 
+         *:* http://www.someFakeButWellFormedURL.org/~7\vp|xPj/$S{: 1
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 2
+* Writing JUnit test case 'DBUtil_ESTest' to /home/ubuntu/termite/rmosa/tests/s1019/102_squirrel-sql/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: net.sourceforge.squirrel_sql.client.session.Session
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/102_squirrel-sql/evosuite-files/evosuite.properties
+* Connecting to master process on port 13434
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 22:29:27.269 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 22:29:27.273 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 22:29:27.283 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 22:29:36.159 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 22:29:36.160 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 22:29:36.378 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 22:29:39.453 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 22:29:40.008 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 22:29:40.009 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 22:29:40.009 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 22:29:40.014 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 22:29:40.015 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 22:29:40.015 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 22:29:40.017 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 22:29:40.019 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 22:29:40.336 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 22:29:40.599 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class net.sourceforge.squirrel_sql.client.session.Session
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1019
+* Starting evolution
+[MASTER] 22:29:43.299 [logback-2] ERROR TestCluster - Failed to check cache for java.util.HashMap<K, V> : Type points to itself
+[MASTER] 22:29:43.305 [logback-2] ERROR TestCluster - Failed to check cache for javax.swing.JComboBox<E> : Type points to itself
+[MASTER] 22:29:43.326 [logback-2] ERROR TestCluster - Failed to check cache for javax.swing.JList<E> : Type points to itself
+[MASTER] 22:33:52.707 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.ChronoLocalDate
+* Search finished after 269s and 157 generations, 68267 statements, best individual has fitness: 10616.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 4%
+* Total number of goals: 396
+* Number of covered goals: 15
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 0%
+* Total number of goals: 204
+* Number of covered goals: 1
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 1
+* Number of covered goals: 1
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 0%
+* Total number of goals: 258
+* Number of covered goals: 0
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 0%
+* Total number of goals: 165
+* Number of covered goals: 0
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 2%
+* Total number of goals: 59
+* Number of covered goals: 1
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 2%
+* Total number of goals: 59
+* Number of covered goals: 1
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 0%
+* Total number of goals: 204
+* Number of covered goals: 1
+* Generated 1 tests with total length 4
+* Resulting test suite's coverage: 1% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 2%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 2
+* Writing JUnit test case 'Session_ESTest' to /home/ubuntu/termite/rmosa/tests/s1019/102_squirrel-sql/evosuite-tests
+* Done!
+
+* Computation finished

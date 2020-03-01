@@ -1,0 +1,313 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: com.lts.io.ArchiveScanner
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/78_caloriecount/evosuite-files/evosuite.properties
+* Connecting to master process on port 18440
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 19:21:05.727 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 19:21:05.742 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 19:21:05.749 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 19:21:05.951 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 19:21:06.191 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 19:21:06.194 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+* Finished analyzing classpath
+* Generating tests for class com.lts.io.ArchiveScanner
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/78_caloriecount/src/main/java/com/lts/io/ArchiveScanner.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1027
+* Starting evolution
+[MASTER] 19:21:22.351 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 19:22:07.516 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+[MASTER] 19:22:23.397 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 19:22:31.155 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+* Search finished after 840s and 897 generations, 988382 statements, best individual has fitness: 320.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 85%
+* Total number of goals: 67
+* Number of covered goals: 57
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 87%
+* Total number of goals: 45
+* Number of covered goals: 39
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 92%
+* Total number of goals: 202
+* Number of covered goals: 186
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 80%
+* Total number of goals: 5
+* Number of covered goals: 4
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 87%
+* Total number of goals: 45
+* Number of covered goals: 39
+* Generated 36 tests with total length 1119
+* Resulting test suite's coverage: 90% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 53%
+* Compiling and checking tests
+[MASTER] 19:35:21.672 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<2> but was:<0>
+[MASTER] 19:35:21.673 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile("I");
+LinkedList<Integer> linkedList0 = new LinkedList<Integer>();
+LinkedList<Integer> linkedList1 = new LinkedList<Integer>();
+Integer integer0 = new Integer(1393);
+linkedList1.add((Integer) null);
+linkedList0.add(integer0);
+Integer integer1 = new Integer(1393);
+Integer integer2 = new Integer(1393);
+linkedList1.push(integer2);
+Integer integer3 = new Integer(1393);
+Integer integer4 = new Integer((-14));
+linkedList0.add(integer4);
+LinkedList<Integer> linkedList2 = new LinkedList<Integer>();
+Integer integer5 = new Integer(142);
+Integer integer6 = new Integer(142);
+linkedList0.add((Integer) null);
+linkedList0.add((Integer) null);
+Integer integer7 = new Integer(142);
+linkedList2.add((Integer) null);
+linkedList1.add((Integer) null);
+Integer integer8 = new Integer(142);
+Integer[] integerArray0 = new Integer[1];
+integerArray0[0] = integer5;
+Integer integer9 = new Integer((int) integerArray0[0]);
+linkedList2.add(integer0);
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+int int0 = archiveScanner0.toFileType(improvedFile0);
+assertEquals(2, int0);
+
+
+[MASTER] 19:35:21.888 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<2> but was:<0>
+[MASTER] 19:35:21.889 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile("sD?c*qaci=$!Ji%G5");
+Vector<Locale.LanguageRange> vector0 = new Vector<Locale.LanguageRange>();
+Vector<String> vector1 = new Vector<String>();
+Predicate<Object> predicate0 = Predicate.isEqual((Object) vector0);
+Predicate<Object> predicate1 = predicate0.negate();
+Predicate<Object> predicate2 = predicate1.or(predicate0);
+Predicate<Object> predicate3 = predicate2.or(predicate1);
+Predicate<Object> predicate4 = predicate2.and(predicate0);
+Predicate<Object> predicate5 = predicate3.negate();
+Predicate<Object> predicate6 = predicate5.and(predicate0);
+Predicate<Object> predicate7 = predicate3.negate();
+Predicate<Object> predicate8 = predicate1.or(predicate7);
+Predicate<Object> predicate9 = predicate4.and(predicate0);
+Predicate<Object> predicate10 = predicate3.or(predicate9);
+Predicate<Object> predicate11 = predicate2.or(predicate5);
+Predicate<Object> predicate12 = predicate3.or(predicate11);
+Predicate<Object> predicate13 = predicate9.negate();
+Predicate<Object> predicate14 = predicate9.or(predicate6);
+Predicate<Object> predicate15 = predicate8.negate();
+Predicate<Object> predicate16 = predicate10.negate();
+Predicate<Object> predicate17 = predicate9.and(predicate4);
+Predicate<Object> predicate18 = predicate4.or(predicate7);
+Predicate<Object> predicate19 = predicate18.and(predicate0);
+Predicate<Object> predicate20 = predicate16.negate();
+predicate9.test(predicate20);
+predicate3.and(predicate19);
+Predicate<Object> predicate21 = predicate8.negate();
+predicate4.negate();
+predicate21.and(predicate12);
+Predicate<Object> predicate22 = predicate13.negate();
+predicate1.and(predicate22);
+Predicate<Object> predicate23 = predicate12.negate();
+predicate12.and(predicate23);
+predicate14.negate();
+predicate15.and(predicate12);
+predicate17.or(predicate19);
+predicate21.or(predicate8);
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+int int0 = archiveScanner0.toFileType(improvedFile0);
+assertEquals(2, int0);
+
+
+[MASTER] 19:35:22.054 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<2> but was:<0>
+[MASTER] 19:35:22.056 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile("sD?c*qaci=$!Ji%G5");
+Vector<Locale.LanguageRange> vector0 = new Vector<Locale.LanguageRange>();
+Vector<String> vector1 = new Vector<String>();
+Predicate<Object> predicate0 = Predicate.isEqual((Object) vector0);
+Predicate<Object> predicate1 = predicate0.negate();
+Predicate<Object> predicate2 = predicate1.or(predicate0);
+Predicate<Object> predicate3 = predicate2.or(predicate1);
+Predicate<Object> predicate4 = predicate2.and(predicate0);
+Predicate<Object> predicate5 = predicate3.negate();
+Predicate<Object> predicate6 = predicate5.and(predicate0);
+Predicate<Object> predicate7 = predicate3.negate();
+Predicate<Object> predicate8 = predicate1.or(predicate7);
+Predicate<Object> predicate9 = predicate4.and(predicate0);
+Predicate<Object> predicate10 = predicate9.negate();
+Predicate<Object> predicate11 = predicate3.or(predicate6);
+Predicate<Object> predicate12 = predicate9.negate();
+Predicate<Object> predicate13 = predicate9.or(predicate6);
+Predicate<Object> predicate14 = predicate13.or(predicate3);
+Predicate<Object> predicate15 = predicate13.and(predicate11);
+Predicate<Object> predicate16 = predicate10.negate();
+predicate9.and(predicate4);
+Predicate<Object> predicate17 = predicate4.or(predicate7);
+Predicate<Object> predicate18 = predicate17.and(predicate0);
+Predicate<Object> predicate19 = predicate16.negate();
+Predicate<Object> predicate20 = predicate3.and(predicate18);
+Predicate<Object> predicate21 = predicate5.or(predicate12);
+Predicate<Object> predicate22 = predicate4.negate();
+predicate21.and(predicate11);
+Predicate<Object> predicate23 = predicate12.negate();
+predicate1.and(predicate23);
+predicate15.and(predicate17);
+Predicate<Object> predicate24 = predicate9.negate();
+predicate22.or(predicate15);
+predicate23.and(predicate24);
+predicate14.or(predicate12);
+predicate8.or(predicate22);
+predicate19.and(predicate20);
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+int int0 = archiveScanner0.toFileType(improvedFile0);
+assertEquals(2, int0);
+
+
+[MASTER] 19:35:22.208 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: null
+[MASTER] 19:35:22.209 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile("U");
+LinkedList<Integer> linkedList0 = new LinkedList<Integer>();
+LinkedList<Integer> linkedList1 = new LinkedList<Integer>();
+Integer integer0 = new Integer(1393);
+linkedList1.add((Integer) null);
+linkedList0.add(integer0);
+Integer integer1 = new Integer(1393);
+Integer integer2 = new Integer(1393);
+linkedList1.push(integer2);
+Integer integer3 = new Integer(1393);
+Integer integer4 = new Integer((-14));
+linkedList0.add(integer4);
+LinkedList<Integer> linkedList2 = new LinkedList<Integer>();
+Integer integer5 = new Integer(142);
+Integer integer6 = new Integer(142);
+linkedList0.add((Integer) null);
+linkedList0.add((Integer) null);
+Integer integer7 = new Integer(142);
+linkedList2.add((Integer) null);
+linkedList1.add((Integer) null);
+Integer integer8 = new Integer(142);
+Integer[] integerArray0 = new Integer[1];
+integerArray0[0] = integer5;
+Integer integer9 = new Integer((int) integerArray0[0]);
+linkedList2.add(integer0);
+linkedList2.toArray(integerArray0);
+Integer integer10 = new Integer((int) integerArray0[0]);
+Integer integer11 = new Integer(1393);
+Integer integer12 = new Integer(1393);
+Integer integer13 = new Integer(1393);
+linkedList0.offerFirst(integer6);
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+Vector<List<String>> vector0 = new Vector<List<String>>();
+boolean boolean0 = archiveScanner0.isArchive(improvedFile0);
+assertTrue(boolean0);
+
+
+* Writing JUnit test case 'ArchiveScanner_ESTest' to /home/ubuntu/termite/qmosa/tests/s1027/78_caloriecount/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: com.lts.application.international.MessageFormatter
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/78_caloriecount/evosuite-files/evosuite.properties
+* Connecting to master process on port 18439
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 21:30:04.408 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 21:30:04.430 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 21:30:04.431 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 21:30:04.731 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 21:30:04.980 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 21:30:04.981 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+* Finished analyzing classpath
+* Generating tests for class com.lts.application.international.MessageFormatter
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/78_caloriecount/src/main/java/com/lts/application/international/MessageFormatter.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1027
+* Starting evolution
+[MASTER] 21:30:13.211 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 21:31:47.853 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 21:39:01.416 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+* Search finished after 840s and 394 generations, 309857 statements, best individual has fitness: 624.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 91%
+* Total number of goals: 130
+* Number of covered goals: 118
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 88%
+* Total number of goals: 52
+* Number of covered goals: 46
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 24
+* Number of covered goals: 24
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 94%
+* Total number of goals: 150
+* Number of covered goals: 141
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 32%
+* Total number of goals: 50
+* Number of covered goals: 16
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 24
+* Number of covered goals: 24
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 24
+* Number of covered goals: 24
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 88%
+* Total number of goals: 52
+* Number of covered goals: 46
+* Generated 39 tests with total length 608
+* Resulting test suite's coverage: 85% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 23%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 4
+* Writing JUnit test case 'MessageFormatter_ESTest' to /home/ubuntu/termite/qmosa/tests/s1027/78_caloriecount/evosuite-tests
+* Done!
+
+* Computation finished

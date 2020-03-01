@@ -1,0 +1,855 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/102_squirrel-sql/evosuite-files/evosuite.properties
+* Connecting to master process on port 21006
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 15:04:45.900 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.SQLType
+[MASTER] 15:04:45.997 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 15:04:46.001 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 15:04:46.001 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 15:04:46.237 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 15:04:46.238 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 15:04:46.239 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 15:04:46.643 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 15:04:46.646 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 15:04:46.647 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 15:04:47.172 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 15:04:47.174 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 15:04:47.175 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 15:04:47.175 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 15:04:47.176 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 15:04:47.177 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 15:04:47.841 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 15:04:49.549 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/102_squirrel-sql/src/main/java/net/sourceforge/squirrel_sql/plugins/dbcopy/util/DBUtil.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1025
+* Starting evolution
+[MASTER] 15:05:14.161 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil.getColumnType(Lnet/sourceforge/squirrel_sql/fw/sql/ISQLConnection;Lnet/sourceforge/squirrel_sql/fw/sql/ITableInfo;Ljava/lang/String;)I: Line 1266
+[MASTER] 15:05:14.163 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil.getColumnType(Lnet/sourceforge/squirrel_sql/fw/sql/ISQLConnection;Lnet/sourceforge/squirrel_sql/fw/sql/ITableInfo;Ljava/lang/String;)I: Line 1267
+[MASTER] 15:05:14.164 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil.getColumnType(Lnet/sourceforge/squirrel_sql/fw/sql/ISQLConnection;Lnet/sourceforge/squirrel_sql/fw/sql/ITableInfo;Ljava/lang/String;)I: Line 1279
+[MASTER] 15:05:14.165 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil.getColumnType(Lnet/sourceforge/squirrel_sql/fw/sql/ISQLConnection;Lnet/sourceforge/squirrel_sql/fw/sql/ITableInfo;Ljava/lang/String;)I: I7 Branch 161 IFNULL L1267 - true
+[MASTER] 15:05:14.167 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 819: net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil.getColumnType(Lnet/sourceforge/squirrel_sql/fw/sql/ISQLConnection;Lnet/sourceforge/squirrel_sql/fw/sql/ITableInfo;Ljava/lang/String;)I:1266 - ReplaceConstant - -1 -> 0
+[MASTER] 15:05:14.168 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 820: net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil.getColumnType(Lnet/sourceforge/squirrel_sql/fw/sql/ISQLConnection;Lnet/sourceforge/squirrel_sql/fw/sql/ITableInfo;Ljava/lang/String;)I:1266 - ReplaceConstant - -1 -> 1
+[MASTER] 15:05:14.168 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 821: net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil.getColumnType(Lnet/sourceforge/squirrel_sql/fw/sql/ISQLConnection;Lnet/sourceforge/squirrel_sql/fw/sql/ITableInfo;Ljava/lang/String;)I:1266 - ReplaceConstant - -1 -> -2
+[MASTER] 15:05:14.169 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 822: net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil.getColumnType(Lnet/sourceforge/squirrel_sql/fw/sql/ISQLConnection;Lnet/sourceforge/squirrel_sql/fw/sql/ITableInfo;Ljava/lang/String;)I:1267 - ReplaceComparisonOperator = null -> != null
+[MASTER] 15:05:14.170 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 843: net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil.getColumnType(Lnet/sourceforge/squirrel_sql/fw/sql/ISQLConnection;Lnet/sourceforge/squirrel_sql/fw/sql/ITableInfo;Ljava/lang/String;)I:1279 - InsertUnaryOp Negation of result
+[MASTER] 15:05:14.171 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 844: net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil.getColumnType(Lnet/sourceforge/squirrel_sql/fw/sql/ISQLConnection;Lnet/sourceforge/squirrel_sql/fw/sql/ITableInfo;Ljava/lang/String;)I:1279 - InsertUnaryOp IINC 1 result
+[MASTER] 15:05:14.173 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 845: net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil.getColumnType(Lnet/sourceforge/squirrel_sql/fw/sql/ISQLConnection;Lnet/sourceforge/squirrel_sql/fw/sql/ITableInfo;Ljava/lang/String;)I:1279 - InsertUnaryOp IINC -1 result
+[MASTER] 15:05:14.175 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil.getColumnType(Lnet/sourceforge/squirrel_sql/fw/sql/ISQLConnection;Lnet/sourceforge/squirrel_sql/fw/sql/ITableInfo;Ljava/lang/String;)I:Negative
+[MASTER] 15:05:14.177 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil.getColumnType(Lnet/sourceforge/squirrel_sql/fw/sql/ISQLConnection;Lnet/sourceforge/squirrel_sql/fw/sql/ITableInfo;Ljava/lang/String;)I
+[MASTER] 15:05:14.178 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil.getColumnType(Lnet/sourceforge/squirrel_sql/fw/sql/ISQLConnection;Lnet/sourceforge/squirrel_sql/fw/sql/ITableInfo;Ljava/lang/String;)I
+[MASTER] 15:05:14.179 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil.getColumnType(Lnet/sourceforge/squirrel_sql/fw/sql/ISQLConnection;Lnet/sourceforge/squirrel_sql/fw/sql/ITableInfo;Ljava/lang/String;)I: I7 Branch 161 IFNULL L1267 - true in context: net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil:getColumnType(Lnet/sourceforge/squirrel_sql/fw/sql/ISQLConnection;Lnet/sourceforge/squirrel_sql/fw/sql/ITableInfo;Ljava/lang/String;)I
+[MASTER] 15:07:41.375 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 15:08:47.608 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+* Search finished after 295s and 271 generations, 177628 statements, best individual has fitness: 18016.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 17%
+* Total number of goals: 792
+* Number of covered goals: 133
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 14%
+* Total number of goals: 463
+* Number of covered goals: 67
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 40
+* Number of covered goals: 40
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 25%
+* Total number of goals: 906
+* Number of covered goals: 224
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 27%
+* Total number of goals: 122
+* Number of covered goals: 33
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 98%
+* Total number of goals: 48
+* Number of covered goals: 47
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 96%
+* Total number of goals: 48
+* Number of covered goals: 46
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 14%
+* Total number of goals: 463
+* Number of covered goals: 67
+* Generated 83 tests with total length 1368
+* Resulting test suite's coverage: 22% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 11%
+* Compiling and checking tests
+[MASTER] 15:10:01.284 [logback-2] ERROR JUnitAnalyzer - Compilation failed on compilation units: [RegularFileObject[/tmp/EvoSuite_44_1574176201254/net/sourceforge/squirrel_sql/plugins/dbcopy/util/DBUtil_44_tmp__ESTest.java], RegularFileObject[/tmp/EvoSuite_44_1574176201254/net/sourceforge/squirrel_sql/plugins/dbcopy/util/DBUtil_44_tmp__ESTest_scaffolding.java]]
+[MASTER] 15:10:01.284 [logback-2] ERROR JUnitAnalyzer - Classpath: /home/ubuntu/termite/projects/102_squirrel-sql/squirrel-sql.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/xml-apis-1.0.b2.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/ehcache-1.2.3.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/aopalliance-1.0.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/nanoxml-2.2.3.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/mockito-all-1.8.5.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/persistence-api-1.0.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/jboss-common-core-2.0.4.GA.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/asm-attrs-1.5.3.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/easymockclassextension-2.4.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/dom4j-1.6.1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/jcip-annotations-1.0.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/cglib-2.1_3.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/jfreechart-1.0.14.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/antlr-2.7.5.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/hibernate-entitymanager-3.3.1.ga.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/jcommon-1.0.17.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/spring-context-2.5.2.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/easymock-2.4.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/javassist-3.3.ga.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/fest-swing-junit-1.2.1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/fest-swing-junit-4.5-1.2.1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/commons-cli-1.2.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/spring-beans-2.5.2.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/commons-codec-1.3.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/jide-oss-2.4.8.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/stringtemplate-3.1-b1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/log4j-1.2.15.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/spring-context-support-2.5.2.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/hibernate-commons-annotations-3.3.0.ga.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/spring-core-2.5.2.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/hibernate-annotations-3.3.0.ga.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/fest-util-1.1.3.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/fest-assert-1.2.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/jxl-2.6.10.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/commons-httpclient-3.1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/commons-collections-2.1.1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/fest-swing-1.2.1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/commons-lang-2.6.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/asm-1.5.3.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/commons-logging-1.0.4.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/cglib-nodep-2.1_3.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/gsbase-2.0.1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/hibernate-validator-3.0.0.ga.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/fest-reflect-1.2.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/hibernate-3.2.4.sp1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/forms-1.0.5.jar:/home/ubuntu/termite/evosuite.jar:/home/ubuntu/termite/projects/102_squirrel-sql/squirrel-sql.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/xml-apis-1.0.b2.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/ehcache-1.2.3.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/aopalliance-1.0.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/nanoxml-2.2.3.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/mockito-all-1.8.5.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/persistence-api-1.0.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/jboss-common-core-2.0.4.GA.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/asm-attrs-1.5.3.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/easymockclassextension-2.4.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/dom4j-1.6.1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/jcip-annotations-1.0.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/cglib-2.1_3.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/jfreechart-1.0.14.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/antlr-2.7.5.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/hibernate-entitymanager-3.3.1.ga.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/jcommon-1.0.17.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/spring-context-2.5.2.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/easymock-2.4.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/javassist-3.3.ga.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/fest-swing-junit-1.2.1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/fest-swing-junit-4.5-1.2.1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/commons-cli-1.2.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/spring-beans-2.5.2.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/commons-codec-1.3.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/jide-oss-2.4.8.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/stringtemplate-3.1-b1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/log4j-1.2.15.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/spring-context-support-2.5.2.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/hibernate-commons-annotations-3.3.0.ga.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/spring-core-2.5.2.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/hibernate-annotations-3.3.0.ga.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/fest-util-1.1.3.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/fest-assert-1.2.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/jxl-2.6.10.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/commons-httpclient-3.1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/commons-collections-2.1.1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/fest-swing-1.2.1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/commons-lang-2.6.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/asm-1.5.3.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/commons-logging-1.0.4.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/cglib-nodep-2.1_3.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/gsbase-2.0.1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/hibernate-validator-3.0.0.ga.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/fest-reflect-1.2.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/hibernate-3.2.4.sp1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/forms-1.0.5.jar
+[MASTER] 15:10:01.284 [logback-2] ERROR JUnitAnalyzer - evosuiteCP: /home/ubuntu/termite/evosuite.jar:/home/ubuntu/termite/projects/102_squirrel-sql/squirrel-sql.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/xml-apis-1.0.b2.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/ehcache-1.2.3.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/aopalliance-1.0.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/nanoxml-2.2.3.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/mockito-all-1.8.5.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/persistence-api-1.0.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/jboss-common-core-2.0.4.GA.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/asm-attrs-1.5.3.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/easymockclassextension-2.4.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/dom4j-1.6.1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/jcip-annotations-1.0.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/cglib-2.1_3.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/jfreechart-1.0.14.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/antlr-2.7.5.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/hibernate-entitymanager-3.3.1.ga.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/jcommon-1.0.17.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/spring-context-2.5.2.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/easymock-2.4.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/javassist-3.3.ga.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/fest-swing-junit-1.2.1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/fest-swing-junit-4.5-1.2.1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/commons-cli-1.2.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/spring-beans-2.5.2.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/commons-codec-1.3.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/jide-oss-2.4.8.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/stringtemplate-3.1-b1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/log4j-1.2.15.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/spring-context-support-2.5.2.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/hibernate-commons-annotations-3.3.0.ga.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/spring-core-2.5.2.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/hibernate-annotations-3.3.0.ga.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/fest-util-1.1.3.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/fest-assert-1.2.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/jxl-2.6.10.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/commons-httpclient-3.1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/commons-collections-2.1.1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/fest-swing-1.2.1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/commons-lang-2.6.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/asm-1.5.3.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/commons-logging-1.0.4.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/cglib-nodep-2.1_3.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/gsbase-2.0.1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/hibernate-validator-3.0.0.ga.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/fest-reflect-1.2.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/hibernate-3.2.4.sp1.jar:/home/ubuntu/termite/projects/102_squirrel-sql/lib/forms-1.0.5.jar
+[MASTER] 15:10:01.288 [logback-2] ERROR JUnitAnalyzer - Diagnostic: cannot find symbol
+  symbol:   method getClientInfo(java.lang.String)
+  location: variable connectionWrapper0 of type com.gargoylesoftware.base.resource.jdbc.ConnectionWrapper: 37
+[MASTER] 15:10:01.289 [logback-2] ERROR JUnitAnalyzer - RegularFileObject[/tmp/EvoSuite_44_1574176201254/net/sourceforge/squirrel_sql/plugins/dbcopy/util/DBUtil_44_tmp__ESTest.java]
+1: /*
+2:  * This file was automatically generated by EvoSuite
+3:  * Tue Nov 19 15:10:01 GMT 2019
+4:  */
+5: 
+6: package net.sourceforge.squirrel_sql.plugins.dbcopy.util;
+7: 
+8: import org.junit.Test;
+9: import static org.junit.Assert.*;
+10: import static org.evosuite.shaded.org.mockito.Mockito.*;
+11: import static org.evosuite.runtime.EvoAssertions.*;
+12: import com.gargoylesoftware.base.resource.jdbc.ConnectionWrapper;
+13: import java.sql.Connection;
+14: import net.sourceforge.squirrel_sql.fw.sql.TableColumnInfo;
+15: import net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil;
+16: import org.evosuite.runtime.EvoRunner;
+17: import org.evosuite.runtime.EvoRunnerParameters;
+18: import org.evosuite.runtime.ViolatedAssumptionAnswer;
+19: import org.junit.runner.RunWith;
+20: 
+21: @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, useJEE = true) 
+22: public class DBUtil_44_tmp__ESTest extends DBUtil_44_tmp__ESTest_scaffolding {
+23: 
+24:   /**
+25:   //Test case number: 0
+26:   /*Coverage entropy=0.3333333333333333
+27:   */
+28:   @Test(timeout = 4000)
+29:   public void test0()  throws Throwable  {
+30:       TableColumnInfo[] tableColumnInfoArray0 = new TableColumnInfo[0];
+31:       DBUtil.getColumnList(tableColumnInfoArray0);
+32:       int int0 = 3058;
+33:       Connection connection0 = mock(Connection.class, new ViolatedAssumptionAnswer());
+34:       ConnectionWrapper connectionWrapper0 = new ConnectionWrapper(connection0);
+35:       // Undeclared exception!
+36:       try { 
+37:         connectionWrapper0.getClientInfo("");
+38:         fail("Expecting exception: AbstractMethodError");
+39:       
+40:       } catch(AbstractMethodError e) {
+41:       }
+42:   }
+43: }
+RegularFileObject[/tmp/EvoSuite_44_1574176201254/net/sourceforge/squirrel_sql/plugins/dbcopy/util/DBUtil_44_tmp__ESTest.java]
+1: /**
+2:  * Scaffolding file used to store all the setups needed to run 
+3:  * tests automatically generated by EvoSuite
+4:  * Tue Nov 19 15:10:01 GMT 2019
+5:  */
+6: 
+7: package net.sourceforge.squirrel_sql.plugins.dbcopy.util;
+8: 
+9: import org.evosuite.runtime.annotation.EvoSuiteClassExclude;
+10: import org.junit.BeforeClass;
+11: import org.junit.Before;
+12: import org.junit.After;
+13: import org.junit.AfterClass;
+14: import org.evosuite.runtime.sandbox.Sandbox;
+15: import org.evosuite.runtime.sandbox.Sandbox.SandboxMode;
+16: 
+17: import static org.evosuite.shaded.org.mockito.Mockito.*;
+18: @EvoSuiteClassExclude
+19: public class DBUtil_44_tmp__ESTest_scaffolding {
+20: 
+21:   @org.junit.Rule 
+22:   public org.evosuite.runtime.vnet.NonFunctionalRequirementRule nfr = new org.evosuite.runtime.vnet.NonFunctionalRequirementRule();
+23: 
+24:   private static final java.util.Properties defaultProperties = (java.util.Properties) java.lang.System.getProperties().clone(); 
+25: 
+26:   private org.evosuite.runtime.thread.ThreadStopper threadStopper =  new org.evosuite.runtime.thread.ThreadStopper (org.evosuite.runtime.thread.KillSwitchHandler.getInstance(), 3000);
+27: 
+28: 
+29:   @BeforeClass 
+30:   public static void initEvoSuiteFramework() { 
+31:     org.evosuite.runtime.RuntimeSettings.className = "net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil"; 
+32:     org.evosuite.runtime.GuiSupport.initialize(); 
+33:     org.evosuite.runtime.RuntimeSettings.maxNumberOfThreads = 100; 
+34:     org.evosuite.runtime.RuntimeSettings.maxNumberOfIterationsPerLoop = 10000; 
+35:     org.evosuite.runtime.RuntimeSettings.mockSystemIn = true; 
+36:     org.evosuite.runtime.RuntimeSettings.sandboxMode = org.evosuite.runtime.sandbox.Sandbox.SandboxMode.RECOMMENDED; 
+37:     org.evosuite.runtime.sandbox.Sandbox.initializeSecurityManagerForSUT(); 
+38:     org.evosuite.runtime.classhandling.JDKClassResetter.init();
+39:     setSystemProperties();
+40:     initializeClasses();
+41:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+42:     try { initMocksToAvoidTimeoutsInTheTests(); } catch(ClassNotFoundException e) {} 
+43:   } 
+44: 
+45:   @AfterClass 
+46:   public static void clearEvoSuiteFramework(){ 
+47:     Sandbox.resetDefaultSecurityManager(); 
+48:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+49:   } 
+50: 
+51:   @Before 
+52:   public void initTestCase(){ 
+53:     threadStopper.storeCurrentThreads();
+54:     threadStopper.startRecordingTime();
+55:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().initHandler(); 
+56:     org.evosuite.runtime.sandbox.Sandbox.goingToExecuteSUTCode(); 
+57:     setSystemProperties(); 
+58:     org.evosuite.runtime.GuiSupport.setHeadless(); 
+59:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+60:     org.evosuite.runtime.agent.InstrumentingAgent.activate(); 
+61:   } 
+62: 
+63:   @After 
+64:   public void doneWithTestCase(){ 
+65:     threadStopper.killAndJoinClientThreads();
+66:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().safeExecuteAddedHooks(); 
+67:     org.evosuite.runtime.classhandling.JDKClassResetter.reset(); 
+68:     resetClasses(); 
+69:     org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(); 
+70:     org.evosuite.runtime.agent.InstrumentingAgent.deactivate(); 
+71:     org.evosuite.runtime.GuiSupport.restoreHeadlessMode(); 
+72:   } 
+73: 
+74:   public static void setSystemProperties() {
+75:  
+76:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+77:     java.lang.System.setProperty("file.encoding", "UTF-8"); 
+78:     java.lang.System.setProperty("java.awt.headless", "true"); 
+79:     java.lang.System.setProperty("java.io.tmpdir", "/tmp"); 
+80:     java.lang.System.setProperty("user.country", "US"); 
+81:     java.lang.System.setProperty("user.dir", "/home/ubuntu/termite/projects/102_squirrel-sql"); 
+82:     java.lang.System.setProperty("user.home", "/home/ubuntu"); 
+83:     java.lang.System.setProperty("user.language", "en"); 
+84:     java.lang.System.setProperty("user.name", "ubuntu"); 
+85:     java.lang.System.setProperty("user.timezone", "Etc/UTC"); 
+86:     java.lang.System.setProperty("log4j.configuration", "SUT.log4j.properties"); 
+87:   }
+88: 
+89:   private static void initializeClasses() {
+90:     org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(DBUtil_44_tmp__ESTest_scaffolding.class.getClassLoader() ,
+91:       "net.sourceforge.squirrel_sql.client.gui.desktopcontainer.DesktopStyle",
+92:       "org.apache.log4j.helpers.PatternConverter",
+93:       "org.apache.log4j.AppenderSkeleton",
+94:       "net.sourceforge.squirrel_sql.client.gui.db.DataCache",
+95:       "net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties",
+96:       "org.apache.log4j.Level",
+97:       "org.apache.log4j.helpers.DateTimeDateFormat",
+98:       "org.apache.log4j.helpers.QuietWriter",
+99:       "org.apache.log4j.ConsoleAppender$SystemOutStream",
+100:       "net.sourceforge.squirrel_sql.client.session.event.SimpleSessionListener",
+101:       "org.apache.commons.cli.UnrecognizedOptionException",
+102:       "net.sourceforge.squirrel_sql.client.MultipleWindowsHandler",
+103:       "net.sourceforge.squirrel_sql.fw.sql.SQLDatabaseMetaData",
+104:       "net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaDetailProperties",
+105:       "org.apache.log4j.helpers.ISO8601DateFormat",
+106:       "net.sourceforge.squirrel_sql.fw.sql.TableInfo",
+107:       "net.sourceforge.squirrel_sql.client.plugin.IPluginManager",
+108:       "net.sourceforge.squirrel_sql.client.session.ISQLEntryPanelFactory",
+109:       "net.sourceforge.squirrel_sql.client.gui.db.SQLAlias$IStrings",
+110:       "org.apache.log4j.helpers.PatternParser$BasicPatternConverter",
+111:       "net.sourceforge.squirrel_sql.client.util.ApplicationFiles$1OldFileNameFilter",
+112:       "net.sourceforge.squirrel_sql.client.session.schemainfo.SchemaInfo$1",
+113:       "org.apache.log4j.Layout",
+114:       "net.sourceforge.squirrel_sql.plugins.dbcopy.DBCopyPlugin",
+115:       "net.sourceforge.squirrel_sql.client.session.JdbcConnectionData",
+116:       "com.gargoylesoftware.base.resource.ManagedResource",
+117:       "net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection",
+118:       "net.sourceforge.squirrel_sql.fw.util.FileWrapperFactoryImpl",
+119:       "com.gargoylesoftware.base.resource.jdbc.CallableStatementWrapper",
+120:       "net.sourceforge.squirrel_sql.client.preferences.IGlobalPreferencesPanel",
+121:       "net.sourceforge.squirrel_sql.fw.id.UidIdentifier",
+122:       "org.apache.log4j.Hierarchy",
+123:       "net.sourceforge.squirrel_sql.client.FontInfoStore",
+124:       "net.sourceforge.squirrel_sql.fw.util.log.ILogger",
+125:       "net.sourceforge.squirrel_sql.fw.sql.ProcedureInfo",
+126:       "org.apache.log4j.helpers.PatternParser$CategoryPatternConverter",
+127:       "net.sourceforge.squirrel_sql.client.plugin.IPlugin",
+128:       "net.sourceforge.squirrel_sql.fw.util.log.LoggerController",
+129:       "net.sourceforge.squirrel_sql.client.session.mainpanel.objecttree.INodeExpander",
+130:       "org.apache.commons.cli.Option",
+131:       "org.apache.log4j.spi.OptionHandler",
+132:       "org.apache.log4j.spi.DefaultRepositorySelector",
+133:       "net.sourceforge.squirrel_sql.fw.util.FileWrapperFactory",
+134:       "net.sourceforge.squirrel_sql.plugins.dbcopy.I18NBaseObject",
+135:       "net.sourceforge.squirrel_sql.client.session.schemainfo.SchemaInfoCache",
+136:       "net.sourceforge.squirrel_sql.fw.util.log.Log4jLoggerFactory$1",
+137:       "net.sourceforge.squirrel_sql.fw.util.Utilities$1",
+138:       "net.sourceforge.squirrel_sql.fw.sql.IDatabaseObjectInfo",
+139:       "net.sourceforge.squirrel_sql.fw.util.PropertyChangeReporter",
+140:       "net.sourceforge.squirrel_sql.fw.id.IHasIdentifier",
+141:       "com.gargoylesoftware.base.resource.jdbc.AlreadyClosedException",
+142:       "org.apache.log4j.helpers.OptionConverter",
+143:       "org.apache.log4j.helpers.FormattingInfo",
+144:       "net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties",
+145:       "org.apache.commons.cli.MissingArgumentException",
+146:       "net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil",
+147:       "net.sourceforge.squirrel_sql.fw.dialects.UserCancelledOperationException",
+148:       "org.hibernate.exception.Nestable",
+149:       "net.sourceforge.squirrel_sql.client.gui.desktopcontainer.SessionTabWidget",
+150:       "net.sourceforge.squirrel_sql.fw.sql.DatabaseObjectInfo",
+151:       "net.sourceforge.squirrel_sql.fw.util.log.ILoggerFactory",
+152:       "net.sourceforge.squirrel_sql.fw.util.ExceptionFormatter",
+153:       "net.sourceforge.squirrel_sql.client.session.schemainfo.FilterMatcher",
+154:       "net.sourceforge.squirrel_sql.fw.id.IntegerIdentifier",
+155:       "org.apache.log4j.or.ObjectRenderer",
+156:       "net.sourceforge.squirrel_sql.client.session.schemainfo.SchemaInfoUpdateListener",
+157:       "net.sourceforge.squirrel_sql.fw.id.IntegerIdentifierFactory",
+158:       "net.sourceforge.squirrel_sql.client.preferences.SquirrelPreferences",
+159:       "net.sourceforge.squirrel_sql.fw.util.beanwrapper.StringWrapper",
+160:       "net.sourceforge.squirrel_sql.fw.resources.LibraryResources",
+161:       "net.sourceforge.squirrel_sql.client.resources.SquirrelResources",
+162:       "net.sourceforge.squirrel_sql.client.session.IObjectTreeInternalFrame",
+163:       "net.sourceforge.squirrel_sql.client.session.mainpanel.IMainPanelTab",
+164:       "org.apache.log4j.helpers.PatternParser$ClassNamePatternConverter",
+165:       "net.sourceforge.squirrel_sql.fw.datasetviewer.IDataSet",
+166:       "net.sourceforge.squirrel_sql.client.gui.desktopcontainer.ISessionWidget",
+167:       "org.apache.log4j.helpers.PatternParser",
+168:       "org.apache.log4j.Category",
+169:       "net.sourceforge.squirrel_sql.client.Version",
+170:       "net.sourceforge.squirrel_sql.fw.sql.PrimaryKeyInfo",
+171:       "net.sourceforge.squirrel_sql.client.session.event.ISessionListener",
+172:       "net.sourceforge.squirrel_sql.plugins.dbcopy.ColTypeMapper",
+173:       "net.sourceforge.squirrel_sql.fw.util.TaskThreadPool",
+174:       "net.sourceforge.squirrel_sql.client.plugin.PluginException",
+175:       "net.sourceforge.squirrel_sql.client.plugin.DefaultSessionPlugin",
+176:       "net.sourceforge.squirrel_sql.fw.sql.TableColumnInfo",
+177:       "net.sourceforge.squirrel_sql.client.session.properties.SessionProperties",
+178:       "org.apache.log4j.spi.LoggerFactory",
+179:       "org.apache.log4j.ConsoleAppender",
+180:       "org.apache.log4j.spi.Configurator",
+181:       "net.sourceforge.squirrel_sql.client.gui.session.SessionPanel",
+182:       "net.sourceforge.squirrel_sql.client.IApplicationArguments",
+183:       "net.sourceforge.squirrel_sql.fw.sql.IProcedureInfo",
+184:       "net.sourceforge.squirrel_sql.client.session.schemainfo.SchemaInfo",
+185:       "net.sourceforge.squirrel_sql.fw.util.FileWrapper",
+186:       "org.apache.log4j.PropertyWatchdog",
+187:       "org.apache.commons.cli.Options",
+188:       "net.sourceforge.squirrel_sql.client.preferences.PreferenceType",
+189:       "net.sourceforge.squirrel_sql.plugins.dbcopy.DBCopyPluginResources",
+190:       "org.apache.log4j.helpers.PatternParser$NamedPatternConverter",
+191:       "net.sourceforge.squirrel_sql.fw.sql.IndexInfo",
+192:       "net.sourceforge.squirrel_sql.fw.sql.SQLDriverProperty",
+193:       "org.apache.commons.cli.OptionBuilder",
+194:       "org.apache.commons.cli.CommandLine",
+195:       "net.sourceforge.squirrel_sql.client.session.ExtendedColumnInfo",
+196:       "net.sourceforge.squirrel_sql.client.gui.WindowManager",
+197:       "net.sourceforge.squirrel_sql.fw.datasetviewer.IMainFrame",
+198:       "net.sourceforge.squirrel_sql.client.gui.db.SQLAlias",
+199:       "org.apache.commons.cli.CommandLineParser",
+200:       "net.sourceforge.squirrel_sql.fw.util.Utilities",
+201:       "org.apache.log4j.spi.AppenderAttachable",
+202:       "net.sourceforge.squirrel_sql.client.IApplication",
+203:       "org.apache.log4j.helpers.PatternParser$DatePatternConverter",
+204:       "org.apache.log4j.helpers.PatternParser$MDCPatternConverter",
+205:       "org.apache.log4j.Priority",
+206:       "org.apache.log4j.LogManager",
+207:       "net.sourceforge.squirrel_sql.plugins.dbcopy.SessionInfoProvider",
+208:       "net.sourceforge.squirrel_sql.client.session.properties.ISessionPropertiesPanel",
+209:       "net.sourceforge.squirrel_sql.client.session.SessionManager",
+210:       "net.sourceforge.squirrel_sql.fw.sql.ForeignKeyInfo",
+211:       "net.sourceforge.squirrel_sql.fw.sql.DatabaseObjectType",
+212:       "org.apache.log4j.DefaultCategoryFactory",
+213:       "net.sourceforge.squirrel_sql.client.util.ApplicationFileWrappersImpl",
+214:       "net.sourceforge.squirrel_sql.fw.util.FileWrapperImpl",
+215:       "org.apache.log4j.or.RendererMap",
+216:       "net.sourceforge.squirrel_sql.client.gui.db.ISQLAliasExt",
+217:       "net.sourceforge.squirrel_sql.client.plugin.PluginResources",
+218:       "net.sourceforge.squirrel_sql.fw.persist.IValidatable",
+219:       "org.apache.log4j.ConsoleAppender$SystemErrStream",
+220:       "net.sourceforge.squirrel_sql.client.session.mainpanel.SQLHistory",
+221:       "net.sourceforge.squirrel_sql.client.util.IOptionPanel",
+222:       "net.sourceforge.squirrel_sql.fw.id.IIdentifier",
+223:       "net.sourceforge.squirrel_sql.client.gui.desktopcontainer.TabWidget",
+224:       "com.gargoylesoftware.base.resource.jdbc.DatabaseMetaDataWrapper",
+225:       "org.apache.commons.cli.Parser",
+226:       "net.sourceforge.squirrel_sql.client.plugin.DefaultPlugin",
+227:       "org.apache.log4j.helpers.PatternParser$LocationPatternConverter",
+228:       "org.apache.log4j.CategoryKey",
+229:       "org.apache.log4j.WriterAppender",
+230:       "org.hibernate.HibernateException",
+231:       "org.apache.commons.cli.Util",
+232:       "org.apache.log4j.helpers.OnlyOnceErrorHandler",
+233:       "net.sourceforge.squirrel_sql.client.gui.db.aliasproperties.IAliasPropertiesPanelController",
+234:       "net.sourceforge.squirrel_sql.client.session.IObjectTreeAPI",
+235:       "net.sourceforge.squirrel_sql.client.session.schemainfo.ObjFilterMatcher",
+236:       "org.apache.log4j.helpers.Loader",
+237:       "net.sourceforge.squirrel_sql.fw.util.BaseException",
+238:       "net.sourceforge.squirrel_sql.fw.util.StringManager",
+239:       "org.apache.log4j.ProvisionNode",
+240:       "com.gargoylesoftware.base.resource.jdbc.StatementWrapper",
+241:       "org.apache.log4j.helpers.FileWatchdog",
+242:       "net.sourceforge.squirrel_sql.client.gui.desktopcontainer.IWidget",
+243:       "net.sourceforge.squirrel_sql.client.session.schemainfo.CaseInsensitiveString",
+244:       "net.sourceforge.squirrel_sql.fw.sql.SQLUtilities",
+245:       "net.sourceforge.squirrel_sql.fw.sql.ISQLDriver",
+246:       "net.sourceforge.squirrel_sql.fw.util.log.ILoggerListener",
+247:       "net.sourceforge.squirrel_sql.client.gui.session.SessionInternalFrame",
+248:       "org.apache.log4j.helpers.PatternParser$LiteralPatternConverter",
+249:       "org.apache.log4j.spi.RootLogger",
+250:       "org.apache.log4j.spi.ErrorHandler",
+251:       "net.sourceforge.squirrel_sql.fw.id.IIdentifierFactory",
+252:       "org.apache.commons.cli.MissingOptionException",
+253:       "org.apache.log4j.spi.RendererSupport",
+254:       "net.sourceforge.squirrel_sql.client.action.ActionCollection",
+255:       "org.apache.log4j.helpers.AppenderAttachableImpl",
+256:       "net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties",
+257:       "net.sourceforge.squirrel_sql.client.preferences.INewSessionPropertiesPanel",
+258:       "net.sourceforge.squirrel_sql.fw.sql.IQueryTokenizer",
+259:       "net.sourceforge.squirrel_sql.client.plugin.PluginSessionCallback",
+260:       "net.sourceforge.squirrel_sql.client.ApplicationArguments$IOptions",
+261:       "org.apache.log4j.BasicConfigurator",
+262:       "net.sourceforge.squirrel_sql.fw.sql.SQLDriverManager",
+263:       "org.apache.log4j.helpers.AbsoluteTimeDateFormat",
+264:       "net.sourceforge.squirrel_sql.fw.sql.ISQLConnection",
+265:       "net.sourceforge.squirrel_sql.fw.sql.ForeignKeyColumnInfo",
+266:       "org.apache.log4j.Logger",
+267:       "net.sourceforge.squirrel_sql.fw.sql.ProgressCallBack",
+268:       "net.sourceforge.squirrel_sql.client.util.ApplicationFileWrappers",
+269:       "net.sourceforge.squirrel_sql.fw.gui.action.wikiTable.IWikiTableConfigurationFactory",
+270:       "net.sourceforge.squirrel_sql.client.session.ISQLPanelAPI",
+271:       "org.apache.log4j.helpers.LogLog",
+272:       "net.sourceforge.squirrel_sql.fw.sql.ISQLDatabaseMetaData",
+273:       "net.sourceforge.squirrel_sql.fw.util.StringManagerFactory",
+274:       "org.apache.log4j.spi.RepositorySelector",
+275:       "net.sourceforge.squirrel_sql.client.gui.mainframe.MainFrame",
+276:       "com.gargoylesoftware.base.resource.jdbc.ConnectionWrapper",
+277:       "net.sourceforge.squirrel_sql.fw.sql.ISQLAlias",
+278:       "org.apache.commons.cli.ParseException",
+279:       "org.hibernate.MappingException",
+280:       "net.sourceforge.squirrel_sql.client.session.parser.IParserEventsProcessor",
+281:       "net.sourceforge.squirrel_sql.fw.sql.IndexInfo$SortOrder",
+282:       "net.sourceforge.squirrel_sql.fw.util.ISessionProperties",
+283:       "net.sourceforge.squirrel_sql.plugins.dbcopy.prefs.DBCopyPreferenceBean",
+284:       "org.apache.log4j.or.DefaultRenderer",
+285:       "net.sourceforge.squirrel_sql.fw.util.log.Log4jLogger",
+286:       "net.sourceforge.squirrel_sql.fw.sql.SQLDriver",
+287:       "net.sourceforge.squirrel_sql.fw.util.IMessageHandler",
+288:       "org.apache.log4j.PropertyConfigurator",
+289:       "net.sourceforge.squirrel_sql.client.session.event.SessionAdapter",
+290:       "net.sourceforge.squirrel_sql.plugins.dbcopy.prefs.PreferencesManager",
+291:       "net.sourceforge.squirrel_sql.client.session.ISession",
+292:       "net.sourceforge.squirrel_sql.client.ApplicationListener",
+293:       "org.apache.commons.cli.GnuParser",
+294:       "org.apache.log4j.Appender",
+295:       "com.gargoylesoftware.base.resource.jdbc.PreparedStatementWrapper",
+296:       "net.sourceforge.squirrel_sql.client.util.ApplicationFiles",
+297:       "net.sourceforge.squirrel_sql.fw.datasetviewer.DataSetException",
+298:       "net.sourceforge.squirrel_sql.fw.util.Resources",
+299:       "org.apache.commons.cli.OptionValidator",
+300:       "net.sourceforge.squirrel_sql.client.plugin.IPluginDatabaseObjectType",
+301:       "net.sourceforge.squirrel_sql.client.ApplicationArguments",
+302:       "net.sourceforge.squirrel_sql.fw.sql.SQLConnection",
+303:       "net.sourceforge.squirrel_sql.fw.persist.ValidationException",
+304:       "net.sourceforge.squirrel_sql.fw.sql.IndexInfo$IndexType",
+305:       "net.sourceforge.squirrel_sql.client.session.ISQLInternalFrame",
+306:       "net.sourceforge.squirrel_sql.fw.util.log.Log4jLoggerFactory",
+307:       "net.sourceforge.squirrel_sql.fw.util.IResources",
+308:       "net.sourceforge.squirrel_sql.fw.sql.ITableInfo",
+309:       "net.sourceforge.squirrel_sql.client.plugin.ISessionPlugin",
+310:       "org.apache.log4j.PatternLayout",
+311:       "org.apache.log4j.spi.LoggerRepository",
+312:       "org.hibernate.exception.NestableRuntimeException"
+313:     );
+314:   } 
+315:   private static void initMocksToAvoidTimeoutsInTheTests() throws ClassNotFoundException { 
+316:     mock(Class.forName("java.sql.Connection", false, DBUtil_44_tmp__ESTest_scaffolding.class.getClassLoader()));
+317:   }
+318: 
+319:   private static void resetClasses() {
+320:     org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(DBUtil_44_tmp__ESTest_scaffolding.class.getClassLoader()); 
+321: 
+322:     org.evosuite.runtime.classhandling.ClassStateSupport.resetClasses(
+323:       "net.sourceforge.squirrel_sql.fw.util.StringManagerFactory",
+324:       "net.sourceforge.squirrel_sql.fw.util.log.Log4jLoggerFactory",
+325:       "net.sourceforge.squirrel_sql.fw.util.log.Log4jLoggerFactory$1",
+326:       "org.apache.log4j.BasicConfigurator",
+327:       "org.apache.log4j.Category",
+328:       "org.apache.log4j.Logger",
+329:       "org.apache.log4j.Hierarchy",
+330:       "org.apache.log4j.spi.RootLogger",
+331:       "org.apache.log4j.Priority",
+332:       "org.apache.log4j.Level",
+333:       "org.apache.log4j.or.DefaultRenderer",
+334:       "org.apache.log4j.or.RendererMap",
+335:       "org.apache.log4j.DefaultCategoryFactory",
+336:       "org.apache.log4j.spi.DefaultRepositorySelector",
+337:       "org.apache.log4j.helpers.OptionConverter",
+338:       "org.apache.log4j.helpers.Loader",
+339:       "org.apache.log4j.helpers.LogLog",
+340:       "org.apache.log4j.PropertyConfigurator",
+341:       "org.apache.log4j.LogManager",
+342:       "org.apache.log4j.AppenderSkeleton",
+343:       "org.apache.log4j.WriterAppender",
+344:       "org.apache.log4j.ConsoleAppender",
+345:       "org.apache.log4j.Layout",
+346:       "org.apache.log4j.PatternLayout",
+347:       "org.apache.log4j.helpers.PatternParser",
+348:       "org.apache.log4j.helpers.FormattingInfo",
+349:       "org.apache.log4j.helpers.PatternConverter",
+350:       "org.apache.log4j.helpers.PatternParser$BasicPatternConverter",
+351:       "org.apache.log4j.helpers.PatternParser$LiteralPatternConverter",
+352:       "org.apache.log4j.helpers.PatternParser$NamedPatternConverter",
+353:       "org.apache.log4j.helpers.PatternParser$CategoryPatternConverter",
+354:       "org.apache.log4j.helpers.OnlyOnceErrorHandler",
+355:       "org.apache.log4j.helpers.QuietWriter",
+356:       "org.apache.log4j.helpers.AppenderAttachableImpl",
+357:       "net.sourceforge.squirrel_sql.fw.util.log.LoggerController",
+358:       "net.sourceforge.squirrel_sql.fw.util.log.Log4jLogger",
+359:       "org.apache.log4j.CategoryKey",
+360:       "org.apache.log4j.ProvisionNode",
+361:       "net.sourceforge.squirrel_sql.fw.util.Utilities",
+362:       "net.sourceforge.squirrel_sql.fw.util.StringManager",
+363:       "net.sourceforge.squirrel_sql.plugins.dbcopy.I18NBaseObject",
+364:       "net.sourceforge.squirrel_sql.fw.util.FileWrapperFactoryImpl",
+365:       "net.sourceforge.squirrel_sql.plugins.dbcopy.prefs.PreferencesManager",
+366:       "net.sourceforge.squirrel_sql.plugins.dbcopy.util.DBUtil",
+367:       "net.sourceforge.squirrel_sql.plugins.dbcopy.util.ScriptWriter",
+368:       "net.sourceforge.squirrel_sql.fw.sql.SQLUtilities",
+369:       "net.sourceforge.squirrel_sql.fw.dialects.CommonHibernateDialect",
+370:       "net.sourceforge.squirrel_sql.fw.dialects.AxionDialectExt",
+371:       "org.hibernate.dialect.function.StandardSQLFunction",
+372:       "org.hibernate.dialect.Dialect$1",
+373:       "org.hibernate.dialect.Dialect$2",
+374:       "org.hibernate.dialect.Dialect$3",
+375:       "org.hibernate.dialect.Dialect$4",
+376:       "org.hibernate.dialect.Dialect",
+377:       "net.sourceforge.squirrel_sql.fw.dialects.AxionDialectExt$AxionDialectHelper",
+378:       "org.hibernate.dialect.TypeNames",
+379:       "org.hibernate.dialect.function.SQLFunctionTemplate",
+380:       "org.hibernate.type.AbstractType",
+381:       "org.hibernate.util.StringHelper",
+382:       "org.hibernate.type.NullableType",
+383:       "org.hibernate.type.ImmutableType",
+384:       "org.hibernate.type.PrimitiveType",
+385:       "org.hibernate.type.LongType",
+386:       "org.hibernate.type.ShortType",
+387:       "org.hibernate.type.IntegerType",
+388:       "org.hibernate.type.ByteType",
+389:       "org.hibernate.type.FloatType",
+390:       "org.hibernate.type.DoubleType",
+391:       "org.hibernate.type.CharacterType",
+392:       "org.hibernate.type.StringType",
+393:       "org.hibernate.type.MutableType",
+394:       "org.hibernate.type.TimeType",
+395:       "org.hibernate.type.DateType",
+396:       "org.hibernate.type.TimestampType",
+397:       "org.hibernate.type.BooleanType",
+398:       "org.hibernate.type.CharBooleanType",
+399:       "org.hibernate.type.TrueFalseType",
+400:       "org.hibernate.type.YesNoType",
+401:       "org.hibernate.type.BigDecimalType",
+402:       "org.hibernate.type.BigIntegerType",
+403:       "org.hibernate.type.AbstractBynaryType",
+404:       "org.hibernate.type.BinaryType",
+405:       "org.hibernate.type.WrapperBinaryType",
+406:       "org.hibernate.type.AbstractCharArrayType",
+407:       "org.hibernate.type.CharArrayType",
+408:       "org.hibernate.type.CharacterArrayType",
+409:       "org.hibernate.type.TextType",
+410:       "org.hibernate.type.BlobType",
+411:       "org.hibernate.type.ClobType",
+412:       "org.hibernate.type.CalendarType",
+413:       "org.hibernate.type.CalendarDateType",
+414:       "org.hibernate.type.LocaleType",
+415:       "org.hibernate.type.CurrencyType",
+416:       "org.hibernate.type.TimeZoneType",
+417:       "org.hibernate.type.ClassType",
+418:       "org.hibernate.type.SerializableType",
+419:       "org.hibernate.type.AnyType",
+420:       "org.hibernate.Hibernate",
+421:       "org.hibernate.dialect.function.CastFunction",
+422:       "net.sourceforge.squirrel_sql.fw.dialects.DB2DialectExt",
+423:       "org.hibernate.dialect.DB2Dialect",
+424:       "net.sourceforge.squirrel_sql.fw.dialects.DB2DialectExt$DB2DialectHelper",
+425:       "org.hibernate.dialect.function.NoArgSQLFunction",
+426:       "org.hibernate.dialect.function.AnsiTrimEmulationFunction",
+427:       "org.hibernate.dialect.function.VarArgsSQLFunction",
+428:       "net.sourceforge.squirrel_sql.fw.dialects.DaffodilDialectExt",
+429:       "net.sourceforge.squirrel_sql.fw.dialects.DaffodilDialectExt$DaffodilDialectHelper",
+430:       "net.sourceforge.squirrel_sql.fw.dialects.DerbyDialectExt",
+431:       "net.sourceforge.squirrel_sql.fw.dialects.DerbyDialectExt$DerbyDialectHelper",
+432:       "net.sourceforge.squirrel_sql.fw.dialects.FirebirdDialectExt",
+433:       "org.hibernate.dialect.InterbaseDialect",
+434:       "org.hibernate.dialect.FirebirdDialect",
+435:       "net.sourceforge.squirrel_sql.fw.dialects.FirebirdDialectExt$FirebirdDialectHelper",
+436:       "net.sourceforge.squirrel_sql.fw.dialects.FrontBaseDialectExt",
+437:       "org.hibernate.dialect.FrontBaseDialect",
+438:       "net.sourceforge.squirrel_sql.fw.dialects.FrontBaseDialectExt$FrontBaseDialectHelper",
+439:       "net.sourceforge.squirrel_sql.fw.dialects.GenericDialectExt",
+440:       "net.sourceforge.squirrel_sql.fw.dialects.GenericDialectExt$GenericDialectHelper",
+441:       "net.sourceforge.squirrel_sql.fw.dialects.HADBDialectExt",
+442:       "net.sourceforge.squirrel_sql.fw.dialects.HADBDialectExt$HADBDialectHelper",
+443:       "net.sourceforge.squirrel_sql.fw.dialects.H2DialectExt",
+444:       "net.sourceforge.squirrel_sql.fw.dialects.H2DialectExt$H2DialectHelper",
+445:       "net.sourceforge.squirrel_sql.fw.dialects.HSQLDialectExt",
+446:       "org.hibernate.exception.TemplatedViolatedConstraintNameExtracter",
+447:       "org.hibernate.dialect.HSQLDialect$1",
+448:       "org.hibernate.dialect.HSQLDialect",
+449:       "net.sourceforge.squirrel_sql.fw.dialects.HSQLDialectExt$HSQLDialectHelper",
+450:       "org.hibernate.property.BasicPropertyAccessor",
+451:       "org.hibernate.property.DirectPropertyAccessor",
+452:       "org.hibernate.util.ReflectHelper",
+453:       "net.sourceforge.squirrel_sql.fw.dialects.InformixDialectExt",
+454:       "org.hibernate.dialect.InformixDialect$1",
+455:       "org.hibernate.dialect.InformixDialect",
+456:       "net.sourceforge.squirrel_sql.fw.dialects.InformixDialectExt$InformixDialectHelper",
+457:       "net.sourceforge.squirrel_sql.fw.dialects.InterbaseDialectExt",
+458:       "net.sourceforge.squirrel_sql.fw.dialects.InterbaseDialectExt$InterbaseDialectHelper",
+459:       "net.sourceforge.squirrel_sql.fw.dialects.IngresDialectExt",
+460:       "org.hibernate.dialect.IngresDialect",
+461:       "net.sourceforge.squirrel_sql.fw.dialects.IngresDialectExt$IngresDialectHelper",
+462:       "net.sourceforge.squirrel_sql.fw.dialects.MAXDBDialectExt",
+463:       "org.hibernate.dialect.SAPDBDialect",
+464:       "net.sourceforge.squirrel_sql.fw.dialects.MAXDBDialectExt$MAXDBDialectHelper",
+465:       "net.sourceforge.squirrel_sql.fw.dialects.McKoiDialectExt",
+466:       "net.sourceforge.squirrel_sql.fw.dialects.McKoiDialectExt$McKoiDialectHelper",
+467:       "net.sourceforge.squirrel_sql.fw.dialects.MySQLDialectExt",
+468:       "org.hibernate.dialect.MySQLDialect",
+469:       "net.sourceforge.squirrel_sql.fw.dialects.MySQLDialectExt$MySQLDialectHelper",
+470:       "net.sourceforge.squirrel_sql.fw.dialects.MySQL5DialectExt",
+471:       "net.sourceforge.squirrel_sql.fw.dialects.NetezzaDialextExt",
+472:       "org.hibernate.dialect.PostgreSQLDialect$1",
+473:       "org.hibernate.dialect.PostgreSQLDialect",
+474:       "net.sourceforge.squirrel_sql.fw.dialects.NetezzaDialextExt$NetezzaDialectHelper",
+475:       "org.hibernate.dialect.function.PositionSubstringFunction",
+476:       "net.sourceforge.squirrel_sql.fw.dialects.GreenplumDialectExt",
+477:       "net.sourceforge.squirrel_sql.fw.dialects.GreenplumDialectExt$GreenplumDialectHelper",
+478:       "net.sourceforge.squirrel_sql.fw.dialects.OracleDialectExt",
+479:       "org.hibernate.dialect.Oracle9Dialect$1",
+480:       "org.hibernate.dialect.Oracle9Dialect",
+481:       "net.sourceforge.squirrel_sql.fw.dialects.OracleDialectExt$OracleDialectHelper",
+482:       "org.hibernate.dialect.function.NvlFunction",
+483:       "net.sourceforge.squirrel_sql.fw.dialects.PointbaseDialectExt",
+484:       "org.hibernate.dialect.PointbaseDialect",
+485:       "net.sourceforge.squirrel_sql.fw.dialects.PointbaseDialectExt$PointbaseDialectHelper",
+486:       "net.sourceforge.squirrel_sql.fw.dialects.PostgreSQLDialectExt",
+487:       "net.sourceforge.squirrel_sql.fw.dialects.PostgreSQLDialectExt$PostgreSQLDialectHelper",
+488:       "net.sourceforge.squirrel_sql.fw.dialects.ProgressDialectExt",
+489:       "net.sourceforge.squirrel_sql.fw.dialects.ProgressDialectExt$ProgressDialectHelper",
+490:       "net.sourceforge.squirrel_sql.fw.dialects.SybaseDialectExt",
+491:       "org.hibernate.dialect.SybaseDialect",
+492:       "net.sourceforge.squirrel_sql.fw.dialects.SybaseDialectExt$SybaseDialectHelper",
+493:       "org.hibernate.dialect.function.CharIndexFunction",
+494:       "net.sourceforge.squirrel_sql.fw.dialects.SQLServerDialectExt",
+495:       "net.sourceforge.squirrel_sql.fw.dialects.SQLServerDialectExt$SQLServerDialectHelper",
+496:       "net.sourceforge.squirrel_sql.fw.dialects.TimesTenDialectExt",
+497:       "org.hibernate.dialect.TimesTenDialect",
+498:       "net.sourceforge.squirrel_sql.fw.dialects.TimesTenDialectExt$TimesTenDialectHelper",
+499:       "net.sourceforge.squirrel_sql.fw.dialects.IntersystemsCacheDialectExt",
+500:       "org.hibernate.dialect.Cache71Dialect$1",
+501:       "org.hibernate.dialect.Cache71Dialect",
+502:       "net.sourceforge.squirrel_sql.fw.dialects.IntersystemsCacheDialectExt$CacheHelper",
+503:       "org.hibernate.dialect.function.StandardJDBCEscapeFunction",
+504:       "org.hibernate.dialect.function.ConvertFunction",
+505:       "org.hibernate.dialect.function.ConditionalParenthesisFunction",
+506:       "net.sourceforge.squirrel_sql.fw.gui.DialogUtils",
+507:       "net.sourceforge.squirrel_sql.fw.dialects.DialectFactory",
+508:       "net.sourceforge.squirrel_sql.fw.sql.JDBCTypeMapper",
+509:       "net.sourceforge.squirrel_sql.plugins.dbcopy.ColTypeMapper",
+510:       "net.sourceforge.squirrel_sql.fw.id.IntegerIdentifierFactory",
+511:       "net.sourceforge.squirrel_sql.fw.id.IntegerIdentifier",
+512:       "net.sourceforge.squirrel_sql.fw.util.Resources",
+513:       "net.sourceforge.squirrel_sql.fw.resources.LibraryResources",
+514:       "net.sourceforge.squirrel_sql.fw.sql.DatabaseObjectType",
+515:       "net.sourceforge.squirrel_sql.client.plugin.DefaultPlugin",
+516:       "net.sourceforge.squirrel_sql.client.plugin.DefaultSessionPlugin",
+517:       "net.sourceforge.squirrel_sql.plugins.dbcopy.DBCopyPlugin",
+518:       "net.sourceforge.squirrel_sql.client.util.ApplicationFileWrappersImpl",
+519:       "net.sourceforge.squirrel_sql.client.util.ApplicationFiles",
+520:       "net.sourceforge.squirrel_sql.client.ApplicationArguments",
+521:       "org.apache.commons.cli.Options",
+522:       "net.sourceforge.squirrel_sql.client.ApplicationArguments$IOptions",
+523:       "org.apache.commons.cli.Option",
+524:       "org.apache.commons.cli.OptionValidator",
+525:       "org.apache.commons.cli.OptionBuilder",
+526:       "org.apache.commons.cli.Parser",
+527:       "org.apache.commons.cli.GnuParser",
+528:       "org.apache.commons.cli.CommandLine",
+529:       "org.apache.commons.cli.Util",
+530:       "net.sourceforge.squirrel_sql.client.util.ApplicationFiles$1OldFileNameFilter",
+531:       "net.sourceforge.squirrel_sql.plugins.dbcopy.DBCopyPlugin$2",
+532:       "net.sourceforge.squirrel_sql.fw.gui.GUIUtils",
+533:       "net.sourceforge.squirrel_sql.fw.xml.XMLBeanWriter",
+534:       "net.n3.nanoxml.XMLElement",
+535:       "net.sourceforge.squirrel_sql.fw.util.FileWrapperImpl",
+536:       "net.n3.nanoxml.XMLWriter",
+537:       "com.gargoylesoftware.base.resource.jdbc.ConnectionWrapper",
+538:       "com.gargoylesoftware.base.resource.jdbc.StatementWrapper",
+539:       "com.gargoylesoftware.base.resource.jdbc.PreparedStatementWrapper",
+540:       "com.gargoylesoftware.base.resource.jdbc.CallableStatementWrapper",
+541:       "net.sourceforge.squirrel_sql.client.session.schemainfo.SchemaInfo",
+542:       "net.sourceforge.squirrel_sql.client.session.event.SessionAdapter",
+543:       "net.sourceforge.squirrel_sql.client.session.schemainfo.SchemaInfo$1",
+544:       "net.sourceforge.squirrel_sql.fw.sql.DatabaseObjectInfo",
+545:       "net.sourceforge.squirrel_sql.fw.sql.TableColumnInfo",
+546:       "net.sourceforge.squirrel_sql.client.gui.db.SQLAlias",
+547:       "net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection",
+548:       "net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties",
+549:       "net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties",
+550:       "net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties",
+551:       "net.sourceforge.squirrel_sql.fw.sql.SQLDriver",
+552:       "net.sourceforge.squirrel_sql.fw.sql.SQLConnection",
+553:       "net.sourceforge.squirrel_sql.fw.sql.ForeignKeyInfo",
+554:       "net.sourceforge.squirrel_sql.client.Version",
+555:       "net.sourceforge.squirrel_sql.plugins.dbcopy.DBCopyPlugin$1",
+556:       "net.sourceforge.squirrel_sql.plugins.dbcopy.prefs.DBCopyPreferenceBean",
+557:       "net.sourceforge.squirrel_sql.fw.sql.ProcedureInfo",
+558:       "net.sourceforge.squirrel_sql.fw.sql.TableInfo",
+559:       "net.sourceforge.squirrel_sql.plugins.dbcopy.gui.DBCopyGlobalPreferencesTab",
+560:       "net.sourceforge.squirrel_sql.plugins.dbcopy.gui.PreferencesPanel",
+561:       "net.sourceforge.squirrel_sql.plugins.dbcopy.gui.PreferencesPanel$1",
+562:       "net.sourceforge.squirrel_sql.plugins.dbcopy.gui.PreferencesPanel$2",
+563:       "net.sourceforge.squirrel_sql.plugins.dbcopy.gui.PreferencesPanel$3",
+564:       "net.sourceforge.squirrel_sql.plugins.dbcopy.gui.PreferencesPanel$4",
+565:       "net.sourceforge.squirrel_sql.plugins.dbcopy.gui.PreferencesPanel$5",
+566:       "net.sourceforge.squirrel_sql.fw.sql.IndexInfo",
+567:       "net.sourceforge.squirrel_sql.fw.sql.PrimaryKeyInfo",
+568:       "net.sourceforge.squirrel_sql.client.plugin.PluginResources",
+569:       "net.sourceforge.squirrel_sql.plugins.dbcopy.DBCopyPluginResources",
+570:       "net.sourceforge.squirrel_sql.fw.xml.XMLBeanReader",
+571:       "net.sourceforge.squirrel_sql.client.plugin.PreferenceUtil",
+572:       "net.sourceforge.squirrel_sql.fw.sql.SQLDriverProperty",
+573:       "net.sourceforge.squirrel_sql.fw.id.UidIdentifier",
+574:       "net.sourceforge.squirrel_sql.fw.sql.SQLDatabaseMetaData",
+575:       "com.gargoylesoftware.base.resource.jdbc.DatabaseMetaDataWrapper",
+576:       "net.sourceforge.squirrel_sql.fw.util.BaseException",
+577:       "net.sourceforge.squirrel_sql.client.plugin.PluginException",
+578:       "net.sourceforge.squirrel_sql.fw.util.PropertyChangeReporter",
+579:       "org.jfree.data.time.RegularTimePeriod",
+580:       "org.jfree.data.time.Quarter",
+581:       "net.sourceforge.squirrel_sql.fw.persist.ValidationException",
+582:       "net.sourceforge.squirrel_sql.client.gui.db.SQLAlias$IStrings",
+583:       "org.jboss.net.protocol.njar.Handler",
+584:       "net.sourceforge.squirrel_sql.client.session.schemainfo.FilterMatcher",
+585:       "net.sourceforge.squirrel_sql.client.session.schemainfo.ObjFilterMatcher",
+586:       "org.jboss.util.file.FilePrefixFilter",
+587:       "org.jboss.util.file.FileSuffixFilter",
+588:       "org.jfree.ui.FilesystemFilter",
+589:       "net.sourceforge.squirrel_sql.client.session.schemainfo.SchemaInfo$3",
+590:       "org.fest.swing.applet.BasicAppletContext$EmptyAppletEnumeration",
+591:       "org.fest.swing.applet.BasicAppletContext",
+592:       "org.jfree.date.SerialDate",
+593:       "org.jboss.net.protocol.resource.Handler"
+594:     );
+595:   }
+596: }
+
+[MASTER] 15:10:01.289 [logback-2] ERROR JUnitAnalyzer - Failed to compile test case:
+TableColumnInfo[] tableColumnInfoArray0 = new TableColumnInfo[0];
+DBUtil.getColumnList(tableColumnInfoArray0);
+int int0 = 3058;
+Connection connection0 = mock(Connection.class, new ViolatedAssumptionAnswer());
+ConnectionWrapper connectionWrapper0 = new ConnectionWrapper(connection0);
+connectionWrapper0.getClientInfo("");
+
+[MASTER] 15:10:03.605 [logback-2] ERROR ClassStateSupport - Could not initialize org.jboss.net.protocol.njar.Handler: org/jboss/logging/Logger
+[MASTER] 15:10:03.753 [logback-2] ERROR ClassStateSupport - Could not initialize org.jboss.net.protocol.resource.ResourceURLConnection: org/jboss/logging/Logger
+[MASTER] 15:10:04.143 [logback-2] ERROR ClassResetter - java.lang.NoClassDefFoundError: Could not initialize class org.jboss.net.protocol.njar.Handler
+* Permissions denied during test execution: 
+  - java.net.URLPermission: 
+         *:* http://www.someFakeButWellFormedURL.org/fooExample: 2
+         *:* http://www.someFakeButWellFormedURL.org/net.sourceforge.squirrel_sql.plugins.dbcopy.dbcopy: 1
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 2
+* Writing JUnit test case 'DBUtil_ESTest' to /home/ubuntu/termite/qmosa/tests/s1025/102_squirrel-sql/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: net.sourceforge.squirrel_sql.client.session.Session
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/102_squirrel-sql/evosuite-files/evosuite.properties
+* Connecting to master process on port 21006
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 15:22:27.019 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 15:22:27.020 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 15:22:27.021 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 15:22:29.462 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 15:22:29.463 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 15:22:29.546 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 15:22:31.007 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 15:22:31.293 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 15:22:31.293 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 15:22:31.294 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 15:22:31.294 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 15:22:31.295 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 15:22:31.295 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 15:22:31.296 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 15:22:31.297 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 15:22:31.451 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 15:22:31.574 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class net.sourceforge.squirrel_sql.client.session.Session
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/102_squirrel-sql/src/main/java/net/sourceforge/squirrel_sql/client/session/Session.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1025
+* Starting evolution
+[MASTER] 15:22:34.128 [logback-2] ERROR TestCluster - Failed to check cache for java.util.HashMap<K, V> : Type points to itself
+[MASTER] 15:22:34.132 [logback-2] ERROR TestCluster - Failed to check cache for javax.swing.JComboBox<E> : Type points to itself
+[MASTER] 15:22:34.143 [logback-2] ERROR TestCluster - Failed to check cache for javax.swing.JList<E> : Type points to itself
+[MASTER] 15:24:32.402 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.ChronoLocalDate
+* Search finished after 170s and 157 generations, 96463 statements, best individual has fitness: 10616.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 4%
+* Total number of goals: 396
+* Number of covered goals: 15
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 0%
+* Total number of goals: 204
+* Number of covered goals: 1
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 1
+* Number of covered goals: 1
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 0%
+* Total number of goals: 258
+* Number of covered goals: 0
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 0%
+* Total number of goals: 165
+* Number of covered goals: 0
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 2%
+* Total number of goals: 59
+* Number of covered goals: 1
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 2%
+* Total number of goals: 59
+* Number of covered goals: 1
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 0%
+* Total number of goals: 204
+* Number of covered goals: 1
+* Generated 1 tests with total length 12
+* Resulting test suite's coverage: 1% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 0%
+* Compiling and checking tests
+[MASTER] 15:25:26.514 [logback-2] ERROR ClassStateSupport - Could not initialize org.jboss.net.protocol.njar.Handler: org/jboss/logging/Logger
+[MASTER] 15:25:27.222 [logback-2] ERROR ClassResetter - java.lang.NoClassDefFoundError: Could not initialize class org.jboss.net.protocol.njar.Handler
+* Writing JUnit test case 'Session_ESTest' to /home/ubuntu/termite/qmosa/tests/s1025/102_squirrel-sql/evosuite-tests
+* Done!
+
+* Computation finished

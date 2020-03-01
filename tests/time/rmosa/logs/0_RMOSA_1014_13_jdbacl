@@ -1,0 +1,1205 @@
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: org.databene.jdbacl.DBUtil
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/13_jdbacl/evosuite-files/evosuite.properties
+* Connecting to master process on port 7487
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 02:46:44.616 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.SQLType
+[MASTER] 02:46:47.020 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 02:46:47.046 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 02:46:47.049 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 02:46:47.423 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 02:46:47.449 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 02:46:47.475 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 02:46:53.485 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 02:46:53.524 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 02:46:53.525 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 02:46:53.566 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 02:46:53.567 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 02:46:53.568 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 02:46:53.569 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 02:46:53.585 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 02:46:53.594 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 02:46:54.344 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToDoubleFunction
+[MASTER] 02:46:54.345 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToIntFunction
+[MASTER] 02:46:54.346 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToLongFunction
+[MASTER] 02:46:54.502 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 02:46:55.698 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class org.databene.jdbacl.DBUtil
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1014
+* Starting evolution
+[MASTER] 02:47:05.620 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: org.databene.jdbacl.DBUtil.escape(Ljava/lang/String;)Ljava/lang/String;:EmptyString
+[MASTER] 02:47:19.166 [logback-2] ERROR TestCluster - Failed to check cache for org.databene.jdbacl.model.CompositeDBObject<C> : Type points to itself
+[MASTER] 02:47:19.613 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.firebirdsql.jca.FBConnectionRequestInfo due to org.evosuite.ga.ConstructionFailedException: Have no generator for class org.firebirdsql.jdbc.FBConnection canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 02:47:47.152 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class org.hsqldb.jdbc.jdbcResultSet canUseFunctionalMocks=false, canBeMocked: true
+* Search finished after 125s and 152 generations, 46531 statements, best individual has fitness: 6184.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 72%
+* Total number of goals: 324
+* Number of covered goals: 232
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 66%
+* Total number of goals: 197
+* Number of covered goals: 130
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 69
+* Number of covered goals: 69
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 59%
+* Total number of goals: 700
+* Number of covered goals: 416
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 14%
+* Total number of goals: 255
+* Number of covered goals: 36
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 51
+* Number of covered goals: 51
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 96%
+* Total number of goals: 51
+* Number of covered goals: 49
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 52%
+* Total number of goals: 197
+* Number of covered goals: 103
+* Generated 119 tests with total length 621
+* Resulting test suite's coverage: 58% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 12%
+* Compiling and checking tests
+[MASTER] 02:49:44.977 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.JniGDSImpl: no jaybird21 in java.library.path
+[MASTER] 02:49:45.658 [logback-2] ERROR ClassResetter - java.lang.NoClassDefFoundError: Could not initialize class org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 02:49:46.834 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.derby.iapi.types.SqlXmlUtil: org/apache/xml/utils/PrefixResolver
+* Permissions denied during test execution: 
+  - java.io.FilePermission: 
+         write /dev/random: 1
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 1
+  - java.net.SocketPermission: 
+         resolve java.lang.String@0000000016: 13
+         resolve java.lang.String@0000000017: 6
+         resolve java.lang.String@0000000128: 1
+         and other 13 cases of action/name for this exception class
+* Writing JUnit test case 'DBUtil_ESTest' to /home/ubuntu/termite/rmosa/tests/s1014/13_jdbacl/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: org.databene.jdbacl.SQLUtil
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/13_jdbacl/evosuite-files/evosuite.properties
+* Connecting to master process on port 7491
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 03:24:20.110 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 03:24:20.190 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 03:24:20.198 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 03:24:20.507 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 03:24:20.542 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 03:24:20.587 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 03:24:25.054 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.SQLType
+[MASTER] 03:24:26.687 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 03:24:26.687 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 03:24:26.689 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 03:24:26.690 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 03:24:26.691 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 03:24:26.691 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 03:24:26.692 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 03:24:26.714 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 03:24:26.728 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 03:24:32.357 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToDoubleFunction
+[MASTER] 03:24:32.357 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToIntFunction
+[MASTER] 03:24:32.358 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToLongFunction
+[MASTER] 03:24:35.295 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 03:24:38.619 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class org.databene.jdbacl.SQLUtil
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1014
+* Starting evolution
+[MASTER] 03:24:44.690 [logback-2] ERROR TestCluster - Failed to check cache for org.databene.jdbacl.model.CompositeDBObject<C> : Type points to itself
+[MASTER] 03:24:45.106 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.renderNumber(Ljava/io/StreamTokenizer;)Ljava/lang/String;: Line 468
+[MASTER] 03:24:45.107 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.renderNumber(Ljava/io/StreamTokenizer;)Ljava/lang/String;: Line 469
+[MASTER] 03:24:45.107 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.renderLong(J)Ljava/lang/String;: Line 487
+[MASTER] 03:24:45.107 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.renderLong(J)Ljava/lang/String;: Line 490
+[MASTER] 03:24:45.107 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.renderLong(J)Ljava/lang/String;: I5 Branch 84 IFLE L487 - true
+[MASTER] 03:24:45.107 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.renderNumber(Ljava/io/StreamTokenizer;)Ljava/lang/String;: I11 Branch 81 IFNE L468 - false
+[MASTER] 03:24:45.113 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 529: org.databene.jdbacl.SQLUtil.renderNumber(Ljava/io/StreamTokenizer;)Ljava/lang/String;:468 - InsertUnaryOp Negation of value
+[MASTER] 03:24:45.113 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 530: org.databene.jdbacl.SQLUtil.renderNumber(Ljava/io/StreamTokenizer;)Ljava/lang/String;:468 - InsertUnaryOp Negation of value
+[MASTER] 03:24:45.113 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 531: org.databene.jdbacl.SQLUtil.renderNumber(Ljava/io/StreamTokenizer;)Ljava/lang/String;:468 - ReplaceComparisonOperator != -> -1
+[MASTER] 03:24:45.113 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 534: org.databene.jdbacl.SQLUtil.renderNumber(Ljava/io/StreamTokenizer;)Ljava/lang/String;:469 - InsertUnaryOp Negation of value
+[MASTER] 03:24:45.113 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 558: org.databene.jdbacl.SQLUtil.renderLong(J)Ljava/lang/String;:487 - InsertUnaryOp Negation of value
+[MASTER] 03:24:45.113 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 559: org.databene.jdbacl.SQLUtil.renderLong(J)Ljava/lang/String;:487 - ReplaceConstant - 0 -> 1
+[MASTER] 03:24:45.113 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 560: org.databene.jdbacl.SQLUtil.renderLong(J)Ljava/lang/String;:487 - ReplaceConstant - 0 -> -1
+[MASTER] 03:24:45.113 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 563: org.databene.jdbacl.SQLUtil.renderLong(J)Ljava/lang/String;:487 - ReplaceComparisonOperator <= -> <
+[MASTER] 03:24:45.114 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 565: org.databene.jdbacl.SQLUtil.renderLong(J)Ljava/lang/String;:490 - ReplaceConstant - -  -> 
+[MASTER] 03:24:45.114 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 566: org.databene.jdbacl.SQLUtil.renderLong(J)Ljava/lang/String;:490 - InsertUnaryOp Negation of value
+[MASTER] 03:24:45.114 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: org.databene.jdbacl.SQLUtil.leftJoin(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:NonEmptyString
+[MASTER] 03:24:45.114 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: org.databene.jdbacl.SQLUtil.renderNumber(Ljava/io/StreamTokenizer;)Ljava/lang/String;:NonEmptyString
+[MASTER] 03:24:45.116 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.databene.jdbacl.SQLUtil.leftJoin(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
+[MASTER] 03:24:45.116 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.databene.jdbacl.SQLUtil.renderNumber(Ljava/io/StreamTokenizer;)Ljava/lang/String;
+[MASTER] 03:24:45.116 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.renderLong(J)Ljava/lang/String;: I5 Branch 84 IFLE L487 - true in context: 
+[MASTER] 03:24:45.117 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.renderNumber(Ljava/io/StreamTokenizer;)Ljava/lang/String;: I11 Branch 81 IFNE L468 - false in context: 
+[MASTER] 03:24:47.788 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.renderNumber(Ljava/io/StreamTokenizer;)Ljava/lang/String;: Line 467
+[MASTER] 03:24:47.790 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 528: org.databene.jdbacl.SQLUtil.renderNumber(Ljava/io/StreamTokenizer;)Ljava/lang/String;:467 - InsertUnaryOp Negation
+[MASTER] 03:24:47.790 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.databene.jdbacl.SQLUtil.renderNumber(Ljava/io/StreamTokenizer;)Ljava/lang/String;
+[MASTER] 03:25:30.662 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.mutatesStructure(Ljava/lang/String;)Ljava/lang/Boolean;: I14 Branch 28 IFEQ L243 - false in context: org.databene.jdbacl.SQLUtil:mutatesStructure(Ljava/lang/String;)Ljava/lang/Boolean;
+* Search finished after 125s and 190 generations, 85725 statements, best individual has fitness: 1424.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 90%
+* Total number of goals: 251
+* Number of covered goals: 226
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 89%
+* Total number of goals: 188
+* Number of covered goals: 168
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 46
+* Number of covered goals: 46
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 88%
+* Total number of goals: 595
+* Number of covered goals: 524
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 55%
+* Total number of goals: 94
+* Number of covered goals: 52
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 39
+* Number of covered goals: 39
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 39
+* Number of covered goals: 39
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 89%
+* Total number of goals: 188
+* Number of covered goals: 167
+* Generated 130 tests with total length 709
+* Resulting test suite's coverage: 88% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 64%
+* Compiling and checking tests
+[MASTER] 03:27:20.503 [logback-2] ERROR JUnitAnalyzer - Compilation failed on compilation units: [RegularFileObject[/tmp/EvoSuite_56_1575602840289/org/databene/jdbacl/SQLUtil_56_tmp__ESTest.java], RegularFileObject[/tmp/EvoSuite_56_1575602840289/org/databene/jdbacl/SQLUtil_56_tmp__ESTest_scaffolding.java]]
+[MASTER] 03:27:20.503 [logback-2] ERROR JUnitAnalyzer - Classpath: /home/ubuntu/termite/projects/13_jdbacl/jdbacl.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/connector-api-1.5.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/hsqldb-1.8.0.7.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/h2-1.2.136.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/contiperf-2.0.0.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/stringtemplate-3.2.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/antlr-runtime-3.3.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/derby-10.7.1.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/databene-webdecs-0.6.5.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/antlr-2.7.7.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/xml-apis-1.3.04.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/poi-3.5-beta6.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/logkit-1.0.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/jaybird-2.1.6.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/log4j-1.2.14.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/postgresql-8.4-701.jdbc4.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/servlet-api-2.3.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/xercesImpl-2.9.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/avalon-framework-4.1.3.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/validation-api-1.0.0.GA.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/slf4j-log4j12-1.5.8.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/commons-logging-1.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/databene-script-0.7.4.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/slf4j-api-1.5.8.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/databene-commons-0.5.13.jar:/home/ubuntu/termite/evosuite.jar:/home/ubuntu/termite/projects/13_jdbacl/jdbacl.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/connector-api-1.5.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/hsqldb-1.8.0.7.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/h2-1.2.136.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/contiperf-2.0.0.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/stringtemplate-3.2.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/antlr-runtime-3.3.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/derby-10.7.1.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/databene-webdecs-0.6.5.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/antlr-2.7.7.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/xml-apis-1.3.04.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/poi-3.5-beta6.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/logkit-1.0.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/jaybird-2.1.6.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/log4j-1.2.14.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/postgresql-8.4-701.jdbc4.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/servlet-api-2.3.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/xercesImpl-2.9.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/avalon-framework-4.1.3.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/validation-api-1.0.0.GA.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/slf4j-log4j12-1.5.8.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/commons-logging-1.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/databene-script-0.7.4.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/slf4j-api-1.5.8.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/databene-commons-0.5.13.jar
+[MASTER] 03:27:20.503 [logback-2] ERROR JUnitAnalyzer - evosuiteCP: /home/ubuntu/termite/evosuite.jar:/home/ubuntu/termite/projects/13_jdbacl/jdbacl.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/connector-api-1.5.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/hsqldb-1.8.0.7.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/h2-1.2.136.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/contiperf-2.0.0.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/stringtemplate-3.2.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/antlr-runtime-3.3.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/derby-10.7.1.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/databene-webdecs-0.6.5.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/antlr-2.7.7.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/xml-apis-1.3.04.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/poi-3.5-beta6.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/logkit-1.0.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/jaybird-2.1.6.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/log4j-1.2.14.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/postgresql-8.4-701.jdbc4.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/servlet-api-2.3.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/xercesImpl-2.9.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/avalon-framework-4.1.3.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/validation-api-1.0.0.GA.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/slf4j-log4j12-1.5.8.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/commons-logging-1.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/databene-script-0.7.4.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/slf4j-api-1.5.8.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/databene-commons-0.5.13.jar
+[MASTER] 03:27:20.507 [logback-2] ERROR JUnitAnalyzer - Diagnostic: cannot find symbol
+  symbol:   variable int0
+  location: class org.databene.jdbacl.SQLUtil_56_tmp__ESTest: 45
+[MASTER] 03:27:20.507 [logback-2] ERROR JUnitAnalyzer - Diagnostic: /tmp/EvoSuite_56_1575602840289/org/databene/jdbacl/SQLUtil_56_tmp__ESTest.java uses unchecked or unsafe operations.: -1
+[MASTER] 03:27:20.507 [logback-2] ERROR JUnitAnalyzer - Diagnostic: Recompile with -Xlint:unchecked for details.: -1
+[MASTER] 03:27:20.515 [logback-2] ERROR JUnitAnalyzer - RegularFileObject[/tmp/EvoSuite_56_1575602840289/org/databene/jdbacl/SQLUtil_56_tmp__ESTest.java]
+1: /*
+2:  * This file was automatically generated by EvoSuite
+3:  * Fri Dec 06 03:27:20 GMT 2019
+4:  */
+5: 
+6: package org.databene.jdbacl;
+7: 
+8: import org.junit.Test;
+9: import static org.junit.Assert.*;
+10: import static org.evosuite.shaded.org.mockito.Mockito.*;
+11: import org.apache.derby.iapi.store.raw.xact.RawTransaction;
+12: import org.databene.jdbacl.SQLUtil;
+13: import org.databene.jdbacl.model.CompositeDBObject;
+14: import org.databene.jdbacl.model.DBCheckConstraint;
+15: import org.databene.jdbacl.model.DBColumn;
+16: import org.databene.jdbacl.model.DBDataType;
+17: import org.databene.jdbacl.model.DBTable;
+18: import org.databene.jdbacl.model.DefaultDBColumn;
+19: import org.databene.jdbacl.model.TableContainer;
+20: import org.evosuite.runtime.EvoRunner;
+21: import org.evosuite.runtime.EvoRunnerParameters;
+22: import org.evosuite.runtime.ViolatedAssumptionAnswer;
+23: import org.junit.runner.RunWith;
+24: 
+25: @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, useJEE = true) 
+26: public class SQLUtil_56_tmp__ESTest extends SQLUtil_56_tmp__ESTest_scaffolding {
+27: 
+28:   /**
+29:   //Test case number: 0
+30:   /*Coverage entropy=0.3333333333333333
+31:   */
+32:   @Test(timeout = 4000)
+33:   public void test0()  throws Throwable  {
+34:       DBDataType dBDataType0 = DBDataType.getInstance((-2428), "drQop table");
+35:       Integer.remainderUnsigned((-2428), (-2428));
+36:       CompositeDBObject<DBCheckConstraint> compositeDBObject0 = (CompositeDBObject<DBCheckConstraint>) mock(CompositeDBObject.class, new ViolatedAssumptionAnswer());
+37:       TableContainer tableContainer0 = new TableContainer("a,bhv7Ze]wn;;nA", compositeDBObject0);
+38:       tableContainer0.getTable("a,bhv7Ze]wn;;nA");
+39:       Integer integer0 = new Integer(0);
+40:       DefaultDBColumn defaultDBColumn0 = new DefaultDBColumn("srI~^k$;g", (DBTable) null, dBDataType0, integer0, integer0);
+41:       defaultDBColumn0.setSize(integer0);
+42:       StringBuilder stringBuilder0 = new StringBuilder((CharSequence) "drQop table");
+43:       SQLUtil.renderColumnTypeWithSize((DBColumn) defaultDBColumn0, stringBuilder0);
+44:       Integer integer1 = RawTransaction.COMMIT;
+45:       assertTrue(integer1.equals((Object)int0));
+46:   }
+47: }
+RegularFileObject[/tmp/EvoSuite_56_1575602840289/org/databene/jdbacl/SQLUtil_56_tmp__ESTest.java]
+1: /**
+2:  * Scaffolding file used to store all the setups needed to run 
+3:  * tests automatically generated by EvoSuite
+4:  * Fri Dec 06 03:27:20 GMT 2019
+5:  */
+6: 
+7: package org.databene.jdbacl;
+8: 
+9: import org.evosuite.runtime.annotation.EvoSuiteClassExclude;
+10: import org.junit.BeforeClass;
+11: import org.junit.Before;
+12: import org.junit.After;
+13: import org.junit.AfterClass;
+14: import org.evosuite.runtime.sandbox.Sandbox;
+15: import org.evosuite.runtime.sandbox.Sandbox.SandboxMode;
+16: 
+17: import static org.evosuite.shaded.org.mockito.Mockito.*;
+18: @EvoSuiteClassExclude
+19: public class SQLUtil_56_tmp__ESTest_scaffolding {
+20: 
+21:   @org.junit.Rule 
+22:   public org.evosuite.runtime.vnet.NonFunctionalRequirementRule nfr = new org.evosuite.runtime.vnet.NonFunctionalRequirementRule();
+23: 
+24:   private static final java.util.Properties defaultProperties = (java.util.Properties) java.lang.System.getProperties().clone(); 
+25: 
+26:   private org.evosuite.runtime.thread.ThreadStopper threadStopper =  new org.evosuite.runtime.thread.ThreadStopper (org.evosuite.runtime.thread.KillSwitchHandler.getInstance(), 3000);
+27: 
+28: 
+29:   @BeforeClass 
+30:   public static void initEvoSuiteFramework() { 
+31:     org.evosuite.runtime.RuntimeSettings.className = "org.databene.jdbacl.SQLUtil"; 
+32:     org.evosuite.runtime.GuiSupport.initialize(); 
+33:     org.evosuite.runtime.RuntimeSettings.maxNumberOfThreads = 100; 
+34:     org.evosuite.runtime.RuntimeSettings.maxNumberOfIterationsPerLoop = 10000; 
+35:     org.evosuite.runtime.RuntimeSettings.mockSystemIn = true; 
+36:     org.evosuite.runtime.RuntimeSettings.sandboxMode = org.evosuite.runtime.sandbox.Sandbox.SandboxMode.RECOMMENDED; 
+37:     org.evosuite.runtime.sandbox.Sandbox.initializeSecurityManagerForSUT(); 
+38:     org.evosuite.runtime.classhandling.JDKClassResetter.init();
+39:     setSystemProperties();
+40:     initializeClasses();
+41:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+42:     try { initMocksToAvoidTimeoutsInTheTests(); } catch(ClassNotFoundException e) {} 
+43:   } 
+44: 
+45:   @AfterClass 
+46:   public static void clearEvoSuiteFramework(){ 
+47:     Sandbox.resetDefaultSecurityManager(); 
+48:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+49:   } 
+50: 
+51:   @Before 
+52:   public void initTestCase(){ 
+53:     threadStopper.storeCurrentThreads();
+54:     threadStopper.startRecordingTime();
+55:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().initHandler(); 
+56:     org.evosuite.runtime.sandbox.Sandbox.goingToExecuteSUTCode(); 
+57:     setSystemProperties(); 
+58:     org.evosuite.runtime.GuiSupport.setHeadless(); 
+59:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+60:     org.evosuite.runtime.agent.InstrumentingAgent.activate(); 
+61:   } 
+62: 
+63:   @After 
+64:   public void doneWithTestCase(){ 
+65:     threadStopper.killAndJoinClientThreads();
+66:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().safeExecuteAddedHooks(); 
+67:     org.evosuite.runtime.classhandling.JDKClassResetter.reset(); 
+68:     resetClasses(); 
+69:     org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(); 
+70:     org.evosuite.runtime.agent.InstrumentingAgent.deactivate(); 
+71:     org.evosuite.runtime.GuiSupport.restoreHeadlessMode(); 
+72:   } 
+73: 
+74:   public static void setSystemProperties() {
+75:  
+76:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+77:     java.lang.System.setProperty("file.encoding", "UTF-8"); 
+78:     java.lang.System.setProperty("java.awt.headless", "true"); 
+79:     java.lang.System.setProperty("java.io.tmpdir", "/tmp"); 
+80:     java.lang.System.setProperty("user.country", "US"); 
+81:     java.lang.System.setProperty("user.dir", "/home/ubuntu/termite/projects/13_jdbacl"); 
+82:     java.lang.System.setProperty("user.home", "/home/ubuntu"); 
+83:     java.lang.System.setProperty("user.language", "en"); 
+84:     java.lang.System.setProperty("user.name", "ubuntu"); 
+85:     java.lang.System.setProperty("user.timezone", "Etc/UTC"); 
+86:     java.lang.System.setProperty("sun.management.compiler", "HotSpot 64-Bit Tiered Compilers"); 
+87:   }
+88: 
+89:   private static void initializeClasses() {
+90:     org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(SQLUtil_56_tmp__ESTest_scaffolding.class.getClassLoader() ,
+91:       "org.apache.derby.iapi.sql.compile.OptimizableList",
+92:       "org.apache.derby.iapi.sql.dictionary.SequenceDescriptor",
+93:       "org.databene.commons.version.StringVersionNumberComponent",
+94:       "org.databene.jdbacl.model.AbstractDBObject",
+95:       "org.apache.derby.iapi.store.access.TransactionController",
+96:       "org.apache.derby.iapi.services.locks.Limit",
+97:       "org.databene.commons.CollectionUtil",
+98:       "org.apache.derby.iapi.types.RowLocation",
+99:       "org.hsqldb.rowio.RowOutputBinary",
+100:       "org.databene.script.Expression",
+101:       "org.apache.derby.catalog.types.DecimalTypeIdImpl",
+102:       "org.apache.derby.iapi.services.compiler.MethodBuilder",
+103:       "org.databene.commons.version.DateVersionNumberComponent",
+104:       "org.databene.jdbacl.model.DBRow",
+105:       "org.hsqldb.lib.HsqlByteArrayOutputStream",
+106:       "org.apache.derby.iapi.sql.dictionary.SubConstraintDescriptor",
+107:       "org.apache.derby.catalog.TypeDescriptor",
+108:       "org.databene.jdbacl.sql.parser.SQLParser$equality_expression_return",
+109:       "org.apache.derby.impl.sql.execute.GenericConstantActionFactory",
+110:       "org.apache.derby.impl.sql.catalog.SYSTRIGGERSRowFactory",
+111:       "org.apache.derby.iapi.sql.dictionary.TableDescriptor",
+112:       "org.apache.derby.impl.sql.catalog.SYSFILESRowFactory",
+113:       "org.apache.derby.iapi.services.property.PersistentSet",
+114:       "org.apache.derby.iapi.sql.dictionary.IndexRowGenerator",
+115:       "org.apache.derby.iapi.sql.dictionary.PermDescriptor",
+116:       "org.apache.derby.iapi.sql.dictionary.PrivilegedSQLObject",
+117:       "org.apache.derby.impl.sql.catalog.SYSSCHEMASRowFactory",
+118:       "org.apache.derby.iapi.sql.dictionary.RoleClosureIterator",
+119:       "org.apache.derby.vti.VTICosting",
+120:       "org.apache.derby.impl.sql.catalog.SYSCOLPERMSRowFactory",
+121:       "org.apache.derby.iapi.types.TypeId",
+122:       "org.databene.jdbacl.model.DBCheckConstraint",
+123:       "org.apache.derby.impl.sql.catalog.PermissionsCatalogRowFactory",
+124:       "org.apache.derby.impl.sql.compile.FromList",
+125:       "org.hsqldb.Row",
+126:       "org.databene.jdbacl.sql.parser.SQLParser$exclusive_or_expression_return",
+127:       "org.apache.derby.iapi.sql.compile.Visitor",
+128:       "org.apache.derby.catalog.types.TypeDescriptorImpl",
+129:       "org.apache.derby.impl.sql.compile.GroupByList",
+130:       "org.apache.derby.impl.sql.catalog.SYSSEQUENCESRowFactory",
+131:       "org.apache.derby.iapi.services.i18n.LocaleFinder",
+132:       "org.hsqldb.Table",
+133:       "org.databene.jdbacl.model.MultiColumnObject",
+134:       "org.apache.derby.iapi.sql.dictionary.DataDictionary",
+135:       "org.databene.jdbacl.sql.parser.SQLParser$commands_return",
+136:       "org.antlr.runtime.tree.CommonTree",
+137:       "org.databene.jdbacl.sql.parser.SQLParser$primary_return",
+138:       "org.antlr.runtime.MismatchedNotSetException",
+139:       "org.apache.derby.impl.sql.compile.ResultColumn",
+140:       "org.apache.derby.iapi.sql.compile.OptimizablePredicateList",
+141:       "org.apache.derby.iapi.services.context.Context",
+142:       "org.apache.derby.iapi.types.Orderable",
+143:       "org.apache.derby.iapi.sql.compile.Optimizable",
+144:       "org.apache.derby.impl.db.BasicDatabase",
+145:       "org.apache.derby.impl.sql.compile.LikeEscapeOperatorNode",
+146:       "org.firebirdsql.jca.FBConnectionRequestInfo",
+147:       "org.apache.derby.impl.sql.catalog.DataDictionaryImpl",
+148:       "org.apache.derby.impl.sql.compile.ExpressionClassBuilder",
+149:       "org.databene.jdbacl.model.DBUniqueConstraint",
+150:       "org.firebirdsql.gds.impl.GDSType",
+151:       "org.apache.derby.impl.sql.compile.QueryTreeNodeVector",
+152:       "org.databene.jdbacl.sql.parser.ANTLRNoCaseStringStream",
+153:       "org.databene.jdbacl.model.TableHolder",
+154:       "org.apache.derby.iapi.sql.execute.ExecIndexRow",
+155:       "org.antlr.runtime.CharStream",
+156:       "org.apache.derby.impl.sql.compile.FromVTI",
+157:       "org.databene.jdbacl.sql.parser.SQLLexer",
+158:       "org.apache.derby.catalog.types.BaseTypeIdImpl",
+159:       "org.hsqldb.persist.CachedObject",
+160:       "org.apache.derby.iapi.sql.dictionary.FileInfoDescriptor",
+161:       "org.databene.jdbacl.model.DBDataType$TypeDescriptor",
+162:       "org.databene.jdbacl.model.TableContainer",
+163:       "org.apache.derby.iapi.sql.dictionary.ColumnDescriptor",
+164:       "org.apache.derby.impl.sql.catalog.SYSPERMSRowFactory",
+165:       "org.databene.commons.Converter",
+166:       "org.databene.jdbacl.model.DBForeignKeyConstraint",
+167:       "org.apache.derby.impl.sql.catalog.SYSTABLESRowFactory",
+168:       "org.apache.derby.iapi.services.loader.ClassInspector",
+169:       "org.databene.commons.converter.ToStringConverter",
+170:       "org.apache.derby.iapi.sql.execute.ExecRow",
+171:       "org.apache.derby.impl.sql.compile.InsertNode",
+172:       "org.apache.derby.iapi.sql.compile.ExpressionClassBuilderInterface",
+173:       "org.apache.derby.iapi.sql.dictionary.IndexLister",
+174:       "org.antlr.runtime.Lexer",
+175:       "org.apache.derby.impl.sql.catalog.SYSCOLUMNSRowFactory",
+176:       "org.apache.derby.iapi.services.locks.Lockable",
+177:       "org.apache.derby.impl.sql.catalog.SYSVIEWSRowFactory",
+178:       "org.apache.derby.impl.sql.catalog.SYSCONGLOMERATESRowFactory",
+179:       "org.apache.derby.impl.sql.compile.FromBaseTable",
+180:       "org.antlr.runtime.MissingTokenException",
+181:       "org.apache.derby.iapi.sql.compile.RowOrdering",
+182:       "org.apache.derby.iapi.sql.dictionary.DependencyDescriptor",
+183:       "org.firebirdsql.jdbc.AbstractConnection",
+184:       "org.apache.derby.iapi.sql.compile.Visitable",
+185:       "org.apache.derby.iapi.sql.ResultColumnDescriptor",
+186:       "org.antlr.runtime.EarlyExitException",
+187:       "org.apache.derby.iapi.error.StandardException",
+188:       "org.apache.derby.impl.sql.catalog.SYSSTATISTICSRowFactory",
+189:       "org.databene.jdbacl.model.FKChangeRule",
+190:       "org.apache.derby.iapi.services.io.Storable",
+191:       "org.apache.derby.iapi.store.raw.xact.RawTransaction",
+192:       "org.apache.derby.catalog.Dependable",
+193:       "org.apache.derby.iapi.sql.compile.NodeFactory",
+194:       "org.apache.derby.iapi.services.property.PropertySetCallback",
+195:       "org.antlr.runtime.Token",
+196:       "org.apache.derby.impl.sql.compile.PredicateList",
+197:       "org.apache.derby.iapi.sql.dictionary.DataDescriptorGenerator",
+198:       "org.firebirdsql.gds.impl.GDSHelper",
+199:       "org.apache.derby.iapi.sql.compile.JoinStrategy",
+200:       "org.antlr.runtime.Parser",
+201:       "org.databene.jdbacl.model.DBObject",
+202:       "org.apache.derby.impl.sql.catalog.SYSDUMMY1RowFactory",
+203:       "org.hsqldb.rowio.RowOutputInterface",
+204:       "org.databene.commons.AssertionError",
+205:       "org.apache.derby.iapi.services.io.StreamStorable",
+206:       "org.apache.derby.impl.sql.catalog.SYSCONSTRAINTSRowFactory",
+207:       "org.hsqldb.lib.FileAccess",
+208:       "org.apache.derby.impl.sql.catalog.TabInfoImpl",
+209:       "org.antlr.runtime.tree.RewriteRuleElementStream",
+210:       "org.firebirdsql.gds.impl.DatabaseParameterBufferExtension",
+211:       "org.databene.jdbacl.sql.ColumnExpression",
+212:       "org.apache.derby.impl.sql.compile.FromTable",
+213:       "org.apache.derby.impl.sql.compile.DMLStatementNode",
+214:       "org.apache.derby.impl.sql.compile.DMLModStatementNode",
+215:       "org.apache.derby.iapi.sql.compile.Optimizer",
+216:       "org.apache.derby.impl.sql.compile.QueryTreeNode",
+217:       "org.apache.derby.impl.sql.compile.OrderByList",
+218:       "org.apache.derby.iapi.types.DataValueFactory",
+219:       "org.apache.derby.iapi.sql.conn.LanguageConnectionContext",
+220:       "org.antlr.runtime.NoViableAltException",
+221:       "org.antlr.runtime.RecognizerSharedState",
+222:       "org.antlr.runtime.CommonTokenStream",
+223:       "org.apache.derby.impl.sql.catalog.SYSFOREIGNKEYSRowFactory",
+224:       "org.databene.commons.OrderedSet",
+225:       "org.antlr.runtime.RuleReturnScope",
+226:       "org.apache.derby.iapi.types.StringDataValue",
+227:       "org.apache.derby.iapi.sql.dictionary.RoleGrantDescriptor",
+228:       "org.firebirdsql.gds.GDSException",
+229:       "org.databene.commons.depend.Dependent",
+230:       "org.apache.derby.iapi.types.DataTypeDescriptor",
+231:       "org.databene.jdbacl.model.DBColumn",
+232:       "org.databene.jdbacl.sql.parser.SQLParser$unary_expression_return",
+233:       "org.apache.derby.iapi.store.access.StoreCostController",
+234:       "org.hsqldb.lib.FileAccess$FileSync",
+235:       "org.antlr.runtime.tree.RewriteRuleSubtreeStream",
+236:       "org.databene.jdbacl.model.ContainerComponent",
+237:       "org.apache.derby.vti.VTIEnvironment",
+238:       "org.databene.jdbacl.model.DBPackage",
+239:       "org.databene.jdbacl.sql.SQLParserUtil",
+240:       "org.apache.derby.impl.sql.catalog.SYSTABLEPERMSRowFactory",
+241:       "org.apache.derby.impl.sql.catalog.SYSROLESRowFactory",
+242:       "org.apache.derby.iapi.store.access.StoreCostResult",
+243:       "org.apache.derby.io.StorageFile",
+244:       "org.apache.derby.iapi.sql.dictionary.UniqueSQLObjectDescriptor",
+245:       "org.databene.jdbacl.SQLUtil",
+246:       "org.apache.derby.iapi.sql.depend.Provider",
+247:       "org.apache.derby.iapi.services.monitor.ModuleControl",
+248:       "org.hsqldb.BaseTable",
+249:       "org.databene.jdbacl.model.CompositeDBObject",
+250:       "org.apache.derby.catalog.types.RowMultiSetImpl",
+251:       "org.apache.derby.iapi.services.io.FormatableBitSet",
+252:       "org.apache.derby.iapi.sql.dictionary.ConglomerateDescriptor",
+253:       "org.apache.derby.iapi.sql.dictionary.GenericDescriptorList",
+254:       "org.databene.jdbacl.sql.parser.SQLParser$value_return",
+255:       "org.apache.derby.iapi.store.access.ConglomPropertyQueryable",
+256:       "org.firebirdsql.jdbc.FBConnectionProperties",
+257:       "org.apache.derby.iapi.util.DoubleProperties",
+258:       "org.antlr.runtime.DFA",
+259:       "org.antlr.runtime.tree.RewriteEmptyStreamException",
+260:       "org.databene.commons.converter.FormatHolder",
+261:       "org.apache.derby.iapi.sql.dictionary.SPSDescriptor",
+262:       "org.hsqldb.lib.FileUtil",
+263:       "org.apache.derby.iapi.store.raw.Transaction",
+264:       "org.apache.derby.iapi.sql.dictionary.SystemColumn",
+265:       "org.apache.derby.catalog.IndexDescriptor",
+266:       "org.apache.derby.catalog.DependableFinder",
+267:       "org.antlr.runtime.MismatchedRangeException",
+268:       "org.apache.derby.iapi.sql.dictionary.RoutinePermsDescriptor",
+269:       "org.apache.derby.iapi.sql.dictionary.UniqueTupleDescriptor",
+270:       "org.firebirdsql.jdbc.field.FieldDataProvider",
+271:       "org.apache.derby.diag.ErrorMessages",
+272:       "org.apache.derby.impl.sql.compile.ActivationClassBuilder",
+273:       "org.databene.jdbacl.sql.parser.SQLParser",
+274:       "org.databene.jdbacl.model.DBNotNullConstraint",
+275:       "org.databene.jdbacl.model.DBDataType",
+276:       "org.apache.derby.iapi.sql.execute.ConstantAction",
+277:       "org.firebirdsql.jca.FBTpb",
+278:       "org.apache.derby.impl.sql.compile.ConstantNode",
+279:       "org.firebirdsql.jca.FBIncorrectXidException",
+280:       "org.apache.derby.iapi.services.io.DynamicByteArrayOutputStream",
+281:       "org.apache.derby.iapi.sql.dictionary.DefaultDescriptor",
+282:       "org.databene.jdbacl.model.TableContainerSupport",
+283:       "org.antlr.runtime.tree.CommonTreeAdaptor",
+284:       "org.hsqldb.CachedRow",
+285:       "org.apache.derby.catalog.types.UserDefinedTypeIdImpl",
+286:       "org.apache.derby.impl.sql.catalog.SYSSTATEMENTSRowFactory",
+287:       "org.antlr.runtime.UnwantedTokenException",
+288:       "org.databene.jdbacl.model.DBTable",
+289:       "org.databene.commons.bean.HashCodeBuilder",
+290:       "org.apache.derby.iapi.sql.compile.CompilerContext",
+291:       "org.databene.commons.StringUtil",
+292:       "org.apache.derby.impl.sql.catalog.SYSDEPENDSRowFactory",
+293:       "org.antlr.runtime.tree.TreeAdaptor",
+294:       "org.apache.derby.iapi.store.access.ConglomerateController",
+295:       "org.databene.jdbacl.sql.parser.SQLParser$expression_return",
+296:       "org.apache.derby.catalog.UUID",
+297:       "org.apache.derby.iapi.sql.dictionary.TupleDescriptor",
+298:       "org.databene.jdbacl.sql.parser.SQLParser$relational_expression_return",
+299:       "org.databene.commons.Named",
+300:       "org.apache.derby.impl.db.SlaveDatabase",
+301:       "org.antlr.runtime.CharStreamState",
+302:       "org.databene.jdbacl.NameSpec",
+303:       "org.apache.derby.iapi.sql.dictionary.ConstraintDescriptor",
+304:       "org.apache.derby.iapi.sql.compile.OptimizablePredicate",
+305:       "org.apache.derby.impl.sql.catalog.SYSALIASESRowFactory",
+306:       "org.apache.derby.iapi.sql.dictionary.ColumnDescriptorList",
+307:       "org.databene.jdbacl.sql.parser.SQLParser$null_comparison_return",
+308:       "org.apache.derby.impl.sql.compile.ValueNode",
+309:       "org.firebirdsql.gds.impl.GDSHelper$GDSHelperErrorListener",
+310:       "org.databene.commons.Parser",
+311:       "org.hsqldb.rowio.RowOutputBase",
+312:       "org.apache.derby.impl.store.raw.xact.Xact",
+313:       "org.apache.derby.iapi.types.DataType",
+314:       "org.databene.jdbacl.model.DBSequence",
+315:       "org.apache.derby.iapi.services.daemon.Serviceable",
+316:       "org.apache.derby.impl.sql.GenericColumnDescriptor",
+317:       "org.apache.derby.iapi.services.io.Formatable",
+318:       "org.apache.derby.iapi.sql.execute.ScanQualifier",
+319:       "org.apache.derby.impl.sql.catalog.SYSCHECKSRowFactory",
+320:       "org.antlr.runtime.tree.BaseTree",
+321:       "org.apache.derby.iapi.sql.dictionary.ConglomerateDescriptorList",
+322:       "org.databene.commons.ThreadAware",
+323:       "org.apache.derby.iapi.sql.dictionary.ReferencedKeyConstraintDescriptor",
+324:       "org.apache.derby.iapi.sql.depend.DependencyManager",
+325:       "org.databene.commons.version.VersionNumber",
+326:       "org.apache.derby.iapi.util.JBitSet",
+327:       "org.databene.jdbacl.model.DBIndex",
+328:       "org.firebirdsql.jca.FBManagedConnectionFactory",
+329:       "org.databene.script.expression.ConstantExpression",
+330:       "org.databene.jdbacl.sql.parser.SQLParser$name_return",
+331:       "org.antlr.runtime.BufferedTokenStream",
+332:       "org.apache.derby.iapi.sql.dictionary.KeyConstraintDescriptor",
+333:       "org.databene.jdbacl.model.DBConstraint",
+334:       "org.databene.jdbacl.model.DefaultDBColumn",
+335:       "org.apache.derby.impl.sql.catalog.TableKey",
+336:       "org.apache.derby.iapi.db.Database",
+337:       "org.apache.derby.iapi.sql.dictionary.TriggerDescriptor",
+338:       "org.apache.derby.impl.sql.catalog.SYSROUTINEPERMSRowFactory",
+339:       "org.antlr.runtime.BitSet",
+340:       "org.databene.jdbacl.model.DBTableComponent",
+341:       "org.apache.derby.iapi.store.access.Qualifier",
+342:       "org.apache.derby.impl.sql.compile.StatementNode",
+343:       "org.hsqldb.store.BaseHashMap",
+344:       "org.hsqldb.types.JavaObject",
+345:       "org.apache.derby.iapi.types.SQLChar",
+346:       "org.databene.jdbacl.model.DBProcedure",
+347:       "org.apache.derby.impl.store.raw.xact.InternalXact",
+348:       "org.apache.derby.iapi.sql.dictionary.ViewDescriptor",
+349:       "org.apache.derby.iapi.jdbc.AuthenticationService",
+350:       "org.databene.commons.collection.ListBasedSet",
+351:       "org.apache.derby.iapi.sql.dictionary.AliasDescriptor",
+352:       "org.apache.derby.iapi.types.VariableSizeDataValue",
+353:       "org.databene.jdbacl.model.DBTrigger",
+354:       "org.databene.jdbacl.sql.parser.SQLParser$in_expression_return",
+355:       "org.antlr.runtime.tree.BaseTreeAdaptor",
+356:       "org.apache.derby.iapi.services.locks.LockFactory",
+357:       "org.apache.derby.iapi.services.monitor.ModuleSupportable",
+358:       "org.apache.derby.iapi.services.locks.LockOwner",
+359:       "org.apache.derby.impl.sql.compile.OrderedColumnList",
+360:       "org.antlr.runtime.tree.RewriteRuleTokenStream",
+361:       "org.apache.derby.impl.sql.compile.OptimizerImpl",
+362:       "org.apache.derby.iapi.sql.dictionary.PermissionsDescriptor",
+363:       "org.apache.derby.iapi.sql.dictionary.SubKeyConstraintDescriptor",
+364:       "org.antlr.runtime.CommonToken",
+365:       "org.firebirdsql.jca.FBResourceException",
+366:       "org.databene.jdbacl.model.DBRowIterator",
+367:       "org.hsqldb.types.Binary",
+368:       "org.apache.derby.impl.sql.compile.SubqueryList",
+369:       "org.hsqldb.lib.HashMap",
+370:       "org.apache.derby.iapi.services.cache.Cacheable",
+371:       "org.databene.jdbacl.sql.parser.SQLParser$between_expression_return",
+372:       "org.databene.commons.version.NumberVersionNumberComponent",
+373:       "org.firebirdsql.jdbc.FirebirdConnectionProperties",
+374:       "org.databene.commons.Capitalization",
+375:       "org.databene.commons.Assert",
+376:       "org.apache.derby.iapi.services.cache.CacheableFactory",
+377:       "org.apache.derby.iapi.sql.dictionary.CatalogRowFactory",
+378:       "org.databene.commons.version.VersionNumberParser",
+379:       "org.antlr.runtime.RecognitionException",
+380:       "org.apache.derby.impl.sql.compile.Predicate",
+381:       "org.apache.derby.iapi.sql.dictionary.TablePermsDescriptor",
+382:       "org.apache.derby.iapi.services.uuid.UUIDFactory",
+383:       "org.apache.derby.impl.sql.catalog.SYSKEYSRowFactory",
+384:       "org.apache.derby.catalog.AliasInfo",
+385:       "org.apache.derby.iapi.sql.depend.Dependent",
+386:       "org.firebirdsql.gds.GDS",
+387:       "org.apache.derby.iapi.sql.Row",
+388:       "org.apache.derby.iapi.sql.dictionary.SchemaDescriptor",
+389:       "org.apache.derby.iapi.sql.compile.TypeCompiler",
+390:       "org.databene.commons.Patterns",
+391:       "org.apache.derby.impl.sql.compile.TableName",
+392:       "org.databene.commons.NullSafeComparator",
+393:       "org.databene.jdbacl.model.DefaultDatabase",
+394:       "org.databene.commons.ParseException",
+395:       "org.apache.derby.iapi.services.loader.JarReader",
+396:       "org.antlr.runtime.TokenSource",
+397:       "org.apache.derby.iapi.sql.dictionary.ForeignKeyConstraintDescriptor",
+398:       "org.databene.commons.HeavyweightIterator",
+399:       "org.firebirdsql.jdbc.FirebirdConnection",
+400:       "org.databene.jdbacl.sql.parser.SQLParser$and_expression_return",
+401:       "org.databene.jdbacl.model.AbstractDBTableComponent",
+402:       "org.apache.derby.iapi.types.DataValueDescriptor",
+403:       "org.apache.derby.impl.sql.compile.ResultColumnList",
+404:       "org.databene.jdbacl.sql.parser.SQLParser$multiplicative_expression_return",
+405:       "org.apache.derby.iapi.services.context.ContextManager",
+406:       "org.apache.derby.iapi.sql.compile.RequiredRowOrdering",
+407:       "org.databene.jdbacl.sql.parser.SQLParser$additive_expression_return",
+408:       "org.apache.derby.database.Database",
+409:       "org.databene.jdbacl.sql.parser.TextHolder",
+410:       "org.apache.derby.iapi.services.io.TypedFormat",
+411:       "org.databene.commons.version.VersionNumberComponent",
+412:       "org.apache.derby.vti.VTITemplate",
+413:       "org.databene.commons.collection.OrderedNameMap",
+414:       "org.firebirdsql.gds.DatabaseParameterBuffer",
+415:       "org.databene.jdbacl.sql.parser.SQLLexer$DFA9",
+416:       "org.antlr.runtime.TokenStream",
+417:       "org.antlr.runtime.MismatchedTreeNodeException",
+418:       "org.antlr.runtime.ParserRuleReturnScope",
+419:       "org.apache.derby.iapi.types.NumberDataValue",
+420:       "org.databene.commons.ArrayFormat",
+421:       "org.apache.derby.iapi.services.loader.ClassFactory",
+422:       "org.antlr.runtime.ANTLRStringStream",
+423:       "org.firebirdsql.jca.FBManagedConnection",
+424:       "org.databene.commons.SyntaxError",
+425:       "org.antlr.runtime.IntStream",
+426:       "org.apache.derby.iapi.sql.execute.ExecutionFactory",
+427:       "org.apache.derby.iapi.sql.dictionary.ConstraintDescriptorList",
+428:       "org.databene.commons.OrderedMap",
+429:       "org.antlr.runtime.tree.RewriteCardinalityException",
+430:       "org.firebirdsql.gds.IscStmtHandle",
+431:       "org.apache.derby.iapi.sql.dictionary.ColPermsDescriptor",
+432:       "org.apache.derby.iapi.store.access.RowCountable",
+433:       "org.databene.jdbacl.model.Database",
+434:       "org.hsqldb.lib.HashMappedList",
+435:       "org.apache.derby.impl.jdbc.EmbedResultSetMetaData",
+436:       "org.databene.jdbacl.model.AbstractCompositeDBObject",
+437:       "org.databene.jdbacl.model.DBCatalog",
+438:       "org.apache.derby.impl.sql.compile.ResultSetNode",
+439:       "org.apache.derby.impl.sql.compile.BooleanConstantNode",
+440:       "org.apache.derby.iapi.types.ConcatableDataValue",
+441:       "org.apache.derby.iapi.sql.execute.TupleFilter",
+442:       "org.antlr.runtime.MismatchedSetException",
+443:       "org.databene.jdbacl.model.DBPrimaryKeyConstraint",
+444:       "org.antlr.runtime.MismatchedTokenException",
+445:       "org.databene.jdbacl.model.SequenceHolder",
+446:       "org.apache.derby.iapi.sql.compile.AccessPath",
+447:       "org.apache.derby.impl.sql.compile.ColumnReference",
+448:       "org.databene.jdbacl.sql.parser.SQLParser$DFA2",
+449:       "org.databene.jdbacl.model.DBUniqueIndex",
+450:       "org.firebirdsql.gds.TransactionParameterBuffer",
+451:       "org.apache.derby.iapi.sql.ResultDescription",
+452:       "org.apache.derby.iapi.services.cache.CacheManager",
+453:       "org.databene.jdbacl.model.DefaultDBTable",
+454:       "org.databene.commons.iterator.TableRowIterator",
+455:       "org.antlr.runtime.tree.Tree",
+456:       "org.apache.derby.iapi.sql.compile.CostEstimate",
+457:       "org.databene.commons.ObjectNotFoundException",
+458:       "org.firebirdsql.jca.FBXAException",
+459:       "org.apache.derby.iapi.sql.dictionary.SubCheckConstraintDescriptor",
+460:       "org.antlr.runtime.BaseRecognizer",
+461:       "org.databene.jdbacl.model.DBSchema",
+462:       "org.apache.derby.impl.sql.compile.TernaryOperatorNode"
+463:     );
+464:   } 
+465:   private static void initMocksToAvoidTimeoutsInTheTests() throws ClassNotFoundException { 
+466:     mock(Class.forName("org.databene.jdbacl.model.CompositeDBObject", false, SQLUtil_56_tmp__ESTest_scaffolding.class.getClassLoader()));
+467:   }
+468: 
+469:   private static void resetClasses() {
+470:     org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(SQLUtil_56_tmp__ESTest_scaffolding.class.getClassLoader()); 
+471: 
+472:     org.evosuite.runtime.classhandling.ClassStateSupport.resetClasses(
+473:       "org.databene.commons.CollectionUtil",
+474:       "org.databene.jdbacl.SQLUtil",
+475:       "org.databene.jdbacl.NameSpec",
+476:       "org.databene.commons.converter.FormatHolder",
+477:       "org.databene.commons.Capitalization",
+478:       "org.databene.commons.converter.ToStringConverter",
+479:       "org.databene.commons.ArrayFormat",
+480:       "org.databene.commons.StringUtil",
+481:       "org.databene.jdbacl.model.AbstractDBObject",
+482:       "org.databene.jdbacl.model.AbstractCompositeDBObject",
+483:       "org.databene.jdbacl.model.DefaultDBTable",
+484:       "org.databene.commons.OrderedMap",
+485:       "org.databene.commons.collection.OrderedNameMap",
+486:       "org.databene.commons.OrderedSet",
+487:       "org.databene.commons.collection.ListBasedSet",
+488:       "org.databene.jdbacl.model.AbstractDBTableComponent",
+489:       "org.databene.jdbacl.model.DBConstraint",
+490:       "org.databene.jdbacl.model.DBUniqueConstraint",
+491:       "org.databene.jdbacl.model.DBPrimaryKeyConstraint",
+492:       "org.databene.commons.version.VersionNumberComponent",
+493:       "org.databene.commons.version.NumberVersionNumberComponent",
+494:       "org.databene.commons.Parser",
+495:       "org.databene.commons.version.VersionNumberParser",
+496:       "org.databene.commons.version.VersionNumber",
+497:       "org.databene.jdbacl.model.DefaultDatabase",
+498:       "org.databene.commons.ObjectNotFoundException",
+499:       "org.databene.jdbacl.model.DBIndex",
+500:       "org.databene.jdbacl.model.DBUniqueIndex",
+501:       "org.h2.util.Tool",
+502:       "org.h2.tools.Recover",
+503:       "org.h2.util.IOUtils",
+504:       "org.h2.util.New",
+505:       "org.h2.store.fs.FileSystem",
+506:       "org.h2.store.fs.FileSystemDisk",
+507:       "org.databene.jdbacl.model.DBCheckConstraint",
+508:       "org.antlr.runtime.ANTLRStringStream",
+509:       "org.databene.jdbacl.sql.parser.ANTLRNoCaseStringStream",
+510:       "org.databene.jdbacl.sql.SQLParserUtil",
+511:       "org.antlr.runtime.BaseRecognizer",
+512:       "org.antlr.runtime.Lexer",
+513:       "org.antlr.runtime.DFA",
+514:       "org.databene.jdbacl.sql.parser.SQLLexer",
+515:       "org.antlr.runtime.RecognizerSharedState",
+516:       "org.databene.jdbacl.sql.parser.SQLLexer$DFA9",
+517:       "org.antlr.runtime.BufferedTokenStream",
+518:       "org.antlr.runtime.CommonTokenStream",
+519:       "org.antlr.runtime.Parser",
+520:       "org.antlr.runtime.BitSet",
+521:       "org.databene.jdbacl.sql.parser.SQLParser",
+522:       "org.antlr.runtime.tree.BaseTreeAdaptor",
+523:       "org.antlr.runtime.tree.CommonTreeAdaptor",
+524:       "org.databene.jdbacl.sql.parser.SQLParser$DFA2",
+525:       "org.antlr.runtime.RuleReturnScope",
+526:       "org.antlr.runtime.ParserRuleReturnScope",
+527:       "org.databene.jdbacl.sql.parser.SQLParser$expression_return",
+528:       "org.antlr.runtime.CharStreamState",
+529:       "org.antlr.runtime.CommonToken",
+530:       "org.antlr.runtime.tree.BaseTree",
+531:       "org.antlr.runtime.tree.CommonTree",
+532:       "org.databene.jdbacl.sql.parser.SQLParser$and_expression_return",
+533:       "org.databene.jdbacl.sql.parser.SQLParser$exclusive_or_expression_return",
+534:       "org.databene.jdbacl.sql.parser.SQLParser$equality_expression_return",
+535:       "org.databene.jdbacl.sql.parser.SQLParser$null_comparison_return",
+536:       "org.databene.jdbacl.sql.parser.SQLParser$relational_expression_return",
+537:       "org.databene.jdbacl.sql.parser.SQLParser$in_expression_return",
+538:       "org.databene.jdbacl.sql.parser.SQLParser$between_expression_return",
+539:       "org.databene.jdbacl.sql.parser.SQLParser$additive_expression_return",
+540:       "org.databene.jdbacl.sql.parser.SQLParser$multiplicative_expression_return",
+541:       "org.databene.jdbacl.sql.parser.SQLParser$unary_expression_return",
+542:       "org.databene.jdbacl.sql.parser.SQLParser$primary_return",
+543:       "org.antlr.runtime.tree.RewriteRuleElementStream",
+544:       "org.antlr.runtime.tree.RewriteRuleTokenStream",
+545:       "org.antlr.runtime.tree.RewriteRuleSubtreeStream",
+546:       "org.antlr.runtime.Token",
+547:       "org.databene.jdbacl.sql.parser.SQLParser$value_return",
+548:       "org.databene.jdbacl.sql.parser.SQLParser$name_return",
+549:       "org.databene.script.expression.ConstantExpression",
+550:       "org.databene.jdbacl.sql.ColumnExpression",
+551:       "org.databene.jdbacl.model.TableContainer",
+552:       "org.databene.jdbacl.model.TableContainerSupport",
+553:       "org.apache.derby.iapi.sql.dictionary.GenericDescriptorList",
+554:       "org.databene.jdbacl.model.DBCatalog",
+555:       "org.databene.jdbacl.model.DBForeignKeyConstraint",
+556:       "org.databene.commons.Assert",
+557:       "org.databene.jdbacl.model.FKChangeRule",
+558:       "org.databene.commons.bean.HashCodeBuilder",
+559:       "org.databene.jdbacl.model.DBDataType",
+560:       "org.databene.jdbacl.model.DBNotNullConstraint",
+561:       "org.databene.commons.AssertionError",
+562:       "org.antlr.runtime.RecognitionException",
+563:       "org.antlr.runtime.NoViableAltException",
+564:       "org.databene.commons.ParseException",
+565:       "org.apache.derby.impl.sql.catalog.DataDictionaryImpl",
+566:       "org.apache.derby.iapi.services.context.ContextService",
+567:       "org.apache.derby.iapi.services.monitor.Monitor",
+568:       "org.databene.jdbacl.model.DBSchema",
+569:       "org.firebirdsql.jdbc.FBClob",
+570:       "org.firebirdsql.jdbc.FBSQLException",
+571:       "org.firebirdsql.jdbc.FBDriverNotCapableException",
+572:       "org.apache.derby.iapi.store.raw.xact.RawTransaction",
+573:       "org.databene.jdbacl.model.DefaultDBColumn",
+574:       "org.apache.derby.impl.sql.compile.QueryTreeNode",
+575:       "org.apache.derby.impl.sql.compile.ResultSetNode",
+576:       "org.apache.derby.impl.sql.compile.FromTable",
+577:       "org.apache.derby.impl.sql.compile.FromBaseTable",
+578:       "org.databene.commons.version.StringVersionNumberComponent",
+579:       "org.databene.jdbacl.model.DBDataType$TypeDescriptor",
+580:       "org.apache.derby.impl.sql.execute.BaseActivation",
+581:       "org.apache.derby.impl.sql.execute.ConstantActionActivation",
+582:       "org.apache.derby.impl.services.uuid.BasicUUID",
+583:       "org.apache.derby.iapi.sql.dictionary.TupleDescriptor",
+584:       "org.apache.derby.iapi.sql.dictionary.SchemaDescriptor",
+585:       "org.apache.derby.impl.sql.execute.WriteCursorConstantAction",
+586:       "org.apache.derby.impl.sql.execute.DeleteConstantAction",
+587:       "org.hsqldb.persist.HsqlProperties",
+588:       "org.hsqldb.jdbc.jdbcConnection",
+589:       "org.apache.derby.impl.store.access.btree.OpenBTree",
+590:       "org.apache.derby.impl.store.access.btree.BTreeController",
+591:       "org.apache.derby.impl.store.access.conglomerate.ConglomerateUtil",
+592:       "org.apache.derby.iapi.error.StandardException",
+593:       "org.postgresql.core.Logger",
+594:       "org.postgresql.Driver",
+595:       "org.postgresql.ds.common.BaseDataSource",
+596:       "org.postgresql.ds.PGConnectionPoolDataSource",
+597:       "org.postgresql.Driver$1",
+598:       "org.postgresql.jdbc2.AbstractJdbc2Connection",
+599:       "org.postgresql.jdbc3.AbstractJdbc3Connection",
+600:       "org.postgresql.jdbc3g.AbstractJdbc3gConnection",
+601:       "org.postgresql.jdbc4.AbstractJdbc4Connection",
+602:       "org.postgresql.jdbc4.Jdbc4Connection",
+603:       "org.postgresql.core.v3.ConnectionFactoryImpl",
+604:       "org.postgresql.core.v2.ConnectionFactoryImpl",
+605:       "org.postgresql.core.ConnectionFactory",
+606:       "org.postgresql.core.PGStream",
+607:       "org.postgresql.util.PSQLException",
+608:       "org.postgresql.util.GT",
+609:       "org.postgresql.util.PSQLState",
+610:       "org.databene.jdbacl.model.DBPackage",
+611:       "org.databene.jdbacl.model.DBProcedure",
+612:       "org.hsqldb.lib.FileUtil",
+613:       "org.databene.jdbacl.sql.parser.SQLParser$literal_return",
+614:       "org.databene.commons.SyntaxError",
+615:       "org.h2.engine.SessionWithState",
+616:       "org.h2.engine.Session",
+617:       "org.h2.value.Value",
+618:       "org.h2.value.ValueLong",
+619:       "org.h2.util.MathUtils",
+620:       "org.h2.constant.SysProperties",
+621:       "org.h2.message.TraceObject",
+622:       "org.h2.jdbc.JdbcConnection",
+623:       "org.h2.value.CompareMode",
+624:       "org.antlr.runtime.MismatchedTokenException",
+625:       "org.h2.command.Prepared",
+626:       "org.h2.command.dml.ScriptBase",
+627:       "org.h2.command.dml.RunScriptCommand",
+628:       "org.apache.derby.iapi.sql.dictionary.ConstraintDescriptorList",
+629:       "org.apache.derby.iapi.sql.dictionary.DataDescriptorGenerator",
+630:       "org.apache.derby.impl.sql.GenericPreparedStatement",
+631:       "org.apache.derby.impl.sql.GenericStorablePreparedStatement",
+632:       "org.databene.commons.ArrayUtil",
+633:       "org.databene.commons.NullSafeComparator",
+634:       "org.databene.jdbacl.model.DBSequence",
+635:       "org.apache.derby.iapi.sql.dictionary.ColumnDescriptorList",
+636:       "org.databene.commons.OrderedMap$ProxyEntry",
+637:       "org.apache.derby.vti.VTITemplate",
+638:       "org.apache.derby.impl.jdbc.EmbedResultSetMetaData",
+639:       "org.apache.derby.impl.sql.GenericColumnDescriptor",
+640:       "org.apache.derby.catalog.types.BaseTypeIdImpl",
+641:       "org.apache.derby.catalog.types.DecimalTypeIdImpl",
+642:       "org.apache.derby.iapi.types.TypeId",
+643:       "org.apache.derby.catalog.types.TypeDescriptorImpl",
+644:       "org.apache.derby.iapi.types.DataTypeDescriptor",
+645:       "org.apache.derby.diag.ErrorMessages",
+646:       "org.databene.jdbacl.model.DBRowIterator",
+647:       "org.apache.derby.impl.sql.compile.FromVTI",
+648:       "org.databene.jdbacl.sql.parser.SQLParser$keyword_return",
+649:       "org.firebirdsql.jdbc.InternalTransactionCoordinator",
+650:       "org.apache.derby.impl.store.raw.data.BaseDataFileFactory",
+651:       "org.apache.derby.iapi.sql.dictionary.TableDescriptor",
+652:       "org.apache.derby.iapi.sql.dictionary.ConglomerateDescriptorList",
+653:       "org.databene.commons.NameUtil",
+654:       "org.databene.script.expression.ExpressionUtil",
+655:       "org.h2.command.dml.SetTypes",
+656:       "org.h2.engine.ConnectionInfo",
+657:       "org.h2.engine.SessionRemote",
+658:       "org.h2.engine.Engine",
+659:       "org.h2.store.FileLock",
+660:       "org.h2.engine.Database",
+661:       "org.h2.util.StringUtils",
+662:       "org.h2.engine.Mode",
+663:       "org.h2.util.SmallLRUCache",
+664:       "org.h2.util.TempFileDeleter",
+665:       "org.h2.message.TraceSystem",
+666:       "org.h2.message.Trace",
+667:       "org.h2.util.SortedProperties",
+668:       "org.h2.util.MathUtils$1",
+669:       "org.h2.util.Utils",
+670:       "org.h2.message.DbException",
+671:       "org.h2.constant.ErrorCode",
+672:       "org.h2.jdbc.JdbcSQLException",
+673:       "org.h2.jdbcx.JdbcConnectionPool",
+674:       "org.h2.Driver",
+675:       "org.h2.jdbcx.JdbcDataSource",
+676:       "org.h2.jdbcx.JdbcDataSourceFactory",
+677:       "org.h2.jdbcx.JdbcXAConnection",
+678:       "org.databene.commons.iterator.IteratorProxy",
+679:       "org.databene.jdbacl.QueryIterator",
+680:       "org.h2.value.ValueTimestamp",
+681:       "org.databene.jdbacl.sql.parser.SQLParser$arguments_return",
+682:       "org.firebirdsql.jdbc.AbstractStatement",
+683:       "org.firebirdsql.jdbc.FBStatement",
+684:       "org.firebirdsql.jdbc.AbstractStatement$RSListener",
+685:       "org.firebirdsql.gds.impl.AbstractIscStmtHandle",
+686:       "org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl",
+687:       "org.firebirdsql.jdbc.AbstractResultSet",
+688:       "org.firebirdsql.jdbc.FBResultSet",
+689:       "org.hsqldb.jdbc.jdbcClob",
+690:       "org.hsqldb.jdbc.Util",
+691:       "org.hsqldb.store.BaseHashMap",
+692:       "org.hsqldb.lib.HashMap",
+693:       "org.hsqldb.store.HashIndex",
+694:       "org.hsqldb.lib.BaseList",
+695:       "org.hsqldb.lib.HsqlArrayList",
+696:       "org.hsqldb.resources.BundleHandler",
+697:       "org.hsqldb.Trace",
+698:       "org.hsqldb.HsqlException",
+699:       "org.firebirdsql.logging.LoggerFactory",
+700:       "org.firebirdsql.jca.FBManagedConnection$1",
+701:       "org.firebirdsql.jca.FBManagedConnection$2",
+702:       "org.firebirdsql.jca.FBManagedConnection$3",
+703:       "org.firebirdsql.jca.FBManagedConnection$4",
+704:       "org.firebirdsql.jca.FBManagedConnection$5",
+705:       "org.firebirdsql.jca.FBManagedConnection",
+706:       "org.firebirdsql.jdbc.AbstractConnection",
+707:       "org.firebirdsql.jdbc.FBConnection",
+708:       "org.h2.command.ddl.CreateTableData",
+709:       "org.h2.value.ValueLob",
+710:       "org.apache.derby.impl.sql.compile.StatementNode",
+711:       "org.apache.derby.impl.sql.compile.DMLStatementNode",
+712:       "org.apache.derby.impl.sql.compile.DMLModStatementNode",
+713:       "org.apache.derby.impl.sql.compile.InsertNode",
+714:       "org.h2.value.ValueLobDb",
+715:       "org.firebirdsql.gds.impl.jni.ParameterBufferBase",
+716:       "org.firebirdsql.gds.impl.jni.DatabaseParameterBufferImp",
+717:       "org.firebirdsql.gds.impl.AbstractIscDbHandle",
+718:       "org.firebirdsql.gds.impl.wire.isc_db_handle_impl",
+719:       "org.firebirdsql.gds.impl.GDSHelper",
+720:       "org.firebirdsql.jdbc.InternalTransactionCoordinator$AbstractTransactionCoordinator",
+721:       "org.firebirdsql.jdbc.InternalTransactionCoordinator$MetaDataTransactionCoordinator",
+722:       "org.h2.command.dml.ScriptCommand",
+723:       "org.firebirdsql.jdbc.FBCachedFetcher",
+724:       "org.apache.derby.catalog.types.MethodAliasInfo",
+725:       "org.firebirdsql.gds.impl.GDSFactory$ReversedStringComparator",
+726:       "org.firebirdsql.gds.impl.wire.WireGDSFactoryPlugin",
+727:       "org.firebirdsql.gds.impl.jni.NativeGDSFactoryPlugin",
+728:       "org.firebirdsql.gds.impl.jni.LocalGDSFactoryPlugin",
+729:       "org.firebirdsql.gds.impl.jni.EmbeddedGDSFactoryPlugin",
+730:       "org.firebirdsql.gds.impl.GDSFactory",
+731:       "org.firebirdsql.gds.impl.GDSType",
+732:       "org.firebirdsql.jca.FBManagedConnectionFactory",
+733:       "org.firebirdsql.jdbc.FBConnectionProperties",
+734:       "org.firebirdsql.jca.FBStandAloneConnectionManager",
+735:       "org.hsqldb.Result",
+736:       "org.hsqldb.Session",
+737:       "org.apache.derby.iapi.services.io.DynamicByteArrayOutputStream",
+738:       "org.firebirdsql.gds.impl.AbstractGDS",
+739:       "org.firebirdsql.gds.impl.jni.BaseGDSImpl",
+740:       "org.firebirdsql.gds.impl.jni.JniGDSImpl",
+741:       "org.hsqldb.DatabaseURL",
+742:       "org.apache.derby.impl.store.raw.xact.XactFactory",
+743:       "org.apache.derby.impl.store.raw.xact.ConcurrentXactFactory",
+744:       "org.apache.derby.impl.store.raw.xact.TransactionMapFactory",
+745:       "org.apache.derby.impl.store.raw.xact.ConcurrentTransactionMapFactory",
+746:       "org.apache.derby.iapi.services.io.FormatableProperties",
+747:       "org.h2.tools.SimpleResultSet",
+748:       "org.firebirdsql.gds.XSQLVAR",
+749:       "org.databene.jdbacl.model.DBTrigger",
+750:       "org.hsqldb.jdbc.jdbcStatement",
+751:       "org.hsqldb.lib.HsqlByteArrayOutputStream",
+752:       "org.hsqldb.rowio.RowOutputBase",
+753:       "org.hsqldb.rowio.RowOutputBinary",
+754:       "org.hsqldb.jdbc.jdbcPreparedStatement",
+755:       "org.hsqldb.jdbc.jdbcCallableStatement",
+756:       "org.h2.value.ValueNull",
+757:       "org.apache.derby.impl.store.access.conglomerate.GenericController",
+758:       "org.apache.derby.impl.store.access.conglomerate.GenericConglomerateController",
+759:       "org.apache.derby.impl.store.access.heap.HeapController",
+760:       "org.databene.jdbacl.model.DBNonUniqueIndex",
+761:       "org.h2.store.fs.FileSystemMemory",
+762:       "org.h2.store.fs.FileSystemZip",
+763:       "org.h2.store.fs.FileSystemSplit",
+764:       "org.h2.store.fs.FileSystemDiskNio",
+765:       "org.h2.store.fs.FileSystemDiskNioMapped",
+766:       "org.apache.derby.impl.sql.compile.DeleteNode",
+767:       "org.hsqldb.lib.StringInputStream",
+768:       "org.hsqldb.lib.AsciiStringInputStream",
+769:       "org.hsqldb.rowio.RowOutputText",
+770:       "org.hsqldb.rowio.RowOutputTextQuoted",
+771:       "org.apache.derby.iapi.services.info.JVMInfo",
+772:       "org.apache.derby.impl.services.monitor.BaseMonitor",
+773:       "org.apache.derby.impl.services.monitor.FileMonitor",
+774:       "org.apache.derby.impl.services.monitor.TopService",
+775:       "org.apache.derby.iapi.services.info.ProductVersionHolder",
+776:       "org.apache.derby.iapi.services.i18n.MessageService",
+777:       "org.apache.derby.iapi.services.io.FileUtil",
+778:       "org.apache.derby.impl.services.locks.AbstractPool",
+779:       "org.apache.derby.impl.services.locks.SinglePool",
+780:       "org.apache.derby.impl.services.bytecode.BCJava",
+781:       "org.apache.derby.impl.store.replication.slave.SlaveController",
+782:       "org.apache.derby.impl.sql.execute.GenericExecutionFactory",
+783:       "org.apache.derby.impl.db.BasicDatabase",
+784:       "org.apache.derby.impl.jdbc.authentication.AuthenticationServiceBase",
+785:       "org.apache.derby.impl.jdbc.authentication.NoneAuthenticationServiceImpl",
+786:       "org.apache.derby.iapi.jdbc.DRDAServerStarter",
+787:       "org.apache.derby.iapi.types.DataValueFactoryImpl",
+788:       "org.apache.derby.iapi.types.J2SEDataValueFactory",
+789:       "org.apache.derby.impl.services.jmxnone.NoManagementService",
+790:       "org.apache.derby.impl.store.replication.master.MasterController",
+791:       "org.apache.derby.iapi.types.CDCDataValueFactory",
+792:       "org.apache.derby.impl.store.access.btree.index.B2IFactory",
+793:       "org.apache.derby.impl.services.uuid.BasicUUIDFactory",
+794:       "org.apache.derby.impl.services.jce.JCECipherFactoryBuilder",
+795:       "org.apache.derby.impl.store.access.RAMAccessManager",
+796:       "org.apache.derby.impl.store.access.RllRAMAccessManager",
+797:       "org.apache.derby.jdbc.InternalDriver",
+798:       "org.apache.derby.jdbc.Driver169",
+799:       "org.apache.derby.impl.sql.compile.OptimizerFactoryImpl",
+800:       "org.apache.derby.impl.sql.compile.Level2OptimizerFactoryImpl",
+801:       "org.apache.derby.impl.jdbc.authentication.SpecificAuthenticationServiceImpl",
+802:       "org.apache.derby.impl.jdbc.authentication.JNDIAuthenticationService",
+803:       "org.apache.derby.impl.jdbc.authentication.BasicAuthenticationServiceImpl",
+804:       "org.apache.derby.impl.store.raw.data.BaseDataFileFactoryJ4",
+805:       "org.apache.derby.iapi.services.property.PropertyValidation",
+806:       "org.apache.derby.impl.services.stream.SingleStream",
+807:       "org.apache.derby.impl.services.reflect.DatabaseClasses",
+808:       "org.apache.derby.impl.services.reflect.ReflectClassesJava2",
+809:       "org.apache.derby.jdbc.Driver20",
+810:       "org.apache.derby.jdbc.Driver30",
+811:       "org.apache.derby.jdbc.Driver40",
+812:       "org.apache.derby.impl.store.raw.log.LogToFile",
+813:       "org.apache.derby.impl.store.raw.log.ReadOnly",
+814:       "org.apache.derby.impl.store.access.heap.HeapConglomerateFactory",
+815:       "org.apache.derby.impl.services.daemon.SingleThreadDaemonFactory",
+816:       "org.apache.derby.impl.sql.compile.TypeCompilerFactoryImpl",
+817:       "org.apache.derby.impl.store.access.sort.ExternalSortFactory",
+818:       "org.apache.derby.impl.store.access.sort.UniqueWithDuplicateNullsExternalSortFactory",
+819:       "org.apache.derby.impl.services.cache.ConcurrentCacheFactory",
+820:       "org.apache.derby.impl.sql.execute.RealResultSetStatisticsFactory",
+821:       "org.apache.derby.impl.services.cache.ClockFactory",
+822:       "org.apache.derby.impl.db.SlaveDatabase",
+823:       "org.apache.derby.impl.sql.execute.xplain.XPLAINFactory",
+824:       "org.apache.derby.jdbc.ResourceAdapterImpl",
+825:       "org.apache.derby.security.SystemPermission",
+826:       "org.apache.derby.impl.services.jmx.JMXManagementService",
+827:       "org.apache.derby.impl.services.timer.SingletonTimerFactory",
+828:       "org.apache.derby.impl.sql.conn.GenericLanguageConnectionFactory",
+829:       "org.apache.derby.impl.store.raw.RawStore",
+830:       "org.apache.derby.impl.sql.GenericLanguageFactory",
+831:       "org.apache.derby.iapi.sql.compile.NodeFactory",
+832:       "org.apache.derby.impl.sql.compile.NodeFactoryImpl",
+833:       "org.apache.derby.impl.services.locks.ConcurrentPool",
+834:       "org.apache.derby.impl.services.monitor.ProtocolKey",
+835:       "org.apache.derby.impl.services.monitor.ModuleInstance",
+836:       "org.apache.derby.impl.services.stream.BasicGetLogHeader",
+837:       "org.apache.derby.iapi.services.property.PropertyUtil",
+838:       "org.apache.derby.impl.services.stream.BasicHeaderPrintWriter",
+839:       "org.apache.derby.impl.services.timer.SingletonTimerFactory$1",
+840:       "org.apache.derby.impl.services.timer.SingletonTimerFactory$2",
+841:       "org.apache.derby.impl.services.timer.SingletonTimerFactory$3",
+842:       "org.apache.derby.impl.services.jmx.JMXManagementService$1",
+843:       "org.apache.derby.impl.services.jmx.JMXManagementService$2",
+844:       "org.apache.derby.impl.services.jmx.JMXManagementService$3",
+845:       "org.apache.derby.iapi.services.info.Version",
+846:       "org.apache.derby.impl.sql.execute.rts.RealBasicNoPutResultSetStatistics",
+847:       "org.apache.derby.impl.sql.execute.rts.RealNoPutResultSetStatistics",
+848:       "org.apache.derby.impl.sql.execute.rts.RealHashTableStatistics",
+849:       "org.apache.derby.impl.store.raw.xact.TransactionTable",
+850:       "org.apache.derby.iapi.error.ShutdownException",
+851:       "org.apache.derby.iapi.sql.dictionary.ConstraintDescriptor",
+852:       "org.apache.derby.iapi.sql.dictionary.CheckConstraintDescriptor",
+853:       "org.databene.script.expression.UnaryExpression",
+854:       "org.databene.script.expression.LogicalComplementExpression",
+855:       "org.databene.script.expression.NullExpression",
+856:       "org.h2.value.DataType",
+857:       "org.apache.derby.impl.sql.execute.rts.RealHashScanStatistics",
+858:       "org.apache.derby.impl.sql.execute.rts.RealDistinctScanStatistics",
+859:       "org.apache.derby.impl.sql.execute.rts.RealTableScanStatistics",
+860:       "org.apache.derby.impl.sql.compile.DDLStatementNode",
+861:       "org.apache.derby.impl.sql.compile.CreateIndexNode",
+862:       "org.apache.derby.iapi.sql.dictionary.AliasDescriptor",
+863:       "org.postgresql.jdbc4.Jdbc4SQLXML",
+864:       "org.h2.tools.Csv",
+865:       "org.h2.expression.Expression",
+866:       "org.h2.expression.ValueExpression",
+867:       "org.h2.expression.Operation",
+868:       "org.h2.value.ValueArray",
+869:       "org.h2.util.StatementBuilder",
+870:       "org.h2.engine.DbObjectBase",
+871:       "org.h2.schema.SchemaObjectBase",
+872:       "org.h2.table.Table",
+873:       "org.h2.table.TableBase",
+874:       "org.h2.table.RegularTable",
+875:       "org.apache.derby.impl.sql.compile.AlterTableNode",
+876:       "org.firebirdsql.jdbc.AbstractPreparedStatement",
+877:       "org.firebirdsql.jdbc.AbstractCallableStatement",
+878:       "org.firebirdsql.jdbc.FBCallableStatement",
+879:       "org.h2.command.dml.Query",
+880:       "org.h2.command.dml.Select",
+881:       "org.hsqldb.rowio.RowOutputTextLog",
+882:       "org.apache.derby.iapi.services.context.ContextImpl",
+883:       "org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext",
+884:       "org.apache.derby.impl.sql.compile.TableElementNode",
+885:       "org.apache.derby.impl.sql.compile.ConstraintDefinitionNode",
+886:       "org.apache.derby.impl.sql.compile.FKConstraintDefinitionNode",
+887:       "org.h2.store.FileStore",
+888:       "org.h2.store.fs.FileObjectDisk",
+889:       "org.h2.store.FileStoreInputStream",
+890:       "org.h2.tools.CompressTool",
+891:       "org.h2.store.Data",
+892:       "org.h2.util.DateTimeUtils",
+893:       "org.databene.script.expression.CompositeExpression",
+894:       "org.databene.script.expression.DivisionExpression",
+895:       "org.databene.commons.iterator.ConvertingIterator",
+896:       "org.databene.jdbacl.ArrayResultSetIterator",
+897:       "org.apache.derby.impl.sql.compile.Predicate",
+898:       "org.databene.commons.LoggerEscalator",
+899:       "org.databene.commons.ArrayBuilder",
+900:       "org.databene.jdbacl.sql.FunctionInvocation"
+901:     );
+902:   }
+903: }
+
+[MASTER] 03:27:20.516 [logback-2] ERROR JUnitAnalyzer - Failed to compile test case:
+DBDataType dBDataType0 = DBDataType.getInstance((-2428), "drQop table");
+Integer.remainderUnsigned((-2428), (-2428));
+CompositeDBObject<DBCheckConstraint> compositeDBObject0 = (CompositeDBObject<DBCheckConstraint>) mock(CompositeDBObject.class, new ViolatedAssumptionAnswer());
+TableContainer tableContainer0 = new TableContainer("a,bhv7Ze]wn;;nA", compositeDBObject0);
+tableContainer0.getTable("a,bhv7Ze]wn;;nA");
+Integer integer0 = new Integer(0);
+DefaultDBColumn defaultDBColumn0 = new DefaultDBColumn("srI~^k$;g", (DBTable) null, dBDataType0, integer0, integer0);
+defaultDBColumn0.setSize(integer0);
+StringBuilder stringBuilder0 = new StringBuilder((CharSequence) "drQop table");
+SQLUtil.renderColumnTypeWithSize((DBColumn) defaultDBColumn0, stringBuilder0);
+Integer integer1 = RawTransaction.COMMIT;
+assertTrue(integer1.equals((Object)int0));
+
+
+[MASTER] 03:27:30.281 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.JniGDSImpl: no jaybird21 in java.library.path
+[MASTER] 03:27:30.968 [logback-2] ERROR ClassResetter - java.lang.NoClassDefFoundError: Could not initialize class org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 03:27:31.968 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.derby.iapi.types.SqlXmlUtil: org/apache/xml/utils/PrefixResolver
+* Permissions denied during test execution: 
+  - java.io.FilePermission: 
+         write /dev/random: 1
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 1
+  - java.net.SocketPermission: 
+         resolve java.lang.String@0000000027: 1
+         resolve java.lang.String@0000000019: 1
+         resolve java.lang.String@0000000023: 1
+         and other 2 cases of action/name for this exception class
+* Writing JUnit test case 'SQLUtil_ESTest' to /home/ubuntu/termite/rmosa/tests/s1014/13_jdbacl/evosuite-tests
+* Done!
+
+* Computation finished

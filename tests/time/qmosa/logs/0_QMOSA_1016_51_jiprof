@@ -1,0 +1,119 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.objectweb.asm.jip.MethodWriter
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/51_jiprof/evosuite-files/evosuite.properties
+* Connecting to master process on port 19153
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class org.objectweb.asm.jip.MethodWriter
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/51_jiprof/src/main/java/org/objectweb/asm/jip/MethodWriter.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1016
+* Starting evolution
+[MASTER] 02:08:14.766 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.objectweb.asm.jip.MethodWriter.visitMaxs(II)V
+[MASTER] 02:08:16.046 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.objectweb.asm.jip.MethodWriter.visitFieldInsn(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+[MASTER] 02:08:16.813 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.objectweb.asm.jip.MethodWriter.visitAnnotation(Ljava/lang/String;Z)Lorg/objectweb/asm/jip/AnnotationVisitor;
+[MASTER] 02:08:24.597 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.objectweb.asm.jip.MethodWriter.visitAnnotationDefault()Lorg/objectweb/asm/jip/AnnotationVisitor;
+[MASTER] 02:08:25.669 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.objectweb.asm.jip.MethodWriter.writeShort([BII)V: Line 2508
+[MASTER] 02:08:25.669 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.objectweb.asm.jip.MethodWriter.writeShort([BII)V: Line 2509
+[MASTER] 02:08:25.670 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.objectweb.asm.jip.MethodWriter.getNewOffset([I[III)I: Line 2545
+[MASTER] 02:08:25.683 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.objectweb.asm.jip.MethodWriter.getNewOffset([I[III)I: I47 Branch 407 IF_ICMPGT L2543 - false
+[MASTER] 02:08:25.709 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 5976: org.objectweb.asm.jip.MethodWriter.writeShort([BII)V:2508 - ReplaceArithmeticOperator + -> %
+[MASTER] 02:08:25.710 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 5977: org.objectweb.asm.jip.MethodWriter.writeShort([BII)V:2508 - ReplaceArithmeticOperator + -> -
+[MASTER] 02:08:25.710 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 5978: org.objectweb.asm.jip.MethodWriter.writeShort([BII)V:2508 - ReplaceArithmeticOperator + -> *
+[MASTER] 02:08:25.710 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 5979: org.objectweb.asm.jip.MethodWriter.writeShort([BII)V:2508 - ReplaceArithmeticOperator + -> /
+[MASTER] 02:08:25.713 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 6211: org.objectweb.asm.jip.MethodWriter.getNewOffset([I[III)I:2543 - ReplaceComparisonOperator > -> !=
+[MASTER] 02:08:25.714 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 6246: org.objectweb.asm.jip.MethodWriter.getNewOffset([I[III)I:2545 - ReplaceArithmeticOperator - -> %
+[MASTER] 02:08:25.714 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 6248: org.objectweb.asm.jip.MethodWriter.getNewOffset([I[III)I:2545 - ReplaceArithmeticOperator - -> /
+[MASTER] 02:08:25.716 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.objectweb.asm.jip.MethodWriter.visitTryCatchBlock(Lorg/objectweb/asm/jip/Label;Lorg/objectweb/asm/jip/Label;Lorg/objectweb/asm/jip/Label;Ljava/lang/String;)V
+[MASTER] 02:08:25.718 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.objectweb.asm.jip.MethodWriter.writeShort([BII)V
+[MASTER] 02:08:25.722 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.objectweb.asm.jip.MethodWriter.getNewOffset([I[III)I: I47 Branch 407 IF_ICMPGT L2543 - false in context: 
+[MASTER] 02:08:26.752 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.objectweb.asm.jip.MethodWriter.getNewOffset([I[III)I: I26 Branch 405 IF_ICMPGT L2540 - true
+[MASTER] 02:08:26.752 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.objectweb.asm.jip.MethodWriter.getNewOffset([I[III)I: I42 Branch 406 IF_ICMPGE L2543 - false
+[MASTER] 02:08:26.752 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.objectweb.asm.jip.MethodWriter.getNewOffset([I[III)I: I47 Branch 407 IF_ICMPGT L2543 - true
+[MASTER] 02:08:26.762 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 6019: org.objectweb.asm.jip.MethodWriter.getNewOffset([I[III)I:2538 - ReplaceArithmeticOperator - -> +
+[MASTER] 02:08:26.762 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 6021: org.objectweb.asm.jip.MethodWriter.getNewOffset([I[III)I:2538 - ReplaceArithmeticOperator - -> *
+[MASTER] 02:08:26.763 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 6109: org.objectweb.asm.jip.MethodWriter.getNewOffset([I[III)I:2540 - ReplaceComparisonOperator > -> -2
+[MASTER] 02:08:26.764 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 6177: org.objectweb.asm.jip.MethodWriter.getNewOffset([I[III)I:2543 - ReplaceComparisonOperator >= -> -1
+[MASTER] 02:08:26.764 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 6212: org.objectweb.asm.jip.MethodWriter.getNewOffset([I[III)I:2543 - ReplaceComparisonOperator > -> -2
+[MASTER] 02:08:26.764 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: org.objectweb.asm.jip.MethodWriter.getNewOffset([I[III)I:Negative
+[MASTER] 02:08:26.774 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.objectweb.asm.jip.MethodWriter.getNewOffset([I[III)I: I26 Branch 405 IF_ICMPGT L2540 - true in context: 
+[MASTER] 02:08:26.775 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.objectweb.asm.jip.MethodWriter.getNewOffset([I[III)I: I47 Branch 407 IF_ICMPGT L2543 - true in context: 
+[MASTER] 02:08:26.775 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.objectweb.asm.jip.MethodWriter.getNewOffset([I[III)I: I42 Branch 406 IF_ICMPGE L2543 - false in context: 
+[MASTER] 02:08:31.246 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.objectweb.asm.jip.MethodWriter.visitFrame(II[Ljava/lang/Object;I[Ljava/lang/Object;)V
+[MASTER] 02:08:34.579 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.objectweb.asm.jip.MethodWriter.visitIntInsn(II)V
+[MASTER] 02:08:34.749 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.objectweb.asm.jip.MethodWriter.visitLabel(Lorg/objectweb/asm/jip/Label;)V
+[MASTER] 02:08:38.811 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.objectweb.asm.jip.MethodWriter.getSize()I
+[MASTER] 02:08:39.286 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.objectweb.asm.jip.MethodWriter.visitTypeInsn(ILjava/lang/String;)V
+[MASTER] 02:09:04.605 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.objectweb.asm.jip.MethodWriter.visitTableSwitchInsn(IILorg/objectweb/asm/jip/Label;[Lorg/objectweb/asm/jip/Label;)V
+[MASTER] 02:09:05.783 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.objectweb.asm.jip.MethodWriter.visitIincInsn(II)V
+[MASTER] 02:09:06.071 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.objectweb.asm.jip.MethodWriter.visitAnnotation(Ljava/lang/String;Z)Lorg/objectweb/asm/jip/AnnotationVisitor;: Line 479
+[MASTER] 02:09:06.071 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.objectweb.asm.jip.MethodWriter.visitAnnotation(Ljava/lang/String;Z)Lorg/objectweb/asm/jip/AnnotationVisitor;: Line 481
+[MASTER] 02:09:06.071 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.objectweb.asm.jip.MethodWriter.visitAnnotation(Ljava/lang/String;Z)Lorg/objectweb/asm/jip/AnnotationVisitor;: Line 482
+[MASTER] 02:09:06.071 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.objectweb.asm.jip.MethodWriter.visitAnnotation(Ljava/lang/String;Z)Lorg/objectweb/asm/jip/AnnotationVisitor;: Line 483
+[MASTER] 02:09:06.071 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.objectweb.asm.jip.MethodWriter.visitAnnotation(Ljava/lang/String;Z)Lorg/objectweb/asm/jip/AnnotationVisitor;: Line 487
+[MASTER] 02:09:06.071 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.objectweb.asm.jip.MethodWriter.visitAnnotation(Ljava/lang/String;Z)Lorg/objectweb/asm/jip/AnnotationVisitor;: Line 488
+[MASTER] 02:09:06.071 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.objectweb.asm.jip.MethodWriter.visitAnnotation(Ljava/lang/String;Z)Lorg/objectweb/asm/jip/AnnotationVisitor;: Line 490
+[MASTER] 02:09:06.107 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.objectweb.asm.jip.MethodWriter.visitAnnotation(Ljava/lang/String;Z)Lorg/objectweb/asm/jip/AnnotationVisitor;: I32 Branch 12 IFEQ L483 - true
+[MASTER] 02:09:06.107 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 12: org.objectweb.asm.jip.MethodWriter.visitAnnotation(Ljava/lang/String;Z)Lorg/objectweb/asm/jip/AnnotationVisitor;:483 - ReplaceComparisonOperator == -> !=
+[MASTER] 02:09:06.115 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: org.objectweb.asm.jip.MethodWriter.visitAnnotation(Ljava/lang/String;Z)Lorg/objectweb/asm/jip/AnnotationVisitor;:NonNull
+[MASTER] 02:09:06.120 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.objectweb.asm.jip.MethodWriter.visitAnnotation(Ljava/lang/String;Z)Lorg/objectweb/asm/jip/AnnotationVisitor;
+[MASTER] 02:09:06.138 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.objectweb.asm.jip.MethodWriter.visitAnnotation(Ljava/lang/String;Z)Lorg/objectweb/asm/jip/AnnotationVisitor;: I32 Branch 12 IFEQ L483 - true in context: org.objectweb.asm.jip.MethodWriter:visitAnnotation(Ljava/lang/String;Z)Lorg/objectweb/asm/jip/AnnotationVisitor;
+[MASTER] 02:09:12.722 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.objectweb.asm.jip.MethodWriter.visitMultiANewArrayInsn(Ljava/lang/String;I)V
+[MASTER] 02:09:53.824 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: org.objectweb.asm.jip.MethodWriter.readShort([BI)S:Positive
+[MASTER] 02:10:06.219 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.objectweb.asm.jip.MethodWriter.visitLookupSwitchInsn(Lorg/objectweb/asm/jip/Label;[I[Lorg/objectweb/asm/jip/Label;)V
+[MASTER] 02:10:06.505 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.objectweb.asm.jip.MethodWriter.visitMethodInsn(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+* Search finished after 124s and 23 generations, 23082 statements, best individual has fitness: 20496.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 29%
+* Total number of goals: 1084
+* Number of covered goals: 311
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 24%
+* Total number of goals: 824
+* Number of covered goals: 201
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 25
+* Number of covered goals: 25
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 31%
+* Total number of goals: 765
+* Number of covered goals: 238
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 57%
+* Total number of goals: 21
+* Number of covered goals: 12
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 94%
+* Total number of goals: 33
+* Number of covered goals: 31
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 94%
+* Total number of goals: 33
+* Number of covered goals: 31
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 24%
+* Total number of goals: 824
+* Number of covered goals: 195
+* Generated 63 tests with total length 1295
+* Resulting test suite's coverage: 29% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 7%
+* Compiling and checking tests
+* Writing JUnit test case 'MethodWriter_ESTest' to /home/ubuntu/termite/qmosa/tests/s1016/51_jiprof/evosuite-tests
+* Done!
+
+* Computation finished

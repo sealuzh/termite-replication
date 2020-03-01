@@ -1,0 +1,91 @@
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: state.Player
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/27_gangup/evosuite-files/evosuite.properties
+* Connecting to master process on port 18815
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 08:46:50.658 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 08:46:50.756 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 08:46:50.757 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 08:46:50.777 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class state.Player
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1021
+* Starting evolution
+[MASTER] 08:46:53.061 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.<init>()V: Line 93
+[MASTER] 08:46:53.061 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.<init>()V: Line 94
+[MASTER] 08:46:53.063 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.<init>()V: root-Branch
+[MASTER] 08:46:53.065 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] state.Player.<init>()V
+[MASTER] 08:46:53.065 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] state.Player.<init>()V
+[MASTER] 08:46:53.066 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch state.Player.<init>()V: root-Branch in context: state.Player:<init>()V
+* Search finished after 125s and 64 generations, 55310 statements, best individual has fitness: 104.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 98%
+* Total number of goals: 130
+* Number of covered goals: 127
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 98%
+* Total number of goals: 44
+* Number of covered goals: 43
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 9
+* Number of covered goals: 9
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 99%
+* Total number of goals: 270
+* Number of covered goals: 266
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 91%
+* Total number of goals: 47
+* Number of covered goals: 43
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 34
+* Number of covered goals: 34
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 34
+* Number of covered goals: 34
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 98%
+* Total number of goals: 44
+* Number of covered goals: 43
+* Generated 56 tests with total length 466
+* Resulting test suite's coverage: 98% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 78%
+* Compiling and checking tests
+[MASTER] 08:49:29.074 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.StackOverflowError: null
+[MASTER] 08:49:29.076 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FileSystemHandling.createFolder((EvoSuiteFile) null);
+long long0 = 1392409281320L;
+FileSystemHandling.shouldThrowIOException((EvoSuiteFile) null);
+System.setCurrentTimeMillis(1392409281320L);
+Player player0 = new Player((-1), "Player.unpack(): *** WARNING *** [IO] failed to unpack data: ", (-1));
+Party party0 = new Party();
+party0.getSubparty();
+party0.next = (Party) player0;
+player0.remove(party0);
+player0.gangStrength();
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 3
+* Writing JUnit test case 'Player_ESTest' to /home/ubuntu/termite/rmosa/tests/s1021/27_gangup/evosuite-tests
+* Done!
+
+* Computation finished

@@ -1,0 +1,272 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.quickserver.util.xmlreader.AdvancedSettings
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/93_quickserver/evosuite-files/evosuite.properties
+* Connecting to master process on port 21008
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class org.quickserver.util.xmlreader.AdvancedSettings
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/93_quickserver/src/main/java/org/quickserver/util/xmlreader/AdvancedSettings.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1025
+* Starting evolution
+* Search finished after 121s and 72 generations, 53616 statements, best individual has fitness: 96.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 95
+* Number of covered goals: 95
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 52
+* Number of covered goals: 52
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 98%
+* Total number of goals: 105
+* Number of covered goals: 103
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 79%
+* Total number of goals: 48
+* Number of covered goals: 38
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 34
+* Number of covered goals: 34
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 34
+* Number of covered goals: 34
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 52
+* Number of covered goals: 52
+* Generated 35 tests with total length 413
+* Resulting test suite's coverage: 97% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 92%
+* Compiling and checking tests
+* Writing JUnit test case 'AdvancedSettings_ESTest' to /home/ubuntu/termite/qmosa/tests/s1025/93_quickserver/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.quickserver.net.server.TheClient
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/93_quickserver/evosuite-files/evosuite.properties
+* Connecting to master process on port 21006
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 08:55:42.674 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.net.SocketOption
+[MASTER] 08:55:43.235 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Supplier
+[MASTER] 08:55:43.426 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 08:55:43.439 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 08:55:43.440 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 08:55:43.634 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 08:55:43.635 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 08:55:43.637 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+* Finished analyzing classpath
+* Generating tests for class org.quickserver.net.server.TheClient
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/93_quickserver/src/main/java/org/quickserver/net/server/TheClient.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1025
+* Starting evolution
+* Search finished after 122s and 81 generations, 79753 statements, best individual has fitness: 352.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 99%
+* Total number of goals: 72
+* Number of covered goals: 71
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 98%
+* Total number of goals: 43
+* Number of covered goals: 42
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100% (no goals)
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 100%
+* Total number of goals: 29
+* Number of covered goals: 29
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 56%
+* Total number of goals: 93
+* Number of covered goals: 52
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 42
+* Number of covered goals: 42
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 42
+* Number of covered goals: 42
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 98%
+* Total number of goals: 43
+* Number of covered goals: 42
+* Generated 23 tests with total length 513
+* Resulting test suite's coverage: 88% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 94%
+* Compiling and checking tests
+[MASTER] 08:58:00.515 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.junit.ComparisonFailure: expected:<...Handler-Pool#-1-ID:1[6]>> but was:<...Handler-Pool#-1-ID:1[]>>
+[MASTER] 08:58:00.518 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ TheClient theClient0 = new TheClient();
+theClient0.setMaxConnectionMsg("x] [zpBMD?6H2H,QK");
+theClient0.getClientBinaryHandler();
+CommandHandler commandHandler0 = new CommandHandler();
+NonBlockingClientHandler nonBlockingClientHandler0 = new NonBlockingClientHandler();
+commandHandler0.lostConnection(nonBlockingClientHandler0);
+assertEquals("<ClientHandler-Pool#-1-ID:16>", nonBlockingClientHandler0.getName());
+
+theClient0.getClientExtendedEventHandler();
+theClient0.setClientExtendedEventHandler((ClientExtendedEventHandler) null);
+theClient0.setClientCommandHandler(commandHandler0);
+theClient0.setClientBinaryHandler((ClientBinaryHandler) null);
+theClient0.setMaxConnectionMsg("74{NY8%Y");
+theClient0.setTimeout(0);
+theClient0.getClientObjectHandler();
+theClient0.setClientObjectHandler((ClientObjectHandler) null);
+theClient0.getMaxConnectionMsg();
+theClient0.getClientBinaryHandler();
+theClient0.setMaxConnectionMsg("74{NY8%Y");
+org.quickserver.net.qsadmin.Authenticator authenticator0 = new org.quickserver.net.qsadmin.Authenticator();
+theClient0.setClientAuthenticationHandler(authenticator0);
+theClient0.getCommunicationLogging();
+CommandHandler commandHandler1 = new CommandHandler();
+TheClient theClient1 = new TheClient();
+theClient1.getClientEventHandler();
+theClient0.setClientEventHandler((ClientEventHandler) null);
+theClient1.getClientData();
+theClient0.setClientEventHandler((ClientEventHandler) null);
+theClient0.setMaxAuthTryMsg("74{NY8%Y");
+assertTrue(theClient0.getCommunicationLogging());
+
+
+[MASTER] 08:58:02.486 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.junit.ComparisonFailure: expected:<...tHandler-Pool#-1-ID:[23]>> but was:<...tHandler-Pool#-1-ID:[1]>>
+[MASTER] 08:58:02.493 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ TheClient theClient0 = new TheClient();
+theClient0.setMaxAuthTry(0);
+theClient0.getClientBinaryHandler();
+theClient0.setClientBinaryHandler((ClientBinaryHandler) null);
+ClientEvent clientEvent0 = ClientEvent.RUN_BLOCKING;
+CommandHandler commandHandler0 = new CommandHandler();
+theClient0.setClientCommandHandler(commandHandler0);
+theClient0.toString();
+CommandHandler commandHandler1 = (CommandHandler)theClient0.getClientCommandHandler();
+BlockingClientHandler blockingClientHandler0 = new BlockingClientHandler();
+theClient0.setClientBinaryHandler((ClientBinaryHandler) null);
+commandHandler1.lostConnection(blockingClientHandler0);
+assertEquals("<ClientHandler-Pool#-1-ID:23>", blockingClientHandler0.getName());
+
+theClient0.setClientCommandHandler(commandHandler1);
+CommandHandler commandHandler2 = (CommandHandler)theClient0.getClientCommandHandler();
+theClient0.getClientCommandHandler();
+theClient0.getClientBinaryHandler();
+TheClient theClient1 = new TheClient();
+theClient1.getClientCommandHandler();
+theClient1.getMaxAuthTryMsg();
+theClient0.getTimeoutMsg();
+theClient1.getClientObjectHandler();
+theClient0.getClientAuthenticationHandler();
+theClient0.setClientAuthenticationHandler((ClientAuthenticationHandler) null);
+DefaultClientEventHandler defaultClientEventHandler0 = new DefaultClientEventHandler();
+theClient1.setClientEventHandler(commandHandler2);
+theClient0.getClientCommandHandler();
+theClient0.getAuthenticator();
+theClient1.setAuthenticator((Authenticator) null);
+theClient1.getClientEventHandler();
+theClient0.getClientBinaryHandler();
+theClient0.getClientBinaryHandler();
+assertEquals(0, theClient0.getMaxAuthTry());
+
+
+[MASTER] 08:58:03.747 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.junit.ComparisonFailure: expected:<...tHandler-Pool#-1-ID:[72]>> but was:<...tHandler-Pool#-1-ID:[1]>>
+[MASTER] 08:58:03.748 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FileSystemHandling.appendDataToFile((EvoSuiteFile) null, (byte[]) null);
+TheClient theClient0 = new TheClient();
+theClient0.getClientData();
+theClient0.setClientData((ClientData) null);
+CommandHandler commandHandler0 = new CommandHandler();
+NonBlockingClientHandler nonBlockingClientHandler0 = new NonBlockingClientHandler();
+commandHandler0.closingConnection(nonBlockingClientHandler0);
+assertEquals("<ClientHandler-Pool#-1-ID:72>", nonBlockingClientHandler0.getName());
+
+theClient0.setClientEventHandler(commandHandler0);
+theClient0.toString();
+theClient0.getClientObjectHandler();
+theClient0.getClientAuthenticationHandler();
+theClient0.getClientEventHandler();
+theClient0.getClientExtendedEventHandler();
+assertFalse(theClient0.getTrusted());
+
+
+[MASTER] 08:58:04.340 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.junit.ComparisonFailure: expected:<...tHandler-Pool#-1-ID:[84]>> but was:<...tHandler-Pool#-1-ID:[1]>>
+[MASTER] 08:58:04.341 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ TheClient theClient0 = new TheClient();
+theClient0.setMaxConnectionMsg("x] [zpBMD?6H2H,QK");
+theClient0.getClientBinaryHandler();
+CommandHandler commandHandler0 = new CommandHandler();
+NonBlockingClientHandler nonBlockingClientHandler0 = new NonBlockingClientHandler();
+commandHandler0.lostConnection(nonBlockingClientHandler0);
+assertEquals("<ClientHandler-Pool#-1-ID:84>", nonBlockingClientHandler0.getName());
+
+theClient0.getClientExtendedEventHandler();
+theClient0.setClientExtendedEventHandler((ClientExtendedEventHandler) null);
+theClient0.setClientCommandHandler(commandHandler0);
+theClient0.setClientBinaryHandler((ClientBinaryHandler) null);
+theClient0.setMaxConnectionMsg("74{NY8%Y");
+theClient0.setTimeout(0);
+theClient0.getClientObjectHandler();
+theClient0.setClientObjectHandler((ClientObjectHandler) null);
+theClient0.getMaxConnectionMsg();
+theClient0.getClientBinaryHandler();
+theClient0.setMaxConnectionMsg("74{NY8%Y");
+ClientEvent clientEvent0 = ClientEvent.READ;
+theClient0.setClientEvent(clientEvent0);
+org.quickserver.net.qsadmin.Authenticator authenticator0 = new org.quickserver.net.qsadmin.Authenticator();
+theClient0.setClientAuthenticationHandler(authenticator0);
+theClient0.getClientObjectHandler();
+theClient0.setClientObjectHandler((ClientObjectHandler) null);
+theClient0.getMaxAuthTryMsg();
+theClient0.getSocketChannel();
+theClient0.setCommunicationLogging(true);
+theClient0.getClientAuthenticationHandler();
+theClient0.getClientObjectHandler();
+theClient0.getClientEvent();
+assertEquals(0, theClient0.getTimeout());
+
+
+* Permissions denied during test execution: 
+  - java.net.SocketPermission: 
+         connect,resolve 200.42.42.0:2499: 2
+         connect,resolve 200.42.42.0:4: 1
+         connect,resolve 192.168.1.42:5: 1
+         and other 11 cases of action/name for this exception class
+* Writing JUnit test case 'TheClient_ESTest' to /home/ubuntu/termite/qmosa/tests/s1025/93_quickserver/evosuite-tests
+* Done!
+
+* Computation finished

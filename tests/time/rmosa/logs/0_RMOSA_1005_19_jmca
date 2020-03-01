@@ -1,0 +1,710 @@
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: com.soops.CEN4010.JMCA.JParser.SimpleNode
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/19_jmca/evosuite-files/evosuite.properties
+* Connecting to master process on port 14209
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 19:47:41.495 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 19:47:41.502 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 19:47:41.503 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 19:47:42.038 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class com.soops.CEN4010.JMCA.JParser.SimpleNode
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1005
+* Starting evolution
+* Search finished after 121s and 123 generations, 109305 statements, best individual has fitness: 192.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 62
+* Number of covered goals: 62
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 99%
+* Total number of goals: 67
+* Number of covered goals: 66
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 90%
+* Total number of goals: 121
+* Number of covered goals: 109
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 41%
+* Total number of goals: 17
+* Number of covered goals: 7
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 13
+* Number of covered goals: 13
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 13
+* Number of covered goals: 13
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 99%
+* Total number of goals: 67
+* Number of covered goals: 66
+* Generated 39 tests with total length 394
+* Resulting test suite's coverage: 94% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 86%
+* Compiling and checking tests
+[MASTER] 19:53:02.418 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test31 -> class java.lang.StackOverflowError: null
+[MASTER] 19:53:02.421 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ SimpleNode simpleNode0 = new SimpleNode(73);
+simpleNode0.setIdentifier("&");
+Node[] nodeArray0 = new Node[9];
+nodeArray0[0] = (Node) simpleNode0;
+nodeArray0[1] = (Node) simpleNode0;
+simpleNode0.toString("R{_?iG:^Nr}iau@q4");
+nodeArray0[2] = (Node) simpleNode0;
+nodeArray0[3] = (Node) simpleNode0;
+nodeArray0[4] = (Node) simpleNode0;
+nodeArray0[5] = (Node) simpleNode0;
+nodeArray0[6] = (Node) simpleNode0;
+nodeArray0[7] = (Node) simpleNode0;
+nodeArray0[8] = (Node) simpleNode0;
+simpleNode0.children = nodeArray0;
+simpleNode0.setIdentifier("<=");
+StringWriter stringWriter0 = new StringWriter(73);
+stringWriter0.flush();
+simpleNode0.dump("&", stringWriter0);
+
+[MASTER] 19:53:02.421 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test21 -> class java.lang.StackOverflowError: null
+[MASTER] 19:53:02.422 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FileSystemHandling.appendLineToFile((EvoSuiteFile) null, "q' \"d.B;_>KlA_,");
+SimpleNode simpleNode0 = new SimpleNode(17);
+FileSystemHandling fileSystemHandling0 = new FileSystemHandling();
+simpleNode0.toString();
+FileSystemHandling.shouldThrowIOException((EvoSuiteFile) null);
+StringWriter stringWriter0 = new StringWriter();
+Node[] nodeArray0 = new Node[7];
+nodeArray0[2] = (Node) simpleNode0;
+nodeArray0[1] = (Node) simpleNode0;
+nodeArray0[3] = (Node) simpleNode0;
+nodeArray0[4] = (Node) simpleNode0;
+simpleNode0.children = nodeArray0;
+simpleNode0.dump("VariableDeclaratorId", stringWriter0);
+
+[MASTER] 19:53:02.422 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test24 -> class java.lang.StackOverflowError: null
+[MASTER] 19:53:02.423 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ SimpleNode simpleNode0 = new SimpleNode(22);
+simpleNode0.setIdentifier("");
+StringWriter stringWriter0 = new StringWriter(22);
+simpleNode0.dump("{", stringWriter0);
+assertEquals("<MethodDeclarator>\n</MethodDeclarator>\n", stringWriter0.toString());
+
+
+[MASTER] 19:53:05.972 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test12 -> class java.lang.StackOverflowError: null
+[MASTER] 19:53:05.973 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FileSystemHandling.appendLineToFile((EvoSuiteFile) null, "q' \"d.B;_>KlA_,");
+SimpleNode simpleNode0 = new SimpleNode(17);
+FileSystemHandling fileSystemHandling0 = new FileSystemHandling();
+simpleNode0.toString();
+FileSystemHandling.shouldThrowIOException((EvoSuiteFile) null);
+StringWriter stringWriter0 = new StringWriter();
+Node[] nodeArray0 = new Node[7];
+nodeArray0[0] = (Node) simpleNode0;
+nodeArray0[1] = (Node) simpleNode0;
+nodeArray0[2] = (Node) simpleNode0;
+nodeArray0[3] = (Node) simpleNode0;
+nodeArray0[4] = (Node) simpleNode0;
+StringWriter stringWriter1 = stringWriter0.append((CharSequence) "VariableDeclarator", 17, 17);
+nodeArray0[6] = (Node) simpleNode0;
+simpleNode0.children = nodeArray0;
+simpleNode0.dump("Was expecting:", stringWriter1);
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 5
+* Writing JUnit test case 'SimpleNode_ESTest' to /home/ubuntu/termite/rmosa/tests/s1005/19_jmca/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: com.soops.CEN4010.JMCA.JParser.JavaCharStream
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/19_jmca/evosuite-files/evosuite.properties
+* Connecting to master process on port 14214
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class com.soops.CEN4010.JMCA.JParser.JavaCharStream
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1005
+* Starting evolution
+[MASTER] 20:03:28.636 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.<init>(Ljava/io/InputStream;)V: Line 451
+[MASTER] 20:03:28.637 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.<init>(Ljava/io/InputStream;)V: Line 452
+[MASTER] 20:03:28.637 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V: Line 507
+[MASTER] 20:03:28.637 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V: Line 510
+[MASTER] 20:03:28.637 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V: Line 516
+[MASTER] 20:03:28.637 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V: Line 519
+[MASTER] 20:03:28.637 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V: Line 520
+[MASTER] 20:03:28.637 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V: Line 523
+[MASTER] 20:03:28.637 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V: Line 525
+[MASTER] 20:03:28.637 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V: Line 526
+[MASTER] 20:03:28.637 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V: Line 527
+[MASTER] 20:03:28.637 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V: Line 528
+[MASTER] 20:03:28.637 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V: Line 529
+[MASTER] 20:03:28.656 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1887: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:507 - InsertUnaryOp Negation
+[MASTER] 20:03:28.656 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1888: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:507 - InsertUnaryOp +1
+[MASTER] 20:03:28.656 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1889: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:507 - InsertUnaryOp -1
+[MASTER] 20:03:28.656 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1898: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:510 - InsertUnaryOp Negation
+[MASTER] 20:03:28.656 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1899: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:510 - InsertUnaryOp +1
+[MASTER] 20:03:28.656 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1900: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:510 - InsertUnaryOp -1
+[MASTER] 20:03:28.656 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1909: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:510 - InsertUnaryOp Negation
+[MASTER] 20:03:28.656 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1910: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:510 - InsertUnaryOp +1
+[MASTER] 20:03:28.656 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1911: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:510 - InsertUnaryOp -1
+[MASTER] 20:03:28.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1913: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:510 - ReplaceComparisonOperator < -> -2
+[MASTER] 20:03:28.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1969: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:516 - InsertUnaryOp Negation
+[MASTER] 20:03:28.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1970: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:516 - InsertUnaryOp +1
+[MASTER] 20:03:28.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1971: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:516 - InsertUnaryOp -1
+[MASTER] 20:03:28.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1980: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:516 - InsertUnaryOp Negation
+[MASTER] 20:03:28.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1981: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:516 - InsertUnaryOp +1
+[MASTER] 20:03:28.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1982: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:516 - InsertUnaryOp -1
+[MASTER] 20:03:28.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1984: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:516 - ReplaceArithmeticOperator - -> %
+[MASTER] 20:03:28.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1986: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:516 - ReplaceArithmeticOperator - -> /
+[MASTER] 20:03:28.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1995: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:516 - InsertUnaryOp Negation
+[MASTER] 20:03:28.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1996: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:516 - InsertUnaryOp +1
+[MASTER] 20:03:28.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1997: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:516 - InsertUnaryOp -1
+[MASTER] 20:03:28.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1998: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:516 - ReplaceArithmeticOperator + -> %
+[MASTER] 20:03:28.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1999: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:516 - ReplaceArithmeticOperator + -> -
+[MASTER] 20:03:28.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2000: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:516 - ReplaceArithmeticOperator + -> *
+[MASTER] 20:03:28.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2001: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:516 - ReplaceArithmeticOperator + -> /
+[MASTER] 20:03:28.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2002: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:516 - ReplaceConstant - 1 -> 0
+[MASTER] 20:03:28.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2003: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:516 - ReplaceArithmeticOperator + -> %
+[MASTER] 20:03:28.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2004: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:516 - ReplaceArithmeticOperator + -> -
+[MASTER] 20:03:28.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2005: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:516 - ReplaceArithmeticOperator + -> *
+[MASTER] 20:03:28.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2006: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:516 - ReplaceArithmeticOperator + -> /
+[MASTER] 20:03:28.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2015: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:516 - InsertUnaryOp Negation
+[MASTER] 20:03:28.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2016: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:516 - InsertUnaryOp +1
+[MASTER] 20:03:28.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2017: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:516 - InsertUnaryOp -1
+[MASTER] 20:03:28.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2018: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:516 - ReplaceArithmeticOperator + -> %
+[MASTER] 20:03:28.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2021: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:516 - ReplaceArithmeticOperator + -> /
+[MASTER] 20:03:28.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2022: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:519 - ReplaceConstant - 0 -> 1
+[MASTER] 20:03:28.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2023: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:519 - ReplaceConstant - 0 -> 1
+[MASTER] 20:03:28.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2024: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:519 - ReplaceConstant - 0 -> 1
+[MASTER] 20:03:28.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2025: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:520 - ReplaceConstant - 0 -> 1
+[MASTER] 20:03:28.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2026: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:520 - ReplaceConstant - 0 -> 1
+[MASTER] 20:03:28.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2044: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - InsertUnaryOp Negation of i
+[MASTER] 20:03:28.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2045: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - InsertUnaryOp IINC 1 i
+[MASTER] 20:03:28.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2046: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - InsertUnaryOp IINC -1 i
+[MASTER] 20:03:28.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2064: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - InsertUnaryOp Negation of len
+[MASTER] 20:03:28.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2065: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - InsertUnaryOp IINC 1 len
+[MASTER] 20:03:28.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2066: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - InsertUnaryOp IINC -1 len
+[MASTER] 20:03:28.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2067: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - ReplaceComparisonOperator >= -> -1
+[MASTER] 20:03:28.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2088: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - InsertUnaryOp Negation of start
+[MASTER] 20:03:28.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2089: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - InsertUnaryOp IINC 1 start
+[MASTER] 20:03:28.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2090: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - InsertUnaryOp IINC -1 start
+[MASTER] 20:03:28.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2099: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - InsertUnaryOp Negation
+[MASTER] 20:03:28.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2100: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - InsertUnaryOp +1
+[MASTER] 20:03:28.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2101: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - InsertUnaryOp -1
+[MASTER] 20:03:28.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2102: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - ReplaceArithmeticOperator % -> +
+[MASTER] 20:03:28.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2103: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - ReplaceArithmeticOperator % -> -
+[MASTER] 20:03:28.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2104: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - ReplaceArithmeticOperator % -> *
+[MASTER] 20:03:28.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2105: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - ReplaceArithmeticOperator % -> /
+[MASTER] 20:03:28.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2132: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - InsertUnaryOp Negation of start
+[MASTER] 20:03:28.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2133: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - InsertUnaryOp IINC 1 start
+[MASTER] 20:03:28.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2134: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - InsertUnaryOp IINC -1 start
+[MASTER] 20:03:28.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2143: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - InsertUnaryOp Negation
+[MASTER] 20:03:28.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2144: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - InsertUnaryOp +1
+[MASTER] 20:03:28.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2145: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - InsertUnaryOp -1
+[MASTER] 20:03:28.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2146: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - ReplaceArithmeticOperator % -> +
+[MASTER] 20:03:28.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2147: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - ReplaceArithmeticOperator % -> -
+[MASTER] 20:03:28.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2148: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - ReplaceArithmeticOperator % -> *
+[MASTER] 20:03:28.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2149: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - ReplaceArithmeticOperator % -> /
+[MASTER] 20:03:28.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2150: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:523 - ReplaceComparisonOperator != -> -1
+[MASTER] 20:03:28.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2171: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:525 - InsertUnaryOp Negation of j
+[MASTER] 20:03:28.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2172: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:525 - InsertUnaryOp IINC 1 j
+[MASTER] 20:03:28.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2173: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:525 - InsertUnaryOp IINC -1 j
+[MASTER] 20:03:28.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2191: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:525 - InsertUnaryOp Negation of newLine
+[MASTER] 20:03:28.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2192: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:525 - InsertUnaryOp IINC 1 newLine
+[MASTER] 20:03:28.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2193: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:525 - InsertUnaryOp IINC -1 newLine
+[MASTER] 20:03:28.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2211: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:526 - InsertUnaryOp Negation of columnDiff
+[MASTER] 20:03:28.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2212: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:526 - InsertUnaryOp IINC 1 columnDiff
+[MASTER] 20:03:28.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2213: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:526 - InsertUnaryOp IINC -1 columnDiff
+[MASTER] 20:03:28.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2232: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:526 - InsertUnaryOp Negation of k
+[MASTER] 20:03:28.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2233: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:526 - InsertUnaryOp IINC 1 k
+[MASTER] 20:03:28.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2234: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:526 - InsertUnaryOp IINC -1 k
+[MASTER] 20:03:28.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2235: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:526 - ReplaceArithmeticOperator + -> %
+[MASTER] 20:03:28.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2238: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:526 - ReplaceArithmeticOperator + -> /
+[MASTER] 20:03:28.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2257: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:526 - InsertUnaryOp Negation of j
+[MASTER] 20:03:28.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2258: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:526 - InsertUnaryOp IINC 1 j
+[MASTER] 20:03:28.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2259: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:526 - InsertUnaryOp IINC -1 j
+[MASTER] 20:03:28.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2261: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:526 - ReplaceArithmeticOperator - -> %
+[MASTER] 20:03:28.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2263: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:526 - ReplaceArithmeticOperator - -> /
+[MASTER] 20:03:28.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2282: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:527 - InsertUnaryOp Negation of j
+[MASTER] 20:03:28.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2283: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:527 - InsertUnaryOp IINC 1 j
+[MASTER] 20:03:28.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2284: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:527 - InsertUnaryOp IINC -1 j
+[MASTER] 20:03:28.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2302: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:527 - InsertUnaryOp Negation of newCol
+[MASTER] 20:03:28.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2303: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:527 - InsertUnaryOp IINC 1 newCol
+[MASTER] 20:03:28.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2304: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:527 - InsertUnaryOp IINC -1 newCol
+[MASTER] 20:03:28.661 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2322: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:527 - InsertUnaryOp Negation of columnDiff
+[MASTER] 20:03:28.661 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2323: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:527 - InsertUnaryOp IINC 1 columnDiff
+[MASTER] 20:03:28.661 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2324: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:527 - InsertUnaryOp IINC -1 columnDiff
+[MASTER] 20:03:28.661 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2325: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:527 - ReplaceArithmeticOperator + -> %
+[MASTER] 20:03:28.661 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2328: com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V:527 - ReplaceArithmeticOperator + -> /
+[MASTER] 20:03:28.661 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] com.soops.CEN4010.JMCA.JParser.JavaCharStream.<init>(Ljava/io/InputStream;)V
+[MASTER] 20:03:28.661 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] com.soops.CEN4010.JMCA.JParser.JavaCharStream.ReInit(Ljava/io/InputStream;II)V
+[MASTER] 20:03:28.662 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V
+[MASTER] 20:03:28.662 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] com.soops.CEN4010.JMCA.JParser.JavaCharStream.<init>(Ljava/io/InputStream;)V
+[MASTER] 20:03:28.663 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] com.soops.CEN4010.JMCA.JParser.JavaCharStream.ReInit(Ljava/io/InputStream;II)V
+[MASTER] 20:03:28.663 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] com.soops.CEN4010.JMCA.JParser.JavaCharStream.ReInit(Ljava/io/InputStream;)V
+[MASTER] 20:03:28.663 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V
+[MASTER] 20:03:28.663 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V: I84 Branch 96 IF_ICMPNE L523 - false in context: com.soops.CEN4010.JMCA.JParser.JavaCharStream:adjustBeginLineColumn(II)V
+[MASTER] 20:03:28.663 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V: I11 Branch 94 IF_ICMPLT L510 - true in context: com.soops.CEN4010.JMCA.JParser.JavaCharStream:adjustBeginLineColumn(II)V
+[MASTER] 20:03:28.663 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaCharStream.adjustBeginLineColumn(II)V: I64 Branch 95 IF_ICMPGE L523 - false in context: com.soops.CEN4010.JMCA.JParser.JavaCharStream:adjustBeginLineColumn(II)V
+[MASTER] 20:03:28.663 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaCharStream.<init>(Ljava/io/InputStream;)V: root-Branch in context: com.soops.CEN4010.JMCA.JParser.JavaCharStream:<init>(Ljava/io/InputStream;)V
+[MASTER] 20:03:57.048 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] com.soops.CEN4010.JMCA.JParser.JavaCharStream.readChar()C
+[MASTER] 20:04:40.435 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] com.soops.CEN4010.JMCA.JParser.JavaCharStream.getLine()I
+[MASTER] 20:04:52.780 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.hexval(C)I: Line 37
+[MASTER] 20:04:52.782 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 39: com.soops.CEN4010.JMCA.JParser.JavaCharStream.hexval(C)I:37 - ReplaceConstant - 9 -> 0
+[MASTER] 20:04:52.782 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 40: com.soops.CEN4010.JMCA.JParser.JavaCharStream.hexval(C)I:37 - ReplaceConstant - 9 -> 1
+[MASTER] 20:04:52.782 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 41: com.soops.CEN4010.JMCA.JParser.JavaCharStream.hexval(C)I:37 - ReplaceConstant - 9 -> -1
+[MASTER] 20:04:52.783 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 42: com.soops.CEN4010.JMCA.JParser.JavaCharStream.hexval(C)I:37 - ReplaceConstant - 9 -> 8
+[MASTER] 20:04:52.783 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 43: com.soops.CEN4010.JMCA.JParser.JavaCharStream.hexval(C)I:37 - ReplaceConstant - 9 -> 10
+[MASTER] 20:04:52.785 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] com.soops.CEN4010.JMCA.JParser.JavaCharStream.<init>(Ljava/io/InputStream;III)V
+[MASTER] 20:04:52.785 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaCharStream.hexval(C)I: I3 Branch 10 TABLESWITCH L16 Case 57 - true in context: 
+* Search finished after 127s and 26 generations, 21116 statements, best individual has fitness: 2328.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 79%
+* Total number of goals: 239
+* Number of covered goals: 190
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 84%
+* Total number of goals: 216
+* Number of covered goals: 181
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 34
+* Number of covered goals: 34
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 83%
+* Total number of goals: 974
+* Number of covered goals: 810
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 78%
+* Total number of goals: 36
+* Number of covered goals: 28
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 31
+* Number of covered goals: 31
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 31
+* Number of covered goals: 31
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 84%
+* Total number of goals: 216
+* Number of covered goals: 181
+* Generated 129 tests with total length 1155
+* Resulting test suite's coverage: 84% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 37%
+* Compiling and checking tests
+* Writing JUnit test case 'JavaCharStream_ESTest' to /home/ubuntu/termite/rmosa/tests/s1005/19_jmca/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/19_jmca/evosuite-files/evosuite.properties
+* Connecting to master process on port 14212
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 20:21:49.098 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 20:21:49.127 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 20:21:49.129 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 20:21:49.148 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1005
+* Starting evolution
+[MASTER] 20:21:54.816 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.TokenLexicalActions(Lcom/soops/CEN4010/JMCA/JParser/Token;)V: Line 1740
+[MASTER] 20:21:54.819 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.TokenLexicalActions(Lcom/soops/CEN4010/JMCA/JParser/Token;)V: Line 1763
+[MASTER] 20:21:54.822 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.TokenLexicalActions(Lcom/soops/CEN4010/JMCA/JParser/Token;)V: I4 Branch 844 LOOKUPSWITCH L1740 Case 122 - false
+[MASTER] 20:21:54.822 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.TokenLexicalActions(Lcom/soops/CEN4010/JMCA/JParser/Token;)V: I4 Branch 845 LOOKUPSWITCH L1740 Case 123 - false
+[MASTER] 20:21:54.822 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.TokenLexicalActions(Lcom/soops/CEN4010/JMCA/JParser/Token;)V: I4 Branch 846 LOOKUPSWITCH L1740 Default-Case - true
+[MASTER] 20:21:54.832 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.TokenLexicalActions(Lcom/soops/CEN4010/JMCA/JParser/Token;)V
+[MASTER] 20:21:54.833 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.TokenLexicalActions(Lcom/soops/CEN4010/JMCA/JParser/Token;)V
+[MASTER] 20:21:54.852 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.TokenLexicalActions(Lcom/soops/CEN4010/JMCA/JParser/Token;)V: I4 Branch 846 LOOKUPSWITCH L1740 Default-Case - true in context: 
+[MASTER] 20:21:54.853 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.TokenLexicalActions(Lcom/soops/CEN4010/JMCA/JParser/Token;)V: I4 Branch 845 LOOKUPSWITCH L1740 Case 123 - false in context: 
+[MASTER] 20:21:54.854 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.TokenLexicalActions(Lcom/soops/CEN4010/JMCA/JParser/Token;)V: I4 Branch 844 LOOKUPSWITCH L1740 Case 122 - false in context: 
+[MASTER] 20:21:55.147 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjFillToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: Line 1561
+[MASTER] 20:21:55.147 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjFillToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: Line 1562
+[MASTER] 20:21:55.147 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjFillToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: Line 1563
+[MASTER] 20:21:55.147 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjFillToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: Line 1564
+[MASTER] 20:21:55.147 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjFillToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: Line 1565
+[MASTER] 20:21:55.150 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjFillToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: Line 1566
+[MASTER] 20:21:55.150 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjFillToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: Line 1567
+[MASTER] 20:21:55.150 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjFillToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: Line 1568
+[MASTER] 20:21:55.151 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjFillToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: Line 1569
+[MASTER] 20:21:55.151 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: Line 1582
+[MASTER] 20:21:55.151 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: Line 1584
+[MASTER] 20:21:55.151 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: Line 1591
+[MASTER] 20:21:55.151 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: Line 1599
+[MASTER] 20:21:55.151 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: Line 1600
+[MASTER] 20:21:55.151 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: Line 1601
+[MASTER] 20:21:55.151 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: Line 1605
+[MASTER] 20:21:55.154 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: Line 1645
+[MASTER] 20:21:55.155 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: Line 1647
+[MASTER] 20:21:55.155 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: Line 1649
+[MASTER] 20:21:55.155 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: Line 1651
+[MASTER] 20:21:55.155 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: Line 1652
+[MASTER] 20:21:55.155 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: Line 1653
+[MASTER] 20:21:55.155 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: Line 1654
+[MASTER] 20:21:55.155 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: Line 1656
+[MASTER] 20:21:55.156 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.SkipLexicalActions(Lcom/soops/CEN4010/JMCA/JParser/Token;)V: Line 1715
+[MASTER] 20:21:55.156 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.SkipLexicalActions(Lcom/soops/CEN4010/JMCA/JParser/Token;)V: Line 1720
+[MASTER] 20:21:55.176 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjFillToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: I23 Branch 812 IFNONNULL L1564 - true
+[MASTER] 20:21:55.176 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.SkipLexicalActions(Lcom/soops/CEN4010/JMCA/JParser/Token;)V: I4 Branch 840 LOOKUPSWITCH L1715 Default-Case - true
+[MASTER] 20:21:55.179 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: I54 Branch 813 TABLESWITCH L1605 Case 0 - false
+[MASTER] 20:21:55.187 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: I54 Branch 814 TABLESWITCH L1605 Case 1 - false
+[MASTER] 20:21:55.187 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: I54 Branch 815 TABLESWITCH L1605 Case 2 - false
+[MASTER] 20:21:55.187 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: I54 Branch 816 TABLESWITCH L1605 Case 3 - false
+[MASTER] 20:21:55.187 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: I54 Branch 817 TABLESWITCH L1605 Default-Case - true
+[MASTER] 20:21:55.193 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: I203 Branch 826 IF_ICMPEQ L1645 - false
+[MASTER] 20:21:55.193 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: I211 Branch 827 IF_ICMPGE L1647 - true
+[MASTER] 20:21:55.193 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: I240 Branch 828 IFEQ L1649 - false
+[MASTER] 20:21:55.193 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: I263 Branch 829 IF_ICMPEQ L1654 - true
+[MASTER] 20:21:55.201 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 8713: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjFillToken()Lcom/soops/CEN4010/JMCA/JParser/Token;:1564 - ReplaceComparisonOperator != null -> = null
+[MASTER] 20:21:55.202 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;:NonNull
+[MASTER] 20:21:55.203 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.SkipLexicalActions(Lcom/soops/CEN4010/JMCA/JParser/Token;)V
+[MASTER] 20:21:55.208 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;
+[MASTER] 20:21:55.209 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.SkipLexicalActions(Lcom/soops/CEN4010/JMCA/JParser/Token;)V
+[MASTER] 20:21:55.209 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;
+[MASTER] 20:21:55.209 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: I54 Branch 814 TABLESWITCH L1605 Case 1 - false in context: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager:getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;
+[MASTER] 20:21:55.210 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: I263 Branch 829 IF_ICMPEQ L1654 - true in context: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager:getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;
+[MASTER] 20:21:55.210 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: I54 Branch 816 TABLESWITCH L1605 Case 3 - false in context: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager:getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;
+[MASTER] 20:21:55.217 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: I211 Branch 827 IF_ICMPGE L1647 - true in context: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager:getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;
+[MASTER] 20:21:55.219 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjFillToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: I23 Branch 812 IFNONNULL L1564 - true in context: 
+[MASTER] 20:21:55.219 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: I54 Branch 815 TABLESWITCH L1605 Case 2 - false in context: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager:getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;
+[MASTER] 20:21:55.220 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: I54 Branch 813 TABLESWITCH L1605 Case 0 - false in context: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager:getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;
+[MASTER] 20:21:55.221 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: I54 Branch 817 TABLESWITCH L1605 Default-Case - true in context: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager:getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;
+[MASTER] 20:21:55.221 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.SkipLexicalActions(Lcom/soops/CEN4010/JMCA/JParser/Token;)V: I4 Branch 840 LOOKUPSWITCH L1715 Default-Case - true in context: 
+[MASTER] 20:21:55.223 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: I240 Branch 828 IFEQ L1649 - false in context: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager:getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;
+[MASTER] 20:21:55.232 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: I203 Branch 826 IF_ICMPEQ L1645 - false in context: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager:getNextToken()Lcom/soops/CEN4010/JMCA/JParser/Token;
+[MASTER] 20:21:55.262 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.MoreLexicalActions()V: Line 1723
+[MASTER] 20:21:55.262 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.MoreLexicalActions()V: Line 1724
+[MASTER] 20:21:55.262 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.MoreLexicalActions()V: Line 1737
+[MASTER] 20:21:55.264 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.MoreLexicalActions()V: I18 Branch 841 LOOKUPSWITCH L1724 Case 7 - false
+[MASTER] 20:21:55.265 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.MoreLexicalActions()V: I18 Branch 842 LOOKUPSWITCH L1724 Default-Case - true
+[MASTER] 20:21:55.268 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 9174: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.MoreLexicalActions()V:1723 - ReplaceArithmeticOperator + -> %
+[MASTER] 20:21:55.268 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 9175: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.MoreLexicalActions()V:1723 - ReplaceArithmeticOperator + -> -
+[MASTER] 20:21:55.268 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 9176: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.MoreLexicalActions()V:1723 - ReplaceArithmeticOperator + -> *
+[MASTER] 20:21:55.269 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 9177: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.MoreLexicalActions()V:1723 - ReplaceArithmeticOperator + -> /
+[MASTER] 20:21:55.269 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 9178: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.MoreLexicalActions()V:1723 - ReplaceArithmeticOperator + -> %
+[MASTER] 20:21:55.270 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 9179: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.MoreLexicalActions()V:1723 - ReplaceArithmeticOperator + -> -
+[MASTER] 20:21:55.270 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 9180: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.MoreLexicalActions()V:1723 - ReplaceArithmeticOperator + -> *
+[MASTER] 20:21:55.270 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 9181: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.MoreLexicalActions()V:1723 - ReplaceArithmeticOperator + -> /
+[MASTER] 20:21:55.271 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.MoreLexicalActions()V
+[MASTER] 20:21:55.272 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.MoreLexicalActions()V
+[MASTER] 20:21:55.272 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.MoreLexicalActions()V: I18 Branch 841 LOOKUPSWITCH L1724 Case 7 - false in context: 
+[MASTER] 20:21:55.274 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.MoreLexicalActions()V: I18 Branch 842 LOOKUPSWITCH L1724 Default-Case - true in context: 
+[MASTER] 20:22:05.233 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveStringLiteralDfa0_0()I: Line 257
+[MASTER] 20:22:05.238 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjCheckNAdd(I)V: Line 849
+[MASTER] 20:22:05.238 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjCheckNAdd(I)V: Line 851
+[MASTER] 20:22:05.238 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjCheckNAdd(I)V: Line 852
+[MASTER] 20:22:05.238 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjCheckNAdd(I)V: Line 854
+[MASTER] 20:22:05.240 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: Line 1070
+[MASTER] 20:22:05.240 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: Line 1071
+[MASTER] 20:22:05.241 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: Line 1161
+[MASTER] 20:22:05.241 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: Line 1163
+[MASTER] 20:22:05.241 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: Line 1166
+[MASTER] 20:22:05.241 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: Line 1170
+[MASTER] 20:22:05.241 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: Line 1172
+[MASTER] 20:22:05.241 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: Line 1173
+[MASTER] 20:22:05.241 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: Line 1174
+[MASTER] 20:22:05.241 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: Line 1175
+[MASTER] 20:22:05.244 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: Line 1241
+[MASTER] 20:22:05.244 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: Line 1242
+[MASTER] 20:22:05.245 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: Line 1280
+[MASTER] 20:22:05.245 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: Line 1281
+[MASTER] 20:22:05.245 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: Line 1282
+[MASTER] 20:22:05.245 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: Line 1287
+[MASTER] 20:22:05.245 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: Line 1288
+[MASTER] 20:22:05.257 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjFillToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: I23 Branch 812 IFNONNULL L1564 - false
+[MASTER] 20:22:05.258 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjCheckNAdd(I)V: I8 Branch 547 IF_ICMPEQ L849 - false
+[MASTER] 20:22:05.273 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveStringLiteralDfa0_0()I: I4 Branch 63 TABLESWITCH L159 Case 47 - false
+[MASTER] 20:22:05.276 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveStringLiteralDfa0_0()I: I4 Branch 103 TABLESWITCH L159 Case 87 - true
+[MASTER] 20:22:05.277 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I44 Branch 551 IF_ICMPGE L913 - true
+[MASTER] 20:22:05.277 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I59 Branch 554 TABLESWITCH L918 Case 2 - false
+[MASTER] 20:22:05.278 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I59 Branch 584 TABLESWITCH L918 Case 32 - true
+[MASTER] 20:22:05.279 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I673 Branch 650 IFNE L1070 - false
+[MASTER] 20:22:05.280 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1023 Branch 675 IF_ICMPGE L1161 - false
+[MASTER] 20:22:05.280 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 676 TABLESWITCH L1166 Case 1 - false
+[MASTER] 20:22:05.280 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 677 TABLESWITCH L1166 Case 2 - false
+[MASTER] 20:22:05.280 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 678 TABLESWITCH L1166 Case 3 - true
+[MASTER] 20:22:05.283 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 679 TABLESWITCH L1166 Case 4 - false
+[MASTER] 20:22:05.283 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 680 TABLESWITCH L1166 Case 5 - false
+[MASTER] 20:22:05.283 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 681 TABLESWITCH L1166 Case 6 - false
+[MASTER] 20:22:05.284 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 682 TABLESWITCH L1166 Case 7 - false
+[MASTER] 20:22:05.284 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 683 TABLESWITCH L1166 Case 8 - false
+[MASTER] 20:22:05.284 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 684 TABLESWITCH L1166 Case 9 - false
+[MASTER] 20:22:05.284 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 685 TABLESWITCH L1166 Case 10 - false
+[MASTER] 20:22:05.284 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 686 TABLESWITCH L1166 Case 11 - false
+[MASTER] 20:22:05.284 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 687 TABLESWITCH L1166 Case 12 - false
+[MASTER] 20:22:05.284 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 688 TABLESWITCH L1166 Case 13 - false
+[MASTER] 20:22:05.285 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 689 TABLESWITCH L1166 Case 14 - false
+[MASTER] 20:22:05.285 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 690 TABLESWITCH L1166 Case 15 - false
+[MASTER] 20:22:05.285 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 691 TABLESWITCH L1166 Case 16 - false
+[MASTER] 20:22:05.285 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 692 TABLESWITCH L1166 Case 17 - false
+[MASTER] 20:22:05.285 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 693 TABLESWITCH L1166 Case 18 - false
+[MASTER] 20:22:05.285 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 694 TABLESWITCH L1166 Case 19 - false
+[MASTER] 20:22:05.285 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 695 TABLESWITCH L1166 Case 20 - false
+[MASTER] 20:22:05.285 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 696 TABLESWITCH L1166 Case 21 - false
+[MASTER] 20:22:05.285 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 697 TABLESWITCH L1166 Case 22 - false
+[MASTER] 20:22:05.285 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 698 TABLESWITCH L1166 Case 23 - false
+[MASTER] 20:22:05.285 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 699 TABLESWITCH L1166 Case 24 - false
+[MASTER] 20:22:05.285 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 700 TABLESWITCH L1166 Case 25 - false
+[MASTER] 20:22:05.285 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 701 TABLESWITCH L1166 Case 26 - false
+[MASTER] 20:22:05.285 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 702 TABLESWITCH L1166 Case 27 - false
+[MASTER] 20:22:05.285 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 703 TABLESWITCH L1166 Case 28 - false
+[MASTER] 20:22:05.285 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 704 TABLESWITCH L1166 Case 29 - false
+[MASTER] 20:22:05.286 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 705 TABLESWITCH L1166 Case 30 - false
+[MASTER] 20:22:05.286 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 706 TABLESWITCH L1166 Case 31 - false
+[MASTER] 20:22:05.286 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 707 TABLESWITCH L1166 Case 32 - false
+[MASTER] 20:22:05.286 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 708 TABLESWITCH L1166 Case 33 - false
+[MASTER] 20:22:05.286 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 709 TABLESWITCH L1166 Case 34 - false
+[MASTER] 20:22:05.286 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 710 TABLESWITCH L1166 Case 35 - false
+[MASTER] 20:22:05.286 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 711 TABLESWITCH L1166 Case 36 - false
+[MASTER] 20:22:05.286 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 712 TABLESWITCH L1166 Case 37 - false
+[MASTER] 20:22:05.286 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 713 TABLESWITCH L1166 Case 38 - false
+[MASTER] 20:22:05.286 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 714 TABLESWITCH L1166 Case 39 - false
+[MASTER] 20:22:05.286 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 715 TABLESWITCH L1166 Case 40 - false
+[MASTER] 20:22:05.286 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 716 TABLESWITCH L1166 Case 41 - false
+[MASTER] 20:22:05.286 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 717 TABLESWITCH L1166 Case 42 - false
+[MASTER] 20:22:05.286 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 718 TABLESWITCH L1166 Case 43 - false
+[MASTER] 20:22:05.286 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 719 TABLESWITCH L1166 Case 44 - false
+[MASTER] 20:22:05.286 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 720 TABLESWITCH L1166 Case 45 - false
+[MASTER] 20:22:05.286 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 721 TABLESWITCH L1166 Case 46 - false
+[MASTER] 20:22:05.286 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 722 TABLESWITCH L1166 Case 47 - false
+[MASTER] 20:22:05.286 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 723 TABLESWITCH L1166 Case 48 - false
+[MASTER] 20:22:05.286 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 724 TABLESWITCH L1166 Case 49 - false
+[MASTER] 20:22:05.286 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 725 TABLESWITCH L1166 Case 50 - false
+[MASTER] 20:22:05.286 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 726 TABLESWITCH L1166 Default-Case - false
+[MASTER] 20:22:05.286 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1048 Branch 727 IFNE L1170 - true
+[MASTER] 20:22:05.287 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1056 Branch 728 IF_ICMPLE L1172 - false
+[MASTER] 20:22:05.287 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1302 Branch 747 IF_ICMPNE L1241 - false
+[MASTER] 20:22:05.287 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1447 Branch 761 IF_ICMPEQ L1278 - false
+[MASTER] 20:22:05.287 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1479 Branch 762 IF_ICMPNE L1285 - true
+[MASTER] 20:22:05.291 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 3271: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjCheckNAdd(I)V:849 - ReplaceComparisonOperator == -> <=
+[MASTER] 20:22:05.291 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 3379: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjCheckNAdd(I)V:851 - ReplaceArithmeticOperator + -> %
+[MASTER] 20:22:05.291 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 3380: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjCheckNAdd(I)V:851 - ReplaceArithmeticOperator + -> -
+[MASTER] 20:22:05.291 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 3381: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjCheckNAdd(I)V:851 - ReplaceArithmeticOperator + -> *
+[MASTER] 20:22:05.291 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 3382: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjCheckNAdd(I)V:851 - ReplaceArithmeticOperator + -> /
+[MASTER] 20:22:05.291 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 5106: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I:913 - ReplaceComparisonOperator >= -> ==
+[MASTER] 20:22:05.293 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveStringLiteralDfa0_0()I: I4 Branch 63 TABLESWITCH L159 Case 47 - false in context: 
+[MASTER] 20:22:05.293 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 687 TABLESWITCH L1166 Case 12 - false in context: 
+[MASTER] 20:22:05.293 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 724 TABLESWITCH L1166 Case 49 - false in context: 
+[MASTER] 20:22:05.294 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 694 TABLESWITCH L1166 Case 19 - false in context: 
+[MASTER] 20:22:05.294 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1048 Branch 727 IFNE L1170 - true in context: 
+[MASTER] 20:22:05.294 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 701 TABLESWITCH L1166 Case 26 - false in context: 
+[MASTER] 20:22:05.294 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 703 TABLESWITCH L1166 Case 28 - false in context: 
+[MASTER] 20:22:05.294 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 717 TABLESWITCH L1166 Case 42 - false in context: 
+[MASTER] 20:22:05.294 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 710 TABLESWITCH L1166 Case 35 - false in context: 
+[MASTER] 20:22:05.294 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 715 TABLESWITCH L1166 Case 40 - false in context: 
+[MASTER] 20:22:05.294 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 708 TABLESWITCH L1166 Case 33 - false in context: 
+[MASTER] 20:22:05.295 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1056 Branch 728 IF_ICMPLE L1172 - false in context: 
+[MASTER] 20:22:05.295 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1302 Branch 747 IF_ICMPNE L1241 - false in context: 
+[MASTER] 20:22:05.295 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 680 TABLESWITCH L1166 Case 5 - false in context: 
+[MASTER] 20:22:05.295 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 713 TABLESWITCH L1166 Case 38 - false in context: 
+[MASTER] 20:22:05.295 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 691 TABLESWITCH L1166 Case 16 - false in context: 
+[MASTER] 20:22:05.295 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1479 Branch 762 IF_ICMPNE L1285 - true in context: 
+[MASTER] 20:22:05.295 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 676 TABLESWITCH L1166 Case 1 - false in context: 
+[MASTER] 20:22:05.295 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveStringLiteralDfa0_0()I: I4 Branch 103 TABLESWITCH L159 Case 87 - true in context: 
+[MASTER] 20:22:05.295 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 677 TABLESWITCH L1166 Case 2 - false in context: 
+[MASTER] 20:22:05.295 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 705 TABLESWITCH L1166 Case 30 - false in context: 
+[MASTER] 20:22:05.296 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 722 TABLESWITCH L1166 Case 47 - false in context: 
+[MASTER] 20:22:05.296 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjFillToken()Lcom/soops/CEN4010/JMCA/JParser/Token;: I23 Branch 812 IFNONNULL L1564 - false in context: 
+[MASTER] 20:22:05.296 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 719 TABLESWITCH L1166 Case 44 - false in context: 
+[MASTER] 20:22:05.296 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 696 TABLESWITCH L1166 Case 21 - false in context: 
+[MASTER] 20:22:05.296 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 682 TABLESWITCH L1166 Case 7 - false in context: 
+[MASTER] 20:22:05.298 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I59 Branch 554 TABLESWITCH L918 Case 2 - false in context: 
+[MASTER] 20:22:05.298 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 699 TABLESWITCH L1166 Case 24 - false in context: 
+[MASTER] 20:22:05.298 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 685 TABLESWITCH L1166 Case 10 - false in context: 
+[MASTER] 20:22:05.298 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I673 Branch 650 IFNE L1070 - false in context: 
+[MASTER] 20:22:05.298 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 716 TABLESWITCH L1166 Case 41 - false in context: 
+[MASTER] 20:22:05.298 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I44 Branch 551 IF_ICMPGE L913 - true in context: 
+[MASTER] 20:22:05.298 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 702 TABLESWITCH L1166 Case 27 - false in context: 
+[MASTER] 20:22:05.298 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 709 TABLESWITCH L1166 Case 34 - false in context: 
+[MASTER] 20:22:05.299 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 695 TABLESWITCH L1166 Case 20 - false in context: 
+[MASTER] 20:22:05.299 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1447 Branch 761 IF_ICMPEQ L1278 - false in context: 
+[MASTER] 20:22:05.299 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 688 TABLESWITCH L1166 Case 13 - false in context: 
+[MASTER] 20:22:05.299 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 679 TABLESWITCH L1166 Case 4 - false in context: 
+[MASTER] 20:22:05.300 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjCheckNAdd(I)V: I8 Branch 547 IF_ICMPEQ L849 - false in context: 
+[MASTER] 20:22:05.300 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 681 TABLESWITCH L1166 Case 6 - false in context: 
+[MASTER] 20:22:05.300 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 686 TABLESWITCH L1166 Case 11 - false in context: 
+[MASTER] 20:22:05.300 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 711 TABLESWITCH L1166 Case 36 - false in context: 
+[MASTER] 20:22:05.300 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 700 TABLESWITCH L1166 Case 25 - false in context: 
+[MASTER] 20:22:05.300 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 693 TABLESWITCH L1166 Case 18 - false in context: 
+[MASTER] 20:22:05.300 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 707 TABLESWITCH L1166 Case 32 - false in context: 
+[MASTER] 20:22:05.300 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 718 TABLESWITCH L1166 Case 43 - false in context: 
+[MASTER] 20:22:05.300 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 690 TABLESWITCH L1166 Case 15 - false in context: 
+[MASTER] 20:22:05.300 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 725 TABLESWITCH L1166 Case 50 - false in context: 
+[MASTER] 20:22:05.300 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 714 TABLESWITCH L1166 Case 39 - false in context: 
+[MASTER] 20:22:05.300 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 721 TABLESWITCH L1166 Case 46 - false in context: 
+[MASTER] 20:22:05.300 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 697 TABLESWITCH L1166 Case 22 - false in context: 
+[MASTER] 20:22:05.300 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 704 TABLESWITCH L1166 Case 29 - false in context: 
+[MASTER] 20:22:05.300 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I59 Branch 584 TABLESWITCH L918 Case 32 - true in context: 
+[MASTER] 20:22:05.300 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 684 TABLESWITCH L1166 Case 9 - false in context: 
+[MASTER] 20:22:05.301 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 683 TABLESWITCH L1166 Case 8 - false in context: 
+[MASTER] 20:22:05.301 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 706 TABLESWITCH L1166 Case 31 - false in context: 
+[MASTER] 20:22:05.301 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 720 TABLESWITCH L1166 Case 45 - false in context: 
+[MASTER] 20:22:05.301 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 712 TABLESWITCH L1166 Case 37 - false in context: 
+[MASTER] 20:22:05.301 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 698 TABLESWITCH L1166 Case 23 - false in context: 
+[MASTER] 20:22:05.301 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 689 TABLESWITCH L1166 Case 14 - false in context: 
+[MASTER] 20:22:05.301 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 726 TABLESWITCH L1166 Default-Case - false in context: 
+[MASTER] 20:22:05.303 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 678 TABLESWITCH L1166 Case 3 - true in context: 
+[MASTER] 20:22:05.303 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 723 TABLESWITCH L1166 Case 48 - false in context: 
+[MASTER] 20:22:05.304 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1040 Branch 692 TABLESWITCH L1166 Case 17 - false in context: 
+[MASTER] 20:22:05.304 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveNfa_0(II)I: I1023 Branch 675 IF_ICMPGE L1161 - false in context: 
+[MASTER] 20:22:11.020 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjFillToken()Lcom/soops/CEN4010/JMCA/JParser/Token;:NonNull
+[MASTER] 20:22:11.021 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjFillToken()Lcom/soops/CEN4010/JMCA/JParser/Token;
+[MASTER] 20:22:23.228 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveStringLiteralDfa0_0()I: Line 173
+[MASTER] 20:22:23.237 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveStringLiteralDfa0_0()I: I4 Branch 57 TABLESWITCH L159 Case 41 - true
+[MASTER] 20:22:23.243 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveStringLiteralDfa0_0()I: I4 Branch 57 TABLESWITCH L159 Case 41 - true in context: 
+[MASTER] 20:22:42.737 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveStringLiteralDfa0_0()I: Line 218
+[MASTER] 20:22:42.753 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveStringLiteralDfa1_0(JJ)I: I29 Branch 156 TABLESWITCH L267 Case 50 - true
+[MASTER] 20:22:42.765 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveStringLiteralDfa0_0()I: I4 Branch 114 TABLESWITCH L159 Case 98 - true
+[MASTER] 20:22:42.778 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveStringLiteralDfa0_0()I: I4 Branch 114 TABLESWITCH L159 Case 98 - true in context: 
+[MASTER] 20:22:42.779 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.jjMoveStringLiteralDfa1_0(JJ)I: I29 Branch 156 TABLESWITCH L267 Case 50 - true in context: 
+* Search finished after 138s and 27 generations, 22427 statements, best individual has fitness: 18008.0
+[MASTER] 20:24:12.772 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 20 seconds more than allowed.
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 48%
+* Total number of goals: 981
+* Number of covered goals: 474
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 56%
+* Total number of goals: 1707
+* Number of covered goals: 948
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 9
+* Number of covered goals: 9
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 47%
+* Total number of goals: 434
+* Number of covered goals: 205
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 50%
+* Total number of goals: 4
+* Number of covered goals: 2
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 91%
+* Total number of goals: 11
+* Number of covered goals: 10
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 91%
+* Total number of goals: 11
+* Number of covered goals: 10
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 56%
+* Total number of goals: 1707
+* Number of covered goals: 948
+* Generated 118 tests with total length 1047
+* Resulting test suite's coverage: 54% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 18%
+* Compiling and checking tests
+[MASTER] 20:25:29.812 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager but in org.junit.Assert.fail(Assert.java:88): java.lang.AssertionError: Expecting exception: Error
+[MASTER] 20:25:29.813 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ StringReader stringReader0 = new StringReader("9S#wA");
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader0, (-1253), (-1253));
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+javaParserTokenManager0.getNextToken();
+
+[MASTER] 20:25:32.221 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager but in org.junit.Assert.fail(Assert.java:88): java.lang.AssertionError: Expecting exception: Error
+[MASTER] 20:25:32.222 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ StringReader stringReader0 = new StringReader("31W}'KczUkmqG<.W3Kv");
+stringReader0.markSupported();
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader0, 931, 1387);
+JavaCharStream javaCharStream1 = new JavaCharStream(stringReader0, 1387, 931);
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+JavaParserTokenManager javaParserTokenManager1 = new JavaParserTokenManager(javaCharStream0);
+javaParserTokenManager0.getNextToken();
+
+[MASTER] 20:25:32.502 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager but in org.junit.Assert.fail(Assert.java:88): java.lang.AssertionError: Expecting exception: Error
+[MASTER] 20:25:32.502 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ StringReader stringReader0 = new StringReader("31W}'KczUkmqG<.W3Kv");
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader0, (-791), 2523);
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+Token token0 = new Token();
+javaParserTokenManager0.TokenLexicalActions(token0);
+javaParserTokenManager0.getNextToken();
+
+[MASTER] 20:25:32.553 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<5> but was:<0>
+[MASTER] 20:25:32.553 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FileSystemHandling.appendStringToFile((EvoSuiteFile) null, (String) null);
+StringReader stringReader0 = new StringReader("4AUykn[|6");
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader0, (-731), 908);
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+javaParserTokenManager0.getNextToken();
+assertEquals(5, javaCharStream0.bufpos);
+assertEquals(913, javaCharStream0.getColumn());
+
+
+[MASTER] 20:25:32.783 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager but in org.junit.Assert.fail(Assert.java:88): java.lang.AssertionError: Expecting exception: Error
+[MASTER] 20:25:32.783 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ StringReader stringReader0 = new StringReader("8|V8~JX+_63!=O ");
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader0, (-1058), 1922);
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+javaParserTokenManager0.getNextToken();
+
+[MASTER] 20:25:33.076 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<2> but was:<0>
+[MASTER] 20:25:33.077 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ StringReader stringReader0 = new StringReader("E2U_ 8}PSS");
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader0, 102, 908);
+javaCharStream0.prevCharIsCR = false;
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+javaCharStream0.readChar();
+Token token0 = javaParserTokenManager0.getNextToken();
+javaParserTokenManager0.TokenLexicalActions(token0);
+assertEquals(2, javaCharStream0.bufpos);
+assertEquals(911, javaCharStream0.getEndColumn());
+
+
+* Writing JUnit test case 'JavaParserTokenManager_ESTest' to /home/ubuntu/termite/rmosa/tests/s1005/19_jmca/evosuite-tests
+* Done!
+
+* Computation finished

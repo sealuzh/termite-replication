@@ -1,0 +1,89 @@
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: client.network.ClientMsgReceiver
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/57_hft-bomberman/evosuite-files/evosuite.properties
+* Connecting to master process on port 10006
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 19:15:25.898 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 19:15:25.906 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 19:15:25.906 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 19:15:26.263 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 19:15:26.264 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 19:15:26.266 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 19:15:28.206 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 19:15:28.207 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 19:15:28.208 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 19:15:28.208 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 19:15:28.209 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 19:15:28.210 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 19:15:28.210 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 19:15:28.212 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 19:15:28.222 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 19:15:33.915 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 19:15:33.937 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class client.network.ClientMsgReceiver
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1004
+* Starting evolution
+[MASTER] 19:15:58.709 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] client.network.ClientMsgReceiver.closeConnection()V
+[MASTER] 19:16:29.504 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] client.network.ClientMsgReceiver.handleConnectionLoss(Ljava/lang/Exception;)V
+[MASTER] 19:16:29.504 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] client.network.ClientMsgReceiver.displayErrorMessage()V
+[MASTER] 19:16:29.678 [logback-1] WARN  ClassResetter - class java.lang.reflect.InvocationTargetException thrown during execution of method  __STATIC_RESET() for class client.BomberClient, java.lang.NullPointerException
+* Search finished after 124s and 92 generations, 24675 statements, best individual has fitness: 352.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 47%
+* Total number of goals: 36
+* Number of covered goals: 17
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 47%
+* Total number of goals: 15
+* Number of covered goals: 7
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 6
+* Number of covered goals: 6
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 36%
+* Total number of goals: 14
+* Number of covered goals: 5
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 100% (no goals)
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 5
+* Number of covered goals: 5
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 5
+* Number of covered goals: 5
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 47%
+* Total number of goals: 15
+* Number of covered goals: 7
+* Generated 9 tests with total length 40
+* Resulting test suite's coverage: 54% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 12%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.net.SocketPermission: 
+         resolve localhost: 4
+  - java.sql.SQLPermission: 
+         setLog: 36
+* Writing JUnit test case 'ClientMsgReceiver_ESTest' to /home/ubuntu/termite/rmosa/tests/s1004/57_hft-bomberman/evosuite-tests
+* Done!
+
+* Computation finished

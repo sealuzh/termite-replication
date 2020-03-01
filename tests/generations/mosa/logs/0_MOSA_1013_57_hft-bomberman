@@ -1,0 +1,114 @@
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: client.network.ClientMsgReceiver
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/57_hft-bomberman/evosuite-files/evosuite.properties
+* Connecting to master process on port 13275
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 10:54:47.470 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 10:54:47.491 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 10:54:47.514 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 10:54:48.282 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 10:54:48.294 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 10:54:48.296 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 10:54:51.177 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 10:54:51.178 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 10:54:51.178 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 10:54:51.179 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 10:54:51.179 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 10:54:51.180 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 10:54:51.180 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 10:54:51.181 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 10:54:51.182 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 10:55:01.447 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 10:55:01.478 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class client.network.ClientMsgReceiver
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 90
+* Using seed 1013
+* Starting evolution
+[MASTER] 10:55:14.801 [logback-1] WARN  ClassResetter - class java.lang.reflect.InvocationTargetException thrown during execution of method  __STATIC_RESET() for class client.BomberClient, java.lang.NullPointerException
+[MASTER] 10:56:01.161 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] client.network.ClientMsgReceiver.displayErrorMessage()V
+[MASTER] 10:56:30.879 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] client.network.ClientMsgReceiver.handleConnectionLoss(Ljava/lang/Exception;)V
+[MASTER] 10:56:52.743 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] client.network.ClientMsgReceiver.closeConnection()V
+[MASTER] 10:56:52.862 [logback-1] WARN  ClassResetter - class java.lang.reflect.InvocationTargetException thrown during execution of method  __STATIC_RESET() for class client.gui.StartFrame, java.lang.NullPointerException
+* Search finished after 270s and 208 generations, 42998 statements, best individual has fitness: 352.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 47%
+* Total number of goals: 36
+* Number of covered goals: 17
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 47%
+* Total number of goals: 15
+* Number of covered goals: 7
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 6
+* Number of covered goals: 6
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 36%
+* Total number of goals: 14
+* Number of covered goals: 5
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 100% (no goals)
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 5
+* Number of covered goals: 5
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 60%
+* Total number of goals: 5
+* Number of covered goals: 3
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 47%
+* Total number of goals: 15
+* Number of covered goals: 7
+* Generated 8 tests with total length 39
+* Resulting test suite's coverage: 54% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 12%
+* Compiling and checking tests
+[MASTER] 10:59:42.035 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: null
+[MASTER] 10:59:42.036 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ MockSocket mockSocket0 = new MockSocket();
+BomberClient bomberClient0 = BomberClient.getInstance();
+ClientMsgReceiver clientMsgReceiver0 = new ClientMsgReceiver(mockSocket0, bomberClient0);
+long long0 = 0L;
+RoundTimeOneSecondLeftMsg roundTimeOneSecondLeftMsg0 = new RoundTimeOneSecondLeftMsg(long0);
+clientMsgReceiver0.processMsg(roundTimeOneSecondLeftMsg0);
+assertFalse(clientMsgReceiver0.isDaemon());
+
+
+[MASTER] 10:59:42.563 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: null
+[MASTER] 10:59:42.563 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ MockSocket mockSocket0 = new MockSocket();
+BomberClient bomberClient0 = BomberClient.getInstance();
+ClientMsgReceiver clientMsgReceiver0 = new ClientMsgReceiver(mockSocket0, bomberClient0);
+boolean boolean0 = true;
+int int0 = (-4307);
+String string0 = "QUWjiFzn{%15";
+SessionParticipationMsg sessionParticipationMsg0 = new SessionParticipationMsg(boolean0, int0, string0);
+clientMsgReceiver0.processMsg(sessionParticipationMsg0);
+assertFalse(clientMsgReceiver0.isDaemon());
+
+
+* Permissions denied during test execution: 
+  - java.net.SocketPermission: 
+         resolve localhost: 1
+  - java.sql.SQLPermission: 
+         setLog: 86
+* Writing JUnit test case 'ClientMsgReceiver_ESTest' to /home/ubuntu/termite/mosa/tests/s1013/57_hft-bomberman/evosuite-tests
+* Done!
+
+* Computation finished

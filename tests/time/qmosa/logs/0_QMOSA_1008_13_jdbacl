@@ -1,0 +1,1507 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.databene.jdbacl.SQLUtil
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/13_jdbacl/evosuite-files/evosuite.properties
+* Connecting to master process on port 2401
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 20:06:33.128 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 20:06:33.166 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 20:06:33.167 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 20:06:33.332 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 20:06:33.333 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 20:06:33.337 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 20:06:36.141 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.SQLType
+[MASTER] 20:06:37.348 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 20:06:37.349 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 20:06:37.387 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 20:06:37.388 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 20:06:37.390 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 20:06:37.390 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 20:06:37.391 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 20:06:37.393 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 20:06:37.395 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 20:06:44.774 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToDoubleFunction
+[MASTER] 20:06:44.775 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToIntFunction
+[MASTER] 20:06:44.776 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToLongFunction
+[MASTER] 20:06:46.709 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 20:06:50.897 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class org.databene.jdbacl.SQLUtil
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/13_jdbacl/src/main/java/org/databene/jdbacl/SQLUtil.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1008
+* Starting evolution
+[MASTER] 20:06:59.527 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z: Line 249
+[MASTER] 20:06:59.533 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z: Line 250
+[MASTER] 20:06:59.533 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z: Line 251
+[MASTER] 20:06:59.535 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z: Line 253
+[MASTER] 20:06:59.536 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalizeSQL(Ljava/lang/String;)Ljava/lang/String;: Line 287
+[MASTER] 20:06:59.537 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalizeSQL(Ljava/lang/String;)Ljava/lang/String;: Line 288
+[MASTER] 20:06:59.539 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalizeSQL(Ljava/lang/String;)Ljava/lang/String;: Line 290
+[MASTER] 20:06:59.545 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 421
+[MASTER] 20:06:59.546 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 423
+[MASTER] 20:06:59.554 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 424
+[MASTER] 20:06:59.555 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 425
+[MASTER] 20:06:59.556 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 426
+[MASTER] 20:06:59.557 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 427
+[MASTER] 20:06:59.558 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 428
+[MASTER] 20:06:59.558 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 429
+[MASTER] 20:06:59.559 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 430
+[MASTER] 20:06:59.571 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 431
+[MASTER] 20:06:59.572 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 432
+[MASTER] 20:06:59.573 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 433
+[MASTER] 20:06:59.573 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 434
+[MASTER] 20:06:59.574 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 435
+[MASTER] 20:06:59.575 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 439
+[MASTER] 20:06:59.576 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 440
+[MASTER] 20:06:59.577 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 442
+[MASTER] 20:06:59.578 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 443
+[MASTER] 20:06:59.579 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 444
+[MASTER] 20:06:59.579 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 450
+[MASTER] 20:06:59.580 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 451
+[MASTER] 20:06:59.586 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 452
+[MASTER] 20:06:59.587 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 456
+[MASTER] 20:06:59.588 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 458
+[MASTER] 20:06:59.588 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 459
+[MASTER] 20:06:59.589 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 462
+[MASTER] 20:06:59.610 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 463
+[MASTER] 20:06:59.612 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z: I13 Branch 29 IFEQ L250 - true
+[MASTER] 20:06:59.613 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z: I13 Branch 29 IFEQ L250 - false
+[MASTER] 20:06:59.614 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z: I24 Branch 30 IFLE L251 - true
+[MASTER] 20:06:59.615 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalizeSQL(Ljava/lang/String;)Ljava/lang/String;: I12 Branch 38 IFEQ L288 - true
+[MASTER] 20:06:59.616 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I3 Branch 61 IFEQ L421 - true
+[MASTER] 20:06:59.617 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I86 Branch 62 IFEQ L435 - true
+[MASTER] 20:06:59.618 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I112 Branch 63 IF_ICMPEQ L442 - true
+[MASTER] 20:06:59.618 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I112 Branch 63 IF_ICMPEQ L442 - false
+[MASTER] 20:06:59.619 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I122 Branch 64 IFLE L444 - true
+[MASTER] 20:06:59.620 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I122 Branch 64 IFLE L444 - false
+[MASTER] 20:06:59.621 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I125 Branch 65 IF_ICMPEQ L444 - false
+[MASTER] 20:06:59.624 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I128 Branch 66 IF_ICMPEQ L444 - false
+[MASTER] 20:06:59.629 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I131 Branch 67 IF_ICMPEQ L444 - false
+[MASTER] 20:06:59.630 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I134 Branch 68 IF_ICMPEQ L444 - false
+[MASTER] 20:06:59.631 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I137 Branch 69 IF_ICMPEQ L444 - false
+[MASTER] 20:06:59.632 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I140 Branch 70 IF_ICMPNE L444 - true
+[MASTER] 20:06:59.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I140 Branch 70 IF_ICMPNE L444 - false
+[MASTER] 20:06:59.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I143 Branch 71 IF_ICMPEQ L444 - false
+[MASTER] 20:06:59.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I147 Branch 72 IF_ICMPNE L444 - true
+[MASTER] 20:06:59.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I154 Branch 74 IF_ICMPNE L444 - true
+[MASTER] 20:06:59.646 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I167 Branch 76 LOOKUPSWITCH L451 Case -3 - true
+[MASTER] 20:06:59.647 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I167 Branch 76 LOOKUPSWITCH L451 Case -3 - false
+[MASTER] 20:06:59.647 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I167 Branch 77 LOOKUPSWITCH L451 Case -2 - false
+[MASTER] 20:06:59.648 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I167 Branch 78 LOOKUPSWITCH L451 Case 34 - false
+[MASTER] 20:06:59.649 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I167 Branch 79 LOOKUPSWITCH L451 Case 39 - false
+[MASTER] 20:06:59.650 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I167 Branch 80 LOOKUPSWITCH L451 Default-Case - true
+[MASTER] 20:06:59.651 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I167 Branch 80 LOOKUPSWITCH L451 Default-Case - false
+[MASTER] 20:06:59.663 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 222: org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z:250 - ReplaceComparisonOperator == -> !=
+[MASTER] 20:06:59.664 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 223: org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z:251 - ReplaceVariable sql -> ddl
+[MASTER] 20:06:59.664 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 224: org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z:251 - ReplaceVariable ddl -> sql
+[MASTER] 20:06:59.665 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 225: org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z:251 - ReplaceConstant - 0 -> 1
+[MASTER] 20:06:59.666 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 227: org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z:251 - ReplaceComparisonOperator <= -> ==
+[MASTER] 20:06:59.666 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 230: org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z:253 - ReplaceConstant - 0 -> 1
+[MASTER] 20:06:59.667 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 262: org.databene.jdbacl.SQLUtil.normalizeSQL(Ljava/lang/String;)Ljava/lang/String;:288 - ReplaceConstant - /* -> 
+[MASTER] 20:06:59.668 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 263: org.databene.jdbacl.SQLUtil.normalizeSQL(Ljava/lang/String;)Ljava/lang/String;:288 - ReplaceComparisonOperator == -> !=
+[MASTER] 20:06:59.669 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 417: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:421 - InsertUnaryOp Negation of removeComments
+[MASTER] 20:06:59.670 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 418: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:421 - InsertUnaryOp IINC 1 removeComments
+[MASTER] 20:06:59.671 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 419: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:421 - InsertUnaryOp IINC -1 removeComments
+[MASTER] 20:06:59.671 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 420: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:421 - ReplaceComparisonOperator == -> !=
+[MASTER] 20:06:59.672 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 423: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:425 - ReplaceConstant - 65 -> 0
+[MASTER] 20:06:59.673 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 424: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:425 - ReplaceConstant - 65 -> 1
+[MASTER] 20:06:59.674 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 425: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:425 - ReplaceConstant - 65 -> -1
+[MASTER] 20:06:59.681 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 426: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:425 - ReplaceConstant - 65 -> 64
+[MASTER] 20:06:59.682 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 427: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:425 - ReplaceConstant - 65 -> 66
+[MASTER] 20:06:59.683 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 428: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:425 - ReplaceConstant - 90 -> 0
+[MASTER] 20:06:59.683 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 429: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:425 - ReplaceConstant - 90 -> 1
+[MASTER] 20:06:59.684 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 430: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:425 - ReplaceConstant - 90 -> -1
+[MASTER] 20:06:59.693 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 431: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:425 - ReplaceConstant - 90 -> 89
+[MASTER] 20:06:59.694 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 432: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:425 - ReplaceConstant - 90 -> 91
+[MASTER] 20:06:59.695 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 433: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:426 - ReplaceConstant - 97 -> 0
+[MASTER] 20:06:59.696 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 434: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:426 - ReplaceConstant - 97 -> 1
+[MASTER] 20:06:59.696 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 435: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:426 - ReplaceConstant - 97 -> -1
+[MASTER] 20:06:59.707 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 436: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:426 - ReplaceConstant - 97 -> 96
+[MASTER] 20:06:59.709 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 437: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:426 - ReplaceConstant - 97 -> 98
+[MASTER] 20:06:59.709 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 438: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:426 - ReplaceConstant - 122 -> 0
+[MASTER] 20:06:59.710 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 439: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:426 - ReplaceConstant - 122 -> 1
+[MASTER] 20:06:59.711 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 440: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:426 - ReplaceConstant - 122 -> -1
+[MASTER] 20:06:59.711 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 441: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:426 - ReplaceConstant - 122 -> 121
+[MASTER] 20:06:59.712 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 442: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:426 - ReplaceConstant - 122 -> 123
+[MASTER] 20:06:59.713 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 443: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:427 - ReplaceConstant - 48 -> 0
+[MASTER] 20:06:59.713 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 444: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:427 - ReplaceConstant - 48 -> 1
+[MASTER] 20:06:59.714 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 445: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:427 - ReplaceConstant - 48 -> -1
+[MASTER] 20:06:59.715 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 446: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:427 - ReplaceConstant - 48 -> 47
+[MASTER] 20:06:59.717 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 447: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:427 - ReplaceConstant - 48 -> 49
+[MASTER] 20:06:59.718 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 448: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:427 - ReplaceConstant - 57 -> 0
+[MASTER] 20:06:59.719 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 449: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:427 - ReplaceConstant - 57 -> 1
+[MASTER] 20:06:59.720 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 450: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:427 - ReplaceConstant - 57 -> -1
+[MASTER] 20:06:59.720 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 451: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:427 - ReplaceConstant - 57 -> 56
+[MASTER] 20:06:59.721 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 452: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:427 - ReplaceConstant - 57 -> 58
+[MASTER] 20:06:59.722 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 453: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:428 - ReplaceConstant - 95 -> 0
+[MASTER] 20:06:59.722 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 454: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:428 - ReplaceConstant - 95 -> 1
+[MASTER] 20:06:59.723 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 455: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:428 - ReplaceConstant - 95 -> -1
+[MASTER] 20:06:59.724 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 456: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:428 - ReplaceConstant - 95 -> 94
+[MASTER] 20:06:59.736 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 457: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:428 - ReplaceConstant - 95 -> 96
+[MASTER] 20:06:59.736 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 458: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:428 - ReplaceConstant - 95 -> 0
+[MASTER] 20:06:59.737 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 459: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:428 - ReplaceConstant - 95 -> 1
+[MASTER] 20:06:59.738 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 460: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:428 - ReplaceConstant - 95 -> -1
+[MASTER] 20:06:59.739 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 461: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:428 - ReplaceConstant - 95 -> 94
+[MASTER] 20:06:59.753 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 462: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:428 - ReplaceConstant - 95 -> 96
+[MASTER] 20:06:59.753 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 463: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:429 - ReplaceConstant - 32 -> 0
+[MASTER] 20:06:59.754 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 464: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:429 - ReplaceConstant - 32 -> 1
+[MASTER] 20:06:59.756 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 465: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:429 - ReplaceConstant - 32 -> -1
+[MASTER] 20:06:59.756 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 466: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:429 - ReplaceConstant - 32 -> 31
+[MASTER] 20:06:59.757 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 467: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:429 - ReplaceConstant - 32 -> 33
+[MASTER] 20:06:59.758 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 468: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:429 - ReplaceConstant - 32 -> 0
+[MASTER] 20:06:59.759 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 469: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:429 - ReplaceConstant - 32 -> 1
+[MASTER] 20:06:59.760 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 470: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:429 - ReplaceConstant - 32 -> -1
+[MASTER] 20:06:59.760 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 471: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:429 - ReplaceConstant - 32 -> 31
+[MASTER] 20:06:59.762 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 472: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:429 - ReplaceConstant - 32 -> 33
+[MASTER] 20:06:59.763 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 473: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:430 - ReplaceConstant - 10 -> 0
+[MASTER] 20:06:59.764 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 474: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:430 - ReplaceConstant - 10 -> 1
+[MASTER] 20:06:59.764 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 475: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:430 - ReplaceConstant - 10 -> -1
+[MASTER] 20:06:59.765 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 476: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:430 - ReplaceConstant - 10 -> 9
+[MASTER] 20:06:59.766 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 477: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:430 - ReplaceConstant - 10 -> 11
+[MASTER] 20:06:59.767 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 478: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:430 - ReplaceConstant - 10 -> 0
+[MASTER] 20:06:59.767 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 479: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:430 - ReplaceConstant - 10 -> 1
+[MASTER] 20:06:59.768 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 480: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:430 - ReplaceConstant - 10 -> -1
+[MASTER] 20:06:59.769 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 481: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:430 - ReplaceConstant - 10 -> 9
+[MASTER] 20:06:59.769 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 482: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:430 - ReplaceConstant - 10 -> 11
+[MASTER] 20:06:59.782 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 483: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:431 - ReplaceConstant - 13 -> 0
+[MASTER] 20:06:59.783 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 484: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:431 - ReplaceConstant - 13 -> 1
+[MASTER] 20:06:59.784 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 485: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:431 - ReplaceConstant - 13 -> -1
+[MASTER] 20:06:59.785 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 486: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:431 - ReplaceConstant - 13 -> 12
+[MASTER] 20:06:59.786 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 487: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:431 - ReplaceConstant - 13 -> 14
+[MASTER] 20:06:59.786 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 488: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:431 - ReplaceConstant - 13 -> 0
+[MASTER] 20:06:59.794 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 489: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:431 - ReplaceConstant - 13 -> 1
+[MASTER] 20:06:59.795 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 490: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:431 - ReplaceConstant - 13 -> -1
+[MASTER] 20:06:59.796 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 491: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:431 - ReplaceConstant - 13 -> 12
+[MASTER] 20:06:59.796 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 492: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:431 - ReplaceConstant - 13 -> 14
+[MASTER] 20:06:59.797 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 493: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:432 - ReplaceConstant - 9 -> 0
+[MASTER] 20:06:59.798 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 494: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:432 - ReplaceConstant - 9 -> 1
+[MASTER] 20:06:59.798 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 495: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:432 - ReplaceConstant - 9 -> -1
+[MASTER] 20:06:59.799 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 496: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:432 - ReplaceConstant - 9 -> 8
+[MASTER] 20:06:59.800 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 497: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:432 - ReplaceConstant - 9 -> 10
+[MASTER] 20:06:59.801 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 498: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:432 - ReplaceConstant - 9 -> 0
+[MASTER] 20:06:59.801 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 499: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:432 - ReplaceConstant - 9 -> 1
+[MASTER] 20:06:59.802 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 500: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:432 - ReplaceConstant - 9 -> -1
+[MASTER] 20:06:59.803 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 501: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:432 - ReplaceConstant - 9 -> 8
+[MASTER] 20:06:59.803 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 502: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:432 - ReplaceConstant - 9 -> 10
+[MASTER] 20:06:59.804 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 503: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:433 - ReplaceConstant - 39 -> 0
+[MASTER] 20:06:59.807 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 504: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:433 - ReplaceConstant - 39 -> 1
+[MASTER] 20:06:59.808 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 505: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:433 - ReplaceConstant - 39 -> -1
+[MASTER] 20:06:59.808 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 506: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:433 - ReplaceConstant - 39 -> 38
+[MASTER] 20:06:59.809 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 507: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:433 - ReplaceConstant - 39 -> 40
+[MASTER] 20:06:59.810 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 508: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:434 - ReplaceConstant - 34 -> 0
+[MASTER] 20:06:59.811 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 509: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:434 - ReplaceConstant - 34 -> 1
+[MASTER] 20:06:59.821 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 510: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:434 - ReplaceConstant - 34 -> -1
+[MASTER] 20:06:59.834 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 511: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:434 - ReplaceConstant - 34 -> 33
+[MASTER] 20:06:59.835 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 512: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:434 - ReplaceConstant - 34 -> 35
+[MASTER] 20:06:59.835 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 513: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:435 - InsertUnaryOp Negation of removeComments
+[MASTER] 20:06:59.836 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 514: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:435 - InsertUnaryOp IINC 1 removeComments
+[MASTER] 20:06:59.837 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 515: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:435 - InsertUnaryOp IINC -1 removeComments
+[MASTER] 20:06:59.838 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 516: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:435 - ReplaceComparisonOperator == -> !=
+[MASTER] 20:06:59.839 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 519: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:440 - ReplaceConstant - -1 -> 0
+[MASTER] 20:06:59.840 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 520: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:440 - ReplaceConstant - -1 -> 1
+[MASTER] 20:06:59.840 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 521: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:440 - ReplaceConstant - -1 -> -2
+[MASTER] 20:06:59.841 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 522: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:442 - ReplaceConstant - -1 -> 0
+[MASTER] 20:06:59.842 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 523: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:442 - ReplaceConstant - -1 -> 1
+[MASTER] 20:06:59.845 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 524: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:442 - ReplaceConstant - -1 -> -2
+[MASTER] 20:06:59.846 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 525: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:442 - ReplaceComparisonOperator == -> -2
+[MASTER] 20:06:59.847 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 526: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:442 - ReplaceComparisonOperator == -> >=
+[MASTER] 20:06:59.847 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 527: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:442 - ReplaceComparisonOperator == -> <=
+[MASTER] 20:06:59.848 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z:False
+[MASTER] 20:06:59.849 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;:NonEmptyString
+[MASTER] 20:06:59.859 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z
+[MASTER] 20:06:59.860 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 20:06:59.861 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z
+[MASTER] 20:06:59.862 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 20:06:59.863 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I125 Branch 65 IF_ICMPEQ L444 - false in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 20:06:59.864 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I86 Branch 62 IFEQ L435 - true in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 20:06:59.864 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I122 Branch 64 IFLE L444 - true in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 20:06:59.865 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I137 Branch 69 IF_ICMPEQ L444 - false in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 20:06:59.878 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I167 Branch 76 LOOKUPSWITCH L451 Case -3 - true in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 20:06:59.879 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I167 Branch 77 LOOKUPSWITCH L451 Case -2 - false in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 20:06:59.880 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I167 Branch 78 LOOKUPSWITCH L451 Case 34 - false in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 20:06:59.880 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I3 Branch 61 IFEQ L421 - true in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 20:06:59.882 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z: I24 Branch 30 IFLE L251 - true in context: org.databene.jdbacl.SQLUtil:isDDL(Ljava/lang/String;)Z
+[MASTER] 20:06:59.882 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I167 Branch 80 LOOKUPSWITCH L451 Default-Case - true in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 20:06:59.883 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I154 Branch 74 IF_ICMPNE L444 - true in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 20:06:59.884 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I140 Branch 70 IF_ICMPNE L444 - true in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 20:06:59.885 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I131 Branch 67 IF_ICMPEQ L444 - false in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 20:06:59.885 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I143 Branch 71 IF_ICMPEQ L444 - false in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 20:06:59.885 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I112 Branch 63 IF_ICMPEQ L442 - true in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 20:06:59.886 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I167 Branch 80 LOOKUPSWITCH L451 Default-Case - false in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 20:06:59.887 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I147 Branch 72 IF_ICMPNE L444 - true in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 20:06:59.887 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z: I13 Branch 29 IFEQ L250 - false in context: org.databene.jdbacl.SQLUtil:isDDL(Ljava/lang/String;)Z
+[MASTER] 20:06:59.888 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I128 Branch 66 IF_ICMPEQ L444 - false in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 20:06:59.912 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I122 Branch 64 IFLE L444 - false in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 20:06:59.913 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I134 Branch 68 IF_ICMPEQ L444 - false in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 20:06:59.913 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I140 Branch 70 IF_ICMPNE L444 - false in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 20:06:59.914 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I167 Branch 79 LOOKUPSWITCH L451 Case 39 - false in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 20:06:59.915 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I112 Branch 63 IF_ICMPEQ L442 - false in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 20:06:59.916 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I167 Branch 76 LOOKUPSWITCH L451 Case -3 - false in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 20:06:59.916 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalizeSQL(Ljava/lang/String;)Ljava/lang/String;: I12 Branch 38 IFEQ L288 - true in context: 
+[MASTER] 20:06:59.917 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.isDDL(Ljava/lang/String;)Z: I13 Branch 29 IFEQ L250 - true in context: org.databene.jdbacl.SQLUtil:isDDL(Ljava/lang/String;)Z
+[MASTER] 20:07:01.759 [logback-2] ERROR TestCluster - Failed to check cache for org.databene.jdbacl.model.CompositeDBObject<C> : Type points to itself
+* Search finished after 123s and 22 generations, 14535 statements, best individual has fitness: 2288.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 84%
+* Total number of goals: 251
+* Number of covered goals: 211
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 79%
+* Total number of goals: 188
+* Number of covered goals: 148
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 37
+* Number of covered goals: 37
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 82%
+* Total number of goals: 595
+* Number of covered goals: 490
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 46%
+* Total number of goals: 94
+* Number of covered goals: 43
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 97%
+* Total number of goals: 39
+* Number of covered goals: 38
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 97%
+* Total number of goals: 39
+* Number of covered goals: 38
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 75%
+* Total number of goals: 188
+* Number of covered goals: 141
+* Generated 82 tests with total length 1397
+* Resulting test suite's coverage: 80% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 54%
+* Compiling and checking tests
+[MASTER] 20:09:47.592 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.NativeGDSImpl: no jaybird21 in java.library.path
+[MASTER] 20:09:47.826 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.JniGDSImpl: Could not initialize class org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 20:09:48.291 [logback-2] ERROR ClassResetter - java.lang.NoClassDefFoundError: Could not initialize class org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 20:09:51.648 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.derby.iapi.types.SqlXmlUtil: org/apache/xml/utils/PrefixResolver
+* Permissions denied during test execution: 
+  - java.io.FilePermission: 
+         write /dev/random: 1
+  - java.net.SocketPermission: 
+         resolve java.lang.String@0000000031: 1
+* Writing JUnit test case 'SQLUtil_ESTest' to /home/ubuntu/termite/qmosa/tests/s1008/13_jdbacl/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.databene.jdbacl.DBUtil
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/13_jdbacl/evosuite-files/evosuite.properties
+* Connecting to master process on port 2403
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 20:12:00.567 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.SQLType
+[MASTER] 20:12:01.708 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 20:12:01.708 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 20:12:01.710 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 20:12:01.880 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 20:12:01.882 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 20:12:01.883 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 20:12:06.759 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 20:12:06.775 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 20:12:06.776 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 20:12:06.804 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 20:12:06.805 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 20:12:06.805 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 20:12:06.806 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 20:12:06.808 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 20:12:06.816 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 20:12:08.100 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToDoubleFunction
+[MASTER] 20:12:08.101 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToIntFunction
+[MASTER] 20:12:08.101 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToLongFunction
+[MASTER] 20:12:08.228 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 20:12:10.979 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class org.databene.jdbacl.DBUtil
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/13_jdbacl/src/main/java/org/databene/jdbacl/DBUtil.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1008
+* Starting evolution
+[MASTER] 20:12:25.889 [logback-2] ERROR TestCluster - Failed to check cache for org.databene.jdbacl.model.CompositeDBObject<C> : Type points to itself
+* Search finished after 122s and 52 generations, 22295 statements, best individual has fitness: 7288.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 58%
+* Total number of goals: 324
+* Number of covered goals: 189
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 52%
+* Total number of goals: 197
+* Number of covered goals: 103
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 50
+* Number of covered goals: 50
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 57%
+* Total number of goals: 700
+* Number of covered goals: 399
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 7%
+* Total number of goals: 255
+* Number of covered goals: 19
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 96%
+* Total number of goals: 51
+* Number of covered goals: 49
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 92%
+* Total number of goals: 51
+* Number of covered goals: 47
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 41%
+* Total number of goals: 197
+* Number of covered goals: 81
+* Generated 82 tests with total length 1268
+* Resulting test suite's coverage: 50% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 2%
+* Compiling and checking tests
+[MASTER] 20:14:42.575 [logback-2] ERROR JUnitAnalyzer - Compilation failed on compilation units: [RegularFileObject[/tmp/EvoSuite_78_1575404082520/org/databene/jdbacl/DBUtil_78_tmp__ESTest.java], RegularFileObject[/tmp/EvoSuite_78_1575404082520/org/databene/jdbacl/DBUtil_78_tmp__ESTest_scaffolding.java]]
+[MASTER] 20:14:42.575 [logback-2] ERROR JUnitAnalyzer - Classpath: /home/ubuntu/termite/projects/13_jdbacl/jdbacl.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/connector-api-1.5.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/hsqldb-1.8.0.7.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/h2-1.2.136.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/contiperf-2.0.0.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/stringtemplate-3.2.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/antlr-runtime-3.3.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/derby-10.7.1.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/databene-webdecs-0.6.5.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/antlr-2.7.7.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/xml-apis-1.3.04.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/poi-3.5-beta6.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/logkit-1.0.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/jaybird-2.1.6.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/log4j-1.2.14.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/postgresql-8.4-701.jdbc4.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/servlet-api-2.3.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/xercesImpl-2.9.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/avalon-framework-4.1.3.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/validation-api-1.0.0.GA.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/slf4j-log4j12-1.5.8.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/commons-logging-1.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/databene-script-0.7.4.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/slf4j-api-1.5.8.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/databene-commons-0.5.13.jar:/home/ubuntu/termite/evosuite.jar:/home/ubuntu/termite/projects/13_jdbacl/jdbacl.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/connector-api-1.5.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/hsqldb-1.8.0.7.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/h2-1.2.136.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/contiperf-2.0.0.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/stringtemplate-3.2.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/antlr-runtime-3.3.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/derby-10.7.1.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/databene-webdecs-0.6.5.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/antlr-2.7.7.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/xml-apis-1.3.04.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/poi-3.5-beta6.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/logkit-1.0.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/jaybird-2.1.6.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/log4j-1.2.14.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/postgresql-8.4-701.jdbc4.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/servlet-api-2.3.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/xercesImpl-2.9.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/avalon-framework-4.1.3.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/validation-api-1.0.0.GA.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/slf4j-log4j12-1.5.8.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/commons-logging-1.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/databene-script-0.7.4.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/slf4j-api-1.5.8.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/databene-commons-0.5.13.jar
+[MASTER] 20:14:42.575 [logback-2] ERROR JUnitAnalyzer - evosuiteCP: /home/ubuntu/termite/evosuite.jar:/home/ubuntu/termite/projects/13_jdbacl/jdbacl.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/connector-api-1.5.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/hsqldb-1.8.0.7.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/h2-1.2.136.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/contiperf-2.0.0.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/stringtemplate-3.2.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/antlr-runtime-3.3.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/derby-10.7.1.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/databene-webdecs-0.6.5.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/antlr-2.7.7.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/xml-apis-1.3.04.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/poi-3.5-beta6.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/logkit-1.0.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/jaybird-2.1.6.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/log4j-1.2.14.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/postgresql-8.4-701.jdbc4.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/servlet-api-2.3.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/xercesImpl-2.9.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/avalon-framework-4.1.3.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/validation-api-1.0.0.GA.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/slf4j-log4j12-1.5.8.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/commons-logging-1.1.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/databene-script-0.7.4.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/slf4j-api-1.5.8.jar:/home/ubuntu/termite/projects/13_jdbacl/lib/databene-commons-0.5.13.jar
+[MASTER] 20:14:42.579 [logback-2] ERROR JUnitAnalyzer - Diagnostic: cannot find symbol
+  symbol:   method createStruct(java.lang.String,java.lang.Object[])
+  location: variable jdbcConnection0 of type org.hsqldb.jdbc.jdbcConnection: 40
+[MASTER] 20:14:42.580 [logback-2] ERROR JUnitAnalyzer - Diagnostic: /tmp/EvoSuite_78_1575404082520/org/databene/jdbacl/DBUtil_78_tmp__ESTest.java uses or overrides a deprecated API.: -1
+[MASTER] 20:14:42.580 [logback-2] ERROR JUnitAnalyzer - Diagnostic: Recompile with -Xlint:deprecation for details.: -1
+[MASTER] 20:14:42.581 [logback-2] ERROR JUnitAnalyzer - RegularFileObject[/tmp/EvoSuite_78_1575404082520/org/databene/jdbacl/DBUtil_78_tmp__ESTest.java]
+1: /*
+2:  * This file was automatically generated by EvoSuite
+3:  * Tue Dec 03 20:14:42 GMT 2019
+4:  */
+5: 
+6: package org.databene.jdbacl;
+7: 
+8: import org.junit.Test;
+9: import static org.junit.Assert.*;
+10: import static org.evosuite.shaded.org.mockito.Mockito.*;
+11: import static org.evosuite.runtime.EvoAssertions.*;
+12: import java.sql.ResultSet;
+13: import org.apache.derby.impl.sql.compile.GroupByList;
+14: import org.databene.jdbacl.DBUtil;
+15: import org.evosuite.runtime.EvoRunner;
+16: import org.evosuite.runtime.EvoRunnerParameters;
+17: import org.evosuite.runtime.ViolatedAssumptionAnswer;
+18: import org.h2.tools.SimpleResultSet;
+19: import org.hsqldb.Session;
+20: import org.hsqldb.jdbc.jdbcConnection;
+21: import org.junit.runner.RunWith;
+22: 
+23: @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, useJEE = true) 
+24: public class DBUtil_78_tmp__ESTest extends DBUtil_78_tmp__ESTest_scaffolding {
+25: 
+26:   /**
+27:   //Test case number: 0
+28:   /*Coverage entropy=1.0931471805599453
+29:   */
+30:   @Test(timeout = 4000)
+31:   public void test0()  throws Throwable  {
+32:       GroupByList groupByList0 = new GroupByList();
+33:       SimpleResultSet simpleResultSet0 = new SimpleResultSet();
+34:       DBUtil.nextLine(simpleResultSet0);
+35:       DBUtil.close((ResultSet) simpleResultSet0);
+36:       Session session0 = mock(Session.class, new ViolatedAssumptionAnswer());
+37:       jdbcConnection jdbcConnection0 = new jdbcConnection(session0);
+38:       // Undeclared exception!
+39:       try { 
+40:         jdbcConnection0.createStruct(",.<9QIO'to1/9", (Object[]) null);
+41:         fail("Expecting exception: AbstractMethodError");
+42:       
+43:       } catch(AbstractMethodError e) {
+44:       }
+45:   }
+46: }
+RegularFileObject[/tmp/EvoSuite_78_1575404082520/org/databene/jdbacl/DBUtil_78_tmp__ESTest.java]
+1: /**
+2:  * Scaffolding file used to store all the setups needed to run 
+3:  * tests automatically generated by EvoSuite
+4:  * Tue Dec 03 20:14:42 GMT 2019
+5:  */
+6: 
+7: package org.databene.jdbacl;
+8: 
+9: import org.evosuite.runtime.annotation.EvoSuiteClassExclude;
+10: import org.junit.BeforeClass;
+11: import org.junit.Before;
+12: import org.junit.After;
+13: import org.junit.AfterClass;
+14: import org.evosuite.runtime.sandbox.Sandbox;
+15: import org.evosuite.runtime.sandbox.Sandbox.SandboxMode;
+16: 
+17: import static org.evosuite.shaded.org.mockito.Mockito.*;
+18: @EvoSuiteClassExclude
+19: public class DBUtil_78_tmp__ESTest_scaffolding {
+20: 
+21:   @org.junit.Rule 
+22:   public org.evosuite.runtime.vnet.NonFunctionalRequirementRule nfr = new org.evosuite.runtime.vnet.NonFunctionalRequirementRule();
+23: 
+24:   private static final java.util.Properties defaultProperties = (java.util.Properties) java.lang.System.getProperties().clone(); 
+25: 
+26:   private org.evosuite.runtime.thread.ThreadStopper threadStopper =  new org.evosuite.runtime.thread.ThreadStopper (org.evosuite.runtime.thread.KillSwitchHandler.getInstance(), 3000);
+27: 
+28: 
+29:   @BeforeClass 
+30:   public static void initEvoSuiteFramework() { 
+31:     org.evosuite.runtime.RuntimeSettings.className = "org.databene.jdbacl.DBUtil"; 
+32:     org.evosuite.runtime.GuiSupport.initialize(); 
+33:     org.evosuite.runtime.RuntimeSettings.maxNumberOfThreads = 100; 
+34:     org.evosuite.runtime.RuntimeSettings.maxNumberOfIterationsPerLoop = 10000; 
+35:     org.evosuite.runtime.RuntimeSettings.mockSystemIn = true; 
+36:     org.evosuite.runtime.RuntimeSettings.sandboxMode = org.evosuite.runtime.sandbox.Sandbox.SandboxMode.RECOMMENDED; 
+37:     org.evosuite.runtime.sandbox.Sandbox.initializeSecurityManagerForSUT(); 
+38:     org.evosuite.runtime.classhandling.JDKClassResetter.init();
+39:     setSystemProperties();
+40:     initializeClasses();
+41:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+42:     try { initMocksToAvoidTimeoutsInTheTests(); } catch(ClassNotFoundException e) {} 
+43:   } 
+44: 
+45:   @AfterClass 
+46:   public static void clearEvoSuiteFramework(){ 
+47:     Sandbox.resetDefaultSecurityManager(); 
+48:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+49:   } 
+50: 
+51:   @Before 
+52:   public void initTestCase(){ 
+53:     threadStopper.storeCurrentThreads();
+54:     threadStopper.startRecordingTime();
+55:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().initHandler(); 
+56:     org.evosuite.runtime.sandbox.Sandbox.goingToExecuteSUTCode(); 
+57:     setSystemProperties(); 
+58:     org.evosuite.runtime.GuiSupport.setHeadless(); 
+59:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+60:     org.evosuite.runtime.agent.InstrumentingAgent.activate(); 
+61:   } 
+62: 
+63:   @After 
+64:   public void doneWithTestCase(){ 
+65:     threadStopper.killAndJoinClientThreads();
+66:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().safeExecuteAddedHooks(); 
+67:     org.evosuite.runtime.classhandling.JDKClassResetter.reset(); 
+68:     resetClasses(); 
+69:     org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(); 
+70:     org.evosuite.runtime.agent.InstrumentingAgent.deactivate(); 
+71:     org.evosuite.runtime.GuiSupport.restoreHeadlessMode(); 
+72:   } 
+73: 
+74:   public static void setSystemProperties() {
+75:  
+76:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+77:     java.lang.System.setProperty("file.encoding", "UTF-8"); 
+78:     java.lang.System.setProperty("java.awt.headless", "true"); 
+79:     java.lang.System.setProperty("java.io.tmpdir", "/tmp"); 
+80:     java.lang.System.setProperty("user.country", "US"); 
+81:     java.lang.System.setProperty("user.dir", "/home/ubuntu/termite/projects/13_jdbacl"); 
+82:     java.lang.System.setProperty("user.home", "/home/ubuntu"); 
+83:     java.lang.System.setProperty("user.language", "en"); 
+84:     java.lang.System.setProperty("user.name", "ubuntu"); 
+85:     java.lang.System.setProperty("user.timezone", "Etc/UTC"); 
+86:     java.lang.System.setProperty("sun.arch.data.model", "64"); 
+87:   }
+88: 
+89:   private static void initializeClasses() {
+90:     org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(DBUtil_78_tmp__ESTest_scaffolding.class.getClassLoader() ,
+91:       "org.h2.tools.Recover$1",
+92:       "org.apache.derby.iapi.sql.compile.OptimizableList",
+93:       "org.firebirdsql.gds.impl.GDSServerVersion",
+94:       "org.h2.engine.SessionInterface",
+95:       "org.firebirdsql.jdbc.InternalTransactionCoordinator$MetaDataTransactionCoordinator",
+96:       "org.apache.derby.iapi.types.RowLocation",
+97:       "org.databene.commons.ParseUtil",
+98:       "org.apache.derby.catalog.types.DecimalTypeIdImpl",
+99:       "org.h2.result.Row",
+100:       "org.postgresql.core.ResultHandler",
+101:       "org.hsqldb.Node",
+102:       "org.databene.jdbacl.model.DBRow",
+103:       "org.h2.engine.RightOwner",
+104:       "org.hsqldb.lib.HsqlByteArrayOutputStream",
+105:       "org.apache.derby.iapi.sql.execute.xplain.XPLAINVisitor",
+106:       "org.apache.derby.impl.sql.execute.GenericConstantActionFactory",
+107:       "org.apache.derby.impl.sql.compile.BinaryOperatorNode",
+108:       "org.firebirdsql.gds.impl.jni.isc_stmt_handle_impl",
+109:       "org.databene.jdbacl.model.DBMetaDataImporter",
+110:       "org.h2.command.CommandInterface",
+111:       "org.apache.derby.iapi.services.property.PersistentSet",
+112:       "org.apache.derby.iapi.sql.dictionary.IndexRowGenerator",
+113:       "org.apache.derby.iapi.sql.dictionary.PrivilegedSQLObject",
+114:       "org.apache.derby.iapi.types.TypeId",
+115:       "org.databene.jdbacl.model.DBCheckConstraint",
+116:       "org.h2.index.PageIndex",
+117:       "org.h2.value.ValueNull",
+118:       "org.apache.derby.iapi.sql.compile.Visitor",
+119:       "org.apache.derby.impl.store.access.btree.BTreeLockingPolicy",
+120:       "org.apache.derby.impl.sql.compile.GroupByList",
+121:       "org.apache.derby.iapi.error.StandardException$BadMessageArgumentException",
+122:       "org.databene.commons.depend.DependencyModel",
+123:       "org.databene.jdbacl.model.MultiColumnObject",
+124:       "org.apache.derby.iapi.sql.dictionary.DataDictionary",
+125:       "org.hsqldb.lib.Collection",
+126:       "org.databene.commons.ConfigurationError",
+127:       "org.apache.derby.impl.sql.compile.ResultColumn",
+128:       "org.apache.derby.iapi.sql.compile.OptimizablePredicateList",
+129:       "org.firebirdsql.gds.impl.wire.Xdrable",
+130:       "org.apache.derby.iapi.services.context.Context",
+131:       "org.h2.store.FileStoreInputStream",
+132:       "org.databene.commons.converter.ArrayConverter",
+133:       "org.firebirdsql.gds.IscBlobHandle",
+134:       "org.apache.derby.iapi.types.Orderable",
+135:       "org.h2.util.SmallLRUCache",
+136:       "org.firebirdsql.gds.impl.wire.isc_stmt_handle_impl",
+137:       "org.h2.tools.SimpleRowSource",
+138:       "org.apache.derby.impl.sql.compile.LikeEscapeOperatorNode",
+139:       "org.h2.engine.DbObjectBase",
+140:       "org.databene.jdbacl.model.TableHolder",
+141:       "org.postgresql.fastpath.Fastpath",
+142:       "org.hsqldb.jdbc.jdbcPreparedStatement",
+143:       "org.apache.derby.impl.sql.compile.FromVTI",
+144:       "org.apache.derby.catalog.types.BaseTypeIdImpl",
+145:       "org.apache.derby.impl.store.access.btree.LeafControlRow",
+146:       "org.firebirdsql.jdbc.FirebirdBlob",
+147:       "org.databene.jdbacl.model.TableContainer",
+148:       "org.apache.derby.iapi.sql.dictionary.ColumnDescriptor",
+149:       "org.apache.derby.impl.sql.compile.OrderedColumn",
+150:       "org.firebirdsql.gds.impl.jni.EmbeddedGDSFactoryPlugin",
+151:       "org.apache.derby.iapi.store.access.conglomerate.LogicalUndo",
+152:       "org.databene.commons.Converter",
+153:       "org.hsqldb.HsqlNameManager$HsqlName",
+154:       "org.databene.jdbacl.model.DBForeignKeyConstraint",
+155:       "org.apache.derby.iapi.services.loader.ClassInspector",
+156:       "org.databene.commons.debug.ResourceMonitor",
+157:       "org.firebirdsql.gds.BlobParameterBuffer",
+158:       "org.databene.commons.converter.ToStringConverter",
+159:       "org.apache.derby.impl.sql.compile.InsertNode",
+160:       "org.apache.derby.iapi.sql.execute.ExecRow",
+161:       "org.apache.derby.iapi.services.i18n.MessageService",
+162:       "org.apache.derby.impl.store.access.btree.OpenBTree",
+163:       "org.firebirdsql.gds.impl.AbstractIscTrHandle",
+164:       "org.h2.expression.Expression",
+165:       "org.firebirdsql.gds.impl.wire.ParameterBufferBase",
+166:       "org.firebirdsql.jdbc.FBResultSet",
+167:       "org.h2.index.NonUniqueHashIndex",
+168:       "org.firebirdsql.jdbc.AbstractConnection",
+169:       "org.apache.derby.iapi.sql.compile.Visitable",
+170:       "org.apache.derby.iapi.util.ByteArray",
+171:       "org.firebirdsql.gds.impl.wire.AbstractJavaGDSImpl",
+172:       "org.firebirdsql.jca.FBManagedConnection$1",
+173:       "org.apache.derby.iapi.error.StandardException",
+174:       "org.h2.util.Utils",
+175:       "org.h2.jdbcx.JdbcDataSourceFactory",
+176:       "org.h2.value.ValueString",
+177:       "org.hsqldb.lib.Iterator",
+178:       "org.apache.derby.iapi.services.loader.GeneratedClass",
+179:       "org.h2.store.PageStore",
+180:       "org.h2.schema.Schema",
+181:       "org.firebirdsql.jca.FBManagedConnection$4",
+182:       "org.firebirdsql.jdbc.FBSQLException",
+183:       "org.firebirdsql.jca.FBManagedConnection$5",
+184:       "org.apache.derby.impl.sql.compile.PredicateList",
+185:       "org.firebirdsql.jdbc.InternalTransactionCoordinator$LocalTransactionCoordinator",
+186:       "org.firebirdsql.jca.FBManagedConnection$2",
+187:       "org.firebirdsql.jca.FBManagedConnection$3",
+188:       "org.firebirdsql.gds.impl.wire.XdrInputStream",
+189:       "org.databene.jdbacl.model.DBObject",
+190:       "org.apache.derby.iapi.services.monitor.ModuleFactory",
+191:       "org.h2.engine.Comment",
+192:       "org.h2.util.New",
+193:       "org.firebirdsql.gds.IscSvcHandle",
+194:       "org.firebirdsql.jdbc.InternalTransactionCoordinator$AutoCommitCoordinator",
+195:       "org.hsqldb.lib.FileAccess",
+196:       "org.firebirdsql.gds.EventHandle",
+197:       "org.h2.result.ResultInterface",
+198:       "org.apache.derby.impl.sql.execute.rts.RealNoPutResultSetStatistics",
+199:       "org.h2.util.StringUtils",
+200:       "org.firebirdsql.gds.IscTrHandle",
+201:       "org.h2.table.IndexColumn",
+202:       "org.apache.derby.impl.sql.compile.FromTable",
+203:       "org.apache.derby.impl.sql.compile.DMLStatementNode",
+204:       "org.firebirdsql.jdbc.InternalTransactionCoordinator",
+205:       "org.apache.derby.impl.sql.compile.DMLModStatementNode",
+206:       "org.h2.util.Tool",
+207:       "org.apache.derby.impl.sql.compile.UnaryOperatorNode",
+208:       "org.apache.derby.vti.Restriction$AND",
+209:       "org.apache.derby.impl.sql.execute.DeleteConstantAction",
+210:       "org.apache.derby.impl.sql.compile.MethodCallNode",
+211:       "org.apache.derby.iapi.services.io.FormatableProperties",
+212:       "org.firebirdsql.gds.ServiceParameterBuffer",
+213:       "org.apache.derby.iapi.util.StringUtil",
+214:       "org.databene.commons.OrderedSet",
+215:       "org.h2.util.MathUtils$1",
+216:       "org.h2.store.FileStore",
+217:       "org.firebirdsql.gds.impl.GDSFactoryPlugin",
+218:       "org.firebirdsql.gds.impl.jni.isc_db_handle_impl",
+219:       "org.firebirdsql.gds.GDSException",
+220:       "org.apache.derby.iapi.types.DataTypeDescriptor",
+221:       "org.databene.commons.IOUtil",
+222:       "org.databene.jdbacl.model.DBColumn",
+223:       "org.databene.commons.BeanUtil",
+224:       "org.h2.index.IndexType",
+225:       "org.firebirdsql.jca.FBManagedConnection$CELNotifier",
+226:       "org.databene.commons.ProgrammerError",
+227:       "org.h2.table.Table",
+228:       "org.h2.result.SearchRow",
+229:       "org.databene.jdbacl.model.DBPackage",
+230:       "org.apache.derby.iapi.sql.dictionary.UniqueSQLObjectDescriptor",
+231:       "org.h2.constant.ErrorCode",
+232:       "org.hsqldb.Database",
+233:       "org.hsqldb.jdbc.jdbcCallableStatement",
+234:       "org.postgresql.Driver$1",
+235:       "org.apache.derby.iapi.store.raw.AuxObject",
+236:       "org.h2.message.TraceObject",
+237:       "org.h2.util.SourceCompiler",
+238:       "org.h2.engine.UserDataType",
+239:       "org.apache.derby.impl.sql.compile.SelectNode",
+240:       "org.h2.jdbcx.JdbcConnectionPool",
+241:       "org.h2.value.ValueLong",
+242:       "org.databene.commons.converter.FormatHolder",
+243:       "org.apache.derby.impl.sql.compile.GroupByColumn",
+244:       "org.apache.derby.iapi.sql.dictionary.SPSDescriptor",
+245:       "org.apache.derby.iapi.store.raw.Transaction",
+246:       "org.h2.util.SortedProperties",
+247:       "org.apache.derby.catalog.IndexDescriptor",
+248:       "org.firebirdsql.gds.impl.wire.EventCoordinator",
+249:       "org.firebirdsql.gds.impl.GDSFactory",
+250:       "org.apache.derby.iapi.sql.dictionary.UniqueTupleDescriptor",
+251:       "org.hsqldb.jdbcDriver",
+252:       "org.apache.derby.diag.ErrorMessages",
+253:       "org.apache.derby.impl.sql.compile.ActivationClassBuilder",
+254:       "org.apache.derby.iapi.store.access.DynamicCompiledOpenConglomInfo",
+255:       "org.h2.message.DbException",
+256:       "org.firebirdsql.gds.impl.jni.LocalGDSImpl",
+257:       "org.apache.derby.impl.store.access.btree.WaitError",
+258:       "org.firebirdsql.gds.ServiceRequestBuffer",
+259:       "org.h2.engine.Database",
+260:       "org.apache.derby.catalog.types.UserDefinedTypeIdImpl",
+261:       "org.apache.derby.impl.store.access.conglomerate.GenericCostController",
+262:       "org.apache.derby.impl.sql.catalog.SYSSTATEMENTSRowFactory",
+263:       "org.apache.derby.impl.sql.compile.AndNode",
+264:       "org.firebirdsql.gds.impl.jni.NativeGDSImpl",
+265:       "org.databene.jdbacl.proxy.LoggingPreparedStatementHandler",
+266:       "org.apache.derby.iapi.store.access.ConglomerateController",
+267:       "org.postgresql.core.TypeInfo",
+268:       "org.databene.commons.ReaderLineIterator",
+269:       "org.h2.command.dml.ScriptBase",
+270:       "org.h2.expression.Parameter",
+271:       "org.apache.derby.iapi.sql.compile.OptimizablePredicate",
+272:       "org.apache.derby.impl.sql.compile.ValueNode",
+273:       "org.firebirdsql.gds.impl.GDSHelper$GDSHelperErrorListener",
+274:       "org.apache.derby.iapi.types.DataType",
+275:       "org.h2.index.MultiVersionIndex",
+276:       "org.apache.derby.iapi.services.io.Formatable",
+277:       "org.apache.derby.iapi.services.io.Limit",
+278:       "org.hsqldb.jdbc.jdbcConnection",
+279:       "org.firebirdsql.jdbc.FBArray",
+280:       "org.firebirdsql.gds.IscDbHandle",
+281:       "org.databene.commons.ThreadAware",
+282:       "org.h2.index.HashIndex",
+283:       "org.apache.derby.impl.store.access.conglomerate.OpenConglomerateScratchSpace",
+284:       "org.firebirdsql.jca.FirebirdLocalTransaction",
+285:       "org.h2.engine.Mode",
+286:       "org.firebirdsql.jdbc.Synchronizable",
+287:       "org.postgresql.copy.CopyManager",
+288:       "org.hsqldb.store.BaseHashMap",
+289:       "org.apache.derby.impl.sql.execute.rts.RealBasicNoPutResultSetStatistics",
+290:       "org.h2.util.MathUtils",
+291:       "org.databene.commons.collection.ListBasedSet",
+292:       "org.firebirdsql.logging.LoggerFactory",
+293:       "org.postgresql.PGConnection",
+294:       "org.apache.derby.iapi.services.monitor.ModuleSupportable",
+295:       "org.databene.commons.debug.Debug",
+296:       "org.apache.derby.impl.sql.execute.TriggerInfo",
+297:       "org.postgresql.jdbc2.TimestampUtils",
+298:       "org.h2.value.Value$ValueBlob",
+299:       "org.firebirdsql.gds.impl.AbstractIscStmtHandle",
+300:       "org.firebirdsql.jca.FBResourceException",
+301:       "org.databene.jdbacl.model.DBRowIterator",
+302:       "org.databene.jdbacl.model.cache.CachingDBImporter",
+303:       "org.hsqldb.jdbc.Util",
+304:       "org.apache.derby.impl.sql.compile.SubqueryList",
+305:       "org.databene.jdbacl.model.jdbc.JDBCDBImporter",
+306:       "org.apache.derby.iapi.services.io.ErrorInfo",
+307:       "org.hsqldb.lib.HashMap",
+308:       "org.apache.derby.impl.sql.execute.IndexColumnOrder",
+309:       "org.databene.commons.Capitalization",
+310:       "org.firebirdsql.logging.Logger",
+311:       "org.apache.derby.impl.sql.compile.Predicate",
+312:       "org.firebirdsql.gds.impl.wire.DatabaseParameterBufferImp",
+313:       "org.firebirdsql.gds.XSQLVAR",
+314:       "org.h2.store.DataHandler",
+315:       "org.h2.jdbc.JdbcConnection",
+316:       "org.apache.derby.impl.sql.compile.RelationalOperator",
+317:       "org.apache.derby.iapi.sql.dictionary.SchemaDescriptor",
+318:       "org.apache.derby.iapi.sql.compile.TypeCompiler",
+319:       "org.apache.derby.impl.sql.execute.FKInfo",
+320:       "org.databene.commons.Patterns",
+321:       "org.databene.commons.ArrayUtil",
+322:       "org.apache.derby.impl.sql.compile.TableName",
+323:       "org.apache.derby.impl.sql.compile.BinaryRelationalOperatorNode",
+324:       "org.h2.Driver",
+325:       "org.databene.jdbacl.DBUtil",
+326:       "org.apache.derby.impl.sql.compile.ProjectRestrictNode",
+327:       "org.h2.index.Cursor",
+328:       "org.apache.derby.iapi.store.access.StaticCompiledOpenConglomInfo",
+329:       "org.postgresql.jdbc2.AbstractJdbc2Connection",
+330:       "org.apache.derby.impl.sql.compile.JoinNode",
+331:       "org.hsqldb.Trace",
+332:       "org.databene.commons.ArrayFormat",
+333:       "org.hsqldb.lib.BaseList",
+334:       "org.firebirdsql.gds.impl.jni.JniGDSImpl",
+335:       "org.firebirdsql.jca.FBManagedConnection",
+336:       "org.apache.derby.impl.sql.compile.FromSubquery",
+337:       "org.hsqldb.Result",
+338:       "org.apache.derby.iapi.sql.dictionary.ConstraintDescriptorList",
+339:       "org.databene.commons.OrderedMap",
+340:       "org.apache.derby.impl.sql.compile.TableElementList",
+341:       "org.apache.derby.impl.store.access.conglomerate.GenericConglomerate",
+342:       "org.apache.derby.impl.store.access.conglomerate.OpenConglomerate",
+343:       "org.apache.derby.iapi.store.access.RowCountable",
+344:       "org.h2.value.Value$ValueClob",
+345:       "org.databene.jdbacl.model.DBCatalog",
+346:       "org.firebirdsql.logging.Log4jLogger",
+347:       "org.apache.derby.impl.sql.compile.ResultSetNode",
+348:       "org.h2.expression.ParameterInterface",
+349:       "org.apache.derby.vti.Restriction",
+350:       "org.apache.derby.iapi.services.loader.ClassInfo",
+351:       "org.databene.jdbacl.proxy.LoggingStatementHandler",
+352:       "org.databene.jdbacl.model.DBUniqueIndex",
+353:       "org.apache.derby.iapi.sql.ResultDescription",
+354:       "org.apache.derby.iapi.sql.execute.xplain.XPLAINable",
+355:       "org.apache.derby.iapi.services.monitor.Monitor",
+356:       "org.h2.command.Prepared",
+357:       "org.databene.jdbacl.model.DefaultDBTable",
+358:       "org.databene.commons.iterator.TableRowIterator",
+359:       "org.apache.derby.impl.sql.compile.JavaValueNode",
+360:       "org.h2.jdbc.JdbcSQLException",
+361:       "org.firebirdsql.gds.impl.jni.EmbeddedGDSImpl",
+362:       "org.h2.engine.ConnectionInfo",
+363:       "org.databene.commons.ObjectNotFoundException",
+364:       "org.firebirdsql.jdbc.AbstractStatement",
+365:       "org.apache.derby.impl.sql.execute.rts.RealSortStatistics",
+366:       "org.databene.jdbacl.model.DBSchema",
+367:       "org.h2.store.LobStorage",
+368:       "org.firebirdsql.gds.impl.AbstractIscDbHandle",
+369:       "org.databene.jdbacl.model.AbstractDBObject",
+370:       "org.h2.engine.Procedure",
+371:       "org.postgresql.jdbc3.AbstractJdbc3Connection",
+372:       "org.h2.tools.Csv",
+373:       "org.apache.derby.iapi.services.io.ErrorObjectInput",
+374:       "org.apache.derby.iapi.store.access.TransactionController",
+375:       "org.firebirdsql.jdbc.FBObjectListener$BlobListener",
+376:       "org.firebirdsql.jdbc.AbstractSavepoint",
+377:       "org.h2.index.BaseIndex",
+378:       "org.h2.store.FileStoreOutputStream",
+379:       "org.apache.derby.impl.store.access.btree.BTreeRowPosition",
+380:       "org.databene.commons.CollectionUtil",
+381:       "org.apache.derby.vti.DeferModification",
+382:       "org.databene.jdbacl.model.DBNonUniqueIndex",
+383:       "org.postgresql.core.BaseConnection",
+384:       "org.apache.derby.iapi.services.compiler.MethodBuilder",
+385:       "org.apache.derby.impl.sql.compile.UnaryComparisonOperatorNode",
+386:       "org.hsqldb.lib.HsqlList",
+387:       "org.apache.derby.catalog.TypeDescriptor",
+388:       "org.firebirdsql.jdbc.FBSQLWarning",
+389:       "org.firebirdsql.jdbc.FBCallableStatement",
+390:       "org.firebirdsql.gds.impl.wire.XdrOutputStream",
+391:       "org.hsqldb.jdbc.jdbcStatement",
+392:       "org.apache.derby.iapi.sql.dictionary.TableDescriptor",
+393:       "org.apache.derby.impl.sql.compile.SingleChildResultSetNode",
+394:       "org.apache.derby.vti.VTICosting",
+395:       "org.apache.derby.iapi.services.loader.InstanceGetter",
+396:       "org.apache.derby.impl.sql.compile.FromList",
+397:       "org.hsqldb.Row",
+398:       "org.databene.commons.ConnectFailedException",
+399:       "org.databene.jdbacl.JDBCConnectData",
+400:       "org.apache.derby.impl.sql.compile.NodeFactoryImpl",
+401:       "org.apache.derby.catalog.types.TypeDescriptorImpl",
+402:       "org.hsqldb.Table",
+403:       "org.h2.store.Data",
+404:       "org.databene.jdbacl.proxy.PooledConnectionHandler",
+405:       "org.apache.derby.iapi.store.access.RowLocationRetRowSource",
+406:       "org.apache.derby.impl.store.access.heap.HeapCostController",
+407:       "org.apache.derby.iapi.sql.compile.Optimizable",
+408:       "org.postgresql.util.PSQLException",
+409:       "org.firebirdsql.jca.FBConnectionRequestInfo",
+410:       "org.apache.derby.impl.sql.compile.ExpressionClassBuilder",
+411:       "org.firebirdsql.jdbc.FirebirdSavepoint",
+412:       "org.firebirdsql.jdbc.FBDriverNotCapableException",
+413:       "org.databene.jdbacl.model.DBUniqueConstraint",
+414:       "org.firebirdsql.gds.impl.GDSType",
+415:       "org.apache.derby.iapi.store.access.conglomerate.TransactionManager",
+416:       "org.databene.commons.Period",
+417:       "org.apache.derby.impl.sql.compile.QueryTreeNodeVector",
+418:       "org.hsqldb.User",
+419:       "org.h2.value.Value",
+420:       "org.hsqldb.resources.BundleHandler",
+421:       "org.firebirdsql.jdbc.FBPreparedStatement",
+422:       "org.hsqldb.persist.CachedObject",
+423:       "org.firebirdsql.jdbc.FirebirdStatement",
+424:       "org.firebirdsql.jdbc.FBMissingParameterException",
+425:       "org.h2.engine.DatabaseCloser",
+426:       "org.apache.derby.iapi.sql.compile.ExpressionClassBuilderInterface",
+427:       "org.apache.derby.iapi.store.access.conglomerate.Conglomerate",
+428:       "org.apache.derby.impl.sql.compile.FromBaseTable",
+429:       "org.apache.derby.impl.sql.compile.RowCountNode",
+430:       "org.apache.derby.impl.store.access.conglomerate.RowPosition",
+431:       "org.databene.jdbacl.model.jdbc.JDBCDBImporter$TableNameFilter",
+432:       "org.apache.derby.iapi.sql.compile.RowOrdering",
+433:       "org.apache.derby.iapi.sql.ResultColumnDescriptor",
+434:       "org.firebirdsql.gds.impl.AbstractGDS",
+435:       "org.apache.derby.impl.sql.compile.WindowFunctionNode",
+436:       "org.h2.value.CompareMode",
+437:       "org.apache.derby.iapi.sql.Activation",
+438:       "org.firebirdsql.jdbc.field.TypeConvertionException",
+439:       "org.apache.derby.iapi.services.io.Storable",
+440:       "org.postgresql.ds.PGConnectionPoolDataSource",
+441:       "org.apache.derby.catalog.Dependable",
+442:       "org.apache.derby.iapi.sql.compile.NodeFactory",
+443:       "org.hsqldb.CompiledStatement",
+444:       "org.firebirdsql.gds.impl.GDSHelper",
+445:       "org.h2.engine.SessionWithState",
+446:       "org.apache.derby.iapi.sql.compile.JoinStrategy",
+447:       "org.apache.derby.impl.sql.compile.IsNullNode",
+448:       "org.h2.table.TableLinkConnection",
+449:       "org.h2.message.Trace",
+450:       "org.apache.derby.impl.store.access.btree.ControlRow",
+451:       "org.databene.commons.AssertionError",
+452:       "org.databene.jdbacl.DBExecutionResult",
+453:       "org.apache.derby.vti.Restriction$OR",
+454:       "org.firebirdsql.jdbc.AbstractStatement$RSListener",
+455:       "org.databene.commons.SystemInfo",
+456:       "org.h2.value.ValueInt",
+457:       "org.h2.util.CacheWriter",
+458:       "org.firebirdsql.gds.impl.DatabaseParameterBufferExtension",
+459:       "org.databene.commons.IOUtil$1",
+460:       "org.hsqldb.DatabaseURL",
+461:       "org.apache.derby.iapi.store.access.RowSource",
+462:       "org.apache.derby.iapi.sql.compile.Optimizer",
+463:       "org.apache.derby.impl.sql.compile.QueryTreeNode",
+464:       "org.apache.derby.impl.sql.compile.OrderByList",
+465:       "org.apache.derby.iapi.types.DataValueFactory",
+466:       "org.firebirdsql.jdbc.field.FBField",
+467:       "org.apache.derby.iapi.sql.conn.LanguageConnectionContext",
+468:       "org.apache.derby.impl.sql.compile.InListOperatorNode",
+469:       "org.firebirdsql.jdbc.FBStatement",
+470:       "org.h2.schema.SchemaObject",
+471:       "org.hsqldb.store.HashIndex",
+472:       "org.firebirdsql.jdbc.InternalTransactionCoordinator$AbstractTransactionCoordinator",
+473:       "org.firebirdsql.gds.impl.jni.NativeGDSFactoryPlugin",
+474:       "org.databene.commons.depend.Dependent",
+475:       "org.h2.engine.SessionRemote",
+476:       "org.firebirdsql.jdbc.FBObjectListener$StatementListener",
+477:       "org.firebirdsql.gds.XSQLDA",
+478:       "org.apache.derby.iapi.store.access.StoreCostController",
+479:       "org.apache.derby.iapi.services.io.ArrayInputStream",
+480:       "org.databene.jdbacl.proxy.LoggingResultSetHandler",
+481:       "org.databene.jdbacl.model.ContainerComponent",
+482:       "org.apache.derby.vti.VTIEnvironment",
+483:       "org.firebirdsql.jdbc.FBObjectListener",
+484:       "org.firebirdsql.jdbc.FirebirdPreparedStatement",
+485:       "org.apache.derby.iapi.store.raw.ContainerHandle",
+486:       "org.apache.derby.impl.sql.compile.BinaryComparisonOperatorNode",
+487:       "org.apache.derby.iapi.store.access.StoreCostResult",
+488:       "org.h2.value.Transfer",
+489:       "org.databene.jdbacl.SQLUtil",
+490:       "org.apache.derby.iapi.sql.depend.Provider",
+491:       "org.apache.derby.impl.sql.compile.BinaryLogicalOperatorNode",
+492:       "org.apache.derby.iapi.services.monitor.ModuleControl",
+493:       "org.hsqldb.BaseTable",
+494:       "org.databene.jdbacl.model.CompositeDBObject",
+495:       "org.firebirdsql.jdbc.FBObjectListener$FetcherListener",
+496:       "org.apache.derby.catalog.types.RowMultiSetImpl",
+497:       "org.apache.derby.iapi.services.io.FormatableBitSet",
+498:       "org.apache.derby.iapi.sql.dictionary.ConglomerateDescriptor",
+499:       "org.apache.derby.iapi.store.access.ConglomPropertyQueryable",
+500:       "org.h2.table.TableBase",
+501:       "org.h2.constraint.Constraint",
+502:       "org.h2.engine.DbObject",
+503:       "org.firebirdsql.gds.impl.wire.isc_db_handle_impl",
+504:       "org.firebirdsql.jdbc.field.FieldDataProvider",
+505:       "org.postgresql.ds.common.BaseDataSource",
+506:       "org.h2.engine.UserAggregate",
+507:       "org.postgresql.core.Logger",
+508:       "org.apache.derby.iapi.sql.execute.ConstantAction",
+509:       "org.databene.commons.converter.MultiConverterWrapper",
+510:       "org.apache.derby.impl.sql.compile.ConstantNode",
+511:       "org.firebirdsql.jdbc.FirebirdCallableStatement",
+512:       "org.databene.jdbacl.model.TableContainerSupport",
+513:       "org.h2.api.DatabaseEventListener",
+514:       "org.h2.jdbcx.JdbcDataSource",
+515:       "org.apache.derby.impl.store.access.conglomerate.GenericController",
+516:       "org.firebirdsql.gds.impl.wire.WireGDSFactoryPlugin",
+517:       "org.hsqldb.lib.Set",
+518:       "org.firebirdsql.jdbc.FBConnection",
+519:       "org.databene.jdbacl.model.DBTable",
+520:       "org.firebirdsql.gds.impl.wire.isc_tr_handle_impl",
+521:       "org.databene.commons.LoggerEscalator",
+522:       "org.apache.derby.iapi.services.context.ContextService",
+523:       "org.apache.derby.iapi.sql.compile.CompilerContext",
+524:       "org.databene.commons.StringUtil",
+525:       "org.apache.derby.impl.sql.execute.rts.ResultSetStatistics",
+526:       "org.h2.schema.SchemaObjectBase",
+527:       "org.apache.derby.impl.sql.compile.DDLStatementNode",
+528:       "org.apache.derby.catalog.UUID",
+529:       "org.h2.index.TreeIndex",
+530:       "org.apache.derby.iapi.sql.dictionary.TupleDescriptor",
+531:       "org.databene.commons.Named",
+532:       "org.h2.command.dml.RunScriptCommand",
+533:       "org.databene.jdbacl.ResultsWithMetadata",
+534:       "org.firebirdsql.gds.impl.jni.GDSSynchronizationPolicy$AbstractSynchronizationPolicy",
+535:       "org.apache.derby.vti.Restriction$ColumnQualifier",
+536:       "org.firebirdsql.jdbc.AbstractPreparedStatement",
+537:       "org.hsqldb.persist.HsqlProperties",
+538:       "org.firebirdsql.jdbc.FBObjectListener$ResultSetListener",
+539:       "org.h2.index.PageDelegateIndex",
+540:       "org.databene.jdbacl.model.DBSequence",
+541:       "org.apache.derby.impl.sql.GenericColumnDescriptor",
+542:       "org.apache.derby.iapi.store.access.ColumnOrdering",
+543:       "org.databene.commons.Filter",
+544:       "org.apache.derby.impl.store.access.btree.BTreeController",
+545:       "org.h2.message.TraceWriter",
+546:       "org.h2.tools.SimpleResultSet",
+547:       "org.hsqldb.SessionInterface",
+548:       "org.apache.derby.iapi.sql.depend.DependencyManager",
+549:       "org.apache.derby.iapi.util.JBitSet",
+550:       "org.databene.jdbacl.model.DBIndex",
+551:       "org.firebirdsql.jca.FBManagedConnectionFactory",
+552:       "org.h2.table.Column",
+553:       "org.apache.derby.impl.sql.compile.MaterializeResultSetNode",
+554:       "org.h2.engine.Session",
+555:       "org.databene.jdbacl.model.DBConstraint",
+556:       "org.firebirdsql.jdbc.AbstractResultSet",
+557:       "org.postgresql.largeobject.LargeObjectManager",
+558:       "org.h2.engine.Setting",
+559:       "org.databene.jdbacl.model.DBTableComponent",
+560:       "org.apache.derby.impl.sql.compile.StatementNode",
+561:       "org.h2.util.TempFileDeleter",
+562:       "org.apache.derby.impl.sql.compile.CreateIndexNode",
+563:       "org.firebirdsql.gds.impl.wire.WireXdrInputStream",
+564:       "org.apache.derby.iapi.sql.dictionary.AliasDescriptor",
+565:       "org.databene.jdbacl.model.DBTrigger",
+566:       "org.h2.tools.Recover",
+567:       "org.postgresql.jdbc4.AbstractJdbc4Connection",
+568:       "org.apache.derby.impl.sql.compile.OrderedColumnList",
+569:       "org.firebirdsql.gds.impl.GDSFactory$ReversedStringComparator",
+570:       "org.apache.derby.impl.sql.compile.OptimizerImpl",
+571:       "org.h2.engine.User",
+572:       "org.postgresql.Driver",
+573:       "org.h2.table.RegularTable",
+574:       "org.h2.constant.SysProperties",
+575:       "org.apache.derby.impl.sql.execute.WriteCursorConstantAction",
+576:       "org.firebirdsql.gds.impl.jni.BaseGDSImpl",
+577:       "org.firebirdsql.jdbc.FirebirdConnectionProperties",
+578:       "org.h2.index.Index",
+579:       "org.databene.commons.Assert",
+580:       "org.apache.derby.iapi.sql.dictionary.CatalogRowFactory",
+581:       "org.databene.commons.ErrorHandler",
+582:       "org.apache.derby.iapi.services.uuid.UUIDFactory",
+583:       "org.apache.derby.iapi.error.ShutdownException",
+584:       "org.apache.derby.iapi.sql.depend.Dependent",
+585:       "org.firebirdsql.gds.GDS",
+586:       "org.h2.command.Command",
+587:       "org.apache.derby.iapi.sql.Row",
+588:       "org.databene.commons.BeanUtil$PrimitiveTypeMapping",
+589:       "org.databene.commons.ImportFailedException",
+590:       "org.databene.commons.Escalator",
+591:       "org.firebirdsql.jca.FBResourceTransactionException",
+592:       "org.databene.commons.HeavyweightIterator",
+593:       "org.h2.engine.Role",
+594:       "org.firebirdsql.gds.impl.jni.GDSSynchronizationPolicy$ClientLibrarySyncPolicy",
+595:       "org.apache.derby.impl.sql.compile.TableOperatorNode",
+596:       "org.firebirdsql.jdbc.FirebirdConnection",
+597:       "org.hsqldb.lib.HsqlArrayList",
+598:       "org.databene.commons.depend.CyclicDependencyException",
+599:       "org.databene.jdbacl.model.AbstractDBTableComponent",
+600:       "org.apache.derby.iapi.types.DataValueDescriptor",
+601:       "org.apache.derby.impl.sql.compile.ResultColumnList",
+602:       "org.apache.derby.impl.sql.compile.WindowList",
+603:       "org.firebirdsql.jdbc.AbstractCallableStatement",
+604:       "org.postgresql.core.ProtocolConnection",
+605:       "org.apache.derby.iapi.services.context.ContextManager",
+606:       "org.apache.derby.iapi.sql.compile.RequiredRowOrdering",
+607:       "org.hsqldb.HsqlException",
+608:       "org.h2.command.ddl.CreateTableData",
+609:       "org.apache.derby.iapi.services.io.TypedFormat",
+610:       "org.apache.derby.vti.VTITemplate",
+611:       "org.databene.commons.collection.OrderedNameMap",
+612:       "org.firebirdsql.gds.DatabaseParameterBuffer",
+613:       "org.h2.engine.SessionFactory",
+614:       "org.apache.derby.iapi.services.loader.ClassFactory",
+615:       "org.firebirdsql.gds.impl.jni.LocalGDSFactoryPlugin",
+616:       "org.databene.commons.ExceptionMapper",
+617:       "org.firebirdsql.jca.FBLocalTransaction",
+618:       "org.apache.derby.iapi.sql.execute.ExecutionFactory",
+619:       "org.firebirdsql.gds.IscStmtHandle",
+620:       "org.h2.engine.UndoLogRecord",
+621:       "org.apache.derby.iapi.services.io.LimitObjectInput",
+622:       "org.databene.jdbacl.model.Database",
+623:       "org.apache.derby.impl.jdbc.EmbedResultSetMetaData",
+624:       "org.databene.jdbacl.model.AbstractCompositeDBObject",
+625:       "org.apache.derby.impl.sql.compile.BooleanConstantNode",
+626:       "org.h2.util.IOUtils",
+627:       "org.h2.message.TraceSystem",
+628:       "org.databene.jdbacl.model.DBPrimaryKeyConstraint",
+629:       "org.databene.jdbacl.model.SequenceHolder",
+630:       "org.apache.derby.iapi.sql.compile.AccessPath",
+631:       "org.h2.index.PageBtreeIndex",
+632:       "org.apache.derby.impl.sql.compile.ColumnReference",
+633:       "org.firebirdsql.gds.TransactionParameterBuffer",
+634:       "org.h2.tools.Recover$PageInputStream",
+635:       "org.apache.derby.iapi.store.access.SpaceInfo",
+636:       "org.apache.derby.iapi.sql.compile.CostEstimate",
+637:       "org.firebirdsql.jdbc.InternalTransactionCoordinator$ManagedTransactionCoordinator",
+638:       "org.hsqldb.Session",
+639:       "org.apache.derby.impl.store.access.btree.BTree",
+640:       "org.firebirdsql.gds.impl.wire.JavaGDSImpl",
+641:       "org.firebirdsql.jca.FBXAException",
+642:       "org.postgresql.core.Query",
+643:       "org.postgresql.jdbc3g.AbstractJdbc3gConnection",
+644:       "org.databene.commons.Level",
+645:       "org.postgresql.jdbc4.Jdbc4Connection",
+646:       "org.apache.derby.impl.sql.compile.BinaryListOperatorNode",
+647:       "org.apache.derby.impl.sql.compile.TernaryOperatorNode"
+648:     );
+649:   } 
+650:   private static void initMocksToAvoidTimeoutsInTheTests() throws ClassNotFoundException { 
+651:     mock(Class.forName("org.hsqldb.Session", false, DBUtil_78_tmp__ESTest_scaffolding.class.getClassLoader()));
+652:   }
+653: 
+654:   private static void resetClasses() {
+655:     org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(DBUtil_78_tmp__ESTest_scaffolding.class.getClassLoader()); 
+656: 
+657:     org.evosuite.runtime.classhandling.ClassStateSupport.resetClasses(
+658:       "org.databene.jdbacl.DBUtil",
+659:       "org.databene.commons.IOUtil",
+660:       "org.databene.commons.StringUtil",
+661:       "org.databene.commons.LoggerEscalator",
+662:       "org.databene.commons.BeanUtil$PrimitiveTypeMapping",
+663:       "org.databene.commons.BeanUtil",
+664:       "org.databene.commons.debug.Debug",
+665:       "org.databene.jdbacl.proxy.PooledConnectionHandler",
+666:       "org.databene.commons.converter.FormatHolder",
+667:       "org.databene.commons.Capitalization",
+668:       "org.databene.commons.converter.ToStringConverter",
+669:       "org.databene.commons.converter.MultiConverterWrapper",
+670:       "org.databene.commons.converter.ArrayConverter",
+671:       "org.databene.commons.ArrayUtil",
+672:       "org.databene.jdbacl.proxy.LoggingPreparedStatementHandler",
+673:       "org.databene.jdbacl.proxy.LoggingResultSetHandler",
+674:       "org.databene.jdbacl.proxy.LoggingStatementHandler",
+675:       "org.databene.commons.CollectionUtil",
+676:       "org.databene.jdbacl.SQLUtil",
+677:       "org.databene.commons.converter.AnyConverter",
+678:       "org.databene.commons.converter.ConverterManager",
+679:       "org.databene.commons.ArrayFormat",
+680:       "org.h2.util.New",
+681:       "org.h2.command.dml.SetTypes",
+682:       "org.h2.util.MathUtils",
+683:       "org.h2.constant.SysProperties",
+684:       "org.h2.engine.ConnectionInfo",
+685:       "org.h2.message.TraceObject",
+686:       "org.h2.jdbc.JdbcConnection",
+687:       "org.h2.value.CompareMode",
+688:       "org.h2.engine.SessionWithState",
+689:       "org.h2.engine.SessionRemote",
+690:       "org.h2.engine.Session",
+691:       "org.h2.value.Value",
+692:       "org.h2.value.ValueLong",
+693:       "org.h2.engine.Engine",
+694:       "org.h2.store.FileLock",
+695:       "org.h2.util.IOUtils",
+696:       "org.h2.store.fs.FileSystem",
+697:       "org.h2.store.fs.FileSystemDisk",
+698:       "org.h2.util.StringUtils",
+699:       "org.h2.util.Utils",
+700:       "org.h2.message.DbException",
+701:       "org.h2.constant.ErrorCode",
+702:       "org.h2.jdbc.JdbcSQLException",
+703:       "org.h2.message.TraceSystem",
+704:       "org.apache.derby.impl.sql.compile.QueryTreeNode",
+705:       "org.apache.derby.impl.sql.compile.TableElementNode",
+706:       "org.apache.derby.impl.sql.compile.ConstraintDefinitionNode",
+707:       "org.databene.jdbacl.model.jdbc.JDBCDBImporter",
+708:       "org.databene.commons.SystemInfo",
+709:       "org.databene.commons.ConfigurationError",
+710:       "org.hsqldb.Result",
+711:       "org.hsqldb.Session",
+712:       "org.hsqldb.jdbc.jdbcConnection",
+713:       "org.apache.derby.impl.sql.compile.StatementNode",
+714:       "org.apache.derby.impl.sql.compile.DDLStatementNode",
+715:       "org.apache.derby.impl.sql.compile.CreateIndexNode",
+716:       "org.h2.command.ddl.CreateTableData",
+717:       "org.h2.command.Prepared",
+718:       "org.h2.command.dml.ScriptBase",
+719:       "org.h2.command.dml.RunScriptCommand",
+720:       "org.hsqldb.jdbc.jdbcStatement",
+721:       "org.hsqldb.jdbc.jdbcPreparedStatement",
+722:       "org.hsqldb.jdbc.jdbcCallableStatement",
+723:       "org.firebirdsql.gds.XSQLVAR",
+724:       "org.apache.derby.impl.sql.catalog.DataDictionaryImpl",
+725:       "org.apache.derby.iapi.sql.dictionary.DataDescriptorGenerator",
+726:       "org.apache.derby.impl.services.uuid.BasicUUID",
+727:       "org.hsqldb.persist.HsqlProperties",
+728:       "org.hsqldb.store.BaseHashMap",
+729:       "org.hsqldb.lib.IntValueHashMap",
+730:       "org.hsqldb.store.HashIndex",
+731:       "org.hsqldb.lib.ArrayUtil",
+732:       "org.hsqldb.DatabaseURL",
+733:       "org.hsqldb.jdbc.Util",
+734:       "org.hsqldb.lib.HashMap",
+735:       "org.hsqldb.lib.BaseList",
+736:       "org.hsqldb.lib.HsqlArrayList",
+737:       "org.hsqldb.resources.BundleHandler",
+738:       "org.hsqldb.Trace",
+739:       "org.hsqldb.HsqlException",
+740:       "org.firebirdsql.logging.LoggerFactory",
+741:       "org.firebirdsql.jca.FBManagedConnection$1",
+742:       "org.firebirdsql.jca.FBManagedConnection$2",
+743:       "org.firebirdsql.jca.FBManagedConnection$3",
+744:       "org.firebirdsql.jca.FBManagedConnection$4",
+745:       "org.firebirdsql.jca.FBManagedConnection$5",
+746:       "org.firebirdsql.jca.FBManagedConnection",
+747:       "org.firebirdsql.jdbc.AbstractConnection",
+748:       "org.firebirdsql.jdbc.FBConnection",
+749:       "org.firebirdsql.jdbc.InternalTransactionCoordinator",
+750:       "org.firebirdsql.gds.impl.AbstractGDS",
+751:       "org.firebirdsql.gds.impl.jni.BaseGDSImpl",
+752:       "org.firebirdsql.gds.impl.jni.JniGDSImpl",
+753:       "org.apache.derby.vti.VTITemplate",
+754:       "org.apache.derby.impl.jdbc.EmbedResultSetMetaData",
+755:       "org.apache.derby.impl.sql.GenericColumnDescriptor",
+756:       "org.apache.derby.catalog.types.BaseTypeIdImpl",
+757:       "org.apache.derby.catalog.types.DecimalTypeIdImpl",
+758:       "org.apache.derby.iapi.types.TypeId",
+759:       "org.apache.derby.catalog.types.TypeDescriptorImpl",
+760:       "org.apache.derby.iapi.types.DataTypeDescriptor",
+761:       "org.apache.derby.diag.ErrorMessages",
+762:       "org.h2.engine.Database",
+763:       "org.h2.engine.Mode",
+764:       "org.h2.util.SmallLRUCache",
+765:       "org.h2.util.TempFileDeleter",
+766:       "org.h2.message.Trace",
+767:       "org.h2.util.SortedProperties",
+768:       "org.h2.util.MathUtils$1",
+769:       "org.h2.Driver",
+770:       "org.apache.derby.impl.sql.compile.ResultSetNode",
+771:       "org.apache.derby.impl.sql.compile.FromTable",
+772:       "org.apache.derby.impl.sql.compile.FromVTI",
+773:       "org.firebirdsql.jdbc.InternalTransactionCoordinator$AbstractTransactionCoordinator",
+774:       "org.firebirdsql.jdbc.InternalTransactionCoordinator$LocalTransactionCoordinator",
+775:       "org.firebirdsql.jdbc.InternalTransactionCoordinator$ManagedTransactionCoordinator",
+776:       "org.firebirdsql.jdbc.InternalTransactionCoordinator$MetaDataTransactionCoordinator",
+777:       "org.databene.commons.Assert",
+778:       "org.databene.commons.ExceptionMapper",
+779:       "org.databene.commons.ConnectFailedException",
+780:       "org.apache.derby.impl.sql.execute.BaseActivation",
+781:       "org.apache.derby.impl.sql.execute.ConstantActionActivation",
+782:       "org.firebirdsql.jdbc.FBArray",
+783:       "org.databene.jdbacl.JDBCConnectData",
+784:       "org.databene.jdbacl.model.AbstractDBObject",
+785:       "org.databene.jdbacl.model.AbstractCompositeDBObject",
+786:       "org.databene.jdbacl.model.DefaultDBTable",
+787:       "org.databene.commons.OrderedMap",
+788:       "org.databene.commons.collection.OrderedNameMap",
+789:       "org.databene.commons.OrderedSet",
+790:       "org.postgresql.core.Logger",
+791:       "org.postgresql.Driver",
+792:       "org.postgresql.Driver$1",
+793:       "org.hsqldb.jdbc.jdbcDatabaseMetaData",
+794:       "org.hsqldb.lib.FileUtil",
+795:       "org.databene.commons.collection.ListBasedSet",
+796:       "org.apache.derby.iapi.services.io.FormatableProperties",
+797:       "org.postgresql.jdbc2.AbstractJdbc2Connection",
+798:       "org.postgresql.jdbc3.AbstractJdbc3Connection",
+799:       "org.postgresql.jdbc3g.AbstractJdbc3gConnection",
+800:       "org.postgresql.jdbc4.AbstractJdbc4Connection",
+801:       "org.postgresql.jdbc4.Jdbc4Connection",
+802:       "org.postgresql.core.v3.ConnectionFactoryImpl",
+803:       "org.postgresql.core.v2.ConnectionFactoryImpl",
+804:       "org.postgresql.core.ConnectionFactory",
+805:       "org.postgresql.core.PGStream",
+806:       "org.postgresql.util.PSQLException",
+807:       "org.postgresql.util.GT",
+808:       "org.postgresql.util.PSQLState",
+809:       "org.databene.jdbacl.model.AbstractDBTableComponent",
+810:       "org.databene.jdbacl.model.DBConstraint",
+811:       "org.databene.jdbacl.model.DBUniqueConstraint",
+812:       "org.databene.jdbacl.model.DBPrimaryKeyConstraint",
+813:       "org.h2.tools.SimpleResultSet",
+814:       "org.apache.derby.impl.sql.execute.rts.RealBasicNoPutResultSetStatistics",
+815:       "org.apache.derby.impl.sql.execute.rts.RealNoPutResultSetStatistics",
+816:       "org.apache.derby.impl.sql.execute.rts.RealHashScanStatistics",
+817:       "org.apache.derby.impl.sql.execute.rts.RealDistinctScanStatistics",
+818:       "org.postgresql.ds.common.BaseDataSource",
+819:       "org.postgresql.ds.PGConnectionPoolDataSource",
+820:       "org.databene.commons.ErrorHandler",
+821:       "org.h2.tools.Csv",
+822:       "org.hsqldb.jdbcDriver",
+823:       "org.databene.jdbacl.model.jdbc.JDBCDBImporter$TableNameFilter",
+824:       "org.postgresql.ds.jdbc23.AbstractJdbc23PooledConnection",
+825:       "org.postgresql.ds.jdbc4.AbstractJdbc4PooledConnection",
+826:       "org.postgresql.ds.PGPooledConnection",
+827:       "org.firebirdsql.jdbc.FBSQLException",
+828:       "org.firebirdsql.jdbc.FBDriverNotCapableException",
+829:       "org.h2.jdbcx.JdbcConnectionPool",
+830:       "org.h2.jdbcx.JdbcDataSource",
+831:       "org.h2.jdbcx.JdbcDataSourceFactory",
+832:       "org.h2.jdbcx.JdbcXAConnection",
+833:       "org.databene.jdbacl.model.DBCatalog",
+834:       "org.databene.jdbacl.model.DBSchema",
+835:       "org.databene.jdbacl.model.DBPackage",
+836:       "org.apache.derby.iapi.types.DataType",
+837:       "org.apache.derby.iapi.services.cache.ClassSizeCatalog",
+838:       "org.apache.derby.iapi.services.cache.ClassSize$1",
+839:       "org.apache.derby.iapi.services.cache.ClassSize",
+840:       "org.apache.derby.iapi.types.SQLBinary",
+841:       "org.apache.derby.iapi.types.SQLBit",
+842:       "org.apache.derby.iapi.types.SQLVarbit",
+843:       "org.apache.derby.impl.sql.compile.QueryTreeNodeVector",
+844:       "org.apache.derby.impl.sql.compile.FromList",
+845:       "org.h2.util.Tool",
+846:       "org.h2.tools.Recover",
+847:       "org.apache.derby.impl.sql.compile.FromSubquery",
+848:       "org.apache.derby.impl.sql.compile.FromBaseTable",
+849:       "org.apache.derby.iapi.sql.compile.NodeFactory",
+850:       "org.apache.derby.impl.sql.compile.NodeFactoryImpl",
+851:       "org.apache.derby.iapi.services.context.ContextService",
+852:       "org.apache.derby.iapi.error.ShutdownException",
+853:       "org.apache.derby.impl.sql.compile.ValueNode",
+854:       "org.apache.derby.impl.sql.compile.ResultColumn",
+855:       "org.apache.derby.impl.sql.compile.AllResultColumn",
+856:       "org.h2.engine.DbObjectBase",
+857:       "org.h2.schema.SchemaObjectBase",
+858:       "org.h2.table.Table",
+859:       "org.h2.table.TableBase",
+860:       "org.h2.table.RegularTable",
+861:       "org.apache.derby.impl.sql.compile.SelectNode",
+862:       "org.firebirdsql.gds.impl.jni.ParameterBufferBase",
+863:       "org.firebirdsql.gds.impl.jni.DatabaseParameterBufferImp",
+864:       "org.firebirdsql.gds.impl.AbstractIscDbHandle",
+865:       "org.firebirdsql.gds.impl.jni.isc_db_handle_impl",
+866:       "org.databene.commons.ReaderLineIterator",
+867:       "org.apache.derby.impl.store.access.conglomerate.GenericController",
+868:       "org.apache.derby.impl.store.access.conglomerate.GenericCostController",
+869:       "org.apache.derby.impl.store.access.heap.HeapCostController",
+870:       "org.apache.derby.impl.store.access.btree.OpenBTree",
+871:       "org.apache.derby.impl.store.access.btree.BTreeController",
+872:       "org.apache.derby.impl.store.access.conglomerate.ConglomerateUtil",
+873:       "org.apache.derby.iapi.error.StandardException",
+874:       "org.apache.derby.impl.sql.compile.SingleChildResultSetNode",
+875:       "org.apache.derby.impl.sql.compile.ProjectRestrictNode",
+876:       "org.apache.derby.impl.sql.compile.OrderedColumnList",
+877:       "org.apache.derby.impl.sql.compile.GroupByList",
+878:       "org.apache.derby.iapi.services.monitor.Monitor",
+879:       "org.apache.derby.iapi.sql.dictionary.ConstraintDescriptorList",
+880:       "org.databene.commons.version.VersionNumberComponent",
+881:       "org.databene.commons.version.NumberVersionNumberComponent",
+882:       "org.databene.commons.Parser",
+883:       "org.databene.commons.version.VersionNumberParser",
+884:       "org.databene.commons.version.VersionNumber",
+885:       "org.databene.jdbacl.model.DefaultDatabase",
+886:       "org.databene.commons.ObjectNotFoundException",
+887:       "org.databene.jdbacl.model.TableContainer",
+888:       "org.databene.jdbacl.model.TableContainerSupport",
+889:       "org.databene.commons.depend.DependencyModel",
+890:       "org.h2.schema.Schema",
+891:       "org.apache.derby.impl.store.access.conglomerate.GenericConglomerateController",
+892:       "org.apache.derby.impl.store.access.heap.HeapController",
+893:       "org.h2.command.Parser",
+894:       "org.apache.derby.impl.sql.compile.DMLStatementNode",
+895:       "org.apache.derby.impl.sql.compile.DMLModStatementNode",
+896:       "org.apache.derby.impl.sql.compile.InsertNode",
+897:       "org.apache.derby.impl.sql.execute.WriteCursorConstantAction",
+898:       "org.apache.derby.impl.sql.execute.DeleteConstantAction",
+899:       "org.h2.engine.RightOwner",
+900:       "org.h2.engine.User",
+901:       "org.apache.derby.impl.store.raw.xact.XactFactory",
+902:       "org.apache.derby.impl.store.raw.xact.ConcurrentXactFactory",
+903:       "org.apache.derby.impl.store.raw.xact.TransactionMapFactory",
+904:       "org.apache.derby.impl.store.raw.xact.ConcurrentTransactionMapFactory",
+905:       "org.apache.derby.iapi.store.access.GlobalXact",
+906:       "org.apache.derby.impl.store.raw.xact.GlobalXactId",
+907:       "org.apache.derby.impl.sql.compile.ResultColumnList",
+908:       "org.apache.derby.iapi.services.io.FormatableBitSet",
+909:       "org.apache.derby.impl.sql.GenericLanguageFactory",
+910:       "org.apache.derby.impl.sql.conn.GenericLanguageConnectionFactory",
+911:       "org.apache.derby.iapi.services.context.ContextImpl",
+912:       "org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext",
+913:       "org.firebirdsql.gds.impl.wire.AbstractJavaGDSImpl",
+914:       "org.firebirdsql.gds.impl.wire.JavaGDSImpl",
+915:       "org.firebirdsql.gds.impl.GDSFactory$ReversedStringComparator",
+916:       "org.firebirdsql.gds.impl.wire.WireGDSFactoryPlugin",
+917:       "org.firebirdsql.gds.impl.jni.NativeGDSFactoryPlugin",
+918:       "org.firebirdsql.gds.impl.jni.LocalGDSFactoryPlugin",
+919:       "org.firebirdsql.gds.impl.jni.EmbeddedGDSFactoryPlugin",
+920:       "org.firebirdsql.gds.impl.GDSFactory",
+921:       "org.firebirdsql.gds.impl.GDSType",
+922:       "org.firebirdsql.gds.impl.wire.ParameterBufferBase",
+923:       "org.firebirdsql.gds.impl.wire.DatabaseParameterBufferImp",
+924:       "org.firebirdsql.gds.impl.wire.isc_db_handle_impl",
+925:       "org.firebirdsql.gds.impl.GDSHelper",
+926:       "org.apache.derby.impl.store.access.conglomerate.GenericConglomerate",
+927:       "org.apache.derby.impl.store.access.btree.BTree",
+928:       "org.apache.derby.impl.store.access.btree.index.B2I",
+929:       "org.apache.derby.impl.store.access.btree.index.B2I_10_3",
+930:       "org.apache.derby.impl.sql.compile.SubqueryList",
+931:       "org.apache.derby.impl.sql.compile.BaseJoinStrategy",
+932:       "org.apache.derby.impl.sql.compile.HashJoinStrategy",
+933:       "org.apache.derby.impl.sql.compile.TableName",
+934:       "org.apache.derby.iapi.services.loader.ClassInfo",
+935:       "org.h2.table.IndexColumn",
+936:       "org.apache.derby.impl.sql.compile.HasNodeVisitor",
+937:       "org.apache.derby.impl.sql.compile.HasTableFunctionVisitor",
+938:       "org.apache.derby.iapi.util.JBitSet",
+939:       "org.h2.value.ValueLob",
+940:       "org.h2.index.IndexType",
+941:       "org.h2.index.BaseIndex",
+942:       "org.h2.index.ScanIndex",
+943:       "org.apache.derby.iapi.types.XML",
+944:       "org.apache.derby.impl.sql.compile.FKConstraintDefinitionNode",
+945:       "org.databene.jdbacl.DBExecutionResult",
+946:       "org.apache.derby.iapi.services.i18n.MessageService",
+947:       "org.apache.derby.iapi.util.StringUtil",
+948:       "org.firebirdsql.jdbc.AbstractStatement",
+949:       "org.firebirdsql.jdbc.AbstractPreparedStatement",
+950:       "org.firebirdsql.jdbc.AbstractCallableStatement",
+951:       "org.firebirdsql.jdbc.FBCallableStatement",
+952:       "org.firebirdsql.jdbc.AbstractStatement$RSListener",
+953:       "org.databene.commons.ErrorHandler$1",
+954:       "org.apache.derby.impl.db.BasicDatabase",
+955:       "org.apache.derby.impl.sql.compile.ReplaceAggregatesWithCRVisitor",
+956:       "org.apache.derby.impl.sql.compile.WindowResultSetNode",
+957:       "org.apache.derby.impl.store.raw.xact.TransactionTable",
+958:       "org.firebirdsql.jdbc.FBPreparedStatement",
+959:       "org.databene.jdbacl.model.DBIndex",
+960:       "org.databene.jdbacl.model.DBUniqueIndex",
+961:       "org.apache.derby.impl.db.SlaveDatabase",
+962:       "org.h2.table.TableLink",
+963:       "org.h2.table.FunctionTable",
+964:       "org.h2.index.FunctionIndex",
+965:       "org.apache.derby.iapi.store.raw.xact.RawTransaction",
+966:       "org.hsqldb.lib.StringUtil",
+967:       "org.apache.derby.impl.sql.compile.PredicateList",
+968:       "org.apache.derby.iapi.sql.depend.ProviderList",
+969:       "org.postgresql.jdbc2.AbstractJdbc2Array",
+970:       "org.postgresql.jdbc4.Jdbc4Array",
+971:       "org.apache.derby.impl.sql.compile.CollectNodesVisitor",
+972:       "org.firebirdsql.jdbc.FBStatement",
+973:       "org.firebirdsql.gds.impl.AbstractIscStmtHandle",
+974:       "org.firebirdsql.gds.impl.wire.isc_stmt_handle_impl",
+975:       "org.apache.derby.impl.sql.compile.VirtualColumnNode",
+976:       "org.apache.derby.impl.sql.compile.TableOperatorNode",
+977:       "org.apache.derby.impl.sql.compile.JoinNode",
+978:       "org.apache.derby.impl.sql.compile.HalfOuterJoinNode",
+979:       "org.postgresql.jdbc3.PSQLSavepoint",
+980:       "org.h2.index.HashIndex",
+981:       "org.h2.value.ValueNull",
+982:       "org.apache.derby.impl.sql.compile.Predicate",
+983:       "org.apache.derby.impl.sql.execute.rts.RealVTIStatistics",
+984:       "org.apache.derby.impl.sql.execute.rts.RealAnyResultSetStatistics",
+985:       "org.apache.derby.impl.sql.execute.rts.RealJoinResultSetStatistics",
+986:       "org.apache.derby.impl.sql.execute.rts.RealNestedLoopJoinStatistics",
+987:       "org.apache.derby.impl.sql.execute.rts.RealHashJoinStatistics",
+988:       "org.apache.derby.impl.sql.execute.rts.RealHashTableStatistics",
+989:       "org.apache.derby.impl.store.raw.data.BaseDataFileFactory",
+990:       "org.apache.derby.impl.sql.execute.InternalTriggerExecutionContext",
+991:       "org.apache.derby.impl.sql.compile.AlterTableNode",
+992:       "org.firebirdsql.jca.FBConnectionRequestInfo",
+993:       "org.databene.commons.ParseUtil",
+994:       "org.h2.store.fs.FileSystemMemory",
+995:       "org.h2.store.fs.FileSystemZip",
+996:       "org.h2.store.fs.FileSystemSplit",
+997:       "org.h2.store.fs.FileSystemDiskNio",
+998:       "org.h2.store.fs.FileSystemDiskNioMapped",
+999:       "org.h2.table.PlanItem",
+1000:       "org.apache.derby.impl.sql.compile.CoalesceFunctionNode",
+1001:       "org.apache.derby.iapi.services.io.FormatableHashtable",
+1002:       "org.apache.derby.impl.sql.compile.CurrentOfNode",
+1003:       "org.apache.derby.impl.sql.execute.rts.RealSortStatistics",
+1004:       "org.h2.value.Transfer",
+1005:       "org.firebirdsql.jdbc.AbstractSavepoint",
+1006:       "org.firebirdsql.jdbc.FBSavepoint",
+1007:       "org.h2.store.LobStorage",
+1008:       "org.h2.tools.CompressTool",
+1009:       "org.apache.derby.catalog.types.UserDefinedTypeIdImpl",
+1010:       "org.databene.commons.Period",
+1011:       "org.databene.jdbacl.model.cache.CachingDBImporter",
+1012:       "org.apache.derby.iapi.store.raw.ContainerKey",
+1013:       "org.apache.derby.impl.store.access.heap.Heap",
+1014:       "org.apache.derby.impl.store.access.heap.Heap_v10_2",
+1015:       "org.apache.derby.iapi.sql.dictionary.IndexRowGenerator",
+1016:       "org.apache.derby.catalog.types.IndexDescriptorImpl",
+1017:       "org.apache.derby.impl.sql.execute.ValueRow",
+1018:       "org.apache.derby.iapi.services.io.ArrayInputStream",
+1019:       "org.apache.derby.iapi.services.io.FormatIdInputStream",
+1020:       "org.firebirdsql.jdbc.FBEscapedCallParser",
+1021:       "org.firebirdsql.jdbc.FBEscapedParser",
+1022:       "org.firebirdsql.jdbc.FBProcedureCall",
+1023:       "org.firebirdsql.jdbc.FBProcedureParam",
+1024:       "org.apache.derby.iapi.types.CharStreamHeaderGenerator",
+1025:       "org.apache.derby.iapi.types.SQLChar",
+1026:       "org.databene.commons.AssertionError"
+1027:     );
+1028:   }
+1029: }
+
+[MASTER] 20:14:42.582 [logback-2] ERROR JUnitAnalyzer - Failed to compile test case:
+GroupByList groupByList0 = new GroupByList();
+SimpleResultSet simpleResultSet0 = new SimpleResultSet();
+DBUtil.nextLine(simpleResultSet0);
+DBUtil.close((ResultSet) simpleResultSet0);
+Session session0 = mock(Session.class, new ViolatedAssumptionAnswer());
+jdbcConnection jdbcConnection0 = new jdbcConnection(session0);
+jdbcConnection0.createStruct(",.<9QIO'to1/9", (Object[]) null);
+
+[MASTER] 20:14:44.017 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.LocalGDSImpl: no jaybird21 in java.library.path
+[MASTER] 20:14:44.052 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.NativeGDSImpl: org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 20:14:44.367 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.JniGDSImpl: Could not initialize class org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 20:14:44.447 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.EmbeddedGDSImpl: org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 20:14:45.516 [logback-2] ERROR ClassResetter - java.lang.NoClassDefFoundError: Could not initialize class org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 20:14:47.151 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.NativeGDSImpl: no jaybird21 in java.library.path
+[MASTER] 20:14:47.430 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.derby.iapi.types.SqlXmlUtil: org/apache/xml/utils/PrefixResolver
+[MASTER] 20:14:48.290 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.LocalGDSImpl: org.firebirdsql.gds.impl.jni.JniGDSImpl
+* Permissions denied during test execution: 
+  - java.io.FilePermission: 
+         write /dev/random: 1
+  - java.net.SocketPermission: 
+         resolve java.lang.String@0000000017: 1
+         resolve java.lang.String@0000000018: 6
+         resolve java.lang.String@0000000019: 3
+         and other 6 cases of action/name for this exception class
+  - java.sql.SQLPermission: 
+         deregisterDriver: 2
+* Writing JUnit test case 'DBUtil_ESTest' to /home/ubuntu/termite/qmosa/tests/s1008/13_jdbacl/evosuite-tests
+* Done!
+
+* Computation finished

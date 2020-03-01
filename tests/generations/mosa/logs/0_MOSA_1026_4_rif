@@ -1,0 +1,51 @@
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: com.densebrain.rif.client.RIFClassLoader
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/4_rif/evosuite-files/evosuite.properties
+* Connecting to master process on port 18050
+* Analyzing classpath: 
+[MASTER] 03:41:32.254 [logback-2] ERROR ClientNodeImpl - Error when connecting to master via RMI
+java.lang.SecurityException: Unprivileged thread "main" cannot add a privileged thread: failed to add "Statistics sender in client process"
+Current privileged threads are: 
+"pool-3-thread-1"
+"Reference Handler"
+"Finalizer"
+"Signal Dispatcher"
+"Attach Listener"
+"RMI TCP Accept-18060"
+"RMI Reaper"
+"GC Daemon"
+"RMI Scheduler(0)"
+	at org.evosuite.runtime.sandbox.MSecurityManager.addPrivilegedThread(MSecurityManager.java:396) ~[evosuite.jar:1.0.6]
+	at org.evosuite.runtime.sandbox.Sandbox.addPrivilegedThread(Sandbox.java:92) ~[evosuite.jar:1.0.6]
+	at org.evosuite.rmi.service.ClientNodeImpl.init(ClientNodeImpl.java:369) ~[evosuite.jar:1.0.6]
+	at org.evosuite.rmi.ClientServices.registerServices(ClientServices.java:68) [evosuite.jar:1.0.6]
+	at org.evosuite.ClientProcess.run(ClientProcess.java:82) [evosuite.jar:1.0.6]
+	at org.evosuite.ClientProcess.main(ClientProcess.java:203) [evosuite.jar:1.0.6]
+[MASTER] 03:41:32.281 [logback-2] ERROR ClientProcess - Error when generating tests for: com.densebrain.rif.client.RIFClassLoader with seed 1026. Configuration id : MOSA
+java.lang.RuntimeException: Could not connect to master process on port 18050
+	at org.evosuite.ClientProcess.run(ClientProcess.java:87) ~[evosuite.jar:1.0.6]
+	at org.evosuite.ClientProcess.main(ClientProcess.java:203) ~[evosuite.jar:1.0.6]
+[MASTER] 03:41:32.726 [main] ERROR ExternalProcessHandler - Class com.densebrain.rif.client.RIFClassLoader. Lost connection with clients.
+ClientNode: INITIALIZATION
+
+java.rmi.UnmarshalException: Error unmarshaling return header; nested exception is: 
+	java.io.EOFException
+	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:236) ~[na:1.8.0_201]
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:161) ~[na:1.8.0_201]
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227) ~[na:1.8.0_201]
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179) ~[na:1.8.0_201]
+	at com.sun.proxy.$Proxy7.waitUntilFinished(Unknown Source) ~[na:na]
+	at org.evosuite.utils.ExternalProcessHandler.waitForResult(ExternalProcessHandler.java:608) ~[evosuite.jar:1.0.6]
+	at org.evosuite.executionmode.TestGeneration.generateTests(TestGeneration.java:498) [evosuite.jar:1.0.6]
+	at org.evosuite.executionmode.TestGeneration.executeTestGeneration(TestGeneration.java:79) [evosuite.jar:1.0.6]
+	at org.evosuite.EvoSuite.parseCommandLine(EvoSuite.java:269) [evosuite.jar:1.0.6]
+	at org.evosuite.EvoSuite.main(EvoSuite.java:302) [evosuite.jar:1.0.6]
+Caused by: java.io.EOFException: null
+	at java.io.DataInputStream.readByte(DataInputStream.java:267) ~[na:1.8.0_201]
+	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:222) ~[na:1.8.0_201]
+	... 9 common frames omitted
+* Computation finished
+[MASTER] 03:41:32.878 [main] ERROR SearchStatistics - No statistics has been saved because EvoSuite failed to generate any test case
+[MASTER] 03:41:32.979 [main] ERROR TestGeneration - failed to write statistics data

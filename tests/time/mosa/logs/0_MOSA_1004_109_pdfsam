@@ -1,0 +1,89 @@
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: org.pdfsam.guiclient.commons.models.VisualListModel
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/109_pdfsam/evosuite-files/evosuite.properties
+* Connecting to master process on port 10009
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 17:45:02.410 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 17:45:02.445 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 17:45:02.446 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 17:45:03.304 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 17:45:04.734 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 17:45:04.735 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 17:45:10.480 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 17:45:11.067 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 17:45:11.075 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 17:45:11.075 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 17:45:11.075 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 17:45:11.075 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 17:45:11.076 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 17:45:11.076 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 17:45:11.076 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 17:45:11.154 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 17:45:11.196 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class org.pdfsam.guiclient.commons.models.VisualListModel
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 1248
+* Using seed 1004
+* Starting evolution
+[MASTER] 17:45:22.018 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.pdfsam.guiclient.commons.models.VisualListModel.removeElements(IIZ)V: I3 Branch 12 IFLT L133 - true
+[MASTER] 17:45:22.018 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 126: org.pdfsam.guiclient.commons.models.VisualListModel.removeElements(IIZ)V:133 - ReplaceComparisonOperator < -> -2
+[MASTER] 17:45:22.020 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.pdfsam.guiclient.commons.models.VisualListModel.removeElements(IIZ)V: I3 Branch 12 IFLT L133 - true in context: org.pdfsam.guiclient.commons.models.VisualListModel:removeElements(IIZ)V
+[MASTER] 17:45:24.697 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 17:46:36.825 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 17:46:36.907 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 17:47:07.183 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+* Search finished after 123s and 508 generations, 201434 statements, best individual has fitness: 1488.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 91%
+* Total number of goals: 162
+* Number of covered goals: 148
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 84%
+* Total number of goals: 143
+* Number of covered goals: 120
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 34
+* Number of covered goals: 34
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 84%
+* Total number of goals: 722
+* Number of covered goals: 603
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 61%
+* Total number of goals: 18
+* Number of covered goals: 11
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 30
+* Number of covered goals: 30
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 30
+* Number of covered goals: 30
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 84%
+* Total number of goals: 143
+* Number of covered goals: 120
+* Generated 116 tests with total length 513
+* Resulting test suite's coverage: 85% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 35%
+* Compiling and checking tests
+* Writing JUnit test case 'VisualListModel_ESTest' to /home/ubuntu/termite/mosa/tests/s1004/109_pdfsam/evosuite-tests
+* Done!
+
+* Computation finished

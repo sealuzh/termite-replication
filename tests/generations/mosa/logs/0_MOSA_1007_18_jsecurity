@@ -1,0 +1,187 @@
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: org.jsecurity.web.DefaultWebSecurityManager
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: org.jsecurity.authc.UsernamePasswordToken
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/18_jsecurity/evosuite-files/evosuite.properties
+* Connecting to master process on port 19700
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/18_jsecurity/evosuite-files/evosuite.properties
+* Connecting to master process on port 19702
+* Analyzing classpath: 
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class org.jsecurity.authc.UsernamePasswordToken
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 213
+* Using seed 1007
+* Starting evolution
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 02:36:38.918 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 02:36:38.997 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 02:36:38.998 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 02:36:39.430 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class org.jsecurity.web.DefaultWebSecurityManager
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 468
+* Using seed 1007
+* Starting evolution
+[MASTER] 02:36:47.008 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jsecurity.web.DefaultWebSecurityManager.<init>()V: Line 65
+[MASTER] 02:36:47.026 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jsecurity.web.DefaultWebSecurityManager.<init>(Lorg/jsecurity/realm/Realm;)V: Line 71
+[MASTER] 02:36:47.026 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jsecurity.web.DefaultWebSecurityManager.<init>(Lorg/jsecurity/realm/Realm;)V: Line 65
+[MASTER] 02:36:47.026 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jsecurity.web.DefaultWebSecurityManager.<init>(Lorg/jsecurity/realm/Realm;)V: Line 72
+[MASTER] 02:36:47.026 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jsecurity.web.DefaultWebSecurityManager.<init>(Lorg/jsecurity/realm/Realm;)V: Line 73
+[MASTER] 02:36:47.027 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jsecurity.web.DefaultWebSecurityManager.<init>(Ljava/util/Collection;)V: Line 65
+[MASTER] 02:36:47.042 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jsecurity.web.DefaultWebSecurityManager.isHttpSessionMode()Z: Line 152
+[MASTER] 02:36:47.042 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jsecurity.web.DefaultWebSecurityManager.newSessionManagerInstance()Lorg/jsecurity/session/mgt/SessionManager;: Line 156
+[MASTER] 02:36:47.042 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jsecurity.web.DefaultWebSecurityManager.newSessionManagerInstance()Lorg/jsecurity/session/mgt/SessionManager;: Line 157
+[MASTER] 02:36:47.042 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jsecurity.web.DefaultWebSecurityManager.newSessionManagerInstance()Lorg/jsecurity/session/mgt/SessionManager;: Line 160
+[MASTER] 02:36:47.089 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 96: org.jsecurity.web.DefaultWebSecurityManager.isHttpSessionMode()Z:152 - ReplaceVariable sessionMode -> JSECURITY_SESSION_MODE
+[MASTER] 02:36:47.090 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 97: org.jsecurity.web.DefaultWebSecurityManager.isHttpSessionMode()Z:152 - ReplaceVariable sessionMode -> AUTHENTICATED_SESSION_KEY
+[MASTER] 02:36:47.091 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 98: org.jsecurity.web.DefaultWebSecurityManager.isHttpSessionMode()Z:152 - ReplaceVariable sessionMode -> HTTP_SESSION_MODE
+[MASTER] 02:36:47.091 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 99: org.jsecurity.web.DefaultWebSecurityManager.isHttpSessionMode()Z:152 - ReplaceVariable sessionMode -> PRINCIPALS_SESSION_KEY
+[MASTER] 02:36:47.091 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 100: org.jsecurity.web.DefaultWebSecurityManager.isHttpSessionMode()Z:152 - ReplaceComparisonOperator = null -> != null
+[MASTER] 02:36:47.091 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 109: org.jsecurity.web.DefaultWebSecurityManager.isHttpSessionMode()Z:152 - ReplaceConstant - 1 -> 0
+[MASTER] 02:36:47.091 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 111: org.jsecurity.web.DefaultWebSecurityManager.newSessionManagerInstance()Lorg/jsecurity/session/mgt/SessionManager;:156 - ReplaceComparisonOperator == -> !=
+[MASTER] 02:36:47.091 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 112: org.jsecurity.web.DefaultWebSecurityManager.newSessionManagerInstance()Lorg/jsecurity/session/mgt/SessionManager;:157 - ReplaceComparisonOperator == -> !=
+[MASTER] 02:36:47.095 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.jsecurity.web.DefaultWebSecurityManager.<init>(Lorg/jsecurity/realm/Realm;)V
+[MASTER] 02:36:47.107 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.jsecurity.web.DefaultWebSecurityManager.setSessionIdCookiePath(Ljava/lang/String;)V
+[MASTER] 02:36:47.108 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.jsecurity.web.DefaultWebSecurityManager.getSessionMode()Ljava/lang/String;
+[MASTER] 02:36:47.108 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.jsecurity.web.DefaultWebSecurityManager.isHttpSessionMode()Z
+[MASTER] 02:36:47.108 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.jsecurity.web.DefaultWebSecurityManager.isAuthenticated(Lorg/jsecurity/session/Session;)Z
+[MASTER] 02:36:47.108 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.jsecurity.web.DefaultWebSecurityManager.createSubject(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)Lorg/jsecurity/subject/Subject;
+[MASTER] 02:36:47.109 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.jsecurity.web.DefaultWebSecurityManager.<init>(Lorg/jsecurity/realm/Realm;)V
+[MASTER] 02:36:47.109 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.jsecurity.web.DefaultWebSecurityManager.setSessionIdCookiePath(Ljava/lang/String;)V
+[MASTER] 02:36:47.110 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.jsecurity.web.DefaultWebSecurityManager.getSessionMode()Ljava/lang/String;
+[MASTER] 02:36:47.110 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.jsecurity.web.DefaultWebSecurityManager.isHttpSessionMode()Z
+[MASTER] 02:36:47.110 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.jsecurity.web.DefaultWebSecurityManager.isAuthenticated(Lorg/jsecurity/session/Session;)Z
+[MASTER] 02:36:47.110 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.jsecurity.web.DefaultWebSecurityManager.createSubject(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)Lorg/jsecurity/subject/Subject;
+[MASTER] 02:36:47.140 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jsecurity.web.DefaultWebSecurityManager.newSessionManagerInstance()Lorg/jsecurity/session/mgt/SessionManager;: I9 Branch 11 IFEQ L157 - true in context: 
+[MASTER] 02:36:47.140 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jsecurity.web.DefaultWebSecurityManager.newSessionManagerInstance()Lorg/jsecurity/session/mgt/SessionManager;: I4 Branch 10 IFEQ L156 - false in context: 
+[MASTER] 02:36:47.140 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jsecurity.web.DefaultWebSecurityManager.<init>(Lorg/jsecurity/realm/Realm;)V: root-Branch in context: org.jsecurity.web.DefaultWebSecurityManager:<init>(Lorg/jsecurity/realm/Realm;)V
+[MASTER] 02:37:02.778 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 02:37:02.780 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 02:38:13.305 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 176s and 141 generations, 36472 statements, best individual has fitness: 880.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 79%
+* Total number of goals: 97
+* Number of covered goals: 77
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 73%
+* Total number of goals: 67
+* Number of covered goals: 49
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 18
+* Number of covered goals: 18
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 80%
+* Total number of goals: 162
+* Number of covered goals: 129
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 38%
+* Total number of goals: 29
+* Number of covered goals: 11
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 23
+* Number of covered goals: 23
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 96%
+* Total number of goals: 23
+* Number of covered goals: 22
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 72%
+* Total number of goals: 67
+* Number of covered goals: 48
+* Generated 39 tests with total length 162
+* Resulting test suite's coverage: 77% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 32%
+* Compiling and checking tests
+[MASTER] 02:40:03.943 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockIllegalStateException: No ServletRequest found in ThreadContext. Make sure WebUtils.bind() is being called. (typically called by JSecurityFilter)  This could also happen when running integration tests that don't properly call WebUtils.bind().
+[MASTER] 02:40:03.943 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ DefaultWebSecurityManager defaultWebSecurityManager0 = new DefaultWebSecurityManager();
+ServletRequest servletRequest0 = mock(ServletRequest.class, new ViolatedAssumptionAnswer());
+Subject subject0 = defaultWebSecurityManager0.getSubject();
+defaultWebSecurityManager0.bind(subject0, servletRequest0, (ServletResponse) null);
+
+[MASTER] 02:40:07.390 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockIllegalStateException: No ServletRequest found in ThreadContext. Make sure WebUtils.bind() is being called. (typically called by JSecurityFilter)  This could also happen when running integration tests that don't properly call WebUtils.bind().
+[MASTER] 02:40:07.390 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ DefaultWebSecurityManager defaultWebSecurityManager0 = new DefaultWebSecurityManager();
+Subject subject0 = defaultWebSecurityManager0.getSubject();
+ServletRequest servletRequest0 = mock(ServletRequest.class, new ViolatedAssumptionAnswer());
+ServletRequestWrapper servletRequestWrapper0 = new ServletRequestWrapper(servletRequest0);
+ServletResponse servletResponse0 = mock(ServletResponse.class, new ViolatedAssumptionAnswer());
+defaultWebSecurityManager0.bind(subject0, servletRequestWrapper0, servletResponse0);
+
+* Writing JUnit test case 'DefaultWebSecurityManager_ESTest' to /home/ubuntu/termite/mosa/tests/s1007/18_jsecurity/evosuite-tests
+* Done!
+
+* Computation finished
+* Search finished after 330s and 2263 generations, 841360 statements, best individual has fitness: 64.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 54
+* Number of covered goals: 54
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 29
+* Number of covered goals: 29
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100% (no goals)
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 96%
+* Total number of goals: 23
+* Number of covered goals: 22
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 81%
+* Total number of goals: 36
+* Number of covered goals: 29
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 21
+* Number of covered goals: 21
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 21
+* Number of covered goals: 21
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 29
+* Number of covered goals: 29
+* Generated 33 tests with total length 77
+* Resulting test suite's coverage: 96% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 61%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 3
+* Writing JUnit test case 'UsernamePasswordToken_ESTest' to /home/ubuntu/termite/mosa/tests/s1007/18_jsecurity/evosuite-tests
+* Done!
+
+* Computation finished

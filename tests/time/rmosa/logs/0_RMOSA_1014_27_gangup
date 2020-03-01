@@ -1,0 +1,95 @@
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: state.Player
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/27_gangup/evosuite-files/evosuite.properties
+* Connecting to master process on port 7489
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 02:46:35.810 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 02:46:35.817 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 02:46:35.831 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 02:46:35.904 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class state.Player
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1014
+* Starting evolution
+[MASTER] 02:46:40.087 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.setZ(F)V: Line 254
+[MASTER] 02:46:40.087 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.setZ(F)V: Line 255
+[MASTER] 02:46:40.088 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.setZ(F)V: root-Branch
+[MASTER] 02:46:40.104 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 149: state.Player.setZ(F)V:254 - ReplaceVariable f -> MOVE_DISTANCE
+[MASTER] 02:46:40.104 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 150: state.Player.setZ(F)V:254 - ReplaceVariable f -> TOLERANCE
+[MASTER] 02:46:40.104 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 151: state.Player.setZ(F)V:254 - InsertUnaryOp Negation of f
+[MASTER] 02:46:40.105 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] state.Player.setZ(F)V
+[MASTER] 02:46:40.105 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] state.Player.setZ(F)V
+[MASTER] 02:46:40.105 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch state.Player.setZ(F)V: root-Branch in context: state.Player:setZ(F)V
+[MASTER] 02:46:46.032 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 235: state.Player.unpack(Ljava/io/DataInputStream;)Z:307 - ReplaceComparisonOperator == -> >=
+* Search finished after 130s and 106 generations, 106049 statements, best individual has fitness: 72.0
+[MASTER] 02:48:49.249 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 12 seconds more than allowed.
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 98%
+* Total number of goals: 130
+* Number of covered goals: 127
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 44
+* Number of covered goals: 44
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 92%
+* Total number of goals: 12
+* Number of covered goals: 11
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 99%
+* Total number of goals: 270
+* Number of covered goals: 268
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 91%
+* Total number of goals: 47
+* Number of covered goals: 43
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 34
+* Number of covered goals: 34
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 34
+* Number of covered goals: 34
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 44
+* Number of covered goals: 44
+* Generated 58 tests with total length 525
+* Resulting test suite's coverage: 99% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 79%
+* Compiling and checking tests
+[MASTER] 02:49:32.850 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.StackOverflowError: null
+[MASTER] 02:49:32.852 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Player player0 = new Player((-486));
+player0.boss = (Party) player0;
+player0.gangStrength();
+
+[MASTER] 02:49:32.942 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.StackOverflowError: null
+[MASTER] 02:49:32.943 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Player player0 = new Player((-486));
+player0.boss = (Party) player0;
+player0.gangStrength();
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 5
+* Writing JUnit test case 'Player_ESTest' to /home/ubuntu/termite/rmosa/tests/s1014/27_gangup/evosuite-tests
+* Done!
+
+* Computation finished

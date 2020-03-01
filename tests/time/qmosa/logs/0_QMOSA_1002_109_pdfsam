@@ -1,0 +1,85 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.pdfsam.guiclient.commons.models.VisualListModel
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/109_pdfsam/evosuite-files/evosuite.properties
+* Connecting to master process on port 2252
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 15:58:48.548 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 15:58:48.588 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 15:58:48.590 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 15:58:49.388 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 15:58:51.832 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 15:58:51.836 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 15:58:57.321 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 15:58:58.123 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 15:58:58.124 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 15:58:58.125 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 15:58:58.129 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 15:58:58.129 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 15:58:58.129 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 15:58:58.138 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 15:58:58.141 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 15:58:58.456 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 15:58:58.516 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class org.pdfsam.guiclient.commons.models.VisualListModel
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/109_pdfsam/src/main/java/org/pdfsam/guiclient/commons/models/VisualListModel.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1002
+* Starting evolution
+[MASTER] 15:59:32.623 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 15:59:35.809 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+* Search finished after 122s and 31 generations, 25040 statements, best individual has fitness: 3064.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 81%
+* Total number of goals: 162
+* Number of covered goals: 131
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 74%
+* Total number of goals: 143
+* Number of covered goals: 106
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 24
+* Number of covered goals: 24
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 63%
+* Total number of goals: 722
+* Number of covered goals: 454
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 56%
+* Total number of goals: 18
+* Number of covered goals: 10
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 30
+* Number of covered goals: 30
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 30
+* Number of covered goals: 30
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 73%
+* Total number of goals: 143
+* Number of covered goals: 105
+* Generated 65 tests with total length 1517
+* Resulting test suite's coverage: 70% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 16%
+* Compiling and checking tests
+* Writing JUnit test case 'VisualListModel_ESTest' to /home/ubuntu/termite/qmosa/tests/s1002/109_pdfsam/evosuite-tests
+* Done!
+
+* Computation finished

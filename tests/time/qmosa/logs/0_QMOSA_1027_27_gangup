@@ -1,0 +1,133 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: state.Player
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/27_gangup/evosuite-files/evosuite.properties
+* Connecting to master process on port 18445
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 09:44:23.373 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 09:44:23.387 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 09:44:23.398 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 09:44:23.522 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class state.Player
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/27_gangup/src/main/java/state/Player.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1027
+* Starting evolution
+[MASTER] 09:44:32.901 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.<init>()V: Line 93
+[MASTER] 09:44:32.917 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.<init>()V: Line 94
+[MASTER] 09:44:32.936 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] state.Player.<init>()V
+[MASTER] 09:44:32.938 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] state.Player.<init>()V
+[MASTER] 09:44:32.941 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch state.Player.<init>()V: root-Branch in context: state.Player:<init>()V
+[MASTER] 09:44:34.858 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.<init>(ILjava/lang/String;Ljava/lang/String;I)V: Line 146
+[MASTER] 09:44:34.859 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.<init>(ILjava/lang/String;Ljava/lang/String;I)V: Line 147
+[MASTER] 09:44:34.860 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.<init>(ILjava/lang/String;Ljava/lang/String;I)V: Line 148
+[MASTER] 09:44:34.862 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.setX(F)V: Line 249
+[MASTER] 09:44:34.863 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.setX(F)V: Line 250
+[MASTER] 09:44:34.878 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.setX(F)V: root-Branch
+[MASTER] 09:44:34.879 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.<init>(ILjava/lang/String;Ljava/lang/String;I)V: root-Branch
+[MASTER] 09:44:34.887 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 11: state.Player.<init>(ILjava/lang/String;I)V:138 - ReplaceVariable pictureid -> UNDEFINED
+[MASTER] 09:44:34.892 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 22: state.Player.<init>(ILjava/lang/String;I)V:139 - ReplaceVariable id -> UNDEFINED
+[MASTER] 09:44:34.895 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 34: state.Player.<init>(ILjava/lang/String;I)V:139 - ReplaceVariable pictureid -> UNDEFINED
+[MASTER] 09:44:34.897 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 41: state.Player.<init>(ILjava/lang/String;Ljava/lang/String;I)V:147 - ReplaceVariable ip -> name
+[MASTER] 09:44:34.899 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 146: state.Player.setX(F)V:249 - ReplaceVariable f -> MOVE_DISTANCE
+[MASTER] 09:44:34.899 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 147: state.Player.setX(F)V:249 - ReplaceVariable f -> TOLERANCE
+[MASTER] 09:44:34.900 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 148: state.Player.setX(F)V:249 - InsertUnaryOp Negation of f
+[MASTER] 09:44:34.901 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 194: state.Player.pack(Ljava/io/DataOutputStream;)V:285 - ReplaceVariable id -> UNDEFINED
+[MASTER] 09:44:34.904 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 213: state.Player.pack(Ljava/io/DataOutputStream;)V:287 - ReplaceVariable pictureid -> UNDEFINED
+[MASTER] 09:44:34.908 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] state.Player.<init>(ILjava/lang/String;Ljava/lang/String;I)V
+[MASTER] 09:44:34.909 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] state.Player.setX(F)V
+[MASTER] 09:44:34.910 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] state.Player.<init>(ILjava/lang/String;Ljava/lang/String;I)V
+[MASTER] 09:44:34.910 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] state.Player.setX(F)V
+[MASTER] 09:44:34.912 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch state.Player.setX(F)V: root-Branch in context: state.Player:setX(F)V
+[MASTER] 09:44:34.913 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch state.Player.<init>(ILjava/lang/String;Ljava/lang/String;I)V: root-Branch in context: state.Player:<init>(ILjava/lang/String;Ljava/lang/String;I)V
+* Search finished after 122s and 12 generations, 16947 statements, best individual has fitness: 160.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 98%
+* Total number of goals: 130
+* Number of covered goals: 127
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 98%
+* Total number of goals: 44
+* Number of covered goals: 43
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 7
+* Number of covered goals: 7
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 99%
+* Total number of goals: 270
+* Number of covered goals: 266
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 77%
+* Total number of goals: 47
+* Number of covered goals: 36
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 97%
+* Total number of goals: 34
+* Number of covered goals: 33
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 97%
+* Total number of goals: 34
+* Number of covered goals: 33
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 95%
+* Total number of goals: 44
+* Number of covered goals: 42
+* Generated 46 tests with total length 782
+* Resulting test suite's coverage: 97% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 79%
+* Compiling and checking tests
+[MASTER] 09:47:23.534 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.StackOverflowError: null
+[MASTER] 09:47:23.536 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Player player0 = new Player(823, "joIzD}}h 8F]4", "itu[]vCbAK#_", 823, 0);
+Player player1 = new Player((short)4919, "", "", (short)4919, (short)4919);
+player0.setJoinOK(player1, false);
+int int0 = 1148;
+player0.setDead(0L);
+player0.gangStrength();
+player0.setMoney(0);
+player0.add(player0);
+player0.setY((-1370.4F));
+player0.setX(10.0F);
+player0.id = 1;
+boolean boolean0 = false;
+player0.setConnected(false);
+player0.gangStrength();
+
+[MASTER] 09:47:25.221 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.StackOverflowError: null
+[MASTER] 09:47:25.223 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Player player0 = new Player(0, (String) null, "", (-22), (-22));
+player0.setDead(0L);
+float float0 = 10.0F;
+player0.gangStrength();
+player0.setMoney((-22));
+Party party0 = player0.gangBoss();
+party0.next = (Party) player0;
+player0.add(party0);
+player0.setY(0L);
+player0.setX((-22));
+FileSystemHandling.appendStringToFile((EvoSuiteFile) null, "");
+player0.setConnected(false);
+player0.gangStrength();
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 2
+* Writing JUnit test case 'Player_ESTest' to /home/ubuntu/termite/qmosa/tests/s1027/27_gangup/evosuite-tests
+* Done!
+
+* Computation finished

@@ -1,0 +1,76 @@
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: com.werken.saxpath.XPathLexer
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/24_saxpath/evosuite-files/evosuite.properties
+* Connecting to master process on port 14421
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class com.werken.saxpath.XPathLexer
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1029
+* Starting evolution
+[MASTER] 11:18:59.810 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.werken.saxpath.XPathLexer.identifierOrOperatorName()Lcom/werken/saxpath/Token;: I17 Branch 164 TABLESWITCH L317 Case 30 - true
+[MASTER] 11:18:59.821 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.werken.saxpath.XPathLexer.identifierOrOperatorName()Lcom/werken/saxpath/Token;: I17 Branch 164 TABLESWITCH L317 Case 30 - true in context: 
+[MASTER] 11:19:28.939 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.werken.saxpath.XPathLexer.nextToken()Lcom/werken/saxpath/Token;: Line 270
+[MASTER] 11:19:28.940 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.werken.saxpath.XPathLexer.nextToken()Lcom/werken/saxpath/Token;: Line 271
+[MASTER] 11:19:28.942 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.werken.saxpath.XPathLexer.nextToken()Lcom/werken/saxpath/Token;: I13 Branch 24 TABLESWITCH L103 Case 32 - true
+[MASTER] 11:19:28.944 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.werken.saxpath.XPathLexer.nextToken()Lcom/werken/saxpath/Token;: I249 Branch 133 IF_ICMPEQ L291 - true
+[MASTER] 11:19:28.948 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.werken.saxpath.XPathLexer.nextToken()Lcom/werken/saxpath/Token;: I13 Branch 24 TABLESWITCH L103 Case 32 - true in context: com.werken.saxpath.XPathLexer:nextToken()Lcom/werken/saxpath/Token;
+[MASTER] 11:19:28.949 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.werken.saxpath.XPathLexer.nextToken()Lcom/werken/saxpath/Token;: I249 Branch 133 IF_ICMPEQ L291 - true in context: com.werken.saxpath.XPathLexer:nextToken()Lcom/werken/saxpath/Token;
+* Search finished after 469s and 301 generations, 383557 statements, best individual has fitness: 2688.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 93%
+* Total number of goals: 250
+* Number of covered goals: 233
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 88%
+* Total number of goals: 484
+* Number of covered goals: 424
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 27
+* Number of covered goals: 27
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 83%
+* Total number of goals: 659
+* Number of covered goals: 548
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 38%
+* Total number of goals: 142
+* Number of covered goals: 54
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 44
+* Number of covered goals: 44
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 44
+* Number of covered goals: 44
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 88%
+* Total number of goals: 484
+* Number of covered goals: 424
+* Generated 181 tests with total length 1515
+* Resulting test suite's coverage: 84% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 60%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 2
+* Writing JUnit test case 'XPathLexer_ESTest' to /home/ubuntu/termite/rmosa/tests/s1029/24_saxpath/evosuite-tests
+* Done!
+
+* Computation finished

@@ -1,0 +1,217 @@
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: macaw.businessLayer.Variable
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/69_lhamacaw/evosuite-files/evosuite.properties
+* Connecting to master process on port 21346
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 09:59:46.844 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 09:59:46.859 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 09:59:46.860 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 09:59:47.024 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 09:59:47.045 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 09:59:47.058 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 09:59:47.059 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 09:59:47.059 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 09:59:47.061 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 09:59:47.084 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 09:59:47.084 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 09:59:47.093 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 09:59:47.095 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 09:59:47.245 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 09:59:47.246 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+* Finished analyzing classpath
+* Generating tests for class macaw.businessLayer.Variable
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1010
+* Starting evolution
+[MASTER] 09:59:57.664 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+[MASTER] 09:59:57.734 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was macaw.businessLayer.Variable.removeOntologyTerms(Ljava/util/ArrayList;)V: Line 347
+[MASTER] 09:59:57.734 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was macaw.businessLayer.Variable.removeOntologyTerms(Ljava/util/ArrayList;)V: Line 350
+[MASTER] 09:59:57.734 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was macaw.businessLayer.Variable.getAlternativeVariable()Lmacaw/businessLayer/Variable;: Line 529
+[MASTER] 09:59:57.737 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was macaw.businessLayer.Variable.getAlternativeVariable()Lmacaw/businessLayer/Variable;: root-Branch
+[MASTER] 09:59:57.737 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was macaw.businessLayer.Variable.removeOntologyTerms(Ljava/util/ArrayList;)V: I8 Branch 7 IFEQ L347 - true
+[MASTER] 09:59:57.737 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 137: macaw.businessLayer.Variable.removeOntologyTerms(Ljava/util/ArrayList;)V:347 - ReplaceComparisonOperator == -> !=
+[MASTER] 09:59:57.755 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: macaw.businessLayer.Variable.getAlternativeVariable()Lmacaw/businessLayer/Variable;:Null
+[MASTER] 09:59:57.755 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] macaw.businessLayer.Variable.setCategory(Ljava/lang/String;)V
+[MASTER] 09:59:57.756 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] macaw.businessLayer.Variable.removeOntologyTerms(Ljava/util/ArrayList;)V
+[MASTER] 09:59:57.756 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] macaw.businessLayer.Variable.getAlternativeVariable()Lmacaw/businessLayer/Variable;
+[MASTER] 09:59:57.756 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] macaw.businessLayer.Variable.setCategory(Ljava/lang/String;)V
+[MASTER] 09:59:57.756 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] macaw.businessLayer.Variable.removeOntologyTerms(Ljava/util/ArrayList;)V
+[MASTER] 09:59:57.756 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] macaw.businessLayer.Variable.getAlternativeVariable()Lmacaw/businessLayer/Variable;
+[MASTER] 09:59:57.757 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch macaw.businessLayer.Variable.getAlternativeVariable()Lmacaw/businessLayer/Variable;: root-Branch in context: macaw.businessLayer.Variable:getAlternativeVariable()Lmacaw/businessLayer/Variable;
+[MASTER] 09:59:57.757 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch macaw.businessLayer.Variable.removeOntologyTerms(Ljava/util/ArrayList;)V: I8 Branch 7 IFEQ L347 - true in context: macaw.businessLayer.Variable:removeOntologyTerms(Ljava/util/ArrayList;)V
+[MASTER] 09:59:57.757 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch macaw.businessLayer.Variable.setCategory(Ljava/lang/String;)V: root-Branch in context: macaw.businessLayer.Variable:setCategory(Ljava/lang/String;)V
+[MASTER] 10:00:12.255 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] macaw.businessLayer.Variable.getCleaningStatus()Ljava/lang/String;
+[MASTER] 10:00:53.297 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 10:01:34.869 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: macaw.businessLayer.Variable.isCoded()Z:True
+[MASTER] 10:01:59.509 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 93: macaw.businessLayer.Variable.getCleaningDescription()Ljava/lang/String;:247 - ReplaceVariable cleaningDescription -> form
+[MASTER] 10:02:15.374 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: macaw.businessLayer.Variable.getIdentifier()I:Negative
+* Search finished after 187s and 388 generations, 224149 statements, best individual has fitness: 400.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 97%
+* Total number of goals: 412
+* Number of covered goals: 401
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 99%
+* Total number of goals: 153
+* Number of covered goals: 151
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 16
+* Number of covered goals: 16
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 98%
+* Total number of goals: 533
+* Number of covered goals: 525
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 74%
+* Total number of goals: 116
+* Number of covered goals: 86
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 67
+* Number of covered goals: 67
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 67
+* Number of covered goals: 67
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 99%
+* Total number of goals: 153
+* Number of covered goals: 151
+* Generated 139 tests with total length 1698
+* Resulting test suite's coverage: 97% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 76%
+* Compiling and checking tests
+[MASTER] 10:06:20.552 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.StackOverflowError: null
+[MASTER] 10:06:20.553 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ DerivedVariable derivedVariable0 = new DerivedVariable();
+derivedVariable0.setAlternativeVariable(derivedVariable0);
+ArrayList<OntologyTerm> arrayList0 = new ArrayList<OntologyTerm>();
+derivedVariable0.addOntologyTerms(arrayList0);
+OntologyTerm ontologyTerm0 = new OntologyTerm();
+OntologyTerm ontologyTerm1 = new OntologyTerm();
+derivedVariable0.updateOntologyTerm(ontologyTerm1);
+derivedVariable0.cloneAttributes(derivedVariable0);
+int int0 = 1846;
+ontologyTerm0.setIdentifier(int0);
+String string0 = "_%xL,*|`aV]JH-J\"O";
+String string1 = "r7mFLc";
+String string2 = "variable.cleaningDescrption.label";
+User user0 = new User(string2, string1);
+String string3 = "general.error.blankField";
+User user1 = new User(string3, string0);
+String string4 = "";
+User user2 = new User(string3, string4);
+User.detectFieldChanges(user2, user2, user0);
+DerivedVariable derivedVariable1 = new DerivedVariable();
+DerivedVariable derivedVariable2 = new DerivedVariable();
+derivedVariable1.getAlias();
+DerivedVariable derivedVariable3 = new DerivedVariable();
+Variable.detectChangesInAlternativeVariable(user2, derivedVariable2, derivedVariable3);
+RawVariable rawVariable0 = new RawVariable();
+RawVariable.validateFields(rawVariable0);
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 8
+* Writing JUnit test case 'Variable_ESTest' to /home/ubuntu/termite/rmosa/tests/s1010/69_lhamacaw/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: macaw.businessLayer.SupportingDocument
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/69_lhamacaw/evosuite-files/evosuite.properties
+* Connecting to master process on port 21352
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 11:03:58.945 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 11:03:58.957 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 11:03:58.963 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 11:03:58.963 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 11:03:58.967 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 11:03:58.968 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 11:03:58.978 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 11:03:58.983 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 11:03:58.985 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 11:03:59.197 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 11:03:59.197 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 11:03:59.199 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 11:03:59.252 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 11:03:59.260 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 11:03:59.282 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+* Finished analyzing classpath
+* Generating tests for class macaw.businessLayer.SupportingDocument
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1010
+* Starting evolution
+* Search finished after 393s and 1101 generations, 2444318 statements, best individual has fitness: 88.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 104
+* Number of covered goals: 104
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 38
+* Number of covered goals: 38
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 3
+* Number of covered goals: 3
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 97%
+* Total number of goals: 129
+* Number of covered goals: 125
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 79%
+* Total number of goals: 34
+* Number of covered goals: 27
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 20
+* Number of covered goals: 20
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 20
+* Number of covered goals: 20
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 38
+* Number of covered goals: 38
+* Generated 32 tests with total length 184
+* Resulting test suite's coverage: 97% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 37%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 2
+* Writing JUnit test case 'SupportingDocument_ESTest' to /home/ubuntu/termite/rmosa/tests/s1010/69_lhamacaw/evosuite-tests
+* Done!
+
+* Computation finished

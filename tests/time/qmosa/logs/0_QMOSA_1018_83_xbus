@@ -1,0 +1,83 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: net.sf.xbus.protocol.records.RecordTypeMessage
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/83_xbus/evosuite-files/evosuite.properties
+* Connecting to master process on port 18385
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 03:10:06.471 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 03:10:06.472 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 03:10:06.495 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 03:10:09.039 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 03:10:09.039 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 03:10:09.051 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 03:10:09.051 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 03:10:09.053 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 03:10:09.053 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 03:10:09.054 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 03:10:09.058 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 03:10:09.073 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 03:10:09.396 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 03:10:09.880 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 03:10:09.880 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+* Finished analyzing classpath
+* Generating tests for class net.sf.xbus.protocol.records.RecordTypeMessage
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/83_xbus/src/main/java/net/sf/xbus/protocol/records/RecordTypeMessage.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1018
+* Starting evolution
+[MASTER] 03:11:55.940 [logback-1] WARN  TestUsageChecker - class org.apache.xerces.impl.xs.util.XSNamedMapImpl$1 looks like an anonymous class, ignoring it (although reflection says false) XSNamedMapImpl$1
+* Search finished after 121s and 92 generations, 102981 statements, best individual has fitness: 1096.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 67%
+* Total number of goals: 105
+* Number of covered goals: 70
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 54%
+* Total number of goals: 52
+* Number of covered goals: 28
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 7
+* Number of covered goals: 7
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 40%
+* Total number of goals: 77
+* Number of covered goals: 31
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 38%
+* Total number of goals: 13
+* Number of covered goals: 5
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 14
+* Number of covered goals: 14
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 14
+* Number of covered goals: 14
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 54%
+* Total number of goals: 52
+* Number of covered goals: 28
+* Generated 22 tests with total length 490
+* Resulting test suite's coverage: 59% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 15%
+* Compiling and checking tests
+[MASTER] 03:12:28.742 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.logging.impl.Log4JLogger: org/apache/log4j/Category
+* Writing JUnit test case 'RecordTypeMessage_ESTest' to /home/ubuntu/termite/qmosa/tests/s1018/83_xbus/evosuite-tests
+* Done!
+
+* Computation finished

@@ -1,0 +1,293 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.jsecurity.authc.UsernamePasswordToken
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/18_jsecurity/evosuite-files/evosuite.properties
+* Connecting to master process on port 19151
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class org.jsecurity.authc.UsernamePasswordToken
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/18_jsecurity/src/main/java/org/jsecurity/authc/UsernamePasswordToken.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1016
+* Starting evolution
+* Search finished after 757s and 2263 generations, 1871306 statements, best individual has fitness: 72.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 54
+* Number of covered goals: 54
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 29
+* Number of covered goals: 29
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100% (no goals)
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 96%
+* Total number of goals: 23
+* Number of covered goals: 22
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 78%
+* Total number of goals: 36
+* Number of covered goals: 28
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 21
+* Number of covered goals: 21
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 21
+* Number of covered goals: 21
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 29
+* Number of covered goals: 29
+* Generated 30 tests with total length 429
+* Resulting test suite's coverage: 96% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 79%
+* Compiling and checking tests
+[MASTER] 10:38:22.547 [logback-2] ERROR JUnitAnalyzer - Compilation failed on compilation units: [RegularFileObject[/tmp/EvoSuite_12_1574073502511/org/jsecurity/authc/UsernamePasswordToken_12_tmp__ESTest.java], RegularFileObject[/tmp/EvoSuite_12_1574073502511/org/jsecurity/authc/UsernamePasswordToken_12_tmp__ESTest_scaffolding.java]]
+[MASTER] 10:38:22.547 [logback-2] ERROR JUnitAnalyzer - Classpath: /home/ubuntu/termite/projects/18_jsecurity/jsecurity.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/jsr107cache-1.0.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/hsqldb-1.8.0.7.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/retroweaver-rt-2.0.5.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/ehcache-1.4.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/standard.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/log4j.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/standard-1.1.2.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/spring-2.5.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/commons-beanutils-core.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/spring.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/asm-util-3.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/asm-tree-3.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/backport-util-concurrent-3.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/commons-codec.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/commons-beanutils-1.7.0.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/asm-3.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/easymock-2.3.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/asm-commons-3.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/log4j-1.2.15.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/mail-1.4.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/servlet-api.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/activation-1.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/commons-logging-1.1.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/servlet-api-2.5.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/quartz.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/commons-collections-3.2.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/easymockclassextension-2.3.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/quartz-1.5.2.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/jsp-api-2.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/cglib-nodep-2.1_3.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/jstl.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/jstl-1.2.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/retroweaver-2.0.5.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/commons-logging.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/jsp-api.jar:/home/ubuntu/termite/evosuite.jar:/home/ubuntu/termite/projects/18_jsecurity/jsecurity.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/jsr107cache-1.0.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/hsqldb-1.8.0.7.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/retroweaver-rt-2.0.5.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/ehcache-1.4.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/standard.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/log4j.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/standard-1.1.2.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/spring-2.5.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/commons-beanutils-core.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/spring.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/asm-util-3.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/asm-tree-3.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/backport-util-concurrent-3.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/commons-codec.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/commons-beanutils-1.7.0.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/asm-3.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/easymock-2.3.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/asm-commons-3.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/log4j-1.2.15.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/mail-1.4.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/servlet-api.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/activation-1.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/commons-logging-1.1.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/servlet-api-2.5.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/quartz.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/commons-collections-3.2.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/easymockclassextension-2.3.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/quartz-1.5.2.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/jsp-api-2.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/cglib-nodep-2.1_3.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/jstl.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/jstl-1.2.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/retroweaver-2.0.5.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/commons-logging.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/jsp-api.jar
+[MASTER] 10:38:22.547 [logback-2] ERROR JUnitAnalyzer - evosuiteCP: /home/ubuntu/termite/evosuite.jar:/home/ubuntu/termite/projects/18_jsecurity/jsecurity.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/jsr107cache-1.0.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/hsqldb-1.8.0.7.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/retroweaver-rt-2.0.5.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/ehcache-1.4.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/standard.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/log4j.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/standard-1.1.2.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/spring-2.5.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/commons-beanutils-core.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/spring.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/asm-util-3.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/asm-tree-3.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/backport-util-concurrent-3.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/commons-codec.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/commons-beanutils-1.7.0.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/asm-3.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/easymock-2.3.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/asm-commons-3.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/log4j-1.2.15.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/mail-1.4.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/servlet-api.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/activation-1.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/commons-logging-1.1.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/servlet-api-2.5.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/quartz.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/commons-collections-3.2.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/easymockclassextension-2.3.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/quartz-1.5.2.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/jsp-api-2.1.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/cglib-nodep-2.1_3.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/jstl.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/jstl-1.2.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/retroweaver-2.0.5.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/commons-logging.jar:/home/ubuntu/termite/projects/18_jsecurity/lib/jsp-api.jar
+[MASTER] 10:38:22.551 [logback-2] ERROR JUnitAnalyzer - Diagnostic: cannot find symbol
+  symbol:   variable charArray2
+  location: class org.jsecurity.authc.UsernamePasswordToken_12_tmp__ESTest: 32
+[MASTER] 10:38:22.551 [logback-2] ERROR JUnitAnalyzer - RegularFileObject[/tmp/EvoSuite_12_1574073502511/org/jsecurity/authc/UsernamePasswordToken_12_tmp__ESTest.java]
+1: /*
+2:  * This file was automatically generated by EvoSuite
+3:  * Mon Nov 18 10:38:22 GMT 2019
+4:  */
+5: 
+6: package org.jsecurity.authc;
+7: 
+8: import org.junit.Test;
+9: import static org.junit.Assert.*;
+10: import org.evosuite.runtime.EvoRunner;
+11: import org.evosuite.runtime.EvoRunnerParameters;
+12: import org.jsecurity.authc.UsernamePasswordToken;
+13: import org.junit.runner.RunWith;
+14: 
+15: @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, useJEE = true) 
+16: public class UsernamePasswordToken_12_tmp__ESTest extends UsernamePasswordToken_12_tmp__ESTest_scaffolding {
+17: 
+18:   /**
+19:   //Test case number: 0
+20:   /*Coverage entropy=2.063983366979555
+21:   */
+22:   @Test(timeout = 4000)
+23:   public void test0()  throws Throwable  {
+24:       UsernamePasswordToken usernamePasswordToken0 = new UsernamePasswordToken("w<", "w<");
+25:       usernamePasswordToken0.setUsername(", rememberMe=");
+26:       char[] charArray0 = new char[7];
+27:       charArray0[0] = 'N';
+28:       charArray0[1] = 'N';
+29:       usernamePasswordToken0.getPassword();
+30:       usernamePasswordToken0.getUsername();
+31:       char[] charArray1 = new char[0];
+32:       assertFalse(charArray1.equals((Object)charArray2));
+33:   }
+34: }
+RegularFileObject[/tmp/EvoSuite_12_1574073502511/org/jsecurity/authc/UsernamePasswordToken_12_tmp__ESTest.java]
+1: /**
+2:  * Scaffolding file used to store all the setups needed to run 
+3:  * tests automatically generated by EvoSuite
+4:  * Mon Nov 18 10:38:22 GMT 2019
+5:  */
+6: 
+7: package org.jsecurity.authc;
+8: 
+9: import org.evosuite.runtime.annotation.EvoSuiteClassExclude;
+10: import org.junit.BeforeClass;
+11: import org.junit.Before;
+12: import org.junit.After;
+13: import org.junit.AfterClass;
+14: import org.evosuite.runtime.sandbox.Sandbox;
+15: import org.evosuite.runtime.sandbox.Sandbox.SandboxMode;
+16: 
+17: @EvoSuiteClassExclude
+18: public class UsernamePasswordToken_12_tmp__ESTest_scaffolding {
+19: 
+20:   @org.junit.Rule 
+21:   public org.evosuite.runtime.vnet.NonFunctionalRequirementRule nfr = new org.evosuite.runtime.vnet.NonFunctionalRequirementRule();
+22: 
+23:   private static final java.util.Properties defaultProperties = (java.util.Properties) java.lang.System.getProperties().clone(); 
+24: 
+25:   private org.evosuite.runtime.thread.ThreadStopper threadStopper =  new org.evosuite.runtime.thread.ThreadStopper (org.evosuite.runtime.thread.KillSwitchHandler.getInstance(), 3000);
+26: 
+27: 
+28:   @BeforeClass 
+29:   public static void initEvoSuiteFramework() { 
+30:     org.evosuite.runtime.RuntimeSettings.className = "org.jsecurity.authc.UsernamePasswordToken"; 
+31:     org.evosuite.runtime.GuiSupport.initialize(); 
+32:     org.evosuite.runtime.RuntimeSettings.maxNumberOfThreads = 100; 
+33:     org.evosuite.runtime.RuntimeSettings.maxNumberOfIterationsPerLoop = 10000; 
+34:     org.evosuite.runtime.RuntimeSettings.mockSystemIn = true; 
+35:     org.evosuite.runtime.RuntimeSettings.sandboxMode = org.evosuite.runtime.sandbox.Sandbox.SandboxMode.RECOMMENDED; 
+36:     org.evosuite.runtime.sandbox.Sandbox.initializeSecurityManagerForSUT(); 
+37:     org.evosuite.runtime.classhandling.JDKClassResetter.init();
+38:     setSystemProperties();
+39:     initializeClasses();
+40:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+41:   } 
+42: 
+43:   @AfterClass 
+44:   public static void clearEvoSuiteFramework(){ 
+45:     Sandbox.resetDefaultSecurityManager(); 
+46:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+47:   } 
+48: 
+49:   @Before 
+50:   public void initTestCase(){ 
+51:     threadStopper.storeCurrentThreads();
+52:     threadStopper.startRecordingTime();
+53:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().initHandler(); 
+54:     org.evosuite.runtime.sandbox.Sandbox.goingToExecuteSUTCode(); 
+55:     setSystemProperties(); 
+56:     org.evosuite.runtime.GuiSupport.setHeadless(); 
+57:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+58:     org.evosuite.runtime.agent.InstrumentingAgent.activate(); 
+59:   } 
+60: 
+61:   @After 
+62:   public void doneWithTestCase(){ 
+63:     threadStopper.killAndJoinClientThreads();
+64:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().safeExecuteAddedHooks(); 
+65:     org.evosuite.runtime.classhandling.JDKClassResetter.reset(); 
+66:     resetClasses(); 
+67:     org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(); 
+68:     org.evosuite.runtime.agent.InstrumentingAgent.deactivate(); 
+69:     org.evosuite.runtime.GuiSupport.restoreHeadlessMode(); 
+70:   } 
+71: 
+72:   public static void setSystemProperties() {
+73:  
+74:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+75:     java.lang.System.setProperty("file.encoding", "UTF-8"); 
+76:     java.lang.System.setProperty("java.awt.headless", "true"); 
+77:     java.lang.System.setProperty("java.io.tmpdir", "/tmp"); 
+78:     java.lang.System.setProperty("user.country", "US"); 
+79:     java.lang.System.setProperty("user.dir", "/home/ubuntu/termite/projects/18_jsecurity"); 
+80:     java.lang.System.setProperty("user.home", "/home/ubuntu"); 
+81:     java.lang.System.setProperty("user.language", "en"); 
+82:     java.lang.System.setProperty("user.name", "ubuntu"); 
+83:     java.lang.System.setProperty("user.timezone", "Etc/UTC"); 
+84:   }
+85: 
+86:   private static void initializeClasses() {
+87:     org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(UsernamePasswordToken_12_tmp__ESTest_scaffolding.class.getClassLoader() ,
+88:       "org.jsecurity.authc.AuthenticationToken",
+89:       "org.jsecurity.authc.InetAuthenticationToken",
+90:       "org.jsecurity.authc.RememberMeAuthenticationToken",
+91:       "org.jsecurity.authc.UsernamePasswordToken"
+92:     );
+93:   } 
+94: 
+95:   private static void resetClasses() {
+96:     org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(UsernamePasswordToken_12_tmp__ESTest_scaffolding.class.getClassLoader()); 
+97: 
+98:     org.evosuite.runtime.classhandling.ClassStateSupport.resetClasses(
+99:       "org.jsecurity.authc.UsernamePasswordToken"
+100:     );
+101:   }
+102: }
+
+[MASTER] 10:38:22.551 [logback-2] ERROR JUnitAnalyzer - Failed to compile test case:
+UsernamePasswordToken usernamePasswordToken0 = new UsernamePasswordToken("w<", "w<");
+usernamePasswordToken0.setUsername(", rememberMe=");
+char[] charArray0 = new char[7];
+charArray0[0] = 'N';
+charArray0[1] = 'N';
+usernamePasswordToken0.getPassword();
+usernamePasswordToken0.getUsername();
+char[] charArray1 = new char[0];
+assertFalse(charArray1.equals((Object)charArray2));
+
+
+* Writing JUnit test case 'UsernamePasswordToken_ESTest' to /home/ubuntu/termite/qmosa/tests/s1016/18_jsecurity/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.jsecurity.web.DefaultWebSecurityManager
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/18_jsecurity/evosuite-files/evosuite.properties
+* Connecting to master process on port 19147
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 10:40:46.212 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 10:40:46.229 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 10:40:46.230 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 10:40:46.574 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class org.jsecurity.web.DefaultWebSecurityManager
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/18_jsecurity/src/main/java/org/jsecurity/web/DefaultWebSecurityManager.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1016
+* Starting evolution
+[MASTER] 10:41:21.783 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 10:41:21.784 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+* Search finished after 254s and 141 generations, 122490 statements, best individual has fitness: 888.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 79%
+* Total number of goals: 97
+* Number of covered goals: 77
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 73%
+* Total number of goals: 67
+* Number of covered goals: 49
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 17
+* Number of covered goals: 17
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 80%
+* Total number of goals: 162
+* Number of covered goals: 129
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 38%
+* Total number of goals: 29
+* Number of covered goals: 11
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 23
+* Number of covered goals: 23
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 23
+* Number of covered goals: 23
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 72%
+* Total number of goals: 67
+* Number of covered goals: 48
+* Generated 38 tests with total length 635
+* Resulting test suite's coverage: 77% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 36%
+* Compiling and checking tests
+* Writing JUnit test case 'DefaultWebSecurityManager_ESTest' to /home/ubuntu/termite/qmosa/tests/s1016/18_jsecurity/evosuite-tests
+* Done!
+
+* Computation finished

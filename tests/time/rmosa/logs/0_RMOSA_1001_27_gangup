@@ -1,0 +1,114 @@
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: state.Player
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/27_gangup/evosuite-files/evosuite.properties
+* Connecting to master process on port 10603
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 16:55:38.454 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 16:55:38.476 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 16:55:38.489 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 16:55:38.625 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class state.Player
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1001
+* Starting evolution
+[MASTER] 16:55:43.747 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 41: state.Player.<init>(ILjava/lang/String;Ljava/lang/String;I)V:147 - ReplaceVariable ip -> name
+[MASTER] 16:55:43.747 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 42: state.Player.<init>(ILjava/lang/String;Ljava/lang/String;II)V:152 - ReplaceVariable strength -> PLAYER
+* Search finished after 126s and 67 generations, 90157 statements, best individual has fitness: 112.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 98%
+* Total number of goals: 130
+* Number of covered goals: 127
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 98%
+* Total number of goals: 44
+* Number of covered goals: 43
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 99%
+* Total number of goals: 270
+* Number of covered goals: 266
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 89%
+* Total number of goals: 47
+* Number of covered goals: 42
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 34
+* Number of covered goals: 34
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 34
+* Number of covered goals: 34
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 98%
+* Total number of goals: 44
+* Number of covered goals: 43
+* Generated 58 tests with total length 521
+* Resulting test suite's coverage: 98% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 79%
+* Compiling and checking tests
+[MASTER] 16:58:22.718 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.StackOverflowError: null
+[MASTER] 16:58:22.720 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Player player0 = new Player((-4084), "gui.ModuleBrowserDialog$ModuleFilter", "lUD", (-1440));
+Party party0 = player0.gangBoss();
+player0.add(party0);
+Player player1 = new Player(5888, "", " ", 5888, 1);
+Player player2 = new Player((-3851));
+player2.setZ(0.0F);
+player2.setJoinOK(player0, false);
+player0.setJoinOK(player2, false);
+FileSystemHandling.shouldThrowIOException((EvoSuiteFile) null);
+player2.toString();
+player1.getMoney();
+FileSystemHandling.shouldAllThrowIOExceptions();
+player1.gangStrength();
+player2.getMoney();
+player1.isConnected();
+player0.getIP();
+player1.boss = party0;
+FileSystemHandling.setPermissions((EvoSuiteFile) null, true, true, false);
+player2.isJoinOK(player0, false);
+player1.pack();
+player2.type();
+player1.gangStrength();
+
+[MASTER] 16:58:22.926 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.StackOverflowError: null
+[MASTER] 16:58:22.927 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Player player0 = new Player((-4084), "state.Player", "lUD", (-1440));
+Player player1 = new Player((-3851));
+player1.setZ(0.0F);
+player0.add(player0);
+player1.setJoinOK(player0, false);
+player1.setX((-4084));
+player0.setJoinOK(player1, false);
+FileSystemHandling.shouldThrowIOException((EvoSuiteFile) null);
+player1.toString();
+player0.getMoney();
+FileSystemHandling.shouldAllThrowIOExceptions();
+player0.gangStrength();
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 4
+* Writing JUnit test case 'Player_ESTest' to /home/ubuntu/termite/rmosa/tests/s1001/27_gangup/evosuite-tests
+* Done!
+
+* Computation finished

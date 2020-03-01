@@ -1,0 +1,85 @@
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: com.ib.client.EWrapperMsgGenerator
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/1_tullibee/evosuite-files/evosuite.properties
+* Connecting to master process on port 14212
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 03:51:06.453 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 03:51:06.497 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 03:51:06.497 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 03:51:06.716 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class com.ib.client.EWrapperMsgGenerator
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1005
+* Starting evolution
+[MASTER] 03:51:09.868 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.ib.client.EWrapperMsgGenerator.tickOptionComputation(IIDDDD)Ljava/lang/String;: I19 Branch 2 IFLT L40 - false
+[MASTER] 03:51:09.868 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.ib.client.EWrapperMsgGenerator.tickOptionComputation(IIDDDD)Ljava/lang/String;: I23 Branch 3 IFEQ L40 - false
+[MASTER] 03:51:09.869 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 62: com.ib.client.EWrapperMsgGenerator.tickOptionComputation(IIDDDD)Ljava/lang/String;:40 - ReplaceComparisonOperator < -> <=
+[MASTER] 03:51:09.869 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 64: com.ib.client.EWrapperMsgGenerator.tickOptionComputation(IIDDDD)Ljava/lang/String;:40 - ReplaceVariable impliedVol -> pvDividend
+[MASTER] 03:51:09.869 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 65: com.ib.client.EWrapperMsgGenerator.tickOptionComputation(IIDDDD)Ljava/lang/String;:40 - ReplaceVariable impliedVol -> modelPrice
+[MASTER] 03:51:09.869 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 66: com.ib.client.EWrapperMsgGenerator.tickOptionComputation(IIDDDD)Ljava/lang/String;:40 - InsertUnaryOp Negation of impliedVol
+[MASTER] 03:51:09.869 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 67: com.ib.client.EWrapperMsgGenerator.tickOptionComputation(IIDDDD)Ljava/lang/String;:40 - ReplaceConstant - 1.7976931348623157E308 -> 0.0
+[MASTER] 03:51:09.869 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 68: com.ib.client.EWrapperMsgGenerator.tickOptionComputation(IIDDDD)Ljava/lang/String;:40 - ReplaceConstant - 1.7976931348623157E308 -> 1.0
+[MASTER] 03:51:09.869 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 69: com.ib.client.EWrapperMsgGenerator.tickOptionComputation(IIDDDD)Ljava/lang/String;:40 - ReplaceConstant - 1.7976931348623157E308 -> -1.0
+[MASTER] 03:51:09.869 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 70: com.ib.client.EWrapperMsgGenerator.tickOptionComputation(IIDDDD)Ljava/lang/String;:40 - ReplaceConstant - 1.7976931348623157E308 -> 1.7976931348623157E308
+[MASTER] 03:51:09.869 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 73: com.ib.client.EWrapperMsgGenerator.tickOptionComputation(IIDDDD)Ljava/lang/String;:40 - ReplaceComparisonOperator == -> <=
+[MASTER] 03:51:09.869 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 75: com.ib.client.EWrapperMsgGenerator.tickOptionComputation(IIDDDD)Ljava/lang/String;:40 - ReplaceVariable impliedVol -> pvDividend
+[MASTER] 03:51:09.869 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 76: com.ib.client.EWrapperMsgGenerator.tickOptionComputation(IIDDDD)Ljava/lang/String;:40 - ReplaceVariable impliedVol -> modelPrice
+[MASTER] 03:51:09.869 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 77: com.ib.client.EWrapperMsgGenerator.tickOptionComputation(IIDDDD)Ljava/lang/String;:40 - InsertUnaryOp Negation of impliedVol
+[MASTER] 03:51:09.873 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.ib.client.EWrapperMsgGenerator.tickOptionComputation(IIDDDD)Ljava/lang/String;: I23 Branch 3 IFEQ L40 - false in context: com.ib.client.EWrapperMsgGenerator:tickOptionComputation(IIDDDD)Ljava/lang/String;
+[MASTER] 03:51:09.874 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.ib.client.EWrapperMsgGenerator.tickOptionComputation(IIDDDD)Ljava/lang/String;: I19 Branch 2 IFLT L40 - false in context: com.ib.client.EWrapperMsgGenerator:tickOptionComputation(IIDDDD)Ljava/lang/String;
+* Search finished after 195s and 472 generations, 339121 statements, best individual has fitness: 648.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 94%
+* Total number of goals: 71
+* Number of covered goals: 67
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 96%
+* Total number of goals: 67
+* Number of covered goals: 64
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 9
+* Number of covered goals: 9
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 100%
+* Total number of goals: 908
+* Number of covered goals: 905
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 33%
+* Total number of goals: 102
+* Number of covered goals: 34
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 35
+* Number of covered goals: 35
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 35
+* Number of covered goals: 35
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 96%
+* Total number of goals: 67
+* Number of covered goals: 64
+* Generated 81 tests with total length 159
+* Resulting test suite's coverage: 94% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 87%
+* Compiling and checking tests
+* Writing JUnit test case 'EWrapperMsgGenerator_ESTest' to /home/ubuntu/termite/rmosa/tests/s1005/1_tullibee/evosuite-tests
+* Done!
+
+* Computation finished

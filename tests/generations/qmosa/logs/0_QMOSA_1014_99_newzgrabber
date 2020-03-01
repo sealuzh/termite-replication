@@ -1,0 +1,395 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: Newzgrabber.Base64Decoder
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/99_newzgrabber/evosuite-files/evosuite.properties
+* Connecting to master process on port 7482
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 05:41:01.511 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 05:41:01.516 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 05:41:01.517 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 05:41:02.456 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 05:41:02.488 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 05:41:02.495 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 05:41:05.532 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 05:41:05.603 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 05:41:05.603 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 05:41:05.603 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 05:41:05.604 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 05:41:05.608 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 05:41:05.608 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 05:41:05.608 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 05:41:05.609 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 05:41:05.694 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+* Finished analyzing classpath
+* Generating tests for class Newzgrabber.Base64Decoder
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/99_newzgrabber/src/main/java/Newzgrabber/Base64Decoder.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1014
+* Starting evolution
+[MASTER] 05:41:09.804 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 05:41:30.922 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Newzgrabber.Base64Decoder.decodeStream()V
+* Search finished after 430s and 128 generations, 165587 statements, best individual has fitness: 184.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 87%
+* Total number of goals: 76
+* Number of covered goals: 66
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 92%
+* Total number of goals: 59
+* Number of covered goals: 54
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 96%
+* Total number of goals: 69
+* Number of covered goals: 66
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 100% (no goals)
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 92%
+* Total number of goals: 59
+* Number of covered goals: 54
+* Generated 17 tests with total length 443
+* Resulting test suite's coverage: 91% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 60%
+* Compiling and checking tests
+[MASTER] 05:48:52.053 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<-159986> but was:<-159976>
+[MASTER] 05:48:52.055 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("b'n:8nvBM}8F");
+MockPrintStream mockPrintStream0 = new MockPrintStream(mockFileOutputStream0);
+byte[] byteArray0 = new byte[7];
+byteArray0[4] = (byte)0;
+mockPrintStream0.println("b'n:8nvBM}8F");
+MockFileInputStream mockFileInputStream0 = new MockFileInputStream("b'n:8nvBM}8F");
+BufferedCustomInputStream bufferedCustomInputStream0 = new BufferedCustomInputStream(mockFileInputStream0, true);
+mockPrintStream0.println(0L);
+Base64Decoder base64Decoder0 = new Base64Decoder(bufferedCustomInputStream0, mockPrintStream0);
+Integer integer0 = JLayeredPane.POPUP_LAYER;
+Base64Decoder base64Decoder1 = new Base64Decoder(base64Decoder0.br, mockFileOutputStream0);
+Base64Decoder base64Decoder2 = new Base64Decoder(base64Decoder0.br, mockPrintStream0);
+base64Decoder2.decodeStream();
+base64Decoder0.decodeStream();
+Base64Decoder base64Decoder3 = new Base64Decoder(base64Decoder0.br, mockPrintStream0);
+base64Decoder0.decodeStream();
+base64Decoder2.decodeStream();
+Base64Decoder base64Decoder4 = new Base64Decoder(base64Decoder0.br, mockPrintStream0);
+base64Decoder0.decodeStream();
+Base64Decoder base64Decoder5 = new Base64Decoder(base64Decoder0.br, mockPrintStream0);
+base64Decoder5.setLineCount(1L);
+base64Decoder1.decodeStream();
+base64Decoder4.setBegin(false);
+base64Decoder3.ProgressSet = false;
+base64Decoder5.ABORT = false;
+base64Decoder1.decodeStream();
+base64Decoder5.decodeStream();
+base64Decoder0.decodeStream();
+base64Decoder2.ABORT = false;
+base64Decoder4.decodeStream();
+base64Decoder1.decodeStream();
+base64Decoder5.decodeStream();
+base64Decoder3.decodeStream();
+base64Decoder1.decodeStream();
+base64Decoder0.decodeStream();
+base64Decoder2.decodeStream();
+assertEquals((-159986), mockFileInputStream0.available());
+assertEquals(2L, base64Decoder2.getLineCount());
+
+
+[MASTER] 05:48:52.361 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<-109987> but was:<-109985>
+[MASTER] 05:48:52.361 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("b'n:8nvBM8F");
+MockPrintStream mockPrintStream0 = new MockPrintStream(mockFileOutputStream0);
+byte[] byteArray0 = new byte[7];
+byteArray0[4] = (byte)0;
+mockPrintStream0.println("b'n:8nvBM8F");
+MockFileInputStream mockFileInputStream0 = new MockFileInputStream("b'n:8nvBM8F");
+BufferedCustomInputStream bufferedCustomInputStream0 = new BufferedCustomInputStream(mockFileInputStream0, true);
+mockPrintStream0.println(0L);
+Base64Decoder base64Decoder0 = new Base64Decoder(bufferedCustomInputStream0, mockPrintStream0);
+base64Decoder0.setStatusObject("b'n:8nvBM8F");
+base64Decoder0.setStatusObject(mockFileInputStream0);
+Integer integer0 = JLayeredPane.POPUP_LAYER;
+Base64Decoder base64Decoder1 = new Base64Decoder(base64Decoder0.br, mockFileOutputStream0);
+Base64Decoder base64Decoder2 = new Base64Decoder(base64Decoder0.br, mockPrintStream0);
+base64Decoder0.decodeStream();
+Base64Decoder base64Decoder3 = new Base64Decoder(base64Decoder0.br, mockPrintStream0);
+base64Decoder0.decodeStream();
+Base64Decoder base64Decoder4 = new Base64Decoder(base64Decoder0.br, mockPrintStream0);
+base64Decoder0.decodeStream();
+Base64Decoder base64Decoder5 = new Base64Decoder(base64Decoder0.br, mockPrintStream0);
+base64Decoder5.setLineCount(1L);
+base64Decoder1.decodeStream();
+base64Decoder3.ProgressSet = false;
+base64Decoder5.ABORT = false;
+base64Decoder1.decodeStream();
+base64Decoder0.decodeStream();
+base64Decoder4.decodeStream();
+base64Decoder1.decodeStream();
+base64Decoder3.decodeStream();
+base64Decoder1.decodeStream();
+base64Decoder0.decodeStream();
+assertEquals((-109987), mockFileInputStream0.available());
+assertEquals(2L, base64Decoder0.getLineCount());
+
+
+[MASTER] 05:48:52.874 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<-159986> but was:<-159976>
+[MASTER] 05:48:52.875 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("b'n:8nvBM}8F");
+MockPrintStream mockPrintStream0 = new MockPrintStream(mockFileOutputStream0);
+mockPrintStream0.println("b'n:8nvBM}8F");
+MockFileInputStream mockFileInputStream0 = new MockFileInputStream("b'n:8nvBM}8F");
+BufferedCustomInputStream bufferedCustomInputStream0 = new BufferedCustomInputStream(mockFileInputStream0, true);
+mockPrintStream0.println(0L);
+Base64Decoder base64Decoder0 = new Base64Decoder(bufferedCustomInputStream0, mockPrintStream0);
+Integer integer0 = JLayeredPane.PALETTE_LAYER;
+Base64Decoder base64Decoder1 = new Base64Decoder(base64Decoder0.br, mockFileOutputStream0);
+Base64Decoder base64Decoder2 = new Base64Decoder(base64Decoder0.br, mockPrintStream0);
+base64Decoder2.decodeStream();
+base64Decoder0.decodeStream();
+Base64Decoder base64Decoder3 = new Base64Decoder(base64Decoder0.br, mockPrintStream0);
+base64Decoder0.decodeStream();
+base64Decoder2.decodeStream();
+Base64Decoder base64Decoder4 = new Base64Decoder(base64Decoder0.br, mockPrintStream0);
+base64Decoder0.decodeStream();
+Base64Decoder base64Decoder5 = new Base64Decoder(base64Decoder0.br, mockPrintStream0);
+base64Decoder1.ProgressSet = false;
+base64Decoder5.setLineCount(1L);
+base64Decoder1.decodeStream();
+base64Decoder2.foundbegin = false;
+base64Decoder4.setBegin(false);
+base64Decoder3.ProgressSet = false;
+base64Decoder5.ABORT = false;
+base64Decoder1.decodeStream();
+base64Decoder5.decodeStream();
+base64Decoder0.decodeStream();
+base64Decoder2.ABORT = false;
+base64Decoder4.decodeStream();
+base64Decoder1.decodeStream();
+base64Decoder5.decodeStream();
+base64Decoder3.decodeStream();
+base64Decoder1.decodeStream();
+base64Decoder0.decodeStream();
+base64Decoder2.decodeStream();
+assertEquals((-159986), mockFileInputStream0.available());
+assertEquals(2L, base64Decoder2.getLineCount());
+
+
+[MASTER] 05:48:53.003 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<-9948> but was:<-9913>
+[MASTER] 05:48:53.004 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream("Running Newzgrabber in verbQse mode");
+MockPrintStream mockPrintStream0 = new MockPrintStream("Running Newzgrabber in verbQse mode");
+byte[] byteArray0 = new byte[7];
+byteArray0[3] = (byte)0;
+byteArray0[6] = (byte)26;
+mockPrintStream0.write(byteArray0);
+mockPrintStream0.println("P,)]`");
+Object object0 = new Object();
+MockFileInputStream mockFileInputStream0 = new MockFileInputStream("Running Newzgrabber in verbQse mode");
+mockPrintStream0.println(1236L);
+mockPrintStream0.println("P,)]`");
+EvoSuiteFile evoSuiteFile0 = new EvoSuiteFile("/home/ubuntu/termite/projects/99_newzgrabber");
+FileSystemHandling.appendStringToFile(evoSuiteFile0, "Running Newzgrabber in verbQse mode");
+mockPrintStream0.print(false);
+Object object1 = new Object();
+mockPrintStream0.format("GROUP\tDOWNLOADS", (Object[]) null);
+mockPrintStream0.println((-1.0F));
+MockFileInputStream mockFileInputStream1 = new MockFileInputStream("Running Newzgrabber in verbQse mode");
+mockPrintStream0.println((float) (byte)0);
+Object object2 = new Object();
+mockFileInputStream0.read(byteArray0, 1553, (-3145));
+BufferedCustomInputStream bufferedCustomInputStream0 = new BufferedCustomInputStream(mockFileInputStream0, true);
+Base64Decoder base64Decoder0 = new Base64Decoder(bufferedCustomInputStream0, mockFileOutputStream0);
+Object object3 = new Object();
+base64Decoder0.setLineCount((-1L));
+base64Decoder0.decodeStream();
+assertEquals((-9948), mockFileInputStream0.available());
+assertEquals(4L, base64Decoder0.getLineCount());
+
+
+[MASTER] 05:48:53.165 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<-9957> but was:<-9937>
+[MASTER] 05:48:53.166 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ EvoSuiteFile evoSuiteFile0 = new EvoSuiteFile("\u0000\u0000\u0000\u0000\u0000\u0000\u0000P,)8`");
+FileSystemHandling.appendStringToFile(evoSuiteFile0, "uczlD=Yq<dTi");
+MockFile mockFile0 = new MockFile("\u0000\u0000\u0000\u0000\u0000\u0000\u0000P,)8`");
+MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(mockFile0, true);
+MockPrintStream mockPrintStream0 = new MockPrintStream(mockFileOutputStream0);
+EvoSuiteFile evoSuiteFile1 = new EvoSuiteFile("\u0000\u0000\u0000\u0000\u0000\u0000\u0000P,)8`");
+FileSystemHandling.setPermissions(evoSuiteFile1, true, true, true);
+Object[] objectArray0 = new Object[4];
+objectArray0[0] = (Object) evoSuiteFile0;
+mockFile0.setLastModified((byte)20);
+objectArray0[1] = (Object) null;
+objectArray0[3] = (Object) (byte)20;
+mockPrintStream0.printf((Locale) null, "uczlD=Yq<dTi", objectArray0);
+mockFile0.deleteOnExit();
+mockFile0.getAbsolutePath();
+mockPrintStream0.println(true);
+mockFile0.deleteOnExit();
+FileSystemHandling.appendLineToFile(evoSuiteFile0, "uczlD=Yq<dTi");
+FileSystemHandling.appendLineToFile(evoSuiteFile1, "");
+FileSystemHandling.appendLineToFile(evoSuiteFile0, "\u0000\u0000\u0000\u0000\u0000\u0000\u0000P,)8`");
+FileSystemHandling.setPermissions(evoSuiteFile0, true, false, true);
+MockFileInputStream mockFileInputStream0 = new MockFileInputStream("/home/ubuntu/termite/projects/99_newzgrabber/\u0000\u0000\u0000\u0000\u0000\u0000\u0000P,)8`");
+BufferedCustomInputStream bufferedCustomInputStream0 = new BufferedCustomInputStream(mockFileInputStream0, 1201);
+Base64Decoder base64Decoder0 = new Base64Decoder(bufferedCustomInputStream0, mockPrintStream0);
+base64Decoder0.decodeStream();
+assertEquals((-9957), mockFileInputStream0.available());
+assertEquals(4L, base64Decoder0.getLineCount());
+
+
+[MASTER] 05:48:53.291 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<-19925> but was:<-19886>
+[MASTER] 05:48:53.292 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ MockFile mockFile0 = new MockFile("Running Newzgrabber in verbose mode");
+MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(mockFile0, true);
+MockPrintStream mockPrintStream0 = new MockPrintStream(mockFileOutputStream0);
+byte[] byteArray0 = new byte[15];
+byteArray0[0] = (byte) (-1);
+mockFile0.setWritable(true, true);
+byteArray0[1] = (byte)26;
+mockPrintStream0.write(byteArray0);
+Object[] objectArray0 = new Object[7];
+mockFile0.deleteOnExit();
+objectArray0[0] = (Object) (byte) (-1);
+mockPrintStream0.println("Running Newzgrabber in verbose mode");
+objectArray0[2] = (Object) (byte)26;
+objectArray0[3] = (Object) mockFile0;
+objectArray0[4] = (Object) mockFile0;
+Object object0 = new Object();
+objectArray0[5] = object0;
+PrintStream printStream0 = mockPrintStream0.format("Running Newzgrabber in verbose mode", objectArray0);
+MockFileInputStream mockFileInputStream0 = new MockFileInputStream("Running Newzgrabber in verbose mode");
+BufferedCustomInputStream bufferedCustomInputStream0 = new BufferedCustomInputStream(mockFileInputStream0, true);
+mockFileInputStream0.skip(10L);
+Base64Decoder base64Decoder0 = new Base64Decoder(bufferedCustomInputStream0, printStream0);
+base64Decoder0.setTotalLines((-1L));
+Base64Decoder base64Decoder1 = new Base64Decoder(bufferedCustomInputStream0, mockPrintStream0);
+base64Decoder1.setLineCount((-2609L));
+base64Decoder1.MARKLIMIT = (-28);
+base64Decoder1.decodeStream();
+base64Decoder0.decodeStream();
+assertEquals((-19925), mockFileInputStream0.available());
+
+
+[MASTER] 05:48:53.489 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<-19916> but was:<-19839>
+[MASTER] 05:48:53.490 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ EvoSuiteFile evoSuiteFile0 = new EvoSuiteFile("\u0000\u0000\u0000\u0000\u0000\u0000\u0000P,)8`");
+FileSystemHandling.appendStringToFile(evoSuiteFile0, "uczlD=Yq<dTi");
+MockFile mockFile0 = new MockFile("\u0000\u0000\u0000\u0000\u0000\u0000\u0000P,)8`");
+MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(mockFile0, true);
+MockPrintStream mockPrintStream0 = new MockPrintStream(mockFileOutputStream0);
+EvoSuiteFile evoSuiteFile1 = new EvoSuiteFile("\u0000\u0000\u0000\u0000\u0000\u0000\u0000P,)8`");
+mockFile0.deleteOnExit();
+mockFile0.getAbsolutePath();
+mockPrintStream0.println(true);
+mockFile0.deleteOnExit();
+mockFileOutputStream0.flush();
+FileSystemHandling.appendLineToFile(evoSuiteFile1, "/home/ubuntu/termite/projects/99_newzgrabber/\u0000\u0000\u0000\u0000\u0000\u0000\u0000P,)8`");
+FileSystemHandling.appendLineToFile(evoSuiteFile1, "\u0000\u0000\u0000\u0000\u0000\u0000\u0000P,)8`");
+byte[] byteArray0 = new byte[2];
+FileSystemHandling.appendDataToFile(evoSuiteFile1, byteArray0);
+FileSystemHandling.setPermissions((EvoSuiteFile) null, false, true, false);
+EvoSuiteFile evoSuiteFile2 = new EvoSuiteFile("\u0000\u0000\u0000\u0000\u0000\u0000\u0000P,)8`");
+FileSystemHandling.createFolder(evoSuiteFile2);
+FileSystemHandling.setPermissions(evoSuiteFile1, false, true, true);
+MockFileInputStream mockFileInputStream0 = new MockFileInputStream("/home/ubuntu/termite/projects/99_newzgrabber/\u0000\u0000\u0000\u0000\u0000\u0000\u0000P,)8`");
+mockFileInputStream0.getChannel();
+BufferedCustomInputStream bufferedCustomInputStream0 = new BufferedCustomInputStream(mockFileInputStream0, false);
+Base64Decoder base64Decoder0 = new Base64Decoder(bufferedCustomInputStream0, mockFileOutputStream0);
+mockFileOutputStream0.write(byteArray0);
+base64Decoder0.decodeStream();
+base64Decoder0.decodeStream();
+assertEquals((-19916), mockFileInputStream0.available());
+assertEquals(3L, base64Decoder0.getLineCount());
+
+
+[MASTER] 05:48:53.771 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<-19970> but was:<-19955>
+[MASTER] 05:48:53.771 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ EvoSuiteFile evoSuiteFile0 = new EvoSuiteFile("\u0000\u0000\u0000\u0000\u0000\u0000\u0000P,)8`");
+FileSystemHandling.appendStringToFile(evoSuiteFile0, "uczlD=Yq<dTi");
+MockFile mockFile0 = new MockFile("\u0000\u0000\u0000\u0000\u0000\u0000\u0000P,)8`");
+MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(mockFile0, true);
+MockPrintStream mockPrintStream0 = new MockPrintStream(mockFileOutputStream0);
+EvoSuiteFile evoSuiteFile1 = new EvoSuiteFile("\u0000\u0000\u0000\u0000\u0000\u0000\u0000P,)8`");
+FileSystemHandling.setPermissions(evoSuiteFile1, true, true, true);
+Object[] objectArray0 = new Object[4];
+objectArray0[0] = (Object) evoSuiteFile0;
+objectArray0[1] = (Object) null;
+objectArray0[3] = (Object) (byte)20;
+mockPrintStream0.printf((Locale) null, "uczlD=Yq<dTi", objectArray0);
+mockFile0.deleteOnExit();
+mockFile0.getAbsolutePath();
+mockPrintStream0.println(true);
+mockFile0.deleteOnExit();
+FileSystemHandling.appendLineToFile(evoSuiteFile1, "");
+FileSystemHandling.appendLineToFile(evoSuiteFile0, "\u0000\u0000\u0000\u0000\u0000\u0000\u0000P,)8`");
+FileSystemHandling.setPermissions(evoSuiteFile0, true, false, true);
+MockFileInputStream mockFileInputStream0 = new MockFileInputStream("/home/ubuntu/termite/projects/99_newzgrabber/\u0000\u0000\u0000\u0000\u0000\u0000\u0000P,)8`");
+BufferedCustomInputStream bufferedCustomInputStream0 = new BufferedCustomInputStream(mockFileInputStream0, 1201);
+Base64Decoder base64Decoder0 = new Base64Decoder(bufferedCustomInputStream0, mockPrintStream0);
+Newzgrabber.IsBatch = true;
+base64Decoder0.decodeStream();
+base64Decoder0.decodeStream();
+assertEquals((-19970), mockFileInputStream0.available());
+
+
+[MASTER] 05:48:54.164 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<-19916> but was:<-19902>
+[MASTER] 05:48:54.164 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ EvoSuiteFile evoSuiteFile0 = new EvoSuiteFile("\u0000\u0000\u0000\u0000\u0000\u0000\u0000P,)8`");
+FileSystemHandling.appendStringToFile(evoSuiteFile0, "uczlD=Yq<dTi");
+MockFile mockFile0 = new MockFile("\u0000\u0000\u0000\u0000\u0000\u0000\u0000P,)8`");
+MockFileOutputStream mockFileOutputStream0 = new MockFileOutputStream(mockFile0, true);
+MockPrintStream mockPrintStream0 = new MockPrintStream(mockFileOutputStream0);
+EvoSuiteFile evoSuiteFile1 = new EvoSuiteFile("\u0000\u0000\u0000\u0000\u0000\u0000\u0000P,)8`");
+mockFile0.deleteOnExit();
+mockFile0.getAbsolutePath();
+mockPrintStream0.println(true);
+mockFile0.deleteOnExit();
+mockFileOutputStream0.flush();
+FileSystemHandling.appendLineToFile(evoSuiteFile1, "/home/ubuntu/termite/projects/99_newzgrabber/\u0000\u0000\u0000\u0000\u0000\u0000\u0000P,)8`");
+FileSystemHandling.appendLineToFile(evoSuiteFile1, "\u0000\u0000\u0000\u0000\u0000\u0000\u0000P,)8`");
+byte[] byteArray0 = new byte[2];
+FileSystemHandling.appendDataToFile(evoSuiteFile1, byteArray0);
+FileSystemHandling.setPermissions((EvoSuiteFile) null, false, true, true);
+EvoSuiteFile evoSuiteFile2 = new EvoSuiteFile("/home/ubuntu/termite/projects/99_newzgrabber");
+FileSystemHandling.createFolder(evoSuiteFile2);
+FileSystemHandling.setPermissions(evoSuiteFile1, true, true, true);
+MockFileInputStream mockFileInputStream0 = new MockFileInputStream("/home/ubuntu/termite/projects/99_newzgrabber/\u0000\u0000\u0000\u0000\u0000\u0000\u0000P,)8`");
+mockFileInputStream0.getChannel();
+BufferedCustomInputStream bufferedCustomInputStream0 = new BufferedCustomInputStream(mockFileInputStream0, false);
+Base64Decoder base64Decoder0 = new Base64Decoder(bufferedCustomInputStream0, mockFileOutputStream0);
+base64Decoder0.decodeStream();
+base64Decoder0.decodeStream();
+assertEquals((-19916), mockFileInputStream0.available());
+assertEquals(3L, base64Decoder0.getLineCount());
+
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 17
+* Writing JUnit test case 'Base64Decoder_ESTest' to /home/ubuntu/termite/qmosa/tests/s1014/99_newzgrabber/evosuite-tests
+* Done!
+
+* Computation finished

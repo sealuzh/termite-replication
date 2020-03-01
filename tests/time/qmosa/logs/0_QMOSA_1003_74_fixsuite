@@ -1,0 +1,95 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.fixsuite.message.Library
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/74_fixsuite/evosuite-files/evosuite.properties
+* Connecting to master process on port 20191
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class org.fixsuite.message.Library
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/74_fixsuite/src/main/java/org/fixsuite/message/Library.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1003
+* Starting evolution
+* Search finished after 122s and 2 generations, 2158 statements, best individual has fitness: 1544.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 45%
+* Total number of goals: 51
+* Number of covered goals: 23
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 23%
+* Total number of goals: 35
+* Number of covered goals: 8
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 5%
+* Total number of goals: 110
+* Number of covered goals: 6
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 36%
+* Total number of goals: 11
+* Number of covered goals: 4
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 4
+* Number of covered goals: 4
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 4
+* Number of covered goals: 4
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 23%
+* Total number of goals: 35
+* Number of covered goals: 8
+* Generated 2 tests with total length 33
+* Resulting test suite's coverage: 23% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 0%
+* Compiling and checking tests
+[MASTER] 16:20:53.041 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 16:20:53.042 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Library library0 = new Library();
+library0.loadFromDirectory("");
+library0.loadFromDirectory("");
+library0.loadFromDirectory("");
+library0.loadFromDirectory("");
+library0.loadFromDirectory("");
+library0.getDictionaries();
+library0.loadFromDirectory("");
+library0.loadFromDirectory("org.fixsuite.message.info.ComponentInfo");
+library0.loadFromDirectory("9i7");
+library0.getDictionaries();
+library0.loadFromDirectory("Supplied directory is empty.");
+library0.loadFromDirectory("Wi}))");
+library0.getDictionary("YJ)fhC2~");
+library0.loadFromDirectory("XsT4M:A)6~xh");
+library0.getDictionary("YJ)fhC2~");
+library0.loadFromDirectory("j9V=UKse24W@@Z");
+library0.loadFromDirectory("q8");
+library0.loadFromDirectory("YJ)fhC2~");
+library0.getDictionary(":0N35");
+library0.loadFromDirectory("");
+library0.getDictionary("j9V=UKse24W@@Z");
+library0.getDictionary("YJ)fhC2~");
+library0.loadFromDirectory("9i7");
+library0.getDictionary("r Q9XaGz5mF:#k+vH9");
+library0.getDictionary((String) null);
+
+* Writing JUnit test case 'Library_ESTest' to /home/ubuntu/termite/qmosa/tests/s1003/74_fixsuite/evosuite-tests
+* Done!
+
+* Computation finished

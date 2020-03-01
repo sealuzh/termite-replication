@@ -1,0 +1,406 @@
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: org.jcvi.jillion.core.Range
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/92_jcvi-javacommon/evosuite-files/evosuite.properties
+* Connecting to master process on port 18048
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 12:16:01.914 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 12:16:01.977 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 12:16:02.010 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToDoubleFunction
+[MASTER] 12:16:02.011 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToIntFunction
+[MASTER] 12:16:02.016 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToLongFunction
+[MASTER] 12:16:02.182 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 12:16:02.183 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+* Finished analyzing classpath
+* Generating tests for class org.jcvi.jillion.core.Range
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1026
+* Starting evolution
+* Search finished after 127s and 61 generations, 26137 statements, best individual has fitness: 8072.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 68%
+* Total number of goals: 632
+* Number of covered goals: 428
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 70%
+* Total number of goals: 426
+* Number of covered goals: 300
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 20
+* Number of covered goals: 20
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 53%
+* Total number of goals: 802
+* Number of covered goals: 423
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 51%
+* Total number of goals: 77
+* Number of covered goals: 39
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 37%
+* Total number of goals: 107
+* Number of covered goals: 40
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 37%
+* Total number of goals: 107
+* Number of covered goals: 40
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 70%
+* Total number of goals: 426
+* Number of covered goals: 298
+* Generated 169 tests with total length 1015
+* Resulting test suite's coverage: 61% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 26%
+* Compiling and checking tests
+[MASTER] 12:20:28.028 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.IndexOutOfBoundsException: given length -9223372036854775808 would make range [1227 - ? ] beyond max allowed end offset
+[MASTER] 12:20:28.028 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Range.of(1227L, (-9223372036854775808L));
+
+[MASTER] 12:20:31.132 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: null
+[MASTER] 12:20:31.133 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Range range0 = Range.of((-9223372036854775808L));
+Range range1 = Range.of((-9223372036854775808L));
+List<Range> list0 = range0.complement(range1);
+assertTrue(list0.contains(range0));
+assertFalse(range1.isEmpty());
+assertSame(range1, range0);
+
+
+[MASTER] 12:20:34.663 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: null
+[MASTER] 12:20:34.663 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Range range0 = Range.of(9223372036854775395L);
+Range range1 = Range.of(9223372036854775395L);
+List<Range> list0 = range0.complement(range1);
+assertFalse(list0.contains(range0));
+assertFalse(list0.isEmpty());
+
+
+[MASTER] 12:20:35.087 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: null
+[MASTER] 12:20:35.087 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Range.Builder range_Builder0 = new Range.Builder();
+Range range0 = Range.of(9223372036854774706L);
+Range range1 = Range.of(9223372036854774706L);
+List<Range> list0 = range0.complement(range1);
+assertTrue(list0.contains(range0));
+
+
+[MASTER] 12:20:36.807 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: null
+[MASTER] 12:20:36.808 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Range.CoordinateSystem range_CoordinateSystem0 = Range.CoordinateSystem.RESIDUE_BASED;
+Range.Builder range_Builder0 = new Range.Builder(range_CoordinateSystem0, 109L, 109L);
+Range range0 = Range.ofLength(402L);
+Range.CoordinateSystem range_CoordinateSystem1 = Range.CoordinateSystem.SPACE_BASED;
+Range range1 = Range.of(range_CoordinateSystem1, 109L, 109L);
+boolean boolean0 = range0.intersects(range1);
+assertTrue(boolean0);
+
+long long0 = range0.getEnd(range_CoordinateSystem0);
+assertEquals(402L, long0);
+
+
+[MASTER] 12:20:37.705 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Expecting exception: IndexOutOfBoundsException
+[MASTER] 12:20:37.705 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Range range0 = Range.ofLength(9223372036854775395L);
+range0.split(9223372036854775395L);
+
+[MASTER] 12:20:37.802 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<2147483647> but was:<2147483646>
+[MASTER] 12:20:37.803 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Range.CoordinateSystem range_CoordinateSystem0 = Range.CoordinateSystem.SPACE_BASED;
+Range range0 = Range.of(range_CoordinateSystem0, 2147483647L, 2147483647L);
+long long0 = range0.getEnd();
+assertEquals(2147483647L, long0);
+
+Range.Builder range_Builder0 = new Range.Builder(range0);
+assertFalse(range0.isEmpty());
+
+
+[MASTER] 12:20:38.791 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: null
+[MASTER] 12:20:38.792 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Range range0 = Range.of(126L, 126L);
+Range range1 = Range.of(126L);
+Range range2 = Range.ofLength(126L);
+assertFalse(range2.isEmpty());
+
+range1.equals(range0);
+assertSame(range1, range0);
+assertTrue(range1.isEmpty());
+
+
+[MASTER] 12:20:39.494 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<2> but was:<1>
+[MASTER] 12:20:39.495 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Range.Builder range_Builder0 = new Range.Builder();
+Range range0 = Range.of(4294967295L);
+Range.CoordinateSystem range_CoordinateSystem0 = Range.CoordinateSystem.SPACE_BASED;
+Range range1 = Range.of(range_CoordinateSystem0, 4294967295L, 4294967295L);
+List<Range> list0 = range0.complement(range1);
+assertNotSame(range1, range0);
+assertTrue(list0.contains(range0));
+assertEquals(2, list0.size());
+
+
+[MASTER] 12:20:40.596 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.junit.ComparisonFailure: expected:<[ 126 .. 12[5] ]/0B> but was:<[ 126 .. 12[6] ]/0B>
+[MASTER] 12:20:40.597 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Range range0 = Range.of(126L);
+String string0 = range0.toString();
+assertEquals("[ 126 .. 125 ]/0B", string0);
+
+range0.split(126L);
+List<Range> list0 = range0.split(126L);
+Range range1 = Range.ofLength(65535L);
+List<Range> list1 = range0.complement(range1);
+assertTrue(list1.equals((Object)list0));
+
+
+* Writing JUnit test case 'Range_ESTest' to /home/ubuntu/termite/rmosa/tests/s1026/92_jcvi-javacommon/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: org.jcvi.jillion.core.util.FileIterator
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/92_jcvi-javacommon/evosuite-files/evosuite.properties
+* Connecting to master process on port 18048
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 12:22:41.490 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 12:22:41.789 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 12:22:41.798 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 12:22:41.816 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class org.jcvi.jillion.core.util.FileIterator
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1026
+* Starting evolution
+* Search finished after 121s and 450 generations, 200492 statements, best individual has fitness: 592.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 95%
+* Total number of goals: 107
+* Number of covered goals: 102
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 99%
+* Total number of goals: 67
+* Number of covered goals: 66
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 4
+* Number of covered goals: 4
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 98%
+* Total number of goals: 53
+* Number of covered goals: 52
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 55%
+* Total number of goals: 74
+* Number of covered goals: 41
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 50%
+* Total number of goals: 28
+* Number of covered goals: 14
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 50%
+* Total number of goals: 28
+* Number of covered goals: 14
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 93%
+* Total number of goals: 67
+* Number of covered goals: 62
+* Generated 33 tests with total length 213
+* Resulting test suite's coverage: 83% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 64%
+* Compiling and checking tests
+* Writing JUnit test case 'FileIterator_ESTest' to /home/ubuntu/termite/rmosa/tests/s1026/92_jcvi-javacommon/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: org.jcvi.jillion.assembly.consed.phd.PhdBuilder
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/92_jcvi-javacommon/evosuite-files/evosuite.properties
+* Connecting to master process on port 18042
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 12:29:02.487 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 12:29:02.488 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 12:29:02.491 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 12:29:02.610 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 12:29:02.629 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 12:29:02.635 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 12:29:02.804 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 12:29:02.805 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 12:29:02.806 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 12:29:02.806 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 12:29:02.814 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 12:29:02.815 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 12:29:02.816 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 12:29:02.821 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 12:29:02.823 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+* Finished analyzing classpath
+* Generating tests for class org.jcvi.jillion.assembly.consed.phd.PhdBuilder
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1026
+* Starting evolution
+[MASTER] 12:29:08.770 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.jcvi.jillion.assembly.consed.phd.PhdBuilder.<init>(Lorg/jcvi/jillion/trace/chromat/Chromatogram;)V
+[MASTER] 12:29:08.771 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.jcvi.jillion.assembly.consed.phd.PhdBuilder.readTags(Ljava/util/List;)Lorg/jcvi/jillion/assembly/consed/phd/PhdBuilder;
+[MASTER] 12:29:08.772 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.jcvi.jillion.assembly.consed.phd.PhdBuilder.<init>(Lorg/jcvi/jillion/trace/chromat/Chromatogram;)V
+[MASTER] 12:29:08.772 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.jcvi.jillion.assembly.consed.phd.PhdBuilder.readTags(Ljava/util/List;)Lorg/jcvi/jillion/assembly/consed/phd/PhdBuilder;
+* Search finished after 122s and 239 generations, 286703 statements, best individual has fitness: 64.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 93
+* Number of covered goals: 93
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 27
+* Number of covered goals: 27
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 13
+* Number of covered goals: 13
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 100%
+* Total number of goals: 47
+* Number of covered goals: 47
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 50%
+* Total number of goals: 16
+* Number of covered goals: 8
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 27
+* Number of covered goals: 27
+* Generated 28 tests with total length 190
+* Resulting test suite's coverage: 97% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 11%
+* Compiling and checking tests
+* Writing JUnit test case 'PhdBuilder_ESTest' to /home/ubuntu/termite/rmosa/tests/s1026/92_jcvi-javacommon/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/92_jcvi-javacommon/evosuite-files/evosuite.properties
+* Connecting to master process on port 18043
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 12:35:44.998 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 12:35:45.031 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 12:35:45.032 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 12:35:45.094 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1026
+* Starting evolution
+[MASTER] 12:35:46.935 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleEntry<K, V> : Type points to itself
+[MASTER] 12:35:46.935 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleImmutableEntry<K, V> : Type points to itself
+[MASTER] 12:36:32.540 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+* Search finished after 123s and 130 generations, 177122 statements, best individual has fitness: 344.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 99%
+* Total number of goals: 131
+* Number of covered goals: 130
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 99%
+* Total number of goals: 74
+* Number of covered goals: 73
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 46
+* Number of covered goals: 46
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 99%
+* Total number of goals: 469
+* Number of covered goals: 465
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 65%
+* Total number of goals: 52
+* Number of covered goals: 34
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 83%
+* Total number of goals: 18
+* Number of covered goals: 15
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 83%
+* Total number of goals: 18
+* Number of covered goals: 15
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 82%
+* Total number of goals: 74
+* Number of covered goals: 61
+* Generated 93 tests with total length 647
+* Resulting test suite's coverage: 95% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 67%
+* Compiling and checking tests
+[MASTER] 12:38:46.921 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: Java heap space
+[MASTER] 12:38:46.921 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ DefaultNucleotideCodec defaultNucleotideCodec0 = DefaultNucleotideCodec.INSTANCE;
+byte[] byteArray0 = new byte[4];
+byteArray0[0] = (byte)75;
+byteArray0[1] = (byte)93;
+byteArray0[2] = (byte) (-107);
+byteArray0[3] = (byte) (-41);
+defaultNucleotideCodec0.toString(byteArray0);
+
+* Writing JUnit test case 'DefaultNucleotideCodec_ESTest' to /home/ubuntu/termite/rmosa/tests/s1026/92_jcvi-javacommon/evosuite-tests
+* Done!
+
+* Computation finished

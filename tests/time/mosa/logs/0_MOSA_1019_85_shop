@@ -1,0 +1,273 @@
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: umd.cs.shop.JSPredicateForm
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/85_shop/evosuite-files/evosuite.properties
+* Connecting to master process on port 13427
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 04:45:46.980 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 04:45:46.996 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 04:45:46.997 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 04:45:47.251 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class umd.cs.shop.JSPredicateForm
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 747
+* Using seed 1019
+* Starting evolution
+[MASTER] 04:46:00.046 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+[MASTER] 04:46:12.585 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+* Search finished after 122s and 611 generations, 177396 statements, best individual has fitness: 1584.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 72%
+* Total number of goals: 165
+* Number of covered goals: 118
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 78%
+* Total number of goals: 87
+* Number of covered goals: 68
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 31
+* Number of covered goals: 31
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 76%
+* Total number of goals: 329
+* Number of covered goals: 250
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 42%
+* Total number of goals: 55
+* Number of covered goals: 23
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 12
+* Number of covered goals: 12
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 12
+* Number of covered goals: 12
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 78%
+* Total number of goals: 87
+* Number of covered goals: 68
+* Generated 66 tests with total length 268
+* Resulting test suite's coverage: 75% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 52%
+* Compiling and checking tests
+[MASTER] 04:49:08.467 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.StackOverflowError: null
+[MASTER] 04:49:08.468 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ JSTerm jSTerm0 = new JSTerm();
+jSTerm0.add((Object) "5.0");
+jSTerm0.equals((JSPredicateForm) jSTerm0);
+StringReader stringReader0 = new StringReader("5.0");
+StreamTokenizer streamTokenizer0 = new StreamTokenizer(stringReader0);
+jSTerm0.add((Object) jSTerm0);
+JSSubstitution jSSubstitution0 = new JSSubstitution();
+jSTerm0.standarizerPredicateForm();
+
+* Writing JUnit test case 'JSPredicateForm_ESTest' to /home/ubuntu/termite/mosa/tests/s1019/85_shop/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: umd.cs.shop.JSJshop
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: umd.cs.shop.JSTerm
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/85_shop/evosuite-files/evosuite.properties
+* Connecting to master process on port 13427
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/85_shop/evosuite-files/evosuite.properties
+* Connecting to master process on port 13429
+* Analyzing classpath: 
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 04:59:25.493 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 04:59:25.519 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 04:59:25.520 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 04:59:25.648 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class umd.cs.shop.JSTerm
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 1343
+* Using seed 1019
+* Starting evolution
+[MASTER] 04:59:26.231 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 04:59:26.249 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 04:59:26.255 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 04:59:26.756 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 04:59:28.342 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 04:59:28.352 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 04:59:29.210 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 04:59:33.650 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 04:59:33.780 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 04:59:33.780 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 04:59:33.780 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 04:59:33.780 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 04:59:33.781 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 04:59:33.781 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 04:59:33.781 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 04:59:33.782 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 04:59:33.974 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 04:59:33.999 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class umd.cs.shop.JSJshop
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 757
+* Using seed 1019
+* Starting evolution
+[MASTER] 04:59:37.370 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.getDeleteList()Lumd/cs/shop/JSListLogicalAtoms;: Line 187
+[MASTER] 04:59:37.371 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.getDeleteList()Lumd/cs/shop/JSListLogicalAtoms;: I4 Branch 15 IFNONNULL L187 - false
+[MASTER] 04:59:37.373 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 57: umd.cs.shop.JSJshop.getDeleteList()Lumd/cs/shop/JSListLogicalAtoms;:187 - ReplaceComparisonOperator != null -> = null
+[MASTER] 04:59:37.374 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: umd.cs.shop.JSJshop.getDeleteList()Lumd/cs/shop/JSListLogicalAtoms;:Null
+[MASTER] 04:59:37.375 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] umd.cs.shop.JSJshop.getDeleteList()Lumd/cs/shop/JSListLogicalAtoms;
+[MASTER] 04:59:37.375 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] umd.cs.shop.JSJshop.getDeleteList()Lumd/cs/shop/JSListLogicalAtoms;
+[MASTER] 04:59:37.375 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.getDeleteList()Lumd/cs/shop/JSListLogicalAtoms;: I4 Branch 15 IFNONNULL L187 - false in context: umd.cs.shop.JSJshop:getDeleteList()Lumd/cs/shop/JSListLogicalAtoms;
+[MASTER] 04:59:37.387 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 04:59:40.786 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.getBufferedReader(Ljava/lang/String;Ljava/lang/String;)Ljava/io/BufferedReader;: Line 389
+[MASTER] 04:59:40.788 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] umd.cs.shop.JSJshop.sol()Lumd/cs/shop/JSPlan;
+[MASTER] 04:59:40.788 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] umd.cs.shop.JSJshop.testParser()V
+[MASTER] 04:59:40.789 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] umd.cs.shop.JSJshop.getBufferedReader(Ljava/lang/String;Ljava/lang/String;)Ljava/io/BufferedReader;
+[MASTER] 04:59:40.789 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] umd.cs.shop.JSJshop.processToken(Ljava/io/StreamTokenizer;)V
+[MASTER] 04:59:40.789 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] umd.cs.shop.JSJshop.sol()Lumd/cs/shop/JSPlan;
+[MASTER] 04:59:40.789 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] umd.cs.shop.JSJshop.testParser()V
+[MASTER] 04:59:40.789 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] umd.cs.shop.JSJshop.getBufferedReader(Ljava/lang/String;Ljava/lang/String;)Ljava/io/BufferedReader;
+[MASTER] 04:59:40.789 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] umd.cs.shop.JSJshop.processToken(Ljava/io/StreamTokenizer;)V
+[MASTER] 04:59:40.789 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.getBufferedReader(Ljava/lang/String;Ljava/lang/String;)Ljava/io/BufferedReader;: root-Branch in context: umd.cs.shop.JSJshop:getBufferedReader(Ljava/lang/String;Ljava/lang/String;)Ljava/io/BufferedReader;
+[MASTER] 04:59:44.776 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 161: umd.cs.shop.JSJshop.getBufferedReader(Ljava/lang/String;Ljava/lang/String;)Ljava/io/BufferedReader;:389 - ReplaceVariable dir -> file
+[MASTER] 04:59:44.776 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 162: umd.cs.shop.JSJshop.getBufferedReader(Ljava/lang/String;Ljava/lang/String;)Ljava/io/BufferedReader;:389 - ReplaceVariable file -> dir
+[MASTER] 04:59:44.776 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] umd.cs.shop.JSJshop.<init>(Ljava/lang/String;Lumd/cs/shop/JSTaskAtom;)V
+[MASTER] 04:59:48.060 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] umd.cs.shop.JSJshop.getBufferedReader(Ljava/lang/String;Ljava/lang/String;Ljavax/swing/JApplet;)Ljava/io/BufferedReader;
+[MASTER] 04:59:48.061 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] umd.cs.shop.JSJshop.getBufferedReader(Ljava/lang/String;Ljava/lang/String;Ljavax/swing/JApplet;)Ljava/io/BufferedReader;
+[MASTER] 04:59:51.148 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] umd.cs.shop.JSJshop.getAppletURL(Ljava/lang/String;Ljavax/swing/JApplet;)Ljava/net/URL;
+[MASTER] 04:59:57.172 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] umd.cs.shop.JSJshop.<init>(Ljava/lang/String;Ljava/lang/String;)V
+[MASTER] 05:00:07.317 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] umd.cs.shop.JSJshop.setFile(Ljava/lang/String;Lumd/cs/shop/JSTaskAtom;)Lumd/cs/shop/JSPairPlanTSListNodes;
+[MASTER] 05:00:58.189 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+* Search finished after 124s and 131 generations, 44913 statements, best individual has fitness: 3008.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 71%
+* Total number of goals: 318
+* Number of covered goals: 225
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 70%
+* Total number of goals: 192
+* Number of covered goals: 135
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 35
+* Number of covered goals: 35
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 74%
+* Total number of goals: 476
+* Number of covered goals: 351
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 64%
+* Total number of goals: 123
+* Number of covered goals: 79
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 21
+* Number of covered goals: 21
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 21
+* Number of covered goals: 21
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 70%
+* Total number of goals: 192
+* Number of covered goals: 135
+* Generated 96 tests with total length 559
+* Resulting test suite's coverage: 73% (average coverage for all fitness functions)
+* Generating assertions
+* Search finished after 123s and 20 generations, 7082 statements, best individual has fitness: 2920.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 44%
+* Total number of goals: 225
+* Number of covered goals: 99
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 48%
+* Total number of goals: 114
+* Number of covered goals: 55
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 10
+* Number of covered goals: 10
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 62%
+* Total number of goals: 210
+* Number of covered goals: 131
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 18%
+* Total number of goals: 56
+* Number of covered goals: 10
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 95%
+* Total number of goals: 19
+* Number of covered goals: 18
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 95%
+* Total number of goals: 19
+* Number of covered goals: 18
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 48%
+* Total number of goals: 114
+* Number of covered goals: 55
+* Generated 24 tests with total length 121
+* Resulting test suite's coverage: 52% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 11%
+* Compiling and checking tests
+* Writing JUnit test case 'JSJshop_ESTest' to /home/ubuntu/termite/mosa/tests/s1019/85_shop/evosuite-tests
+* Done!
+
+* Computation finished
+* Resulting test suite's mutation score: 62%
+* Compiling and checking tests
+[MASTER] 05:03:38.939 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.StackOverflowError: null
+[MASTER] 05:03:38.940 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ JSTerm jSTerm0 = new JSTerm();
+JSSubstitution jSSubstitution0 = new JSSubstitution();
+jSTerm0.addElement(jSSubstitution0);
+jSTerm0.add((Object) jSTerm0);
+jSSubstitution0.parallelStream();
+jSSubstitution0.removeAllElements();
+JSTerm jSTerm1 = jSTerm0.applySubstitutionT(jSSubstitution0);
+jSTerm1.isGround();
+jSTerm1.cloneT();
+
+* Writing JUnit test case 'JSTerm_ESTest' to /home/ubuntu/termite/mosa/tests/s1019/85_shop/evosuite-tests
+* Done!
+
+* Computation finished

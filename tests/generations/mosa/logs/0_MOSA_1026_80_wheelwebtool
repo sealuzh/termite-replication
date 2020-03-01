@@ -1,0 +1,872 @@
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: wheel.asm.FieldWriter
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/80_wheelwebtool/evosuite-files/evosuite.properties
+* Connecting to master process on port 18044
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 03:41:39.977 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 03:41:39.986 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 03:41:39.986 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 03:41:40.020 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 03:41:40.021 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 03:41:40.036 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 03:41:40.037 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 03:41:40.039 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 03:41:40.040 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 03:41:40.040 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 03:41:40.062 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 03:41:40.073 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 03:41:40.075 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 03:41:40.183 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 03:41:40.185 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+* Finished analyzing classpath
+* Generating tests for class wheel.asm.FieldWriter
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 418
+* Using seed 1026
+* Starting evolution
+[MASTER] 03:41:42.466 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.asm.FieldWriter.getSize()I
+[MASTER] 03:41:42.545 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.<init>(Lwheel/asm/ClassWriter;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V: Line 131
+[MASTER] 03:41:42.546 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.asm.FieldWriter.visitAttribute(Lwheel/asm/Attribute;)V
+[MASTER] 03:41:42.546 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.asm.FieldWriter.<init>(Lwheel/asm/ClassWriter;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
+[MASTER] 03:41:42.573 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.asm.FieldWriter.visitAnnotation(Ljava/lang/String;Z)Lwheel/asm/AnnotationVisitor;
+[MASTER] 03:41:45.309 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.asm.FieldWriter.visitEnd()V
+[MASTER] 03:41:47.581 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.visitAttribute(Lwheel/asm/Attribute;)V: Line 159
+[MASTER] 03:41:47.581 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.visitAttribute(Lwheel/asm/Attribute;)V: Line 160
+[MASTER] 03:41:47.581 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.visitAttribute(Lwheel/asm/Attribute;)V: Line 161
+[MASTER] 03:41:47.581 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.visitEnd()V: Line 164
+[MASTER] 03:41:47.581 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: Line 176
+[MASTER] 03:41:47.582 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: Line 177
+[MASTER] 03:41:47.582 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: Line 178
+[MASTER] 03:41:47.582 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: Line 179
+[MASTER] 03:41:47.582 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: Line 181
+[MASTER] 03:41:47.582 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: Line 187
+[MASTER] 03:41:47.582 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: Line 191
+[MASTER] 03:41:47.582 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: Line 192
+[MASTER] 03:41:47.582 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: Line 193
+[MASTER] 03:41:47.582 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: Line 195
+[MASTER] 03:41:47.582 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: Line 199
+[MASTER] 03:41:47.586 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: Line 203
+[MASTER] 03:41:47.587 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: Line 204
+[MASTER] 03:41:47.587 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: Line 206
+[MASTER] 03:41:47.588 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.visitAttribute(Lwheel/asm/Attribute;)V: root-Branch
+[MASTER] 03:41:47.588 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.visitEnd()V: root-Branch
+[MASTER] 03:41:47.590 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: I8 Branch 5 IFEQ L177 - false
+[MASTER] 03:41:47.591 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: I25 Branch 6 IFEQ L181 - true
+[MASTER] 03:41:47.591 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: I49 Branch 8 IFEQ L187 - true
+[MASTER] 03:41:47.591 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: I64 Branch 9 IFEQ L191 - false
+[MASTER] 03:41:47.591 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: I79 Branch 10 IFNULL L195 - true
+[MASTER] 03:41:47.591 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: I101 Branch 11 IFNULL L199 - true
+[MASTER] 03:41:47.591 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: I123 Branch 12 IFNULL L203 - false
+[MASTER] 03:41:47.608 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 10: wheel.asm.FieldWriter.getSize()I:176 - ReplaceConstant - 8 -> 0
+[MASTER] 03:41:47.608 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 11: wheel.asm.FieldWriter.getSize()I:176 - ReplaceConstant - 8 -> 1
+[MASTER] 03:41:47.608 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 12: wheel.asm.FieldWriter.getSize()I:176 - ReplaceConstant - 8 -> -1
+[MASTER] 03:41:47.608 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 13: wheel.asm.FieldWriter.getSize()I:176 - ReplaceConstant - 8 -> 7
+[MASTER] 03:41:47.608 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 14: wheel.asm.FieldWriter.getSize()I:176 - ReplaceConstant - 8 -> 9
+[MASTER] 03:41:47.619 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 15: wheel.asm.FieldWriter.getSize()I:177 - InsertUnaryOp Negation
+[MASTER] 03:41:47.619 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 16: wheel.asm.FieldWriter.getSize()I:177 - InsertUnaryOp +1
+[MASTER] 03:41:47.619 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 17: wheel.asm.FieldWriter.getSize()I:177 - InsertUnaryOp -1
+[MASTER] 03:41:47.620 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 19: wheel.asm.FieldWriter.getSize()I:177 - ReplaceComparisonOperator == -> >=
+[MASTER] 03:41:47.620 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 21: wheel.asm.FieldWriter.getSize()I:178 - ReplaceConstant - ConstantValue -> 
+[MASTER] 03:41:47.620 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 22: wheel.asm.FieldWriter.getSize()I:181 - InsertUnaryOp Negation
+[MASTER] 03:41:47.620 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 23: wheel.asm.FieldWriter.getSize()I:181 - InsertUnaryOp +1
+[MASTER] 03:41:47.620 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 24: wheel.asm.FieldWriter.getSize()I:181 - InsertUnaryOp -1
+[MASTER] 03:41:47.620 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 25: wheel.asm.FieldWriter.getSize()I:181 - ReplaceConstant - 4096 -> 0
+[MASTER] 03:41:47.620 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 26: wheel.asm.FieldWriter.getSize()I:181 - ReplaceConstant - 4096 -> 1
+[MASTER] 03:41:47.620 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 27: wheel.asm.FieldWriter.getSize()I:181 - ReplaceConstant - 4096 -> -1
+[MASTER] 03:41:47.637 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 28: wheel.asm.FieldWriter.getSize()I:181 - ReplaceConstant - 4096 -> 4095
+[MASTER] 03:41:47.637 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 29: wheel.asm.FieldWriter.getSize()I:181 - ReplaceConstant - 4096 -> 4097
+[MASTER] 03:41:47.638 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 30: wheel.asm.FieldWriter.getSize()I:181 - ReplaceBitwiseOperator & -> |
+[MASTER] 03:41:47.638 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 31: wheel.asm.FieldWriter.getSize()I:181 - ReplaceBitwiseOperator & -> ^
+[MASTER] 03:41:47.638 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 32: wheel.asm.FieldWriter.getSize()I:181 - ReplaceComparisonOperator == -> -2
+[MASTER] 03:41:47.644 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 54: wheel.asm.FieldWriter.getSize()I:187 - InsertUnaryOp Negation
+[MASTER] 03:41:47.644 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 55: wheel.asm.FieldWriter.getSize()I:187 - InsertUnaryOp +1
+[MASTER] 03:41:47.644 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 56: wheel.asm.FieldWriter.getSize()I:187 - InsertUnaryOp -1
+[MASTER] 03:41:47.644 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 57: wheel.asm.FieldWriter.getSize()I:187 - ReplaceConstant - 131072 -> 0
+[MASTER] 03:41:47.644 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 58: wheel.asm.FieldWriter.getSize()I:187 - ReplaceConstant - 131072 -> 1
+[MASTER] 03:41:47.644 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 59: wheel.asm.FieldWriter.getSize()I:187 - ReplaceConstant - 131072 -> -1
+[MASTER] 03:41:47.644 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 60: wheel.asm.FieldWriter.getSize()I:187 - ReplaceConstant - 131072 -> 131071
+[MASTER] 03:41:47.644 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 61: wheel.asm.FieldWriter.getSize()I:187 - ReplaceConstant - 131072 -> 131073
+[MASTER] 03:41:47.644 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 62: wheel.asm.FieldWriter.getSize()I:187 - ReplaceBitwiseOperator & -> |
+[MASTER] 03:41:47.644 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 63: wheel.asm.FieldWriter.getSize()I:187 - ReplaceBitwiseOperator & -> ^
+[MASTER] 03:41:47.644 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 64: wheel.asm.FieldWriter.getSize()I:187 - ReplaceComparisonOperator == -> -2
+[MASTER] 03:41:47.644 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 68: wheel.asm.FieldWriter.getSize()I:191 - InsertUnaryOp Negation
+[MASTER] 03:41:47.644 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 69: wheel.asm.FieldWriter.getSize()I:191 - InsertUnaryOp +1
+[MASTER] 03:41:47.644 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 70: wheel.asm.FieldWriter.getSize()I:191 - InsertUnaryOp -1
+[MASTER] 03:41:47.644 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 72: wheel.asm.FieldWriter.getSize()I:191 - ReplaceComparisonOperator == -> >=
+[MASTER] 03:41:47.645 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 74: wheel.asm.FieldWriter.getSize()I:192 - ReplaceConstant - Signature -> 
+[MASTER] 03:41:47.645 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 75: wheel.asm.FieldWriter.getSize()I:195 - ReplaceComparisonOperator = null -> != null
+[MASTER] 03:41:47.645 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 93: wheel.asm.FieldWriter.getSize()I:199 - ReplaceComparisonOperator = null -> != null
+[MASTER] 03:41:47.646 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: wheel.asm.FieldWriter.getSize()I:Positive
+[MASTER] 03:41:47.646 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.asm.FieldWriter.visitEnd()V
+[MASTER] 03:41:47.646 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.asm.FieldWriter.visitAttribute(Lwheel/asm/Attribute;)V
+[MASTER] 03:41:47.646 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.asm.FieldWriter.getSize()I
+[MASTER] 03:41:47.647 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.asm.FieldWriter.getSize()I: I123 Branch 12 IFNULL L203 - false in context: 
+[MASTER] 03:41:47.647 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.asm.FieldWriter.getSize()I: I49 Branch 8 IFEQ L187 - true in context: 
+[MASTER] 03:41:47.647 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.asm.FieldWriter.getSize()I: I101 Branch 11 IFNULL L199 - true in context: 
+[MASTER] 03:41:47.647 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.asm.FieldWriter.getSize()I: I25 Branch 6 IFEQ L181 - true in context: 
+[MASTER] 03:41:47.647 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.asm.FieldWriter.getSize()I: I64 Branch 9 IFEQ L191 - false in context: 
+[MASTER] 03:41:47.647 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.asm.FieldWriter.getSize()I: I79 Branch 10 IFNULL L195 - true in context: 
+[MASTER] 03:41:47.647 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.asm.FieldWriter.visitEnd()V: root-Branch in context: wheel.asm.FieldWriter:visitEnd()V
+[MASTER] 03:41:47.647 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.asm.FieldWriter.visitAttribute(Lwheel/asm/Attribute;)V: root-Branch in context: wheel.asm.FieldWriter:visitAttribute(Lwheel/asm/Attribute;)V
+[MASTER] 03:41:47.647 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.asm.FieldWriter.getSize()I: I8 Branch 5 IFEQ L177 - false in context: 
+[MASTER] 03:41:48.528 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.visitAnnotation(Ljava/lang/String;Z)Lwheel/asm/AnnotationVisitor;: Line 149
+[MASTER] 03:41:48.528 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.visitAnnotation(Ljava/lang/String;Z)Lwheel/asm/AnnotationVisitor;: Line 150
+[MASTER] 03:41:48.528 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: Line 184
+[MASTER] 03:41:48.528 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: Line 185
+[MASTER] 03:41:48.528 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: Line 188
+[MASTER] 03:41:48.529 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: Line 189
+[MASTER] 03:41:48.529 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.visitAnnotation(Ljava/lang/String;Z)Lwheel/asm/AnnotationVisitor;: I32 Branch 4 IFEQ L148 - false
+[MASTER] 03:41:48.529 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: I25 Branch 6 IFEQ L181 - false
+[MASTER] 03:41:48.529 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: I32 Branch 7 IF_ICMPGE L181 - false
+[MASTER] 03:41:48.529 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: I49 Branch 8 IFEQ L187 - false
+[MASTER] 03:41:48.530 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 33: wheel.asm.FieldWriter.getSize()I:181 - ReplaceComparisonOperator == -> >=
+[MASTER] 03:41:48.531 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 35: wheel.asm.FieldWriter.getSize()I:181 - InsertUnaryOp Negation
+[MASTER] 03:41:48.531 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 36: wheel.asm.FieldWriter.getSize()I:181 - InsertUnaryOp +1
+[MASTER] 03:41:48.531 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 37: wheel.asm.FieldWriter.getSize()I:181 - InsertUnaryOp -1
+[MASTER] 03:41:48.531 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 38: wheel.asm.FieldWriter.getSize()I:181 - ReplaceConstant - 65535 -> 0
+[MASTER] 03:41:48.531 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 39: wheel.asm.FieldWriter.getSize()I:181 - ReplaceConstant - 65535 -> 1
+[MASTER] 03:41:48.531 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 40: wheel.asm.FieldWriter.getSize()I:181 - ReplaceConstant - 65535 -> -1
+[MASTER] 03:41:48.531 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 41: wheel.asm.FieldWriter.getSize()I:181 - ReplaceConstant - 65535 -> 65534
+[MASTER] 03:41:48.531 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 42: wheel.asm.FieldWriter.getSize()I:181 - ReplaceConstant - 65535 -> 65536
+[MASTER] 03:41:48.531 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 43: wheel.asm.FieldWriter.getSize()I:181 - ReplaceBitwiseOperator & -> |
+[MASTER] 03:41:48.531 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 44: wheel.asm.FieldWriter.getSize()I:181 - ReplaceBitwiseOperator & -> ^
+[MASTER] 03:41:48.531 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 45: wheel.asm.FieldWriter.getSize()I:181 - ReplaceConstant - 49 -> 0
+[MASTER] 03:41:48.531 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 46: wheel.asm.FieldWriter.getSize()I:181 - ReplaceConstant - 49 -> 1
+[MASTER] 03:41:48.531 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 47: wheel.asm.FieldWriter.getSize()I:181 - ReplaceConstant - 49 -> -1
+[MASTER] 03:41:48.531 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 48: wheel.asm.FieldWriter.getSize()I:181 - ReplaceConstant - 49 -> 48
+[MASTER] 03:41:48.531 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 49: wheel.asm.FieldWriter.getSize()I:181 - ReplaceConstant - 49 -> 50
+[MASTER] 03:41:48.531 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 50: wheel.asm.FieldWriter.getSize()I:181 - ReplaceComparisonOperator >= -> -1
+[MASTER] 03:41:48.531 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 53: wheel.asm.FieldWriter.getSize()I:184 - ReplaceConstant - Synthetic -> 
+[MASTER] 03:41:48.531 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 65: wheel.asm.FieldWriter.getSize()I:187 - ReplaceComparisonOperator == -> >=
+[MASTER] 03:41:48.531 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 67: wheel.asm.FieldWriter.getSize()I:188 - ReplaceConstant - Deprecated -> 
+[MASTER] 03:41:48.532 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.asm.FieldWriter.visitAnnotation(Ljava/lang/String;Z)Lwheel/asm/AnnotationVisitor;: I32 Branch 4 IFEQ L148 - false in context: wheel.asm.FieldWriter:visitAnnotation(Ljava/lang/String;Z)Lwheel/asm/AnnotationVisitor;
+[MASTER] 03:41:48.532 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.asm.FieldWriter.getSize()I: I32 Branch 7 IF_ICMPGE L181 - false in context: 
+[MASTER] 03:41:48.532 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.asm.FieldWriter.getSize()I: I25 Branch 6 IFEQ L181 - false in context: 
+[MASTER] 03:41:48.532 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.asm.FieldWriter.getSize()I: I49 Branch 8 IFEQ L187 - false in context: 
+[MASTER] 03:41:49.548 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.asm.FieldWriter.put(Lwheel/asm/ByteVector;)V
+[MASTER] 03:41:52.766 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: Line 196
+[MASTER] 03:41:52.766 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: Line 197
+[MASTER] 03:41:52.767 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.getSize()I: I79 Branch 10 IFNULL L195 - false
+[MASTER] 03:41:52.767 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 76: wheel.asm.FieldWriter.getSize()I:196 - ReplaceConstant - RuntimeVisibleAnnotations -> 
+[MASTER] 03:41:52.767 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 77: wheel.asm.FieldWriter.getSize()I:197 - InsertUnaryOp Negation of size
+[MASTER] 03:41:52.767 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 78: wheel.asm.FieldWriter.getSize()I:197 - InsertUnaryOp IINC 1 size
+[MASTER] 03:41:52.767 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 79: wheel.asm.FieldWriter.getSize()I:197 - InsertUnaryOp IINC -1 size
+[MASTER] 03:41:52.767 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 80: wheel.asm.FieldWriter.getSize()I:197 - ReplaceConstant - 8 -> 0
+[MASTER] 03:41:52.767 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 81: wheel.asm.FieldWriter.getSize()I:197 - ReplaceConstant - 8 -> 1
+[MASTER] 03:41:52.767 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 82: wheel.asm.FieldWriter.getSize()I:197 - ReplaceConstant - 8 -> -1
+[MASTER] 03:41:52.767 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 83: wheel.asm.FieldWriter.getSize()I:197 - ReplaceConstant - 8 -> 7
+[MASTER] 03:41:52.767 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 84: wheel.asm.FieldWriter.getSize()I:197 - ReplaceConstant - 8 -> 9
+[MASTER] 03:41:52.767 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 85: wheel.asm.FieldWriter.getSize()I:197 - ReplaceArithmeticOperator + -> %
+[MASTER] 03:41:52.767 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 86: wheel.asm.FieldWriter.getSize()I:197 - ReplaceArithmeticOperator + -> -
+[MASTER] 03:41:52.767 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 87: wheel.asm.FieldWriter.getSize()I:197 - ReplaceArithmeticOperator + -> *
+[MASTER] 03:41:52.767 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 88: wheel.asm.FieldWriter.getSize()I:197 - ReplaceArithmeticOperator + -> /
+[MASTER] 03:41:52.767 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 89: wheel.asm.FieldWriter.getSize()I:197 - ReplaceArithmeticOperator + -> %
+[MASTER] 03:41:52.767 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 90: wheel.asm.FieldWriter.getSize()I:197 - ReplaceArithmeticOperator + -> -
+[MASTER] 03:41:52.767 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 91: wheel.asm.FieldWriter.getSize()I:197 - ReplaceArithmeticOperator + -> *
+[MASTER] 03:41:52.767 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 92: wheel.asm.FieldWriter.getSize()I:197 - ReplaceArithmeticOperator + -> /
+[MASTER] 03:41:52.767 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.asm.FieldWriter.getSize()I: I79 Branch 10 IFNULL L195 - false in context: 
+* Search finished after 175s and 259 generations, 165609 statements, best individual has fitness: 56.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 85
+* Number of covered goals: 85
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 58
+* Number of covered goals: 58
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 12
+* Number of covered goals: 12
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 98%
+* Total number of goals: 200
+* Number of covered goals: 196
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 40%
+* Total number of goals: 5
+* Number of covered goals: 2
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 6
+* Number of covered goals: 6
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 6
+* Number of covered goals: 6
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 58
+* Number of covered goals: 58
+* Generated 31 tests with total length 208
+* Resulting test suite's coverage: 98% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 40%
+* Compiling and checking tests
+* Writing JUnit test case 'FieldWriter_ESTest' to /home/ubuntu/termite/mosa/tests/s1026/80_wheelwebtool/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Configuration: MOSA
+* Going to generate test cases for class: wheel.components.Component
+* Going to generate test cases for class: wheel.asm.Frame
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: wheel.json.JSONObject
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/80_wheelwebtool/evosuite-files/evosuite.properties
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/80_wheelwebtool/evosuite-files/evosuite.properties
+* Connecting to master process on port 18042
+* Connecting to master process on port 18043
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/80_wheelwebtool/evosuite-files/evosuite.properties
+* Connecting to master process on port 18050
+* Analyzing classpath: 
+* Analyzing classpath: 
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 03:53:04.721 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 03:53:04.774 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 03:53:04.783 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 03:53:04.909 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 03:53:04.917 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 03:53:04.920 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class wheel.json.JSONObject
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 1995
+* Using seed 1026
+* Starting evolution
+[MASTER] 03:53:06.867 [logback-2] ERROR TestCluster - Failed to check cache for java.util.LinkedList<E> : Type points to itself
+[MASTER] 03:53:06.881 [logback-2] ERROR TestCluster - Failed to check cache for java.util.HashMap<K, V> : Type points to itself
+[MASTER] 03:53:06.983 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 03:53:07.039 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 03:53:07.040 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 03:53:07.050 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 03:53:07.060 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 03:53:07.062 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 03:53:07.072 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 03:53:07.073 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 03:53:07.084 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 03:53:07.085 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 03:53:07.088 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 03:53:07.094 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 03:53:07.100 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 03:53:07.224 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 03:53:07.226 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+* Finished analyzing classpath
+* Generating tests for class wheel.asm.Frame
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+[MASTER] 03:53:08.811 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 03:53:08.834 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 03:53:08.834 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+* Total number of test goals for MOSA: 2559
+* Using seed 1026
+* Starting evolution
+[MASTER] 03:53:09.133 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 03:53:09.133 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 03:53:09.156 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 03:53:09.282 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 03:53:09.281 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.getBoolean(Ljava/lang/String;)Z: Line 438
+[MASTER] 03:53:09.288 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.optBoolean(Ljava/lang/String;Z)Z: Line 716
+[MASTER] 03:53:09.288 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.optBoolean(Ljava/lang/String;Z)Z: Line 717
+[MASTER] 03:53:09.288 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.optBoolean(Ljava/lang/String;Z)Z: Line 718
+[MASTER] 03:53:09.288 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.optJSONObject(Ljava/lang/String;)Lwheel/json/JSONObject;: Line 828
+[MASTER] 03:53:09.288 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.optJSONObject(Ljava/lang/String;)Lwheel/json/JSONObject;: Line 829
+[MASTER] 03:53:09.291 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.optBoolean(Ljava/lang/String;Z)Z: root-Branch
+[MASTER] 03:53:09.294 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.optJSONObject(Ljava/lang/String;)Lwheel/json/JSONObject;: I10 Branch 64 IFEQ L829 - true
+[MASTER] 03:53:09.308 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 373: wheel.json.JSONObject.optBoolean(Ljava/lang/String;Z)Z:718 - InsertUnaryOp Negation of defaultValue
+[MASTER] 03:53:09.308 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 374: wheel.json.JSONObject.optBoolean(Ljava/lang/String;Z)Z:718 - InsertUnaryOp IINC 1 defaultValue
+[MASTER] 03:53:09.308 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 375: wheel.json.JSONObject.optBoolean(Ljava/lang/String;Z)Z:718 - InsertUnaryOp IINC -1 defaultValue
+[MASTER] 03:53:09.308 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 392: wheel.json.JSONObject.optJSONObject(Ljava/lang/String;)Lwheel/json/JSONObject;:829 - ReplaceVariable o -> NULL
+[MASTER] 03:53:09.308 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 393: wheel.json.JSONObject.optJSONObject(Ljava/lang/String;)Lwheel/json/JSONObject;:829 - ReplaceComparisonOperator == -> !=
+[MASTER] 03:53:09.310 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 03:53:09.312 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 03:53:09.321 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: wheel.json.JSONObject.optBoolean(Ljava/lang/String;Z)Z:False
+[MASTER] 03:53:09.321 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: wheel.json.JSONObject.optJSONObject(Ljava/lang/String;)Lwheel/json/JSONObject;:Null
+[MASTER] 03:53:09.321 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.json.JSONObject.<init>()V
+[MASTER] 03:53:09.323 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.json.JSONObject.optBoolean(Ljava/lang/String;Z)Z
+[MASTER] 03:53:09.323 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.json.JSONObject.optJSONObject(Ljava/lang/String;)Lwheel/json/JSONObject;
+[MASTER] 03:53:09.324 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.json.JSONObject.put(Ljava/lang/String;J)Lwheel/json/JSONObject;
+[MASTER] 03:53:09.324 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.json.JSONObject.<init>()V
+[MASTER] 03:53:09.324 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.json.JSONObject.optBoolean(Ljava/lang/String;Z)Z
+[MASTER] 03:53:09.323 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 03:53:09.324 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 03:53:09.325 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 03:53:09.326 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 03:53:09.327 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 03:53:09.337 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 03:53:09.338 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.json.JSONObject.optJSONObject(Ljava/lang/String;)Lwheel/json/JSONObject;
+[MASTER] 03:53:09.360 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.json.JSONObject.optBoolean(Ljava/lang/String;Z)Z: root-Branch in context: wheel.json.JSONObject:optBoolean(Ljava/lang/String;Z)Z
+[MASTER] 03:53:09.360 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.json.JSONObject.optJSONObject(Ljava/lang/String;)Lwheel/json/JSONObject;: I10 Branch 64 IFEQ L829 - true in context: wheel.json.JSONObject:optJSONObject(Ljava/lang/String;)Lwheel/json/JSONObject;
+[MASTER] 03:53:09.754 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 03:53:10.226 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+[MASTER] 03:53:10.260 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.json.JSONObject.optLong(Ljava/lang/String;J)J
+[MASTER] 03:53:10.740 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.json.JSONObject.optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+* Finished analyzing classpath
+* Generating tests for class wheel.components.Component
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+[MASTER] 03:53:11.673 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;: Line 1304
+[MASTER] 03:53:11.673 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;: Line 1305
+[MASTER] 03:53:11.674 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;: I3 Branch 119 IFNULL L1304 - true
+[MASTER] 03:53:11.678 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 671: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1304 - ReplaceVariable value -> NULL
+[MASTER] 03:53:11.678 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 672: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1304 - ReplaceComparisonOperator = null -> != null
+[MASTER] 03:53:11.678 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 675: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1305 - ReplaceConstant - null -> 
+[MASTER] 03:53:11.679 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:NonEmptyString
+[MASTER] 03:53:11.679 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;
+[MASTER] 03:53:11.680 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;
+[MASTER] 03:53:11.681 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;: I3 Branch 119 IFNULL L1304 - true in context: 
+* Total number of test goals for MOSA: 3544
+* Using seed 1026
+* Starting evolution
+[MASTER] 03:53:14.243 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.json.JSONObject.put(Ljava/lang/String;I)Lwheel/json/JSONObject;
+[MASTER] 03:53:14.328 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.valueToString(Ljava/lang/Object;)Ljava/lang/String;: Line 1271
+[MASTER] 03:53:14.328 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.valueToString(Ljava/lang/Object;)Ljava/lang/String;: Line 1273
+[MASTER] 03:53:14.328 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.valueToString(Ljava/lang/Object;)Ljava/lang/String;: I64 Branch 112 IFEQ L1268 - true
+[MASTER] 03:53:14.328 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.valueToString(Ljava/lang/Object;)Ljava/lang/String;: I75 Branch 113 IFNE L1271 - true
+[MASTER] 03:53:14.333 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 658: wheel.json.JSONObject.valueToString(Ljava/lang/Object;)Ljava/lang/String;:1271 - ReplaceVariable value -> NULL
+[MASTER] 03:53:14.334 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 659: wheel.json.JSONObject.valueToString(Ljava/lang/Object;)Ljava/lang/String;:1271 - ReplaceComparisonOperator != -> ==
+[MASTER] 03:53:14.334 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 664: wheel.json.JSONObject.valueToString(Ljava/lang/Object;)Ljava/lang/String;:1273 - ReplaceVariable value -> NULL
+[MASTER] 03:53:14.355 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.json.JSONObject.put(Ljava/lang/String;Ljava/util/Collection;)Lwheel/json/JSONObject;
+[MASTER] 03:53:14.356 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.json.JSONObject.valueToString(Ljava/lang/Object;)Ljava/lang/String;: I64 Branch 112 IFEQ L1268 - true in context: 
+[MASTER] 03:53:14.356 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.json.JSONObject.valueToString(Ljava/lang/Object;)Ljava/lang/String;: I75 Branch 113 IFNE L1271 - true in context: 
+[MASTER] 03:53:22.318 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.put(Ljava/lang/String;Ljava/util/Collection;)Lwheel/json/JSONObject;: Line 732
+[MASTER] 03:53:22.318 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.put(Ljava/lang/String;Ljava/util/Collection;)Lwheel/json/JSONObject;: Line 733
+[MASTER] 03:53:22.318 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.put(Ljava/lang/String;Ljava/util/Collection;)Lwheel/json/JSONObject;: root-Branch
+[MASTER] 03:53:22.321 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: wheel.json.JSONObject.put(Ljava/lang/String;Ljava/util/Collection;)Lwheel/json/JSONObject;:NonNull:wheel.json.JSONObject:length()I:Positive
+[MASTER] 03:53:22.322 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.json.JSONObject.put(Ljava/lang/String;Ljava/util/Collection;)Lwheel/json/JSONObject;
+[MASTER] 03:53:22.322 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.json.JSONObject.put(Ljava/lang/String;Ljava/util/Collection;)Lwheel/json/JSONObject;: root-Branch in context: wheel.json.JSONObject:put(Ljava/lang/String;Ljava/util/Collection;)Lwheel/json/JSONObject;
+[MASTER] 03:53:28.034 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.toString(II)Ljava/lang/String;: Line 1193
+[MASTER] 03:53:28.034 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.toString(II)Ljava/lang/String;: Line 1194
+[MASTER] 03:53:28.034 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.toString(II)Ljava/lang/String;: Line 1195
+[MASTER] 03:53:28.034 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.toString(II)Ljava/lang/String;: Line 1197
+[MASTER] 03:53:28.034 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.toString(II)Ljava/lang/String;: Line 1198
+[MASTER] 03:53:28.034 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.toString(II)Ljava/lang/String;: Line 1199
+[MASTER] 03:53:28.034 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.toString(II)Ljava/lang/String;: Line 1200
+[MASTER] 03:53:28.034 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.toString(II)Ljava/lang/String;: Line 1201
+[MASTER] 03:53:28.035 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;: Line 1308
+[MASTER] 03:53:28.035 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;: Line 1316
+[MASTER] 03:53:28.035 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;: Line 1317
+[MASTER] 03:53:28.035 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;: Line 1320
+[MASTER] 03:53:28.035 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;: Line 1323
+[MASTER] 03:53:28.035 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;: Line 1324
+[MASTER] 03:53:28.035 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;: Line 1326
+[MASTER] 03:53:28.035 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;: Line 1327
+[MASTER] 03:53:28.053 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 561: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1190 - ReplaceVariable n -> indent
+[MASTER] 03:53:28.053 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 566: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1190 - ReplaceComparisonOperator != -> <
+[MASTER] 03:53:28.053 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 569: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1194 - ReplaceConstant - { -> 
+[MASTER] 03:53:28.053 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 570: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1195 - ReplaceVariable indent -> indentFactor
+[MASTER] 03:53:28.053 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 571: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1195 - ReplaceVariable indent -> n
+[MASTER] 03:53:28.053 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 572: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1195 - InsertUnaryOp Negation of indent
+[MASTER] 03:53:28.053 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 573: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1195 - InsertUnaryOp IINC 1 indent
+[MASTER] 03:53:28.053 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 574: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1195 - InsertUnaryOp IINC -1 indent
+[MASTER] 03:53:28.053 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 575: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1195 - ReplaceVariable indentFactor -> indent
+[MASTER] 03:53:28.053 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 576: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1195 - ReplaceVariable indentFactor -> n
+[MASTER] 03:53:28.053 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 577: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1195 - InsertUnaryOp Negation of indentFactor
+[MASTER] 03:53:28.053 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 578: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1195 - InsertUnaryOp IINC 1 indentFactor
+[MASTER] 03:53:28.053 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 579: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1195 - InsertUnaryOp IINC -1 indentFactor
+[MASTER] 03:53:28.053 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 580: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1195 - ReplaceArithmeticOperator + -> %
+[MASTER] 03:53:28.053 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 581: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1195 - ReplaceArithmeticOperator + -> -
+[MASTER] 03:53:28.053 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 582: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1195 - ReplaceArithmeticOperator + -> *
+[MASTER] 03:53:28.053 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 583: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1195 - ReplaceArithmeticOperator + -> /
+[MASTER] 03:53:28.053 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 584: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1197 - ReplaceVariable n -> newindent
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 585: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1197 - ReplaceVariable n -> indentFactor
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 586: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1197 - ReplaceVariable n -> indent
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 587: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1197 - InsertUnaryOp Negation of n
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 588: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1197 - InsertUnaryOp IINC 1 n
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 589: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1197 - InsertUnaryOp IINC -1 n
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 590: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1197 - ReplaceConstant - 1 -> 0
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 591: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1197 - ReplaceComparisonOperator != -> ==
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 592: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1199 - ReplaceVariable o -> NULL
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 593: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1200 - ReplaceConstant - :  -> 
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 594: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1201 - ReplaceVariable o -> NULL
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 595: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1201 - ReplaceVariable indentFactor -> newindent
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 596: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1201 - ReplaceVariable indentFactor -> indent
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 597: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1201 - ReplaceVariable indentFactor -> n
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 598: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1201 - InsertUnaryOp Negation of indentFactor
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 599: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1201 - InsertUnaryOp IINC 1 indentFactor
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 600: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1201 - InsertUnaryOp IINC -1 indentFactor
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 601: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1201 - ReplaceVariable indent -> newindent
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 602: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1201 - ReplaceVariable indent -> indentFactor
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 603: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1201 - ReplaceVariable indent -> n
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 604: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1201 - InsertUnaryOp Negation of indent
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 605: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1201 - InsertUnaryOp IINC 1 indent
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 606: wheel.json.JSONObject.toString(II)Ljava/lang/String;:1201 - InsertUnaryOp IINC -1 indent
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 673: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1304 - ReplaceVariable value -> NULL
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 674: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1304 - ReplaceComparisonOperator == -> !=
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 676: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1308 - ReplaceVariable value -> NULL
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 677: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1308 - ReplaceComparisonOperator == -> !=
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 684: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1317 - ReplaceVariable value -> NULL
+[MASTER] 03:53:28.054 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 685: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1317 - ReplaceComparisonOperator == -> !=
+[MASTER] 03:53:28.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 687: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1320 - ReplaceVariable value -> NULL
+[MASTER] 03:53:28.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 688: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1320 - ReplaceComparisonOperator == -> !=
+[MASTER] 03:53:28.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 690: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1323 - ReplaceVariable value -> NULL
+[MASTER] 03:53:28.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 691: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1323 - ReplaceComparisonOperator == -> !=
+[MASTER] 03:53:28.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 692: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1324 - ReplaceVariable value -> NULL
+[MASTER] 03:53:28.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 693: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1324 - ReplaceVariable indentFactor -> indent
+[MASTER] 03:53:28.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 694: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1324 - InsertUnaryOp Negation of indentFactor
+[MASTER] 03:53:28.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 695: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1324 - InsertUnaryOp IINC 1 indentFactor
+[MASTER] 03:53:28.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 696: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1324 - InsertUnaryOp IINC -1 indentFactor
+[MASTER] 03:53:28.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 697: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1324 - ReplaceVariable indent -> indentFactor
+[MASTER] 03:53:28.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 698: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1324 - InsertUnaryOp Negation of indent
+[MASTER] 03:53:28.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 699: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1324 - InsertUnaryOp IINC 1 indent
+[MASTER] 03:53:28.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 700: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1324 - InsertUnaryOp IINC -1 indent
+[MASTER] 03:53:28.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 701: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1326 - ReplaceVariable value -> NULL
+[MASTER] 03:53:28.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 702: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1326 - ReplaceComparisonOperator == -> !=
+[MASTER] 03:53:28.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 703: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1327 - ReplaceVariable value -> NULL
+[MASTER] 03:53:28.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 704: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1327 - ReplaceVariable indentFactor -> indent
+[MASTER] 03:53:28.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 705: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1327 - InsertUnaryOp Negation of indentFactor
+[MASTER] 03:53:28.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 706: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1327 - InsertUnaryOp IINC 1 indentFactor
+[MASTER] 03:53:28.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 707: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1327 - InsertUnaryOp IINC -1 indentFactor
+[MASTER] 03:53:28.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 708: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1327 - ReplaceVariable indent -> indentFactor
+[MASTER] 03:53:28.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 709: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1327 - InsertUnaryOp Negation of indent
+[MASTER] 03:53:28.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 710: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1327 - InsertUnaryOp IINC 1 indent
+[MASTER] 03:53:28.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 711: wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;:1327 - InsertUnaryOp IINC -1 indent
+[MASTER] 03:53:28.056 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.json.JSONObject.get(Ljava/lang/String;)Ljava/lang/Object;
+[MASTER] 03:53:28.056 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.json.JSONObject.put(Ljava/lang/String;Ljava/util/Map;)Lwheel/json/JSONObject;
+[MASTER] 03:53:28.056 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.json.JSONObject.toString(II)Ljava/lang/String;
+[MASTER] 03:53:28.056 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.json.JSONObject.get(Ljava/lang/String;)Ljava/lang/Object;
+[MASTER] 03:53:28.056 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.json.JSONObject.put(Ljava/lang/String;Ljava/util/Map;)Lwheel/json/JSONObject;
+[MASTER] 03:53:28.057 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.json.JSONObject.toString(II)Ljava/lang/String;
+[MASTER] 03:53:28.057 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.json.JSONObject.getDouble(Ljava/lang/String;)D
+[MASTER] 03:53:28.057 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.json.JSONObject.toString(II)Ljava/lang/String;: I8 Branch 101 IFNE L1190 - true in context: wheel.json.JSONObject:toString(II)Ljava/lang/String;
+[MASTER] 03:53:28.057 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;: I7 Branch 120 IFEQ L1304 - true in context: 
+[MASTER] 03:53:28.057 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;: I86 Branch 126 IFEQ L1326 - false in context: 
+[MASTER] 03:53:28.058 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;: I73 Branch 125 IFEQ L1323 - true in context: 
+[MASTER] 03:53:28.058 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;: I3 Branch 119 IFNULL L1304 - false in context: 
+[MASTER] 03:53:28.058 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.json.JSONObject.toString(II)Ljava/lang/String;: I35 Branch 102 IF_ICMPNE L1197 - false in context: wheel.json.JSONObject:toString(II)Ljava/lang/String;
+[MASTER] 03:53:28.058 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;: I44 Branch 123 IFEQ L1317 - true in context: 
+[MASTER] 03:53:28.058 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;: I55 Branch 124 IFEQ L1320 - true in context: 
+[MASTER] 03:53:28.058 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.json.JSONObject.valueToString(Ljava/lang/Object;II)Ljava/lang/String;: I16 Branch 121 IFEQ L1308 - true in context: 
+[MASTER] 03:53:29.393 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.put(Ljava/lang/String;I)Lwheel/json/JSONObject;: Line 930
+[MASTER] 03:53:29.393 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.put(Ljava/lang/String;I)Lwheel/json/JSONObject;: Line 931
+[MASTER] 03:53:29.393 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.put(Ljava/lang/String;J)Lwheel/json/JSONObject;: Line 945
+[MASTER] 03:53:29.395 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.toString()Ljava/lang/String;: Line 1141
+[MASTER] 03:53:29.395 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.toString()Ljava/lang/String;: Line 1142
+[MASTER] 03:53:29.395 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.toString()Ljava/lang/String;: Line 1144
+[MASTER] 03:53:29.395 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.toString()Ljava/lang/String;: Line 1145
+[MASTER] 03:53:29.395 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.toString()Ljava/lang/String;: Line 1146
+[MASTER] 03:53:29.395 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.toString()Ljava/lang/String;: Line 1147
+[MASTER] 03:53:29.395 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.toString()Ljava/lang/String;: Line 1148
+[MASTER] 03:53:29.396 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.put(Ljava/lang/String;I)Lwheel/json/JSONObject;: root-Branch
+[MASTER] 03:53:29.398 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.toString()Ljava/lang/String;: I16 Branch 99 IFEQ L1140 - false
+[MASTER] 03:53:29.398 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.toString()Ljava/lang/String;: I22 Branch 100 IF_ICMPLE L1141 - true
+[MASTER] 03:53:29.398 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.toString()Ljava/lang/String;: I22 Branch 100 IF_ICMPLE L1141 - false
+[MASTER] 03:53:29.400 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 408: wheel.json.JSONObject.put(Ljava/lang/String;I)Lwheel/json/JSONObject;:930 - InsertUnaryOp Negation of value
+[MASTER] 03:53:29.400 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 409: wheel.json.JSONObject.put(Ljava/lang/String;I)Lwheel/json/JSONObject;:930 - InsertUnaryOp IINC 1 value
+[MASTER] 03:53:29.400 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 410: wheel.json.JSONObject.put(Ljava/lang/String;I)Lwheel/json/JSONObject;:930 - InsertUnaryOp IINC -1 value
+[MASTER] 03:53:29.401 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 537: wheel.json.JSONObject.toString()Ljava/lang/String;:1141 - ReplaceConstant - 1 -> 0
+[MASTER] 03:53:29.401 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 538: wheel.json.JSONObject.toString()Ljava/lang/String;:1141 - ReplaceComparisonOperator <= -> >
+[MASTER] 03:53:29.401 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 539: wheel.json.JSONObject.toString()Ljava/lang/String;:1142 - ReplaceConstant - 44 -> 0
+[MASTER] 03:53:29.401 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 540: wheel.json.JSONObject.toString()Ljava/lang/String;:1142 - ReplaceConstant - 44 -> 1
+[MASTER] 03:53:29.401 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 541: wheel.json.JSONObject.toString()Ljava/lang/String;:1142 - ReplaceConstant - 44 -> -1
+[MASTER] 03:53:29.401 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 542: wheel.json.JSONObject.toString()Ljava/lang/String;:1142 - ReplaceConstant - 44 -> 43
+[MASTER] 03:53:29.401 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 543: wheel.json.JSONObject.toString()Ljava/lang/String;:1142 - ReplaceConstant - 44 -> 45
+[MASTER] 03:53:29.401 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 544: wheel.json.JSONObject.toString()Ljava/lang/String;:1145 - ReplaceVariable o -> NULL
+[MASTER] 03:53:29.401 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 545: wheel.json.JSONObject.toString()Ljava/lang/String;:1146 - ReplaceConstant - 58 -> 0
+[MASTER] 03:53:29.401 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 546: wheel.json.JSONObject.toString()Ljava/lang/String;:1146 - ReplaceConstant - 58 -> 1
+[MASTER] 03:53:29.401 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 547: wheel.json.JSONObject.toString()Ljava/lang/String;:1146 - ReplaceConstant - 58 -> -1
+[MASTER] 03:53:29.402 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 548: wheel.json.JSONObject.toString()Ljava/lang/String;:1146 - ReplaceConstant - 58 -> 57
+[MASTER] 03:53:29.402 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 549: wheel.json.JSONObject.toString()Ljava/lang/String;:1146 - ReplaceConstant - 58 -> 59
+[MASTER] 03:53:29.402 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 550: wheel.json.JSONObject.toString()Ljava/lang/String;:1147 - ReplaceVariable o -> NULL
+[MASTER] 03:53:29.403 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: wheel.json.JSONObject.put(Ljava/lang/String;I)Lwheel/json/JSONObject;:NonNull:wheel.json.JSONObject:length()I:Positive
+[MASTER] 03:53:29.409 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: wheel.json.JSONObject.put(Ljava/lang/String;J)Lwheel/json/JSONObject;:NonNull:wheel.json.JSONObject:length()I:Positive
+[MASTER] 03:53:29.410 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.json.JSONObject.put(Ljava/lang/String;I)Lwheel/json/JSONObject;
+[MASTER] 03:53:29.410 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.json.JSONObject.put(Ljava/lang/String;J)Lwheel/json/JSONObject;
+[MASTER] 03:53:29.410 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.json.JSONObject.toString()Ljava/lang/String;: I16 Branch 99 IFEQ L1140 - false in context: wheel.json.JSONObject:toString()Ljava/lang/String;
+[MASTER] 03:53:29.411 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.json.JSONObject.put(Ljava/lang/String;I)Lwheel/json/JSONObject;: root-Branch in context: wheel.json.JSONObject:put(Ljava/lang/String;I)Lwheel/json/JSONObject;
+[MASTER] 03:53:29.411 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.json.JSONObject.toString()Ljava/lang/String;: I22 Branch 100 IF_ICMPLE L1141 - false in context: wheel.json.JSONObject:toString()Ljava/lang/String;
+[MASTER] 03:53:29.411 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.json.JSONObject.toString()Ljava/lang/String;: I22 Branch 100 IF_ICMPLE L1141 - true in context: wheel.json.JSONObject:toString()Ljava/lang/String;
+[MASTER] 03:53:33.563 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I: Line 618
+[MASTER] 03:53:33.563 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I: Line 627
+[MASTER] 03:53:33.563 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I: Line 628
+[MASTER] 03:53:33.563 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.Frame.initInputFrame(Lwheel/asm/ClassWriter;I[Lwheel/asm/Type;I)V: Line 809
+[MASTER] 03:53:33.563 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.Frame.initInputFrame(Lwheel/asm/ClassWriter;I[Lwheel/asm/Type;I)V: Line 810
+[MASTER] 03:53:33.563 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.Frame.initInputFrame(Lwheel/asm/ClassWriter;I[Lwheel/asm/Type;I)V: Line 812
+[MASTER] 03:53:33.565 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I: I22 Branch 13 TABLESWITCH L610 Case 66 - true
+[MASTER] 03:53:33.565 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I: I22 Branch 23 TABLESWITCH L610 Case 76 - true
+[MASTER] 03:53:33.567 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.Frame.initInputFrame(Lwheel/asm/ClassWriter;I[Lwheel/asm/Type;I)V: I58 Branch 81 IF_ICMPGE L802 - true
+[MASTER] 03:53:33.567 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.Frame.initInputFrame(Lwheel/asm/ClassWriter;I[Lwheel/asm/Type;I)V: I100 Branch 84 IF_ICMPGE L809 - true
+[MASTER] 03:53:33.567 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.Frame.initInputFrame(Lwheel/asm/ClassWriter;I[Lwheel/asm/Type;I)V: I100 Branch 84 IF_ICMPGE L809 - false
+[MASTER] 03:53:33.572 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 898: wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I:618 - ReplaceConstant - 16777217 -> 0
+[MASTER] 03:53:33.572 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 899: wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I:618 - ReplaceConstant - 16777217 -> 1
+[MASTER] 03:53:33.572 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 900: wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I:618 - ReplaceConstant - 16777217 -> -1
+[MASTER] 03:53:33.572 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 901: wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I:618 - ReplaceConstant - 16777217 -> 16777216
+[MASTER] 03:53:33.572 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 902: wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I:618 - ReplaceConstant - 16777217 -> 16777218
+[MASTER] 03:53:33.575 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 942: wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I:627 - ReplaceConstant - 1 -> 0
+[MASTER] 03:53:33.575 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 943: wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I:627 - ReplaceArithmeticOperator + -> %
+[MASTER] 03:53:33.575 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 944: wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I:627 - ReplaceArithmeticOperator + -> -
+[MASTER] 03:53:33.575 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 945: wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I:627 - ReplaceArithmeticOperator + -> *
+[MASTER] 03:53:33.575 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 946: wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I:627 - ReplaceArithmeticOperator + -> /
+[MASTER] 03:53:33.575 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 947: wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I:627 - ReplaceConstant - 1 -> 0
+[MASTER] 03:53:33.575 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 948: wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I:627 - ReplaceArithmeticOperator - -> +
+[MASTER] 03:53:33.575 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 949: wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I:627 - ReplaceArithmeticOperator - -> %
+[MASTER] 03:53:33.576 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 950: wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I:627 - ReplaceArithmeticOperator - -> *
+[MASTER] 03:53:33.576 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 951: wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I:627 - ReplaceArithmeticOperator - -> /
+[MASTER] 03:53:33.576 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 952: wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I:628 - ReplaceConstant - 24117248 -> 0
+[MASTER] 03:53:33.578 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 953: wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I:628 - ReplaceConstant - 24117248 -> 1
+[MASTER] 03:53:33.578 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 954: wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I:628 - ReplaceConstant - 24117248 -> -1
+[MASTER] 03:53:33.578 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 955: wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I:628 - ReplaceConstant - 24117248 -> 24117247
+[MASTER] 03:53:33.578 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 956: wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I:628 - ReplaceConstant - 24117248 -> 24117249
+[MASTER] 03:53:33.578 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 959: wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I:628 - ReplaceBitwiseOperator | -> &
+[MASTER] 03:53:33.579 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2345: wheel.asm.Frame.initInputFrame(Lwheel/asm/ClassWriter;I[Lwheel/asm/Type;I)V:802 - ReplaceComparisonOperator >= -> >
+[MASTER] 03:53:33.579 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2470: wheel.asm.Frame.initInputFrame(Lwheel/asm/ClassWriter;I[Lwheel/asm/Type;I)V:805 - ReplaceComparisonOperator == -> >=
+[MASTER] 03:53:33.579 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2506: wheel.asm.Frame.initInputFrame(Lwheel/asm/ClassWriter;I[Lwheel/asm/Type;I)V:805 - ReplaceComparisonOperator != -> <
+[MASTER] 03:53:33.579 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2602: wheel.asm.Frame.initInputFrame(Lwheel/asm/ClassWriter;I[Lwheel/asm/Type;I)V:809 - ReplaceComparisonOperator >= -> -1
+[MASTER] 03:53:33.579 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2603: wheel.asm.Frame.initInputFrame(Lwheel/asm/ClassWriter;I[Lwheel/asm/Type;I)V:809 - ReplaceComparisonOperator >= -> >
+[MASTER] 03:53:33.579 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2635: wheel.asm.Frame.initInputFrame(Lwheel/asm/ClassWriter;I[Lwheel/asm/Type;I)V:810 - ReplaceConstant - 16777216 -> 0
+[MASTER] 03:53:33.579 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2636: wheel.asm.Frame.initInputFrame(Lwheel/asm/ClassWriter;I[Lwheel/asm/Type;I)V:810 - ReplaceConstant - 16777216 -> 1
+[MASTER] 03:53:33.579 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2637: wheel.asm.Frame.initInputFrame(Lwheel/asm/ClassWriter;I[Lwheel/asm/Type;I)V:810 - ReplaceConstant - 16777216 -> -1
+[MASTER] 03:53:33.579 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2638: wheel.asm.Frame.initInputFrame(Lwheel/asm/ClassWriter;I[Lwheel/asm/Type;I)V:810 - ReplaceConstant - 16777216 -> 16777215
+[MASTER] 03:53:33.579 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2639: wheel.asm.Frame.initInputFrame(Lwheel/asm/ClassWriter;I[Lwheel/asm/Type;I)V:810 - ReplaceConstant - 16777216 -> 16777217
+[MASTER] 03:53:33.580 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.asm.Frame.initInputFrame(Lwheel/asm/ClassWriter;I[Lwheel/asm/Type;I)V
+[MASTER] 03:53:33.581 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I: I22 Branch 23 TABLESWITCH L610 Case 76 - true in context: 
+[MASTER] 03:53:33.587 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.asm.Frame.initInputFrame(Lwheel/asm/ClassWriter;I[Lwheel/asm/Type;I)V: I58 Branch 81 IF_ICMPGE L802 - true in context: 
+[MASTER] 03:53:33.587 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.asm.Frame.type(Lwheel/asm/ClassWriter;Ljava/lang/String;)I: I22 Branch 13 TABLESWITCH L610 Case 66 - true in context: 
+[MASTER] 03:53:33.587 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.asm.Frame.initInputFrame(Lwheel/asm/ClassWriter;I[Lwheel/asm/Type;I)V: I100 Branch 84 IF_ICMPGE L809 - false in context: 
+[MASTER] 03:53:33.587 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.asm.Frame.initInputFrame(Lwheel/asm/ClassWriter;I[Lwheel/asm/Type;I)V: I100 Branch 84 IF_ICMPGE L809 - true in context: 
+[MASTER] 03:53:39.422 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.json.JSONObject.put(Ljava/lang/String;Z)Lwheel/json/JSONObject;
+[MASTER] 03:53:50.943 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.valueToString(Ljava/lang/Object;)Ljava/lang/String;: I81 Branch 115 IFEQ L1271 - false
+[MASTER] 03:53:50.951 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.json.JSONObject.valueToString(Ljava/lang/Object;)Ljava/lang/String;: I81 Branch 115 IFEQ L1271 - false in context: 
+[MASTER] 03:53:59.698 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.valueToString(Ljava/lang/Object;)Ljava/lang/String;: Line 1282
+[MASTER] 03:53:59.700 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.valueToString(Ljava/lang/Object;)Ljava/lang/String;: I128 Branch 118 IFEQ L1281 - false
+[MASTER] 03:53:59.706 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.json.JSONObject.valueToString(Ljava/lang/Object;)Ljava/lang/String;: I128 Branch 118 IFEQ L1281 - false in context: 
+[MASTER] 03:54:08.651 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.accumulate(Ljava/lang/String;Ljava/lang/Object;)Lwheel/json/JSONObject;: Line 351
+[MASTER] 03:54:08.654 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 150: wheel.json.JSONObject.accumulate(Ljava/lang/String;Ljava/lang/Object;)Lwheel/json/JSONObject;:351 - ReplaceVariable o -> value
+[MASTER] 03:54:08.654 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 151: wheel.json.JSONObject.accumulate(Ljava/lang/String;Ljava/lang/Object;)Lwheel/json/JSONObject;:351 - ReplaceVariable o -> NULL
+[MASTER] 03:54:08.654 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 152: wheel.json.JSONObject.accumulate(Ljava/lang/String;Ljava/lang/Object;)Lwheel/json/JSONObject;:351 - ReplaceVariable value -> o
+[MASTER] 03:54:08.654 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 153: wheel.json.JSONObject.accumulate(Ljava/lang/String;Ljava/lang/Object;)Lwheel/json/JSONObject;:351 - ReplaceVariable value -> NULL
+[MASTER] 03:54:08.662 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.json.JSONObject.accumulate(Ljava/lang/String;Ljava/lang/Object;)Lwheel/json/JSONObject;: I37 Branch 26 IFEQ L350 - false in context: wheel.json.JSONObject:accumulate(Ljava/lang/String;Ljava/lang/Object;)Lwheel/json/JSONObject;
+[MASTER] 03:54:12.594 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.json.JSONObject.write(Ljava/io/Writer;)Ljava/io/Writer;: Line 1366
+[MASTER] 03:54:12.596 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 751: wheel.json.JSONObject.write(Ljava/io/Writer;)Ljava/io/Writer;:1366 - ReplaceVariable v -> k
+[MASTER] 03:54:12.596 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 752: wheel.json.JSONObject.write(Ljava/io/Writer;)Ljava/io/Writer;:1366 - ReplaceVariable v -> NULL
+[MASTER] 03:54:12.597 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.json.JSONObject.write(Ljava/io/Writer;)Ljava/io/Writer;: I64 Branch 132 IFEQ L1365 - false in context: wheel.json.JSONObject:write(Ljava/io/Writer;)Ljava/io/Writer;
+[MASTER] 03:54:14.586 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 03:54:16.203 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.addFirst(Lwheel/components/Component;)Lwheel/components/Component;: Line 1784
+[MASTER] 03:54:16.207 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 324: wheel.components.Component.addFirst(Lwheel/components/Component;)Lwheel/components/Component;:1784 - ReplaceConstant - 1 -> 0
+[MASTER] 03:54:16.235 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.components.Component.addFirst(Lwheel/components/Component;)Lwheel/components/Component;
+[MASTER] 03:54:16.236 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.components.Component.u()Lwheel/components/Component;
+[MASTER] 03:54:16.238 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.components.Component.iframe()Lwheel/components/Component;
+[MASTER] 03:54:16.240 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.components.Component.code()Lwheel/components/Component;
+[MASTER] 03:54:16.241 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.components.Component.addFirst(Lwheel/components/Component;)Lwheel/components/Component;
+[MASTER] 03:54:16.241 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.components.Component.u()Lwheel/components/Component;
+[MASTER] 03:54:16.242 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.components.Component.addFirst(Lwheel/components/Component;)Lwheel/components/Component;: root-Branch in context: wheel.components.Component:addFirst(Lwheel/components/Component;)Lwheel/components/Component;
+[MASTER] 03:54:22.087 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: wheel.components.Component._getTopLevelComponent(Z)Lwheel/components/StandaloneComponent;:NonNull:wheel.components.StandaloneComponent:_isBuilt()Z:False
+[MASTER] 03:54:22.087 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: wheel.components.Component._getTopLevelComponent(Z)Lwheel/components/StandaloneComponent;:NonNull:wheel.components.StandaloneComponent:isPage()Z:True
+[MASTER] 03:54:22.087 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: wheel.components.Component._getTopLevelComponent(Z)Lwheel/components/StandaloneComponent;:NonNull:wheel.components.StandaloneComponent:_isGeneratedId()Z:False
+[MASTER] 03:54:22.088 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.components.Component.acronym(Ljava/lang/Object;)Lwheel/components/Component;
+[MASTER] 03:54:22.089 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.components.Component._getTopLevelComponent(Z)Lwheel/components/StandaloneComponent;
+[MASTER] 03:54:22.090 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.components.Component._getTopLevelComponent(Z)Lwheel/components/StandaloneComponent;: I25 Branch 65 IFEQ L1737 - false in context: wheel.components.Component:_getTopLevelComponent(Z)Lwheel/components/StandaloneComponent;
+[MASTER] 03:54:22.090 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.components.Component._getTopLevelComponent(Z)Lwheel/components/StandaloneComponent;: I20 Branch 64 IFNULL L1736 - false in context: wheel.components.Component:_getTopLevelComponent(Z)Lwheel/components/StandaloneComponent;
+[MASTER] 03:54:40.847 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.getPage()Lwheel/components/StandaloneComponent;: Line 1761
+[MASTER] 03:54:40.851 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.components.Component.imageSubmit(Ljava/lang/String;Ljava/lang/String;)Lwheel/components/FormElement;
+[MASTER] 03:55:07.609 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.getComponentName()Ljava/lang/String;: Line 126
+[MASTER] 03:55:07.610 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.getComponentName()Ljava/lang/String;: Line 127
+[MASTER] 03:55:07.613 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.addChild(Lwheel/components/Component;Z)Lwheel/components/Component;: Line 1804
+[MASTER] 03:55:07.613 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.addChild(Lwheel/components/Component;Z)Lwheel/components/Component;: Line 1806
+[MASTER] 03:55:07.613 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.addChild(Lwheel/components/Component;Z)Lwheel/components/Component;: Line 1809
+[MASTER] 03:55:07.613 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.addChild(Lwheel/components/Component;Z)Lwheel/components/Component;: Line 1811
+[MASTER] 03:55:07.614 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 0: wheel.components.Component.getComponentName()Ljava/lang/String;:127 - ReplaceConstant - . -> 
+[MASTER] 03:55:07.614 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1: wheel.components.Component.getComponentName()Ljava/lang/String;:127 - ReplaceConstant - 1 -> 0
+[MASTER] 03:55:07.615 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2: wheel.components.Component.getComponentName()Ljava/lang/String;:127 - ReplaceArithmeticOperator + -> %
+[MASTER] 03:55:07.615 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 3: wheel.components.Component.getComponentName()Ljava/lang/String;:127 - ReplaceArithmeticOperator + -> -
+[MASTER] 03:55:07.615 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 4: wheel.components.Component.getComponentName()Ljava/lang/String;:127 - ReplaceArithmeticOperator + -> *
+[MASTER] 03:55:07.615 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 5: wheel.components.Component.getComponentName()Ljava/lang/String;:127 - ReplaceArithmeticOperator + -> /
+[MASTER] 03:55:07.615 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 333: wheel.components.Component.addChild(Lwheel/components/Component;Z)Lwheel/components/Component;:1806 - InsertUnaryOp Negation
+[MASTER] 03:55:07.615 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 334: wheel.components.Component.addChild(Lwheel/components/Component;Z)Lwheel/components/Component;:1806 - ReplaceComparisonOperator == -> !=
+[MASTER] 03:55:07.618 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.components.Component.link()Lwheel/components/Component;
+[MASTER] 03:55:07.621 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.components.Component.addChild(Lwheel/components/Component;Z)Lwheel/components/Component;: I22 Branch 72 IFEQ L1803 - false in context: 
+[MASTER] 03:55:07.621 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.components.Component.addChild(Lwheel/components/Component;Z)Lwheel/components/Component;: I32 Branch 73 IFEQ L1806 - true in context: 
+[MASTER] 03:55:13.147 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.rawText(Ljava/lang/Object;)Lwheel/components/Component;: Line 1609
+[MASTER] 03:55:13.147 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.rawText(Ljava/lang/Object;)Lwheel/components/Component;: Line 1610
+[MASTER] 03:55:13.147 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.rawText(Ljava/lang/Object;)Lwheel/components/Component;: Line 1611
+[MASTER] 03:55:13.147 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.rawText(Ljava/lang/Object;)Lwheel/components/Component;: Line 1612
+[MASTER] 03:55:13.147 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.rawText(Ljava/lang/Object;)Lwheel/components/Component;: Line 1613
+[MASTER] 03:55:13.150 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 259: wheel.components.Component.rawText(Ljava/lang/Object;)Lwheel/components/Component;:1610 - ReplaceConstant - 0 -> 1
+[MASTER] 03:55:13.150 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 260: wheel.components.Component.rawText(Ljava/lang/Object;)Lwheel/components/Component;:1611 - ReplaceConstant - 1 -> 0
+[MASTER] 03:55:13.152 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.components.Component.rawText(Ljava/lang/Object;)Lwheel/components/Component;
+[MASTER] 03:55:13.153 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.components.Component.rawText(Ljava/lang/Object;)Lwheel/components/Component;
+[MASTER] 03:55:13.153 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.components.Component.rawText(Ljava/lang/Object;)Lwheel/components/Component;: root-Branch in context: wheel.components.Component:rawText(Ljava/lang/Object;)Lwheel/components/Component;
+[MASTER] 03:55:31.363 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.small(Ljava/lang/Object;)Lwheel/components/Component;: Line 616
+[MASTER] 03:55:31.371 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: wheel.components.Component.small(Ljava/lang/Object;)Lwheel/components/Component;:NonNull:wheel.components.Component:_isGeneratedId()Z:True
+[MASTER] 03:55:31.374 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.components.Component.small(Ljava/lang/Object;)Lwheel/components/Component;
+[MASTER] 03:55:47.573 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.components.Component.add(Lwheel/components/Component;)Lwheel/components/Component;
+[MASTER] 03:55:47.574 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.components.Component.message(Ljava/lang/String;)Ljava/lang/String;
+[MASTER] 03:56:02.109 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.h1()Lwheel/components/Component;: Line 1043
+[MASTER] 03:56:02.109 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.h1()Lwheel/components/Component;: Line 1044
+[MASTER] 03:56:02.109 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.h1()Lwheel/components/Component;: Line 1045
+[MASTER] 03:56:02.109 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.h1()Lwheel/components/Component;: Line 1046
+[MASTER] 03:56:02.112 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.h1()Lwheel/components/Component;: root-Branch
+[MASTER] 03:56:02.114 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 198: wheel.components.Component.h1()Lwheel/components/Component;:1044 - ReplaceConstant - h1 -> 
+[MASTER] 03:56:02.116 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: wheel.components.Component.h1()Lwheel/components/Component;:NonNull:wheel.components.Component:_isGeneratedId()Z:True
+[MASTER] 03:56:02.116 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.components.Component.checkbox(Ljava/lang/String;)Lwheel/components/FormElement;
+[MASTER] 03:56:02.116 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.components.Component.h1()Lwheel/components/Component;
+[MASTER] 03:56:02.118 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.components.Component.h1()Lwheel/components/Component;
+[MASTER] 03:56:02.120 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.components.Component.h1()Lwheel/components/Component;: root-Branch in context: wheel.components.Component:h1()Lwheel/components/Component;
+[MASTER] 03:56:47.497 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.components.Component.div()Lwheel/components/Component;
+[MASTER] 03:56:58.778 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.components.Component.tr()Lwheel/components/Component;
+[MASTER] 03:57:01.366 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.components.Component.kbd(Ljava/lang/Object;)Lwheel/components/Component;
+* Search finished after 258s and 133 generations, 64959 statements, best individual has fitness: 8472.0
+* Search finished after 256s and 161 generations, 57657 statements, best individual has fitness: 8096.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 42%
+* Total number of goals: 414
+* Number of covered goals: 173
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 72%
+* Total number of goals: 687
+* Number of covered goals: 494
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 9
+* Number of covered goals: 9
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 43%
+* Total number of goals: 761
+* Number of covered goals: 329
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 4
+* Number of covered goals: 4
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 4
+* Number of covered goals: 4
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 72%
+* Total number of goals: 687
+* Number of covered goals: 494
+* Generated 188 tests with total length 1273
+* Resulting test suite's coverage: 59% (average coverage for all fitness functions)
+* Generating assertions
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 87%
+* Total number of goals: 909
+* Number of covered goals: 794
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 79%
+* Total number of goals: 480
+* Number of covered goals: 377
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 312
+* Number of covered goals: 312
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 76%
+* Total number of goals: 569
+* Number of covered goals: 435
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 28%
+* Total number of goals: 708
+* Number of covered goals: 195
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 99%
+* Total number of goals: 199
+* Number of covered goals: 198
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 97%
+* Total number of goals: 199
+* Number of covered goals: 193
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 76%
+* Total number of goals: 480
+* Number of covered goals: 367
+* Generated 472 tests with total length 3917
+* Resulting test suite's coverage: 74% (average coverage for all fitness functions)
+* Generating assertions
+* Search finished after 319s and 372 generations, 123575 statements, best individual has fitness: 1960.0
+* Resulting test suite's mutation score: 10%
+* Compiling and checking tests
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 91%
+* Total number of goals: 363
+* Number of covered goals: 331
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 87%
+* Total number of goals: 294
+* Number of covered goals: 257
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 36
+* Number of covered goals: 36
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 92%
+* Total number of goals: 771
+* Number of covered goals: 706
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 58%
+* Total number of goals: 153
+* Number of covered goals: 88
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 95%
+* Total number of goals: 60
+* Number of covered goals: 57
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 95%
+* Total number of goals: 60
+* Number of covered goals: 57
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 86%
+* Total number of goals: 294
+* Number of covered goals: 254
+* Generated 164 tests with total length 654
+* Resulting test suite's coverage: 88% (average coverage for all fitness functions)
+* Generating assertions
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 8
+* Writing JUnit test case 'Frame_ESTest' to /home/ubuntu/termite/mosa/tests/s1026/80_wheelwebtool/evosuite-tests
+* Done!
+
+* Computation finished
+* Resulting test suite's mutation score: 46%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 1
+* Writing JUnit test case 'JSONObject_ESTest' to /home/ubuntu/termite/mosa/tests/s1026/80_wheelwebtool/evosuite-tests
+* Done!
+
+* Computation finished
+* Resulting test suite's mutation score: 27%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 4
+* Writing JUnit test case 'Component_ESTest' to /home/ubuntu/termite/mosa/tests/s1026/80_wheelwebtool/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: wheel.util.DynamicSelectModel
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/80_wheelwebtool/evosuite-files/evosuite.properties
+* Connecting to master process on port 18045
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 04:13:31.863 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 04:13:31.895 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 04:13:31.908 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 04:13:33.875 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 04:13:35.215 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 04:13:35.236 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 04:13:35.237 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 04:13:35.238 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 04:13:35.245 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 04:13:35.253 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 04:13:35.253 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 04:13:35.270 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 04:13:35.272 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 04:13:35.325 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 04:13:35.336 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+* Finished analyzing classpath
+* Generating tests for class wheel.util.DynamicSelectModel
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 297
+* Using seed 1026
+* Starting evolution
+[MASTER] 04:13:36.726 [logback-2] ERROR TestCluster - Failed to check cache for java.util.LinkedList<E> : Type points to itself
+* Search finished after 290s and 1489 generations, 227524 statements, best individual has fitness: 456.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 84%
+* Total number of goals: 75
+* Number of covered goals: 63
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 90%
+* Total number of goals: 40
+* Number of covered goals: 36
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 35
+* Number of covered goals: 35
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 72%
+* Total number of goals: 69
+* Number of covered goals: 50
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 51%
+* Total number of goals: 35
+* Number of covered goals: 18
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 19
+* Number of covered goals: 19
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 19
+* Number of covered goals: 19
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 90%
+* Total number of goals: 40
+* Number of covered goals: 36
+* Generated 49 tests with total length 173
+* Resulting test suite's coverage: 83% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 33%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 2
+* Writing JUnit test case 'DynamicSelectModel_ESTest' to /home/ubuntu/termite/mosa/tests/s1026/80_wheelwebtool/evosuite-tests
+* Done!
+
+* Computation finished

@@ -1,0 +1,110 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.exolab.jms.config.ConnectionFactories
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/66_openjms/evosuite-files/evosuite.properties
+* Connecting to master process on port 18045
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 18:19:54.129 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 18:19:54.131 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 18:19:54.132 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 18:19:54.181 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class org.exolab.jms.config.ConnectionFactories
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/66_openjms/src/main/java/org/exolab/jms/config/ConnectionFactories.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1026
+* Starting evolution
+[MASTER] 18:21:09.920 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.exolab.jms.config.ConnectionFactories.getConnectionFactory()[Lorg/exolab/jms/config/ConnectionFactory;: Line 349
+[MASTER] 18:21:09.922 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.exolab.jms.config.ConnectionFactories.isValid()Z: Line 555
+[MASTER] 18:21:09.922 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.exolab.jms.config.ConnectionFactories.isValid()Z: Line 556
+[MASTER] 18:21:09.923 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.exolab.jms.config.ConnectionFactories.setConnectionFactory([Lorg/exolab/jms/config/ConnectionFactory;)V: Line 675
+[MASTER] 18:21:09.923 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.exolab.jms.config.ConnectionFactories.setConnectionFactory([Lorg/exolab/jms/config/ConnectionFactory;)V: Line 676
+[MASTER] 18:21:09.924 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.exolab.jms.config.ConnectionFactories.setConnectionFactory([Lorg/exolab/jms/config/ConnectionFactory;)V: Line 677
+[MASTER] 18:21:09.924 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.exolab.jms.config.ConnectionFactories.setConnectionFactory([Lorg/exolab/jms/config/ConnectionFactory;)V: Line 679
+[MASTER] 18:21:09.931 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.exolab.jms.config.ConnectionFactories.getConnectionFactory()[Lorg/exolab/jms/config/ConnectionFactory;: I18 Branch 3 IF_ICMPGE L348 - false
+[MASTER] 18:21:09.933 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.exolab.jms.config.ConnectionFactories.setConnectionFactory([Lorg/exolab/jms/config/ConnectionFactory;)V: I13 Branch 21 IF_ICMPGE L676 - true
+[MASTER] 18:21:09.934 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.exolab.jms.config.ConnectionFactories.setConnectionFactory([Lorg/exolab/jms/config/ConnectionFactory;)V: I13 Branch 21 IF_ICMPGE L676 - false
+[MASTER] 18:21:09.937 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 37: org.exolab.jms.config.ConnectionFactories.getConnectionFactory()[Lorg/exolab/jms/config/ConnectionFactory;:348 - ReplaceVariable index -> size
+[MASTER] 18:21:09.940 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 41: org.exolab.jms.config.ConnectionFactories.getConnectionFactory()[Lorg/exolab/jms/config/ConnectionFactory;:348 - ReplaceVariable size -> index
+[MASTER] 18:21:09.942 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 45: org.exolab.jms.config.ConnectionFactories.getConnectionFactory()[Lorg/exolab/jms/config/ConnectionFactory;:348 - ReplaceComparisonOperator >= -> -1
+[MASTER] 18:21:09.943 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 48: org.exolab.jms.config.ConnectionFactories.getConnectionFactory()[Lorg/exolab/jms/config/ConnectionFactory;:349 - ReplaceVariable index -> size
+[MASTER] 18:21:09.944 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 49: org.exolab.jms.config.ConnectionFactories.getConnectionFactory()[Lorg/exolab/jms/config/ConnectionFactory;:349 - InsertUnaryOp Negation of index
+[MASTER] 18:21:09.944 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 50: org.exolab.jms.config.ConnectionFactories.getConnectionFactory()[Lorg/exolab/jms/config/ConnectionFactory;:349 - InsertUnaryOp IINC 1 index
+[MASTER] 18:21:09.945 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 51: org.exolab.jms.config.ConnectionFactories.getConnectionFactory()[Lorg/exolab/jms/config/ConnectionFactory;:349 - InsertUnaryOp IINC -1 index
+[MASTER] 18:21:09.946 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 52: org.exolab.jms.config.ConnectionFactories.getConnectionFactory()[Lorg/exolab/jms/config/ConnectionFactory;:349 - ReplaceVariable index -> size
+[MASTER] 18:21:09.946 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 53: org.exolab.jms.config.ConnectionFactories.getConnectionFactory()[Lorg/exolab/jms/config/ConnectionFactory;:349 - InsertUnaryOp Negation of index
+[MASTER] 18:21:09.947 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 54: org.exolab.jms.config.ConnectionFactories.getConnectionFactory()[Lorg/exolab/jms/config/ConnectionFactory;:349 - InsertUnaryOp IINC 1 index
+[MASTER] 18:21:09.947 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 55: org.exolab.jms.config.ConnectionFactories.getConnectionFactory()[Lorg/exolab/jms/config/ConnectionFactory;:349 - InsertUnaryOp IINC -1 index
+[MASTER] 18:21:09.948 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 56: org.exolab.jms.config.ConnectionFactories.getConnectionFactory()[Lorg/exolab/jms/config/ConnectionFactory;:348 - ReplaceVariable index -> size
+[MASTER] 18:21:09.948 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 252: org.exolab.jms.config.ConnectionFactories.isValid()Z:556 - ReplaceConstant - 0 -> 1
+[MASTER] 18:21:09.949 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 275: org.exolab.jms.config.ConnectionFactories.setConnectionFactory([Lorg/exolab/jms/config/ConnectionFactory;)V:676 - ReplaceConstant - 0 -> 1
+[MASTER] 18:21:09.949 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 276: org.exolab.jms.config.ConnectionFactories.setConnectionFactory([Lorg/exolab/jms/config/ConnectionFactory;)V:676 - InsertUnaryOp Negation of i
+[MASTER] 18:21:09.950 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 277: org.exolab.jms.config.ConnectionFactories.setConnectionFactory([Lorg/exolab/jms/config/ConnectionFactory;)V:676 - InsertUnaryOp IINC 1 i
+[MASTER] 18:21:09.950 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 278: org.exolab.jms.config.ConnectionFactories.setConnectionFactory([Lorg/exolab/jms/config/ConnectionFactory;)V:676 - InsertUnaryOp IINC -1 i
+[MASTER] 18:21:09.951 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 279: org.exolab.jms.config.ConnectionFactories.setConnectionFactory([Lorg/exolab/jms/config/ConnectionFactory;)V:676 - ReplaceComparisonOperator >= -> -1
+[MASTER] 18:21:09.951 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 280: org.exolab.jms.config.ConnectionFactories.setConnectionFactory([Lorg/exolab/jms/config/ConnectionFactory;)V:676 - ReplaceComparisonOperator >= -> >
+[MASTER] 18:21:09.952 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 282: org.exolab.jms.config.ConnectionFactories.setConnectionFactory([Lorg/exolab/jms/config/ConnectionFactory;)V:677 - InsertUnaryOp Negation of i
+[MASTER] 18:21:09.953 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 283: org.exolab.jms.config.ConnectionFactories.setConnectionFactory([Lorg/exolab/jms/config/ConnectionFactory;)V:677 - InsertUnaryOp IINC 1 i
+[MASTER] 18:21:09.953 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 284: org.exolab.jms.config.ConnectionFactories.setConnectionFactory([Lorg/exolab/jms/config/ConnectionFactory;)V:677 - InsertUnaryOp IINC -1 i
+[MASTER] 18:21:09.954 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: org.exolab.jms.config.ConnectionFactories.isValid()Z:False
+[MASTER] 18:21:09.955 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.exolab.jms.config.ConnectionFactories.setConnectionFactory([Lorg/exolab/jms/config/ConnectionFactory;)V
+[MASTER] 18:21:09.957 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.exolab.jms.config.ConnectionFactories.setConnectionFactory([Lorg/exolab/jms/config/ConnectionFactory;)V
+[MASTER] 18:21:09.958 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.exolab.jms.config.ConnectionFactories.setConnectionFactory([Lorg/exolab/jms/config/ConnectionFactory;)V: I13 Branch 21 IF_ICMPGE L676 - true in context: org.exolab.jms.config.ConnectionFactories:setConnectionFactory([Lorg/exolab/jms/config/ConnectionFactory;)V
+[MASTER] 18:21:09.959 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.exolab.jms.config.ConnectionFactories.setConnectionFactory([Lorg/exolab/jms/config/ConnectionFactory;)V: I13 Branch 21 IF_ICMPGE L676 - false in context: org.exolab.jms.config.ConnectionFactories:setConnectionFactory([Lorg/exolab/jms/config/ConnectionFactory;)V
+* Search finished after 841s and 518 generations, 479442 statements, best individual has fitness: 512.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 99%
+* Total number of goals: 177
+* Number of covered goals: 175
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 114
+* Number of covered goals: 114
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 30
+* Number of covered goals: 30
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 97%
+* Total number of goals: 410
+* Number of covered goals: 397
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 52%
+* Total number of goals: 93
+* Number of covered goals: 48
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 66
+* Number of covered goals: 66
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 66
+* Number of covered goals: 66
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 99%
+* Total number of goals: 114
+* Number of covered goals: 113
+* Generated 98 tests with total length 2278
+* Resulting test suite's coverage: 94% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 25%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 1
+* Writing JUnit test case 'ConnectionFactories_ESTest' to /home/ubuntu/termite/qmosa/tests/s1026/66_openjms/evosuite-tests
+* Done!
+
+* Computation finished

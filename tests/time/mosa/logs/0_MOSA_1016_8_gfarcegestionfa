@@ -1,0 +1,145 @@
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: fr.unice.gfarce.dao.OracleIdentiteDao
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/8_gfarcegestionfa/evosuite-files/evosuite.properties
+* Connecting to master process on port 19146
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 02:34:17.938 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 02:34:17.994 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 02:34:18.014 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 02:34:18.097 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 02:34:18.105 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 02:34:18.106 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 02:34:18.113 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 02:34:18.139 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 02:34:18.145 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 02:34:18.145 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 02:34:18.155 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 02:34:18.176 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 02:34:18.262 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 02:34:18.294 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 02:34:18.297 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 02:34:18.317 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 02:34:18.444 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+[MASTER] 02:34:18.796 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: javax.persistence.criteria.CriteriaDelete
+[MASTER] 02:34:18.817 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: javax.persistence.criteria.CriteriaQuery
+[MASTER] 02:34:18.818 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: javax.persistence.criteria.CriteriaUpdate
+* Finished analyzing classpath
+* Generating tests for class fr.unice.gfarce.dao.OracleIdentiteDao
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 435
+* Using seed 1016
+* Starting evolution
+[MASTER] 02:34:32.831 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was fr.unice.gfarce.dao.OracleIdentiteDao.<init>()V: Line 25
+[MASTER] 02:34:32.833 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was fr.unice.gfarce.dao.OracleIdentiteDao.<init>()V: Line 27
+[MASTER] 02:34:32.840 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] fr.unice.gfarce.dao.OracleIdentiteDao.<init>()V
+[MASTER] 02:34:32.841 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] fr.unice.gfarce.dao.OracleIdentiteDao.<init>()V
+[MASTER] 02:34:32.843 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch fr.unice.gfarce.dao.OracleIdentiteDao.<init>()V: root-Branch in context: fr.unice.gfarce.dao.OracleIdentiteDao:<init>()V
+* Search finished after 126s and 1 generations, 1704 statements, best individual has fitness: 1008.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 86%
+* Total number of goals: 111
+* Number of covered goals: 95
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 47%
+* Total number of goals: 76
+* Number of covered goals: 36
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100% (no goals)
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 86%
+* Total number of goals: 142
+* Number of covered goals: 122
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 29%
+* Total number of goals: 14
+* Number of covered goals: 4
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 47%
+* Total number of goals: 76
+* Number of covered goals: 36
+* Generated 14 tests with total length 90
+* Resulting test suite's coverage: 71% (average coverage for all fitness functions)
+* Generating assertions
+* Error while initializing target class: fr.unice.gfarce.identity.Identite and fr.unice.gfarce.identity.Identite$TypeIdentite disagree on InnerClasses attribute
+[MASTER] 02:36:48.617 [logback-2] ERROR AssertionGenerator - Problem for fr.unice.gfarce.dao.OracleIdentiteDao. Full stack:
+java.lang.IncompatibleClassChangeError: fr.unice.gfarce.identity.Identite and fr.unice.gfarce.identity.Identite$TypeIdentite disagree on InnerClasses attribute
+	at java.lang.Class.getDeclaringClass0(Native Method) ~[na:1.8.0_201]
+	at java.lang.Class.getDeclaringClass(Class.java:1235) ~[na:1.8.0_201]
+	at java.lang.Class.getEnclosingClass(Class.java:1277) ~[na:1.8.0_201]
+	at org.evosuite.utils.generic.GenericClass.isMissingTypeParameters(GenericClass.java:175) ~[evosuite.jar:1.0.6]
+	at org.evosuite.utils.generic.GenericClass.addTypeParameters(GenericClass.java:71) ~[evosuite.jar:1.0.6]
+	at org.evosuite.utils.generic.GenericClass.changeClassLoader(GenericClass.java:396) ~[evosuite.jar:1.0.6]
+	at org.evosuite.testcase.variable.VariableReferenceImpl.changeClassLoader(VariableReferenceImpl.java:575) ~[evosuite.jar:1.0.6]
+	at org.evosuite.testcase.statements.AbstractStatement.changeClassLoader(AbstractStatement.java:523) ~[evosuite.jar:1.0.6]
+	at org.evosuite.testcase.statements.PrimitiveStatement.changeClassLoader(PrimitiveStatement.java:437) ~[evosuite.jar:1.0.6]
+	at org.evosuite.testcase.statements.EnumPrimitiveStatement.changeClassLoader(EnumPrimitiveStatement.java:245) ~[evosuite.jar:1.0.6]
+	at org.evosuite.testcase.DefaultTestCase.changeClassLoader(DefaultTestCase.java:261) ~[evosuite.jar:1.0.6]
+	at org.evosuite.assertion.AssertionGenerator.changeClassLoader(AssertionGenerator.java:234) ~[evosuite.jar:1.0.6]
+	at org.evosuite.assertion.MutationAssertionGenerator.setupClassLoader(MutationAssertionGenerator.java:188) [evosuite.jar:1.0.6]
+	at org.evosuite.assertion.SimpleMutationAssertionGenerator.addAssertions(SimpleMutationAssertionGenerator.java:57) [evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGeneratorHelper.addAssertions(TestSuiteGeneratorHelper.java:285) [evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.postProcessTests(TestSuiteGenerator.java:520) [evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:238) [evosuite.jar:1.0.6]
+	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:145) [evosuite.jar:1.0.6]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_201]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+[MASTER] 02:42:18.540 [logback-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.690375% of time used, but only 5/14 tests minimized), falling back to using all assertions
+[MASTER] 02:42:20.743 [logback-2] ERROR ClientNodeImpl - Error when generating tests for: fr.unice.gfarce.dao.OracleIdentiteDao with seed 1016. Configuration id : MOSA
+java.lang.IncompatibleClassChangeError: fr.unice.gfarce.identity.Identite and fr.unice.gfarce.identity.Identite$TypeIdentite disagree on InnerClasses attribute
+	at java.lang.Class.getDeclaringClass0(Native Method) ~[na:1.8.0_201]
+	at java.lang.Class.getDeclaringClass(Class.java:1235) ~[na:1.8.0_201]
+	at java.lang.Class.getEnclosingClass(Class.java:1277) ~[na:1.8.0_201]
+	at java.lang.Class.getSimpleBinaryName(Class.java:1443) ~[na:1.8.0_201]
+	at java.lang.Class.getSimpleName(Class.java:1309) ~[na:1.8.0_201]
+	at java.lang.Class.isAnonymousClass(Class.java:1411) ~[na:1.8.0_201]
+	at org.evosuite.utils.NumberFormatter.getNumberString(NumberFormatter.java:125) ~[evosuite.jar:1.0.6]
+	at org.evosuite.testcase.TestCodeVisitor.visitPrimitiveStatement(TestCodeVisitor.java:1042) ~[evosuite.jar:1.0.6]
+	at org.evosuite.testcase.TestVisitor.visitStatement(TestVisitor.java:141) ~[evosuite.jar:1.0.6]
+	at org.evosuite.testcase.TestCodeVisitor.visitStatement(TestCodeVisitor.java:1867) ~[evosuite.jar:1.0.6]
+	at org.evosuite.testcase.statements.AbstractStatement.getCode(AbstractStatement.java:279) ~[evosuite.jar:1.0.6]
+	at org.evosuite.testcase.statements.AbstractStatement.getCode(AbstractStatement.java:271) ~[evosuite.jar:1.0.6]
+	at org.evosuite.testcase.DefaultTestCase.accept(DefaultTestCase.java:116) ~[evosuite.jar:1.0.6]
+	at org.evosuite.testcase.DefaultTestCase.toCode(DefaultTestCase.java:1181) ~[evosuite.jar:1.0.6]
+	at org.evosuite.assertion.CompleteAssertionGenerator.addAssertions(CompleteAssertionGenerator.java:53) ~[evosuite.jar:1.0.6]
+	at org.evosuite.assertion.SimpleMutationAssertionGenerator.addAssertions(SimpleMutationAssertionGenerator.java:87) ~[evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGeneratorHelper.addAssertions(TestSuiteGeneratorHelper.java:285) ~[evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.postProcessTests(TestSuiteGenerator.java:520) ~[evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:238) ~[evosuite.jar:1.0.6]
+	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:145) ~[evosuite.jar:1.0.6]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_201]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+* Computation finished
+[MASTER] 02:42:20.850 [main] ERROR SearchStatistics - No obtained value for output variable: MutationScore
+[MASTER] 02:42:22.852 [main] ERROR SearchStatistics - No obtained value for output variable: MutationScore
+[MASTER] 02:42:23.852 [main] ERROR SearchStatistics - No obtained value for output variable: MutationScore
+[MASTER] 02:42:24.853 [main] ERROR SearchStatistics - No obtained value for output variable: MutationScore
+[MASTER] 02:42:25.853 [main] ERROR SearchStatistics - No obtained value for output variable: MutationScore
+[MASTER] 02:42:26.854 [main] ERROR SearchStatistics - No obtained value for output variable: MutationScore
+[MASTER] 02:42:26.854 [main] ERROR SearchStatistics - Not going to write down statistics data, as some are missing
+[MASTER] 02:42:26.954 [main] ERROR TestGeneration - failed to write statistics data

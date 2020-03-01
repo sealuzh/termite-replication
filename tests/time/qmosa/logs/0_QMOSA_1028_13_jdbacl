@@ -1,0 +1,199 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.databene.jdbacl.DBUtil
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/13_jdbacl/evosuite-files/evosuite.properties
+* Connecting to master process on port 20780
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 10:49:02.532 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.SQLType
+[MASTER] 10:49:04.246 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 10:49:04.247 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 10:49:04.248 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 10:49:04.443 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 10:49:04.445 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 10:49:04.445 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 10:49:09.918 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 10:49:09.968 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 10:49:09.969 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 10:49:09.992 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 10:49:09.993 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 10:49:09.994 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 10:49:09.994 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 10:49:10.022 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 10:49:10.024 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 10:49:11.510 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToDoubleFunction
+[MASTER] 10:49:11.518 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToIntFunction
+[MASTER] 10:49:11.519 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToLongFunction
+[MASTER] 10:49:11.733 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 10:49:14.756 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class org.databene.jdbacl.DBUtil
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/13_jdbacl/src/main/java/org/databene/jdbacl/DBUtil.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1028
+* Starting evolution
+[MASTER] 10:49:47.451 [logback-2] ERROR TestCluster - Failed to check cache for java.lang.Class<T> : Type points to itself
+[MASTER] 10:50:24.900 [logback-2] ERROR TestCluster - Failed to check cache for org.databene.jdbacl.model.CompositeDBObject<C> : Type points to itself
+* Search finished after 122s and 41 generations, 16352 statements, best individual has fitness: 7440.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 59%
+* Total number of goals: 324
+* Number of covered goals: 190
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 50%
+* Total number of goals: 197
+* Number of covered goals: 99
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 46
+* Number of covered goals: 46
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 55%
+* Total number of goals: 700
+* Number of covered goals: 387
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 8%
+* Total number of goals: 255
+* Number of covered goals: 21
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 90%
+* Total number of goals: 51
+* Number of covered goals: 46
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 88%
+* Total number of goals: 51
+* Number of covered goals: 45
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 40%
+* Total number of goals: 197
+* Number of covered goals: 79
+* Generated 78 tests with total length 984
+* Resulting test suite's coverage: 49% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 11%
+* Compiling and checking tests
+[MASTER] 10:51:41.817 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.LocalGDSImpl: no jaybird21 in java.library.path
+[MASTER] 10:51:41.849 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.NativeGDSImpl: org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 10:51:42.079 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.JniGDSImpl: Could not initialize class org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 10:51:42.143 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.EmbeddedGDSImpl: org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 10:51:43.135 [logback-2] ERROR ClassResetter - java.lang.NoClassDefFoundError: Could not initialize class org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 10:51:44.448 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.NativeGDSImpl: no jaybird21 in java.library.path
+[MASTER] 10:51:45.589 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.LocalGDSImpl: org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 10:51:47.345 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.derby.iapi.types.SqlXmlUtil: org/apache/xml/utils/PrefixResolver
+* Permissions denied during test execution: 
+  - java.io.FilePermission: 
+         write /dev/random: 1
+  - java.net.SocketPermission: 
+         resolve java.lang.String@0000000038: 1
+         resolve java.lang.String@0000000129: 1
+         resolve java.lang.String@0000000019: 1
+         and other 3 cases of action/name for this exception class
+* Writing JUnit test case 'DBUtil_ESTest' to /home/ubuntu/termite/qmosa/tests/s1028/13_jdbacl/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.databene.jdbacl.SQLUtil
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/13_jdbacl/evosuite-files/evosuite.properties
+* Connecting to master process on port 20773
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 11:00:49.694 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 11:00:49.701 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 11:00:49.713 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 11:00:49.814 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 11:00:49.815 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 11:00:49.817 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 11:00:52.143 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.SQLType
+[MASTER] 11:00:52.783 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 11:00:52.793 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 11:00:52.794 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 11:00:52.799 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 11:00:52.800 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 11:00:52.801 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 11:00:52.802 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 11:00:52.813 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 11:00:52.819 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 11:00:58.293 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToDoubleFunction
+[MASTER] 11:00:58.293 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToIntFunction
+[MASTER] 11:00:58.344 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToLongFunction
+[MASTER] 11:01:01.456 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 11:01:04.806 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class org.databene.jdbacl.SQLUtil
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/13_jdbacl/src/main/java/org/databene/jdbacl/SQLUtil.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1028
+* Starting evolution
+[MASTER] 11:01:11.365 [logback-2] ERROR TestCluster - Failed to check cache for org.databene.jdbacl.model.CompositeDBObject<C> : Type points to itself
+* Search finished after 124s and 15 generations, 11358 statements, best individual has fitness: 3408.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 70%
+* Total number of goals: 251
+* Number of covered goals: 175
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 66%
+* Total number of goals: 188
+* Number of covered goals: 125
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 35
+* Number of covered goals: 35
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 75%
+* Total number of goals: 595
+* Number of covered goals: 444
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 44%
+* Total number of goals: 94
+* Number of covered goals: 41
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 95%
+* Total number of goals: 39
+* Number of covered goals: 37
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 95%
+* Total number of goals: 39
+* Number of covered goals: 37
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 60%
+* Total number of goals: 188
+* Number of covered goals: 113
+* Generated 67 tests with total length 1333
+* Resulting test suite's coverage: 70% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 53%
+* Compiling and checking tests
+[MASTER] 11:04:01.618 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.derby.iapi.types.SqlXmlUtil: org/apache/xml/utils/PrefixResolver
+* Permissions denied during test execution: 
+  - java.io.FilePermission: 
+         write /dev/random: 1
+  - java.net.SocketPermission: 
+         resolve java.lang.String@0000000144: 1
+* Writing JUnit test case 'SQLUtil_ESTest' to /home/ubuntu/termite/qmosa/tests/s1028/13_jdbacl/evosuite-tests
+* Done!
+
+* Computation finished

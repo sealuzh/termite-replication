@@ -1,0 +1,383 @@
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: com.soops.CEN4010.JMCA.JParser.JavaCharStream
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/19_jmca/evosuite-files/evosuite.properties
+* Connecting to master process on port 10122
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class com.soops.CEN4010.JMCA.JParser.JavaCharStream
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 1743
+* Using seed 1017
+* Starting evolution
+* Search finished after 125s and 61 generations, 31424 statements, best individual has fitness: 632.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 90%
+* Total number of goals: 239
+* Number of covered goals: 214
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 92%
+* Total number of goals: 216
+* Number of covered goals: 199
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 34
+* Number of covered goals: 34
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 98%
+* Total number of goals: 974
+* Number of covered goals: 959
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 86%
+* Total number of goals: 36
+* Number of covered goals: 31
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 31
+* Number of covered goals: 31
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 31
+* Number of covered goals: 31
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 92%
+* Total number of goals: 216
+* Number of covered goals: 199
+* Generated 157 tests with total length 863
+* Resulting test suite's coverage: 96% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 44%
+* Compiling and checking tests
+* Writing JUnit test case 'JavaCharStream_ESTest' to /home/ubuntu/termite/mosa/tests/s1017/19_jmca/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/19_jmca/evosuite-files/evosuite.properties
+* Connecting to master process on port 10117
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 03:13:55.201 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 03:13:55.231 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 03:13:55.232 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 03:13:55.244 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 4855
+* Using seed 1017
+* Starting evolution
+* Search finished after 132s and 49 generations, 30883 statements, best individual has fitness: 18056.0
+[MASTER] 03:16:10.928 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 14 seconds more than allowed.
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 46%
+* Total number of goals: 981
+* Number of covered goals: 456
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 57%
+* Total number of goals: 1707
+* Number of covered goals: 967
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 9
+* Number of covered goals: 9
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 43%
+* Total number of goals: 434
+* Number of covered goals: 188
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 50%
+* Total number of goals: 4
+* Number of covered goals: 2
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 56%
+* Total number of goals: 1707
+* Number of covered goals: 963
+* Generated 126 tests with total length 1073
+* Resulting test suite's coverage: 54% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 18%
+* Compiling and checking tests
+[MASTER] 03:17:25.428 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager but in org.junit.Assert.fail(Assert.java:88): java.lang.AssertionError: Expecting exception: Error
+[MASTER] 03:17:25.428 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ StringReader stringReader0 = new StringReader("4^w=&");
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader0, 0, 46);
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+StringReader stringReader1 = new StringReader("4^w=&");
+JavaCharStream javaCharStream1 = new JavaCharStream(stringReader1);
+javaParserTokenManager0.getNextToken();
+
+[MASTER] 03:17:26.085 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager but in org.junit.Assert.fail(Assert.java:88): java.lang.AssertionError: Expecting exception: Error
+[MASTER] 03:17:26.085 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FileDescriptor fileDescriptor0 = new FileDescriptor();
+StringReader stringReader0 = new StringReader("9od')AUvWE0^AM>BJ~B");
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader0, 32, 32);
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+javaParserTokenManager0.getNextToken();
+javaParserTokenManager0.getNextToken();
+
+[MASTER] 03:17:26.122 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager but in org.junit.Assert.fail(Assert.java:88): java.lang.AssertionError: Expecting exception: Error
+[MASTER] 03:17:26.122 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FileDescriptor fileDescriptor0 = new FileDescriptor();
+StringReader stringReader0 = new StringReader("8'ERo:`V{:,^?>h(");
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader0, 1805, (-1003));
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+javaParserTokenManager0.getNextToken();
+
+[MASTER] 03:17:26.159 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager but in org.junit.Assert.fail(Assert.java:88): java.lang.AssertionError: Expecting exception: Error
+[MASTER] 03:17:26.159 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FileDescriptor fileDescriptor0 = new FileDescriptor();
+StringReader stringReader0 = new StringReader("YbH,Z;7<JA{*");
+stringReader0.read();
+char[] charArray0 = new char[4];
+charArray0[1] = 'O';
+charArray0[2] = 'O';
+charArray0[1] = 'O';
+stringReader0.read(charArray0);
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader0, 89, 89);
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+javaParserTokenManager0.getNextToken();
+assertEquals(0, javaCharStream0.bufpos);
+
+javaParserTokenManager0.getNextToken();
+
+[MASTER] 03:17:26.325 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<16> but was:<15>
+[MASTER] 03:17:26.325 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FileDescriptor fileDescriptor0 = new FileDescriptor();
+StringReader stringReader0 = new StringReader("5B9mXb2babQA_2j<Q");
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader0, 742, 2302);
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+javaParserTokenManager0.getNextToken();
+javaParserTokenManager0.getNextToken();
+JavaCharStream javaCharStream1 = new JavaCharStream(stringReader0);
+Token token0 = javaParserTokenManager0.getNextToken();
+assertEquals(16, javaCharStream0.bufpos);
+assertEquals("Q", token0.toString());
+
+
+[MASTER] 03:17:26.452 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager but in org.junit.Assert.fail(Assert.java:88): java.lang.AssertionError: Expecting exception: Error
+[MASTER] 03:17:26.452 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ StringReader stringReader0 = new StringReader("3K~\u0006+9V}/Zz~");
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader0);
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+javaParserTokenManager0.getNextToken();
+
+[MASTER] 03:17:26.593 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager but in org.junit.Assert.fail(Assert.java:88): java.lang.AssertionError: Expecting exception: Error
+[MASTER] 03:17:26.593 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ StringReader stringReader0 = new StringReader("0(>E");
+StringReader stringReader1 = new StringReader("0(>E");
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader1, 26, 281);
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+javaParserTokenManager0.getNextToken();
+
+[MASTER] 03:17:26.649 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager but in org.junit.Assert.fail(Assert.java:88): java.lang.AssertionError: Expecting exception: Error
+[MASTER] 03:17:26.649 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FileDescriptor fileDescriptor0 = new FileDescriptor();
+StringReader stringReader0 = new StringReader("9od')AvWE0^AM>BJ~B");
+char[] charArray0 = new char[9];
+charArray0[0] = 'e';
+charArray0[1] = 'y';
+charArray0[2] = 'y';
+charArray0[3] = 'e';
+charArray0[4] = '$';
+charArray0[5] = 'e';
+charArray0[6] = 'e';
+charArray0[7] = 'e';
+stringReader0.read(charArray0);
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader0);
+JavaCharStream javaCharStream1 = new JavaCharStream(stringReader0, (-3237), (-3237), 107);
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream1);
+javaParserTokenManager0.getNextToken();
+
+[MASTER] 03:17:26.752 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<5> but was:<4>
+[MASTER] 03:17:26.753 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FileDescriptor fileDescriptor0 = new FileDescriptor();
+StringReader stringReader0 = new StringReader("8'ERo:`V{:,^?>h(");
+StringReader stringReader1 = new StringReader("1sBu<n[UR`RJq~cw^3L");
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader1, 1805, 1805);
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+javaParserTokenManager0.getNextToken();
+javaParserTokenManager0.getNextToken();
+Token token0 = javaParserTokenManager0.getNextToken();
+assertEquals(5, javaCharStream0.bufpos);
+assertEquals("n", token0.toString());
+
+
+[MASTER] 03:17:26.946 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager but in org.junit.Assert.fail(Assert.java:88): java.lang.AssertionError: Expecting exception: Error
+[MASTER] 03:17:26.946 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FileDescriptor fileDescriptor0 = new FileDescriptor();
+StringReader stringReader0 = new StringReader("9d')AUvWE0^AM>BJ~B");
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader0, (-526), (-526));
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+javaParserTokenManager0.getNextToken();
+
+[MASTER] 03:17:27.166 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager but in org.junit.Assert.fail(Assert.java:88): java.lang.AssertionError: Expecting exception: Error
+[MASTER] 03:17:27.166 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FileDescriptor fileDescriptor0 = new FileDescriptor();
+StringReader stringReader0 = new StringReader("(r@p#m5HQq");
+StringReader stringReader1 = new StringReader("51b8_Hlb88#");
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader1);
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+javaParserTokenManager0.getNextToken();
+javaParserTokenManager0.getNextToken();
+
+[MASTER] 03:17:28.293 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<0> but was:<4>
+[MASTER] 03:17:28.294 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FileDescriptor fileDescriptor0 = new FileDescriptor();
+StringReader stringReader0 = new StringReader("+:hQPkIb63HssM");
+StringReader stringReader1 = new StringReader("E]-U~u&Yc3B6EB-");
+char[] charArray0 = new char[9];
+charArray0[0] = 'V';
+charArray0[1] = 'I';
+charArray0[2] = '3';
+charArray0[3] = 'n';
+charArray0[4] = 'd';
+charArray0[5] = 'b';
+charArray0[6] = 'Q';
+charArray0[7] = '@';
+charArray0[8] = 'C';
+stringReader0.read(charArray0);
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader0, 72, 9);
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+JavaParserTokenManager javaParserTokenManager1 = new JavaParserTokenManager(javaCharStream0);
+javaParserTokenManager1.MoreLexicalActions();
+javaParserTokenManager1.getNextToken();
+JavaParserTokenManager javaParserTokenManager2 = new JavaParserTokenManager(javaCharStream0);
+Token token0 = javaParserTokenManager2.getNextToken();
+assertEquals(0, javaCharStream0.bufpos);
+assertEquals("", token0.toString());
+
+
+* Writing JUnit test case 'JavaParserTokenManager_ESTest' to /home/ubuntu/termite/mosa/tests/s1017/19_jmca/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: com.soops.CEN4010.JMCA.JParser.SimpleNode
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/19_jmca/evosuite-files/evosuite.properties
+* Connecting to master process on port 10118
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 03:28:56.446 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 03:28:56.484 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 03:28:56.484 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 03:28:56.819 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class com.soops.CEN4010.JMCA.JParser.SimpleNode
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 360
+* Using seed 1017
+* Starting evolution
+[MASTER] 03:28:59.941 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+[MASTER] 03:29:15.034 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] com.soops.CEN4010.JMCA.JParser.SimpleNode.jjtGetChild(I)Lcom/soops/CEN4010/JMCA/JParser/Node;
+[MASTER] 03:29:52.548 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V: Line 148
+[MASTER] 03:29:52.548 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V: Line 152
+[MASTER] 03:29:52.548 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V: Line 153
+[MASTER] 03:29:52.548 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V: Line 154
+[MASTER] 03:29:52.548 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V: Line 155
+[MASTER] 03:29:52.548 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 36: com.soops.CEN4010.JMCA.JParser.SimpleNode.jjtAddChild(Lcom/soops/CEN4010/JMCA/JParser/Node;I)V:67 - ReplaceVariable n -> parent
+[MASTER] 03:29:52.549 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V: I231 Branch 26 IFNULL L154 - false in context: com.soops.CEN4010.JMCA.JParser.SimpleNode:dump(Ljava/lang/String;Ljava/io/Writer;)V
+[MASTER] 03:29:52.549 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V: I219 Branch 25 IF_ICMPGE L152 - false in context: com.soops.CEN4010.JMCA.JParser.SimpleNode:dump(Ljava/lang/String;Ljava/io/Writer;)V
+[MASTER] 03:29:52.549 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V: I187 Branch 23 IFLE L147 - false in context: com.soops.CEN4010.JMCA.JParser.SimpleNode:dump(Ljava/lang/String;Ljava/io/Writer;)V
+[MASTER] 03:29:52.549 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V: I183 Branch 22 IFNULL L147 - false in context: com.soops.CEN4010.JMCA.JParser.SimpleNode:dump(Ljava/lang/String;Ljava/io/Writer;)V
+[MASTER] 03:29:52.549 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V: I209 Branch 24 IFNULL L151 - false in context: com.soops.CEN4010.JMCA.JParser.SimpleNode:dump(Ljava/lang/String;Ljava/io/Writer;)V
+[MASTER] 03:30:52.762 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 72: com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V:111 - ReplaceVariable identifier -> prefix
+[MASTER] 03:30:52.762 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 77: com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V:111 - ReplaceVariable identifier -> prefix
+[MASTER] 03:30:52.762 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 82: com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V:111 - ReplaceVariable identifier -> prefix
+[MASTER] 03:30:52.762 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 87: com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V:111 - ReplaceVariable identifier -> prefix
+[MASTER] 03:30:52.763 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 103: com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V:118 - ReplaceVariable identifier -> prefix
+[MASTER] 03:30:52.763 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 109: com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V:121 - ReplaceVariable identifier -> prefix
+[MASTER] 03:30:52.763 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 115: com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V:124 - ReplaceVariable identifier -> prefix
+* Search finished after 122s and 21 generations, 13329 statements, best individual has fitness: 480.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 95%
+* Total number of goals: 62
+* Number of covered goals: 59
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 82%
+* Total number of goals: 67
+* Number of covered goals: 55
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 12
+* Number of covered goals: 12
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 80%
+* Total number of goals: 121
+* Number of covered goals: 97
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 47%
+* Total number of goals: 17
+* Number of covered goals: 8
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 13
+* Number of covered goals: 13
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 13
+* Number of covered goals: 13
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 82%
+* Total number of goals: 67
+* Number of covered goals: 55
+* Generated 34 tests with total length 269
+* Resulting test suite's coverage: 84% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 60%
+* Compiling and checking tests
+[MASTER] 03:31:19.262 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test13 -> class java.lang.StackOverflowError: null
+[MASTER] 03:31:19.263 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ SimpleNode simpleNode0 = new SimpleNode(0);
+simpleNode0.toString("");
+simpleNode0.jjtAddChild(simpleNode0, 0);
+StringWriter stringWriter0 = new StringWriter();
+String string0 = ")";
+simpleNode0.dump(string0, stringWriter0);
+
+* Writing JUnit test case 'SimpleNode_ESTest' to /home/ubuntu/termite/mosa/tests/s1017/19_jmca/evosuite-tests
+* Done!
+
+* Computation finished

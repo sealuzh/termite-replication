@@ -1,0 +1,739 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: net.sf.xbus.protocol.records.RecordTypeMessage
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/83_xbus/evosuite-files/evosuite.properties
+* Connecting to master process on port 5246
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 06:04:32.183 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 06:04:32.184 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 06:04:32.186 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 06:04:33.914 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 06:04:33.915 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 06:04:33.919 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 06:04:33.920 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 06:04:33.921 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 06:04:33.926 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 06:04:33.927 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 06:04:33.929 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 06:04:33.937 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 06:04:34.238 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 06:04:34.966 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 06:04:34.969 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+* Finished analyzing classpath
+* Generating tests for class net.sf.xbus.protocol.records.RecordTypeMessage
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/83_xbus/src/main/java/net/sf/xbus/protocol/records/RecordTypeMessage.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1022
+* Starting evolution
+* Search finished after 122s and 104 generations, 109688 statements, best individual has fitness: 1096.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 67%
+* Total number of goals: 105
+* Number of covered goals: 70
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 54%
+* Total number of goals: 52
+* Number of covered goals: 28
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 7
+* Number of covered goals: 7
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 40%
+* Total number of goals: 77
+* Number of covered goals: 31
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 38%
+* Total number of goals: 13
+* Number of covered goals: 5
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 14
+* Number of covered goals: 14
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 14
+* Number of covered goals: 14
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 54%
+* Total number of goals: 52
+* Number of covered goals: 28
+* Generated 21 tests with total length 413
+* Resulting test suite's coverage: 59% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 14%
+* Compiling and checking tests
+[MASTER] 06:06:50.991 [logback-2] ERROR JUnitAnalyzer - Compilation failed on compilation units: [RegularFileObject[/tmp/EvoSuite_16_1575439610881/net/sf/xbus/protocol/records/RecordTypeMessage_16_tmp__ESTest.java], RegularFileObject[/tmp/EvoSuite_16_1575439610881/net/sf/xbus/protocol/records/RecordTypeMessage_16_tmp__ESTest_scaffolding.java]]
+[MASTER] 06:06:50.992 [logback-2] ERROR JUnitAnalyzer - Classpath: /home/ubuntu/termite/projects/83_xbus/xbus.jar:/home/ubuntu/termite/projects/83_xbus/lib/activation-1.1.1.jar:/home/ubuntu/termite/projects/83_xbus/lib/commons-net-2.0.jar:/home/ubuntu/termite/projects/83_xbus/lib/dsn-1.4.2.jar:/home/ubuntu/termite/projects/83_xbus/lib/activemq-all-5.1.0.jar:/home/ubuntu/termite/projects/83_xbus/lib/smtp-1.4.2.jar:/home/ubuntu/termite/projects/83_xbus/lib/commons-codec-1.4.jar:/home/ubuntu/termite/projects/83_xbus/lib/mailapi-1.4.2.jar:/home/ubuntu/termite/projects/83_xbus/lib/wsdl4j-1.5.1.jar:/home/ubuntu/termite/projects/83_xbus/lib/pop3-1.4.2.jar:/home/ubuntu/termite/projects/83_xbus/lib/spring-context-2.0.8.jar:/home/ubuntu/termite/projects/83_xbus/lib/saaj.jar:/home/ubuntu/termite/projects/83_xbus/lib/exolabcore-0.3.7.jar:/home/ubuntu/termite/projects/83_xbus/lib/mina-core-1.1.7.jar:/home/ubuntu/termite/projects/83_xbus/lib/spring-beans-2.0.8.jar:/home/ubuntu/termite/projects/83_xbus/lib/axis-1.4.jar:/home/ubuntu/termite/projects/83_xbus/lib/imap-1.4.2.jar:/home/ubuntu/termite/projects/83_xbus/lib/servlet-api.jar:/home/ubuntu/termite/projects/83_xbus/lib/openjms-client-0.7.6.1.jar:/home/ubuntu/termite/projects/83_xbus/lib/org.apache.servicemix.bundles.quartz-1.5.2_1.jar:/home/ubuntu/termite/projects/83_xbus/lib/jaxrpc.jar:/home/ubuntu/termite/projects/83_xbus/lib/wrapper-3.1.1.jar:/home/ubuntu/termite/projects/83_xbus/lib/xercesImpl-2.9.1.jar:/home/ubuntu/termite/projects/83_xbus/lib/commons-httpclient-3.1.jar:/home/ubuntu/termite/projects/83_xbus/lib/activeio-core-3.1.0.jar:/home/ubuntu/termite/projects/83_xbus/lib/jndi-1.2.1.jar:/home/ubuntu/termite/projects/83_xbus/lib/commons-discovery-0.2.jar:/home/ubuntu/termite/projects/83_xbus/lib/jt400.jar:/home/ubuntu/termite/projects/83_xbus/lib/commons-logging-1.0.4.jar:/home/ubuntu/termite/projects/83_xbus/lib/fscontext.jar:/home/ubuntu/termite/projects/83_xbus/lib/apache-camel-1.3.0.jar:/home/ubuntu/termite/projects/83_xbus/lib/hsqldb.jar:/home/ubuntu/termite/projects/83_xbus/lib/commons-net-ftp-2.0.jar:/home/ubuntu/termite/projects/83_xbus/lib/commons-io-1.4.jar:/home/ubuntu/termite/projects/83_xbus/lib/camel-jms-1.4.0.jar:/home/ubuntu/termite/projects/83_xbus/lib/jms-1.0.2a.jar:/home/ubuntu/termite/evosuite.jar:/home/ubuntu/termite/projects/83_xbus/xbus.jar:/home/ubuntu/termite/projects/83_xbus/lib/activation-1.1.1.jar:/home/ubuntu/termite/projects/83_xbus/lib/commons-net-2.0.jar:/home/ubuntu/termite/projects/83_xbus/lib/dsn-1.4.2.jar:/home/ubuntu/termite/projects/83_xbus/lib/activemq-all-5.1.0.jar:/home/ubuntu/termite/projects/83_xbus/lib/smtp-1.4.2.jar:/home/ubuntu/termite/projects/83_xbus/lib/commons-codec-1.4.jar:/home/ubuntu/termite/projects/83_xbus/lib/mailapi-1.4.2.jar:/home/ubuntu/termite/projects/83_xbus/lib/wsdl4j-1.5.1.jar:/home/ubuntu/termite/projects/83_xbus/lib/pop3-1.4.2.jar:/home/ubuntu/termite/projects/83_xbus/lib/spring-context-2.0.8.jar:/home/ubuntu/termite/projects/83_xbus/lib/saaj.jar:/home/ubuntu/termite/projects/83_xbus/lib/exolabcore-0.3.7.jar:/home/ubuntu/termite/projects/83_xbus/lib/mina-core-1.1.7.jar:/home/ubuntu/termite/projects/83_xbus/lib/spring-beans-2.0.8.jar:/home/ubuntu/termite/projects/83_xbus/lib/axis-1.4.jar:/home/ubuntu/termite/projects/83_xbus/lib/imap-1.4.2.jar:/home/ubuntu/termite/projects/83_xbus/lib/servlet-api.jar:/home/ubuntu/termite/projects/83_xbus/lib/openjms-client-0.7.6.1.jar:/home/ubuntu/termite/projects/83_xbus/lib/org.apache.servicemix.bundles.quartz-1.5.2_1.jar:/home/ubuntu/termite/projects/83_xbus/lib/jaxrpc.jar:/home/ubuntu/termite/projects/83_xbus/lib/wrapper-3.1.1.jar:/home/ubuntu/termite/projects/83_xbus/lib/xercesImpl-2.9.1.jar:/home/ubuntu/termite/projects/83_xbus/lib/commons-httpclient-3.1.jar:/home/ubuntu/termite/projects/83_xbus/lib/activeio-core-3.1.0.jar:/home/ubuntu/termite/projects/83_xbus/lib/jndi-1.2.1.jar:/home/ubuntu/termite/projects/83_xbus/lib/commons-discovery-0.2.jar:/home/ubuntu/termite/projects/83_xbus/lib/jt400.jar:/home/ubuntu/termite/projects/83_xbus/lib/commons-logging-1.0.4.jar:/home/ubuntu/termite/projects/83_xbus/lib/fscontext.jar:/home/ubuntu/termite/projects/83_xbus/lib/apache-camel-1.3.0.jar:/home/ubuntu/termite/projects/83_xbus/lib/hsqldb.jar:/home/ubuntu/termite/projects/83_xbus/lib/commons-net-ftp-2.0.jar:/home/ubuntu/termite/projects/83_xbus/lib/commons-io-1.4.jar:/home/ubuntu/termite/projects/83_xbus/lib/camel-jms-1.4.0.jar:/home/ubuntu/termite/projects/83_xbus/lib/jms-1.0.2a.jar
+[MASTER] 06:06:50.993 [logback-2] ERROR JUnitAnalyzer - evosuiteCP: /home/ubuntu/termite/evosuite.jar:/home/ubuntu/termite/projects/83_xbus/xbus.jar:/home/ubuntu/termite/projects/83_xbus/lib/activation-1.1.1.jar:/home/ubuntu/termite/projects/83_xbus/lib/commons-net-2.0.jar:/home/ubuntu/termite/projects/83_xbus/lib/dsn-1.4.2.jar:/home/ubuntu/termite/projects/83_xbus/lib/activemq-all-5.1.0.jar:/home/ubuntu/termite/projects/83_xbus/lib/smtp-1.4.2.jar:/home/ubuntu/termite/projects/83_xbus/lib/commons-codec-1.4.jar:/home/ubuntu/termite/projects/83_xbus/lib/mailapi-1.4.2.jar:/home/ubuntu/termite/projects/83_xbus/lib/wsdl4j-1.5.1.jar:/home/ubuntu/termite/projects/83_xbus/lib/pop3-1.4.2.jar:/home/ubuntu/termite/projects/83_xbus/lib/spring-context-2.0.8.jar:/home/ubuntu/termite/projects/83_xbus/lib/saaj.jar:/home/ubuntu/termite/projects/83_xbus/lib/exolabcore-0.3.7.jar:/home/ubuntu/termite/projects/83_xbus/lib/mina-core-1.1.7.jar:/home/ubuntu/termite/projects/83_xbus/lib/spring-beans-2.0.8.jar:/home/ubuntu/termite/projects/83_xbus/lib/axis-1.4.jar:/home/ubuntu/termite/projects/83_xbus/lib/imap-1.4.2.jar:/home/ubuntu/termite/projects/83_xbus/lib/servlet-api.jar:/home/ubuntu/termite/projects/83_xbus/lib/openjms-client-0.7.6.1.jar:/home/ubuntu/termite/projects/83_xbus/lib/org.apache.servicemix.bundles.quartz-1.5.2_1.jar:/home/ubuntu/termite/projects/83_xbus/lib/jaxrpc.jar:/home/ubuntu/termite/projects/83_xbus/lib/wrapper-3.1.1.jar:/home/ubuntu/termite/projects/83_xbus/lib/xercesImpl-2.9.1.jar:/home/ubuntu/termite/projects/83_xbus/lib/commons-httpclient-3.1.jar:/home/ubuntu/termite/projects/83_xbus/lib/activeio-core-3.1.0.jar:/home/ubuntu/termite/projects/83_xbus/lib/jndi-1.2.1.jar:/home/ubuntu/termite/projects/83_xbus/lib/commons-discovery-0.2.jar:/home/ubuntu/termite/projects/83_xbus/lib/jt400.jar:/home/ubuntu/termite/projects/83_xbus/lib/commons-logging-1.0.4.jar:/home/ubuntu/termite/projects/83_xbus/lib/fscontext.jar:/home/ubuntu/termite/projects/83_xbus/lib/apache-camel-1.3.0.jar:/home/ubuntu/termite/projects/83_xbus/lib/hsqldb.jar:/home/ubuntu/termite/projects/83_xbus/lib/commons-net-ftp-2.0.jar:/home/ubuntu/termite/projects/83_xbus/lib/commons-io-1.4.jar:/home/ubuntu/termite/projects/83_xbus/lib/camel-jms-1.4.0.jar:/home/ubuntu/termite/projects/83_xbus/lib/jms-1.0.2a.jar
+[MASTER] 06:06:50.997 [logback-2] ERROR JUnitAnalyzer - Diagnostic: method addTo in interface java.time.temporal.TemporalUnit cannot be applied to given types;
+  required: R,long
+  found: java.lang.Object,long
+  reason: inference variable T has incompatible bounds
+    equality constraints: java.lang.Object
+    upper bounds: R,java.time.temporal.Temporal,java.lang.Object: 54
+[MASTER] 06:06:50.999 [logback-2] ERROR JUnitAnalyzer - RegularFileObject[/tmp/EvoSuite_16_1575439610881/net/sf/xbus/protocol/records/RecordTypeMessage_16_tmp__ESTest.java]
+1: /*
+2:  * This file was automatically generated by EvoSuite
+3:  * Wed Dec 04 06:06:50 GMT 2019
+4:  */
+5: 
+6: package net.sf.xbus.protocol.records;
+7: 
+8: import org.junit.Test;
+9: import static org.junit.Assert.*;
+10: import static org.evosuite.shaded.org.mockito.Mockito.*;
+11: import java.time.Instant;
+12: import java.time.temporal.Temporal;
+13: import java.time.temporal.TemporalUnit;
+14: import java.util.Hashtable;
+15: import net.sf.xbus.base.bytearraylist.ByteArrayList;
+16: import net.sf.xbus.base.xbussystem.XBUSSystem;
+17: import net.sf.xbus.protocol.records.RecordTypeMessage;
+18: import org.evosuite.runtime.EvoRunner;
+19: import org.evosuite.runtime.EvoRunnerParameters;
+20: import org.evosuite.runtime.ViolatedAssumptionAnswer;
+21: import org.evosuite.runtime.mock.java.time.MockInstant;
+22: import org.evosuite.runtime.mock.java.util.MockDate;
+23: import org.evosuite.runtime.testdata.EvoSuiteFile;
+24: import org.evosuite.runtime.testdata.FileSystemHandling;
+25: import org.junit.runner.RunWith;
+26: 
+27: @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, useJEE = true) 
+28: public class RecordTypeMessage_16_tmp__ESTest extends RecordTypeMessage_16_tmp__ESTest_scaffolding {
+29: 
+30:   /**
+31:   //Test case number: 0
+32:   /*Coverage entropy=1.5271837172395382
+33:   */
+34:   @Test(timeout = 4000)
+35:   public void test0()  throws Throwable  {
+36:       FileSystemHandling.appendStringToFile((EvoSuiteFile) null, "I");
+37:       Hashtable<String, Integer> hashtable0 = new Hashtable<String, Integer>();
+38:       byte[] byteArray0 = new byte[6];
+39:       byteArray0[0] = (byte)3;
+40:       byteArray0[1] = (byte)41;
+41:       byteArray0[2] = (byte)0;
+42:       byteArray0[3] = (byte)89;
+43:       byteArray0[4] = (byte)0;
+44:       byteArray0[5] = (byte)17;
+45:       ByteArrayList byteArrayList0 = ByteArrayList.createByteArrayList(byteArray0, (byte)89);
+46:       byteArrayList0.toString();
+47:       RecordTypeMessage recordTypeMessage0 = new RecordTypeMessage("enter HttpMethodBase.addProxyConnectionHeader(HttpState, HttpConnection)", (XBUSSystem) null, "Server Error");
+48:       ByteArrayList byteArrayList1 = new ByteArrayList();
+49:       MockDate mockDate0 = new MockDate();
+50:       recordTypeMessage0.setResponseTimestamp(mockDate0);
+51:       ByteArrayList.createByteArrayList(byteArray0, (byte)0);
+52:       Instant instant0 = MockInstant.ofEpochSecond(65535L, (-1912L));
+53:       TemporalUnit temporalUnit0 = mock(TemporalUnit.class, new ViolatedAssumptionAnswer());
+54:       doReturn((Temporal) null).when(temporalUnit0).addTo(nullable(java.lang.Object.class) , anyLong());
+55:       MockInstant.plus(instant0, (long) (byte)17, temporalUnit0);
+56:       recordTypeMessage0.setRequestObject((Object) null, (XBUSSystem) null);
+57:       assertEquals("RecordTypeMessage", recordTypeMessage0.getShortname());
+58:   }
+59: }
+RegularFileObject[/tmp/EvoSuite_16_1575439610881/net/sf/xbus/protocol/records/RecordTypeMessage_16_tmp__ESTest.java]
+1: /**
+2:  * Scaffolding file used to store all the setups needed to run 
+3:  * tests automatically generated by EvoSuite
+4:  * Wed Dec 04 06:06:50 GMT 2019
+5:  */
+6: 
+7: package net.sf.xbus.protocol.records;
+8: 
+9: import org.evosuite.runtime.annotation.EvoSuiteClassExclude;
+10: import org.junit.BeforeClass;
+11: import org.junit.Before;
+12: import org.junit.After;
+13: import org.junit.AfterClass;
+14: import org.evosuite.runtime.sandbox.Sandbox;
+15: import org.evosuite.runtime.sandbox.Sandbox.SandboxMode;
+16: 
+17: import static org.evosuite.shaded.org.mockito.Mockito.*;
+18: @EvoSuiteClassExclude
+19: public class RecordTypeMessage_16_tmp__ESTest_scaffolding {
+20: 
+21:   @org.junit.Rule 
+22:   public org.evosuite.runtime.vnet.NonFunctionalRequirementRule nfr = new org.evosuite.runtime.vnet.NonFunctionalRequirementRule();
+23: 
+24:   private static final java.util.Properties defaultProperties = (java.util.Properties) java.lang.System.getProperties().clone(); 
+25: 
+26:   private org.evosuite.runtime.thread.ThreadStopper threadStopper =  new org.evosuite.runtime.thread.ThreadStopper (org.evosuite.runtime.thread.KillSwitchHandler.getInstance(), 3000);
+27: 
+28: 
+29:   @BeforeClass 
+30:   public static void initEvoSuiteFramework() { 
+31:     org.evosuite.runtime.RuntimeSettings.className = "net.sf.xbus.protocol.records.RecordTypeMessage"; 
+32:     org.evosuite.runtime.GuiSupport.initialize(); 
+33:     org.evosuite.runtime.RuntimeSettings.maxNumberOfThreads = 100; 
+34:     org.evosuite.runtime.RuntimeSettings.maxNumberOfIterationsPerLoop = 10000; 
+35:     org.evosuite.runtime.RuntimeSettings.mockSystemIn = true; 
+36:     org.evosuite.runtime.RuntimeSettings.sandboxMode = org.evosuite.runtime.sandbox.Sandbox.SandboxMode.RECOMMENDED; 
+37:     org.evosuite.runtime.sandbox.Sandbox.initializeSecurityManagerForSUT(); 
+38:     org.evosuite.runtime.classhandling.JDKClassResetter.init();
+39:     setSystemProperties();
+40:     initializeClasses();
+41:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+42:     try { initMocksToAvoidTimeoutsInTheTests(); } catch(ClassNotFoundException e) {} 
+43:   } 
+44: 
+45:   @AfterClass 
+46:   public static void clearEvoSuiteFramework(){ 
+47:     Sandbox.resetDefaultSecurityManager(); 
+48:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+49:   } 
+50: 
+51:   @Before 
+52:   public void initTestCase(){ 
+53:     threadStopper.storeCurrentThreads();
+54:     threadStopper.startRecordingTime();
+55:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().initHandler(); 
+56:     org.evosuite.runtime.sandbox.Sandbox.goingToExecuteSUTCode(); 
+57:     setSystemProperties(); 
+58:     org.evosuite.runtime.GuiSupport.setHeadless(); 
+59:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+60:     org.evosuite.runtime.agent.InstrumentingAgent.activate(); 
+61:   } 
+62: 
+63:   @After 
+64:   public void doneWithTestCase(){ 
+65:     threadStopper.killAndJoinClientThreads();
+66:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().safeExecuteAddedHooks(); 
+67:     org.evosuite.runtime.classhandling.JDKClassResetter.reset(); 
+68:     resetClasses(); 
+69:     org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(); 
+70:     org.evosuite.runtime.agent.InstrumentingAgent.deactivate(); 
+71:     org.evosuite.runtime.GuiSupport.restoreHeadlessMode(); 
+72:   } 
+73: 
+74:   public static void setSystemProperties() {
+75:  
+76:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+77:     java.lang.System.setProperty("file.encoding", "UTF-8"); 
+78:     java.lang.System.setProperty("java.awt.headless", "true"); 
+79:     java.lang.System.setProperty("java.io.tmpdir", "/tmp"); 
+80:     java.lang.System.setProperty("user.country", "US"); 
+81:     java.lang.System.setProperty("user.dir", "/home/ubuntu/termite/projects/83_xbus"); 
+82:     java.lang.System.setProperty("user.home", "/home/ubuntu"); 
+83:     java.lang.System.setProperty("user.language", "en"); 
+84:     java.lang.System.setProperty("user.name", "ubuntu"); 
+85:     java.lang.System.setProperty("user.timezone", "Etc/UTC"); 
+86:   }
+87: 
+88:   private static void initializeClasses() {
+89:     org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(RecordTypeMessage_16_tmp__ESTest_scaffolding.class.getClassLoader() ,
+90:       "net.sf.xbus.base.bytearraylist.ByteArrayList",
+91:       "org.apache.html.dom.HTMLLinkElementImpl",
+92:       "net.sf.xbus.base.core.config.Configuration",
+93:       "org.apache.html.dom.HTMLPreElementImpl",
+94:       "org.apache.html.dom.HTMLHRElementImpl",
+95:       "org.apache.html.dom.ObjectFactory",
+96:       "org.apache.html.dom.HTMLOptGroupElementImpl",
+97:       "org.apache.axis.message.SOAPEnvelope",
+98:       "org.apache.axis.InternalException",
+99:       "org.apache.axis.attachments.AttachmentsImpl",
+100:       "org.apache.html.dom.HTMLTableRowElementImpl",
+101:       "org.apache.html.dom.HTMLButtonElementImpl",
+102:       "org.apache.html.dom.HTMLModElementImpl",
+103:       "org.apache.html.dom.HTMLTextAreaElementImpl",
+104:       "org.apache.axis.attachments.ManagedMemoryDataSource",
+105:       "org.apache.html.dom.HTMLHeadingElementImpl",
+106:       "org.apache.html.dom.HTMLDListElementImpl",
+107:       "org.apache.html.dom.HTMLLIElementImpl",
+108:       "net.sf.xbus.protocol.TextMessage",
+109:       "org.apache.axis.utils.ClassUtils",
+110:       "org.apache.html.dom.HTMLFrameSetElementImpl",
+111:       "org.apache.axis.components.logger.LogFactory$1",
+112:       "org.apache.axis.utils.XMLUtils$ThreadLocalDocumentBuilder",
+113:       "net.sf.xbus.base.core.trace.Trace",
+114:       "org.apache.axis.i18n.ProjectResourceBundle",
+115:       "org.apache.html.dom.HTMLBodyElementImpl",
+116:       "org.apache.html.dom.HTMLBRElementImpl",
+117:       "org.apache.axis.soap.SOAP11Constants",
+118:       "org.apache.html.dom.HTMLIFrameElementImpl",
+119:       "org.apache.axis.message.MessageElement",
+120:       "org.apache.html.dom.HTMLTableElementImpl",
+121:       "org.apache.html.dom.HTMLTableSectionElementImpl",
+122:       "org.apache.html.dom.HTMLHeadElementImpl",
+123:       "org.apache.html.dom.HTMLLegendElementImpl",
+124:       "org.apache.axis.attachments.Attachments",
+125:       "org.apache.axis.message.MimeHeaders",
+126:       "org.apache.axis.i18n.MessagesConstants",
+127:       "org.apache.html.dom.HTMLFontElementImpl",
+128:       "org.apache.axis.soap.SOAP12Constants",
+129:       "org.apache.html.dom.HTMLElementImpl",
+130:       "org.apache.axis.utils.ByteArray",
+131:       "org.apache.html.dom.HTMLQuoteElementImpl",
+132:       "net.sf.xbus.protocol.Message",
+133:       "org.apache.html.dom.HTMLDocumentImpl",
+134:       "org.apache.commons.discovery.ResourceNameDiscover",
+135:       "org.apache.html.dom.HTMLScriptElementImpl",
+136:       "org.apache.commons.discovery.tools.ManagedProperties$1",
+137:       "org.apache.html.dom.HTMLParamElementImpl",
+138:       "org.apache.axis.components.encoding.XMLEncoder",
+139:       "org.apache.axis.message.SOAPDocumentImpl",
+140:       "org.apache.html.dom.HTMLBaseElementImpl",
+141:       "org.apache.axis.attachments.MultiPartDimeInputStream",
+142:       "org.apache.axis.components.logger.LogFactory",
+143:       "org.apache.axis.utils.XMLUtils",
+144:       "net.sf.xbus.protocol.ObjectMessage",
+145:       "org.apache.html.dom.HTMLMenuElementImpl",
+146:       "org.apache.html.dom.HTMLFormControl",
+147:       "org.apache.html.dom.HTMLFieldSetElementImpl",
+148:       "org.apache.html.dom.HTMLTableCellElementImpl",
+149:       "org.apache.html.dom.HTMLOptionElementImpl",
+150:       "org.apache.html.dom.HTMLFrameElementImpl",
+151:       "org.apache.html.dom.HTMLDirectoryElementImpl",
+152:       "org.apache.html.dom.HTMLTableCaptionElementImpl",
+153:       "org.apache.html.dom.HTMLObjectElementImpl",
+154:       "net.sf.xbus.base.core.Constants",
+155:       "org.apache.html.dom.HTMLFormElementImpl",
+156:       "net.sf.xbus.protocol.records.RecordTypeMessage",
+157:       "org.apache.html.dom.HTMLDivElementImpl",
+158:       "org.apache.html.dom.HTMLSelectElementImpl",
+159:       "net.sf.xbus.base.core.MessageHandler$MessagesFilter",
+160:       "org.apache.axis.attachments.MultiPartRelatedInputStream",
+161:       "org.apache.html.dom.HTMLAppletElementImpl",
+162:       "org.apache.html.dom.HTMLMetaElementImpl",
+163:       "net.sf.xbus.base.core.bytearrays.XByteArraySupport",
+164:       "net.sf.xbus.base.core.MessageHandler",
+165:       "org.apache.axis.MessageContext",
+166:       "org.apache.html.dom.HTMLStyleElementImpl",
+167:       "org.apache.html.dom.HTMLHtmlElementImpl",
+168:       "org.apache.axis.attachments.AttachmentPart",
+169:       "org.apache.html.dom.HTMLImageElementImpl",
+170:       "org.apache.html.dom.HTMLInputElementImpl",
+171:       "net.sf.xbus.protocol.XMLMessage",
+172:       "org.apache.html.dom.HTMLAnchorElementImpl",
+173:       "org.apache.html.dom.HTMLMapElementImpl",
+174:       "org.apache.commons.discovery.jdk.JDKHooks",
+175:       "org.apache.axis.message.SOAPHeader",
+176:       "org.apache.html.dom.HTMLOListElementImpl",
+177:       "org.apache.axis.attachments.DimeAttachmentStreams",
+178:       "org.apache.axis.utils.SessionUtils",
+179:       "org.apache.commons.discovery.tools.ManagedProperties",
+180:       "org.apache.commons.logging.impl.Jdk14Logger",
+181:       "org.apache.axis.attachments.MultipartAttachmentStreams",
+182:       "org.apache.html.dom.HTMLUListElementImpl",
+183:       "org.apache.axis.Part",
+184:       "org.apache.html.dom.HTMLIsIndexElementImpl",
+185:       "net.sf.xbus.base.xbussystem.XBUSSystem",
+186:       "org.apache.axis.message.SOAPBodyElement",
+187:       "org.apache.html.dom.ObjectFactory$ConfigurationError",
+188:       "org.apache.axis.AxisProperties",
+189:       "org.apache.axis.utils.ClassUtils$2",
+190:       "org.apache.axis.Message",
+191:       "org.apache.commons.logging.impl.Log4JLogger",
+192:       "org.apache.html.dom.HTMLLabelElementImpl",
+193:       "net.sf.xbus.base.core.XException",
+194:       "org.apache.axis.attachments.IncomingAttachmentStreams",
+195:       "org.apache.axis.AxisFault",
+196:       "org.apache.html.dom.HTMLTableColElementImpl",
+197:       "org.apache.axis.attachments.MultiPartInputStream",
+198:       "org.apache.axis.message.InputStreamBody",
+199:       "org.apache.html.dom.HTMLParagraphElementImpl",
+200:       "org.apache.html.dom.HTMLTitleElementImpl",
+201:       "org.apache.html.dom.HTMLAreaElementImpl",
+202:       "org.apache.commons.discovery.jdk.JDK12Hooks",
+203:       "org.apache.axis.i18n.ProjectResourceBundle$Context",
+204:       "net.sf.xbus.protocol.xml.XMLMessageAbstract",
+205:       "org.apache.axis.message.NodeImpl",
+206:       "net.sf.xbus.base.xml.XMLHelper",
+207:       "org.apache.axis.SOAPPart",
+208:       "org.apache.html.dom.HTMLBaseFontElementImpl",
+209:       "org.apache.commons.discovery.jdk.PsuedoSystemClassLoader",
+210:       "org.apache.axis.soap.SOAPConstants",
+211:       "org.apache.axis.message.SOAPBody",
+212:       "org.apache.axis.i18n.MessageBundle",
+213:       "org.apache.axis.utils.Messages"
+214:     );
+215:   } 
+216:   private static void initMocksToAvoidTimeoutsInTheTests() throws ClassNotFoundException { 
+217:     mock(Class.forName("java.time.temporal.TemporalUnit", false, RecordTypeMessage_16_tmp__ESTest_scaffolding.class.getClassLoader()));
+218:   }
+219: 
+220:   private static void resetClasses() {
+221:     org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(RecordTypeMessage_16_tmp__ESTest_scaffolding.class.getClassLoader()); 
+222: 
+223:     org.evosuite.runtime.classhandling.ClassStateSupport.resetClasses(
+224:       "net.sf.xbus.protocol.Message",
+225:       "net.sf.xbus.protocol.xml.XMLMessageAbstract",
+226:       "net.sf.xbus.protocol.records.RecordTypeMessage",
+227:       "net.sf.xbus.protocol.records.RecordTypeManipulator",
+228:       "net.sf.xbus.protocol.records.RecordTypeParser",
+229:       "net.sf.xbus.protocol.records.RecordTypeSerializer",
+230:       "org.apache.html.dom.HTMLDocumentImpl",
+231:       "org.apache.html.dom.ObjectFactory",
+232:       "org.apache.html.dom.HTMLElementImpl",
+233:       "org.apache.html.dom.HTMLButtonElementImpl",
+234:       "org.apache.axis.deployment.wsdd.WSDDConstants",
+235:       "org.apache.axis.deployment.wsdd.WSDDElement",
+236:       "org.apache.axis.components.logger.LogFactory$1",
+237:       "org.apache.axis.components.logger.LogFactory",
+238:       "org.apache.commons.logging.impl.Jdk14Logger",
+239:       "org.apache.axis.deployment.wsdd.WSDDDeployableItem",
+240:       "org.apache.axis.deployment.wsdd.WSDDHandler",
+241:       "org.apache.axis.deployment.wsdd.WSDDChain",
+242:       "org.apache.axis.deployment.wsdd.WSDDResponseFlow",
+243:       "org.apache.axis.ConfigurationException",
+244:       "org.apache.axis.deployment.wsdd.WSDDException",
+245:       "org.apache.axis.i18n.ProjectResourceBundle",
+246:       "org.apache.axis.i18n.ProjectResourceBundle$Context",
+247:       "org.apache.axis.i18n.MessagesConstants",
+248:       "org.apache.axis.i18n.MessageBundle",
+249:       "org.apache.axis.utils.Messages",
+250:       "org.apache.axis.utils.JavaUtils",
+251:       "net.sf.xbus.base.xbussystem.XBUSSystem",
+252:       "net.sf.xbus.base.core.config.Configuration",
+253:       "net.sf.xbus.base.core.Constants",
+254:       "org.apache.axis.deployment.wsdd.WSDDJAXRPCHandlerInfoChain",
+255:       "net.sf.xbus.base.bytearraylist.ByteArrayList",
+256:       "org.apache.html.dom.HTMLFrameSetElementImpl",
+257:       "org.apache.axis.deployment.wsdd.WSDDRequestFlow",
+258:       "org.apache.axis.message.NodeImpl",
+259:       "org.apache.axis.utils.Mapping",
+260:       "org.apache.axis.message.MessageElement",
+261:       "org.apache.axis.message.SOAPEnvelope",
+262:       "org.apache.axis.message.NullAttributes",
+263:       "org.apache.axis.schema.SchemaVersion1999",
+264:       "org.apache.axis.schema.SchemaVersion2000",
+265:       "org.apache.axis.schema.SchemaVersion2001",
+266:       "org.apache.axis.schema.SchemaVersion",
+267:       "org.apache.axis.message.SOAPHeader",
+268:       "org.apache.axis.soap.SOAP11Constants",
+269:       "org.apache.axis.soap.SOAP12Constants",
+270:       "org.apache.axis.soap.SOAPConstants",
+271:       "org.apache.axis.Constants",
+272:       "org.apache.axis.handlers.BasicHandler",
+273:       "org.apache.axis.AxisEngine",
+274:       "org.apache.axis.client.AxisClient",
+275:       "org.apache.axis.configuration.NullProvider",
+276:       "org.apache.axis.utils.cache.ClassCache",
+277:       "org.apache.axis.session.SimpleSession",
+278:       "org.apache.axis.AxisProperties",
+279:       "org.apache.commons.discovery.tools.ManagedProperties",
+280:       "org.apache.commons.discovery.jdk.JDK12Hooks",
+281:       "org.apache.commons.discovery.jdk.JDKHooks",
+282:       "org.apache.commons.discovery.tools.ManagedProperties$1",
+283:       "org.apache.axis.handlers.soap.MustUnderstandChecker",
+284:       "org.apache.axis.MessageContext",
+285:       "org.apache.axis.utils.LockableHashtable",
+286:       "org.apache.axis.constants.Enum",
+287:       "org.apache.axis.constants.Enum$Type",
+288:       "org.apache.axis.constants.Use$Type",
+289:       "org.apache.axis.constants.Use",
+290:       "org.apache.axis.message.SOAPHandler",
+291:       "org.apache.axis.encoding.DeserializationContext$NullLexicalHandler",
+292:       "org.apache.axis.encoding.DeserializationContext",
+293:       "org.apache.axis.utils.NSStack",
+294:       "org.apache.axis.message.EnvelopeBuilder",
+295:       "org.apache.axis.message.SAX2EventRecorder",
+296:       "org.apache.axis.message.SAX2EventRecorder$objArrayVector",
+297:       "org.apache.axis.message.EnvelopeHandler",
+298:       "org.apache.axis.utils.XMLUtils$ThreadLocalDocumentBuilder",
+299:       "org.apache.axis.utils.XMLUtils",
+300:       "org.apache.axis.utils.DefaultEntityResolver",
+301:       "org.apache.html.dom.HTMLBaseFontElementImpl",
+302:       "org.apache.axis.configuration.SimpleProvider",
+303:       "org.apache.axis.configuration.BasicServerConfig",
+304:       "org.apache.axis.transport.local.LocalResponder",
+305:       "org.apache.axis.strategies.InvocationStrategy",
+306:       "org.apache.axis.strategies.WSDLGenStrategy",
+307:       "org.apache.axis.SimpleChain",
+308:       "org.apache.axis.SimpleTargetedChain",
+309:       "org.apache.axis.transport.local.LocalSender",
+310:       "org.apache.axis.SimpleTargetedChain$PivotIndicator",
+311:       "org.apache.axis.server.AxisServer",
+312:       "org.apache.html.dom.HTMLTextAreaElementImpl",
+313:       "org.apache.axis.deployment.wsdd.WSDDTargetedChain",
+314:       "org.apache.axis.deployment.wsdd.WSDDService",
+315:       "org.apache.axis.deployment.wsdd.WSDDGlobalConfiguration",
+316:       "net.sf.xbus.base.xml.XMLHelper",
+317:       "net.sf.xbus.base.core.XException",
+318:       "net.sf.xbus.base.core.MessageHandler",
+319:       "net.sf.xbus.base.core.MessageHandler$MessagesFilter",
+320:       "net.sf.xbus.base.core.trace.Trace",
+321:       "net.sf.xbus.base.core.bytearrays.XByteArraySupport",
+322:       "org.apache.axis.message.SOAPFaultElement",
+323:       "org.apache.axis.message.Detail",
+324:       "org.apache.axis.message.SOAPDocumentImpl",
+325:       "org.apache.html.dom.HTMLHtmlElementImpl",
+326:       "org.apache.axis.constants.Style$Type",
+327:       "org.apache.axis.constants.Style",
+328:       "org.apache.axis.description.JavaServiceDesc",
+329:       "org.apache.axis.Message",
+330:       "org.apache.axis.utils.ClassUtils",
+331:       "org.apache.axis.utils.ClassUtils$2",
+332:       "org.apache.axis.attachments.AttachmentsImpl",
+333:       "org.apache.axis.SOAPPart",
+334:       "org.apache.axis.message.MimeHeaders",
+335:       "org.apache.axis.utils.SessionUtils",
+336:       "net.sf.xbus.base.bytearraylist.ByteArrayConverterFactory",
+337:       "org.apache.html.dom.HTMLMetaElementImpl",
+338:       "org.apache.html.dom.HTMLDivElementImpl",
+339:       "org.apache.axis.deployment.wsdd.WSDDDeployment",
+340:       "org.apache.axis.encoding.TypeMappingRegistryImpl",
+341:       "org.apache.axis.encoding.TypeMappingImpl",
+342:       "org.apache.axis.encoding.DefaultTypeMappingImpl",
+343:       "org.apache.axis.encoding.ser.BaseFactory",
+344:       "org.apache.axis.encoding.ser.BaseSerializerFactory",
+345:       "org.apache.axis.encoding.ser.JAFDataHandlerSerializerFactory",
+346:       "org.apache.axis.encoding.ser.JAFDataHandlerSerializer",
+347:       "org.apache.axis.encoding.ser.PlainTextDataHandlerSerializer",
+348:       "org.apache.axis.encoding.ser.BaseDeserializerFactory",
+349:       "org.apache.axis.encoding.ser.JAFDataHandlerDeserializerFactory",
+350:       "org.apache.axis.encoding.DeserializerImpl",
+351:       "org.apache.axis.encoding.ser.JAFDataHandlerDeserializer",
+352:       "org.apache.axis.encoding.ser.PlainTextDataHandlerDeserializer",
+353:       "org.apache.axis.encoding.TypeMappingImpl$Pair",
+354:       "org.apache.axis.types.HexBinary",
+355:       "org.apache.axis.encoding.ser.HexSerializerFactory",
+356:       "org.apache.axis.encoding.ser.HexSerializer",
+357:       "org.apache.axis.encoding.ser.HexDeserializerFactory",
+358:       "org.apache.axis.encoding.ser.SimpleDeserializer",
+359:       "org.apache.axis.encoding.ser.HexDeserializer",
+360:       "org.apache.axis.encoding.ser.ArraySerializerFactory",
+361:       "org.apache.axis.encoding.ser.ArraySerializer",
+362:       "org.apache.axis.encoding.ser.Base64SerializerFactory",
+363:       "org.apache.axis.encoding.ser.Base64Serializer",
+364:       "org.apache.axis.encoding.ser.Base64DeserializerFactory",
+365:       "org.apache.axis.encoding.ser.Base64Deserializer",
+366:       "org.apache.axis.encoding.ser.SimpleSerializerFactory",
+367:       "org.apache.axis.encoding.ser.SimpleSerializer",
+368:       "org.apache.axis.encoding.ser.SimpleDeserializerFactory",
+369:       "org.apache.axis.encoding.ser.QNameSerializerFactory",
+370:       "org.apache.axis.encoding.ser.QNameSerializer",
+371:       "org.apache.axis.encoding.ser.QNameDeserializerFactory",
+372:       "org.apache.axis.encoding.ser.QNameDeserializer",
+373:       "org.apache.axis.encoding.ser.DateSerializerFactory",
+374:       "org.apache.axis.encoding.ser.DateSerializer",
+375:       "org.apache.axis.encoding.ser.DateDeserializerFactory",
+376:       "org.apache.axis.encoding.ser.DateDeserializer",
+377:       "org.apache.axis.types.Time",
+378:       "org.apache.axis.types.Day",
+379:       "org.apache.axis.types.Duration",
+380:       "org.apache.axis.types.NormalizedString",
+381:       "org.apache.axis.types.Token",
+382:       "org.apache.axis.types.Name",
+383:       "org.apache.axis.types.NCName",
+384:       "org.apache.axis.types.Entities",
+385:       "org.apache.axis.types.Entity",
+386:       "org.apache.axis.types.Id",
+387:       "org.apache.axis.types.IDRef",
+388:       "org.apache.axis.types.IDRefs",
+389:       "org.apache.axis.types.Language",
+390:       "org.apache.axis.types.Month",
+391:       "org.apache.axis.types.MonthDay",
+392:       "org.apache.axis.types.NonPositiveInteger",
+393:       "org.apache.axis.types.NegativeInteger",
+394:       "org.apache.axis.types.NMToken",
+395:       "org.apache.axis.types.NMTokens",
+396:       "org.apache.axis.types.NonNegativeInteger",
+397:       "org.apache.axis.types.PositiveInteger",
+398:       "org.apache.axis.types.YearMonth",
+399:       "org.apache.axis.types.UnsignedInt",
+400:       "org.apache.axis.types.UnsignedShort",
+401:       "org.apache.axis.types.UnsignedByte",
+402:       "org.apache.axis.types.UnsignedLong",
+403:       "org.apache.axis.types.URI",
+404:       "org.apache.axis.types.Year",
+405:       "org.apache.axis.encoding.ser.MapSerializerFactory",
+406:       "org.apache.axis.encoding.ser.MapSerializer",
+407:       "org.apache.axis.encoding.ser.MapDeserializerFactory",
+408:       "org.apache.axis.encoding.ser.MapDeserializer",
+409:       "org.apache.axis.encoding.ser.ElementSerializerFactory",
+410:       "org.apache.axis.encoding.ser.ElementSerializer",
+411:       "org.apache.axis.encoding.ser.ElementDeserializerFactory",
+412:       "org.apache.axis.encoding.ser.ElementDeserializer",
+413:       "org.apache.axis.encoding.ser.DocumentSerializerFactory",
+414:       "org.apache.axis.encoding.ser.DocumentSerializer",
+415:       "org.apache.axis.encoding.ser.DocumentDeserializerFactory",
+416:       "org.apache.axis.encoding.ser.DocumentDeserializer",
+417:       "org.apache.axis.encoding.ser.VectorSerializerFactory",
+418:       "org.apache.axis.encoding.ser.VectorSerializer",
+419:       "org.apache.axis.encoding.ser.VectorDeserializerFactory",
+420:       "org.apache.axis.encoding.ser.VectorDeserializer",
+421:       "org.apache.axis.encoding.ser.ImageDataHandlerSerializer",
+422:       "org.apache.axis.encoding.ser.ImageDataHandlerDeserializer",
+423:       "org.apache.axis.encoding.ser.MimeMultipartDataHandlerSerializer",
+424:       "org.apache.axis.encoding.ser.MimeMultipartDataHandlerDeserializer",
+425:       "org.apache.axis.encoding.ser.SourceDataHandlerSerializer",
+426:       "org.apache.axis.encoding.ser.SourceDataHandlerDeserializer",
+427:       "org.apache.axis.attachments.OctetStream",
+428:       "org.apache.axis.encoding.ser.OctetStreamDataHandlerSerializer",
+429:       "org.apache.axis.encoding.ser.OctetStreamDataHandlerDeserializer",
+430:       "org.apache.axis.description.TypeDesc",
+431:       "org.apache.axis.description.FieldDesc",
+432:       "org.apache.axis.description.AttributeDesc",
+433:       "org.apache.axis.description.ElementDesc",
+434:       "org.apache.axis.types.Notation",
+435:       "org.apache.axis.encoding.ser.BeanSerializerFactory",
+436:       "org.apache.axis.encoding.ser.BeanSerializer",
+437:       "org.apache.axis.utils.cache.MethodCache",
+438:       "org.apache.axis.utils.cache.MethodCache$MethodKey",
+439:       "org.apache.axis.utils.BeanUtils",
+440:       "org.apache.axis.utils.BeanUtils$1",
+441:       "org.apache.axis.AxisFault",
+442:       "org.apache.axis.utils.BeanPropertyDescriptor",
+443:       "org.apache.axis.encoding.ser.BeanDeserializerFactory",
+444:       "org.apache.axis.encoding.ser.BeanDeserializer",
+445:       "org.apache.axis.types.Schema",
+446:       "org.apache.axis.encoding.ser.ArrayDeserializerFactory",
+447:       "org.apache.axis.encoding.ser.ArrayDeserializer",
+448:       "org.apache.axis.encoding.ser.CalendarSerializerFactory",
+449:       "org.apache.axis.encoding.ser.CalendarSerializer",
+450:       "org.apache.axis.encoding.ser.CalendarDeserializerFactory",
+451:       "org.apache.axis.encoding.ser.CalendarDeserializer",
+452:       "org.apache.axis.encoding.TypeMappingDelegate",
+453:       "org.apache.axis.encoding.DefaultSOAPEncodingTypeMappingImpl",
+454:       "org.apache.html.dom.HTMLTableCellElementImpl",
+455:       "org.apache.html.dom.HTMLTableColElementImpl",
+456:       "org.apache.wml.dom.WMLElementImpl",
+457:       "org.apache.wml.dom.WMLBElementImpl",
+458:       "org.apache.wml.dom.WMLNoopElementImpl",
+459:       "org.apache.wml.dom.WMLAElementImpl",
+460:       "org.apache.wml.dom.WMLSetvarElementImpl",
+461:       "org.apache.wml.dom.WMLAccessElementImpl",
+462:       "org.apache.wml.dom.WMLStrongElementImpl",
+463:       "org.apache.wml.dom.WMLPostfieldElementImpl",
+464:       "org.apache.wml.dom.WMLDoElementImpl",
+465:       "org.apache.wml.dom.WMLWmlElementImpl",
+466:       "org.apache.wml.dom.WMLTrElementImpl",
+467:       "org.apache.wml.dom.WMLGoElementImpl",
+468:       "org.apache.wml.dom.WMLBigElementImpl",
+469:       "org.apache.wml.dom.WMLAnchorElementImpl",
+470:       "org.apache.wml.dom.WMLTimerElementImpl",
+471:       "org.apache.wml.dom.WMLSmallElementImpl",
+472:       "org.apache.wml.dom.WMLOptgroupElementImpl",
+473:       "org.apache.wml.dom.WMLHeadElementImpl",
+474:       "org.apache.wml.dom.WMLTdElementImpl",
+475:       "org.apache.wml.dom.WMLFieldsetElementImpl",
+476:       "org.apache.wml.dom.WMLImgElementImpl",
+477:       "org.apache.wml.dom.WMLRefreshElementImpl",
+478:       "org.apache.wml.dom.WMLOneventElementImpl",
+479:       "org.apache.wml.dom.WMLInputElementImpl",
+480:       "org.apache.wml.dom.WMLPrevElementImpl",
+481:       "org.apache.wml.dom.WMLTableElementImpl",
+482:       "org.apache.wml.dom.WMLMetaElementImpl",
+483:       "org.apache.wml.dom.WMLTemplateElementImpl",
+484:       "org.apache.wml.dom.WMLBrElementImpl",
+485:       "org.apache.wml.dom.WMLOptionElementImpl",
+486:       "org.apache.wml.dom.WMLUElementImpl",
+487:       "org.apache.wml.dom.WMLPElementImpl",
+488:       "org.apache.wml.dom.WMLSelectElementImpl",
+489:       "org.apache.wml.dom.WMLEmElementImpl",
+490:       "org.apache.wml.dom.WMLIElementImpl",
+491:       "org.apache.wml.dom.WMLCardElementImpl",
+492:       "org.apache.wml.dom.WMLDocumentImpl",
+493:       "org.apache.axis.message.RPCParam",
+494:       "org.apache.axis.message.Text",
+495:       "org.apache.axis.deployment.wsdd.WSDDTransport",
+496:       "org.apache.axis.message.SOAPBody",
+497:       "org.apache.axis.message.PrefixedQName",
+498:       "org.apache.html.dom.HTMLHeadingElementImpl",
+499:       "org.apache.axis.message.SOAPHeaderElement",
+500:       "org.apache.html.dom.HTMLOptGroupElementImpl",
+501:       "org.apache.html.dom.HTMLFrameElementImpl",
+502:       "org.apache.axis.message.SOAPBodyElement",
+503:       "org.apache.html.dom.HTMLModElementImpl",
+504:       "org.apache.html.dom.HTMLTableElementImpl",
+505:       "org.apache.html.dom.HTMLLIElementImpl",
+506:       "org.apache.html.dom.HTMLObjectElementImpl",
+507:       "org.apache.axis.configuration.DirProvider",
+508:       "org.apache.axis.configuration.FileProvider",
+509:       "org.apache.html.dom.HTMLHeadElementImpl",
+510:       "org.apache.html.dom.HTMLBodyElementImpl",
+511:       "org.apache.axis.message.InputStreamBody",
+512:       "org.apache.axis.message.NamedNodeMapImpl",
+513:       "org.apache.axis.message.NodeListImpl",
+514:       "org.apache.commons.discovery.resource.names.ResourceNameDiscoverImpl",
+515:       "org.apache.commons.discovery.log.SimpleLog",
+516:       "org.apache.commons.discovery.log.DiscoveryLogFactory",
+517:       "org.apache.commons.discovery.tools.ClassUtils",
+518:       "org.apache.commons.discovery.resource.names.DiscoverNamesInAlternateManagedProperties",
+519:       "org.apache.commons.discovery.resource.names.DiscoverMappedNames",
+520:       "org.apache.axis.configuration.EngineConfigurationFactoryFinder",
+521:       "org.apache.axis.configuration.EngineConfigurationFactoryFinder$1",
+522:       "org.apache.commons.discovery.resource.names.NameDiscoverers",
+523:       "org.apache.commons.discovery.resource.names.DiscoverNamesInManagedProperties",
+524:       "org.apache.commons.discovery.resource.names.DiscoverNamesInFile",
+525:       "org.apache.commons.discovery.resource.names.DiscoverServiceNames",
+526:       "org.apache.commons.discovery.resource.ResourceDiscoverImpl",
+527:       "org.apache.commons.discovery.resource.DiscoverResources",
+528:       "org.apache.commons.discovery.resource.names.NameDiscoverers$1",
+529:       "org.apache.html.dom.HTMLLinkElementImpl",
+530:       "org.apache.html.dom.HTMLFieldSetElementImpl",
+531:       "org.apache.html.dom.HTMLFontElementImpl",
+532:       "org.apache.html.dom.HTMLHRElementImpl",
+533:       "org.apache.html.dom.HTMLMenuElementImpl",
+534:       "org.apache.html.dom.HTMLParamElementImpl",
+535:       "org.apache.axis.message.CDATAImpl",
+536:       "org.apache.html.dom.HTMLTitleElementImpl",
+537:       "org.apache.html.dom.HTMLPreElementImpl",
+538:       "org.apache.html.dom.HTMLDirectoryElementImpl",
+539:       "org.apache.html.dom.HTMLLabelElementImpl",
+540:       "org.apache.html.dom.HTMLAnchorElementImpl",
+541:       "org.apache.axis.message.RPCHeaderParam",
+542:       "org.apache.html.dom.HTMLLegendElementImpl",
+543:       "org.apache.html.dom.HTMLFormElementImpl",
+544:       "com.ibm.wsdl.BindingOutputImpl",
+545:       "com.ibm.wsdl.BindingImpl",
+546:       "org.apache.axis.message.RPCElement",
+547:       "org.apache.axis.attachments.AttachmentPart",
+548:       "org.apache.axis.encoding.SerializationContext",
+549:       "org.apache.html.dom.HTMLBRElementImpl",
+550:       "org.apache.html.dom.HTMLCollectionImpl",
+551:       "org.apache.html.dom.HTMLQuoteElementImpl",
+552:       "com.ibm.wsdl.MessageImpl",
+553:       "org.apache.html.dom.HTMLIFrameElementImpl",
+554:       "com.ibm.wsdl.PortTypeImpl",
+555:       "com.ibm.wsdl.Constants",
+556:       "org.apache.html.dom.HTMLBaseElementImpl",
+557:       "org.apache.axis.configuration.XMLStringProvider",
+558:       "org.apache.html.dom.HTMLTableCaptionElementImpl"
+559:     );
+560:   }
+561: }
+
+[MASTER] 06:06:51.006 [logback-2] ERROR JUnitAnalyzer - Failed to compile test case:
+FileSystemHandling.appendStringToFile((EvoSuiteFile) null, "I");
+Hashtable<String, Integer> hashtable0 = new Hashtable<String, Integer>();
+byte[] byteArray0 = new byte[6];
+byteArray0[0] = (byte)3;
+byteArray0[1] = (byte)41;
+byteArray0[2] = (byte)0;
+byteArray0[3] = (byte)89;
+byteArray0[4] = (byte)0;
+byteArray0[5] = (byte)17;
+ByteArrayList byteArrayList0 = ByteArrayList.createByteArrayList(byteArray0, (byte)89);
+byteArrayList0.toString();
+RecordTypeMessage recordTypeMessage0 = new RecordTypeMessage("enter HttpMethodBase.addProxyConnectionHeader(HttpState, HttpConnection)", (XBUSSystem) null, "Server Error");
+ByteArrayList byteArrayList1 = new ByteArrayList();
+MockDate mockDate0 = new MockDate();
+recordTypeMessage0.setResponseTimestamp(mockDate0);
+ByteArrayList.createByteArrayList(byteArray0, (byte)0);
+Instant instant0 = MockInstant.ofEpochSecond(65535L, (-1912L));
+TemporalUnit temporalUnit0 = mock(TemporalUnit.class, new ViolatedAssumptionAnswer());
+doReturn((Temporal) null).when(temporalUnit0).addTo(nullable(java.lang.Object.class) , anyLong());
+MockInstant.plus(instant0, (long) (byte)17, temporalUnit0);
+recordTypeMessage0.setRequestObject((Object) null, (XBUSSystem) null);
+assertEquals("RecordTypeMessage", recordTypeMessage0.getShortname());
+
+
+[MASTER] 06:06:52.050 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.commons.logging.impl.Log4JLogger: org/apache/log4j/Category
+* Writing JUnit test case 'RecordTypeMessage_ESTest' to /home/ubuntu/termite/qmosa/tests/s1022/83_xbus/evosuite-tests
+* Done!
+
+* Computation finished

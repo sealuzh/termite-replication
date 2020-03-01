@@ -1,0 +1,208 @@
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: state.Player
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/27_gangup/evosuite-files/evosuite.properties
+* Connecting to master process on port 11927
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 03:08:17.685 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 03:08:17.744 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 03:08:17.745 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 03:08:17.826 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class state.Player
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1023
+* Starting evolution
+[MASTER] 03:08:20.899 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.isConnected()Z: Line 157
+[MASTER] 03:08:20.900 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.pack()[B: Line 362
+[MASTER] 03:08:20.900 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.pack()[B: Line 363
+[MASTER] 03:08:20.900 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.pack()[B: Line 364
+[MASTER] 03:08:20.900 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.pack()[B: Line 365
+[MASTER] 03:08:20.900 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.pack()[B: Line 366
+[MASTER] 03:08:20.900 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.type()I: Line 391
+[MASTER] 03:08:20.900 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.type()I: root-Branch
+[MASTER] 03:08:20.900 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.pack()[B: root-Branch
+[MASTER] 03:08:20.900 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.isConnected()Z: root-Branch
+[MASTER] 03:08:20.905 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 53: state.Player.isConnected()Z:157 - InsertUnaryOp Negation
+[MASTER] 03:08:20.906 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 194: state.Player.pack(Ljava/io/DataOutputStream;)V:285 - ReplaceVariable id -> UNDEFINED
+[MASTER] 03:08:20.907 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 261: state.Player.type()I:391 - ReplaceConstant - 5 -> 0
+[MASTER] 03:08:20.908 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 262: state.Player.type()I:391 - ReplaceConstant - 5 -> 1
+[MASTER] 03:08:20.908 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 263: state.Player.type()I:391 - ReplaceConstant - 5 -> -1
+[MASTER] 03:08:20.908 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 264: state.Player.type()I:391 - ReplaceConstant - 5 -> 4
+[MASTER] 03:08:20.908 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 265: state.Player.type()I:391 - ReplaceConstant - 5 -> 6
+[MASTER] 03:08:20.908 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: state.Player.pack()[B:NonEmptyArray
+[MASTER] 03:08:20.908 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: state.Player.isConnected()Z:True
+[MASTER] 03:08:20.908 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: state.Player.type()I:Positive
+[MASTER] 03:08:20.908 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] state.Player.pack()[B
+[MASTER] 03:08:20.909 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] state.Player.isConnected()Z
+[MASTER] 03:08:20.909 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] state.Player.type()I
+[MASTER] 03:08:20.918 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] state.Player.pack()[B
+[MASTER] 03:08:20.918 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] state.Player.isConnected()Z
+[MASTER] 03:08:20.918 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] state.Player.type()I
+[MASTER] 03:08:20.919 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch state.Player.pack()[B: root-Branch in context: state.Player:pack()[B
+[MASTER] 03:08:20.928 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch state.Player.isConnected()Z: root-Branch in context: state.Player:isConnected()Z
+[MASTER] 03:08:20.928 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch state.Player.type()I: root-Branch in context: state.Player:type()I
+[MASTER] 03:08:20.947 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.reset(Z)V: Line 117
+[MASTER] 03:08:20.947 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.reset(Z)V: Line 118
+[MASTER] 03:08:20.947 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.reset(Z)V: Line 119
+[MASTER] 03:08:20.948 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.reset(Z)V: Line 120
+[MASTER] 03:08:20.948 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.reset(Z)V: Line 122
+[MASTER] 03:08:20.948 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.reset(Z)V: Line 123
+[MASTER] 03:08:20.948 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.reset(Z)V: Line 124
+[MASTER] 03:08:20.948 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.reset(Z)V: Line 125
+[MASTER] 03:08:20.948 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.reset(Z)V: Line 127
+[MASTER] 03:08:20.948 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.reset(Z)V: Line 128
+[MASTER] 03:08:20.948 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.reset(Z)V: Line 130
+[MASTER] 03:08:20.954 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.getPictureId()I: Line 224
+[MASTER] 03:08:20.954 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.setY(F)V: Line 244
+[MASTER] 03:08:20.954 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.setY(F)V: Line 245
+[MASTER] 03:08:20.954 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.setX(F)V: Line 249
+[MASTER] 03:08:20.954 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.setX(F)V: Line 250
+[MASTER] 03:08:20.955 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.getPictureId()I: root-Branch
+[MASTER] 03:08:20.955 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.setY(F)V: root-Branch
+[MASTER] 03:08:20.956 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.setX(F)V: root-Branch
+[MASTER] 03:08:20.956 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.reset(Z)V: I45 Branch 1 IFEQ L127 - false
+[MASTER] 03:08:20.957 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 0: state.Player.reset(Z)V:118 - ReplaceConstant - 1 -> 0
+[MASTER] 03:08:20.957 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1: state.Player.reset(Z)V:119 - ReplaceConstant - 1 -> 0
+[MASTER] 03:08:20.957 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2: state.Player.reset(Z)V:120 - ReplaceConstant - 0 -> 1
+[MASTER] 03:08:20.957 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 3: state.Player.reset(Z)V:120 - ReplaceConstant - 0 -> -1
+[MASTER] 03:08:20.957 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 4: state.Player.reset(Z)V:127 - InsertUnaryOp Negation of newGame
+[MASTER] 03:08:20.957 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 5: state.Player.reset(Z)V:127 - ReplaceComparisonOperator == -> !=
+[MASTER] 03:08:20.957 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 6: state.Player.reset(Z)V:128 - ReplaceConstant - 0.0 -> 1.0
+[MASTER] 03:08:20.957 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 7: state.Player.reset(Z)V:128 - ReplaceConstant - 0.0 -> -1.0
+[MASTER] 03:08:20.958 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 124: state.Player.getPictureId()I:224 - ReplaceVariable pictureid -> PLAYER
+[MASTER] 03:08:20.959 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 125: state.Player.getPictureId()I:224 - ReplaceVariable pictureid -> TEXT_MESSAGE
+[MASTER] 03:08:20.959 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 126: state.Player.getPictureId()I:224 - ReplaceVariable pictureid -> ACTION
+[MASTER] 03:08:20.959 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 127: state.Player.getPictureId()I:224 - ReplaceVariable pictureid -> UNDEFINED
+[MASTER] 03:08:20.959 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 128: state.Player.getPictureId()I:224 - ReplaceVariable pictureid -> GAME_STATE
+[MASTER] 03:08:20.959 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 129: state.Player.getPictureId()I:224 - ReplaceVariable pictureid -> GAME_EVENT
+[MASTER] 03:08:20.960 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 131: state.Player.getPictureId()I:224 - InsertUnaryOp Negation
+[MASTER] 03:08:20.960 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 132: state.Player.getPictureId()I:224 - InsertUnaryOp +1
+[MASTER] 03:08:20.960 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 133: state.Player.getPictureId()I:224 - InsertUnaryOp -1
+[MASTER] 03:08:20.960 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 143: state.Player.setY(F)V:244 - ReplaceVariable f -> MOVE_DISTANCE
+[MASTER] 03:08:20.960 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 144: state.Player.setY(F)V:244 - ReplaceVariable f -> TOLERANCE
+[MASTER] 03:08:20.960 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 145: state.Player.setY(F)V:244 - InsertUnaryOp Negation of f
+[MASTER] 03:08:20.960 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 146: state.Player.setX(F)V:249 - ReplaceVariable f -> MOVE_DISTANCE
+[MASTER] 03:08:20.960 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 147: state.Player.setX(F)V:249 - ReplaceVariable f -> TOLERANCE
+[MASTER] 03:08:20.960 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 148: state.Player.setX(F)V:249 - InsertUnaryOp Negation of f
+[MASTER] 03:08:20.961 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: state.Player.getPictureId()I:Negative
+[MASTER] 03:08:20.966 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] state.Player.setDead(JZ)V
+[MASTER] 03:08:20.966 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] state.Player.setDead(J)V
+[MASTER] 03:08:20.966 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] state.Player.getPictureId()I
+[MASTER] 03:08:20.967 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] state.Player.setY(F)V
+[MASTER] 03:08:20.967 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] state.Player.setX(F)V
+[MASTER] 03:08:20.967 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] state.Player.reset(Z)V
+[MASTER] 03:08:20.968 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] state.Player.setDead(JZ)V
+[MASTER] 03:08:20.968 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] state.Player.setDead(J)V
+[MASTER] 03:08:20.968 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] state.Player.getPictureId()I
+[MASTER] 03:08:20.968 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] state.Player.setY(F)V
+[MASTER] 03:08:20.968 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] state.Player.setX(F)V
+[MASTER] 03:08:20.968 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] state.Player.reset(Z)V
+[MASTER] 03:08:20.970 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch state.Player.reset(Z)V: I45 Branch 1 IFEQ L127 - false in context: state.Player:reset(Z)V
+[MASTER] 03:08:20.970 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch state.Player.setDead(J)V: root-Branch in context: state.Player:setDead(J)V
+[MASTER] 03:08:20.970 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch state.Player.setDead(JZ)V: root-Branch in context: state.Player:setDead(JZ)V
+[MASTER] 03:08:20.970 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch state.Player.getPictureId()I: root-Branch in context: state.Player:getPictureId()I
+[MASTER] 03:08:20.970 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch state.Player.setX(F)V: root-Branch in context: state.Player:setX(F)V
+[MASTER] 03:08:20.971 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch state.Player.setY(F)V: root-Branch in context: state.Player:setY(F)V
+[MASTER] 03:08:20.988 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.getMoney()F: Line 209
+[MASTER] 03:08:20.988 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.getZ()F: Line 239
+[MASTER] 03:08:20.989 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.getMoney()F: root-Branch
+[MASTER] 03:08:20.989 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.getZ()F: root-Branch
+[MASTER] 03:08:20.991 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 121: state.Player.getMoney()F:209 - ReplaceVariable money -> MOVE_DISTANCE
+[MASTER] 03:08:20.991 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 122: state.Player.getMoney()F:209 - ReplaceVariable money -> TOLERANCE
+[MASTER] 03:08:20.991 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 123: state.Player.getMoney()F:209 - InsertUnaryOp Negation
+[MASTER] 03:08:20.991 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 140: state.Player.getZ()F:239 - ReplaceVariable z -> MOVE_DISTANCE
+[MASTER] 03:08:20.991 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 141: state.Player.getZ()F:239 - ReplaceVariable z -> TOLERANCE
+[MASTER] 03:08:20.991 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 142: state.Player.getZ()F:239 - InsertUnaryOp Negation
+[MASTER] 03:08:20.992 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: state.Player.getMoney()F:Zero
+[MASTER] 03:08:20.992 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: state.Player.getZ()F:Negative
+[MASTER] 03:08:20.992 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: state.Player.getY()F:Negative
+[MASTER] 03:08:20.992 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] state.Player.getMoney()F
+[MASTER] 03:08:20.993 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] state.Player.getZ()F
+[MASTER] 03:08:20.994 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] state.Player.getMoney()F
+[MASTER] 03:08:20.994 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] state.Player.getZ()F
+[MASTER] 03:08:21.006 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch state.Player.getMoney()F: root-Branch in context: state.Player:getMoney()F
+[MASTER] 03:08:21.007 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch state.Player.getZ()F: root-Branch in context: state.Player:getZ()F
+[MASTER] 03:08:21.443 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.isDead()Z: Line 191
+[MASTER] 03:08:21.444 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.getY()F: Line 234
+[MASTER] 03:08:21.444 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.getY()F: root-Branch
+[MASTER] 03:08:21.444 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.isDead()Z: I4 Branch 3 IFNE L191 - true
+[MASTER] 03:08:21.450 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 103: state.Player.isDead()Z:191 - InsertUnaryOp Negation
+[MASTER] 03:08:21.450 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 104: state.Player.isDead()Z:191 - ReplaceComparisonOperator != -> ==
+[MASTER] 03:08:21.450 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 106: state.Player.isDead()Z:191 - ReplaceConstant - 0 -> 1
+[MASTER] 03:08:21.450 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 137: state.Player.getY()F:234 - ReplaceVariable y -> MOVE_DISTANCE
+[MASTER] 03:08:21.450 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 138: state.Player.getY()F:234 - ReplaceVariable y -> TOLERANCE
+[MASTER] 03:08:21.450 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 139: state.Player.getY()F:234 - InsertUnaryOp Negation
+[MASTER] 03:08:21.451 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: state.Player.getY()F:Zero
+[MASTER] 03:08:21.451 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: state.Player.isDead()Z:False
+[MASTER] 03:08:21.452 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] state.Player.getY()F
+[MASTER] 03:08:21.452 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] state.Player.isDead()Z
+[MASTER] 03:08:21.469 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] state.Player.getY()F
+[MASTER] 03:08:21.469 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] state.Player.isDead()Z
+[MASTER] 03:08:21.470 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch state.Player.getY()F: root-Branch in context: state.Player:getY()F
+[MASTER] 03:08:21.470 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch state.Player.isDead()Z: I4 Branch 3 IFNE L191 - true in context: state.Player:isDead()Z
+[MASTER] 03:08:31.631 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: state.Player.getName()Ljava/lang/String;:EmptyString
+* Search finished after 300s and 144 generations, 169559 statements, best individual has fitness: 112.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 98%
+* Total number of goals: 130
+* Number of covered goals: 127
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 98%
+* Total number of goals: 44
+* Number of covered goals: 43
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 99%
+* Total number of goals: 270
+* Number of covered goals: 266
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 89%
+* Total number of goals: 47
+* Number of covered goals: 42
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 34
+* Number of covered goals: 34
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 34
+* Number of covered goals: 34
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 98%
+* Total number of goals: 44
+* Number of covered goals: 43
+* Generated 56 tests with total length 463
+* Resulting test suite's coverage: 98% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 77%
+* Compiling and checking tests
+[MASTER] 03:13:43.519 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.StackOverflowError: null
+[MASTER] 03:13:43.524 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Player player0 = new Player();
+player0.setDead();
+player0.head = (Party) player0;
+player0.gangStrength();
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 6
+* Writing JUnit test case 'Player_ESTest' to /home/ubuntu/termite/rmosa/tests/s1023/27_gangup/evosuite-tests
+* Done!
+
+* Computation finished

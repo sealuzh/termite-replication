@@ -1,0 +1,149 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.dom4j.io.SAXReader
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/62_dom4j/evosuite-files/evosuite.properties
+* Connecting to master process on port 13272
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 23:30:54.346 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 23:30:55.204 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 23:30:55.204 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 23:30:55.210 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 23:30:56.097 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 23:30:56.098 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+* Finished analyzing classpath
+* Generating tests for class org.dom4j.io.SAXReader
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/62_dom4j/src/main/java/org/dom4j/io/SAXReader.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1013
+* Starting evolution
+[MASTER] 23:31:06.598 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.dom4j.io.SAXReader$SAXEntityResolver.resolveEntity(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;: I6 Branch 28 IFLE L934 - true
+[MASTER] 23:31:06.668 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 127: org.dom4j.io.SAXReader$SAXEntityResolver.resolveEntity(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;:934 - ReplaceComparisonOperator <= -> <
+[MASTER] 23:31:06.671 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: org.dom4j.io.SAXReader.createDefaultEntityResolver(Ljava/lang/String;)Lorg/xml/sax/EntityResolver;:NonNull
+[MASTER] 23:31:06.681 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.dom4j.io.SAXReader.createDefaultEntityResolver(Ljava/lang/String;)Lorg/xml/sax/EntityResolver;
+[MASTER] 23:31:06.711 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.dom4j.io.SAXReader.createDefaultEntityResolver(Ljava/lang/String;)Lorg/xml/sax/EntityResolver;
+[MASTER] 23:31:06.738 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.dom4j.io.SAXReader$SAXEntityResolver.resolveEntity(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;: I6 Branch 28 IFLE L934 - true in context: 
+[MASTER] 23:31:09.702 [logback-1] WARN  MSecurityManager - SUT asked for a runtime permission that EvoSuite does not recognize: ftpClientProvider
+[MASTER] 23:31:26.657 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 123s and 19 generations, 13171 statements, best individual has fitness: 1128.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 95%
+* Total number of goals: 259
+* Number of covered goals: 247
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 90%
+* Total number of goals: 101
+* Number of covered goals: 91
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 21
+* Number of covered goals: 21
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 96%
+* Total number of goals: 143
+* Number of covered goals: 137
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 23%
+* Total number of goals: 112
+* Number of covered goals: 26
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 98%
+* Total number of goals: 58
+* Number of covered goals: 57
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 98%
+* Total number of goals: 58
+* Number of covered goals: 57
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 86%
+* Total number of goals: 101
+* Number of covered goals: 87
+* Generated 69 tests with total length 1010
+* Resulting test suite's coverage: 83% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 40%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         ftpClientProvider: 17
+* Writing JUnit test case 'SAXReader_ESTest' to /home/ubuntu/termite/qmosa/tests/s1013/62_dom4j/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.dom4j.io.OutputFormat
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/62_dom4j/evosuite-files/evosuite.properties
+* Connecting to master process on port 13277
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class org.dom4j.io.OutputFormat
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/62_dom4j/src/main/java/org/dom4j/io/OutputFormat.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1013
+* Starting evolution
+* Search finished after 122s and 25 generations, 26908 statements, best individual has fitness: 304.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 99%
+* Total number of goals: 155
+* Number of covered goals: 154
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 99%
+* Total number of goals: 67
+* Number of covered goals: 66
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 4
+* Number of covered goals: 4
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 96%
+* Total number of goals: 196
+* Number of covered goals: 188
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 64%
+* Total number of goals: 74
+* Number of covered goals: 47
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 35
+* Number of covered goals: 35
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 35
+* Number of covered goals: 35
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 99%
+* Total number of goals: 67
+* Number of covered goals: 66
+* Generated 49 tests with total length 680
+* Resulting test suite's coverage: 94% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 75%
+* Compiling and checking tests
+* Writing JUnit test case 'OutputFormat_ESTest' to /home/ubuntu/termite/qmosa/tests/s1013/62_dom4j/evosuite-tests
+* Done!
+
+* Computation finished

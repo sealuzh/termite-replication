@@ -1,0 +1,440 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: freemind.controller.Controller
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/105_freemind/evosuite-files/evosuite.properties
+* Connecting to master process on port 14426
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 00:46:41.515 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 00:46:41.516 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 00:46:41.851 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 00:46:41.851 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 00:46:41.852 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 00:46:41.949 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 00:46:44.288 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 00:46:44.288 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: org.apache.log.Logger
+[MASTER] 00:46:44.288 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 00:46:44.288 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 00:46:44.288 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 00:46:44.288 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 00:46:44.852 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.SQLType
+[MASTER] 00:46:45.136 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 00:46:46.421 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 00:46:46.421 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 00:46:46.425 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 00:46:46.426 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 00:46:46.426 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 00:46:46.426 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 00:46:46.427 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 00:46:46.428 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 00:46:47.269 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 00:46:49.759 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+[MASTER] 00:46:49.952 [logback-2] ERROR ConcreteClassAnalyzer - Problem for freemind.controller.Controller. Class not found: org.apache.xerces.impl.xs.SchemaGrammar$Schema4Annotations
+java.lang.IncompatibleClassChangeError: org.apache.xerces.impl.xs.SchemaGrammar and org.apache.xerces.impl.xs.SchemaGrammar$Schema4Annotations disagree on InnerClasses attribute
+	at java.lang.Class.getDeclaringClass0(Native Method) ~[na:1.8.0_201]
+	at java.lang.Class.getDeclaringClass(Class.java:1235) ~[na:1.8.0_201]
+	at java.lang.Class.getEnclosingClass(Class.java:1277) ~[na:1.8.0_201]
+	at java.lang.Class.getSimpleBinaryName(Class.java:1443) ~[na:1.8.0_201]
+	at java.lang.Class.getSimpleName(Class.java:1309) ~[na:1.8.0_201]
+	at java.lang.Class.isAnonymousClass(Class.java:1411) ~[na:1.8.0_201]
+	at org.evosuite.setup.TestUsageChecker.canUse(TestUsageChecker.java:155) ~[evosuite.jar:1.0.6]
+	at org.evosuite.setup.ConcreteClassAnalyzer.getConcreteClassesImpl(ConcreteClassAnalyzer.java:133) [evosuite.jar:1.0.6]
+	at org.evosuite.setup.ConcreteClassAnalyzer.getConcreteClasses(ConcreteClassAnalyzer.java:61) [evosuite.jar:1.0.6]
+	at org.evosuite.setup.TestClusterGenerator.addDependency(TestClusterGenerator.java:878) [evosuite.jar:1.0.6]
+	at org.evosuite.setup.TestClusterGenerator.addDependency(TestClusterGenerator.java:844) [evosuite.jar:1.0.6]
+	at org.evosuite.setup.TestClusterGenerator.addDependencies(TestClusterGenerator.java:789) [evosuite.jar:1.0.6]
+	at org.evosuite.setup.TestClusterGenerator.addDependencyClass(TestClusterGenerator.java:985) [evosuite.jar:1.0.6]
+	at org.evosuite.setup.TestClusterGenerator.resolveDependencies(TestClusterGenerator.java:358) [evosuite.jar:1.0.6]
+	at org.evosuite.setup.TestClusterGenerator.generateCluster(TestClusterGenerator.java:137) [evosuite.jar:1.0.6]
+	at org.evosuite.setup.DependencyAnalysis.analyze(DependencyAnalysis.java:118) [evosuite.jar:1.0.6]
+	at org.evosuite.setup.DependencyAnalysis.analyzeClass(DependencyAnalysis.java:132) [evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.initializeTargetClass(TestSuiteGenerator.java:110) [evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:130) [evosuite.jar:1.0.6]
+	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:145) [evosuite.jar:1.0.6]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_201]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+[MASTER] 00:46:49.952 [logback-2] ERROR ConcreteClassAnalyzer - Removing class from inheritance tree
+[MASTER] 00:46:49.961 [logback-2] ERROR ConcreteClassAnalyzer - Problem for freemind.controller.Controller. Class not found: org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser
+java.lang.IncompatibleClassChangeError: org.apache.xerces.jaxp.SAXParserImpl and org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser disagree on InnerClasses attribute
+	at java.lang.Class.getDeclaringClass0(Native Method) ~[na:1.8.0_201]
+	at java.lang.Class.getDeclaringClass(Class.java:1235) ~[na:1.8.0_201]
+	at java.lang.Class.getEnclosingClass(Class.java:1277) ~[na:1.8.0_201]
+	at java.lang.Class.getSimpleBinaryName(Class.java:1443) ~[na:1.8.0_201]
+	at java.lang.Class.getSimpleName(Class.java:1309) ~[na:1.8.0_201]
+	at java.lang.Class.isAnonymousClass(Class.java:1411) ~[na:1.8.0_201]
+	at org.evosuite.setup.TestUsageChecker.canUse(TestUsageChecker.java:155) ~[evosuite.jar:1.0.6]
+	at org.evosuite.setup.ConcreteClassAnalyzer.getConcreteClassesImpl(ConcreteClassAnalyzer.java:133) [evosuite.jar:1.0.6]
+	at org.evosuite.setup.ConcreteClassAnalyzer.getConcreteClasses(ConcreteClassAnalyzer.java:61) [evosuite.jar:1.0.6]
+	at org.evosuite.setup.TestClusterGenerator.addDependency(TestClusterGenerator.java:878) [evosuite.jar:1.0.6]
+	at org.evosuite.setup.TestClusterGenerator.addDependencies(TestClusterGenerator.java:789) [evosuite.jar:1.0.6]
+	at org.evosuite.setup.TestClusterGenerator.addDependencyClass(TestClusterGenerator.java:985) [evosuite.jar:1.0.6]
+	at org.evosuite.setup.TestClusterGenerator.resolveDependencies(TestClusterGenerator.java:358) [evosuite.jar:1.0.6]
+	at org.evosuite.setup.TestClusterGenerator.generateCluster(TestClusterGenerator.java:137) [evosuite.jar:1.0.6]
+	at org.evosuite.setup.DependencyAnalysis.analyze(DependencyAnalysis.java:118) [evosuite.jar:1.0.6]
+	at org.evosuite.setup.DependencyAnalysis.analyzeClass(DependencyAnalysis.java:132) [evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.initializeTargetClass(TestSuiteGenerator.java:110) [evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:130) [evosuite.jar:1.0.6]
+	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:145) [evosuite.jar:1.0.6]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_201]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+[MASTER] 00:46:49.961 [logback-2] ERROR ConcreteClassAnalyzer - Removing class from inheritance tree
+* Finished analyzing classpath
+* Generating tests for class freemind.controller.Controller
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/105_freemind/src/main/java/freemind/controller/Controller.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1029
+* Starting evolution
+[MASTER] 00:46:53.380 [logback-2] ERROR TestCluster - Failed to check cache for javax.swing.JComboBox<E> : Type points to itself
+[MASTER] 00:46:53.387 [logback-2] ERROR TestCluster - Failed to check cache for javax.swing.JList<E> : Type points to itself
+[MASTER] 00:46:54.466 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.ZoomInAction.<init>(Lfreemind/controller/Controller;Lfreemind/controller/Controller;)V
+[MASTER] 00:46:54.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getResourceString(Ljava/lang/String;)Ljava/lang/String;
+[MASTER] 00:46:54.699 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getMode()Lfreemind/modes/Mode;
+[MASTER] 00:46:55.693 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.OptionAntialiasAction.<init>(Lfreemind/controller/Controller;Lfreemind/controller/Controller;)V
+[MASTER] 00:46:55.755 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getFilterController()Lfreemind/controller/filter/FilterController;
+[MASTER] 00:46:55.795 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was freemind.controller.Controller.getPropertyChangeListeners()Ljava/util/Collection;: Line 1731
+[MASTER] 00:46:55.796 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was freemind.controller.Controller.getPropertyChangeListeners()Ljava/util/Collection;: root-Branch
+[MASTER] 00:46:55.799 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: freemind.controller.Controller.getPropertyChangeListeners()Ljava/util/Collection;:NonNull
+[MASTER] 00:46:55.807 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getPropertyChangeListeners()Ljava/util/Collection;
+[MASTER] 00:46:55.808 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] freemind.controller.Controller.getPropertyChangeListeners()Ljava/util/Collection;
+[MASTER] 00:46:55.813 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch freemind.controller.Controller.getPropertyChangeListeners()Ljava/util/Collection;: root-Branch in context: freemind.controller.Controller:getPropertyChangeListeners()Ljava/util/Collection;
+[MASTER] 00:46:55.829 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.numberOfOpenMapInformation(II)V
+[MASTER] 00:46:55.838 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getProperty(Ljava/lang/String;)Ljava/lang/String;
+[MASTER] 00:46:55.848 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.setAntialiasEdges(Z)V
+[MASTER] 00:46:55.946 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.setProperty(Ljava/lang/String;Ljava/lang/String;)V
+[MASTER] 00:46:55.979 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getMap()Lfreemind/modes/MindMap;
+[MASTER] 00:46:55.996 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getZooms()[Ljava/lang/String;
+[MASTER] 00:46:56.050 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getJFrame()Ljavax/swing/JFrame;
+[MASTER] 00:46:57.383 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.toggleSelectionAsRectangle()V
+[MASTER] 00:46:57.453 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.ShowSelectionAsRectangleAction.<init>(Lfreemind/controller/Controller;Lfreemind/controller/Controller;)V
+[MASTER] 00:46:58.005 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getFontThroughMap(Ljava/awt/Font;)Ljava/awt/Font;
+[MASTER] 00:46:58.248 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getModeController()Lfreemind/modes/ModeController;
+[MASTER] 00:46:59.425 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getDefaultFont()Ljava/awt/Font;
+[MASTER] 00:47:00.579 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.PropertyAction.<init>(Lfreemind/controller/Controller;Lfreemind/controller/Controller;)V
+[MASTER] 00:47:00.590 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.setLeftToolbarVisible(Z)V
+[MASTER] 00:47:00.682 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.removePropertyChangeListener(Lfreemind/preferences/FreemindPropertyListener;)V
+[MASTER] 00:47:00.713 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.informationMessage(Ljava/lang/Object;)V
+[MASTER] 00:47:00.926 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.addTabbedPane(Ljavax/swing/JTabbedPane;)V
+[MASTER] 00:47:02.734 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was freemind.controller.Controller.getCommonJColorChooser()Ljavax/swing/JColorChooser;: Line 503
+[MASTER] 00:47:02.735 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was freemind.controller.Controller.getCommonJColorChooser()Ljavax/swing/JColorChooser;: root-Branch
+[MASTER] 00:47:02.743 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: freemind.controller.Controller.getCommonJColorChooser()Ljavax/swing/JColorChooser;:NonNull:javax.swing.JColorChooser:isFocusCycleRoot()Z:False
+[MASTER] 00:47:02.743 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: freemind.controller.Controller.getCommonJColorChooser()Ljavax/swing/JColorChooser;:NonNull:javax.swing.JColorChooser:isFocusTraversalPolicySet()Z:False
+[MASTER] 00:47:02.743 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: freemind.controller.Controller.getCommonJColorChooser()Ljavax/swing/JColorChooser;:NonNull:javax.swing.JColorChooser:isFocusTraversalPolicyProvider()Z:False
+[MASTER] 00:47:02.743 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: freemind.controller.Controller.getCommonJColorChooser()Ljavax/swing/JColorChooser;:NonNull:javax.swing.JColorChooser:getIgnoreRepaint()Z:False
+[MASTER] 00:47:02.743 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: freemind.controller.Controller.getCommonJColorChooser()Ljavax/swing/JColorChooser;:NonNull:javax.swing.JColorChooser:getFocusTraversalKeysEnabled()Z:True
+[MASTER] 00:47:02.743 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getCommonJColorChooser()Ljavax/swing/JColorChooser;
+[MASTER] 00:47:02.744 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.LocalLinkConverter.convertLocalLink(Ljava/lang/String;)Ljava/lang/String;
+[MASTER] 00:47:02.744 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] freemind.controller.Controller.getCommonJColorChooser()Ljavax/swing/JColorChooser;
+[MASTER] 00:47:02.744 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch freemind.controller.Controller.getCommonJColorChooser()Ljavax/swing/JColorChooser;: root-Branch in context: freemind.controller.Controller:getCommonJColorChooser()Ljavax/swing/JColorChooser;
+[MASTER] 00:47:02.853 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.changeZoomValueProperty(F)V
+[MASTER] 00:47:03.043 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.storePageFormat()V
+[MASTER] 00:47:03.994 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getMapModuleManager()Lfreemind/controller/MapModuleManager;
+[MASTER] 00:47:04.344 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.deregisterMapTitleChangeListener(Lfreemind/controller/MapModuleManager$MapTitleChangeListener;)V
+[MASTER] 00:47:05.360 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.setMenubarVisible(Z)V
+[MASTER] 00:47:05.413 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.initialization()V
+[MASTER] 00:47:05.479 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.deregisterMapTitleContributor(Lfreemind/controller/MapModuleManager$MapTitleContributor;)V
+[MASTER] 00:47:05.655 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.ZoomOutAction.<init>(Lfreemind/controller/Controller;Lfreemind/controller/Controller;)V
+[MASTER] 00:47:05.796 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.setFrame(Lfreemind/main/FreeMindMain;)V
+[MASTER] 00:47:06.669 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.setEdgesRenderingHint(Ljava/awt/Graphics2D;)Ljava/lang/Object;
+[MASTER] 00:47:06.713 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getMapModule()Lfreemind/view/MapModule;
+[MASTER] 00:47:07.616 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.createNewMode(Ljava/lang/String;)Z
+[MASTER] 00:47:08.043 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was freemind.controller.Controller$DisposeOnClose.<init>()V: Line 547
+[MASTER] 00:47:08.044 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was freemind.controller.Controller$DisposeOnClose.<init>()V: root-Branch
+[MASTER] 00:47:08.046 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.DisposeOnClose.<init>()V
+[MASTER] 00:47:08.047 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] freemind.controller.Controller.DisposeOnClose.<init>()V
+[MASTER] 00:47:08.047 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch freemind.controller.Controller$DisposeOnClose.<init>()V: root-Branch in context: 
+[MASTER] 00:47:08.256 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.setAntialiasAll(Z)V
+[MASTER] 00:47:09.075 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getNodeDropListener()Lfreemind/controller/NodeDropListener;
+[MASTER] 00:47:09.254 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getResource(Ljava/lang/String;)Ljava/net/URL;
+[MASTER] 00:47:09.379 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getFrame()Lfreemind/main/FreeMindMain;
+[MASTER] 00:47:11.681 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.setZoom(F)V
+[MASTER] 00:47:14.392 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.deregisterZoomListener(Lfreemind/controller/ZoomListener;)V
+[MASTER] 00:47:14.434 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getMapMouseMotionListener()Lfreemind/controller/MapMouseMotionListener;
+[MASTER] 00:47:14.708 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getNodeMotionListener()Lfreemind/controller/NodeMotionListener;
+[MASTER] 00:47:15.059 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getModes()Ljava/util/Set;
+[MASTER] 00:47:17.458 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getModel()Lfreemind/modes/MindMap;
+[MASTER] 00:47:21.403 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.obtainFocusForSelected()V
+[MASTER] 00:47:21.825 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.setAllActions(Z)V
+[MASTER] 00:47:23.303 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.beforeMapModuleChange(Lfreemind/view/MapModule;Lfreemind/modes/Mode;Lfreemind/view/MapModule;Lfreemind/modes/Mode;)V
+[MASTER] 00:47:26.017 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getNodeKeyListener()Lfreemind/controller/NodeKeyListener;
+[MASTER] 00:47:26.259 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getDefaultFontFamilyName()Ljava/lang/String;
+[MASTER] 00:47:27.930 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getPageFormat()Ljava/awt/print/PageFormat;
+[MASTER] 00:47:29.864 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getToolbar()Ljavax/swing/JToolBar;
+[MASTER] 00:47:31.710 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.init()V
+[MASTER] 00:47:32.199 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.setToolbarVisible(Z)V
+[MASTER] 00:47:33.677 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.registerMapTitleChangeListener(Lfreemind/controller/MapModuleManager$MapTitleChangeListener;)V
+[MASTER] 00:47:34.092 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.registerMapTitleContributor(Lfreemind/controller/MapModuleManager$MapTitleContributor;)V
+[MASTER] 00:47:40.876 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.setTitle()V
+[MASTER] 00:47:42.757 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.moveTab(II)V
+[MASTER] 00:47:48.835 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.moveToRoot()V
+[MASTER] 00:47:49.223 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getDefaultFontSize()I
+[MASTER] 00:47:56.068 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getView()Lfreemind/view/mindmapview/MapView;
+[MASTER] 00:47:56.456 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was freemind.controller.Controller$Closer.<init>()V: Line 540
+[MASTER] 00:47:56.457 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was freemind.controller.Controller$Closer.<init>()V: root-Branch
+[MASTER] 00:47:56.459 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.Closer.<init>()V
+[MASTER] 00:47:56.460 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] freemind.controller.Controller.Closer.<init>()V
+[MASTER] 00:47:56.460 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch freemind.controller.Controller$Closer.<init>()V: root-Branch in context: 
+[MASTER] 00:47:57.835 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.close(Z)V
+[MASTER] 00:47:58.066 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getMapMouseWheelListener()Lfreemind/controller/MapMouseWheelListener;
+[MASTER] 00:48:08.370 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.setTextRenderingHint(Ljava/awt/Graphics2D;)V
+[MASTER] 00:48:10.307 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.ChronoLocalDate
+[MASTER] 00:48:26.455 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getLastOpenedList()Lfreemind/controller/LastOpenedList;
+[MASTER] 00:48:27.918 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.errorMessage(Ljava/lang/Object;Ljavax/swing/JComponent;)V
+[MASTER] 00:48:42.341 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.addPropertyChangeListener(Lfreemind/preferences/FreemindPropertyListener;)V
+[MASTER] 00:48:44.788 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getDefaultFontStyle()I
+[MASTER] 00:48:45.780 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.errorMessage(Ljava/lang/Object;)V
+[MASTER] 00:48:53.093 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.afterMapClose(Lfreemind/view/MapModule;Lfreemind/modes/Mode;)V
+[MASTER] 00:48:53.558 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getNodeMouseMotionListener()Lfreemind/controller/NodeMouseMotionListener;
+[MASTER] 00:48:54.692 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.afterMapModuleChange(Lfreemind/view/MapModule;Lfreemind/modes/Mode;Lfreemind/view/MapModule;Lfreemind/modes/Mode;)V
+[MASTER] 00:48:57.240 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.informationMessage(Ljava/lang/Object;Ljavax/swing/JComponent;)V
+[MASTER] 00:49:08.325 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] freemind.controller.Controller.getNodeDragListener()Lfreemind/controller/NodeDragListener;
+* Search finished after 146s and 96 generations, 27287 statements, best individual has fitness: 23528.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 6%
+* Total number of goals: 932
+* Number of covered goals: 57
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 3%
+* Total number of goals: 430
+* Number of covered goals: 15
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 3
+* Number of covered goals: 3
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 0%
+* Total number of goals: 813
+* Number of covered goals: 3
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 0%
+* Total number of goals: 257
+* Number of covered goals: 0
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 10%
+* Total number of goals: 132
+* Number of covered goals: 13
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 8%
+* Total number of goals: 132
+* Number of covered goals: 11
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 2%
+* Total number of goals: 430
+* Number of covered goals: 10
+* Generated 8 tests with total length 187
+* Resulting test suite's coverage: 6% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 0%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.io.FilePermission: 
+         read,write,delete /tmp/*: 1
+* Writing JUnit test case 'Controller_ESTest' to /home/ubuntu/termite/qmosa/tests/s1029/105_freemind/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: accessories.plugins.time.JDayChooser
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/105_freemind/evosuite-files/evosuite.properties
+* Connecting to master process on port 14426
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 02:52:43.609 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 02:52:43.618 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 02:52:43.856 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 02:52:43.861 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 02:52:43.861 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 02:52:43.887 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 02:52:43.947 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 02:52:43.947 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 02:52:43.948 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 02:52:45.486 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 02:52:45.487 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 02:52:45.489 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 02:52:45.491 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 02:52:45.493 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 02:52:45.496 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 02:52:45.557 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 02:52:46.352 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+[MASTER] 02:52:49.641 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 02:52:49.641 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: org.apache.log.Logger
+[MASTER] 02:52:49.641 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 02:52:49.641 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 02:52:49.642 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 02:52:49.642 [logback-1] WARN  CheapPurityAnalyzer - org.apache.log.Logger was not found in the inheritance tree. Using DEFAULT value for cheap-purity analysis
+[MASTER] 02:52:50.574 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.SQLType
+* Finished analyzing classpath
+* Generating tests for class accessories.plugins.time.JDayChooser
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/105_freemind/src/main/java/accessories/plugins/time/JDayChooser.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1029
+* Starting evolution
+[MASTER] 02:53:00.848 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V
+[MASTER] 02:53:01.295 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] accessories.plugins.time.JDayChooser.<init>(Z)V
+[MASTER] 02:53:01.296 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] accessories.plugins.time.JDayChooser.<init>(Z)V
+[MASTER] 02:53:03.446 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was accessories.plugins.time.JDayChooser.<init>(Z)V: Line 226
+[MASTER] 02:53:03.500 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was accessories.plugins.time.JDayChooser.<init>(Z)V: I416 Branch 6 IFEQ L225 - false
+[MASTER] 02:53:03.583 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch accessories.plugins.time.JDayChooser.<init>(Z)V: I416 Branch 6 IFEQ L225 - false in context: accessories.plugins.time.JDayChooser:<init>(Z)V
+[MASTER] 02:53:16.673 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V: Line 815
+[MASTER] 02:53:16.675 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V: Line 817
+[MASTER] 02:53:16.676 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V: Line 818
+[MASTER] 02:53:16.677 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V: Line 819
+[MASTER] 02:53:16.679 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V: Line 823
+[MASTER] 02:53:16.680 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V: Line 824
+[MASTER] 02:53:16.682 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V: Line 825
+[MASTER] 02:53:16.683 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V: Line 828
+[MASTER] 02:53:16.845 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1890: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:817 - ReplaceComparisonOperator = null -> != null
+[MASTER] 02:53:16.846 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1891: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:818 - ReplaceConstant - 0 -> 1
+[MASTER] 02:53:16.848 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1906: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:818 - InsertUnaryOp Negation of i
+[MASTER] 02:53:16.849 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1907: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:818 - InsertUnaryOp IINC 1 i
+[MASTER] 02:53:16.851 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1908: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:818 - InsertUnaryOp IINC -1 i
+[MASTER] 02:53:16.852 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1909: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:818 - ReplaceConstant - 7 -> 0
+[MASTER] 02:53:16.854 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1910: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:818 - ReplaceConstant - 7 -> 1
+[MASTER] 02:53:16.855 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1911: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:818 - ReplaceConstant - 7 -> -1
+[MASTER] 02:53:16.857 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1912: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:818 - ReplaceConstant - 7 -> 6
+[MASTER] 02:53:16.858 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1913: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:818 - ReplaceConstant - 7 -> 8
+[MASTER] 02:53:16.862 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1914: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:818 - ReplaceComparisonOperator >= -> -1
+[MASTER] 02:53:16.869 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1915: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:818 - ReplaceComparisonOperator >= -> >
+[MASTER] 02:53:16.873 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1932: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:819 - InsertUnaryOp Negation of i
+[MASTER] 02:53:16.876 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1933: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:819 - InsertUnaryOp IINC 1 i
+[MASTER] 02:53:16.880 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1934: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:819 - InsertUnaryOp IINC -1 i
+[MASTER] 02:53:16.882 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1941: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:823 - ReplaceComparisonOperator = null -> != null
+[MASTER] 02:53:16.884 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1942: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:824 - ReplaceConstant - 0 -> 1
+[MASTER] 02:53:16.885 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1957: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:824 - InsertUnaryOp Negation of i
+[MASTER] 02:53:16.887 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1958: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:824 - InsertUnaryOp IINC 1 i
+[MASTER] 02:53:16.888 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1959: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:824 - InsertUnaryOp IINC -1 i
+[MASTER] 02:53:16.890 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1960: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:824 - ReplaceConstant - 7 -> 0
+[MASTER] 02:53:16.893 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1961: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:824 - ReplaceConstant - 7 -> 1
+[MASTER] 02:53:16.894 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1962: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:824 - ReplaceConstant - 7 -> -1
+[MASTER] 02:53:16.896 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1963: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:824 - ReplaceConstant - 7 -> 6
+[MASTER] 02:53:16.897 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1964: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:824 - ReplaceConstant - 7 -> 8
+[MASTER] 02:53:16.899 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1965: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:824 - ReplaceComparisonOperator >= -> -1
+[MASTER] 02:53:16.900 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1966: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:824 - ReplaceComparisonOperator >= -> >
+[MASTER] 02:53:16.902 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1983: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:825 - InsertUnaryOp Negation of i
+[MASTER] 02:53:16.903 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1984: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:825 - InsertUnaryOp IINC 1 i
+[MASTER] 02:53:16.905 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1985: accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V:825 - InsertUnaryOp IINC -1 i
+[MASTER] 02:53:16.936 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V
+[MASTER] 02:53:16.938 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V: I9 Branch 61 IFNULL L817 - false in context: accessories.plugins.time.JDayChooser:setDecorationBackgroundColor(Ljava/awt/Color;)V
+[MASTER] 02:53:16.940 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V: I42 Branch 64 IF_ICMPGE L824 - true in context: accessories.plugins.time.JDayChooser:setDecorationBackgroundColor(Ljava/awt/Color;)V
+[MASTER] 02:53:16.943 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V: I34 Branch 63 IFNULL L823 - false in context: accessories.plugins.time.JDayChooser:setDecorationBackgroundColor(Ljava/awt/Color;)V
+[MASTER] 02:53:16.945 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V: I17 Branch 62 IF_ICMPGE L818 - true in context: accessories.plugins.time.JDayChooser:setDecorationBackgroundColor(Ljava/awt/Color;)V
+[MASTER] 02:53:16.951 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V: I17 Branch 62 IF_ICMPGE L818 - false in context: accessories.plugins.time.JDayChooser:setDecorationBackgroundColor(Ljava/awt/Color;)V
+[MASTER] 02:53:16.955 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch accessories.plugins.time.JDayChooser.setDecorationBackgroundColor(Ljava/awt/Color;)V: I42 Branch 64 IF_ICMPGE L824 - false in context: accessories.plugins.time.JDayChooser:setDecorationBackgroundColor(Ljava/awt/Color;)V
+[MASTER] 02:53:44.395 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] accessories.plugins.time.JDayChooser.keyPressed(Ljava/awt/event/KeyEvent;)V
+[MASTER] 02:53:44.400 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] accessories.plugins.time.JDayChooser.keyPressed(Ljava/awt/event/KeyEvent;)V
+[MASTER] 02:54:04.507 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was accessories.plugins.time.JDayChooser.getWeekdayForeground()Ljava/awt/Color;: Line 845
+[MASTER] 02:54:04.531 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was accessories.plugins.time.JDayChooser.getWeekdayForeground()Ljava/awt/Color;: root-Branch
+[MASTER] 02:54:04.792 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: accessories.plugins.time.JDayChooser.getWeekdayForeground()Ljava/awt/Color;:NonNull:java.awt.Color:getRed()I:Zero
+[MASTER] 02:54:04.794 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: accessories.plugins.time.JDayChooser.getWeekdayForeground()Ljava/awt/Color;:NonNull:java.awt.Color:getGreen()I:Positive
+[MASTER] 02:54:04.795 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: accessories.plugins.time.JDayChooser.getWeekdayForeground()Ljava/awt/Color;:NonNull:java.awt.Color:getBlue()I:Positive
+[MASTER] 02:54:04.797 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: accessories.plugins.time.JDayChooser.getWeekdayForeground()Ljava/awt/Color;:NonNull:java.awt.Color:getAlpha()I:Positive
+[MASTER] 02:54:04.798 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: accessories.plugins.time.JDayChooser.getWeekdayForeground()Ljava/awt/Color;:NonNull:java.awt.Color:getRGB()I:Negative
+[MASTER] 02:54:04.799 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: accessories.plugins.time.JDayChooser.getWeekdayForeground()Ljava/awt/Color;:NonNull:java.awt.Color:getTransparency()I:Positive
+[MASTER] 02:54:04.810 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] accessories.plugins.time.JDayChooser.getWeekdayForeground()Ljava/awt/Color;
+[MASTER] 02:54:04.818 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] accessories.plugins.time.JDayChooser.keyReleased(Ljava/awt/event/KeyEvent;)V
+[MASTER] 02:54:04.824 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] accessories.plugins.time.JDayChooser.getWeekdayForeground()Ljava/awt/Color;
+[MASTER] 02:54:04.846 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch accessories.plugins.time.JDayChooser.getWeekdayForeground()Ljava/awt/Color;: root-Branch in context: accessories.plugins.time.JDayChooser:getWeekdayForeground()Ljava/awt/Color;
+[MASTER] 02:54:19.069 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was accessories.plugins.time.JDayChooser.setWeekOfYearVisible(Z)V: Line 782
+[MASTER] 02:54:19.072 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was accessories.plugins.time.JDayChooser.getDecorationBackgroundColor()Ljava/awt/Color;: Line 805
+[MASTER] 02:54:19.093 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was accessories.plugins.time.JDayChooser.getDecorationBackgroundColor()Ljava/awt/Color;: root-Branch
+[MASTER] 02:54:19.108 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was accessories.plugins.time.JDayChooser.setWeekOfYearVisible(Z)V: I12 Branch 60 IFEQ L779 - true
+[MASTER] 02:54:19.352 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: accessories.plugins.time.JDayChooser.getDecorationBackgroundColor()Ljava/awt/Color;:NonNull:java.awt.Color:getRed()I:Zero
+[MASTER] 02:54:19.352 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: accessories.plugins.time.JDayChooser.getDecorationBackgroundColor()Ljava/awt/Color;:NonNull:java.awt.Color:getGreen()I:Positive
+[MASTER] 02:54:19.352 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: accessories.plugins.time.JDayChooser.getDecorationBackgroundColor()Ljava/awt/Color;:NonNull:java.awt.Color:getBlue()I:Positive
+[MASTER] 02:54:19.352 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: accessories.plugins.time.JDayChooser.getDecorationBackgroundColor()Ljava/awt/Color;:NonNull:java.awt.Color:getAlpha()I:Positive
+[MASTER] 02:54:19.352 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: accessories.plugins.time.JDayChooser.getDecorationBackgroundColor()Ljava/awt/Color;:NonNull:java.awt.Color:getRGB()I:Negative
+[MASTER] 02:54:19.352 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: accessories.plugins.time.JDayChooser.getDecorationBackgroundColor()Ljava/awt/Color;:NonNull:java.awt.Color:getTransparency()I:Positive
+[MASTER] 02:54:19.362 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] accessories.plugins.time.JDayChooser.getDecorationBackgroundColor()Ljava/awt/Color;
+[MASTER] 02:54:19.366 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] accessories.plugins.time.JDayChooser.setForeground(Ljava/awt/Color;)V
+[MASTER] 02:54:19.372 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] accessories.plugins.time.JDayChooser.getDecorationBackgroundColor()Ljava/awt/Color;
+[MASTER] 02:54:19.376 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] accessories.plugins.time.JDayChooser.setForeground(Ljava/awt/Color;)V
+[MASTER] 02:54:19.382 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch accessories.plugins.time.JDayChooser.setForeground(Ljava/awt/Color;)V: I17 Branch 40 IF_ICMPGE L599 - false in context: accessories.plugins.time.JDayChooser:setForeground(Ljava/awt/Color;)V
+[MASTER] 02:54:19.384 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch accessories.plugins.time.JDayChooser.getDecorationBackgroundColor()Ljava/awt/Color;: root-Branch in context: accessories.plugins.time.JDayChooser:getDecorationBackgroundColor()Ljava/awt/Color;
+[MASTER] 02:54:19.392 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch accessories.plugins.time.JDayChooser.setForeground(Ljava/awt/Color;)V: I17 Branch 40 IF_ICMPGE L599 - true in context: accessories.plugins.time.JDayChooser:setForeground(Ljava/awt/Color;)V
+[MASTER] 02:54:19.396 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch accessories.plugins.time.JDayChooser.setForeground(Ljava/awt/Color;)V: I9 Branch 39 IFNULL L598 - false in context: accessories.plugins.time.JDayChooser:setForeground(Ljava/awt/Color;)V
+[MASTER] 02:54:19.404 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch accessories.plugins.time.JDayChooser.setWeekOfYearVisible(Z)V: I12 Branch 60 IFEQ L779 - true in context: accessories.plugins.time.JDayChooser:setWeekOfYearVisible(Z)V
+[MASTER] 02:54:59.229 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] accessories.plugins.time.JDayChooser.DecoratorButton.paint(Ljava/awt/Graphics;)V
+[MASTER] 02:54:59.233 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] accessories.plugins.time.JDayChooser.DecoratorButton.paint(Ljava/awt/Graphics;)V
+[MASTER] 02:55:19.669 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 02:55:20.355 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] accessories.plugins.time.JDayChooser.drawWeeks()V
+[MASTER] 02:56:15.440 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] accessories.plugins.time.JDayChooser.addListeners(I)V
+[MASTER] 02:56:15.443 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] accessories.plugins.time.JDayChooser.addListeners(I)V
+[MASTER] 02:57:00.113 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] accessories.plugins.time.JDayChooser.main([Ljava/lang/String;)V
+[MASTER] 02:57:47.950 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] accessories.plugins.time.JDayChooser.drawWeeks()V
+[MASTER] 03:02:41.553 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] accessories.plugins.time.JDayChooser.getDayPanel()Ljavax/swing/JPanel;
+* Search finished after 846s and 26 generations, 18291 statements, best individual has fitness: 3264.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 78%
+* Total number of goals: 400
+* Number of covered goals: 313
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 73%
+* Total number of goals: 208
+* Number of covered goals: 152
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 6
+* Number of covered goals: 6
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 82%
+* Total number of goals: 777
+* Number of covered goals: 634
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 32%
+* Total number of goals: 115
+* Number of covered goals: 37
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 97%
+* Total number of goals: 58
+* Number of covered goals: 56
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 97%
+* Total number of goals: 58
+* Number of covered goals: 56
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 71%
+* Total number of goals: 208
+* Number of covered goals: 148
+* Generated 46 tests with total length 652
+* Resulting test suite's coverage: 78% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 18%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.io.FilePermission: 
+         read,write,delete /tmp/*: 1
+         write /tmp/+~JT887665498060865029.tmp: 1
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 4
+* Writing JUnit test case 'JDayChooser_ESTest' to /home/ubuntu/termite/qmosa/tests/s1029/105_freemind/evosuite-tests
+* Done!
+
+* Computation finished

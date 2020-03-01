@@ -1,0 +1,73 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.exolab.jms.config.ConnectionFactories
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/66_openjms/evosuite-files/evosuite.properties
+* Connecting to master process on port 10005
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 16:54:26.113 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 16:54:26.137 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 16:54:26.137 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 16:54:26.246 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class org.exolab.jms.config.ConnectionFactories
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/66_openjms/src/main/java/org/exolab/jms/config/ConnectionFactories.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1004
+* Starting evolution
+* Search finished after 122s and 45 generations, 18810 statements, best individual has fitness: 2168.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 84%
+* Total number of goals: 177
+* Number of covered goals: 148
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 88%
+* Total number of goals: 114
+* Number of covered goals: 100
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 22
+* Number of covered goals: 22
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 69%
+* Total number of goals: 410
+* Number of covered goals: 284
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 28%
+* Total number of goals: 93
+* Number of covered goals: 26
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 94%
+* Total number of goals: 66
+* Number of covered goals: 62
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 94%
+* Total number of goals: 66
+* Number of covered goals: 62
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 88%
+* Total number of goals: 114
+* Number of covered goals: 100
+* Generated 70 tests with total length 1279
+* Resulting test suite's coverage: 74% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 15%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 5
+* Writing JUnit test case 'ConnectionFactories_ESTest' to /home/ubuntu/termite/qmosa/tests/s1004/66_openjms/evosuite-tests
+* Done!
+
+* Computation finished

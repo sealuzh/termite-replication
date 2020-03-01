@@ -1,0 +1,174 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: Newzgrabber.Base64Decoder
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/99_newzgrabber/evosuite-files/evosuite.properties
+* Connecting to master process on port 2862
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 21:36:16.340 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 21:36:16.345 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 21:36:16.346 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 21:36:17.117 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 21:36:17.148 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 21:36:17.149 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 21:36:19.102 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 21:36:19.135 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 21:36:19.135 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 21:36:19.135 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 21:36:19.135 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 21:36:19.136 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 21:36:19.136 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 21:36:19.141 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 21:36:19.142 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 21:36:19.212 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+* Finished analyzing classpath
+* Generating tests for class Newzgrabber.Base64Decoder
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/99_newzgrabber/src/main/java/Newzgrabber/Base64Decoder.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1012
+* Starting evolution
+[MASTER] 21:36:27.793 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Newzgrabber.Base64Decoder.<init>(LNewzgrabber/BufferedCustomInputStream;Ljava/io/OutputStream;)V: Line 13
+[MASTER] 21:36:27.793 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Newzgrabber.Base64Decoder.<init>(LNewzgrabber/BufferedCustomInputStream;Ljava/io/OutputStream;)V: Line 10
+[MASTER] 21:36:27.793 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Newzgrabber.Base64Decoder.<init>(LNewzgrabber/BufferedCustomInputStream;Ljava/io/OutputStream;)V: Line 14
+[MASTER] 21:36:27.793 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Newzgrabber.Base64Decoder.<init>(LNewzgrabber/BufferedCustomInputStream;Ljava/io/OutputStream;)V: Line 15
+[MASTER] 21:36:27.793 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Newzgrabber.Base64Decoder.<init>(LNewzgrabber/BufferedCustomInputStream;Ljava/io/OutputStream;)V: Line 16
+[MASTER] 21:36:27.793 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Newzgrabber.Base64Decoder.decodeStream()V: Line 20
+[MASTER] 21:36:27.793 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Newzgrabber.Base64Decoder.decodeStream()V: Line 21
+[MASTER] 21:36:27.793 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Newzgrabber.Base64Decoder.decodeStream()V: Line 23
+[MASTER] 21:36:27.794 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 0: Newzgrabber.Base64Decoder.decodeStream()V:21 - InsertUnaryOp Negation
+[MASTER] 21:36:27.794 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1: Newzgrabber.Base64Decoder.decodeStream()V:21 - ReplaceComparisonOperator == -> !=
+[MASTER] 21:36:27.795 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] Newzgrabber.Base64Decoder.<init>(LNewzgrabber/BufferedCustomInputStream;Ljava/io/OutputStream;)V
+[MASTER] 21:36:27.795 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] Newzgrabber.Base64Decoder.decodeStream()V
+[MASTER] 21:36:27.795 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Newzgrabber.Base64Decoder.<init>(LNewzgrabber/BufferedCustomInputStream;Ljava/io/OutputStream;)V
+[MASTER] 21:36:27.795 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Newzgrabber.Base64Decoder.decodeStream()V
+[MASTER] 21:36:27.795 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch Newzgrabber.Base64Decoder.<init>(LNewzgrabber/BufferedCustomInputStream;Ljava/io/OutputStream;)V: root-Branch in context: Newzgrabber.Base64Decoder:<init>(LNewzgrabber/BufferedCustomInputStream;Ljava/io/OutputStream;)V
+[MASTER] 21:36:27.796 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch Newzgrabber.Base64Decoder.decodeStream()V: I7 Branch 1 IFEQ L21 - true in context: Newzgrabber.Base64Decoder:decodeStream()V
+[MASTER] 21:36:28.021 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 361s and 128 generations, 139639 statements, best individual has fitness: 440.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 75%
+* Total number of goals: 76
+* Number of covered goals: 57
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 75%
+* Total number of goals: 59
+* Number of covered goals: 44
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 1
+* Number of covered goals: 1
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 91%
+* Total number of goals: 69
+* Number of covered goals: 63
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 100% (no goals)
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 75%
+* Total number of goals: 59
+* Number of covered goals: 44
+* Generated 8 tests with total length 221
+* Resulting test suite's coverage: 79% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 76%
+* Compiling and checking tests
+[MASTER] 21:42:32.909 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<-19929> but was:<-19900>
+[MASTER] 21:42:32.910 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+Object object1 = new Object();
+MockPrintStream mockPrintStream0 = new MockPrintStream("v}BJyrFc3F[?aHXV");
+EvoSuiteFile evoSuiteFile0 = new EvoSuiteFile("v}BJyrFc3F[?aHXV");
+FileSystemHandling.appendStringToFile(evoSuiteFile0, "");
+Object[] objectArray0 = new Object[2];
+FileSystemHandling.appendLineToFile((EvoSuiteFile) null, "v}BJyrFc3F[?aHXV");
+objectArray0[1] = (Object) evoSuiteFile0;
+Object object2 = new Object();
+Object object3 = new Object();
+PrintStream printStream0 = mockPrintStream0.printf("v}BJyrFc3F[?aHXV", objectArray0);
+MockPrintStream mockPrintStream1 = new MockPrintStream(mockPrintStream0);
+PrintStream printStream1 = mockPrintStream1.format("v}BJyrFc3F[?aHXV", objectArray0);
+Object object4 = new Object();
+mockPrintStream0.println();
+Object object5 = new Object();
+MockFile mockFile0 = new MockFile("v}BJyrFc3F[?aHXV");
+Object object6 = new Object();
+mockPrintStream0.print(object1);
+Object object7 = new Object();
+mockPrintStream0.format(".__fl|h6Tcui", objectArray0);
+mockPrintStream0.println('R');
+MockFileInputStream mockFileInputStream0 = new MockFileInputStream(mockFile0);
+mockFile0.toPath();
+BufferedCustomInputStream bufferedCustomInputStream0 = new BufferedCustomInputStream(mockFileInputStream0, 2654, false);
+DebugGraphics.logStream();
+Base64Decoder base64Decoder0 = new Base64Decoder(bufferedCustomInputStream0, printStream0);
+EvoSuiteFile evoSuiteFile1 = new EvoSuiteFile("v}BJyrFc3F[?aHXV");
+FileSystemHandling.createFolder(evoSuiteFile1);
+Base64Decoder base64Decoder1 = new Base64Decoder(bufferedCustomInputStream0, printStream1);
+base64Decoder1.br = bufferedCustomInputStream0;
+base64Decoder1.decodeStream();
+base64Decoder0.decodeStream();
+assertEquals((-19929), mockFileInputStream0.available());
+assertEquals(72L, mockFile0.length());
+
+
+[MASTER] 21:42:33.197 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<-9936> but was:<-9934>
+[MASTER] 21:42:33.198 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+Object object1 = new Object();
+Object object2 = new Object();
+MockPrintStream mockPrintStream0 = new MockPrintStream("v}uJFr3A[?aHV");
+Object object3 = new Object();
+Object[] objectArray0 = new Object[6];
+mockPrintStream0.println('0');
+Object[] objectArray1 = new Object[3];
+objectArray1[0] = object0;
+objectArray1[1] = object3;
+objectArray1[2] = object2;
+mockPrintStream0.printf("v}uJFr3A[?aHV", objectArray1);
+mockPrintStream0.format("v}uJFr3A[?aHV", objectArray0);
+Object object4 = new Object();
+Object object5 = new Object();
+Object object6 = new Object();
+MockFile mockFile0 = new MockFile("v}uJFr3A[?aHV");
+Object object7 = new Object();
+Object object8 = new Object();
+Object object9 = new Object();
+mockPrintStream0.print(object9);
+Object object10 = new Object();
+PrintStream printStream0 = mockPrintStream0.format("-H^0+1S;D", objectArray1);
+mockPrintStream0.println('0');
+MockFileInputStream mockFileInputStream0 = new MockFileInputStream(mockFile0);
+mockFile0.toPath();
+BufferedCustomInputStream bufferedCustomInputStream0 = new BufferedCustomInputStream(mockFileInputStream0, 1, true);
+Base64Decoder base64Decoder0 = new Base64Decoder(bufferedCustomInputStream0, printStream0);
+base64Decoder0.decodeStream();
+assertEquals((-9936), mockFileInputStream0.available());
+assertEquals(2L, base64Decoder0.getLineCount());
+
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 39
+* Writing JUnit test case 'Base64Decoder_ESTest' to /home/ubuntu/termite/qmosa/tests/s1012/99_newzgrabber/evosuite-tests
+* Done!
+
+* Computation finished

@@ -1,0 +1,1181 @@
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: weka.filters.unsupervised.attribute.Discretize
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/107_weka/evosuite-files/evosuite.properties
+* Connecting to master process on port 5241
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 06:31:17.060 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 06:31:17.063 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 06:31:17.069 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 06:31:17.264 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 06:31:17.271 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 06:31:17.281 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+* Finished analyzing classpath
+* Generating tests for class weka.filters.unsupervised.attribute.Discretize
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 1729
+* Using seed 1022
+* Starting evolution
+[MASTER] 06:32:26.713 [logback-1] WARN  ClassResetter - class java.lang.NoClassDefFoundError thrown during execution of method  __STATIC_RESET() for class weka.core.converters.ConverterUtils, null
+* Search finished after 124s and 219 generations, 93648 statements, best individual has fitness: 3560.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 75%
+* Total number of goals: 370
+* Number of covered goals: 279
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 65%
+* Total number of goals: 242
+* Number of covered goals: 157
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 35
+* Number of covered goals: 35
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 79%
+* Total number of goals: 713
+* Number of covered goals: 565
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 54%
+* Total number of goals: 72
+* Number of covered goals: 39
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 45
+* Number of covered goals: 45
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 45
+* Number of covered goals: 45
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 64%
+* Total number of goals: 242
+* Number of covered goals: 155
+* Generated 89 tests with total length 718
+* Resulting test suite's coverage: 75% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 28%
+* Compiling and checking tests
+[MASTER] 06:35:35.441 [logback-2] ERROR ClassStateSupport - Could not initialize weka.core.converters.ConverterUtils: null
+[MASTER] 06:35:35.463 [logback-2] ERROR ClassStateSupport - Could not initialize weka.gui.GenericObjectEditor: Could not initialize class weka.gui.GenericObjectEditor
+[MASTER] 06:35:35.568 [logback-2] ERROR ClassResetter - java.lang.NoClassDefFoundError: Could not initialize class weka.gui.GenericObjectEditor
+[MASTER] 06:35:35.568 [logback-2] ERROR ClassResetter - java.lang.NoClassDefFoundError: Could not initialize class weka.core.converters.ConverterUtils
+[MASTER] 06:35:44.681 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.StackOverflowError: null
+[MASTER] 06:35:44.682 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Discretize discretize0 = new Discretize("Use bin numbers (eg BXofY) rather than ranges for for discretized attributes");
+LinkedList<Attribute> linkedList0 = new LinkedList<Attribute>();
+ArrayList<Attribute> arrayList0 = new ArrayList<Attribute>(linkedList0);
+ArrayList<Attribute> arrayList1 = new ArrayList<Attribute>();
+Instances instances0 = new Instances("Use bin numbers (eg BXofY) rather than ranges for for discretized attributes", arrayList1, 3252);
+Instances instances1 = new Instances(instances0);
+Attribute attribute0 = new Attribute("Use bin numbers (eg BXofY) rather than ranges for for discretized attributes", instances1);
+arrayList1.add(attribute0);
+Instances instances2 = new Instances("\tSpecifies the (maximum) number of bins to divide numeric attributes into.\n\t(default = 10)", arrayList1, 10);
+Discretize discretize1 = new Discretize("numeric");
+discretize1.setInputFormat(instances2);
+
+[MASTER] 06:35:52.783 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.StackOverflowError: null
+[MASTER] 06:35:52.784 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Discretize discretize0 = new Discretize("Use bin numbers (eg BXofY) rather than ranges for for discretized attributes");
+LinkedList<Attribute> linkedList0 = new LinkedList<Attribute>();
+ArrayList<Attribute> arrayList0 = new ArrayList<Attribute>(linkedList0);
+ArrayList<Attribute> arrayList1 = new ArrayList<Attribute>();
+Instances instances0 = new Instances("Use bin numbers (eg BXofY) rather than ranges for for discretized attributes", arrayList1, 6);
+Instances instances1 = new Instances(instances0);
+Attribute attribute0 = new Attribute("Use bin numbers (eg BXofY) rather than ranges for for discretized attributes", instances1);
+arrayList1.add(attribute0);
+Instances instances2 = new Instances("\tSpecifies the (maximum) number of bins to divide numeric attributes into.\n\t(default = 10)", arrayList1, 10);
+Discretize discretize1 = new Discretize("numeric");
+discretize1.setInputFormat(instances2);
+
+[MASTER] 06:35:55.581 [logback-1] WARN  ClassResetter - java.lang.reflect.InvocationTargetException, caused by: java.lang.NoClassDefFoundError: Could not initialize class weka.gui.GenericObjectEditor
+[MASTER] 06:35:55.581 [logback-1] WARN  ClassResetter - java.lang.reflect.InvocationTargetException, caused by: java.lang.NoClassDefFoundError: Could not initialize class weka.core.converters.ConverterUtils
+* Writing JUnit test case 'Discretize_ESTest' to /home/ubuntu/termite/mosa/tests/s1022/107_weka/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: weka.classifiers.bayes.NaiveBayesMultinomialText
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: weka.core.Optimization
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/107_weka/evosuite-files/evosuite.properties
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/107_weka/evosuite-files/evosuite.properties
+* Connecting to master process on port 5239
+* Connecting to master process on port 5242
+* Analyzing classpath: 
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 06:36:40.447 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 06:36:40.448 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 06:36:40.459 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 06:36:40.515 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 06:36:40.549 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 06:36:40.551 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+* Finished analyzing classpath
+* Generating tests for class weka.classifiers.bayes.NaiveBayesMultinomialText
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 1412
+* Using seed 1022
+* Starting evolution
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 06:36:46.185 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 06:36:46.188 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 06:36:46.191 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 06:36:46.198 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class weka.core.Optimization
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+[MASTER] 06:36:46.516 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.bayes.NaiveBayesMultinomialText.<init>()V: Line 108
+[MASTER] 06:36:46.520 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.bayes.NaiveBayesMultinomialText.<init>()V: Line 148
+[MASTER] 06:36:46.520 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.bayes.NaiveBayesMultinomialText.<init>()V: Line 151
+[MASTER] 06:36:46.520 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.bayes.NaiveBayesMultinomialText.<init>()V: Line 157
+[MASTER] 06:36:46.520 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.bayes.NaiveBayesMultinomialText.<init>()V: Line 166
+[MASTER] 06:36:46.520 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.bayes.NaiveBayesMultinomialText.<init>()V: Line 169
+[MASTER] 06:36:46.520 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.bayes.NaiveBayesMultinomialText.<init>()V: Line 172
+[MASTER] 06:36:46.527 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.bayes.NaiveBayesMultinomialText.<init>()V: Line 175
+[MASTER] 06:36:46.527 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.bayes.NaiveBayesMultinomialText.<init>()V: Line 178
+[MASTER] 06:36:46.527 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.bayes.NaiveBayesMultinomialText.<init>()V: Line 181
+[MASTER] 06:36:46.527 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.bayes.NaiveBayesMultinomialText.<init>()V: Line 184
+[MASTER] 06:36:46.529 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.bayes.NaiveBayesMultinomialText.<init>()V: root-Branch
+[MASTER] 06:36:46.531 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] weka.classifiers.bayes.NaiveBayesMultinomialText.<init>()V
+[MASTER] 06:36:46.531 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] weka.classifiers.bayes.NaiveBayesMultinomialText.<init>()V
+[MASTER] 06:36:46.532 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch weka.classifiers.bayes.NaiveBayesMultinomialText.<init>()V: root-Branch in context: weka.classifiers.bayes.NaiveBayesMultinomialText:<init>()V
+* Total number of test goals for MOSA: 2499
+* Using seed 1022
+* Starting evolution
+[MASTER] 06:36:47.045 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.bayes.NaiveBayesMultinomialText.setNormalizeDocLength(Z)V: Line 724
+[MASTER] 06:36:47.045 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.bayes.NaiveBayesMultinomialText.setNormalizeDocLength(Z)V: Line 725
+[MASTER] 06:36:47.047 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.bayes.NaiveBayesMultinomialText.setNormalizeDocLength(Z)V: root-Branch
+[MASTER] 06:36:47.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 289: weka.classifiers.bayes.NaiveBayesMultinomialText.setNormalizeDocLength(Z)V:724 - ReplaceVariable norm -> m_normalize
+[MASTER] 06:36:47.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 290: weka.classifiers.bayes.NaiveBayesMultinomialText.setNormalizeDocLength(Z)V:724 - ReplaceVariable norm -> m_wordFrequencies
+[MASTER] 06:36:47.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 291: weka.classifiers.bayes.NaiveBayesMultinomialText.setNormalizeDocLength(Z)V:724 - ReplaceVariable norm -> m_useStopList
+[MASTER] 06:36:47.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 292: weka.classifiers.bayes.NaiveBayesMultinomialText.setNormalizeDocLength(Z)V:724 - ReplaceVariable norm -> m_lowercaseTokens
+[MASTER] 06:36:47.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 293: weka.classifiers.bayes.NaiveBayesMultinomialText.setNormalizeDocLength(Z)V:724 - InsertUnaryOp Negation of norm
+[MASTER] 06:36:47.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 294: weka.classifiers.bayes.NaiveBayesMultinomialText.setNormalizeDocLength(Z)V:724 - InsertUnaryOp IINC 1 norm
+[MASTER] 06:36:47.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 295: weka.classifiers.bayes.NaiveBayesMultinomialText.setNormalizeDocLength(Z)V:724 - InsertUnaryOp IINC -1 norm
+[MASTER] 06:36:47.057 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] weka.classifiers.bayes.NaiveBayesMultinomialText.setNormalizeDocLength(Z)V
+[MASTER] 06:36:47.057 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] weka.classifiers.bayes.NaiveBayesMultinomialText.setNormalizeDocLength(Z)V
+[MASTER] 06:36:47.057 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch weka.classifiers.bayes.NaiveBayesMultinomialText.setNormalizeDocLength(Z)V: root-Branch in context: weka.classifiers.bayes.NaiveBayesMultinomialText:setNormalizeDocLength(Z)V
+[MASTER] 06:36:49.161 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] weka.core.Optimization.DynamicIntArray.<init>(Lweka/core/Optimization;I)V
+[MASTER] 06:36:55.969 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleEntry<K, V> : Type points to itself
+[MASTER] 06:36:55.969 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleImmutableEntry<K, V> : Type points to itself
+[MASTER] 06:38:28.574 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+* Search finished after 122s and 191 generations, 73342 statements, best individual has fitness: 1504.0
+* Search finished after 122s and 98 generations, 67512 statements, best individual has fitness: 16704.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 90%
+* Total number of goals: 338
+* Number of covered goals: 304
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 84%
+* Total number of goals: 194
+* Number of covered goals: 163
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 22
+* Number of covered goals: 22
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 92%
+* Total number of goals: 476
+* Number of covered goals: 440
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 54%
+* Total number of goals: 112
+* Number of covered goals: 61
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 49
+* Number of covered goals: 49
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 49
+* Number of covered goals: 49
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 82%
+* Total number of goals: 194
+* Number of covered goals: 160
+* Generated 74 tests with total length 594
+* Resulting test suite's coverage: 87% (average coverage for all fitness functions)
+* Generating assertions
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 10%
+* Total number of goals: 620
+* Number of covered goals: 59
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 8%
+* Total number of goals: 448
+* Number of covered goals: 37
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 28%
+* Total number of goals: 926
+* Number of covered goals: 258
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 10%
+* Total number of goals: 21
+* Number of covered goals: 2
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 50%
+* Total number of goals: 18
+* Number of covered goals: 9
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 50%
+* Total number of goals: 18
+* Number of covered goals: 9
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 8%
+* Total number of goals: 448
+* Number of covered goals: 37
+* Generated 22 tests with total length 124
+* Resulting test suite's coverage: 17% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 19%
+* Compiling and checking tests
+* Writing JUnit test case 'Optimization_ESTest' to /home/ubuntu/termite/mosa/tests/s1022/107_weka/evosuite-tests
+* Done!
+
+* Computation finished
+* Resulting test suite's mutation score: 56%
+* Compiling and checking tests
+[MASTER] 06:41:46.124 [logback-2] ERROR JUnitAnalyzer - Compilation failed on compilation units: [RegularFileObject[/tmp/EvoSuite_67_1575528106087/weka/classifiers/bayes/NaiveBayesMultinomialText_67_tmp__ESTest.java], RegularFileObject[/tmp/EvoSuite_67_1575528106087/weka/classifiers/bayes/NaiveBayesMultinomialText_67_tmp__ESTest_scaffolding.java]]
+[MASTER] 06:41:46.125 [logback-2] ERROR JUnitAnalyzer - Classpath: /home/ubuntu/termite/projects/107_weka/weka.jar:/home/ubuntu/termite/projects/107_weka/lib/packageManager.jar:/home/ubuntu/termite/projects/107_weka/lib/JFlex.jar:/home/ubuntu/termite/projects/107_weka/lib/java-cup.jar:/home/ubuntu/termite/evosuite.jar:/home/ubuntu/termite/projects/107_weka/weka.jar:/home/ubuntu/termite/projects/107_weka/lib/packageManager.jar:/home/ubuntu/termite/projects/107_weka/lib/JFlex.jar:/home/ubuntu/termite/projects/107_weka/lib/java-cup.jar
+[MASTER] 06:41:46.125 [logback-2] ERROR JUnitAnalyzer - evosuiteCP: /home/ubuntu/termite/evosuite.jar:/home/ubuntu/termite/projects/107_weka/weka.jar:/home/ubuntu/termite/projects/107_weka/lib/packageManager.jar:/home/ubuntu/termite/projects/107_weka/lib/JFlex.jar:/home/ubuntu/termite/projects/107_weka/lib/java-cup.jar
+[MASTER] 06:41:46.127 [logback-2] ERROR JUnitAnalyzer - Diagnostic: weka.classifiers.bayes.NaiveBayesMultinomialText.Count has private access in weka.classifiers.bayes.NaiveBayesMultinomialText: 43
+[MASTER] 06:41:46.127 [logback-2] ERROR JUnitAnalyzer - Diagnostic: weka.classifiers.bayes.NaiveBayesMultinomialText.Count has private access in weka.classifiers.bayes.NaiveBayesMultinomialText: 43
+[MASTER] 06:41:46.127 [logback-2] ERROR JUnitAnalyzer - Diagnostic: weka.classifiers.bayes.NaiveBayesMultinomialText.Count has private access in weka.classifiers.bayes.NaiveBayesMultinomialText: 44
+[MASTER] 06:41:46.128 [logback-2] ERROR JUnitAnalyzer - RegularFileObject[/tmp/EvoSuite_67_1575528106087/weka/classifiers/bayes/NaiveBayesMultinomialText_67_tmp__ESTest.java]
+1: /*
+2:  * This file was automatically generated by EvoSuite
+3:  * Thu Dec 05 06:41:46 GMT 2019
+4:  */
+5: 
+6: package weka.classifiers.bayes;
+7: 
+8: import org.junit.Test;
+9: import static org.junit.Assert.*;
+10: import static org.evosuite.runtime.EvoAssertions.*;
+11: import java.io.File;
+12: import java.util.HashMap;
+13: import java.util.LinkedHashMap;
+14: import java.util.Map;
+15: import org.evosuite.runtime.EvoRunner;
+16: import org.evosuite.runtime.EvoRunnerParameters;
+17: import org.evosuite.runtime.mock.java.io.MockFile;
+18: import org.evosuite.runtime.testdata.EvoSuiteFile;
+19: import org.evosuite.runtime.testdata.FileSystemHandling;
+20: import org.junit.runner.RunWith;
+21: import weka.classifiers.AbstractClassifier;
+22: import weka.classifiers.bayes.NaiveBayesMultinomialText;
+23: 
+24: @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, useJEE = true) 
+25: public class NaiveBayesMultinomialText_67_tmp__ESTest extends NaiveBayesMultinomialText_67_tmp__ESTest_scaffolding {
+26: 
+27:   /**
+28:   //Test case number: 0
+29:   /*Coverage entropy=2.8778952727983707
+30:   */
+31:   @Test(timeout = 4000)
+32:   public void test0()  throws Throwable  {
+33:       NaiveBayesMultinomialText naiveBayesMultinomialText0 = new NaiveBayesMultinomialText();
+34:       naiveBayesMultinomialText0.getRevision();
+35:       naiveBayesMultinomialText0.m_norm = 0.0;
+36:       FileSystemHandling.shouldThrowIOException((EvoSuiteFile) null);
+37:       naiveBayesMultinomialText0.reset();
+38:       FileSystemHandling.setPermissions((EvoSuiteFile) null, false, false, false);
+39:       naiveBayesMultinomialText0.getCapabilities();
+40:       AbstractClassifier.makeCopy(naiveBayesMultinomialText0);
+41:       naiveBayesMultinomialText0.listOptions();
+42:       naiveBayesMultinomialText0.m_useStopList = false;
+43:       HashMap<Integer, LinkedHashMap<String, NaiveBayesMultinomialText.Count>> hashMap0 = new HashMap<Integer, LinkedHashMap<String, NaiveBayesMultinomialText.Count>>();
+44:       naiveBayesMultinomialText0.m_probOfWordGivenClass = (Map<Integer, LinkedHashMap<String, NaiveBayesMultinomialText.Count>>) hashMap0;
+45:       naiveBayesMultinomialText0.stopwordsTipText();
+46:       naiveBayesMultinomialText0.globalInfo();
+47:       naiveBayesMultinomialText0.minWordFrequencyTipText();
+48:       naiveBayesMultinomialText0.normTipText();
+49:       naiveBayesMultinomialText0.getNorm();
+50:       naiveBayesMultinomialText0.minWordFrequencyTipText();
+51:       naiveBayesMultinomialText0.getTokenizer();
+52:       String string0 = "";
+53:       MockFile mockFile0 = new MockFile("Ignore any words that don't occur at least min frequency times in the training data. If periodic pruning is turned on, then the dictionary is pruned according to this value");
+54:       // Undeclared exception!
+55:       try { 
+56:         MockFile.createTempFile("", (String) null, (File) mockFile0);
+57:         fail("Expecting exception: IllegalArgumentException");
+58:       
+59:       } catch(IllegalArgumentException e) {
+60:          //
+61:          // Prefix string too short
+62:          //
+63:          verifyException("org.evosuite.runtime.vfs.VirtualFileSystem", e);
+64:       }
+65:   }
+66: }
+RegularFileObject[/tmp/EvoSuite_67_1575528106087/weka/classifiers/bayes/NaiveBayesMultinomialText_67_tmp__ESTest.java]
+1: /**
+2:  * Scaffolding file used to store all the setups needed to run 
+3:  * tests automatically generated by EvoSuite
+4:  * Thu Dec 05 06:41:46 GMT 2019
+5:  */
+6: 
+7: package weka.classifiers.bayes;
+8: 
+9: import org.evosuite.runtime.annotation.EvoSuiteClassExclude;
+10: import org.junit.BeforeClass;
+11: import org.junit.Before;
+12: import org.junit.After;
+13: import org.junit.AfterClass;
+14: import org.evosuite.runtime.sandbox.Sandbox;
+15: import org.evosuite.runtime.sandbox.Sandbox.SandboxMode;
+16: 
+17: @EvoSuiteClassExclude
+18: public class NaiveBayesMultinomialText_67_tmp__ESTest_scaffolding {
+19: 
+20:   @org.junit.Rule 
+21:   public org.evosuite.runtime.vnet.NonFunctionalRequirementRule nfr = new org.evosuite.runtime.vnet.NonFunctionalRequirementRule();
+22: 
+23:   private static final java.util.Properties defaultProperties = (java.util.Properties) java.lang.System.getProperties().clone(); 
+24: 
+25:   private org.evosuite.runtime.thread.ThreadStopper threadStopper =  new org.evosuite.runtime.thread.ThreadStopper (org.evosuite.runtime.thread.KillSwitchHandler.getInstance(), 3000);
+26: 
+27: 
+28:   @BeforeClass 
+29:   public static void initEvoSuiteFramework() { 
+30:     org.evosuite.runtime.RuntimeSettings.className = "weka.classifiers.bayes.NaiveBayesMultinomialText"; 
+31:     org.evosuite.runtime.GuiSupport.initialize(); 
+32:     org.evosuite.runtime.RuntimeSettings.maxNumberOfThreads = 100; 
+33:     org.evosuite.runtime.RuntimeSettings.maxNumberOfIterationsPerLoop = 10000; 
+34:     org.evosuite.runtime.RuntimeSettings.mockSystemIn = true; 
+35:     org.evosuite.runtime.RuntimeSettings.sandboxMode = org.evosuite.runtime.sandbox.Sandbox.SandboxMode.RECOMMENDED; 
+36:     org.evosuite.runtime.sandbox.Sandbox.initializeSecurityManagerForSUT(); 
+37:     org.evosuite.runtime.classhandling.JDKClassResetter.init();
+38:     setSystemProperties();
+39:     initializeClasses();
+40:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+41:   } 
+42: 
+43:   @AfterClass 
+44:   public static void clearEvoSuiteFramework(){ 
+45:     Sandbox.resetDefaultSecurityManager(); 
+46:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+47:   } 
+48: 
+49:   @Before 
+50:   public void initTestCase(){ 
+51:     threadStopper.storeCurrentThreads();
+52:     threadStopper.startRecordingTime();
+53:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().initHandler(); 
+54:     org.evosuite.runtime.sandbox.Sandbox.goingToExecuteSUTCode(); 
+55:     setSystemProperties(); 
+56:     org.evosuite.runtime.GuiSupport.setHeadless(); 
+57:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+58:     org.evosuite.runtime.agent.InstrumentingAgent.activate(); 
+59:   } 
+60: 
+61:   @After 
+62:   public void doneWithTestCase(){ 
+63:     threadStopper.killAndJoinClientThreads();
+64:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().safeExecuteAddedHooks(); 
+65:     org.evosuite.runtime.classhandling.JDKClassResetter.reset(); 
+66:     resetClasses(); 
+67:     org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(); 
+68:     org.evosuite.runtime.agent.InstrumentingAgent.deactivate(); 
+69:     org.evosuite.runtime.GuiSupport.restoreHeadlessMode(); 
+70:   } 
+71: 
+72:   public static void setSystemProperties() {
+73:  
+74:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+75:     java.lang.System.setProperty("file.encoding", "UTF-8"); 
+76:     java.lang.System.setProperty("java.awt.headless", "true"); 
+77:     java.lang.System.setProperty("java.io.tmpdir", "/tmp"); 
+78:     java.lang.System.setProperty("user.country", "US"); 
+79:     java.lang.System.setProperty("user.dir", "/home/ubuntu/termite/projects/107_weka"); 
+80:     java.lang.System.setProperty("user.home", "/home/ubuntu"); 
+81:     java.lang.System.setProperty("user.language", "en"); 
+82:     java.lang.System.setProperty("user.name", "ubuntu"); 
+83:     java.lang.System.setProperty("user.timezone", "Etc/UTC"); 
+84:   }
+85: 
+86:   private static void initializeClasses() {
+87:     org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(NaiveBayesMultinomialText_67_tmp__ESTest_scaffolding.class.getClassLoader() ,
+88:       "weka.core.Environment",
+89:       "weka.core.TestInstances",
+90:       "weka.core.DistanceFunction",
+91:       "org.pentaho.packageManagement.PackageConstraint",
+92:       "org.pentaho.packageManagement.Package",
+93:       "weka.core.xml.XMLBasicSerialization",
+94:       "weka.classifiers.trees.m5.M5Base",
+95:       "weka.classifiers.CostMatrix",
+96:       "weka.classifiers.bayes.net.search.local.K2",
+97:       "weka.filters.UnsupervisedFilter",
+98:       "weka.core.neighboursearch.BallTree",
+99:       "weka.core.logging.Logger$Level",
+100:       "weka.core.neighboursearch.CoverTree$DistanceNode",
+101:       "weka.classifiers.evaluation.output.prediction.AbstractOutput",
+102:       "weka.core.DenseInstance",
+103:       "weka.classifiers.functions.LinearRegression",
+104:       "weka.core.stemmers.Stemmer",
+105:       "weka.classifiers.functions.supportVector.PrecomputedKernelMatrixKernel",
+106:       "weka.classifiers.RandomizableSingleClassifierEnhancer",
+107:       "org.pentaho.packageManagement.DefaultPackageManager",
+108:       "org.bounce.net.DefaultAuthenticator",
+109:       "weka.core.neighboursearch.CoverTree$MyHeap",
+110:       "weka.estimators.IncrementalEstimator",
+111:       "weka.estimators.Estimator$Builder",
+112:       "weka.core.stemmers.NullStemmer",
+113:       "weka.classifiers.functions.SGDText",
+114:       "weka.classifiers.trees.m5.RuleNode",
+115:       "weka.core.RelationalLocator",
+116:       "weka.core.Utils",
+117:       "weka.classifiers.meta.AdaBoostM1",
+118:       "weka.core.CustomDisplayStringProvider",
+119:       "weka.core.tokenizers.Tokenizer",
+120:       "weka.core.NormalizableDistance",
+121:       "weka.core.NoSupportForMissingValuesException",
+122:       "weka.classifiers.UpdateableClassifier",
+123:       "weka.classifiers.bayes.NaiveBayesMultinomialText",
+124:       "weka.core.MultiInstanceCapabilitiesHandler",
+125:       "weka.core.Copyable",
+126:       "weka.core.Capabilities",
+127:       "weka.core.neighboursearch.balltrees.TopDownConstructor",
+128:       "weka.core.BinarySparseInstance",
+129:       "weka.filters.supervised.attribute.NominalToBinary",
+130:       "weka.core.AttributeLocator",
+131:       "weka.classifiers.bayes.NaiveBayesMultinomialText$Count",
+132:       "weka.core.SerializedObject",
+133:       "weka.clusterers.UpdateableClusterer",
+134:       "weka.core.Summarizable",
+135:       "weka.core.AdditionalMeasureProducer",
+136:       "weka.core.neighboursearch.balltrees.BallNode",
+137:       "org.pentaho.packageManagement.PackageManager$1",
+138:       "weka.classifiers.RandomizableIteratedSingleClassifierEnhancer",
+139:       "weka.core.Drawable",
+140:       "weka.core.matrix.Matrix",
+141:       "weka.core.CapabilitiesHandler",
+142:       "weka.core.AbstractInstance",
+143:       "weka.core.scripting.JythonObject",
+144:       "weka.core.SelectedTag",
+145:       "org.pentaho.packageManagement.DefaultPackage",
+146:       "weka.classifiers.bayes.BayesNet",
+147:       "weka.core.Version",
+148:       "weka.classifiers.bayes.net.estimate.SimpleEstimator",
+149:       "weka.filters.unsupervised.attribute.RemoveUseless",
+150:       "weka.core.Tag",
+151:       "weka.classifiers.IteratedSingleClassifierEnhancer",
+152:       "weka.core.neighboursearch.CoverTree",
+153:       "weka.classifiers.AbstractClassifier",
+154:       "weka.core.OptionHandler",
+155:       "weka.core.WekaException",
+156:       "weka.core.Range",
+157:       "weka.core.scripting.JythonSerializableObject",
+158:       "weka.classifiers.Classifier",
+159:       "weka.core.neighboursearch.NearestNeighbourSearch$NeighborList",
+160:       "weka.core.Capabilities$Capability",
+161:       "weka.core.SparseInstance",
+162:       "org.pentaho.packageManagement.PackageManager",
+163:       "weka.estimators.PoissonEstimator",
+164:       "weka.core.tokenizers.WordTokenizer",
+165:       "weka.classifiers.misc.SerializedClassifier",
+166:       "weka.filters.unsupervised.attribute.ReplaceMissingValues",
+167:       "weka.core.stemmers.SnowballStemmer",
+168:       "weka.core.stemmers.LovinsStemmer",
+169:       "weka.classifiers.Evaluation",
+170:       "weka.classifiers.functions.supportVector.Kernel",
+171:       "weka.core.WekaPackageManager",
+172:       "weka.filters.SupervisedFilter",
+173:       "weka.core.TechnicalInformationHandler",
+174:       "weka.classifiers.bayes.net.search.SearchAlgorithm",
+175:       "weka.core.tokenizers.CharacterDelimitedTokenizer",
+176:       "weka.core.Option",
+177:       "weka.classifiers.meta.CostSensitiveClassifier",
+178:       "weka.filters.unsupervised.attribute.PotentialClassIgnorer",
+179:       "weka.core.neighboursearch.PerformanceStats",
+180:       "weka.filters.Sourcable",
+181:       "weka.core.Attribute",
+182:       "weka.core.Stopwords",
+183:       "weka.core.tokenizers.AlphabeticTokenizer",
+184:       "weka.core.FastVector",
+185:       "weka.classifiers.bayes.net.estimate.BayesNetEstimator",
+186:       "weka.core.UnassignedDatasetException",
+187:       "weka.core.neighboursearch.balltrees.BallTreeConstructor",
+188:       "weka.classifiers.RandomizableClassifier",
+189:       "weka.classifiers.SingleClassifierEnhancer",
+190:       "weka.core.RevisionUtils",
+191:       "weka.core.Instance",
+192:       "weka.estimators.Estimator",
+193:       "weka.core.ProtectedProperties",
+194:       "weka.core.StringLocator",
+195:       "weka.classifiers.bayes.net.ADNode",
+196:       "weka.core.AttributeStats",
+197:       "weka.core.WeightedInstancesHandler",
+198:       "weka.core.neighboursearch.NearestNeighbourSearch",
+199:       "weka.classifiers.trees.DecisionStump",
+200:       "weka.classifiers.bayes.net.search.local.LocalScoreSearchAlgorithm",
+201:       "weka.core.neighboursearch.covertrees.Stack",
+202:       "weka.core.Randomizable",
+203:       "weka.classifiers.rules.M5Rules",
+204:       "weka.core.EuclideanDistance",
+205:       "weka.core.Instances",
+206:       "weka.core.neighboursearch.CoverTree$CoverTreeNode",
+207:       "weka.core.UnassignedClassException",
+208:       "weka.classifiers.bayes.net.ParentSet",
+209:       "weka.classifiers.rules.ZeroR",
+210:       "weka.core.stemmers.IteratedLovinsStemmer",
+211:       "weka.core.TechnicalInformation",
+212:       "weka.core.UnsupportedAttributeTypeException",
+213:       "weka.classifiers.Sourcable",
+214:       "weka.core.RevisionHandler",
+215:       "weka.classifiers.evaluation.output.prediction.PlainText",
+216:       "weka.core.neighboursearch.TreePerformanceStats",
+217:       "weka.core.xml.XMLSerialization",
+218:       "weka.classifiers.xml.XMLClassifier",
+219:       "weka.filters.Filter",
+220:       "weka.filters.supervised.attribute.Discretize"
+221:     );
+222:   } 
+223: 
+224:   private static void resetClasses() {
+225:     org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(NaiveBayesMultinomialText_67_tmp__ESTest_scaffolding.class.getClassLoader()); 
+226: 
+227:     org.evosuite.runtime.classhandling.ClassStateSupport.resetClasses(
+228:       "weka.classifiers.AbstractClassifier",
+229:       "weka.classifiers.bayes.NaiveBayesMultinomialText",
+230:       "weka.classifiers.bayes.NaiveBayesMultinomialText$Count",
+231:       "weka.core.Capabilities$Capability",
+232:       "weka.core.tokenizers.Tokenizer",
+233:       "weka.core.tokenizers.CharacterDelimitedTokenizer",
+234:       "weka.core.tokenizers.WordTokenizer",
+235:       "weka.core.stemmers.NullStemmer",
+236:       "weka.core.Utils",
+237:       "weka.core.AbstractInstance",
+238:       "weka.core.SparseInstance",
+239:       "weka.classifiers.bayes.NaiveBayes",
+240:       "weka.classifiers.Evaluation",
+241:       "weka.core.Option",
+242:       "weka.core.Capabilities",
+243:       "org.pentaho.packageManagement.PackageManager",
+244:       "org.pentaho.packageManagement.DefaultPackageManager",
+245:       "weka.core.Version",
+246:       "weka.core.Environment",
+247:       "weka.core.WekaPackageManager",
+248:       "weka.core.BinarySparseInstance",
+249:       "weka.core.UnassignedDatasetException",
+250:       "weka.core.stemmers.SnowballStemmer",
+251:       "weka.core.Tag",
+252:       "weka.classifiers.lazy.IBk",
+253:       "weka.core.neighboursearch.NearestNeighbourSearch",
+254:       "weka.core.neighboursearch.LinearNNSearch",
+255:       "weka.core.NormalizableDistance",
+256:       "weka.core.EuclideanDistance",
+257:       "weka.core.Range",
+258:       "weka.core.neighboursearch.CoverTree",
+259:       "weka.core.Instances",
+260:       "weka.core.neighboursearch.NearestNeighbourSearch$MyHeap",
+261:       "weka.core.neighboursearch.NearestNeighbourSearch$MyHeapElement",
+262:       "weka.attributeSelection.ASEvaluation",
+263:       "weka.attributeSelection.UnsupervisedAttributeEvaluator",
+264:       "weka.attributeSelection.PrincipalComponents",
+265:       "weka.core.TestInstances",
+266:       "weka.core.Attribute",
+267:       "weka.core.ProtectedProperties",
+268:       "weka.core.DenseInstance",
+269:       "weka.core.tokenizers.NGramTokenizer",
+270:       "weka.classifiers.bayes.BayesNet",
+271:       "weka.classifiers.bayes.net.search.SearchAlgorithm",
+272:       "weka.classifiers.bayes.net.search.local.LocalScoreSearchAlgorithm",
+273:       "weka.classifiers.bayes.net.search.local.K2",
+274:       "weka.classifiers.bayes.net.estimate.BayesNetEstimator",
+275:       "weka.classifiers.bayes.net.estimate.SimpleEstimator",
+276:       "weka.classifiers.functions.SimpleLogistic",
+277:       "weka.core.RevisionUtils",
+278:       "weka.core.TechnicalInformation",
+279:       "weka.core.TechnicalInformation$Type",
+280:       "weka.core.TechnicalInformation$Field",
+281:       "weka.core.tokenizers.AlphabeticTokenizer",
+282:       "weka.core.SerializedObject",
+283:       "weka.classifiers.RandomizableClassifier",
+284:       "weka.classifiers.functions.SGDText",
+285:       "weka.core.neighboursearch.BallTree",
+286:       "weka.core.neighboursearch.balltrees.BallTreeConstructor",
+287:       "weka.core.neighboursearch.balltrees.TopDownConstructor",
+288:       "weka.core.neighboursearch.balltrees.BallSplitter",
+289:       "weka.core.neighboursearch.balltrees.PointsClosestToFurthestChildren",
+290:       "weka.core.stemmers.LovinsStemmer",
+291:       "weka.core.stemmers.IteratedLovinsStemmer",
+292:       "weka.classifiers.SingleClassifierEnhancer",
+293:       "weka.classifiers.misc.InputMappedClassifier",
+294:       "weka.classifiers.rules.ZeroR",
+295:       "weka.filters.Filter",
+296:       "weka.filters.supervised.attribute.Discretize",
+297:       "weka.core.Stopwords",
+298:       "weka.filters.unsupervised.attribute.PotentialClassIgnorer",
+299:       "weka.filters.unsupervised.attribute.ReplaceMissingValues",
+300:       "weka.core.neighboursearch.balltrees.BallNode",
+301:       "weka.core.neighboursearch.KDTree",
+302:       "weka.core.neighboursearch.kdtrees.KDTreeNodeSplitter",
+303:       "weka.core.neighboursearch.kdtrees.SlidingMidPointOfWidestSide",
+304:       "weka.classifiers.functions.VotedPerceptron",
+305:       "weka.classifiers.misc.SerializedClassifier",
+306:       "weka.classifiers.meta.AttributeSelectedClassifier",
+307:       "weka.attributeSelection.CfsSubsetEval",
+308:       "weka.attributeSelection.ASSearch",
+309:       "weka.attributeSelection.BestFirst",
+310:       "weka.classifiers.trees.J48",
+311:       "weka.classifiers.meta.RegressionByDiscretization",
+312:       "weka.filters.unsupervised.attribute.Discretize",
+313:       "weka.classifiers.trees.j48.ClassifierTree",
+314:       "weka.classifiers.trees.j48.C45PruneableClassifierTree",
+315:       "weka.core.WekaException",
+316:       "weka.core.UnsupportedAttributeTypeException",
+317:       "weka.core.converters.ArffLoader$ArffReader",
+318:       "weka.classifiers.bayes.net.BIFReader",
+319:       "weka.classifiers.RandomizableSingleClassifierEnhancer",
+320:       "weka.classifiers.meta.CostSensitiveClassifier",
+321:       "weka.classifiers.CostMatrix",
+322:       "weka.classifiers.bayes.NaiveBayesMultinomial",
+323:       "weka.classifiers.functions.supportVector.Kernel",
+324:       "weka.classifiers.functions.supportVector.PrecomputedKernelMatrixKernel",
+325:       "weka.classifiers.functions.SMO",
+326:       "weka.classifiers.functions.supportVector.CachedKernel",
+327:       "weka.classifiers.functions.supportVector.PolyKernel",
+328:       "weka.filters.SimpleFilter",
+329:       "weka.filters.SimpleStreamFilter",
+330:       "weka.filters.MultiFilter",
+331:       "weka.filters.AllFilter",
+332:       "weka.classifiers.MultipleClassifiersCombiner",
+333:       "weka.classifiers.ParallelMultipleClassifiersCombiner",
+334:       "weka.classifiers.RandomizableParallelMultipleClassifiersCombiner",
+335:       "weka.classifiers.meta.Stacking",
+336:       "weka.classifiers.rules.PART",
+337:       "weka.classifiers.rules.part.MakeDecList",
+338:       "weka.estimators.Estimator",
+339:       "weka.estimators.KernelEstimator",
+340:       "weka.core.UnassignedClassException",
+341:       "weka.core.stemmers.Stemming",
+342:       "weka.attributeSelection.GainRatioAttributeEval",
+343:       "weka.classifiers.IteratedSingleClassifierEnhancer",
+344:       "weka.classifiers.ParallelIteratedSingleClassifierEnhancer",
+345:       "weka.classifiers.RandomizableParallelIteratedSingleClassifierEnhancer",
+346:       "weka.classifiers.meta.Bagging",
+347:       "weka.classifiers.trees.REPTree",
+348:       "weka.classifiers.trees.m5.M5Base",
+349:       "weka.classifiers.rules.M5Rules",
+350:       "weka.classifiers.functions.LinearRegression",
+351:       "weka.classifiers.meta.ClassificationViaRegression",
+352:       "weka.classifiers.trees.M5P",
+353:       "weka.attributeSelection.OneRAttributeEval",
+354:       "weka.classifiers.trees.RandomTree",
+355:       "weka.classifiers.functions.supportVector.StringKernel",
+356:       "weka.classifiers.bayes.NaiveBayesMultinomialUpdateable",
+357:       "weka.classifiers.functions.SMOreg",
+358:       "weka.classifiers.functions.supportVector.RegOptimizer",
+359:       "weka.classifiers.functions.supportVector.RegSMO",
+360:       "weka.classifiers.functions.supportVector.RegSMOImproved",
+361:       "weka.classifiers.functions.MultilayerPerceptron",
+362:       "weka.core.FastVector",
+363:       "weka.filters.unsupervised.attribute.NominalToBinary",
+364:       "weka.classifiers.functions.neural.SigmoidUnit",
+365:       "weka.classifiers.functions.neural.LinearUnit",
+366:       "weka.classifiers.functions.SimpleLinearRegression",
+367:       "weka.classifiers.functions.SGD",
+368:       "weka.core.WekaEnumeration",
+369:       "weka.core.Attribute$1",
+370:       "weka.estimators.DiscreteEstimator",
+371:       "weka.attributeSelection.SymmetricalUncertAttributeEval",
+372:       "weka.classifiers.trees.RandomForest",
+373:       "weka.classifiers.meta.FilteredClassifier",
+374:       "weka.filters.supervised.attribute.AttributeSelection",
+375:       "weka.attributeSelection.AttributeSelection",
+376:       "weka.attributeSelection.GreedyStepwise",
+377:       "weka.estimators.PoissonEstimator",
+378:       "weka.core.SelectedTag",
+379:       "weka.classifiers.rules.OneR",
+380:       "weka.classifiers.rules.JRip",
+381:       "weka.classifiers.meta.RandomCommittee",
+382:       "weka.core.neighboursearch.balltrees.BottomUpConstructor",
+383:       "weka.classifiers.RandomizableIteratedSingleClassifierEnhancer",
+384:       "weka.classifiers.meta.AdaBoostM1",
+385:       "weka.classifiers.trees.DecisionStump",
+386:       "weka.classifiers.trees.LMT",
+387:       "weka.attributeSelection.CorrelationAttributeEval",
+388:       "weka.classifiers.RandomizableMultipleClassifiersCombiner",
+389:       "weka.classifiers.meta.MultiScheme",
+390:       "weka.attributeSelection.ReliefFAttributeEval",
+391:       "weka.core.converters.ConverterUtils$DataSource",
+392:       "weka.core.converters.AbstractLoader",
+393:       "weka.core.converters.AbstractFileLoader",
+394:       "weka.core.converters.ArffLoader",
+395:       "weka.classifiers.functions.GaussianProcesses",
+396:       "weka.classifiers.meta.AdditiveRegression",
+397:       "weka.classifiers.rules.DecisionTable",
+398:       "weka.classifiers.meta.LogitBoost",
+399:       "weka.attributeSelection.InfoGainAttributeEval",
+400:       "weka.classifiers.meta.Vote",
+401:       "weka.classifiers.bayes.NaiveBayesUpdateable",
+402:       "weka.classifiers.meta.MultiClassClassifier",
+403:       "weka.classifiers.meta.MultiClassClassifierUpdateable",
+404:       "weka.classifiers.functions.Logistic",
+405:       "weka.classifiers.lazy.LWL",
+406:       "weka.core.AttributeStats",
+407:       "weka.classifiers.lazy.KStar",
+408:       "weka.core.FindWithCapabilities",
+409:       "weka.core.SingleIndex",
+410:       "weka.classifiers.functions.supportVector.NormalizedPolyKernel",
+411:       "weka.classifiers.functions.supportVector.RBFKernel",
+412:       "weka.estimators.NormalEstimator",
+413:       "weka.classifiers.meta.CVParameterSelection",
+414:       "weka.attributeSelection.WrapperSubsetEval",
+415:       "weka.core.neighboursearch.kdtrees.KDTreeNode",
+416:       "weka.core.ClassDiscovery",
+417:       "weka.core.neighboursearch.kdtrees.MidPointOfWidestDimension",
+418:       "weka.classifiers.functions.supportVector.Puk",
+419:       "weka.core.matrix.Matrix",
+420:       "weka.core.neighboursearch.balltrees.MiddleOutConstructor",
+421:       "weka.experiment.Stats",
+422:       "weka.core.Queue",
+423:       "weka.core.AttributeLocator",
+424:       "weka.core.StringLocator",
+425:       "weka.core.RelationalLocator",
+426:       "weka.core.ContingencyTables",
+427:       "weka.core.Queue$QueueNode"
+428:     );
+429:   }
+430: }
+
+[MASTER] 06:41:46.128 [logback-2] ERROR JUnitAnalyzer - Failed to compile test case:
+NaiveBayesMultinomialText naiveBayesMultinomialText0 = new NaiveBayesMultinomialText();
+naiveBayesMultinomialText0.getRevision();
+naiveBayesMultinomialText0.m_norm = 0.0;
+FileSystemHandling.shouldThrowIOException((EvoSuiteFile) null);
+naiveBayesMultinomialText0.reset();
+FileSystemHandling.setPermissions((EvoSuiteFile) null, false, false, false);
+naiveBayesMultinomialText0.getCapabilities();
+AbstractClassifier.makeCopy(naiveBayesMultinomialText0);
+naiveBayesMultinomialText0.listOptions();
+naiveBayesMultinomialText0.m_useStopList = false;
+HashMap<Integer, LinkedHashMap<String, NaiveBayesMultinomialText.Count>> hashMap0 = new HashMap<Integer, LinkedHashMap<String, NaiveBayesMultinomialText.Count>>();
+naiveBayesMultinomialText0.m_probOfWordGivenClass = (Map<Integer, LinkedHashMap<String, NaiveBayesMultinomialText.Count>>) hashMap0;
+naiveBayesMultinomialText0.stopwordsTipText();
+naiveBayesMultinomialText0.globalInfo();
+naiveBayesMultinomialText0.minWordFrequencyTipText();
+naiveBayesMultinomialText0.normTipText();
+naiveBayesMultinomialText0.getNorm();
+naiveBayesMultinomialText0.minWordFrequencyTipText();
+naiveBayesMultinomialText0.getTokenizer();
+String string0 = "";
+MockFile mockFile0 = new MockFile("Ignore any words that don't occur at least min frequency times in the training data. If periodic pruning is turned on, then the dictionary is pruned according to this value");
+MockFile.createTempFile("", (String) null, (File) mockFile0);
+
+[MASTER] 06:41:47.994 [logback-2] ERROR ClassStateSupport - Could not initialize weka.core.converters.ConverterUtils: null
+[MASTER] 06:41:48.917 [logback-2] ERROR ClassStateSupport - Could not initialize weka.gui.GenericObjectEditor: Could not initialize class weka.gui.GenericObjectEditor
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 5
+* Writing JUnit test case 'NaiveBayesMultinomialText_ESTest' to /home/ubuntu/termite/mosa/tests/s1022/107_weka/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: weka.experiment.ResultMatrix
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/107_weka/evosuite-files/evosuite.properties
+* Connecting to master process on port 5246
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 06:46:20.157 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 06:46:20.169 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 06:46:20.169 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 06:46:20.206 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class weka.experiment.ResultMatrix
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 2699
+* Using seed 1022
+* Starting evolution
+* Search finished after 137s and 33 generations, 22320 statements, best individual has fitness: 2104.0
+[MASTER] 06:48:40.276 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 19 seconds more than allowed.
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 98%
+* Total number of goals: 647
+* Number of covered goals: 633
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 95%
+* Total number of goals: 441
+* Number of covered goals: 420
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 19
+* Number of covered goals: 19
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 92%
+* Total number of goals: 678
+* Number of covered goals: 623
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 44%
+* Total number of goals: 244
+* Number of covered goals: 108
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 124
+* Number of covered goals: 124
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 124
+* Number of covered goals: 124
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 92%
+* Total number of goals: 441
+* Number of covered goals: 406
+* Generated 195 tests with total length 2144
+* Resulting test suite's coverage: 90% (average coverage for all fitness functions)
+* Generating assertions
+[MASTER] 06:54:13.370 [logback-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.672% of time used, but only 88/195 tests minimized), falling back to using all assertions
+* Resulting test suite's mutation score: 23%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 9
+* Writing JUnit test case 'ResultMatrix_ESTest' to /home/ubuntu/termite/mosa/tests/s1022/107_weka/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: weka.classifiers.Evaluation
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: weka.classifiers.rules.JRip
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/107_weka/evosuite-files/evosuite.properties
+* Connecting to master process on port 5240
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/107_weka/evosuite-files/evosuite.properties
+* Connecting to master process on port 5245
+* Analyzing classpath: 
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 07:02:04.359 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 07:02:04.389 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 07:02:04.390 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 07:02:06.077 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 07:02:06.511 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 07:02:06.512 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+* Finished analyzing classpath
+* Generating tests for class weka.classifiers.rules.JRip
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 2767
+* Using seed 1022
+* Starting evolution
+[MASTER] 07:02:09.670 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] weka.classifiers.rules.JRip.RipperRule.<init>(Lweka/classifiers/rules/JRip;)V
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 07:02:16.397 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 07:02:16.399 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 07:02:16.400 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 07:02:16.807 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 07:02:17.375 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 07:02:17.376 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 07:02:18.704 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 07:02:18.725 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 07:02:18.726 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 07:02:18.726 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 07:02:18.726 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 07:02:18.726 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 07:02:18.726 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 07:02:18.727 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 07:02:18.727 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 07:02:18.764 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 07:02:18.775 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+[MASTER] 07:02:19.210 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.rules.JRip.getDebug()Z: Line 590
+[MASTER] 07:02:19.212 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.rules.JRip.getDebug()Z: root-Branch
+[MASTER] 07:02:19.213 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 213: weka.classifiers.rules.JRip.getDebug()Z:590 - InsertUnaryOp Negation
+[MASTER] 07:02:19.214 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: weka.classifiers.rules.JRip.getDebug()Z:False
+[MASTER] 07:02:19.214 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] weka.classifiers.rules.JRip.getDebug()Z
+[MASTER] 07:02:19.215 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] weka.classifiers.rules.JRip.getDebug()Z
+[MASTER] 07:02:19.216 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch weka.classifiers.rules.JRip.getDebug()Z: root-Branch in context: weka.classifiers.rules.JRip:getDebug()Z
+[MASTER] 07:02:19.287 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.rules.JRip.foldsTipText()Ljava/lang/String;: Line 463
+[MASTER] 07:02:19.289 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.rules.JRip.foldsTipText()Ljava/lang/String;: root-Branch
+[MASTER] 07:02:19.290 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 187: weka.classifiers.rules.JRip.foldsTipText()Ljava/lang/String;:463 - ReplaceConstant - Determines the amount of data used for pruning. One fold is used for pruning, the rest for growing the rules. -> 
+[MASTER] 07:02:19.291 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: weka.classifiers.rules.JRip.foldsTipText()Ljava/lang/String;:NonEmptyString
+[MASTER] 07:02:19.291 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] weka.classifiers.rules.JRip.foldsTipText()Ljava/lang/String;
+[MASTER] 07:02:19.292 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] weka.classifiers.rules.JRip.foldsTipText()Ljava/lang/String;
+[MASTER] 07:02:19.292 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch weka.classifiers.rules.JRip.foldsTipText()Ljava/lang/String;: root-Branch in context: weka.classifiers.rules.JRip:foldsTipText()Ljava/lang/String;
+[MASTER] 07:02:19.292 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch weka.classifiers.rules.JRip.listOptions()Ljava/util/Enumeration;: root-Branch in context: weka.classifiers.rules.JRip:listOptions()Ljava/util/Enumeration;
+* Finished analyzing classpath
+* Generating tests for class weka.classifiers.Evaluation
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 3904
+* Using seed 1022
+* Starting evolution
+[MASTER] 07:02:21.631 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;: Line 994
+[MASTER] 07:02:21.631 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;: Line 995
+[MASTER] 07:02:21.631 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;: Line 996
+[MASTER] 07:02:21.631 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;: Line 1010
+[MASTER] 07:02:21.631 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;: Line 1011
+[MASTER] 07:02:21.631 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;: Line 1012
+[MASTER] 07:02:21.631 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;: Line 1013
+[MASTER] 07:02:21.631 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;: Line 1018
+[MASTER] 07:02:21.631 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;: Line 1027
+[MASTER] 07:02:21.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;: I18 Branch 174 IF_ICMPGE L993 - false
+[MASTER] 07:02:21.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;: I56 Branch 175 IF_ICMPGE L999 - true
+[MASTER] 07:02:21.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;: I127 Branch 178 IF_ICMPGE L1010 - true
+[MASTER] 07:02:21.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;: I127 Branch 178 IF_ICMPGE L1010 - false
+[MASTER] 07:02:21.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;: I167 Branch 179 IFLE L1018 - true
+[MASTER] 07:02:21.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 900: weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;:993 - ReplaceVariable x -> bag
+[MASTER] 07:02:21.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 904: weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;:993 - ReplaceVariable bag -> x
+[MASTER] 07:02:21.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 908: weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;:993 - ReplaceComparisonOperator >= -> -1
+[MASTER] 07:02:21.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 911: weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;:994 - ReplaceVariable x -> bag
+[MASTER] 07:02:21.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 912: weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;:994 - InsertUnaryOp Negation of x
+[MASTER] 07:02:21.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 913: weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;:994 - InsertUnaryOp IINC 1 x
+[MASTER] 07:02:21.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 914: weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;:994 - InsertUnaryOp IINC -1 x
+[MASTER] 07:02:21.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 915: weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;:995 - ReplaceVariable x -> bag
+[MASTER] 07:02:21.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 916: weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;:995 - InsertUnaryOp Negation of x
+[MASTER] 07:02:21.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 917: weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;:995 - InsertUnaryOp IINC 1 x
+[MASTER] 07:02:21.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 918: weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;:995 - InsertUnaryOp IINC -1 x
+[MASTER] 07:02:21.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 919: weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;:995 - ReplaceConstant - 0.0 -> 1.0
+[MASTER] 07:02:21.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 920: weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;:995 - ReplaceConstant - 0.0 -> -1.0
+[MASTER] 07:02:21.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 921: weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;:996 - ReplaceVariable x -> bag
+[MASTER] 07:02:21.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 922: weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;:996 - InsertUnaryOp Negation of x
+[MASTER] 07:02:21.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 923: weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;:996 - InsertUnaryOp IINC 1 x
+[MASTER] 07:02:21.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 924: weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;:996 - InsertUnaryOp IINC -1 x
+[MASTER] 07:02:21.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 925: weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;:996 - ReplaceConstant - 0.0 -> 1.0
+[MASTER] 07:02:21.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 926: weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;:996 - ReplaceConstant - 0.0 -> -1.0
+[MASTER] 07:02:21.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 927: weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;:993 - ReplaceVariable x -> bag
+[MASTER] 07:02:21.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 929: weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;:999 - ReplaceVariable x -> bag
+[MASTER] 07:02:21.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 934: weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;:999 - ReplaceComparisonOperator >= -> >
+[MASTER] 07:02:21.638 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] weka.classifiers.rules.JRip.NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;
+[MASTER] 07:02:21.638 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;: I18 Branch 174 IF_ICMPGE L993 - false in context: 
+[MASTER] 07:02:21.638 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;: I127 Branch 178 IF_ICMPGE L1010 - false in context: 
+[MASTER] 07:02:21.638 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;: I167 Branch 179 IFLE L1018 - true in context: 
+[MASTER] 07:02:21.638 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;: I127 Branch 178 IF_ICMPGE L1010 - true in context: 
+[MASTER] 07:02:21.639 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch weka.classifiers.rules.JRip$NominalAntd.splitData(Lweka/core/Instances;DD)[Lweka/core/Instances;: I56 Branch 175 IF_ICMPGE L999 - true in context: 
+[MASTER] 07:02:23.320 [logback-1] WARN  ClassResetter - class java.lang.NoClassDefFoundError thrown during execution of method  __STATIC_RESET() for class weka.core.converters.ConverterUtils, null
+[MASTER] 07:02:32.569 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.rules.JRip.minNoTipText()Ljava/lang/String;: Line 491
+[MASTER] 07:02:32.570 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.classifiers.rules.JRip.minNoTipText()Ljava/lang/String;: root-Branch
+[MASTER] 07:02:32.570 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 194: weka.classifiers.rules.JRip.minNoTipText()Ljava/lang/String;:491 - ReplaceConstant - The minimum total weight of the instances in a rule. -> 
+[MASTER] 07:02:32.572 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: weka.classifiers.rules.JRip.minNoTipText()Ljava/lang/String;:NonEmptyString
+[MASTER] 07:02:32.572 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] weka.classifiers.rules.JRip.minNoTipText()Ljava/lang/String;
+[MASTER] 07:02:32.572 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] weka.classifiers.rules.JRip.minNoTipText()Ljava/lang/String;
+[MASTER] 07:02:32.572 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch weka.classifiers.rules.JRip.minNoTipText()Ljava/lang/String;: root-Branch in context: weka.classifiers.rules.JRip:minNoTipText()Ljava/lang/String;
+[MASTER] 07:02:58.919 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+[MASTER] 07:03:23.692 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 07:03:26.067 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+* Search finished after 123s and 208 generations, 89590 statements, best individual has fitness: 12744.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 35%
+* Total number of goals: 705
+* Number of covered goals: 250
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 25%
+* Total number of goals: 416
+* Number of covered goals: 106
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 55%
+* Total number of goals: 993
+* Number of covered goals: 547
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 28%
+* Total number of goals: 93
+* Number of covered goals: 26
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 72
+* Number of covered goals: 72
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 72
+* Number of covered goals: 72
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 25%
+* Total number of goals: 416
+* Number of covered goals: 106
+* Generated 72 tests with total length 407
+* Resulting test suite's coverage: 43% (average coverage for all fitness functions)
+* Generating assertions
+* Search finished after 126s and 69 generations, 44138 statements, best individual has fitness: 15712.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 57%
+* Total number of goals: 1378
+* Number of covered goals: 783
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 41%
+* Total number of goals: 809
+* Number of covered goals: 334
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 57
+* Number of covered goals: 57
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 60%
+* Total number of goals: 424
+* Number of covered goals: 254
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 21%
+* Total number of goals: 278
+* Number of covered goals: 57
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 99%
+* Total number of goals: 103
+* Number of covered goals: 102
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 99%
+* Total number of goals: 103
+* Number of covered goals: 102
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 40%
+* Total number of goals: 809
+* Number of covered goals: 324
+* Generated 137 tests with total length 1681
+* Resulting test suite's coverage: 50% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 21%
+* Compiling and checking tests
+* Writing JUnit test case 'JRip_ESTest' to /home/ubuntu/termite/mosa/tests/s1022/107_weka/evosuite-tests
+* Done!
+
+* Computation finished
+[MASTER] 07:10:30.888 [logback-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.7456770833333334% of time used, but only 66/137 tests minimized), falling back to using all assertions
+* Resulting test suite's mutation score: 4%
+* Compiling and checking tests
+[MASTER] 07:10:59.268 [logback-2] ERROR ClassStateSupport - Could not initialize weka.core.converters.ConverterUtils: null
+[MASTER] 07:10:59.362 [logback-2] ERROR ClassStateSupport - Could not initialize weka.gui.GenericObjectEditor: Could not initialize class weka.gui.GenericObjectEditor
+[MASTER] 07:10:59.673 [logback-2] ERROR ClassResetter - java.lang.NoClassDefFoundError: Could not initialize class weka.gui.GenericObjectEditor
+[MASTER] 07:10:59.673 [logback-2] ERROR ClassResetter - java.lang.NoClassDefFoundError: Could not initialize class weka.core.converters.ConverterUtils
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 10
+* Writing JUnit test case 'Evaluation_ESTest' to /home/ubuntu/termite/mosa/tests/s1022/107_weka/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: weka.core.stemmers.LovinsStemmer
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/107_weka/evosuite-files/evosuite.properties
+* Connecting to master process on port 5247
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class weka.core.stemmers.LovinsStemmer
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 1367
+* Using seed 1022
+* Starting evolution
+* Search finished after 124s and 203 generations, 86303 statements, best individual has fitness: 2680.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 88%
+* Total number of goals: 217
+* Number of covered goals: 191
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 68%
+* Total number of goals: 428
+* Number of covered goals: 289
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 92%
+* Total number of goals: 260
+* Number of covered goals: 239
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 44%
+* Total number of goals: 18
+* Number of covered goals: 8
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 68%
+* Total number of goals: 428
+* Number of covered goals: 289
+* Generated 83 tests with total length 249
+* Resulting test suite's coverage: 76% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 75%
+* Compiling and checking tests
+* Writing JUnit test case 'LovinsStemmer_ESTest' to /home/ubuntu/termite/mosa/tests/s1022/107_weka/evosuite-tests
+* Done!
+
+* Computation finished

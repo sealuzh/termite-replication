@@ -1,0 +1,108 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: net.sourceforge.schemaspy.model.ForeignKeyConstraint
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/36_schemaspy/evosuite-files/evosuite.properties
+* Connecting to master process on port 20773
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 11:05:45.550 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 11:05:45.612 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 11:05:45.614 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 11:05:46.077 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 11:05:46.087 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 11:05:46.093 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+* Finished analyzing classpath
+* Generating tests for class net.sourceforge.schemaspy.model.ForeignKeyConstraint
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/36_schemaspy/src/main/java/net/sourceforge/schemaspy/model/ForeignKeyConstraint.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1028
+* Starting evolution
+[MASTER] 11:05:54.179 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] net.sourceforge.schemaspy.model.ForeignKeyConstraint.isCascadeOnDelete()Z
+[MASTER] 11:05:54.196 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] net.sourceforge.schemaspy.model.ForeignKeyConstraint.getDeleteRuleName()Ljava/lang/String;
+[MASTER] 11:05:54.197 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] net.sourceforge.schemaspy.model.ForeignKeyConstraint.addChildColumn(Lnet/sourceforge/schemaspy/model/TableColumn;)V
+[MASTER] 11:05:54.205 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] net.sourceforge.schemaspy.model.ForeignKeyConstraint.getParentTable()Lnet/sourceforge/schemaspy/model/Table;
+[MASTER] 11:05:54.206 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] net.sourceforge.schemaspy.model.ForeignKeyConstraint.getChildColumns()Ljava/util/List;
+[MASTER] 11:05:54.207 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] net.sourceforge.schemaspy.model.ForeignKeyConstraint.isRestrictDelete()Z
+[MASTER] 11:05:54.209 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] net.sourceforge.schemaspy.model.ForeignKeyConstraint.isImplied()Z
+[MASTER] 11:05:54.214 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] net.sourceforge.schemaspy.model.ForeignKeyConstraint.isCascadeOnDelete()Z
+[MASTER] 11:05:54.215 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] net.sourceforge.schemaspy.model.ForeignKeyConstraint.getDeleteRuleName()Ljava/lang/String;
+[MASTER] 11:05:54.216 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] net.sourceforge.schemaspy.model.ForeignKeyConstraint.addChildColumn(Lnet/sourceforge/schemaspy/model/TableColumn;)V
+[MASTER] 11:05:54.216 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] net.sourceforge.schemaspy.model.ForeignKeyConstraint.getParentTable()Lnet/sourceforge/schemaspy/model/Table;
+[MASTER] 11:05:54.227 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] net.sourceforge.schemaspy.model.ForeignKeyConstraint.getChildColumns()Ljava/util/List;
+[MASTER] 11:05:54.240 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] net.sourceforge.schemaspy.model.ForeignKeyConstraint.isRestrictDelete()Z
+[MASTER] 11:05:54.243 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] net.sourceforge.schemaspy.model.ForeignKeyConstraint.isImplied()Z
+[MASTER] 11:06:19.191 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was net.sourceforge.schemaspy.model.ForeignKeyConstraint.getDeleteRuleName()Ljava/lang/String;: I4 Branch 9 TABLESWITCH L205 Case 1 - true
+[MASTER] 11:06:19.197 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was net.sourceforge.schemaspy.model.ForeignKeyConstraint.getDeleteRuleAlias()Ljava/lang/String;: I4 Branch 19 TABLESWITCH L239 Case 1 - true
+[MASTER] 11:06:19.219 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch net.sourceforge.schemaspy.model.ForeignKeyConstraint.getDeleteRuleName()Ljava/lang/String;: I4 Branch 9 TABLESWITCH L205 Case 1 - true in context: net.sourceforge.schemaspy.model.ForeignKeyConstraint:getDeleteRuleName()Ljava/lang/String;
+[MASTER] 11:06:19.225 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch net.sourceforge.schemaspy.model.ForeignKeyConstraint.getDeleteRuleAlias()Ljava/lang/String;: I4 Branch 19 TABLESWITCH L239 Case 1 - true in context: net.sourceforge.schemaspy.model.ForeignKeyConstraint:getDeleteRuleAlias()Ljava/lang/String;
+[MASTER] 11:07:13.828 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was net.sourceforge.schemaspy.model.ForeignKeyConstraint.getDeleteRuleName()Ljava/lang/String;: Line 214
+[MASTER] 11:07:13.829 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was net.sourceforge.schemaspy.model.ForeignKeyConstraint.getDeleteRuleDescription()Ljava/lang/String;: Line 231
+[MASTER] 11:07:13.830 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was net.sourceforge.schemaspy.model.ForeignKeyConstraint.getDeleteRuleAlias()Ljava/lang/String;: Line 248
+[MASTER] 11:07:13.833 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was net.sourceforge.schemaspy.model.ForeignKeyConstraint.isNullOnDelete()Z: I5 Branch 7 IF_ICMPNE L201 - false
+[MASTER] 11:07:13.834 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was net.sourceforge.schemaspy.model.ForeignKeyConstraint.getDeleteRuleDescription()Ljava/lang/String;: I4 Branch 15 TABLESWITCH L222 Case 2 - true
+[MASTER] 11:07:13.835 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was net.sourceforge.schemaspy.model.ForeignKeyConstraint.getDeleteRuleName()Ljava/lang/String;: I4 Branch 10 TABLESWITCH L205 Case 2 - true
+[MASTER] 11:07:13.846 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was net.sourceforge.schemaspy.model.ForeignKeyConstraint.getDeleteRuleAlias()Ljava/lang/String;: I4 Branch 20 TABLESWITCH L239 Case 2 - true
+[MASTER] 11:07:13.853 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 32: net.sourceforge.schemaspy.model.ForeignKeyConstraint.isNullOnDelete()Z:201 - ReplaceComparisonOperator != -> -1
+[MASTER] 11:07:13.853 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 35: net.sourceforge.schemaspy.model.ForeignKeyConstraint.isNullOnDelete()Z:201 - ReplaceConstant - 1 -> 0
+[MASTER] 11:07:13.853 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 39: net.sourceforge.schemaspy.model.ForeignKeyConstraint.getDeleteRuleName()Ljava/lang/String;:214 - ReplaceConstant - Null on delete -> 
+[MASTER] 11:07:13.854 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 42: net.sourceforge.schemaspy.model.ForeignKeyConstraint.getDeleteRuleDescription()Ljava/lang/String;:231 - ReplaceConstant - Null on delete:
+ Foreign key to parent set to NULL when parent deleted -> 
+[MASTER] 11:07:13.854 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 45: net.sourceforge.schemaspy.model.ForeignKeyConstraint.getDeleteRuleAlias()Ljava/lang/String;:248 - ReplaceConstant - N -> 
+[MASTER] 11:07:13.857 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: net.sourceforge.schemaspy.model.ForeignKeyConstraint.isNullOnDelete()Z:True
+[MASTER] 11:07:13.866 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch net.sourceforge.schemaspy.model.ForeignKeyConstraint.getDeleteRuleAlias()Ljava/lang/String;: I4 Branch 20 TABLESWITCH L239 Case 2 - true in context: net.sourceforge.schemaspy.model.ForeignKeyConstraint:getDeleteRuleAlias()Ljava/lang/String;
+[MASTER] 11:07:13.869 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch net.sourceforge.schemaspy.model.ForeignKeyConstraint.getDeleteRuleDescription()Ljava/lang/String;: I4 Branch 15 TABLESWITCH L222 Case 2 - true in context: net.sourceforge.schemaspy.model.ForeignKeyConstraint:getDeleteRuleDescription()Ljava/lang/String;
+[MASTER] 11:07:13.871 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch net.sourceforge.schemaspy.model.ForeignKeyConstraint.getDeleteRuleName()Ljava/lang/String;: I4 Branch 10 TABLESWITCH L205 Case 2 - true in context: net.sourceforge.schemaspy.model.ForeignKeyConstraint:getDeleteRuleName()Ljava/lang/String;
+[MASTER] 11:07:13.873 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch net.sourceforge.schemaspy.model.ForeignKeyConstraint.isNullOnDelete()Z: I5 Branch 7 IF_ICMPNE L201 - false in context: net.sourceforge.schemaspy.model.ForeignKeyConstraint:isNullOnDelete()Z
+* Search finished after 121s and 55 generations, 36442 statements, best individual has fitness: 1072.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 71%
+* Total number of goals: 82
+* Number of covered goals: 58
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 82%
+* Total number of goals: 72
+* Number of covered goals: 59
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 6
+* Number of covered goals: 6
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 63%
+* Total number of goals: 102
+* Number of covered goals: 64
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 37%
+* Total number of goals: 75
+* Number of covered goals: 28
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 23
+* Number of covered goals: 23
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 23
+* Number of covered goals: 23
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 81%
+* Total number of goals: 72
+* Number of covered goals: 58
+* Generated 29 tests with total length 392
+* Resulting test suite's coverage: 71% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 54%
+* Compiling and checking tests
+* Writing JUnit test case 'ForeignKeyConstraint_ESTest' to /home/ubuntu/termite/qmosa/tests/s1028/36_schemaspy/evosuite-tests
+* Done!
+
+* Computation finished

@@ -1,0 +1,337 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.databene.jdbacl.DBUtil
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/13_jdbacl/evosuite-files/evosuite.properties
+* Connecting to master process on port 14425
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 01:28:07.143 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.SQLType
+[MASTER] 01:28:07.591 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 01:28:07.601 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 01:28:07.612 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 01:28:07.721 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 01:28:07.737 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 01:28:07.737 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 01:28:09.272 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 01:28:09.274 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 01:28:09.274 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 01:28:09.293 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 01:28:09.294 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 01:28:09.294 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 01:28:09.294 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 01:28:09.295 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 01:28:09.295 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 01:28:09.772 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToDoubleFunction
+[MASTER] 01:28:09.772 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToIntFunction
+[MASTER] 01:28:09.772 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToLongFunction
+[MASTER] 01:28:09.831 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 01:28:10.778 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class org.databene.jdbacl.DBUtil
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/13_jdbacl/src/main/java/org/databene/jdbacl/DBUtil.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1029
+* Starting evolution
+[MASTER] 01:28:20.162 [logback-2] ERROR TestCluster - Failed to check cache for org.databene.jdbacl.model.CompositeDBObject<C> : Type points to itself
+* Search finished after 194s and 130 generations, 71380 statements, best individual has fitness: 7272.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 60%
+* Total number of goals: 324
+* Number of covered goals: 196
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 50%
+* Total number of goals: 197
+* Number of covered goals: 98
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 56
+* Number of covered goals: 56
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 57%
+* Total number of goals: 700
+* Number of covered goals: 396
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 9%
+* Total number of goals: 255
+* Number of covered goals: 24
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 94%
+* Total number of goals: 51
+* Number of covered goals: 48
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 92%
+* Total number of goals: 51
+* Number of covered goals: 47
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 40%
+* Total number of goals: 197
+* Number of covered goals: 78
+* Generated 92 tests with total length 1377
+* Resulting test suite's coverage: 50% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 9%
+* Compiling and checking tests
+[MASTER] 01:31:41.927 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.LocalGDSImpl: no jaybird21 in java.library.path
+[MASTER] 01:31:41.936 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.NativeGDSImpl: org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 01:31:42.111 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.JniGDSImpl: Could not initialize class org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 01:31:42.803 [logback-2] ERROR ClassResetter - java.lang.NoClassDefFoundError: Could not initialize class org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 01:31:43.982 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.NativeGDSImpl: no jaybird21 in java.library.path
+[MASTER] 01:31:45.197 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.LocalGDSImpl: org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 01:31:46.495 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.derby.iapi.types.SqlXmlUtil: org/apache/xml/utils/PrefixResolver
+* Permissions denied during test execution: 
+  - java.io.FilePermission: 
+         write /dev/random: 1
+  - java.net.SocketPermission: 
+         resolve java.lang.String@0000000016: 2
+         resolve java.lang.String@0000000028: 2
+         resolve java.lang.String@0000000017: 2
+         and other 8 cases of action/name for this exception class
+* Writing JUnit test case 'DBUtil_ESTest' to /home/ubuntu/termite/qmosa/tests/s1029/13_jdbacl/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.databene.jdbacl.SQLUtil
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/13_jdbacl/evosuite-files/evosuite.properties
+* Connecting to master process on port 14423
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 02:02:15.435 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 02:02:15.438 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 02:02:15.439 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 02:02:15.501 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 02:02:15.502 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 02:02:15.503 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 02:02:16.704 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.SQLType
+[MASTER] 02:02:17.130 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 02:02:17.130 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 02:02:17.131 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 02:02:17.131 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 02:02:17.131 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 02:02:17.132 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 02:02:17.132 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 02:02:17.134 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 02:02:17.134 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 02:02:19.163 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToDoubleFunction
+[MASTER] 02:02:19.164 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToIntFunction
+[MASTER] 02:02:19.164 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToLongFunction
+[MASTER] 02:02:20.635 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 02:02:21.792 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class org.databene.jdbacl.SQLUtil
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/13_jdbacl/src/main/java/org/databene/jdbacl/SQLUtil.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1029
+* Starting evolution
+[MASTER] 02:02:25.099 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z: Line 265
+[MASTER] 02:02:25.099 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z: Line 266
+[MASTER] 02:02:25.099 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z: Line 267
+[MASTER] 02:02:25.099 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z: Line 269
+[MASTER] 02:02:25.099 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalizeSQL(Ljava/lang/String;)Ljava/lang/String;: Line 287
+[MASTER] 02:02:25.099 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalizeSQL(Ljava/lang/String;)Ljava/lang/String;: Line 288
+[MASTER] 02:02:25.099 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalizeSQL(Ljava/lang/String;)Ljava/lang/String;: Line 290
+[MASTER] 02:02:25.099 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;: Line 355
+[MASTER] 02:02:25.099 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;: Line 356
+[MASTER] 02:02:25.099 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;: Line 357
+[MASTER] 02:02:25.099 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;: Line 358
+[MASTER] 02:02:25.099 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;: Line 359
+[MASTER] 02:02:25.099 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;: Line 360
+[MASTER] 02:02:25.099 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;: Line 361
+[MASTER] 02:02:25.099 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;: Line 362
+[MASTER] 02:02:25.099 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;: Line 363
+[MASTER] 02:02:25.099 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;: Line 365
+[MASTER] 02:02:25.100 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.addOptionalCondition(Ljava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;: Line 375
+[MASTER] 02:02:25.100 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.addOptionalCondition(Ljava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;: Line 376
+[MASTER] 02:02:25.100 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.addOptionalCondition(Ljava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;: Line 377
+[MASTER] 02:02:25.100 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z: I13 Branch 33 IFEQ L266 - true
+[MASTER] 02:02:25.100 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z: I13 Branch 33 IFEQ L266 - false
+[MASTER] 02:02:25.100 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z: I24 Branch 34 IFLE L267 - true
+[MASTER] 02:02:25.100 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.addOptionalCondition(Ljava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;: I4 Branch 49 IFLE L375 - false
+[MASTER] 02:02:25.100 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalizeSQL(Ljava/lang/String;)Ljava/lang/String;: I12 Branch 38 IFEQ L288 - true
+[MASTER] 02:02:25.100 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;: I10 Branch 44 IFNE L356 - false
+[MASTER] 02:02:25.100 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;: I14 Branch 45 IFGT L356 - false
+[MASTER] 02:02:25.100 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;: I43 Branch 46 IF_ICMPGE L359 - true
+[MASTER] 02:02:25.100 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;: I43 Branch 46 IF_ICMPGE L359 - false
+[MASTER] 02:02:25.101 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;: I47 Branch 47 IFLE L360 - true
+[MASTER] 02:02:25.101 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;: I47 Branch 47 IFLE L360 - false
+[MASTER] 02:02:25.102 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 240: org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z:266 - ReplaceComparisonOperator == -> !=
+[MASTER] 02:02:25.102 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 241: org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z:267 - ReplaceVariable sql -> call
+[MASTER] 02:02:25.102 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 242: org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z:267 - ReplaceVariable call -> sql
+[MASTER] 02:02:25.102 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 243: org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z:267 - ReplaceConstant - 0 -> 1
+[MASTER] 02:02:25.102 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 245: org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z:267 - ReplaceComparisonOperator <= -> ==
+[MASTER] 02:02:25.102 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 248: org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z:269 - ReplaceConstant - 0 -> 1
+[MASTER] 02:02:25.102 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 262: org.databene.jdbacl.SQLUtil.normalizeSQL(Ljava/lang/String;)Ljava/lang/String;:288 - ReplaceConstant - /* -> 
+[MASTER] 02:02:25.102 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 263: org.databene.jdbacl.SQLUtil.normalizeSQL(Ljava/lang/String;)Ljava/lang/String;:288 - ReplaceComparisonOperator == -> !=
+[MASTER] 02:02:25.102 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 297: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:356 - ReplaceVariable type -> refererAlias
+[MASTER] 02:02:25.102 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 299: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:356 - ReplaceVariable type -> refereeTable
+[MASTER] 02:02:25.102 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 300: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:356 - ReplaceComparisonOperator != -> ==
+[MASTER] 02:02:25.102 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 301: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:356 - ReplaceConstant - inner -> 
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 302: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:356 - ReplaceVariable type -> refererAlias
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 304: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:356 - ReplaceVariable type -> refereeTable
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 306: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:356 - ReplaceComparisonOperator > -> !=
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 308: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:357 - ReplaceVariable type -> refererAlias
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 310: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:357 - ReplaceVariable type -> refereeTable
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 311: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:357 - ReplaceConstant -  join  -> 
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 312: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:358 - ReplaceVariable refereeTable -> refererAlias
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 313: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:358 - ReplaceVariable refereeTable -> refereeAlias
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 314: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:358 - ReplaceVariable refereeTable -> type
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 315: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:358 - ReplaceConstant -  as  -> 
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 316: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:358 - ReplaceVariable refereeAlias -> refererAlias
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 318: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:358 - ReplaceVariable refereeAlias -> refereeTable
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 319: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:358 - ReplaceConstant -  on  -> 
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 320: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:359 - ReplaceConstant - 0 -> 1
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 321: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:359 - InsertUnaryOp Negation of i
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 322: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:359 - InsertUnaryOp IINC 1 i
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 323: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:359 - InsertUnaryOp IINC -1 i
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 325: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:359 - ReplaceComparisonOperator >= -> -1
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 326: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:359 - ReplaceComparisonOperator >= -> >
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 328: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:360 - InsertUnaryOp Negation of i
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 329: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:360 - InsertUnaryOp IINC 1 i
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 330: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:360 - InsertUnaryOp IINC -1 i
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 331: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:360 - ReplaceComparisonOperator <= -> -1
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 333: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:360 - ReplaceComparisonOperator <= -> <
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 334: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:361 - ReplaceConstant -  and  -> 
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 335: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:362 - ReplaceVariable refererAlias -> refereeAlias
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 336: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:362 - ReplaceVariable refererAlias -> type
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 337: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:362 - ReplaceVariable refererAlias -> refereeTable
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 338: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:362 - ReplaceConstant - 46 -> 0
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 339: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:362 - ReplaceConstant - 46 -> 1
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 340: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:362 - ReplaceConstant - 46 -> -1
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 341: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:362 - ReplaceConstant - 46 -> 45
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 342: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:362 - ReplaceConstant - 46 -> 47
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 344: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:362 - InsertUnaryOp Negation of i
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 345: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:362 - InsertUnaryOp IINC 1 i
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 346: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:362 - InsertUnaryOp IINC -1 i
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 347: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:363 - ReplaceConstant -  =  -> 
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 348: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:363 - ReplaceVariable refereeAlias -> refererAlias
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 350: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:363 - ReplaceVariable refereeAlias -> refereeTable
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 351: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:363 - ReplaceConstant - 46 -> 0
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 352: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:363 - ReplaceConstant - 46 -> 1
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 353: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:363 - ReplaceConstant - 46 -> -1
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 354: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:363 - ReplaceConstant - 46 -> 45
+[MASTER] 02:02:25.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 355: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:363 - ReplaceConstant - 46 -> 47
+[MASTER] 02:02:25.104 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 357: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:363 - InsertUnaryOp Negation of i
+[MASTER] 02:02:25.104 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 358: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:363 - InsertUnaryOp IINC 1 i
+[MASTER] 02:02:25.104 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 359: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:363 - InsertUnaryOp IINC -1 i
+[MASTER] 02:02:25.104 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 364: org.databene.jdbacl.SQLUtil.addOptionalCondition(Ljava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;:375 - ReplaceComparisonOperator <= -> -1
+[MASTER] 02:02:25.104 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 367: org.databene.jdbacl.SQLUtil.addOptionalCondition(Ljava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;:376 - ReplaceConstant -  or  -> 
+[MASTER] 02:02:25.104 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z:False
+[MASTER] 02:02:25.104 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: org.databene.jdbacl.SQLUtil.addOptionalCondition(Ljava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;:NonNull
+[MASTER] 02:02:25.105 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;:NonEmptyString
+[MASTER] 02:02:25.105 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z
+[MASTER] 02:02:25.106 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.databene.jdbacl.SQLUtil.addOptionalCondition(Ljava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
+[MASTER] 02:02:25.106 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
+[MASTER] 02:02:25.132 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z
+[MASTER] 02:02:25.133 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.databene.jdbacl.SQLUtil.addOptionalCondition(Ljava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
+[MASTER] 02:02:25.133 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
+[MASTER] 02:02:25.133 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z: I13 Branch 33 IFEQ L266 - false in context: org.databene.jdbacl.SQLUtil:isProcedureCall(Ljava/lang/String;)Z
+[MASTER] 02:02:25.133 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;: I43 Branch 46 IF_ICMPGE L359 - true in context: org.databene.jdbacl.SQLUtil:join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
+[MASTER] 02:02:25.133 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z: I13 Branch 33 IFEQ L266 - true in context: org.databene.jdbacl.SQLUtil:isProcedureCall(Ljava/lang/String;)Z
+[MASTER] 02:02:25.134 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;: I14 Branch 45 IFGT L356 - false in context: org.databene.jdbacl.SQLUtil:join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
+[MASTER] 02:02:25.134 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;: I47 Branch 47 IFLE L360 - false in context: org.databene.jdbacl.SQLUtil:join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
+[MASTER] 02:02:25.134 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.addOptionalCondition(Ljava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;: I4 Branch 49 IFLE L375 - false in context: org.databene.jdbacl.SQLUtil:addOptionalCondition(Ljava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
+[MASTER] 02:02:25.134 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;: I47 Branch 47 IFLE L360 - true in context: org.databene.jdbacl.SQLUtil:join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
+[MASTER] 02:02:25.134 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.isProcedureCall(Ljava/lang/String;)Z: I24 Branch 34 IFLE L267 - true in context: org.databene.jdbacl.SQLUtil:isProcedureCall(Ljava/lang/String;)Z
+[MASTER] 02:02:25.134 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;: I10 Branch 44 IFNE L356 - false in context: org.databene.jdbacl.SQLUtil:join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
+[MASTER] 02:02:25.134 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalizeSQL(Ljava/lang/String;)Ljava/lang/String;: I12 Branch 38 IFEQ L288 - true in context: 
+[MASTER] 02:02:25.134 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;: I43 Branch 46 IF_ICMPGE L359 - false in context: org.databene.jdbacl.SQLUtil:join(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
+[MASTER] 02:02:26.461 [logback-2] ERROR TestCluster - Failed to check cache for org.databene.jdbacl.model.CompositeDBObject<C> : Type points to itself
+[MASTER] 02:05:48.165 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.constraintName(Lorg/databene/jdbacl/model/DBConstraint;)Ljava/lang/String;: I4 Branch 56 IFNULL L396 - false
+[MASTER] 02:05:48.167 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 387: org.databene.jdbacl.SQLUtil.constraintName(Lorg/databene/jdbacl/model/DBConstraint;)Ljava/lang/String;:396 - ReplaceComparisonOperator = null -> != null
+[MASTER] 02:05:48.168 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 388: org.databene.jdbacl.SQLUtil.constraintName(Lorg/databene/jdbacl/model/DBConstraint;)Ljava/lang/String;:396 - ReplaceConstant - CONSTRAINT  -> 
+[MASTER] 02:05:48.169 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 389: org.databene.jdbacl.SQLUtil.constraintName(Lorg/databene/jdbacl/model/DBConstraint;)Ljava/lang/String;:396 - ReplaceConstant - 32 -> 0
+[MASTER] 02:05:48.170 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 390: org.databene.jdbacl.SQLUtil.constraintName(Lorg/databene/jdbacl/model/DBConstraint;)Ljava/lang/String;:396 - ReplaceConstant - 32 -> 1
+[MASTER] 02:05:48.171 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 391: org.databene.jdbacl.SQLUtil.constraintName(Lorg/databene/jdbacl/model/DBConstraint;)Ljava/lang/String;:396 - ReplaceConstant - 32 -> -1
+[MASTER] 02:05:48.172 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 392: org.databene.jdbacl.SQLUtil.constraintName(Lorg/databene/jdbacl/model/DBConstraint;)Ljava/lang/String;:396 - ReplaceConstant - 32 -> 31
+[MASTER] 02:05:48.173 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 393: org.databene.jdbacl.SQLUtil.constraintName(Lorg/databene/jdbacl/model/DBConstraint;)Ljava/lang/String;:396 - ReplaceConstant - 32 -> 33
+[MASTER] 02:05:48.190 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: org.databene.jdbacl.SQLUtil.constraintName(Lorg/databene/jdbacl/model/DBConstraint;)Ljava/lang/String;:NonEmptyString
+[MASTER] 02:05:48.193 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.databene.jdbacl.SQLUtil.constraintName(Lorg/databene/jdbacl/model/DBConstraint;)Ljava/lang/String;
+[MASTER] 02:05:48.195 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.constraintName(Lorg/databene/jdbacl/model/DBConstraint;)Ljava/lang/String;: I4 Branch 56 IFNULL L396 - false in context: org.databene.jdbacl.SQLUtil:constraintName(Lorg/databene/jdbacl/model/DBConstraint;)Ljava/lang/String;
+[MASTER] 02:06:22.016 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.typeAndName(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;: Line 404
+[MASTER] 02:06:22.017 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.typeAndName(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;: Line 405
+[MASTER] 02:06:22.018 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.typeAndName(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;: Line 407
+[MASTER] 02:06:22.047 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 395: org.databene.jdbacl.SQLUtil.typeAndName(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;:405 - ReplaceComparisonOperator != null -> = null
+[MASTER] 02:06:22.048 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 398: org.databene.jdbacl.SQLUtil.typeAndName(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;:407 - ReplaceConstant - 32 -> 0
+[MASTER] 02:06:22.049 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 399: org.databene.jdbacl.SQLUtil.typeAndName(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;:407 - ReplaceConstant - 32 -> 1
+[MASTER] 02:06:22.050 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 400: org.databene.jdbacl.SQLUtil.typeAndName(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;:407 - ReplaceConstant - 32 -> -1
+[MASTER] 02:06:22.051 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 401: org.databene.jdbacl.SQLUtil.typeAndName(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;:407 - ReplaceConstant - 32 -> 31
+[MASTER] 02:06:22.052 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 402: org.databene.jdbacl.SQLUtil.typeAndName(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;:407 - ReplaceConstant - 32 -> 33
+[MASTER] 02:06:22.157 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.typeAndName(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;: I16 Branch 58 IFNONNULL L405 - true in context: org.databene.jdbacl.SQLUtil:typeAndName(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;
+[MASTER] 02:06:22.169 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.typeAndName(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;: I3 Branch 57 IFNONNULL L402 - true in context: org.databene.jdbacl.SQLUtil:typeAndName(Lorg/databene/jdbacl/model/DBObject;)Ljava/lang/String;
+[MASTER] 02:08:27.019 [logback-1] WARN  FunctionalMockStatement - Problem with class org.apache.derby.iapi.types.SqlXmlUtil: java.lang.NoClassDefFoundError: org/apache/xml/utils/PrefixResolver
+* Search finished after 842s and 216 generations, 164921 statements, best individual has fitness: 1424.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 92%
+* Total number of goals: 251
+* Number of covered goals: 230
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 90%
+* Total number of goals: 188
+* Number of covered goals: 169
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 48
+* Number of covered goals: 48
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 88%
+* Total number of goals: 595
+* Number of covered goals: 523
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 52%
+* Total number of goals: 94
+* Number of covered goals: 49
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 39
+* Number of covered goals: 39
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 39
+* Number of covered goals: 39
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 89%
+* Total number of goals: 188
+* Number of covered goals: 167
+* Generated 119 tests with total length 2047
+* Resulting test suite's coverage: 88% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 60%
+* Compiling and checking tests
+[MASTER] 02:16:55.908 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.JniGDSImpl: no jaybird21 in java.library.path
+[MASTER] 02:16:56.635 [logback-2] ERROR ClassResetter - java.lang.NoClassDefFoundError: Could not initialize class org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 02:16:57.247 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.derby.iapi.types.SqlXmlUtil: org/apache/xml/utils/PrefixResolver
+* Permissions denied during test execution: 
+  - java.io.FilePermission: 
+         write /dev/random: 1
+  - java.net.SocketPermission: 
+         resolve java.lang.String@0000000128: 1
+         resolve java.lang.String@0000000035: 1
+         resolve java.lang.String@0000000026: 1
+         resolve java.lang.String@0000000040: 1
+* Writing JUnit test case 'SQLUtil_ESTest' to /home/ubuntu/termite/qmosa/tests/s1029/13_jdbacl/evosuite-tests
+* Done!
+
+* Computation finished

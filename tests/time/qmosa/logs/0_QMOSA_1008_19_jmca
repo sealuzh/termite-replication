@@ -1,0 +1,325 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: com.soops.CEN4010.JMCA.JParser.SimpleNode
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/19_jmca/evosuite-files/evosuite.properties
+* Connecting to master process on port 2396
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 19:36:02.840 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 19:36:02.876 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 19:36:02.883 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 19:36:03.342 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class com.soops.CEN4010.JMCA.JParser.SimpleNode
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/19_jmca/src/main/java/com/soops/CEN4010/JMCA/JParser/SimpleNode.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1008
+* Starting evolution
+[MASTER] 19:36:19.242 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] com.soops.CEN4010.JMCA.JParser.SimpleNode.toString(Ljava/lang/String;)Ljava/lang/String;
+* Search finished after 123s and 12 generations, 9016 statements, best individual has fitness: 616.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 89%
+* Total number of goals: 62
+* Number of covered goals: 55
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 75%
+* Total number of goals: 67
+* Number of covered goals: 50
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 78%
+* Total number of goals: 121
+* Number of covered goals: 94
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 47%
+* Total number of goals: 17
+* Number of covered goals: 8
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 13
+* Number of covered goals: 13
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 13
+* Number of covered goals: 13
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 75%
+* Total number of goals: 67
+* Number of covered goals: 50
+* Generated 22 tests with total length 286
+* Resulting test suite's coverage: 79% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 66%
+* Compiling and checking tests
+[MASTER] 19:38:34.499 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test19 -> class java.lang.StackOverflowError: null
+[MASTER] 19:38:34.501 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ SimpleNode simpleNode0 = new SimpleNode(73);
+String string0 = "<=";
+StringWriter stringWriter0 = new StringWriter();
+char[] charArray0 = new char[4];
+charArray0[0] = 'T';
+charArray0[1] = '[';
+Node[] nodeArray0 = new Node[2];
+nodeArray0[0] = (Node) simpleNode0;
+nodeArray0[1] = (Node) simpleNode0;
+simpleNode0.children = nodeArray0;
+charArray0[2] = ';';
+charArray0[3] = '6';
+stringWriter0.write(charArray0);
+stringWriter0.write("<=");
+Node[] nodeArray1 = new Node[2];
+nodeArray1[0] = (Node) simpleNode0;
+nodeArray1[1] = (Node) simpleNode0;
+simpleNode0.children = nodeArray1;
+simpleNode0.dump(string0, stringWriter0);
+
+* Writing JUnit test case 'SimpleNode_ESTest' to /home/ubuntu/termite/qmosa/tests/s1008/19_jmca/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: com.soops.CEN4010.JMCA.JParser.JavaCharStream
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/19_jmca/evosuite-files/evosuite.properties
+* Connecting to master process on port 2398
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class com.soops.CEN4010.JMCA.JParser.JavaCharStream
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/19_jmca/src/main/java/com/soops/CEN4010/JMCA/JParser/JavaCharStream.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1008
+* Starting evolution
+[MASTER] 19:54:53.053 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] com.soops.CEN4010.JMCA.JParser.JavaCharStream.ReadByte()C
+[MASTER] 19:54:53.060 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V
+[MASTER] 19:54:53.063 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] com.soops.CEN4010.JMCA.JParser.JavaCharStream.ReadByte()C
+[MASTER] 19:54:53.064 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] com.soops.CEN4010.JMCA.JParser.JavaCharStream.BeginToken()C
+[MASTER] 19:54:53.065 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V
+[MASTER] 19:55:10.064 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V: Line 134
+[MASTER] 19:55:10.066 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V: Line 138
+[MASTER] 19:55:10.067 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.ReadByte()C: Line 165
+[MASTER] 19:55:10.068 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.ReadByte()C: Line 166
+[MASTER] 19:55:10.068 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.BeginToken()C: Line 173
+[MASTER] 19:55:10.069 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.BeginToken()C: Line 184
+[MASTER] 19:55:10.070 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.BeginToken()C: Line 185
+[MASTER] 19:55:10.071 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.BeginToken()C: Line 187
+[MASTER] 19:55:10.071 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.readChar()C: Line 252
+[MASTER] 19:55:10.072 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.readChar()C: Line 264
+[MASTER] 19:55:10.073 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.readChar()C: Line 267
+[MASTER] 19:55:10.101 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.<init>(Ljava/io/InputStream;III)V: Line 441
+[MASTER] 19:55:10.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.<init>(Ljava/io/InputStream;II)V: Line 446
+[MASTER] 19:55:10.104 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.<init>(Ljava/io/InputStream;II)V: Line 447
+[MASTER] 19:55:10.106 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 378: com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V:134 - InsertUnaryOp Negation
+[MASTER] 19:55:10.107 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 379: com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V:134 - InsertUnaryOp +1
+[MASTER] 19:55:10.107 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 380: com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V:134 - InsertUnaryOp -1
+[MASTER] 19:55:10.108 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 381: com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V:134 - ReplaceConstant - 4096 -> 0
+[MASTER] 19:55:10.109 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 382: com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V:134 - ReplaceConstant - 4096 -> 1
+[MASTER] 19:55:10.109 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 383: com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V:134 - ReplaceConstant - 4096 -> -1
+[MASTER] 19:55:10.110 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 384: com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V:134 - ReplaceConstant - 4096 -> 4095
+[MASTER] 19:55:10.110 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 385: com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V:134 - ReplaceConstant - 4096 -> 4097
+[MASTER] 19:55:10.111 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 388: com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V:134 - ReplaceComparisonOperator != -> >
+[MASTER] 19:55:10.112 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 399: com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V:138 - InsertUnaryOp Negation
+[MASTER] 19:55:10.112 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 400: com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V:138 - InsertUnaryOp +1
+[MASTER] 19:55:10.113 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 401: com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V:138 - InsertUnaryOp -1
+[MASTER] 19:55:10.113 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 402: com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V:138 - ReplaceConstant - 4096 -> 0
+[MASTER] 19:55:10.115 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 403: com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V:138 - ReplaceConstant - 4096 -> 1
+[MASTER] 19:55:10.116 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 404: com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V:138 - ReplaceConstant - 4096 -> -1
+[MASTER] 19:55:10.116 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 405: com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V:138 - ReplaceConstant - 4096 -> 4095
+[MASTER] 19:55:10.117 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 406: com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V:138 - ReplaceConstant - 4096 -> 4097
+[MASTER] 19:55:10.118 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 415: com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V:138 - InsertUnaryOp Negation
+[MASTER] 19:55:10.118 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 416: com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V:138 - InsertUnaryOp +1
+[MASTER] 19:55:10.119 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 417: com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V:138 - InsertUnaryOp -1
+[MASTER] 19:55:10.120 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 419: com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V:138 - ReplaceArithmeticOperator - -> %
+[MASTER] 19:55:10.120 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 421: com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V:138 - ReplaceArithmeticOperator - -> /
+[MASTER] 19:55:10.121 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 540: com.soops.CEN4010.JMCA.JParser.JavaCharStream.ReadByte()C:165 - InsertUnaryOp Negation
+[MASTER] 19:55:10.121 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 541: com.soops.CEN4010.JMCA.JParser.JavaCharStream.ReadByte()C:165 - InsertUnaryOp +1
+[MASTER] 19:55:10.122 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 542: com.soops.CEN4010.JMCA.JParser.JavaCharStream.ReadByte()C:165 - InsertUnaryOp -1
+[MASTER] 19:55:10.123 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 543: com.soops.CEN4010.JMCA.JParser.JavaCharStream.ReadByte()C:165 - ReplaceConstant - 1 -> 0
+[MASTER] 19:55:10.123 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 545: com.soops.CEN4010.JMCA.JParser.JavaCharStream.ReadByte()C:165 - ReplaceArithmeticOperator + -> -
+[MASTER] 19:55:10.125 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 546: com.soops.CEN4010.JMCA.JParser.JavaCharStream.ReadByte()C:165 - ReplaceArithmeticOperator + -> *
+[MASTER] 19:55:10.125 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 547: com.soops.CEN4010.JMCA.JParser.JavaCharStream.ReadByte()C:165 - ReplaceArithmeticOperator + -> /
+[MASTER] 19:55:10.126 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 556: com.soops.CEN4010.JMCA.JParser.JavaCharStream.ReadByte()C:165 - InsertUnaryOp Negation
+[MASTER] 19:55:10.127 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 557: com.soops.CEN4010.JMCA.JParser.JavaCharStream.ReadByte()C:165 - InsertUnaryOp +1
+[MASTER] 19:55:10.128 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 558: com.soops.CEN4010.JMCA.JParser.JavaCharStream.ReadByte()C:165 - InsertUnaryOp -1
+[MASTER] 19:55:10.129 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 561: com.soops.CEN4010.JMCA.JParser.JavaCharStream.ReadByte()C:165 - ReplaceComparisonOperator < -> <=
+[MASTER] 19:55:10.130 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 582: com.soops.CEN4010.JMCA.JParser.JavaCharStream.BeginToken()C:173 - InsertUnaryOp Negation
+[MASTER] 19:55:10.130 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 583: com.soops.CEN4010.JMCA.JParser.JavaCharStream.BeginToken()C:173 - InsertUnaryOp +1
+[MASTER] 19:55:10.132 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 584: com.soops.CEN4010.JMCA.JParser.JavaCharStream.BeginToken()C:173 - InsertUnaryOp -1
+[MASTER] 19:55:10.132 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 587: com.soops.CEN4010.JMCA.JParser.JavaCharStream.BeginToken()C:173 - ReplaceComparisonOperator <= -> <
+[MASTER] 19:55:10.133 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 658: com.soops.CEN4010.JMCA.JParser.JavaCharStream.BeginToken()C:184 - ReplaceConstant - 0 -> 1
+[MASTER] 19:55:10.133 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 659: com.soops.CEN4010.JMCA.JParser.JavaCharStream.BeginToken()C:185 - ReplaceConstant - -1 -> 0
+[MASTER] 19:55:10.135 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 660: com.soops.CEN4010.JMCA.JParser.JavaCharStream.BeginToken()C:185 - ReplaceConstant - -1 -> 1
+[MASTER] 19:55:10.136 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 661: com.soops.CEN4010.JMCA.JParser.JavaCharStream.BeginToken()C:185 - ReplaceConstant - -1 -> -2
+[MASTER] 19:55:10.137 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 965: com.soops.CEN4010.JMCA.JParser.JavaCharStream.readChar()C:252 - InsertUnaryOp Negation
+[MASTER] 19:55:10.137 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 966: com.soops.CEN4010.JMCA.JParser.JavaCharStream.readChar()C:252 - InsertUnaryOp +1
+[MASTER] 19:55:10.138 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 967: com.soops.CEN4010.JMCA.JParser.JavaCharStream.readChar()C:252 - InsertUnaryOp -1
+[MASTER] 19:55:10.139 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 970: com.soops.CEN4010.JMCA.JParser.JavaCharStream.readChar()C:252 - ReplaceComparisonOperator <= -> <
+[MASTER] 19:55:10.139 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1038: com.soops.CEN4010.JMCA.JParser.JavaCharStream.readChar()C:264 - InsertUnaryOp Negation
+[MASTER] 19:55:10.140 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1039: com.soops.CEN4010.JMCA.JParser.JavaCharStream.readChar()C:264 - InsertUnaryOp +1
+[MASTER] 19:55:10.141 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1040: com.soops.CEN4010.JMCA.JParser.JavaCharStream.readChar()C:264 - InsertUnaryOp -1
+[MASTER] 19:55:10.142 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1041: com.soops.CEN4010.JMCA.JParser.JavaCharStream.readChar()C:264 - ReplaceConstant - 1 -> 0
+[MASTER] 19:55:10.142 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1043: com.soops.CEN4010.JMCA.JParser.JavaCharStream.readChar()C:264 - ReplaceArithmeticOperator + -> -
+[MASTER] 19:55:10.144 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1044: com.soops.CEN4010.JMCA.JParser.JavaCharStream.readChar()C:264 - ReplaceArithmeticOperator + -> *
+[MASTER] 19:55:10.144 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1045: com.soops.CEN4010.JMCA.JParser.JavaCharStream.readChar()C:264 - ReplaceArithmeticOperator + -> /
+[MASTER] 19:55:10.145 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1054: com.soops.CEN4010.JMCA.JParser.JavaCharStream.readChar()C:264 - InsertUnaryOp Negation
+[MASTER] 19:55:10.146 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1055: com.soops.CEN4010.JMCA.JParser.JavaCharStream.readChar()C:264 - InsertUnaryOp +1
+[MASTER] 19:55:10.147 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1056: com.soops.CEN4010.JMCA.JParser.JavaCharStream.readChar()C:264 - InsertUnaryOp -1
+[MASTER] 19:55:10.148 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1059: com.soops.CEN4010.JMCA.JParser.JavaCharStream.readChar()C:264 - ReplaceComparisonOperator != -> >
+[MASTER] 19:55:10.149 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1069: com.soops.CEN4010.JMCA.JParser.JavaCharStream.readChar()C:267 - InsertUnaryOp Negation
+[MASTER] 19:55:10.150 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1070: com.soops.CEN4010.JMCA.JParser.JavaCharStream.readChar()C:267 - InsertUnaryOp +1
+[MASTER] 19:55:10.151 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1071: com.soops.CEN4010.JMCA.JParser.JavaCharStream.readChar()C:267 - InsertUnaryOp -1
+[MASTER] 19:55:10.153 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] com.soops.CEN4010.JMCA.JParser.JavaCharStream.<init>(Ljava/io/InputStream;II)V
+[MASTER] 19:55:10.153 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] com.soops.CEN4010.JMCA.JParser.JavaCharStream.BeginToken()C
+[MASTER] 19:55:10.154 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] com.soops.CEN4010.JMCA.JParser.JavaCharStream.<init>(Ljava/io/InputStream;II)V
+[MASTER] 19:55:10.157 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaCharStream.<init>(Ljava/io/InputStream;II)V: root-Branch in context: com.soops.CEN4010.JMCA.JParser.JavaCharStream:<init>(Ljava/io/InputStream;II)V
+[MASTER] 19:55:10.169 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaCharStream.ReadByte()C: I11 Branch 61 IF_ICMPLT L165 - false in context: 
+[MASTER] 19:55:10.170 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaCharStream.<init>(Ljava/io/InputStream;III)V: root-Branch in context: com.soops.CEN4010.JMCA.JParser.JavaCharStream:<init>(Ljava/io/InputStream;III)V
+[MASTER] 19:55:10.171 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaCharStream.BeginToken()C: I4 Branch 62 IFLE L173 - true in context: com.soops.CEN4010.JMCA.JParser.JavaCharStream:BeginToken()C
+[MASTER] 19:55:10.172 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V: I5 Branch 58 IF_ICMPNE L134 - true in context: 
+[MASTER] 19:55:30.039 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] com.soops.CEN4010.JMCA.JParser.JavaCharStream.getLine()I
+* Search finished after 124s and 9 generations, 4971 statements, best individual has fitness: 4320.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 70%
+* Total number of goals: 239
+* Number of covered goals: 168
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 64%
+* Total number of goals: 216
+* Number of covered goals: 139
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 25
+* Number of covered goals: 25
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 70%
+* Total number of goals: 974
+* Number of covered goals: 683
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 47%
+* Total number of goals: 36
+* Number of covered goals: 17
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 31
+* Number of covered goals: 31
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 31
+* Number of covered goals: 31
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 63%
+* Total number of goals: 216
+* Number of covered goals: 137
+* Generated 66 tests with total length 824
+* Resulting test suite's coverage: 69% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 24%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 9
+* Writing JUnit test case 'JavaCharStream_ESTest' to /home/ubuntu/termite/qmosa/tests/s1008/19_jmca/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/19_jmca/evosuite-files/evosuite.properties
+* Connecting to master process on port 2398
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 20:06:37.853 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 20:06:37.871 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 20:06:37.872 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 20:06:37.904 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/19_jmca/src/main/java/com/soops/CEN4010/JMCA/JParser/JavaParserTokenManager.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1008
+* Starting evolution
+[MASTER] 20:06:45.376 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.<init>(Lcom/soops/CEN4010/JMCA/JParser/JavaCharStream;I)V: Line 1531
+[MASTER] 20:06:45.377 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.SwitchTo(I)V: Line 1556
+[MASTER] 20:06:45.377 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.SwitchTo(I)V: Line 1557
+[MASTER] 20:06:45.397 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.SwitchTo(I)V: I6 Branch 811 IFGE L1553 - true
+[MASTER] 20:06:45.411 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 8184: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.SwitchTo(I)V:1553 - ReplaceComparisonOperator >= -> >
+[MASTER] 20:06:45.412 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.<init>(Lcom/soops/CEN4010/JMCA/JParser/JavaCharStream;I)V
+* Search finished after 127s and 9 generations, 5910 statements, best individual has fitness: 27824.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 27%
+* Total number of goals: 981
+* Number of covered goals: 261
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 29%
+* Total number of goals: 1707
+* Number of covered goals: 497
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 23%
+* Total number of goals: 434
+* Number of covered goals: 99
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 50%
+* Total number of goals: 4
+* Number of covered goals: 2
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 29%
+* Total number of goals: 1707
+* Number of covered goals: 496
+* Generated 35 tests with total length 542
+* Resulting test suite's coverage: 28% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 6%
+* Compiling and checking tests
+* Writing JUnit test case 'JavaParserTokenManager_ESTest' to /home/ubuntu/termite/qmosa/tests/s1008/19_jmca/evosuite-tests
+* Done!
+
+* Computation finished

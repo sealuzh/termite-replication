@@ -1,0 +1,352 @@
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: com.soops.CEN4010.JMCA.JParser.SimpleNode
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/19_jmca/evosuite-files/evosuite.properties
+* Connecting to master process on port 21263
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 20:13:35.921 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 20:13:35.929 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 20:13:35.930 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 20:13:36.446 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class com.soops.CEN4010.JMCA.JParser.SimpleNode
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 360
+* Using seed 1020
+* Starting evolution
+* Search finished after 655s and 256 generations, 102761 statements, best individual has fitness: 240.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 62
+* Number of covered goals: 62
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 96%
+* Total number of goals: 67
+* Number of covered goals: 64
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 14
+* Number of covered goals: 14
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 87%
+* Total number of goals: 121
+* Number of covered goals: 105
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 53%
+* Total number of goals: 17
+* Number of covered goals: 9
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 13
+* Number of covered goals: 13
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 13
+* Number of covered goals: 13
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 96%
+* Total number of goals: 67
+* Number of covered goals: 64
+* Generated 42 tests with total length 192
+* Resulting test suite's coverage: 92% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 74%
+* Compiling and checking tests
+[MASTER] 20:24:54.384 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.StackOverflowError: null
+[MASTER] 20:24:54.386 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ SimpleNode simpleNode0 = new SimpleNode(0);
+Node[] nodeArray0 = new Node[0];
+simpleNode0.jjtAddChild((Node) null, 0);
+simpleNode0.children = nodeArray0;
+simpleNode0.jjtAddChild(simpleNode0, 0);
+StringWriter stringWriter0 = new StringWriter();
+String string0 = "gSn?u2\\J";
+simpleNode0.dump(string0, stringWriter0);
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 10
+* Writing JUnit test case 'SimpleNode_ESTest' to /home/ubuntu/termite/mosa/tests/s1020/19_jmca/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: com.soops.CEN4010.JMCA.JParser.JavaCharStream
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/19_jmca/evosuite-files/evosuite.properties
+* Connecting to master process on port 21264
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/19_jmca/evosuite-files/evosuite.properties
+* Connecting to master process on port 21267
+* Analyzing classpath: 
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class com.soops.CEN4010.JMCA.JParser.JavaCharStream
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 1743
+* Using seed 1020
+* Starting evolution
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 20:38:35.572 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 20:38:35.610 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 20:38:35.611 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 20:38:35.618 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 4855
+* Using seed 1020
+* Starting evolution
+* Search finished after 305s and 71 generations, 55186 statements, best individual has fitness: 16208.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 55%
+* Total number of goals: 981
+* Number of covered goals: 541
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 60%
+* Total number of goals: 1707
+* Number of covered goals: 1032
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 9
+* Number of covered goals: 9
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 46%
+* Total number of goals: 434
+* Number of covered goals: 201
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 50%
+* Total number of goals: 4
+* Number of covered goals: 2
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 60%
+* Total number of goals: 1707
+* Number of covered goals: 1031
+* Generated 149 tests with total length 1431
+* Resulting test suite's coverage: 58% (average coverage for all fitness functions)
+* Generating assertions
+* Search finished after 340s and 69 generations, 31852 statements, best individual has fitness: 1256.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 85%
+* Total number of goals: 239
+* Number of covered goals: 204
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 90%
+* Total number of goals: 216
+* Number of covered goals: 194
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 37
+* Number of covered goals: 37
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 92%
+* Total number of goals: 974
+* Number of covered goals: 899
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 92%
+* Total number of goals: 36
+* Number of covered goals: 33
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 31
+* Number of covered goals: 31
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 31
+* Number of covered goals: 31
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 90%
+* Total number of goals: 216
+* Number of covered goals: 194
+* Generated 161 tests with total length 764
+* Resulting test suite's coverage: 91% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 23%
+* Compiling and checking tests
+[MASTER] 20:46:04.088 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class com.soops.CEN4010.JMCA.JParser.TokenMgrError: Lexical error at line 1, column 7.  Encountered: <EOF> after : ""
+[MASTER] 20:46:04.088 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ byte[] byteArray0 = new byte[5];
+byteArray0[0] = (byte) (-96);
+StringReader stringReader0 = new StringReader("\"break\"");
+stringReader0.read();
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader0);
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+javaParserTokenManager0.getNextToken();
+javaParserTokenManager0.getNextToken();
+
+[MASTER] 20:46:07.396 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<1> but was:<3>
+[MASTER] 20:46:07.396 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ StringReader stringReader0 = new StringReader("2gyU:7E2|Qo\"");
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader0, 31, (byte) (-88));
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+javaParserTokenManager0.getNextToken();
+JavaParserTokenManager javaParserTokenManager1 = new JavaParserTokenManager(javaCharStream0);
+javaCharStream0.ReadByte();
+javaParserTokenManager0.getNextToken();
+javaParserTokenManager0.jjFillToken();
+JavaParserTokenManager javaParserTokenManager2 = new JavaParserTokenManager(javaCharStream0);
+javaParserTokenManager1.getNextToken();
+assertEquals(1, javaCharStream0.bufpos);
+assertEquals((-82), javaCharStream0.getEndColumn());
+
+
+[MASTER] 20:46:07.474 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class com.soops.CEN4010.JMCA.JParser.TokenMgrError: Lexical error at line 9, column -3930.  Encountered: <EOF> after : ""
+[MASTER] 20:46:07.475 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ StringReader stringReader0 = new StringReader("");
+StringReader stringReader1 = new StringReader("\"class\"");
+stringReader1.read();
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader1, 9, (-3936));
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+javaParserTokenManager0.getNextToken();
+JavaParserTokenManager javaParserTokenManager1 = new JavaParserTokenManager(javaCharStream0);
+javaParserTokenManager1.input_stream = javaCharStream0;
+Token token0 = javaParserTokenManager0.getNextToken();
+javaParserTokenManager0.SkipLexicalActions(token0);
+assertEquals(9, javaCharStream0.getBeginLine());
+assertEquals("class", token0.toString());
+
+
+[MASTER] 20:46:09.022 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<4> but was:<3>
+[MASTER] 20:46:09.022 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ StringReader stringReader0 = new StringReader("2gyU:7E2|Qo\"");
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader0, (byte) (-88), 2178);
+JavaCharStream javaCharStream1 = new JavaCharStream(stringReader0, 42, 2178);
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+JavaParserTokenManager javaParserTokenManager1 = new JavaParserTokenManager(javaCharStream1);
+javaParserTokenManager0.getNextToken();
+Token token0 = javaParserTokenManager0.getNextToken();
+assertEquals(4, javaCharStream0.bufpos);
+assertEquals(":", token0.toString());
+
+
+[MASTER] 20:46:09.090 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<3> but was:<0>
+[MASTER] 20:46:09.091 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ StringReader stringReader0 = new StringReader("2gyU:7E2|Qo\"");
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader0, 31, (byte) (-88));
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+Token token0 = javaParserTokenManager0.getNextToken();
+stringReader0.reset();
+javaParserTokenManager0.TokenLexicalActions(token0);
+javaParserTokenManager0.SkipLexicalActions(token0);
+assertEquals(3, javaCharStream0.bufpos);
+assertEquals(74, token0.kind);
+
+
+[MASTER] 20:46:09.220 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<0> but was:<4>
+[MASTER] 20:46:09.220 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ StringReader stringReader0 = new StringReader("1su-f");
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader0, 89, 89);
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+JavaParserTokenManager javaParserTokenManager1 = new JavaParserTokenManager(javaCharStream0);
+javaParserTokenManager1.getNextToken();
+StringReader stringReader1 = new StringReader("1");
+javaParserTokenManager0.getNextToken();
+javaParserTokenManager0.getNextToken();
+javaParserTokenManager0.getNextToken();
+assertEquals(0, javaCharStream0.bufpos);
+assertEquals(93, javaCharStream0.getColumn());
+
+
+[MASTER] 20:46:09.341 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<5> but was:<3>
+[MASTER] 20:46:09.341 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ StringReader stringReader0 = new StringReader("2gyU:7E2|Qo\"");
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader0, 31, (byte) (-88));
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+javaParserTokenManager0.getNextToken();
+StringReader stringReader1 = new StringReader("2gyU:7E2|Qo\"");
+JavaParserTokenManager javaParserTokenManager1 = new JavaParserTokenManager(javaCharStream0);
+javaParserTokenManager1.getNextToken();
+javaParserTokenManager0.getNextToken();
+javaParserTokenManager1.getNextToken();
+javaParserTokenManager1.getNextToken();
+assertEquals(5, javaCharStream0.bufpos);
+assertEquals((-78), javaCharStream0.getColumn());
+
+
+[MASTER] 20:46:09.402 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<2> but was:<0>
+[MASTER] 20:46:09.402 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ StringReader stringReader0 = new StringReader("FoJ&fw|[*;D$20ORo");
+char[] charArray0 = new char[3];
+StringReader stringReader1 = new StringReader("1^6rZ~E4tV.7|");
+StringReader stringReader2 = new StringReader("4zk(o\"4nR#57]");
+StringReader stringReader3 = new StringReader("FoJ&fw|[*;D$20ORo");
+stringReader3.read();
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader2);
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+Token token0 = javaParserTokenManager0.getNextToken();
+assertEquals(2, javaCharStream0.bufpos);
+assertEquals(74, token0.kind);
+
+
+[MASTER] 20:46:09.590 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Exception was not thrown in com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager but in org.junit.Assert.fail(Assert.java:88): java.lang.AssertionError: Expecting exception: Error
+[MASTER] 20:46:09.591 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ StringReader stringReader0 = new StringReader("2gyU:7E2|Qo\"");
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader0, 31, (byte) (-88));
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream0);
+javaParserTokenManager0.getNextToken();
+JavaParserTokenManager javaParserTokenManager1 = new JavaParserTokenManager(javaCharStream0);
+javaCharStream0.ReadByte();
+javaParserTokenManager0.getNextToken();
+javaParserTokenManager1.getNextToken();
+javaParserTokenManager0.getNextToken();
+javaParserTokenManager0.getNextToken();
+javaParserTokenManager0.getNextToken();
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 2
+* Writing JUnit test case 'JavaParserTokenManager_ESTest' to /home/ubuntu/termite/mosa/tests/s1020/19_jmca/evosuite-tests
+* Done!
+
+* Computation finished
+* Resulting test suite's mutation score: 43%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 6
+* Writing JUnit test case 'JavaCharStream_ESTest' to /home/ubuntu/termite/mosa/tests/s1020/19_jmca/evosuite-tests
+* Done!
+
+* Computation finished

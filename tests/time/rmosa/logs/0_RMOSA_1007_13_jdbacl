@@ -1,0 +1,234 @@
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: org.databene.jdbacl.SQLUtil
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/13_jdbacl/evosuite-files/evosuite.properties
+* Connecting to master process on port 19702
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 21:18:52.380 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 21:18:52.391 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 21:18:52.391 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 21:18:52.559 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 21:18:52.560 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 21:18:52.613 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 21:18:56.589 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.SQLType
+[MASTER] 21:18:57.807 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 21:18:57.808 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 21:18:57.826 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 21:18:57.827 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 21:18:57.828 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 21:18:57.828 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 21:18:57.833 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 21:18:57.835 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 21:18:57.836 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 21:19:03.604 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToDoubleFunction
+[MASTER] 21:19:03.605 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToIntFunction
+[MASTER] 21:19:03.605 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToLongFunction
+[MASTER] 21:19:06.066 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 21:19:09.749 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class org.databene.jdbacl.SQLUtil
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1007
+* Starting evolution
+[MASTER] 21:19:17.004 [logback-2] ERROR TestCluster - Failed to check cache for org.databene.jdbacl.model.CompositeDBObject<C> : Type points to itself
+[MASTER] 21:19:19.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;: Line 225
+[MASTER] 21:19:19.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;: Line 227
+[MASTER] 21:19:19.103 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;: Line 231
+[MASTER] 21:19:19.104 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;: Line 233
+[MASTER] 21:19:19.104 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;: Line 235
+[MASTER] 21:19:19.104 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;: Line 237
+[MASTER] 21:19:19.105 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;: I12 Branch 23 IFLE L227 - true
+[MASTER] 21:19:19.105 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;: I24 Branch 24 IFEQ L231 - true
+[MASTER] 21:19:19.105 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;: I34 Branch 25 IFEQ L233 - true
+[MASTER] 21:19:19.105 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;: I44 Branch 26 IFEQ L235 - true
+[MASTER] 21:19:19.107 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 205: org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;:227 - ReplaceConstant - alter session -> 
+[MASTER] 21:19:19.107 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 206: org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;:227 - ReplaceConstant - 0 -> 1
+[MASTER] 21:19:19.107 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 208: org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;:227 - ReplaceComparisonOperator <= -> ==
+[MASTER] 21:19:19.107 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 211: org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;:231 - ReplaceComparisonOperator == -> !=
+[MASTER] 21:19:19.107 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 213: org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;:233 - ReplaceComparisonOperator == -> !=
+[MASTER] 21:19:19.107 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 215: org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;:235 - ReplaceComparisonOperator == -> !=
+[MASTER] 21:19:19.108 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;:Null
+[MASTER] 21:19:19.108 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;
+[MASTER] 21:19:19.108 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;
+[MASTER] 21:19:19.109 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;: I24 Branch 24 IFEQ L231 - true in context: org.databene.jdbacl.SQLUtil:mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;
+[MASTER] 21:19:19.109 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;: I44 Branch 26 IFEQ L235 - true in context: org.databene.jdbacl.SQLUtil:mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;
+[MASTER] 21:19:19.109 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;: I34 Branch 25 IFEQ L233 - true in context: org.databene.jdbacl.SQLUtil:mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;
+[MASTER] 21:19:19.109 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;: I12 Branch 23 IFLE L227 - true in context: org.databene.jdbacl.SQLUtil:mutatesDataOrStructure(Ljava/lang/String;)Ljava/lang/Boolean;
+[MASTER] 21:19:29.766 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: Line 454
+[MASTER] 21:19:29.767 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I128 Branch 66 IF_ICMPEQ L444 - true
+[MASTER] 21:19:29.767 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I167 Branch 78 LOOKUPSWITCH L451 Case 34 - true
+[MASTER] 21:19:29.770 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I167 Branch 78 LOOKUPSWITCH L451 Case 34 - true in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 21:19:29.770 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.databene.jdbacl.SQLUtil.normalize(Ljava/lang/String;Z)Ljava/lang/String;: I128 Branch 66 IF_ICMPEQ L444 - true in context: org.databene.jdbacl.SQLUtil:normalize(Ljava/lang/String;Z)Ljava/lang/String;
+[MASTER] 21:21:02.086 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+* Search finished after 125s and 166 generations, 73254 statements, best individual has fitness: 1776.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 88%
+* Total number of goals: 251
+* Number of covered goals: 222
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 86%
+* Total number of goals: 188
+* Number of covered goals: 162
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 51
+* Number of covered goals: 51
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 84%
+* Total number of goals: 595
+* Number of covered goals: 498
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 53%
+* Total number of goals: 94
+* Number of covered goals: 50
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 39
+* Number of covered goals: 39
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 39
+* Number of covered goals: 39
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 86%
+* Total number of goals: 188
+* Number of covered goals: 162
+* Generated 132 tests with total length 722
+* Resulting test suite's coverage: 85% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 57%
+* Compiling and checking tests
+[MASTER] 21:21:50.811 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.NativeGDSImpl: no jaybird21 in java.library.path
+[MASTER] 21:21:50.940 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.JniGDSImpl: Could not initialize class org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 21:21:52.100 [logback-2] ERROR ClassResetter - java.lang.NoClassDefFoundError: Could not initialize class org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 21:21:58.403 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.derby.iapi.types.SqlXmlUtil: org/apache/xml/utils/PrefixResolver
+* Permissions denied during test execution: 
+  - java.io.FilePermission: 
+         write /dev/random: 1
+  - java.net.SocketPermission: 
+         resolve java.lang.String@0000000030: 1
+         resolve java.lang.String@0000000020: 1
+* Writing JUnit test case 'SQLUtil_ESTest' to /home/ubuntu/termite/rmosa/tests/s1007/13_jdbacl/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: org.databene.jdbacl.DBUtil
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/13_jdbacl/evosuite-files/evosuite.properties
+* Connecting to master process on port 19702
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 21:48:09.225 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.SQLType
+[MASTER] 21:48:10.821 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 21:48:10.822 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 21:48:10.848 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 21:48:11.154 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 21:48:11.170 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 21:48:11.170 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 21:48:19.696 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 21:48:19.699 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 21:48:19.699 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 21:48:19.723 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 21:48:19.725 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 21:48:19.726 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 21:48:19.726 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 21:48:19.727 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 21:48:19.728 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 21:48:20.651 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToDoubleFunction
+[MASTER] 21:48:20.651 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToIntFunction
+[MASTER] 21:48:20.651 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToLongFunction
+[MASTER] 21:48:20.800 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 21:48:22.918 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class org.databene.jdbacl.DBUtil
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1007
+* Starting evolution
+[MASTER] 21:48:33.283 [logback-2] ERROR TestCluster - Failed to check cache for org.databene.jdbacl.model.CompositeDBObject<C> : Type points to itself
+[MASTER] 21:48:53.862 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.hsqldb.Result due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.evosuite.runtime.mock.java.lang.MockException due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for java.sql.SQLException due to org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.firebirdsql.jdbc.FBResultSet due to org.evosuite.ga.ConstructionFailedException: Max recursion depth reached
+[MASTER] 21:48:54.248 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class org.hsqldb.jdbc.jdbcResultSet canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 21:49:04.512 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.databene.jdbacl.DBUtil.closeResultSetAndStatement(Ljava/sql/ResultSet;)V
+[MASTER] 21:49:04.512 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.databene.jdbacl.DBUtil.closeResultSetAndStatement(Ljava/sql/ResultSet;)V
+[MASTER] 21:49:35.026 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.databene.jdbacl.DBUtil.querySingleRow(Ljava/lang/String;Ljava/sql/Connection;)[Ljava/lang/Object;
+* Search finished after 123s and 119 generations, 35136 statements, best individual has fitness: 6160.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 73%
+* Total number of goals: 324
+* Number of covered goals: 237
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 64%
+* Total number of goals: 197
+* Number of covered goals: 126
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 65
+* Number of covered goals: 65
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 60%
+* Total number of goals: 700
+* Number of covered goals: 419
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 14%
+* Total number of goals: 255
+* Number of covered goals: 36
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 51
+* Number of covered goals: 51
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 51
+* Number of covered goals: 51
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 52%
+* Total number of goals: 197
+* Number of covered goals: 102
+* Generated 115 tests with total length 599
+* Resulting test suite's coverage: 58% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 6%
+* Compiling and checking tests
+[MASTER] 21:50:56.714 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.JniGDSImpl: no jaybird21 in java.library.path
+[MASTER] 21:50:56.907 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.EmbeddedGDSImpl: org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 21:50:58.200 [logback-2] ERROR ClassResetter - java.lang.NoClassDefFoundError: Could not initialize class org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 21:51:00.173 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.EmbeddedGDSImpl: no jaybird21 in java.library.path
+[MASTER] 21:51:01.816 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.JniGDSImpl: Could not initialize class org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 21:51:03.496 [logback-2] ERROR ClassStateSupport - Could not initialize org.apache.derby.iapi.types.SqlXmlUtil: org/apache/xml/utils/PrefixResolver
+* Permissions denied during test execution: 
+  - java.io.FilePermission: 
+         write /dev/random: 1
+  - java.net.SocketPermission: 
+         resolve java.lang.String@0000000016: 5
+         resolve java.lang.String@0000000027: 1
+         resolve java.lang.String@0000000017: 9
+         and other 6 cases of action/name for this exception class
+  - java.sql.SQLPermission: 
+         deregisterDriver: 1
+* Writing JUnit test case 'DBUtil_ESTest' to /home/ubuntu/termite/rmosa/tests/s1007/13_jdbacl/evosuite-tests
+* Done!
+
+* Computation finished

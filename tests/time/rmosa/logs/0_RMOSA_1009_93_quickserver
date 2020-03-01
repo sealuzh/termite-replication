@@ -1,0 +1,207 @@
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: org.quickserver.net.server.TheClient
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/93_quickserver/evosuite-files/evosuite.properties
+* Connecting to master process on port 7351
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 22:57:51.197 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.net.SocketOption
+[MASTER] 22:57:51.729 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Supplier
+[MASTER] 22:57:51.854 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 22:57:51.864 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 22:57:51.871 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 22:57:52.012 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 22:57:52.012 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 22:57:52.014 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+* Finished analyzing classpath
+* Generating tests for class org.quickserver.net.server.TheClient
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1009
+* Starting evolution
+[MASTER] 22:57:54.963 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.quickserver.net.server.TheClient.getServer()Lorg/quickserver/net/server/QuickServer;: Line 61
+[MASTER] 22:57:54.964 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.quickserver.net.server.TheClient.setMaxAuthTryMsg(Ljava/lang/String;)V: Line 150
+[MASTER] 22:57:54.964 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.quickserver.net.server.TheClient.setMaxAuthTryMsg(Ljava/lang/String;)V: Line 151
+[MASTER] 22:57:54.964 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.quickserver.net.server.TheClient.setTimeoutMsg(Ljava/lang/String;)V: Line 162
+[MASTER] 22:57:54.964 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.quickserver.net.server.TheClient.setTimeoutMsg(Ljava/lang/String;)V: Line 163
+[MASTER] 22:57:54.964 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.quickserver.net.server.TheClient.setTimeoutMsg(Ljava/lang/String;)V: root-Branch
+[MASTER] 22:57:54.964 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.quickserver.net.server.TheClient.setMaxAuthTryMsg(Ljava/lang/String;)V: root-Branch
+[MASTER] 22:57:54.964 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.quickserver.net.server.TheClient.getServer()Lorg/quickserver/net/server/QuickServer;: root-Branch
+[MASTER] 22:57:54.965 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: org.quickserver.net.server.TheClient.getServer()Lorg/quickserver/net/server/QuickServer;:Null
+[MASTER] 22:57:54.965 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.quickserver.net.server.TheClient.getServer()Lorg/quickserver/net/server/QuickServer;
+[MASTER] 22:57:54.965 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.quickserver.net.server.TheClient.setMaxAuthTryMsg(Ljava/lang/String;)V
+[MASTER] 22:57:54.965 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.quickserver.net.server.TheClient.setTimeoutMsg(Ljava/lang/String;)V
+[MASTER] 22:57:54.965 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.quickserver.net.server.TheClient.getServer()Lorg/quickserver/net/server/QuickServer;
+[MASTER] 22:57:54.976 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.quickserver.net.server.TheClient.setMaxAuthTryMsg(Ljava/lang/String;)V
+[MASTER] 22:57:54.976 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.quickserver.net.server.TheClient.setTimeoutMsg(Ljava/lang/String;)V
+[MASTER] 22:57:54.976 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.quickserver.net.server.TheClient.setMaxAuthTryMsg(Ljava/lang/String;)V: root-Branch in context: org.quickserver.net.server.TheClient:setMaxAuthTryMsg(Ljava/lang/String;)V
+[MASTER] 22:57:54.976 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.quickserver.net.server.TheClient.getServer()Lorg/quickserver/net/server/QuickServer;: root-Branch in context: org.quickserver.net.server.TheClient:getServer()Lorg/quickserver/net/server/QuickServer;
+[MASTER] 22:57:54.977 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.quickserver.net.server.TheClient.setTimeoutMsg(Ljava/lang/String;)V: root-Branch in context: org.quickserver.net.server.TheClient:setTimeoutMsg(Ljava/lang/String;)V
+[MASTER] 22:57:55.237 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.quickserver.net.server.TheClient.setClientCommandHandler(Lorg/quickserver/net/server/ClientCommandHandler;)V: Line 219
+[MASTER] 22:57:55.237 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.quickserver.net.server.TheClient.setClientCommandHandler(Lorg/quickserver/net/server/ClientCommandHandler;)V: Line 220
+[MASTER] 22:57:55.237 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.quickserver.net.server.TheClient.getClientCommandHandler()Lorg/quickserver/net/server/ClientCommandHandler;: Line 227
+[MASTER] 22:57:55.238 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.quickserver.net.server.TheClient.getTimeout()I: Line 319
+[MASTER] 22:57:55.238 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.quickserver.net.server.TheClient.getClientCommandHandler()Lorg/quickserver/net/server/ClientCommandHandler;: root-Branch
+[MASTER] 22:57:55.238 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.quickserver.net.server.TheClient.getTimeout()I: root-Branch
+[MASTER] 22:57:55.238 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.quickserver.net.server.TheClient.setClientCommandHandler(Lorg/quickserver/net/server/ClientCommandHandler;)V: root-Branch
+[MASTER] 22:57:55.238 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 17: org.quickserver.net.server.TheClient.getTimeout()I:319 - InsertUnaryOp Negation
+[MASTER] 22:57:55.239 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 18: org.quickserver.net.server.TheClient.getTimeout()I:319 - InsertUnaryOp +1
+[MASTER] 22:57:55.239 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 19: org.quickserver.net.server.TheClient.getTimeout()I:319 - InsertUnaryOp -1
+[MASTER] 22:57:55.239 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: org.quickserver.net.server.TheClient.getClientCommandHandler()Lorg/quickserver/net/server/ClientCommandHandler;:Null
+[MASTER] 22:57:55.239 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: org.quickserver.net.server.TheClient.getTimeout()I:Zero
+[MASTER] 22:57:55.239 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.quickserver.net.server.TheClient.setClientCommandHandler(Lorg/quickserver/net/server/ClientCommandHandler;)V
+[MASTER] 22:57:55.239 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.quickserver.net.server.TheClient.getClientCommandHandler()Lorg/quickserver/net/server/ClientCommandHandler;
+[MASTER] 22:57:55.240 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.quickserver.net.server.TheClient.getTimeout()I
+[MASTER] 22:57:55.240 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.quickserver.net.server.TheClient.setClientCommandHandler(Lorg/quickserver/net/server/ClientCommandHandler;)V
+[MASTER] 22:57:55.240 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.quickserver.net.server.TheClient.getClientCommandHandler()Lorg/quickserver/net/server/ClientCommandHandler;
+[MASTER] 22:57:55.240 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.quickserver.net.server.TheClient.getTimeout()I
+[MASTER] 22:57:55.240 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.quickserver.net.server.TheClient.getClientCommandHandler()Lorg/quickserver/net/server/ClientCommandHandler;: root-Branch in context: org.quickserver.net.server.TheClient:getClientCommandHandler()Lorg/quickserver/net/server/ClientCommandHandler;
+[MASTER] 22:57:55.241 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.quickserver.net.server.TheClient.setClientCommandHandler(Lorg/quickserver/net/server/ClientCommandHandler;)V: root-Branch in context: org.quickserver.net.server.TheClient:setClientCommandHandler(Lorg/quickserver/net/server/ClientCommandHandler;)V
+[MASTER] 22:57:55.241 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.quickserver.net.server.TheClient.getTimeout()I: root-Branch in context: org.quickserver.net.server.TheClient:getTimeout()I
+[MASTER] 22:58:31.355 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: org.quickserver.net.server.TheClient.getTrusted()Z:True
+* Search finished after 121s and 156 generations, 331399 statements, best individual has fitness: 320.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 72
+* Number of covered goals: 72
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 43
+* Number of covered goals: 43
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100% (no goals)
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 100%
+* Total number of goals: 29
+* Number of covered goals: 29
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 57%
+* Total number of goals: 93
+* Number of covered goals: 53
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 42
+* Number of covered goals: 42
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 42
+* Number of covered goals: 42
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 43
+* Number of covered goals: 43
+* Generated 23 tests with total length 294
+* Resulting test suite's coverage: 89% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 90%
+* Compiling and checking tests
+[MASTER] 23:00:10.107 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.junit.ComparisonFailure: expected:<...Handler-Pool#-1-ID:1[3]>> but was:<...Handler-Pool#-1-ID:1[]>>
+[MASTER] 23:00:10.111 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ TheClient theClient0 = new TheClient();
+theClient0.getClientExtendedEventHandler();
+theClient0.setMaxAuthTryMsg("");
+theClient0.setCommunicationLogging(true);
+theClient0.setMaxAuthTry(0);
+theClient0.setClientExtendedEventHandler((ClientExtendedEventHandler) null);
+BlockingClientHandler blockingClientHandler0 = new BlockingClientHandler();
+ClientEvent clientEvent0 = ClientEvent.MAX_CON_BLOCKING;
+ClientEvent clientEvent1 = theClient0.getClientEvent();
+blockingClientHandler0.removeEvent(clientEvent1);
+blockingClientHandler0.getClientData();
+assertEquals("<ClientHandler-Pool#-1-ID:13>", blockingClientHandler0.getName());
+
+theClient0.setClientData((ClientData) null);
+theClient0.setCommunicationLogging(true);
+theClient0.setMaxAuthTry(0);
+theClient0.getMaxAuthTryMsg();
+theClient0.getClientExtendedEventHandler();
+theClient0.setClientData((ClientData) null);
+theClient0.getSocket();
+assertTrue(theClient0.getCommunicationLogging());
+
+
+* Permissions denied during test execution: 
+  - java.net.SocketPermission: 
+         connect,resolve 192.168.1.42:273: 1
+         connect,resolve 192.168.1.42:50: 1
+         listen,resolve localhost:2207: 1
+         and other 5 cases of action/name for this exception class
+* Writing JUnit test case 'TheClient_ESTest' to /home/ubuntu/termite/rmosa/tests/s1009/93_quickserver/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: org.quickserver.util.xmlreader.AdvancedSettings
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/93_quickserver/evosuite-files/evosuite.properties
+* Connecting to master process on port 7357
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class org.quickserver.util.xmlreader.AdvancedSettings
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1009
+* Starting evolution
+* Search finished after 122s and 184 generations, 300047 statements, best individual has fitness: 96.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 95
+* Number of covered goals: 95
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 52
+* Number of covered goals: 52
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 98%
+* Total number of goals: 105
+* Number of covered goals: 103
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 79%
+* Total number of goals: 48
+* Number of covered goals: 38
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 34
+* Number of covered goals: 34
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 34
+* Number of covered goals: 34
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 52
+* Number of covered goals: 52
+* Generated 34 tests with total length 303
+* Resulting test suite's coverage: 97% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 92%
+* Compiling and checking tests
+* Writing JUnit test case 'AdvancedSettings_ESTest' to /home/ubuntu/termite/rmosa/tests/s1009/93_quickserver/evosuite-tests
+* Done!
+
+* Computation finished

@@ -1,0 +1,283 @@
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: org.firebirdsql.encodings.EncodingFactory
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/110_firebird/evosuite-files/evosuite.properties
+* Connecting to master process on port 18815
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class org.firebirdsql.encodings.EncodingFactory
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1021
+* Starting evolution
+* Search finished after 229s and 562 generations, 143699 statements, best individual has fitness: 624.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 94%
+* Total number of goals: 242
+* Number of covered goals: 228
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 96%
+* Total number of goals: 195
+* Number of covered goals: 188
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 5
+* Number of covered goals: 5
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 91%
+* Total number of goals: 387
+* Number of covered goals: 351
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 48%
+* Total number of goals: 25
+* Number of covered goals: 12
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 96%
+* Total number of goals: 195
+* Number of covered goals: 188
+* Generated 97 tests with total length 117
+* Resulting test suite's coverage: 93% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 45%
+* Compiling and checking tests
+* Writing JUnit test case 'EncodingFactory_ESTest' to /home/ubuntu/termite/rmosa/tests/s1021/110_firebird/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: org.firebirdsql.jdbc.FBCachedFetcher
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/110_firebird/evosuite-files/evosuite.properties
+* Connecting to master process on port 18808
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 00:38:46.427 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 00:38:46.432 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 00:38:46.433 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 00:38:46.990 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.SQLType
+[MASTER] 00:38:48.052 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 00:38:48.053 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 00:38:48.054 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 00:38:48.842 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 00:38:48.868 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 00:38:48.868 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 00:38:48.996 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 00:38:48.997 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 00:38:48.998 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 00:38:48.998 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 00:38:49.000 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 00:38:49.008 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 00:38:49.412 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 00:38:49.783 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class org.firebirdsql.jdbc.FBCachedFetcher
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1021
+* Starting evolution
+[MASTER] 00:38:57.044 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.firebirdsql.jdbc.FBCachedFetcher.<init>(Lorg/firebirdsql/gds/impl/GDSHelper;IILorg/firebirdsql/gds/impl/AbstractIscStmtHandle;Lorg/firebirdsql/jdbc/FBObjectListener$FetcherListener;Z)V
+[MASTER] 00:38:57.068 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.firebirdsql.jdbc.FBCachedFetcher.absolute(I)Z
+[MASTER] 00:38:57.068 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.firebirdsql.jdbc.FBCachedFetcher.beforeFirst()V
+[MASTER] 00:38:57.068 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.firebirdsql.jdbc.FBCachedFetcher.isBeforeFirst()Z
+[MASTER] 00:38:57.069 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.firebirdsql.jdbc.FBCachedFetcher.deleteRow()V
+[MASTER] 00:38:57.069 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.firebirdsql.jdbc.FBCachedFetcher.setFetchSize(I)V
+[MASTER] 00:38:57.069 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.firebirdsql.jdbc.FBCachedFetcher.relative(I)Z
+[MASTER] 00:38:57.069 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.firebirdsql.jdbc.FBCachedFetcher.last()Z
+[MASTER] 00:38:57.072 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.firebirdsql.jdbc.FBCachedFetcher.previous()Z
+[MASTER] 00:38:57.073 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.firebirdsql.jdbc.FBCachedFetcher.<init>(Lorg/firebirdsql/gds/impl/GDSHelper;IILorg/firebirdsql/gds/impl/AbstractIscStmtHandle;Lorg/firebirdsql/jdbc/FBObjectListener$FetcherListener;Z)V
+[MASTER] 00:38:57.073 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.firebirdsql.jdbc.FBCachedFetcher.absolute(I)Z
+[MASTER] 00:38:57.073 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.firebirdsql.jdbc.FBCachedFetcher.beforeFirst()V
+[MASTER] 00:38:57.073 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.firebirdsql.jdbc.FBCachedFetcher.isBeforeFirst()Z
+[MASTER] 00:38:57.073 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.firebirdsql.jdbc.FBCachedFetcher.deleteRow()V
+[MASTER] 00:38:57.074 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.firebirdsql.jdbc.FBCachedFetcher.setFetchSize(I)V
+[MASTER] 00:38:57.074 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.firebirdsql.jdbc.FBCachedFetcher.relative(I)Z
+[MASTER] 00:38:57.074 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.firebirdsql.jdbc.FBCachedFetcher.last()Z
+[MASTER] 00:38:57.074 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.firebirdsql.jdbc.FBCachedFetcher.previous()Z
+[MASTER] 00:39:15.051 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 00:39:59.762 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 00:40:08.470 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 00:40:56.924 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+* Search finished after 212s and 567 generations, 264950 statements, best individual has fitness: 1608.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 63%
+* Total number of goals: 158
+* Number of covered goals: 100
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 51%
+* Total number of goals: 118
+* Number of covered goals: 60
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 15
+* Number of covered goals: 15
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 97%
+* Total number of goals: 347
+* Number of covered goals: 335
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 93%
+* Total number of goals: 28
+* Number of covered goals: 26
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 22
+* Number of covered goals: 22
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 22
+* Number of covered goals: 22
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 40%
+* Total number of goals: 118
+* Number of covered goals: 47
+* Generated 54 tests with total length 337
+* Resulting test suite's coverage: 76% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 62%
+* Compiling and checking tests
+[MASTER] 00:42:37.626 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.JniGDSImpl: no jaybird22_x64 in java.library.path
+[MASTER] 00:42:37.637 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.EmbeddedGDSImpl: org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 00:42:37.742 [logback-2] ERROR ClassResetter - java.lang.NoClassDefFoundError: Could not initialize class org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 00:43:03.059 [logback-1] WARN  ClassResetter - java.lang.reflect.InvocationTargetException, caused by: java.lang.NoClassDefFoundError: Could not initialize class org.firebirdsql.gds.impl.jni.JniGDSImpl
+* Permissions denied during test execution: 
+  - javax.security.auth.AuthPermission: 
+         getSubject: 8
+         doAsPrivileged: 1
+* Writing JUnit test case 'FBCachedFetcher_ESTest' to /home/ubuntu/termite/rmosa/tests/s1021/110_firebird/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: org.firebirdsql.jdbc.FBProcedureCall
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/110_firebird/evosuite-files/evosuite.properties
+* Connecting to master process on port 18813
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class org.firebirdsql.jdbc.FBProcedureCall
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1021
+* Starting evolution
+* Search finished after 308s and 795 generations, 206373 statements, best individual has fitness: 504.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 95%
+* Total number of goals: 117
+* Number of covered goals: 111
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 90%
+* Total number of goals: 98
+* Number of covered goals: 88
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 21
+* Number of covered goals: 21
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 95%
+* Total number of goals: 347
+* Number of covered goals: 331
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 73%
+* Total number of goals: 70
+* Number of covered goals: 51
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 94%
+* Total number of goals: 18
+* Number of covered goals: 17
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 94%
+* Total number of goals: 18
+* Number of covered goals: 17
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 90%
+* Total number of goals: 98
+* Number of covered goals: 88
+* Generated 84 tests with total length 352
+* Resulting test suite's coverage: 92% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 52%
+* Compiling and checking tests
+[MASTER] 01:12:17.473 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: null
+[MASTER] 01:12:17.473 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FBProcedureCall fBProcedureCall0 = new FBProcedureCall();
+fBProcedureCall0.setName(")Wnu8O8`KS");
+FBProcedureCall fBProcedureCall1 = new FBProcedureCall();
+boolean boolean0 = fBProcedureCall0.equals(fBProcedureCall1);
+assertFalse(fBProcedureCall1.equals((Object)fBProcedureCall0));
+assertTrue(boolean0);
+
+
+[MASTER] 01:12:18.193 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: Requested array size exceeds VM limit
+[MASTER] 01:12:18.193 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FBProcedureCall fBProcedureCall0 = new FBProcedureCall();
+fBProcedureCall0.getInputParam(2147483645);
+
+[MASTER] 01:12:18.767 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: Requested array size exceeds VM limit
+[MASTER] 01:12:18.767 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FBProcedureCall fBProcedureCall0 = new FBProcedureCall();
+FBProcedureParam fBProcedureParam0 = new FBProcedureParam(2147483645, "HY009");
+fBProcedureCall0.addInputParam(fBProcedureParam0);
+
+[MASTER] 01:12:18.864 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: Requested array size exceeds VM limit
+[MASTER] 01:12:18.864 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FBProcedureCall fBProcedureCall0 = new FBProcedureCall();
+fBProcedureCall0.addParam(2147483645, "oUuQ4*b1m");
+
+[MASTER] 01:12:18.907 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: Requested array size exceeds VM limit
+[MASTER] 01:12:18.907 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FBProcedureCall fBProcedureCall0 = new FBProcedureCall();
+fBProcedureCall0.registerOutParam(2147483645, 2147483645);
+
+[MASTER] 01:12:18.963 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: Requested array size exceeds VM limit
+[MASTER] 01:12:18.963 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FBProcedureCall fBProcedureCall0 = new FBProcedureCall();
+FBProcedureParam fBProcedureParam0 = new FBProcedureParam(2147483645, "~HHKvxo0F");
+fBProcedureCall0.addOutputParam(fBProcedureParam0);
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 4
+* Writing JUnit test case 'FBProcedureCall_ESTest' to /home/ubuntu/termite/rmosa/tests/s1021/110_firebird/evosuite-tests
+* Done!
+
+* Computation finished

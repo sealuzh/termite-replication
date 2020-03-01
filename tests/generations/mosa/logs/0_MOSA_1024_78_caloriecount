@@ -1,0 +1,504 @@
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: com.lts.io.ArchiveScanner
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/78_caloriecount/evosuite-files/evosuite.properties
+* Connecting to master process on port 8334
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 00:32:22.412 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 00:32:22.451 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 00:32:22.453 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 00:32:23.361 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 00:32:24.106 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 00:32:24.128 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+* Finished analyzing classpath
+* Generating tests for class com.lts.io.ArchiveScanner
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 380
+* Using seed 1024
+* Starting evolution
+[MASTER] 00:33:10.675 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+* Search finished after 246s and 899 generations, 280841 statements, best individual has fitness: 392.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 82%
+* Total number of goals: 67
+* Number of covered goals: 55
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 87%
+* Total number of goals: 45
+* Number of covered goals: 39
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 89%
+* Total number of goals: 202
+* Number of covered goals: 180
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 80%
+* Total number of goals: 5
+* Number of covered goals: 4
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 87%
+* Total number of goals: 45
+* Number of covered goals: 39
+* Generated 49 tests with total length 408
+* Resulting test suite's coverage: 87% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 38%
+* Compiling and checking tests
+[MASTER] 00:36:43.003 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:43.003 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ArchiveScanner archiveScanner0 = new ArchiveScanner((ImprovedFile) null);
+archiveScanner0.isArchive((File) null);
+
+[MASTER] 00:36:43.713 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<2> but was:<0>
+[MASTER] 00:36:43.713 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile("app.files.lastFile");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+int int0 = archiveScanner0.toFileType(improvedFile0);
+assertEquals(2, int0);
+
+
+[MASTER] 00:36:43.808 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:43.808 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile("", "");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+int int0 = archiveScanner0.toFileType(improvedFile0);
+assertEquals(1, int0);
+
+
+[MASTER] 00:36:44.332 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:44.333 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile("# ", "# ");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+Vector<Object> vector0 = new Vector<Object>();
+archiveScanner0.filesIncluded = vector0;
+archiveScanner0.includes = archiveScanner0.DEFAULT_ARCHIVE_EXTENSIONS;
+archiveScanner0.processDirectory(improvedFile0, "# ", true);
+
+[MASTER] 00:36:44.499 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:44.499 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile("#? .jar", "#? .jar");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+archiveScanner0.includes = archiveScanner0.DEFAULT_ARCHIVE_EXTENSIONS;
+Vector<Integer> vector0 = new Vector<Integer>();
+archiveScanner0.dirsExcluded = vector0;
+archiveScanner0.processDirectory(improvedFile0, "#? .jar", true);
+
+[MASTER] 00:36:44.760 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:44.760 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile("%a@mp!~xywhs(T", "%a@mp!~xywhs(T");
+improvedFile0.getCanonicalFile();
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+Vector<Object> vector0 = new Vector<Object>();
+archiveScanner0.filesNotIncluded = vector0;
+archiveScanner0.includes = archiveScanner0.DEFAULT_ARCHIVE_EXTENSIONS;
+archiveScanner0.processFile("%a@mp!~xywhs(T");
+assertEquals(0, ArchiveScanner.FILE);
+
+
+[MASTER] 00:36:45.586 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:45.586 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile("#? .jar", "#? .jar");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+archiveScanner0.includes = archiveScanner0.DEFAULT_ARCHIVE_EXTENSIONS;
+Vector<Integer> vector0 = new Vector<Integer>();
+archiveScanner0.dirsExcluded = vector0;
+archiveScanner0.processFile("#? .jar");
+
+[MASTER] 00:36:45.974 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:45.975 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile("}");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+String[] stringArray0 = new String[13];
+archiveScanner0.addDefaultExcludes();
+stringArray0[0] = "}";
+archiveScanner0.includes = stringArray0;
+Vector<ByteArrayInputStream> vector0 = new Vector<ByteArrayInputStream>();
+archiveScanner0.dirsExcluded = vector0;
+archiveScanner0.processFile("}");
+
+[MASTER] 00:36:46.127 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:46.127 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ boolean boolean0 = FileSystemHandling.shouldAllThrowIOExceptions();
+String string0 = "# ";
+ImprovedFile improvedFile0 = new ImprovedFile("# ", "# ");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+Vector<Object> vector0 = new Vector<Object>();
+archiveScanner0.dirsNotIncluded = vector0;
+improvedFile0.toPath();
+archiveScanner0.excludes = archiveScanner0.DEFAULT_ARCHIVE_EXTENSIONS;
+archiveScanner0.includes = archiveScanner0.excludes;
+archiveScanner0.isArchive(improvedFile0);
+archiveScanner0.processDirectory(improvedFile0, string0, boolean0);
+String string1 = "(Q";
+archiveScanner0.processArchive(improvedFile0, string1);
+
+[MASTER] 00:36:46.627 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:46.628 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FileSystemHandling.shouldAllThrowIOExceptions();
+ImprovedFile improvedFile0 = new ImprovedFile("o$py'G ;=y", "o$py'G ;=y");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+Vector<Object> vector0 = new Vector<Object>();
+archiveScanner0.dirsIncluded = vector0;
+String[] stringArray0 = new String[7];
+stringArray0[0] = "o$py'G ;=y";
+stringArray0[2] = "o$py'G ;=y";
+archiveScanner0.excludes = stringArray0;
+archiveScanner0.includes = archiveScanner0.excludes;
+archiveScanner0.processDirectory(improvedFile0, "o$py'G ;=y", true);
+
+[MASTER] 00:36:46.825 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:46.826 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FileSystemHandling.shouldAllThrowIOExceptions();
+ImprovedFile improvedFile0 = new ImprovedFile("# ", "# ");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+improvedFile0.toPath();
+String[] stringArray0 = new String[5];
+stringArray0[0] = "# ";
+stringArray0[2] = "# ";
+archiveScanner0.excludes = stringArray0;
+Vector<Object> vector0 = new Vector<Object>();
+archiveScanner0.filesNotIncluded = vector0;
+archiveScanner0.includes = archiveScanner0.excludes;
+archiveScanner0.processDirectory(improvedFile0, "# ", true);
+
+[MASTER] 00:36:46.958 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:46.958 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile("8`r+XCwXOE'0D");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+String[] stringArray0 = new String[39];
+archiveScanner0.addDefaultExcludes();
+stringArray0[0] = "8`r+XCwXOE'0D";
+Vector<String> vector0 = new Vector<String>();
+archiveScanner0.filesNotIncluded = vector0;
+archiveScanner0.includes = stringArray0;
+archiveScanner0.processFile("8`r+XCwXOE'0D");
+
+[MASTER] 00:36:47.667 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test08 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:47.667 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile("a", "a");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+int int0 = archiveScanner0.toFileType(improvedFile0);
+assertEquals(0, int0);
+
+
+[MASTER] 00:36:47.667 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test09 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:47.667 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile("a", "a");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+boolean boolean0 = archiveScanner0.isArchive(improvedFile0);
+assertFalse(boolean0);
+
+
+[MASTER] 00:36:47.667 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test06 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:47.668 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile(";q\r", ";q\r");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+boolean boolean0 = archiveScanner0.isArchive(improvedFile0);
+assertFalse(boolean0);
+
+
+[MASTER] 00:36:47.668 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test28 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:47.668 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FileSystemHandling.shouldAllThrowIOExceptions();
+ImprovedFile improvedFile0 = new ImprovedFile("empdir0.jar");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+String[] stringArray0 = new String[5];
+stringArray0[0] = "empdir0.jar";
+Vector<ByteArrayInputStream> vector0 = new Vector<ByteArrayInputStream>(2);
+archiveScanner0.filesExcluded = vector0;
+stringArray0[2] = "empdir0.jar";
+archiveScanner0.excludes = stringArray0;
+archiveScanner0.includes = archiveScanner0.excludes;
+archiveScanner0.processDirectory(improvedFile0, "empdir0.jar", true);
+
+[MASTER] 00:36:47.668 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test07 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:47.668 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile("app.files.lastFile");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+int int0 = archiveScanner0.toFileType(improvedFile0);
+//  // Unstable assertion: assertEquals(2, int0);
+
+
+[MASTER] 00:36:47.668 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test29 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:47.669 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile("8VnOjr+XCwXOEF0D");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+String[] stringArray0 = new String[7];
+archiveScanner0.addDefaultExcludes();
+stringArray0[0] = "8VnOjr+XCwXOEF0D";
+archiveScanner0.includes = stringArray0;
+Vector<Object> vector0 = new Vector<Object>();
+archiveScanner0.filesNotIncluded = vector0;
+archiveScanner0.processDirectory(improvedFile0, "8VnOjr+XCwXOEF0D", true);
+
+[MASTER] 00:36:47.669 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test00 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:47.669 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ArchiveScanner archiveScanner0 = new ArchiveScanner((ImprovedFile) null);
+archiveScanner0.scanArchive((File) null, "com.lts.application.menu.ApplicationMenuBuilder");
+
+[MASTER] 00:36:47.669 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test22 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:47.670 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile("8VnOjr+XCwXOEF0D");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+String[] stringArray0 = new String[21];
+archiveScanner0.addDefaultExcludes();
+Vector<String> vector0 = new Vector<String>();
+vector0.add("8VnOjr+XCwXOEF0D");
+archiveScanner0.dirsIncluded = vector0;
+stringArray0[0] = "8VnOjr+XCwXOEF0D";
+archiveScanner0.includes = stringArray0;
+improvedFile0.mkdirs();
+archiveScanner0.processDirectory(improvedFile0, "8VnOjr+XCwXOEF0D", true);
+assertEquals("8VnOjr+XCwXOEF0D", improvedFile0.toString());
+
+
+[MASTER] 00:36:47.670 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test01 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:47.670 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile("");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+archiveScanner0.scandir(improvedFile0, "", false);
+assertTrue(improvedFile0.canWrite());
+
+
+[MASTER] 00:36:47.670 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test23 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:47.670 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile("# ");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+String[] stringArray0 = new String[17];
+archiveScanner0.addDefaultExcludes();
+stringArray0[0] = "# ";
+Vector<Object> vector0 = new Vector<Object>();
+archiveScanner0.dirsIncluded = vector0;
+stringArray0[3] = "# ";
+archiveScanner0.includes = stringArray0;
+archiveScanner0.processFile("# ");
+
+[MASTER] 00:36:47.670 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test20 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:47.670 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile("# ");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+String[] stringArray0 = new String[4];
+stringArray0[0] = "# ";
+archiveScanner0.excludes = stringArray0;
+Vector<String> vector0 = new Vector<String>();
+archiveScanner0.filesNotIncluded = vector0;
+archiveScanner0.includes = stringArray0;
+archiveScanner0.processArchive(improvedFile0, "# ");
+
+[MASTER] 00:36:47.670 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test21 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:47.671 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ boolean boolean0 = FileSystemHandling.shouldAllThrowIOExceptions();
+String string0 = "# ";
+ImprovedFile improvedFile0 = new ImprovedFile("# ", "# ");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+Vector<Object> vector0 = new Vector<Object>();
+archiveScanner0.dirsNotIncluded = vector0;
+improvedFile0.toPath();
+archiveScanner0.excludes = archiveScanner0.DEFAULT_ARCHIVE_EXTENSIONS;
+archiveScanner0.includes = archiveScanner0.excludes;
+archiveScanner0.isArchive(improvedFile0);
+archiveScanner0.processDirectory(improvedFile0, string0, boolean0);
+String string1 = "jn;g;";
+archiveScanner0.processDirectory(improvedFile0, string1, boolean0);
+String string2 = ".ear";
+archiveScanner0.processArchive(improvedFile0, string2);
+
+[MASTER] 00:36:47.671 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test04 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:47.671 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ArchiveScanner archiveScanner0 = new ArchiveScanner((ImprovedFile) null);
+archiveScanner0.toFileType((File) null);
+
+[MASTER] 00:36:47.671 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test26 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:47.671 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test05 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:47.671 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile("app.files.lastFile");
+ImprovedFile improvedFile1 = ImprovedFile.createTempImprovedFile("app.files.lastFile", "app.files.lastFile", improvedFile0);
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile1);
+archiveScanner0.scandir(improvedFile0, "app.files.lastFile", false);
+
+[MASTER] 00:36:47.671 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test27 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:47.671 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test02 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:47.672 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile(".jar");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+boolean boolean0 = archiveScanner0.isArchive(improvedFile0);
+assertTrue(boolean0);
+
+
+[MASTER] 00:36:47.672 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test24 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:47.672 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test03 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:47.672 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile("# ", "# ");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+archiveScanner0.includes = archiveScanner0.DEFAULT_ARCHIVE_EXTENSIONS;
+archiveScanner0.toFileType(improvedFile0);
+String string0 = ".ear";
+archiveScanner0.processFile(string0);
+
+[MASTER] 00:36:47.672 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test25 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:47.672 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test30 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:47.672 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test19 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:47.672 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = "8`r+XCwXOE'0D";
+ImprovedFile improvedFile0 = new ImprovedFile("8`r+XCwXOE'0D");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+String[] stringArray0 = new String[39];
+archiveScanner0.addDefaultExcludes();
+Vector<InputStream> vector0 = new Vector<InputStream>();
+archiveScanner0.dirsNotIncluded = vector0;
+stringArray0[0] = "8`r+XCwXOE'0D";
+archiveScanner0.includes = stringArray0;
+archiveScanner0.processFile("8`r+XCwXOE'0D");
+
+[MASTER] 00:36:47.672 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test17 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:47.673 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile("}");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+Vector<String> vector0 = new Vector<String>(46, 2);
+archiveScanner0.filesExcluded = vector0;
+String[] stringArray0 = new String[13];
+archiveScanner0.addDefaultExcludes();
+stringArray0[0] = "}";
+archiveScanner0.includes = stringArray0;
+archiveScanner0.processFile("}");
+
+[MASTER] 00:36:47.673 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test18 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:47.673 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FileSystemHandling.shouldAllThrowIOExceptions();
+ImprovedFile improvedFile0 = new ImprovedFile("o$py'G ;=y", "o$py'G ;=y");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+Vector<Object> vector0 = new Vector<Object>();
+archiveScanner0.dirsIncluded = vector0;
+String[] stringArray0 = new String[7];
+Vector<Object> vector1 = new Vector<Object>();
+archiveScanner0.dirsExcluded = vector1;
+vector0.removeAll(archiveScanner0.dirsIncluded);
+stringArray0[0] = "o$py'G ;=y";
+stringArray0[2] = "o$py'G ;=y";
+archiveScanner0.excludes = stringArray0;
+archiveScanner0.includes = archiveScanner0.excludes;
+archiveScanner0.processDirectory(improvedFile0, "o$py'G ;=y", true);
+assertEquals("o$py'G ;=y", improvedFile0.getName());
+
+
+[MASTER] 00:36:47.673 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test11 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 00:36:47.673 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = "8`r+XCwXOE'0D";
+ImprovedFile improvedFile0 = new ImprovedFile("8`r+XCwXOE'0D");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+String[] stringArray0 = new String[39];
+archiveScanner0.addDefaultExcludes();
+archiveScanner0.excludes = stringArray0;
+stringArray0[0] = "8`r+XCwXOE'0D";
+Vector<String> vector0 = new Vector<String>();
+archiveScanner0.filesNotIncluded = vector0;
+archiveScanner0.includes = stringArray0;
+archiveScanner0.processFile("8`r+XCwXOE'0D");
+
+[MASTER] 00:36:47.673 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test33 -> class java.lang.OutOfMemoryError: unable to create new native thread
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 3
+* Writing JUnit test case 'ArchiveScanner_ESTest' to /home/ubuntu/termite/mosa/tests/s1024/78_caloriecount/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: com.lts.application.international.MessageFormatter
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/78_caloriecount/evosuite-files/evosuite.properties
+* Connecting to master process on port 8336
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 01:19:28.602 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 01:19:28.633 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 01:19:28.634 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 01:19:29.191 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 01:19:29.755 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 01:19:29.778 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+* Finished analyzing classpath
+* Generating tests for class com.lts.application.international.MessageFormatter
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 482
+* Using seed 1024
+* Starting evolution
+[MASTER] 01:19:45.949 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 01:20:03.017 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+[MASTER] 01:20:22.203 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+* Search finished after 227s and 651 generations, 160292 statements, best individual has fitness: 576.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 91%
+* Total number of goals: 130
+* Number of covered goals: 118
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 88%
+* Total number of goals: 52
+* Number of covered goals: 46
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 26
+* Number of covered goals: 26
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 94%
+* Total number of goals: 150
+* Number of covered goals: 141
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 40%
+* Total number of goals: 50
+* Number of covered goals: 20
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 24
+* Number of covered goals: 24
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 96%
+* Total number of goals: 24
+* Number of covered goals: 23
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 88%
+* Total number of goals: 52
+* Number of covered goals: 46
+* Generated 48 tests with total length 279
+* Resulting test suite's coverage: 86% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 25%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 1
+* Writing JUnit test case 'MessageFormatter_ESTest' to /home/ubuntu/termite/mosa/tests/s1024/78_caloriecount/evosuite-tests
+* Done!
+
+* Computation finished

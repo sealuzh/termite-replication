@@ -1,0 +1,205 @@
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: com.lts.application.international.MessageFormatter
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/78_caloriecount/evosuite-files/evosuite.properties
+* Connecting to master process on port 10598
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 22:38:02.879 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 22:38:02.900 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 22:38:02.901 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 22:38:03.531 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 22:38:03.889 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 22:38:03.900 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+* Finished analyzing classpath
+* Generating tests for class com.lts.application.international.MessageFormatter
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1001
+* Starting evolution
+[MASTER] 22:38:38.078 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 22:39:07.230 [logback-2] ERROR TestCaseExecutor - ExecutionException (this is likely a serious error in the framework)
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) [na:1.8.0_201]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206) [na:1.8.0_201]
+	at org.evosuite.testcase.execution.TimeoutHandler.executeWithTimeout(TimeoutHandler.java:107) ~[evosuite.jar:1.0.6]
+	at org.evosuite.testcase.execution.TimeoutHandler.execute(TimeoutHandler.java:96) ~[evosuite.jar:1.0.6]
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:334) [evosuite.jar:1.0.6]
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:277) [evosuite.jar:1.0.6]
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:264) [evosuite.jar:1.0.6]
+	at org.evosuite.testcase.execution.TestCaseExecutor.runTest(TestCaseExecutor.java:140) [evosuite.jar:1.0.6]
+	at org.evosuite.testcase.TestFitnessFunction.runTest(TestFitnessFunction.java:91) [evosuite.jar:1.0.6]
+	at org.evosuite.testcase.TestFitnessFunction.getFitness(TestFitnessFunction.java:60) [evosuite.jar:1.0.6]
+	at org.evosuite.testcase.TestFitnessFunction.getFitness(TestFitnessFunction.java:34) [evosuite.jar:1.0.6]
+	at org.evosuite.ga.metaheuristics.mosa.MOSA.calculateFitness(MOSA.java:147) [evosuite.jar:1.0.6]
+	at org.evosuite.ga.metaheuristics.mosa.AbstractMOSA.evaluate(AbstractMOSA.java:184) [evosuite.jar:1.0.6]
+	at org.evosuite.ga.metaheuristics.mosa.AbstractMOSA.breedNextGeneration(AbstractMOSA.java:157) [evosuite.jar:1.0.6]
+	at org.evosuite.ga.metaheuristics.mosa.ReadabilityMOSA.evolve(ReadabilityMOSA.java:52) [evosuite.jar:1.0.6]
+	at org.evosuite.ga.metaheuristics.mosa.MOSA.generateSolution(MOSA.java:197) [evosuite.jar:1.0.6]
+	at org.evosuite.strategy.MOSuiteStrategy.generateTests(MOSuiteStrategy.java:113) [evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.generateTests(TestSuiteGenerator.java:653) [evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:236) [evosuite.jar:1.0.6]
+	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:145) [evosuite.jar:1.0.6]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_201]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+Caused by: java.lang.NullPointerException: null
+	at org.evosuite.runtime.sandbox.PermissionStatistics.permissionAllowed(PermissionStatistics.java:144) ~[evosuite.jar:1.0.6]
+	at org.evosuite.runtime.sandbox.MSecurityManager.checkPermission(MSecurityManager.java:455) ~[evosuite.jar:1.0.6]
+	at java.lang.System.checkIO(System.java:253) ~[na:1.8.0_201]
+	at java.lang.System.setOut(System.java:175) ~[na:1.8.0_201]
+	at org.evosuite.utils.LoggingUtils.restorePreviousOutAndErrStream(LoggingUtils.java:266) ~[evosuite.jar:1.0.6]
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:248) ~[evosuite.jar:1.0.6]
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55) ~[evosuite.jar:1.0.6]
+	... 4 common frames omitted
+[MASTER] 22:39:07.231 [logback-2] ERROR TestCaseExecutor - TG: Exception caught: 
+java.lang.NullPointerException: null
+	at org.evosuite.runtime.sandbox.PermissionStatistics.permissionAllowed(PermissionStatistics.java:144) ~[evosuite.jar:1.0.6]
+	at org.evosuite.runtime.sandbox.MSecurityManager.checkPermission(MSecurityManager.java:455) ~[evosuite.jar:1.0.6]
+	at java.lang.System.checkIO(System.java:253) ~[na:1.8.0_201]
+	at java.lang.System.setOut(System.java:175) ~[na:1.8.0_201]
+	at org.evosuite.utils.LoggingUtils.restorePreviousOutAndErrStream(LoggingUtils.java:266) ~[evosuite.jar:1.0.6]
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:248) ~[evosuite.jar:1.0.6]
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55) ~[evosuite.jar:1.0.6]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+[MASTER] 22:39:07.234 [logback-2] ERROR ClientNodeImpl - Error when generating tests for: com.lts.application.international.MessageFormatter with seed 1001. Configuration id : RMOSA
+java.lang.Error: java.lang.NullPointerException
+	at org.evosuite.testcase.execution.TestCaseExecutor.runTest(TestCaseExecutor.java:146) ~[evosuite.jar:1.0.6]
+	at org.evosuite.testcase.TestFitnessFunction.runTest(TestFitnessFunction.java:91) ~[evosuite.jar:1.0.6]
+	at org.evosuite.testcase.TestFitnessFunction.getFitness(TestFitnessFunction.java:60) ~[evosuite.jar:1.0.6]
+	at org.evosuite.testcase.TestFitnessFunction.getFitness(TestFitnessFunction.java:34) ~[evosuite.jar:1.0.6]
+	at org.evosuite.ga.metaheuristics.mosa.MOSA.calculateFitness(MOSA.java:147) ~[evosuite.jar:1.0.6]
+	at org.evosuite.ga.metaheuristics.mosa.AbstractMOSA.evaluate(AbstractMOSA.java:184) ~[evosuite.jar:1.0.6]
+	at org.evosuite.ga.metaheuristics.mosa.AbstractMOSA.breedNextGeneration(AbstractMOSA.java:157) ~[evosuite.jar:1.0.6]
+	at org.evosuite.ga.metaheuristics.mosa.ReadabilityMOSA.evolve(ReadabilityMOSA.java:52) ~[evosuite.jar:1.0.6]
+	at org.evosuite.ga.metaheuristics.mosa.MOSA.generateSolution(MOSA.java:197) ~[evosuite.jar:1.0.6]
+	at org.evosuite.strategy.MOSuiteStrategy.generateTests(MOSuiteStrategy.java:113) ~[evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.generateTests(TestSuiteGenerator.java:653) ~[evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:236) ~[evosuite.jar:1.0.6]
+	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:145) ~[evosuite.jar:1.0.6]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_201]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+Caused by: java.lang.NullPointerException: null
+	at org.evosuite.runtime.sandbox.PermissionStatistics.permissionAllowed(PermissionStatistics.java:144) ~[evosuite.jar:1.0.6]
+	at org.evosuite.runtime.sandbox.MSecurityManager.checkPermission(MSecurityManager.java:455) ~[evosuite.jar:1.0.6]
+	at java.lang.System.checkIO(System.java:253) ~[na:1.8.0_201]
+	at java.lang.System.setOut(System.java:175) ~[na:1.8.0_201]
+	at org.evosuite.utils.LoggingUtils.restorePreviousOutAndErrStream(LoggingUtils.java:266) ~[evosuite.jar:1.0.6]
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:248) ~[evosuite.jar:1.0.6]
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55) ~[evosuite.jar:1.0.6]
+	... 4 common frames omitted
+* Computation finished
+[MASTER] 22:39:07.349 [main] ERROR SearchStatistics - No obtained value for output variable: Total_Goals
+[MASTER] 22:39:09.352 [main] ERROR SearchStatistics - No obtained value for output variable: Total_Goals
+[MASTER] 22:39:10.352 [main] ERROR SearchStatistics - No obtained value for output variable: Total_Goals
+[MASTER] 22:39:11.353 [main] ERROR SearchStatistics - No obtained value for output variable: Total_Goals
+[MASTER] 22:39:12.353 [main] ERROR SearchStatistics - No obtained value for output variable: Total_Goals
+[MASTER] 22:39:13.354 [main] ERROR SearchStatistics - No obtained value for output variable: Total_Goals
+[MASTER] 22:39:13.354 [main] ERROR SearchStatistics - Not going to write down statistics data, as some are missing
+[MASTER] 22:39:13.455 [main] ERROR TestGeneration - failed to write statistics data
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: com.lts.io.ArchiveScanner
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/78_caloriecount/evosuite-files/evosuite.properties
+* Connecting to master process on port 10601
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 23:02:50.597 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 23:02:50.609 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 23:02:50.610 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 23:02:50.999 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 23:02:51.588 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 23:02:51.590 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+* Finished analyzing classpath
+* Generating tests for class com.lts.io.ArchiveScanner
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1001
+* Starting evolution
+[MASTER] 23:03:46.294 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 23:03:50.383 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+* Search finished after 262s and 899 generations, 369366 statements, best individual has fitness: 248.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 87%
+* Total number of goals: 67
+* Number of covered goals: 58
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 89%
+* Total number of goals: 45
+* Number of covered goals: 40
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 12
+* Number of covered goals: 12
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 95%
+* Total number of goals: 202
+* Number of covered goals: 192
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 80%
+* Total number of goals: 5
+* Number of covered goals: 4
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 89%
+* Total number of goals: 45
+* Number of covered goals: 40
+* Generated 48 tests with total length 418
+* Resulting test suite's coverage: 92% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 50%
+* Compiling and checking tests
+[MASTER] 23:07:24.823 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: null
+[MASTER] 23:07:24.824 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile("Kob<;fX5[30n", "Kob<;fX5[30n");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+boolean boolean0 = archiveScanner0.isArchive(improvedFile0);
+assertTrue(boolean0);
+
+
+[MASTER] 23:07:25.128 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<2> but was:<0>
+[MASTER] 23:07:25.128 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ImprovedFile improvedFile0 = new ImprovedFile("Sob<;fX5[30n", "Sob<;fX5[30n");
+ArchiveScanner archiveScanner0 = new ArchiveScanner(improvedFile0);
+int int0 = archiveScanner0.toFileType(improvedFile0);
+assertEquals(2, int0);
+
+
+* Writing JUnit test case 'ArchiveScanner_ESTest' to /home/ubuntu/termite/rmosa/tests/s1001/78_caloriecount/evosuite-tests
+* Done!
+
+* Computation finished

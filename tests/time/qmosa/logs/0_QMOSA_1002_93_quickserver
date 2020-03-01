@@ -1,0 +1,202 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.quickserver.util.xmlreader.AdvancedSettings
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/93_quickserver/evosuite-files/evosuite.properties
+* Connecting to master process on port 2247
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class org.quickserver.util.xmlreader.AdvancedSettings
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/93_quickserver/src/main/java/org/quickserver/util/xmlreader/AdvancedSettings.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1002
+* Starting evolution
+* Search finished after 122s and 59 generations, 51253 statements, best individual has fitness: 96.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 95
+* Number of covered goals: 95
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 52
+* Number of covered goals: 52
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 98%
+* Total number of goals: 105
+* Number of covered goals: 103
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 79%
+* Total number of goals: 48
+* Number of covered goals: 38
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 34
+* Number of covered goals: 34
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 34
+* Number of covered goals: 34
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 52
+* Number of covered goals: 52
+* Generated 37 tests with total length 436
+* Resulting test suite's coverage: 97% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 92%
+* Compiling and checking tests
+* Writing JUnit test case 'AdvancedSettings_ESTest' to /home/ubuntu/termite/qmosa/tests/s1002/93_quickserver/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.quickserver.net.server.TheClient
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/93_quickserver/evosuite-files/evosuite.properties
+* Connecting to master process on port 2249
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 15:58:46.656 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.net.SocketOption
+[MASTER] 15:58:47.024 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Supplier
+[MASTER] 15:58:47.249 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 15:58:47.272 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 15:58:47.273 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 15:58:47.504 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 15:58:47.505 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 15:58:47.515 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+* Finished analyzing classpath
+* Generating tests for class org.quickserver.net.server.TheClient
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/93_quickserver/src/main/java/org/quickserver/net/server/TheClient.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1002
+* Starting evolution
+* Search finished after 121s and 77 generations, 70457 statements, best individual has fitness: 320.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 72
+* Number of covered goals: 72
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 43
+* Number of covered goals: 43
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100% (no goals)
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 100%
+* Total number of goals: 29
+* Number of covered goals: 29
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 57%
+* Total number of goals: 93
+* Number of covered goals: 53
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 42
+* Number of covered goals: 42
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 42
+* Number of covered goals: 42
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 43
+* Number of covered goals: 43
+* Generated 28 tests with total length 412
+* Resulting test suite's coverage: 89% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 97%
+* Compiling and checking tests
+[MASTER] 16:01:03.970 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.junit.ComparisonFailure: expected:<...tHandler-Pool#-1-ID:[5]>> but was:<...tHandler-Pool#-1-ID:[2]>>
+[MASTER] 16:01:03.970 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ TheClient theClient0 = new TheClient();
+theClient0.getClientObjectHandler();
+theClient0.setClientObjectHandler((ClientObjectHandler) null);
+CommandHandler commandHandler0 = new CommandHandler();
+theClient0.setClientEventHandler(commandHandler0);
+theClient0.getClientCommandHandler();
+theClient0.setClientCommandHandler((ClientCommandHandler) null);
+theClient0.setMaxConnectionMsg("");
+theClient0.setTimeoutMsg("#9/ts4i~j]~?0/2)C");
+theClient0.getClientAuthenticationHandler();
+theClient0.setClientAuthenticationHandler((ClientAuthenticationHandler) null);
+theClient0.getClientExtendedEventHandler();
+theClient0.toString();
+BlockingClientHandler blockingClientHandler0 = new BlockingClientHandler();
+blockingClientHandler0.getClientData();
+BlockingClientHandler blockingClientHandler1 = new BlockingClientHandler();
+blockingClientHandler1.getClientData();
+assertEquals("<ClientHandler-Pool#-1-ID:5>", blockingClientHandler1.getName());
+
+theClient0.setClientData((ClientData) null);
+theClient0.setMaxAuthTryMsg("");
+theClient0.setTrusted(true);
+theClient0.getMaxAuthTryMsg();
+assertTrue(theClient0.getCommunicationLogging());
+
+
+[MASTER] 16:01:06.372 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.junit.ComparisonFailure: expected:<...tHandler-Pool#-1-ID:[34]>> but was:<...tHandler-Pool#-1-ID:[1]>>
+[MASTER] 16:01:06.373 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ TheClient theClient0 = new TheClient();
+theClient0.getClientObjectHandler();
+Proxy proxy0 = Proxy.NO_PROXY;
+MockSocket mockSocket0 = new MockSocket(proxy0);
+theClient0.setSocket(mockSocket0);
+theClient0.setClientObjectHandler((ClientObjectHandler) null);
+CommandHandler commandHandler0 = new CommandHandler();
+BlockingClientHandler blockingClientHandler0 = new BlockingClientHandler(0);
+commandHandler0.lostConnection(blockingClientHandler0);
+theClient0.setClientEventHandler(commandHandler0);
+theClient0.setClientCommandHandler(commandHandler0);
+theClient0.setMaxConnectionMsg("");
+theClient0.setTimeoutMsg("#9/ts4i~j]~?0/2)C");
+theClient0.getClientAuthenticationHandler();
+theClient0.setClientAuthenticationHandler((ClientAuthenticationHandler) null);
+theClient0.getClientExtendedEventHandler();
+String string0 = theClient0.toString();
+BlockingClientHandler blockingClientHandler1 = new BlockingClientHandler();
+blockingClientHandler1.getClientData();
+assertEquals("<ClientHandler-Pool#-1-ID:34>", blockingClientHandler1.getName());
+
+theClient0.setClientData((ClientData) null);
+theClient0.setMaxAuthTryMsg("{TheClient Socket[unconnected], Event: (ClientEvent-Run Blocking)}");
+theClient0.setTrusted(false);
+String string1 = theClient0.getMaxAuthTryMsg();
+assertTrue(string1.equals((Object)string0));
+
+
+* Permissions denied during test execution: 
+  - java.net.SocketPermission: 
+         listen,resolve localhost:0: 142
+         connect,resolve 192.168.1.42:761: 1
+         resolve localhost: 1
+         and other 4 cases of action/name for this exception class
+* Writing JUnit test case 'TheClient_ESTest' to /home/ubuntu/termite/qmosa/tests/s1002/93_quickserver/evosuite-tests
+* Done!
+
+* Computation finished

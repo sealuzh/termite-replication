@@ -1,0 +1,456 @@
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: umd.cs.shop.JSPredicateForm
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/85_shop/evosuite-files/evosuite.properties
+* Connecting to master process on port 2248
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 16:06:27.964 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 16:06:28.012 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 16:06:28.012 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 16:06:28.201 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class umd.cs.shop.JSPredicateForm
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 747
+* Using seed 1002
+* Starting evolution
+[MASTER] 16:06:36.262 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 16:07:05.930 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+[MASTER] 16:08:20.087 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] umd.cs.shop.JSPredicateForm.JSPredicateFormInit(Ljava/io/StreamTokenizer;)V
+* Search finished after 121s and 385 generations, 110687 statements, best individual has fitness: 1200.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 79%
+* Total number of goals: 165
+* Number of covered goals: 131
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 85%
+* Total number of goals: 87
+* Number of covered goals: 74
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 33
+* Number of covered goals: 33
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 82%
+* Total number of goals: 329
+* Number of covered goals: 271
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 42%
+* Total number of goals: 55
+* Number of covered goals: 23
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 12
+* Number of covered goals: 12
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 12
+* Number of covered goals: 12
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 85%
+* Total number of goals: 87
+* Number of covered goals: 74
+* Generated 75 tests with total length 320
+* Resulting test suite's coverage: 81% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 47%
+* Compiling and checking tests
+[MASTER] 16:09:25.199 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.StackOverflowError: null
+[MASTER] 16:09:25.200 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ JSTerm jSTerm0 = new JSTerm();
+jSTerm0.add((Object) "piV");
+StringReader stringReader0 = new StringReader("piV");
+jSTerm0.add((Object) jSTerm0);
+jSTerm0.standarizerPredicateForm();
+
+[MASTER] 16:09:28.499 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test61 -> class java.lang.StackOverflowError: null
+[MASTER] 16:09:28.500 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ JSTerm jSTerm0 = new JSTerm();
+UnaryOperator<JSTerm> unaryOperator0 = UnaryOperator.identity();
+jSTerm0.replaceAll(unaryOperator0);
+jSTerm0.add((Object) "not");
+jSTerm0.add((Object) jSTerm0);
+jSTerm0.equals((JSPredicateForm) jSTerm0);
+
+* Writing JUnit test case 'JSPredicateForm_ESTest' to /home/ubuntu/termite/mosa/tests/s1002/85_shop/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: umd.cs.shop.JSTerm
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/85_shop/evosuite-files/evosuite.properties
+* Connecting to master process on port 2245
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 16:12:01.106 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 16:12:01.138 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 16:12:01.139 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 16:12:01.313 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class umd.cs.shop.JSTerm
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 1343
+* Using seed 1002
+* Starting evolution
+[MASTER] 16:12:03.654 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 16:12:24.779 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+* Search finished after 123s and 125 generations, 40809 statements, best individual has fitness: 3192.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 71%
+* Total number of goals: 318
+* Number of covered goals: 227
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 69%
+* Total number of goals: 192
+* Number of covered goals: 133
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 33
+* Number of covered goals: 33
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 69%
+* Total number of goals: 476
+* Number of covered goals: 329
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 65%
+* Total number of goals: 123
+* Number of covered goals: 80
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 21
+* Number of covered goals: 21
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 21
+* Number of covered goals: 21
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 69%
+* Total number of goals: 192
+* Number of covered goals: 133
+* Generated 101 tests with total length 568
+* Resulting test suite's coverage: 71% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 62%
+* Compiling and checking tests
+[MASTER] 16:17:23.058 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.StackOverflowError: null
+[MASTER] 16:17:23.059 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ StringReader stringReader0 = new StringReader("L+ 3>7TM%1RvNa");
+StreamTokenizer streamTokenizer0 = new StreamTokenizer(stringReader0);
+JSTerm jSTerm0 = new JSTerm(streamTokenizer0);
+jSTerm0.makeFunction();
+jSTerm0.add((Object) jSTerm0);
+System.setCurrentTimeMillis((-913L));
+jSTerm0.print();
+
+[MASTER] 16:17:26.279 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.StackOverflowError: null
+[MASTER] 16:17:26.280 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ StringReader stringReader0 = new StringReader("L+ 3>7TM%1RvNa");
+StreamTokenizer streamTokenizer0 = new StreamTokenizer(stringReader0);
+JSTerm jSTerm0 = new JSTerm(streamTokenizer0);
+jSTerm0.makeFunction();
+jSTerm0.add((Object) jSTerm0);
+JSSubstitution jSSubstitution0 = new JSSubstitution();
+jSTerm0.matches(jSTerm0, jSSubstitution0);
+jSTerm0.toStr();
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 6
+* Writing JUnit test case 'JSTerm_ESTest' to /home/ubuntu/termite/mosa/tests/s1002/85_shop/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: umd.cs.shop.JSJshop
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/85_shop/evosuite-files/evosuite.properties
+* Connecting to master process on port 2243
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 16:40:00.697 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 16:40:00.713 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 16:40:00.724 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 16:40:01.124 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 16:40:02.534 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 16:40:02.543 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 16:40:06.864 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 16:40:06.918 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 16:40:06.919 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 16:40:06.919 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 16:40:06.944 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 16:40:06.944 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 16:40:06.944 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 16:40:06.945 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 16:40:06.945 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 16:40:07.037 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 16:40:07.063 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class umd.cs.shop.JSJshop
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 757
+* Using seed 1002
+* Starting evolution
+[MASTER] 16:40:12.304 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.<init>()V: Line 90
+[MASTER] 16:40:12.304 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.<init>()V: Line 29
+[MASTER] 16:40:12.304 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.<init>()V: Line 33
+[MASTER] 16:40:12.304 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.<init>(Ljava/lang/String;Ljava/lang/String;)V: Line 29
+[MASTER] 16:40:12.304 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.<init>(Ljava/lang/String;Ljava/lang/String;)V: Line 33
+[MASTER] 16:40:12.304 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.<init>(Ljava/lang/String;Lumd/cs/shop/JSTaskAtom;)V: Line 29
+[MASTER] 16:40:12.304 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.<init>(Ljava/lang/String;Lumd/cs/shop/JSTaskAtom;)V: Line 33
+[MASTER] 16:40:12.304 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.getBufferedReader(Ljava/lang/String;Ljava/lang/String;)Ljava/io/BufferedReader;: Line 389
+[MASTER] 16:40:12.305 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 161: umd.cs.shop.JSJshop.getBufferedReader(Ljava/lang/String;Ljava/lang/String;)Ljava/io/BufferedReader;:389 - ReplaceVariable dir -> file
+[MASTER] 16:40:12.305 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 162: umd.cs.shop.JSJshop.getBufferedReader(Ljava/lang/String;Ljava/lang/String;)Ljava/io/BufferedReader;:389 - ReplaceVariable file -> dir
+[MASTER] 16:40:12.305 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] umd.cs.shop.JSJshop.<init>()V
+[MASTER] 16:40:12.305 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] umd.cs.shop.JSJshop.getBufferedReader(Ljava/lang/String;Ljava/lang/String;)Ljava/io/BufferedReader;
+[MASTER] 16:40:12.305 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] umd.cs.shop.JSJshop.<init>()V
+[MASTER] 16:40:12.305 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] umd.cs.shop.JSJshop.getBufferedReader(Ljava/lang/String;Ljava/lang/String;)Ljava/io/BufferedReader;
+[MASTER] 16:40:12.306 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.<init>()V: root-Branch in context: umd.cs.shop.JSJshop:<init>()V
+[MASTER] 16:40:12.306 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.getBufferedReader(Ljava/lang/String;Ljava/lang/String;)Ljava/io/BufferedReader;: root-Branch in context: umd.cs.shop.JSJshop:getBufferedReader(Ljava/lang/String;Ljava/lang/String;)Ljava/io/BufferedReader;
+[MASTER] 16:40:15.816 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] umd.cs.shop.JSJshop.testParser()V
+[MASTER] 16:40:15.817 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] umd.cs.shop.JSJshop.testParser()V
+[MASTER] 16:40:29.214 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] umd.cs.shop.JSJshop.processToken(Ljava/io/StreamTokenizer;)V
+[MASTER] 16:40:32.584 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] umd.cs.shop.JSJshop.getSolution()Lumd/cs/shop/JSPairPlanTSListNodes;
+[MASTER] 16:40:32.584 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] umd.cs.shop.JSJshop.getSolution()Lumd/cs/shop/JSPairPlanTSListNodes;
+[MASTER] 16:40:35.632 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 277
+[MASTER] 16:40:35.632 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 278
+[MASTER] 16:40:35.632 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 279
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 280
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 284
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 287
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 290
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 293
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 296
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 299
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 300
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 302
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 303
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 305
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 308
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 311
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 314
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 317
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 321
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 325
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 328
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 331
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 334
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 337
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 340
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 343
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 344
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 348
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 354
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.testParser()V: Line 356
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 75: umd.cs.shop.JSJshop.testParser()V:279 - ReplaceConstant - -1 -> 0
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 76: umd.cs.shop.JSJshop.testParser()V:279 - ReplaceConstant - -1 -> 1
+[MASTER] 16:40:35.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 77: umd.cs.shop.JSJshop.testParser()V:279 - ReplaceConstant - -1 -> -2
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 78: umd.cs.shop.JSJshop.testParser()V:279 - ReplaceComparisonOperator == -> -2
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 79: umd.cs.shop.JSJshop.testParser()V:279 - ReplaceComparisonOperator == -> >=
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 80: umd.cs.shop.JSJshop.testParser()V:279 - ReplaceComparisonOperator == -> <=
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 81: umd.cs.shop.JSJshop.testParser()V:280 - InsertUnaryOp Negation
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 82: umd.cs.shop.JSJshop.testParser()V:280 - InsertUnaryOp +1
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 83: umd.cs.shop.JSJshop.testParser()V:280 - InsertUnaryOp -1
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 84: umd.cs.shop.JSJshop.testParser()V:280 - ReplaceConstant - -2 -> 0
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 85: umd.cs.shop.JSJshop.testParser()V:280 - ReplaceConstant - -2 -> 1
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 86: umd.cs.shop.JSJshop.testParser()V:280 - ReplaceConstant - -2 -> -1
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 87: umd.cs.shop.JSJshop.testParser()V:280 - ReplaceConstant - -2 -> -3
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 89: umd.cs.shop.JSJshop.testParser()V:280 - ReplaceComparisonOperator != -> <
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 90: umd.cs.shop.JSJshop.testParser()V:280 - ReplaceComparisonOperator != -> >
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 93: umd.cs.shop.JSJshop.testParser()V:284 - InsertUnaryOp Negation
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 94: umd.cs.shop.JSJshop.testParser()V:284 - InsertUnaryOp +1
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 95: umd.cs.shop.JSJshop.testParser()V:284 - InsertUnaryOp -1
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 96: umd.cs.shop.JSJshop.testParser()V:284 - InsertUnaryOp Negation
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 97: umd.cs.shop.JSJshop.testParser()V:284 - InsertUnaryOp +1
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 98: umd.cs.shop.JSJshop.testParser()V:284 - InsertUnaryOp -1
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 100: umd.cs.shop.JSJshop.testParser()V:284 - ReplaceComparisonOperator != -> <
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 101: umd.cs.shop.JSJshop.testParser()V:284 - ReplaceComparisonOperator != -> >
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 103: umd.cs.shop.JSJshop.testParser()V:287 - InsertUnaryOp Negation
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 104: umd.cs.shop.JSJshop.testParser()V:287 - InsertUnaryOp +1
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 105: umd.cs.shop.JSJshop.testParser()V:287 - InsertUnaryOp -1
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 106: umd.cs.shop.JSJshop.testParser()V:287 - InsertUnaryOp Negation
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 107: umd.cs.shop.JSJshop.testParser()V:287 - InsertUnaryOp +1
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 108: umd.cs.shop.JSJshop.testParser()V:287 - InsertUnaryOp -1
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 110: umd.cs.shop.JSJshop.testParser()V:287 - ReplaceComparisonOperator != -> <
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 111: umd.cs.shop.JSJshop.testParser()V:287 - ReplaceComparisonOperator != -> >
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 113: umd.cs.shop.JSJshop.testParser()V:290 - InsertUnaryOp Negation
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 114: umd.cs.shop.JSJshop.testParser()V:290 - InsertUnaryOp +1
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 115: umd.cs.shop.JSJshop.testParser()V:290 - InsertUnaryOp -1
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 116: umd.cs.shop.JSJshop.testParser()V:290 - InsertUnaryOp Negation
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 117: umd.cs.shop.JSJshop.testParser()V:290 - InsertUnaryOp +1
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 118: umd.cs.shop.JSJshop.testParser()V:290 - InsertUnaryOp -1
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 120: umd.cs.shop.JSJshop.testParser()V:290 - ReplaceComparisonOperator != -> <
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 121: umd.cs.shop.JSJshop.testParser()V:290 - ReplaceComparisonOperator != -> >
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 123: umd.cs.shop.JSJshop.testParser()V:293 - InsertUnaryOp Negation
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 124: umd.cs.shop.JSJshop.testParser()V:293 - InsertUnaryOp +1
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 125: umd.cs.shop.JSJshop.testParser()V:293 - InsertUnaryOp -1
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 126: umd.cs.shop.JSJshop.testParser()V:293 - InsertUnaryOp Negation
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 127: umd.cs.shop.JSJshop.testParser()V:293 - InsertUnaryOp +1
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 128: umd.cs.shop.JSJshop.testParser()V:293 - InsertUnaryOp -1
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 130: umd.cs.shop.JSJshop.testParser()V:293 - ReplaceComparisonOperator != -> <
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 131: umd.cs.shop.JSJshop.testParser()V:293 - ReplaceComparisonOperator != -> >
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 133: umd.cs.shop.JSJshop.testParser()V:296 - InsertUnaryOp Negation
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 134: umd.cs.shop.JSJshop.testParser()V:296 - InsertUnaryOp +1
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 135: umd.cs.shop.JSJshop.testParser()V:296 - InsertUnaryOp -1
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 136: umd.cs.shop.JSJshop.testParser()V:296 - InsertUnaryOp Negation
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 137: umd.cs.shop.JSJshop.testParser()V:296 - InsertUnaryOp +1
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 138: umd.cs.shop.JSJshop.testParser()V:296 - InsertUnaryOp -1
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 140: umd.cs.shop.JSJshop.testParser()V:296 - ReplaceComparisonOperator != -> <
+[MASTER] 16:40:35.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 141: umd.cs.shop.JSJshop.testParser()V:296 - ReplaceComparisonOperator != -> >
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I186 Branch 32 IF_ICMPNE L317 - true in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I263 Branch 39 IF_ICMPNE L340 - true in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I252 Branch 38 IF_ICMPNE L337 - true in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I197 Branch 33 IF_ICMPNE L321 - true in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I36 Branch 19 IF_ICMPEQ L279 - true in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I131 Branch 27 IF_ICMPNE L302 - true in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I175 Branch 31 IF_ICMPNE L314 - true in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I65 Branch 21 IF_ICMPNE L284 - true in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I42 Branch 20 IF_ICMPNE L280 - true in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I87 Branch 23 IF_ICMPNE L290 - true in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I109 Branch 25 IF_ICMPNE L296 - true in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I276 Branch 40 IF_ICMPNE L343 - false in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I76 Branch 22 IF_ICMPNE L287 - true in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I36 Branch 19 IF_ICMPEQ L279 - false in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I131 Branch 27 IF_ICMPNE L302 - false in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I153 Branch 29 IF_ICMPNE L308 - true in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I120 Branch 26 IF_ICMPNE L299 - false in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I219 Branch 35 IF_ICMPNE L328 - true in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I276 Branch 40 IF_ICMPNE L343 - true in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I230 Branch 36 IF_ICMPNE L331 - true in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I241 Branch 37 IF_ICMPNE L334 - true in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I208 Branch 34 IF_ICMPNE L325 - true in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I164 Branch 30 IF_ICMPNE L311 - true in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I142 Branch 28 IF_ICMPNE L305 - true in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I98 Branch 24 IF_ICMPNE L293 - true in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:35.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.testParser()V: I120 Branch 26 IF_ICMPNE L299 - true in context: umd.cs.shop.JSJshop:testParser()V
+[MASTER] 16:40:42.059 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] umd.cs.shop.JSJshop.<init>(Ljava/lang/String;Lumd/cs/shop/JSTaskAtom;)V
+[MASTER] 16:40:42.059 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] umd.cs.shop.JSJshop.<init>(Ljava/lang/String;Ljava/lang/String;)V
+[MASTER] 16:40:45.656 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.main([Ljava/lang/String;)V: Line 49
+[MASTER] 16:40:45.656 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.main([Ljava/lang/String;)V: Line 50
+[MASTER] 16:40:45.656 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.main([Ljava/lang/String;)V: Line 53
+[MASTER] 16:40:45.656 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.main([Ljava/lang/String;)V: Line 55
+[MASTER] 16:40:45.656 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.main([Ljava/lang/String;)V: Line 58
+[MASTER] 16:40:45.656 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.main([Ljava/lang/String;)V: Line 61
+[MASTER] 16:40:45.656 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.main([Ljava/lang/String;)V: Line 67
+[MASTER] 16:40:45.656 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.main([Ljava/lang/String;)V: Line 68
+[MASTER] 16:40:45.656 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.main([Ljava/lang/String;)V: Line 69
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.main([Ljava/lang/String;)V: I5 Branch 1 IF_ICMPLT L42 - false
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.main([Ljava/lang/String;)V: I9 Branch 2 IF_ICMPLE L42 - true
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.main([Ljava/lang/String;)V: I41 Branch 3 IF_ICMPGE L53 - false
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.main([Ljava/lang/String;)V: I49 Branch 4 IFLE L55 - true
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was umd.cs.shop.JSJshop.main([Ljava/lang/String;)V: I62 Branch 5 IFLE L58 - true
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 4: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:42 - ReplaceComparisonOperator < -> !=
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 7: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:42 - ReplaceConstant - 4 -> 0
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 8: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:42 - ReplaceConstant - 4 -> 1
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 9: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:42 - ReplaceConstant - 4 -> -1
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 10: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:42 - ReplaceConstant - 4 -> 3
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 11: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:42 - ReplaceConstant - 4 -> 5
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 14: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:42 - ReplaceComparisonOperator <= -> ==
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 18: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:49 - ReplaceConstant - one -> 
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 19: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:50 - ReplaceConstant - all -> 
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 20: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:53 - ReplaceConstant - 2 -> 0
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 21: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:53 - ReplaceConstant - 2 -> 1
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 22: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:53 - ReplaceConstant - 2 -> -1
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 23: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:53 - ReplaceConstant - 2 -> 3
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 24: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:53 - InsertUnaryOp Negation of i
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 25: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:53 - InsertUnaryOp IINC 1 i
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 26: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:53 - InsertUnaryOp IINC -1 i
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 27: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:53 - ReplaceComparisonOperator >= -> -1
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 30: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:55 - ReplaceVariable one -> all
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 31: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:55 - InsertUnaryOp Negation of i
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 32: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:55 - InsertUnaryOp IINC 1 i
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 33: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:55 - InsertUnaryOp IINC -1 i
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 35: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:55 - ReplaceComparisonOperator <= -> ==
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 38: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:58 - ReplaceVariable all -> one
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 39: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:58 - InsertUnaryOp Negation of i
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 40: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:58 - InsertUnaryOp IINC 1 i
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 41: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:58 - InsertUnaryOp IINC -1 i
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 43: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:58 - ReplaceComparisonOperator <= -> ==
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 46: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:61 - InsertUnaryOp Negation of i
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 47: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:61 - InsertUnaryOp IINC 1 i
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 48: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:61 - InsertUnaryOp IINC -1 i
+[MASTER] 16:40:45.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 53: umd.cs.shop.JSJshop.main([Ljava/lang/String;)V:68 - ReplaceConstant - Invalid parameter -> 
+[MASTER] 16:40:45.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.main([Ljava/lang/String;)V: I9 Branch 2 IF_ICMPLE L42 - true in context: umd.cs.shop.JSJshop:main([Ljava/lang/String;)V
+[MASTER] 16:40:45.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.main([Ljava/lang/String;)V: I41 Branch 3 IF_ICMPGE L53 - false in context: umd.cs.shop.JSJshop:main([Ljava/lang/String;)V
+[MASTER] 16:40:45.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.main([Ljava/lang/String;)V: I49 Branch 4 IFLE L55 - true in context: umd.cs.shop.JSJshop:main([Ljava/lang/String;)V
+[MASTER] 16:40:45.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.main([Ljava/lang/String;)V: I62 Branch 5 IFLE L58 - true in context: umd.cs.shop.JSJshop:main([Ljava/lang/String;)V
+[MASTER] 16:40:45.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch umd.cs.shop.JSJshop.main([Ljava/lang/String;)V: I5 Branch 1 IF_ICMPLT L42 - false in context: umd.cs.shop.JSJshop:main([Ljava/lang/String;)V
+[MASTER] 16:40:48.769 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] umd.cs.shop.JSJshop.getAppletURL(Ljava/lang/String;Ljavax/swing/JApplet;)Ljava/net/URL;
+[MASTER] 16:41:03.693 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] umd.cs.shop.JSJshop.setFile(Ljava/lang/String;Lumd/cs/shop/JSTaskAtom;)Lumd/cs/shop/JSPairPlanTSListNodes;
+[MASTER] 16:41:56.085 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+* Search finished after 123s and 24 generations, 7342 statements, best individual has fitness: 2872.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 38%
+* Total number of goals: 225
+* Number of covered goals: 85
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 30%
+* Total number of goals: 114
+* Number of covered goals: 34
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 40%
+* Total number of goals: 210
+* Number of covered goals: 85
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 18%
+* Total number of goals: 56
+* Number of covered goals: 10
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 95%
+* Total number of goals: 19
+* Number of covered goals: 18
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 95%
+* Total number of goals: 19
+* Number of covered goals: 18
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 27%
+* Total number of goals: 114
+* Number of covered goals: 31
+* Generated 28 tests with total length 134
+* Resulting test suite's coverage: 53% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 6%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 1
+* Writing JUnit test case 'JSJshop_ESTest' to /home/ubuntu/termite/mosa/tests/s1002/85_shop/evosuite-tests
+* Done!
+
+* Computation finished

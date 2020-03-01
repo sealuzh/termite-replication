@@ -1,0 +1,2723 @@
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: weka.core.Optimization
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/107_weka/evosuite-files/evosuite.properties
+* Connecting to master process on port 7485
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 02:46:50.768 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 02:46:50.778 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 02:46:50.779 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 02:46:50.794 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class weka.core.Optimization
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1014
+* Starting evolution
+[MASTER] 02:46:55.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] weka.core.Optimization.DynamicIntArray.<init>(Lweka/core/Optimization;I)V
+* Search finished after 123s and 57 generations, 38676 statements, best individual has fitness: 16704.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 10%
+* Total number of goals: 620
+* Number of covered goals: 59
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 8%
+* Total number of goals: 448
+* Number of covered goals: 37
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 28%
+* Total number of goals: 926
+* Number of covered goals: 258
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 10%
+* Total number of goals: 21
+* Number of covered goals: 2
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 50%
+* Total number of goals: 18
+* Number of covered goals: 9
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 50%
+* Total number of goals: 18
+* Number of covered goals: 9
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 8%
+* Total number of goals: 448
+* Number of covered goals: 37
+* Generated 17 tests with total length 161
+* Resulting test suite's coverage: 17% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 19%
+* Compiling and checking tests
+* Writing JUnit test case 'Optimization_ESTest' to /home/ubuntu/termite/rmosa/tests/s1014/107_weka/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: weka.filters.unsupervised.attribute.Discretize
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/107_weka/evosuite-files/evosuite.properties
+* Connecting to master process on port 7488
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 02:50:41.982 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 02:50:41.997 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 02:50:41.999 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 02:50:42.148 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 02:50:42.177 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 02:50:42.180 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+* Finished analyzing classpath
+* Generating tests for class weka.filters.unsupervised.attribute.Discretize
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1014
+* Starting evolution
+[MASTER] 02:50:50.357 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was weka.filters.unsupervised.attribute.Discretize.getUseEqualFrequency()Z: Line 600
+[MASTER] 02:50:50.367 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 240: weka.filters.unsupervised.attribute.Discretize.getUseEqualFrequency()Z:600 - InsertUnaryOp Negation
+[MASTER] 02:50:50.369 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] weka.filters.unsupervised.attribute.Discretize.listOptions()Ljava/util/Enumeration;
+[MASTER] 02:50:50.369 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] weka.filters.unsupervised.attribute.Discretize.setMakeBinary(Z)V
+[MASTER] 02:50:50.370 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] weka.filters.unsupervised.attribute.Discretize.desiredWeightOfInstancesPerIntervalTipText()Ljava/lang/String;
+[MASTER] 02:50:50.370 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] weka.filters.unsupervised.attribute.Discretize.getUseEqualFrequency()Z
+[MASTER] 02:50:50.372 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] weka.filters.unsupervised.attribute.Discretize.getOptions()[Ljava/lang/String;
+[MASTER] 02:50:50.373 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] weka.filters.unsupervised.attribute.Discretize.listOptions()Ljava/util/Enumeration;
+[MASTER] 02:50:50.373 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] weka.filters.unsupervised.attribute.Discretize.setMakeBinary(Z)V
+[MASTER] 02:50:50.374 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] weka.filters.unsupervised.attribute.Discretize.desiredWeightOfInstancesPerIntervalTipText()Ljava/lang/String;
+[MASTER] 02:50:50.374 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] weka.filters.unsupervised.attribute.Discretize.getUseEqualFrequency()Z
+[MASTER] 02:50:50.375 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] weka.filters.unsupervised.attribute.Discretize.calculateCutPointsByEqualWidthBinning(I)V
+[MASTER] 02:50:50.376 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] weka.filters.unsupervised.attribute.Discretize.getOptions()[Ljava/lang/String;
+[MASTER] 02:50:50.376 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch weka.filters.unsupervised.attribute.Discretize.setMakeBinary(Z)V: root-Branch in context: weka.filters.unsupervised.attribute.Discretize:setMakeBinary(Z)V
+[MASTER] 02:50:50.377 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch weka.filters.unsupervised.attribute.Discretize.getUseEqualFrequency()Z: root-Branch in context: weka.filters.unsupervised.attribute.Discretize:getUseEqualFrequency()Z
+* Search finished after 122s and 173 generations, 61421 statements, best individual has fitness: 9088.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 41%
+* Total number of goals: 370
+* Number of covered goals: 153
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 28%
+* Total number of goals: 242
+* Number of covered goals: 67
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 20
+* Number of covered goals: 20
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 27%
+* Total number of goals: 713
+* Number of covered goals: 194
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 40%
+* Total number of goals: 72
+* Number of covered goals: 29
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 45
+* Number of covered goals: 45
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 98%
+* Total number of goals: 45
+* Number of covered goals: 44
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 28%
+* Total number of goals: 242
+* Number of covered goals: 67
+* Generated 65 tests with total length 362
+* Resulting test suite's coverage: 35% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 11%
+* Compiling and checking tests
+[MASTER] 02:54:09.043 [logback-2] ERROR ClassStateSupport - Could not initialize weka.core.converters.ConverterUtils: null
+[MASTER] 02:54:09.546 [logback-2] ERROR ClassStateSupport - Could not initialize weka.gui.GenericObjectEditor: Could not initialize class weka.gui.GenericObjectEditor
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 1
+* Writing JUnit test case 'Discretize_ESTest' to /home/ubuntu/termite/rmosa/tests/s1014/107_weka/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: weka.experiment.ResultMatrix
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: weka.classifiers.bayes.NaiveBayesMultinomialText
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/107_weka/evosuite-files/evosuite.properties
+* Connecting to master process on port 7487
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/107_weka/evosuite-files/evosuite.properties
+* Connecting to master process on port 7491
+* Analyzing classpath: 
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 02:55:26.657 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 02:55:26.698 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 02:55:26.699 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 02:55:26.773 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class weka.experiment.ResultMatrix
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+[MASTER] 02:55:27.470 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 02:55:27.471 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 02:55:27.482 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 02:55:27.561 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 02:55:27.573 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 02:55:27.580 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1014
+* Starting evolution
+* Finished analyzing classpath
+* Generating tests for class weka.classifiers.bayes.NaiveBayesMultinomialText
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1014
+* Starting evolution
+[MASTER] 02:55:35.219 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] weka.experiment.ResultMatrix.globalInfo()Ljava/lang/String;
+[MASTER] 02:55:35.220 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] weka.experiment.ResultMatrix.getMeanWidth()I
+[MASTER] 02:55:35.221 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] weka.experiment.ResultMatrix.setRemoveFilterName(Z)V
+[MASTER] 02:55:35.221 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] weka.experiment.ResultMatrix.printRowNamesTipText()Ljava/lang/String;
+[MASTER] 02:55:35.221 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] weka.experiment.ResultMatrix.setColOrder([I)V
+[MASTER] 02:55:35.222 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] weka.experiment.ResultMatrix.toArray()[[Ljava/lang/String;
+[MASTER] 02:55:35.222 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] weka.experiment.ResultMatrix.globalInfo()Ljava/lang/String;
+[MASTER] 02:55:35.224 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] weka.experiment.ResultMatrix.getMeanWidth()I
+[MASTER] 02:55:35.224 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] weka.experiment.ResultMatrix.setRemoveFilterName(Z)V
+[MASTER] 02:55:35.225 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] weka.experiment.ResultMatrix.printRowNamesTipText()Ljava/lang/String;
+[MASTER] 02:55:35.225 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] weka.experiment.ResultMatrix.setColOrder([I)V
+[MASTER] 02:55:35.226 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] weka.experiment.ResultMatrix.toArray()[[Ljava/lang/String;
+[MASTER] 02:56:18.124 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleEntry<K, V> : Type points to itself
+[MASTER] 02:56:18.126 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleImmutableEntry<K, V> : Type points to itself
+[MASTER] 02:56:18.796 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 02:56:20.752 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: weka.classifiers.bayes.NaiveBayesMultinomialText.getTokenizer()Lweka/core/tokenizers/Tokenizer;:Null
+* Search finished after 123s and 119 generations, 67999 statements, best individual has fitness: 2056.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 86%
+* Total number of goals: 338
+* Number of covered goals: 290
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 77%
+* Total number of goals: 194
+* Number of covered goals: 149
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 18
+* Number of covered goals: 18
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 88%
+* Total number of goals: 476
+* Number of covered goals: 420
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 46%
+* Total number of goals: 112
+* Number of covered goals: 52
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 49
+* Number of covered goals: 49
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 49
+* Number of covered goals: 49
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 75%
+* Total number of goals: 194
+* Number of covered goals: 146
+* Generated 67 tests with total length 680
+* Resulting test suite's coverage: 82% (average coverage for all fitness functions)
+* Generating assertions
+* Search finished after 133s and 11 generations, 12175 statements, best individual has fitness: 3528.0
+[MASTER] 02:57:45.895 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 17 seconds more than allowed.
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 97%
+* Total number of goals: 647
+* Number of covered goals: 626
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 89%
+* Total number of goals: 441
+* Number of covered goals: 394
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 15
+* Number of covered goals: 15
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 84%
+* Total number of goals: 678
+* Number of covered goals: 572
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 36%
+* Total number of goals: 244
+* Number of covered goals: 87
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 89%
+* Total number of goals: 124
+* Number of covered goals: 110
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 89%
+* Total number of goals: 124
+* Number of covered goals: 110
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 81%
+* Total number of goals: 441
+* Number of covered goals: 359
+* Generated 132 tests with total length 3143
+* Resulting test suite's coverage: 84% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 51%
+* Compiling and checking tests
+[MASTER] 03:01:44.611 [logback-2] ERROR JUnitAnalyzer - Compilation failed on compilation units: [RegularFileObject[/tmp/EvoSuite_35_1575601304569/weka/classifiers/bayes/NaiveBayesMultinomialText_35_tmp__ESTest.java], RegularFileObject[/tmp/EvoSuite_35_1575601304569/weka/classifiers/bayes/NaiveBayesMultinomialText_35_tmp__ESTest_scaffolding.java]]
+[MASTER] 03:01:44.612 [logback-2] ERROR JUnitAnalyzer - Classpath: /home/ubuntu/termite/projects/107_weka/weka.jar:/home/ubuntu/termite/projects/107_weka/lib/packageManager.jar:/home/ubuntu/termite/projects/107_weka/lib/JFlex.jar:/home/ubuntu/termite/projects/107_weka/lib/java-cup.jar:/home/ubuntu/termite/evosuite.jar:/home/ubuntu/termite/projects/107_weka/weka.jar:/home/ubuntu/termite/projects/107_weka/lib/packageManager.jar:/home/ubuntu/termite/projects/107_weka/lib/JFlex.jar:/home/ubuntu/termite/projects/107_weka/lib/java-cup.jar
+[MASTER] 03:01:44.612 [logback-2] ERROR JUnitAnalyzer - evosuiteCP: /home/ubuntu/termite/evosuite.jar:/home/ubuntu/termite/projects/107_weka/weka.jar:/home/ubuntu/termite/projects/107_weka/lib/packageManager.jar:/home/ubuntu/termite/projects/107_weka/lib/JFlex.jar:/home/ubuntu/termite/projects/107_weka/lib/java-cup.jar
+[MASTER] 03:01:44.617 [logback-2] ERROR JUnitAnalyzer - Diagnostic: weka.classifiers.bayes.NaiveBayesMultinomialText.Count has private access in weka.classifiers.bayes.NaiveBayesMultinomialText: 27
+[MASTER] 03:01:44.617 [logback-2] ERROR JUnitAnalyzer - Diagnostic: weka.classifiers.bayes.NaiveBayesMultinomialText.Count has private access in weka.classifiers.bayes.NaiveBayesMultinomialText: 27
+[MASTER] 03:01:44.618 [logback-2] ERROR JUnitAnalyzer - RegularFileObject[/tmp/EvoSuite_35_1575601304569/weka/classifiers/bayes/NaiveBayesMultinomialText_35_tmp__ESTest.java]
+1: /*
+2:  * This file was automatically generated by EvoSuite
+3:  * Fri Dec 06 03:01:44 GMT 2019
+4:  */
+5: 
+6: package weka.classifiers.bayes;
+7: 
+8: import org.junit.Test;
+9: import static org.junit.Assert.*;
+10: import java.util.LinkedHashMap;
+11: import org.evosuite.runtime.EvoRunner;
+12: import org.evosuite.runtime.EvoRunnerParameters;
+13: import org.junit.runner.RunWith;
+14: import weka.classifiers.AbstractClassifier;
+15: import weka.classifiers.bayes.NaiveBayesMultinomialText;
+16: 
+17: @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, useJEE = true) 
+18: public class NaiveBayesMultinomialText_35_tmp__ESTest extends NaiveBayesMultinomialText_35_tmp__ESTest_scaffolding {
+19: 
+20:   /**
+21:   //Test case number: 0
+22:   /*Coverage entropy=3.3279501861614795
+23:   */
+24:   @Test(timeout = 4000)
+25:   public void test0()  throws Throwable  {
+26:       NaiveBayesMultinomialText naiveBayesMultinomialText0 = new NaiveBayesMultinomialText();
+27:       LinkedHashMap<String, NaiveBayesMultinomialText.Count> linkedHashMap0 = new LinkedHashMap<String, NaiveBayesMultinomialText.Count>();
+28:       naiveBayesMultinomialText0.setLowercaseTokens(false);
+29:       naiveBayesMultinomialText0.setLNorm((-770.98458392261));
+30:       AbstractClassifier.runClassifier(naiveBayesMultinomialText0, (String[]) null);
+31:       naiveBayesMultinomialText0.getOptions();
+32:       naiveBayesMultinomialText0.setNorm((-169.73846));
+33:       naiveBayesMultinomialText0.getOptions();
+34:       naiveBayesMultinomialText0.setNorm((-330.3546677));
+35:       naiveBayesMultinomialText0.getLowercaseTokens();
+36:       naiveBayesMultinomialText0.pruneDictionary();
+37:       NaiveBayesMultinomialText naiveBayesMultinomialText1 = new NaiveBayesMultinomialText();
+38:       naiveBayesMultinomialText1.setLNorm((-169.73846));
+39:       naiveBayesMultinomialText0.setNorm((-169.73846));
+40:       naiveBayesMultinomialText1.getNormalizeDocLength();
+41:       naiveBayesMultinomialText0.getStopwords();
+42:       naiveBayesMultinomialText1.getLNorm();
+43:       naiveBayesMultinomialText1.minWordFrequencyTipText();
+44:       assertEquals((-169.73846), naiveBayesMultinomialText1.getLNorm(), 0.01);
+45:   }
+46: }
+RegularFileObject[/tmp/EvoSuite_35_1575601304569/weka/classifiers/bayes/NaiveBayesMultinomialText_35_tmp__ESTest.java]
+1: /**
+2:  * Scaffolding file used to store all the setups needed to run 
+3:  * tests automatically generated by EvoSuite
+4:  * Fri Dec 06 03:01:44 GMT 2019
+5:  */
+6: 
+7: package weka.classifiers.bayes;
+8: 
+9: import org.evosuite.runtime.annotation.EvoSuiteClassExclude;
+10: import org.junit.BeforeClass;
+11: import org.junit.Before;
+12: import org.junit.After;
+13: import org.junit.AfterClass;
+14: import org.evosuite.runtime.sandbox.Sandbox;
+15: import org.evosuite.runtime.sandbox.Sandbox.SandboxMode;
+16: 
+17: @EvoSuiteClassExclude
+18: public class NaiveBayesMultinomialText_35_tmp__ESTest_scaffolding {
+19: 
+20:   @org.junit.Rule 
+21:   public org.evosuite.runtime.vnet.NonFunctionalRequirementRule nfr = new org.evosuite.runtime.vnet.NonFunctionalRequirementRule();
+22: 
+23:   private static final java.util.Properties defaultProperties = (java.util.Properties) java.lang.System.getProperties().clone(); 
+24: 
+25:   private org.evosuite.runtime.thread.ThreadStopper threadStopper =  new org.evosuite.runtime.thread.ThreadStopper (org.evosuite.runtime.thread.KillSwitchHandler.getInstance(), 3000);
+26: 
+27: 
+28:   @BeforeClass 
+29:   public static void initEvoSuiteFramework() { 
+30:     org.evosuite.runtime.RuntimeSettings.className = "weka.classifiers.bayes.NaiveBayesMultinomialText"; 
+31:     org.evosuite.runtime.GuiSupport.initialize(); 
+32:     org.evosuite.runtime.RuntimeSettings.maxNumberOfThreads = 100; 
+33:     org.evosuite.runtime.RuntimeSettings.maxNumberOfIterationsPerLoop = 10000; 
+34:     org.evosuite.runtime.RuntimeSettings.mockSystemIn = true; 
+35:     org.evosuite.runtime.RuntimeSettings.sandboxMode = org.evosuite.runtime.sandbox.Sandbox.SandboxMode.RECOMMENDED; 
+36:     org.evosuite.runtime.sandbox.Sandbox.initializeSecurityManagerForSUT(); 
+37:     org.evosuite.runtime.classhandling.JDKClassResetter.init();
+38:     setSystemProperties();
+39:     initializeClasses();
+40:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+41:   } 
+42: 
+43:   @AfterClass 
+44:   public static void clearEvoSuiteFramework(){ 
+45:     Sandbox.resetDefaultSecurityManager(); 
+46:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+47:   } 
+48: 
+49:   @Before 
+50:   public void initTestCase(){ 
+51:     threadStopper.storeCurrentThreads();
+52:     threadStopper.startRecordingTime();
+53:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().initHandler(); 
+54:     org.evosuite.runtime.sandbox.Sandbox.goingToExecuteSUTCode(); 
+55:     setSystemProperties(); 
+56:     org.evosuite.runtime.GuiSupport.setHeadless(); 
+57:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+58:     org.evosuite.runtime.agent.InstrumentingAgent.activate(); 
+59:   } 
+60: 
+61:   @After 
+62:   public void doneWithTestCase(){ 
+63:     threadStopper.killAndJoinClientThreads();
+64:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().safeExecuteAddedHooks(); 
+65:     org.evosuite.runtime.classhandling.JDKClassResetter.reset(); 
+66:     resetClasses(); 
+67:     org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(); 
+68:     org.evosuite.runtime.agent.InstrumentingAgent.deactivate(); 
+69:     org.evosuite.runtime.GuiSupport.restoreHeadlessMode(); 
+70:   } 
+71: 
+72:   public static void setSystemProperties() {
+73:  
+74:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+75:     java.lang.System.setProperty("file.encoding", "UTF-8"); 
+76:     java.lang.System.setProperty("java.awt.headless", "true"); 
+77:     java.lang.System.setProperty("java.io.tmpdir", "/tmp"); 
+78:     java.lang.System.setProperty("user.country", "US"); 
+79:     java.lang.System.setProperty("user.dir", "/home/ubuntu/termite/projects/107_weka"); 
+80:     java.lang.System.setProperty("user.home", "/home/ubuntu"); 
+81:     java.lang.System.setProperty("user.language", "en"); 
+82:     java.lang.System.setProperty("user.name", "ubuntu"); 
+83:     java.lang.System.setProperty("user.timezone", "Etc/UTC"); 
+84:   }
+85: 
+86:   private static void initializeClasses() {
+87:     org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(NaiveBayesMultinomialText_35_tmp__ESTest_scaffolding.class.getClassLoader() ,
+88:       "weka.core.Environment",
+89:       "weka.core.TestInstances",
+90:       "weka.filters.unsupervised.attribute.NominalToBinary",
+91:       "weka.core.DistanceFunction",
+92:       "org.pentaho.packageManagement.PackageConstraint",
+93:       "weka.attributeSelection.AttributeEvaluator",
+94:       "org.pentaho.packageManagement.Package",
+95:       "weka.core.xml.XMLBasicSerialization",
+96:       "weka.classifiers.CostMatrix",
+97:       "weka.core.neighboursearch.BallTree",
+98:       "weka.filters.UnsupervisedFilter",
+99:       "weka.core.logging.Logger$Level",
+100:       "weka.classifiers.evaluation.output.prediction.AbstractOutput",
+101:       "weka.core.DenseInstance",
+102:       "weka.core.stemmers.Stemmer",
+103:       "org.pentaho.packageManagement.DefaultPackageManager",
+104:       "org.bounce.net.DefaultAuthenticator",
+105:       "weka.estimators.IncrementalEstimator",
+106:       "weka.estimators.Estimator$Builder",
+107:       "weka.core.stemmers.NullStemmer",
+108:       "weka.classifiers.functions.SGDText",
+109:       "weka.core.Utils",
+110:       "weka.core.CustomDisplayStringProvider",
+111:       "weka.core.tokenizers.Tokenizer",
+112:       "weka.core.NormalizableDistance",
+113:       "weka.core.NoSupportForMissingValuesException",
+114:       "weka.classifiers.functions.SMOreg",
+115:       "weka.classifiers.UpdateableClassifier",
+116:       "weka.classifiers.bayes.NaiveBayesMultinomialText",
+117:       "weka.core.MultiInstanceCapabilitiesHandler",
+118:       "weka.core.Copyable",
+119:       "weka.core.Capabilities",
+120:       "weka.core.neighboursearch.balltrees.TopDownConstructor",
+121:       "weka.core.BinarySparseInstance",
+122:       "weka.classifiers.bayes.NaiveBayesMultinomialText$Count",
+123:       "weka.classifiers.functions.supportVector.CachedKernel",
+124:       "weka.core.SerializedObject",
+125:       "weka.clusterers.UpdateableClusterer",
+126:       "weka.core.Summarizable",
+127:       "weka.core.AdditionalMeasureProducer",
+128:       "weka.core.neighboursearch.balltrees.BallNode",
+129:       "org.pentaho.packageManagement.PackageManager$1",
+130:       "weka.core.Drawable",
+131:       "weka.core.CapabilitiesHandler",
+132:       "weka.core.neighboursearch.NearestNeighbourSearch$MyHeap",
+133:       "weka.attributeSelection.ASEvaluation",
+134:       "weka.core.AbstractInstance",
+135:       "weka.core.scripting.JythonObject",
+136:       "weka.core.SelectedTag",
+137:       "weka.classifiers.functions.supportVector.RegOptimizer",
+138:       "org.pentaho.packageManagement.DefaultPackage",
+139:       "weka.core.neighboursearch.balltrees.BallSplitter",
+140:       "weka.core.Version",
+141:       "weka.core.Tag",
+142:       "weka.classifiers.AbstractClassifier",
+143:       "weka.filters.unsupervised.attribute.Center",
+144:       "weka.core.OptionHandler",
+145:       "weka.core.WekaException",
+146:       "weka.filters.StreamableFilter",
+147:       "weka.core.Range",
+148:       "weka.core.neighboursearch.NearestNeighbourSearch$MyHeapElement",
+149:       "weka.core.scripting.JythonSerializableObject",
+150:       "weka.classifiers.Classifier",
+151:       "weka.core.Capabilities$Capability",
+152:       "weka.core.SparseInstance",
+153:       "org.pentaho.packageManagement.PackageManager",
+154:       "weka.estimators.PoissonEstimator",
+155:       "weka.attributeSelection.AttributeTransformer",
+156:       "weka.core.tokenizers.WordTokenizer",
+157:       "weka.classifiers.misc.SerializedClassifier",
+158:       "weka.filters.unsupervised.attribute.ReplaceMissingValues",
+159:       "weka.attributeSelection.PrincipalComponents",
+160:       "weka.core.stemmers.SnowballStemmer",
+161:       "weka.core.stemmers.LovinsStemmer",
+162:       "weka.classifiers.Evaluation",
+163:       "weka.classifiers.functions.supportVector.Kernel",
+164:       "weka.core.WekaPackageManager",
+165:       "weka.core.TechnicalInformationHandler",
+166:       "weka.core.neighboursearch.LinearNNSearch",
+167:       "weka.core.tokenizers.CharacterDelimitedTokenizer",
+168:       "weka.core.Option",
+169:       "weka.core.neighboursearch.PerformanceStats",
+170:       "weka.filters.unsupervised.attribute.PotentialClassIgnorer",
+171:       "weka.filters.Sourcable",
+172:       "weka.core.Attribute",
+173:       "weka.core.Stopwords",
+174:       "weka.core.FastVector",
+175:       "weka.core.neighboursearch.balltrees.PointsClosestToFurthestChildren",
+176:       "weka.core.UnassignedDatasetException",
+177:       "weka.core.neighboursearch.balltrees.BallTreeConstructor",
+178:       "weka.classifiers.functions.supportVector.RegSMOImproved",
+179:       "weka.classifiers.RandomizableClassifier",
+180:       "weka.core.RevisionUtils",
+181:       "weka.core.Instance",
+182:       "weka.classifiers.functions.supportVector.RegSMO",
+183:       "weka.classifiers.functions.supportVector.PolyKernel",
+184:       "weka.core.ProtectedProperties",
+185:       "weka.estimators.Estimator",
+186:       "weka.core.AttributeStats",
+187:       "weka.core.WeightedInstancesHandler",
+188:       "weka.core.neighboursearch.NearestNeighbourSearch",
+189:       "weka.filters.unsupervised.attribute.Remove",
+190:       "weka.core.Randomizable",
+191:       "weka.core.EuclideanDistance",
+192:       "weka.core.Instances",
+193:       "weka.classifiers.bayes.NaiveBayesMultinomial",
+194:       "weka.filters.unsupervised.attribute.Normalize",
+195:       "weka.core.UnassignedClassException",
+196:       "weka.classifiers.rules.ZeroR",
+197:       "weka.filters.unsupervised.attribute.Standardize",
+198:       "weka.attributeSelection.UnsupervisedAttributeEvaluator",
+199:       "weka.core.stemmers.Stemming",
+200:       "weka.core.TechnicalInformation",
+201:       "weka.core.UnsupportedAttributeTypeException",
+202:       "weka.classifiers.Sourcable",
+203:       "weka.core.RevisionHandler",
+204:       "weka.classifiers.evaluation.output.prediction.PlainText",
+205:       "weka.core.neighboursearch.TreePerformanceStats",
+206:       "weka.core.xml.XMLSerialization",
+207:       "weka.classifiers.xml.XMLClassifier",
+208:       "weka.classifiers.lazy.IBk",
+209:       "weka.filters.Filter"
+210:     );
+211:   } 
+212: 
+213:   private static void resetClasses() {
+214:     org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(NaiveBayesMultinomialText_35_tmp__ESTest_scaffolding.class.getClassLoader()); 
+215: 
+216:     org.evosuite.runtime.classhandling.ClassStateSupport.resetClasses(
+217:       "weka.classifiers.AbstractClassifier",
+218:       "weka.classifiers.bayes.NaiveBayesMultinomialText",
+219:       "weka.classifiers.bayes.NaiveBayesMultinomialText$Count",
+220:       "weka.core.Capabilities$Capability",
+221:       "weka.core.tokenizers.Tokenizer",
+222:       "weka.core.tokenizers.CharacterDelimitedTokenizer",
+223:       "weka.core.tokenizers.WordTokenizer",
+224:       "weka.core.stemmers.NullStemmer",
+225:       "weka.core.Utils",
+226:       "weka.classifiers.Evaluation",
+227:       "weka.core.Option",
+228:       "weka.core.RevisionUtils",
+229:       "weka.filters.Filter",
+230:       "weka.filters.supervised.attribute.Discretize",
+231:       "weka.core.Range",
+232:       "weka.core.Capabilities",
+233:       "org.pentaho.packageManagement.PackageManager",
+234:       "org.pentaho.packageManagement.DefaultPackageManager",
+235:       "weka.core.Version",
+236:       "weka.core.Environment",
+237:       "weka.core.WekaPackageManager",
+238:       "weka.core.tokenizers.NGramTokenizer",
+239:       "weka.core.SerializedObject",
+240:       "weka.classifiers.RandomizableClassifier",
+241:       "weka.core.Tag",
+242:       "weka.classifiers.functions.SGDText",
+243:       "weka.core.neighboursearch.NearestNeighbourSearch",
+244:       "weka.core.neighboursearch.KDTree",
+245:       "weka.core.NormalizableDistance",
+246:       "weka.core.EuclideanDistance",
+247:       "weka.core.neighboursearch.kdtrees.KDTreeNodeSplitter",
+248:       "weka.core.neighboursearch.kdtrees.SlidingMidPointOfWidestSide",
+249:       "weka.classifiers.SingleClassifierEnhancer",
+250:       "weka.classifiers.misc.InputMappedClassifier",
+251:       "weka.classifiers.rules.ZeroR",
+252:       "weka.core.AbstractInstance",
+253:       "weka.core.SparseInstance",
+254:       "weka.core.BinarySparseInstance",
+255:       "weka.core.Instances",
+256:       "weka.core.converters.ArffLoader$ArffReader",
+257:       "weka.core.UnassignedDatasetException",
+258:       "weka.core.neighboursearch.CoverTree",
+259:       "weka.core.neighboursearch.balltrees.BallNode",
+260:       "weka.classifiers.misc.SerializedClassifier",
+261:       "weka.core.Stopwords",
+262:       "weka.attributeSelection.ASEvaluation",
+263:       "weka.attributeSelection.UnsupervisedAttributeEvaluator",
+264:       "weka.attributeSelection.PrincipalComponents",
+265:       "weka.attributeSelection.AttributeSelection",
+266:       "weka.core.TestInstances",
+267:       "weka.core.DenseInstance",
+268:       "weka.classifiers.RandomizableSingleClassifierEnhancer",
+269:       "weka.classifiers.meta.CostSensitiveClassifier",
+270:       "weka.classifiers.CostMatrix",
+271:       "weka.classifiers.bayes.NaiveBayes",
+272:       "weka.core.neighboursearch.BallTree",
+273:       "weka.core.neighboursearch.balltrees.BallTreeConstructor",
+274:       "weka.core.neighboursearch.balltrees.TopDownConstructor",
+275:       "weka.core.neighboursearch.balltrees.BallSplitter",
+276:       "weka.core.neighboursearch.balltrees.PointsClosestToFurthestChildren",
+277:       "weka.core.neighboursearch.NearestNeighbourSearch$MyHeap",
+278:       "weka.core.neighboursearch.NearestNeighbourSearch$MyHeapElement",
+279:       "weka.core.Attribute",
+280:       "weka.core.ProtectedProperties",
+281:       "weka.core.stemmers.LovinsStemmer",
+282:       "weka.core.stemmers.Stemming",
+283:       "weka.classifiers.lazy.IBk",
+284:       "weka.core.neighboursearch.LinearNNSearch",
+285:       "weka.core.SelectedTag",
+286:       "weka.core.stemmers.SnowballStemmer",
+287:       "weka.core.tokenizers.AlphabeticTokenizer",
+288:       "weka.classifiers.functions.SMO",
+289:       "weka.classifiers.functions.supportVector.Kernel",
+290:       "weka.classifiers.functions.supportVector.CachedKernel",
+291:       "weka.classifiers.functions.supportVector.PolyKernel",
+292:       "weka.classifiers.meta.MultiClassClassifier",
+293:       "weka.classifiers.functions.Logistic",
+294:       "weka.classifiers.bayes.BayesNet",
+295:       "weka.classifiers.bayes.net.search.SearchAlgorithm",
+296:       "weka.classifiers.bayes.net.search.local.LocalScoreSearchAlgorithm",
+297:       "weka.classifiers.bayes.net.search.local.K2",
+298:       "weka.classifiers.bayes.net.estimate.BayesNetEstimator",
+299:       "weka.classifiers.bayes.net.estimate.SimpleEstimator",
+300:       "weka.classifiers.functions.GaussianProcesses",
+301:       "weka.filters.unsupervised.attribute.PotentialClassIgnorer",
+302:       "weka.filters.unsupervised.attribute.ReplaceMissingValues",
+303:       "weka.classifiers.functions.SimpleLinearRegression",
+304:       "weka.classifiers.IteratedSingleClassifierEnhancer",
+305:       "weka.classifiers.ParallelIteratedSingleClassifierEnhancer",
+306:       "weka.classifiers.RandomizableParallelIteratedSingleClassifierEnhancer",
+307:       "weka.classifiers.meta.RandomCommittee",
+308:       "weka.classifiers.trees.RandomTree",
+309:       "weka.classifiers.rules.JRip",
+310:       "weka.core.WekaException",
+311:       "weka.core.stemmers.IteratedLovinsStemmer",
+312:       "weka.core.neighboursearch.balltrees.BottomUpConstructor",
+313:       "weka.classifiers.bayes.NaiveBayesMultinomial",
+314:       "weka.classifiers.trees.LMT",
+315:       "weka.classifiers.functions.supportVector.PrecomputedKernelMatrixKernel",
+316:       "weka.classifiers.bayes.net.BIFReader",
+317:       "weka.classifiers.functions.LinearRegression",
+318:       "weka.core.TechnicalInformation",
+319:       "weka.core.TechnicalInformation$Type",
+320:       "weka.core.TechnicalInformation$Field",
+321:       "weka.core.FindWithCapabilities",
+322:       "weka.core.SingleIndex",
+323:       "weka.classifiers.functions.SMOreg",
+324:       "weka.classifiers.functions.supportVector.RegOptimizer",
+325:       "weka.classifiers.functions.supportVector.RegSMO",
+326:       "weka.classifiers.functions.supportVector.RegSMOImproved",
+327:       "weka.core.UnsupportedAttributeTypeException",
+328:       "weka.core.WekaEnumeration",
+329:       "weka.core.Attribute$1",
+330:       "weka.core.neighboursearch.balltrees.MiddleOutConstructor",
+331:       "weka.classifiers.trees.m5.M5Base",
+332:       "weka.classifiers.rules.M5Rules",
+333:       "weka.estimators.Estimator",
+334:       "weka.estimators.NormalEstimator",
+335:       "weka.classifiers.trees.REPTree",
+336:       "weka.classifiers.functions.MultilayerPerceptron",
+337:       "weka.core.FastVector",
+338:       "weka.filters.unsupervised.attribute.NominalToBinary",
+339:       "weka.classifiers.functions.neural.SigmoidUnit",
+340:       "weka.classifiers.functions.neural.LinearUnit",
+341:       "weka.classifiers.meta.AttributeSelectedClassifier",
+342:       "weka.attributeSelection.CfsSubsetEval",
+343:       "weka.attributeSelection.ASSearch",
+344:       "weka.attributeSelection.BestFirst",
+345:       "weka.classifiers.trees.J48",
+346:       "weka.attributeSelection.InfoGainAttributeEval",
+347:       "weka.attributeSelection.CorrelationAttributeEval",
+348:       "weka.classifiers.MultipleClassifiersCombiner",
+349:       "weka.classifiers.RandomizableMultipleClassifiersCombiner",
+350:       "weka.classifiers.meta.MultiScheme",
+351:       "weka.core.Javadoc",
+352:       "weka.core.TechnicalInformationHandlerJavadoc",
+353:       "weka.classifiers.lazy.KStar",
+354:       "weka.core.UnassignedClassException",
+355:       "weka.classifiers.meta.FilteredClassifier",
+356:       "weka.filters.supervised.attribute.AttributeSelection",
+357:       "weka.attributeSelection.GreedyStepwise",
+358:       "weka.core.MinkowskiDistance",
+359:       "weka.filters.SimpleFilter",
+360:       "weka.filters.SimpleStreamFilter",
+361:       "weka.filters.MultiFilter",
+362:       "weka.filters.AllFilter",
+363:       "weka.classifiers.meta.AdditiveRegression",
+364:       "weka.classifiers.trees.DecisionStump",
+365:       "weka.classifiers.meta.ClassificationViaRegression",
+366:       "weka.classifiers.trees.M5P",
+367:       "weka.classifiers.meta.Bagging",
+368:       "weka.classifiers.functions.supportVector.Puk",
+369:       "weka.attributeSelection.WrapperSubsetEval",
+370:       "weka.core.ChebyshevDistance",
+371:       "weka.core.SerializationHelper",
+372:       "weka.core.ListOptions",
+373:       "weka.core.ManhattanDistance",
+374:       "weka.attributeSelection.ReliefFAttributeEval",
+375:       "weka.core.ClassDiscovery",
+376:       "weka.core.ClassCache",
+377:       "weka.core.AllJavadoc",
+378:       "weka.core.Check",
+379:       "weka.core.CheckGOE",
+380:       "weka.classifiers.meta.CVParameterSelection",
+381:       "weka.core.CheckOptionHandler",
+382:       "weka.estimators.DiscreteEstimator",
+383:       "weka.classifiers.trees.RandomForest",
+384:       "weka.attributeSelection.GainRatioAttributeEval",
+385:       "weka.core.OptionHandlerJavadoc",
+386:       "weka.estimators.PoissonEstimator",
+387:       "weka.core.Queue",
+388:       "weka.core.AttributeLocator",
+389:       "weka.core.StringLocator",
+390:       "weka.core.RelationalLocator",
+391:       "weka.classifiers.meta.Vote",
+392:       "weka.core.GlobalInfoJavadoc",
+393:       "weka.classifiers.RandomizableIteratedSingleClassifierEnhancer",
+394:       "weka.classifiers.meta.LogitBoost",
+395:       "weka.attributeSelection.OneRAttributeEval",
+396:       "weka.classifiers.functions.SimpleLogistic",
+397:       "weka.classifiers.meta.AdaBoostM1",
+398:       "weka.classifiers.bayes.NaiveBayesMultinomialUpdateable",
+399:       "weka.classifiers.functions.supportVector.RBFKernel",
+400:       "weka.core.ContingencyTables",
+401:       "weka.core.Queue$QueueNode",
+402:       "weka.core.AttributeStats",
+403:       "weka.experiment.Stats",
+404:       "weka.classifiers.trees.j48.ClassifierTree",
+405:       "weka.classifiers.trees.j48.C45PruneableClassifierTree",
+406:       "weka.attributeSelection.SymmetricalUncertAttributeEval",
+407:       "weka.classifiers.lazy.LWL",
+408:       "weka.classifiers.ParallelMultipleClassifiersCombiner",
+409:       "weka.classifiers.RandomizableParallelMultipleClassifiersCombiner",
+410:       "weka.classifiers.meta.Stacking",
+411:       "weka.classifiers.functions.supportVector.StringKernel",
+412:       "weka.classifiers.rules.DecisionTable",
+413:       "weka.classifiers.functions.SGD",
+414:       "weka.classifiers.meta.MultiClassClassifierUpdateable",
+415:       "weka.classifiers.bayes.NaiveBayesUpdateable"
+416:     );
+417:   }
+418: }
+
+[MASTER] 03:01:44.619 [logback-2] ERROR JUnitAnalyzer - Failed to compile test case:
+NaiveBayesMultinomialText naiveBayesMultinomialText0 = new NaiveBayesMultinomialText();
+LinkedHashMap<String, NaiveBayesMultinomialText.Count> linkedHashMap0 = new LinkedHashMap<String, NaiveBayesMultinomialText.Count>();
+naiveBayesMultinomialText0.setLowercaseTokens(false);
+naiveBayesMultinomialText0.setLNorm((-770.98458392261));
+AbstractClassifier.runClassifier(naiveBayesMultinomialText0, (String[]) null);
+naiveBayesMultinomialText0.getOptions();
+naiveBayesMultinomialText0.setNorm((-169.73846));
+naiveBayesMultinomialText0.getOptions();
+naiveBayesMultinomialText0.setNorm((-330.3546677));
+naiveBayesMultinomialText0.getLowercaseTokens();
+naiveBayesMultinomialText0.pruneDictionary();
+NaiveBayesMultinomialText naiveBayesMultinomialText1 = new NaiveBayesMultinomialText();
+naiveBayesMultinomialText1.setLNorm((-169.73846));
+naiveBayesMultinomialText0.setNorm((-169.73846));
+naiveBayesMultinomialText1.getNormalizeDocLength();
+naiveBayesMultinomialText0.getStopwords();
+naiveBayesMultinomialText1.getLNorm();
+naiveBayesMultinomialText1.minWordFrequencyTipText();
+assertEquals((-169.73846), naiveBayesMultinomialText1.getLNorm(), 0.01);
+
+
+[MASTER] 03:01:44.657 [logback-2] ERROR JUnitAnalyzer - Compilation failed on compilation units: [RegularFileObject[/tmp/EvoSuite_36_1575601304620/weka/classifiers/bayes/NaiveBayesMultinomialText_36_tmp__ESTest.java], RegularFileObject[/tmp/EvoSuite_36_1575601304620/weka/classifiers/bayes/NaiveBayesMultinomialText_36_tmp__ESTest_scaffolding.java]]
+[MASTER] 03:01:44.658 [logback-2] ERROR JUnitAnalyzer - Classpath: /home/ubuntu/termite/projects/107_weka/weka.jar:/home/ubuntu/termite/projects/107_weka/lib/packageManager.jar:/home/ubuntu/termite/projects/107_weka/lib/JFlex.jar:/home/ubuntu/termite/projects/107_weka/lib/java-cup.jar:/home/ubuntu/termite/evosuite.jar:/home/ubuntu/termite/projects/107_weka/weka.jar:/home/ubuntu/termite/projects/107_weka/lib/packageManager.jar:/home/ubuntu/termite/projects/107_weka/lib/JFlex.jar:/home/ubuntu/termite/projects/107_weka/lib/java-cup.jar
+[MASTER] 03:01:44.658 [logback-2] ERROR JUnitAnalyzer - evosuiteCP: /home/ubuntu/termite/evosuite.jar:/home/ubuntu/termite/projects/107_weka/weka.jar:/home/ubuntu/termite/projects/107_weka/lib/packageManager.jar:/home/ubuntu/termite/projects/107_weka/lib/JFlex.jar:/home/ubuntu/termite/projects/107_weka/lib/java-cup.jar
+[MASTER] 03:01:44.658 [logback-2] ERROR JUnitAnalyzer - Diagnostic: weka.classifiers.bayes.NaiveBayesMultinomialText.Count has private access in weka.classifiers.bayes.NaiveBayesMultinomialText: 35
+[MASTER] 03:01:44.658 [logback-2] ERROR JUnitAnalyzer - Diagnostic: weka.classifiers.bayes.NaiveBayesMultinomialText.Count has private access in weka.classifiers.bayes.NaiveBayesMultinomialText: 35
+[MASTER] 03:01:44.659 [logback-2] ERROR JUnitAnalyzer - RegularFileObject[/tmp/EvoSuite_36_1575601304620/weka/classifiers/bayes/NaiveBayesMultinomialText_36_tmp__ESTest.java]
+1: /*
+2:  * This file was automatically generated by EvoSuite
+3:  * Fri Dec 06 03:01:44 GMT 2019
+4:  */
+5: 
+6: package weka.classifiers.bayes;
+7: 
+8: import org.junit.Test;
+9: import static org.junit.Assert.*;
+10: import static org.evosuite.runtime.EvoAssertions.*;
+11: import java.util.LinkedHashMap;
+12: import org.evosuite.runtime.EvoRunner;
+13: import org.evosuite.runtime.EvoRunnerParameters;
+14: import org.evosuite.runtime.mock.java.util.MockRandom;
+15: import org.junit.runner.RunWith;
+16: import weka.classifiers.AbstractClassifier;
+17: import weka.classifiers.CostMatrix;
+18: import weka.classifiers.bayes.NaiveBayesMultinomialText;
+19: import weka.core.Instance;
+20: import weka.core.Instances;
+21: import weka.core.TestInstances;
+22: import weka.core.neighboursearch.BallTree;
+23: import weka.core.neighboursearch.balltrees.BallNode;
+24: 
+25: @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, useJEE = true) 
+26: public class NaiveBayesMultinomialText_36_tmp__ESTest extends NaiveBayesMultinomialText_36_tmp__ESTest_scaffolding {
+27: 
+28:   /**
+29:   //Test case number: 0
+30:   /*Coverage entropy=3.263497813148872
+31:   */
+32:   @Test(timeout = 4000)
+33:   public void test0()  throws Throwable  {
+34:       NaiveBayesMultinomialText naiveBayesMultinomialText0 = new NaiveBayesMultinomialText();
+35:       LinkedHashMap<String, NaiveBayesMultinomialText.Count> linkedHashMap0 = new LinkedHashMap<String, NaiveBayesMultinomialText.Count>();
+36:       boolean boolean0 = true;
+37:       naiveBayesMultinomialText0.setLowercaseTokens(true);
+38:       naiveBayesMultinomialText0.setLNorm((-4.57826535));
+39:       AbstractClassifier.runClassifier(naiveBayesMultinomialText0, (String[]) null);
+40:       naiveBayesMultinomialText0.setNorm((-770.98458392261));
+41:       naiveBayesMultinomialText0.getOptions();
+42:       naiveBayesMultinomialText0.setNorm((-770.98458392261));
+43:       naiveBayesMultinomialText0.getLowercaseTokens();
+44:       naiveBayesMultinomialText0.pruneDictionary();
+45:       naiveBayesMultinomialText0.getNormalizeDocLength();
+46:       naiveBayesMultinomialText0.setLNorm((-4.57826535));
+47:       naiveBayesMultinomialText0.setNorm((-770.0401563));
+48:       BallTree ballTree0 = new BallTree();
+49:       int int0 = 15;
+50:       int int1 = 1;
+51:       int[] intArray0 = new int[5];
+52:       intArray0[0] = 1;
+53:       intArray0[1] = 1;
+54:       intArray0[2] = 1;
+55:       intArray0[3] = 7;
+56:       intArray0[4] = 1;
+57:       CostMatrix costMatrix0 = new CostMatrix(1);
+58:       TestInstances testInstances0 = new TestInstances();
+59:       Instances instances0 = testInstances0.generate("mZ!Q<\"CoO8pX $;$Sx");
+60:       MockRandom mockRandom0 = new MockRandom((-2858L));
+61:       try { 
+62:         costMatrix0.applyCostMatrix(instances0, mockRandom0);
+63:         fail("Expecting exception: Exception");
+64:       
+65:       } catch(Exception e) {
+66:          //
+67:          // Misclassification cost matrix has wrong format!
+68:          //
+69:          verifyException("weka.classifiers.CostMatrix", e);
+70:       }
+71:   }
+72: }
+RegularFileObject[/tmp/EvoSuite_36_1575601304620/weka/classifiers/bayes/NaiveBayesMultinomialText_36_tmp__ESTest.java]
+1: /**
+2:  * Scaffolding file used to store all the setups needed to run 
+3:  * tests automatically generated by EvoSuite
+4:  * Fri Dec 06 03:01:44 GMT 2019
+5:  */
+6: 
+7: package weka.classifiers.bayes;
+8: 
+9: import org.evosuite.runtime.annotation.EvoSuiteClassExclude;
+10: import org.junit.BeforeClass;
+11: import org.junit.Before;
+12: import org.junit.After;
+13: import org.junit.AfterClass;
+14: import org.evosuite.runtime.sandbox.Sandbox;
+15: import org.evosuite.runtime.sandbox.Sandbox.SandboxMode;
+16: 
+17: @EvoSuiteClassExclude
+18: public class NaiveBayesMultinomialText_36_tmp__ESTest_scaffolding {
+19: 
+20:   @org.junit.Rule 
+21:   public org.evosuite.runtime.vnet.NonFunctionalRequirementRule nfr = new org.evosuite.runtime.vnet.NonFunctionalRequirementRule();
+22: 
+23:   private static final java.util.Properties defaultProperties = (java.util.Properties) java.lang.System.getProperties().clone(); 
+24: 
+25:   private org.evosuite.runtime.thread.ThreadStopper threadStopper =  new org.evosuite.runtime.thread.ThreadStopper (org.evosuite.runtime.thread.KillSwitchHandler.getInstance(), 3000);
+26: 
+27: 
+28:   @BeforeClass 
+29:   public static void initEvoSuiteFramework() { 
+30:     org.evosuite.runtime.RuntimeSettings.className = "weka.classifiers.bayes.NaiveBayesMultinomialText"; 
+31:     org.evosuite.runtime.GuiSupport.initialize(); 
+32:     org.evosuite.runtime.RuntimeSettings.maxNumberOfThreads = 100; 
+33:     org.evosuite.runtime.RuntimeSettings.maxNumberOfIterationsPerLoop = 10000; 
+34:     org.evosuite.runtime.RuntimeSettings.mockSystemIn = true; 
+35:     org.evosuite.runtime.RuntimeSettings.sandboxMode = org.evosuite.runtime.sandbox.Sandbox.SandboxMode.RECOMMENDED; 
+36:     org.evosuite.runtime.sandbox.Sandbox.initializeSecurityManagerForSUT(); 
+37:     org.evosuite.runtime.classhandling.JDKClassResetter.init();
+38:     setSystemProperties();
+39:     initializeClasses();
+40:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+41:   } 
+42: 
+43:   @AfterClass 
+44:   public static void clearEvoSuiteFramework(){ 
+45:     Sandbox.resetDefaultSecurityManager(); 
+46:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+47:   } 
+48: 
+49:   @Before 
+50:   public void initTestCase(){ 
+51:     threadStopper.storeCurrentThreads();
+52:     threadStopper.startRecordingTime();
+53:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().initHandler(); 
+54:     org.evosuite.runtime.sandbox.Sandbox.goingToExecuteSUTCode(); 
+55:     setSystemProperties(); 
+56:     org.evosuite.runtime.GuiSupport.setHeadless(); 
+57:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+58:     org.evosuite.runtime.agent.InstrumentingAgent.activate(); 
+59:   } 
+60: 
+61:   @After 
+62:   public void doneWithTestCase(){ 
+63:     threadStopper.killAndJoinClientThreads();
+64:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().safeExecuteAddedHooks(); 
+65:     org.evosuite.runtime.classhandling.JDKClassResetter.reset(); 
+66:     resetClasses(); 
+67:     org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(); 
+68:     org.evosuite.runtime.agent.InstrumentingAgent.deactivate(); 
+69:     org.evosuite.runtime.GuiSupport.restoreHeadlessMode(); 
+70:   } 
+71: 
+72:   public static void setSystemProperties() {
+73:  
+74:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+75:     java.lang.System.setProperty("file.encoding", "UTF-8"); 
+76:     java.lang.System.setProperty("java.awt.headless", "true"); 
+77:     java.lang.System.setProperty("java.io.tmpdir", "/tmp"); 
+78:     java.lang.System.setProperty("user.country", "US"); 
+79:     java.lang.System.setProperty("user.dir", "/home/ubuntu/termite/projects/107_weka"); 
+80:     java.lang.System.setProperty("user.home", "/home/ubuntu"); 
+81:     java.lang.System.setProperty("user.language", "en"); 
+82:     java.lang.System.setProperty("user.name", "ubuntu"); 
+83:     java.lang.System.setProperty("user.timezone", "Etc/UTC"); 
+84:   }
+85: 
+86:   private static void initializeClasses() {
+87:     org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(NaiveBayesMultinomialText_36_tmp__ESTest_scaffolding.class.getClassLoader() ,
+88:       "weka.core.Environment",
+89:       "weka.core.TestInstances",
+90:       "weka.filters.unsupervised.attribute.NominalToBinary",
+91:       "weka.core.DistanceFunction",
+92:       "org.pentaho.packageManagement.PackageConstraint",
+93:       "weka.attributeSelection.AttributeEvaluator",
+94:       "org.pentaho.packageManagement.Package",
+95:       "weka.core.xml.XMLBasicSerialization",
+96:       "weka.classifiers.CostMatrix",
+97:       "weka.core.neighboursearch.BallTree",
+98:       "weka.filters.UnsupervisedFilter",
+99:       "weka.core.logging.Logger$Level",
+100:       "weka.classifiers.evaluation.output.prediction.AbstractOutput",
+101:       "weka.core.DenseInstance",
+102:       "weka.core.stemmers.Stemmer",
+103:       "org.pentaho.packageManagement.DefaultPackageManager",
+104:       "org.bounce.net.DefaultAuthenticator",
+105:       "weka.estimators.IncrementalEstimator",
+106:       "weka.estimators.Estimator$Builder",
+107:       "weka.core.stemmers.NullStemmer",
+108:       "weka.classifiers.functions.SGDText",
+109:       "weka.core.Utils",
+110:       "weka.core.CustomDisplayStringProvider",
+111:       "weka.core.tokenizers.Tokenizer",
+112:       "weka.core.NormalizableDistance",
+113:       "weka.core.NoSupportForMissingValuesException",
+114:       "weka.classifiers.functions.SMOreg",
+115:       "weka.classifiers.UpdateableClassifier",
+116:       "weka.classifiers.bayes.NaiveBayesMultinomialText",
+117:       "weka.core.MultiInstanceCapabilitiesHandler",
+118:       "weka.core.Copyable",
+119:       "weka.core.Capabilities",
+120:       "weka.core.neighboursearch.balltrees.TopDownConstructor",
+121:       "weka.core.BinarySparseInstance",
+122:       "weka.classifiers.bayes.NaiveBayesMultinomialText$Count",
+123:       "weka.classifiers.functions.supportVector.CachedKernel",
+124:       "weka.core.SerializedObject",
+125:       "weka.clusterers.UpdateableClusterer",
+126:       "weka.core.Summarizable",
+127:       "weka.core.AdditionalMeasureProducer",
+128:       "weka.core.neighboursearch.balltrees.BallNode",
+129:       "org.pentaho.packageManagement.PackageManager$1",
+130:       "weka.core.Drawable",
+131:       "weka.core.CapabilitiesHandler",
+132:       "weka.core.neighboursearch.NearestNeighbourSearch$MyHeap",
+133:       "weka.attributeSelection.ASEvaluation",
+134:       "weka.core.AbstractInstance",
+135:       "weka.core.scripting.JythonObject",
+136:       "weka.core.SelectedTag",
+137:       "weka.classifiers.functions.supportVector.RegOptimizer",
+138:       "org.pentaho.packageManagement.DefaultPackage",
+139:       "weka.core.neighboursearch.balltrees.BallSplitter",
+140:       "weka.core.Version",
+141:       "weka.core.Tag",
+142:       "weka.classifiers.AbstractClassifier",
+143:       "weka.filters.unsupervised.attribute.Center",
+144:       "weka.core.OptionHandler",
+145:       "weka.core.WekaException",
+146:       "weka.filters.StreamableFilter",
+147:       "weka.core.Range",
+148:       "weka.core.neighboursearch.NearestNeighbourSearch$MyHeapElement",
+149:       "weka.core.scripting.JythonSerializableObject",
+150:       "weka.classifiers.Classifier",
+151:       "weka.core.Capabilities$Capability",
+152:       "weka.core.SparseInstance",
+153:       "org.pentaho.packageManagement.PackageManager",
+154:       "weka.estimators.PoissonEstimator",
+155:       "weka.attributeSelection.AttributeTransformer",
+156:       "weka.core.tokenizers.WordTokenizer",
+157:       "weka.classifiers.misc.SerializedClassifier",
+158:       "weka.filters.unsupervised.attribute.ReplaceMissingValues",
+159:       "weka.attributeSelection.PrincipalComponents",
+160:       "weka.core.stemmers.SnowballStemmer",
+161:       "weka.core.stemmers.LovinsStemmer",
+162:       "weka.classifiers.Evaluation",
+163:       "weka.classifiers.functions.supportVector.Kernel",
+164:       "weka.core.WekaPackageManager",
+165:       "weka.core.TechnicalInformationHandler",
+166:       "weka.core.neighboursearch.LinearNNSearch",
+167:       "weka.core.tokenizers.CharacterDelimitedTokenizer",
+168:       "weka.core.Option",
+169:       "weka.core.neighboursearch.PerformanceStats",
+170:       "weka.filters.unsupervised.attribute.PotentialClassIgnorer",
+171:       "weka.filters.Sourcable",
+172:       "weka.core.Attribute",
+173:       "weka.core.Stopwords",
+174:       "weka.core.FastVector",
+175:       "weka.core.neighboursearch.balltrees.PointsClosestToFurthestChildren",
+176:       "weka.core.UnassignedDatasetException",
+177:       "weka.core.neighboursearch.balltrees.BallTreeConstructor",
+178:       "weka.classifiers.functions.supportVector.RegSMOImproved",
+179:       "weka.classifiers.RandomizableClassifier",
+180:       "weka.core.RevisionUtils",
+181:       "weka.core.Instance",
+182:       "weka.classifiers.functions.supportVector.RegSMO",
+183:       "weka.classifiers.functions.supportVector.PolyKernel",
+184:       "weka.core.ProtectedProperties",
+185:       "weka.estimators.Estimator",
+186:       "weka.core.AttributeStats",
+187:       "weka.core.WeightedInstancesHandler",
+188:       "weka.core.neighboursearch.NearestNeighbourSearch",
+189:       "weka.filters.unsupervised.attribute.Remove",
+190:       "weka.core.Randomizable",
+191:       "weka.core.EuclideanDistance",
+192:       "weka.core.Instances",
+193:       "weka.classifiers.bayes.NaiveBayesMultinomial",
+194:       "weka.filters.unsupervised.attribute.Normalize",
+195:       "weka.core.UnassignedClassException",
+196:       "weka.classifiers.rules.ZeroR",
+197:       "weka.filters.unsupervised.attribute.Standardize",
+198:       "weka.attributeSelection.UnsupervisedAttributeEvaluator",
+199:       "weka.core.stemmers.Stemming",
+200:       "weka.core.TechnicalInformation",
+201:       "weka.core.UnsupportedAttributeTypeException",
+202:       "weka.classifiers.Sourcable",
+203:       "weka.core.RevisionHandler",
+204:       "weka.classifiers.evaluation.output.prediction.PlainText",
+205:       "weka.core.neighboursearch.TreePerformanceStats",
+206:       "weka.core.xml.XMLSerialization",
+207:       "weka.classifiers.xml.XMLClassifier",
+208:       "weka.classifiers.lazy.IBk",
+209:       "weka.filters.Filter"
+210:     );
+211:   } 
+212: 
+213:   private static void resetClasses() {
+214:     org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(NaiveBayesMultinomialText_36_tmp__ESTest_scaffolding.class.getClassLoader()); 
+215: 
+216:     org.evosuite.runtime.classhandling.ClassStateSupport.resetClasses(
+217:       "weka.classifiers.AbstractClassifier",
+218:       "weka.classifiers.bayes.NaiveBayesMultinomialText",
+219:       "weka.classifiers.bayes.NaiveBayesMultinomialText$Count",
+220:       "weka.core.Capabilities$Capability",
+221:       "weka.core.tokenizers.Tokenizer",
+222:       "weka.core.tokenizers.CharacterDelimitedTokenizer",
+223:       "weka.core.tokenizers.WordTokenizer",
+224:       "weka.core.stemmers.NullStemmer",
+225:       "weka.core.Utils",
+226:       "weka.classifiers.Evaluation",
+227:       "weka.core.Option",
+228:       "weka.core.RevisionUtils",
+229:       "weka.filters.Filter",
+230:       "weka.filters.supervised.attribute.Discretize",
+231:       "weka.core.Range",
+232:       "weka.core.Capabilities",
+233:       "org.pentaho.packageManagement.PackageManager",
+234:       "org.pentaho.packageManagement.DefaultPackageManager",
+235:       "weka.core.Version",
+236:       "weka.core.Environment",
+237:       "weka.core.WekaPackageManager",
+238:       "weka.core.tokenizers.NGramTokenizer",
+239:       "weka.core.SerializedObject",
+240:       "weka.classifiers.RandomizableClassifier",
+241:       "weka.core.Tag",
+242:       "weka.classifiers.functions.SGDText",
+243:       "weka.core.neighboursearch.NearestNeighbourSearch",
+244:       "weka.core.neighboursearch.KDTree",
+245:       "weka.core.NormalizableDistance",
+246:       "weka.core.EuclideanDistance",
+247:       "weka.core.neighboursearch.kdtrees.KDTreeNodeSplitter",
+248:       "weka.core.neighboursearch.kdtrees.SlidingMidPointOfWidestSide",
+249:       "weka.classifiers.SingleClassifierEnhancer",
+250:       "weka.classifiers.misc.InputMappedClassifier",
+251:       "weka.classifiers.rules.ZeroR",
+252:       "weka.core.AbstractInstance",
+253:       "weka.core.SparseInstance",
+254:       "weka.core.BinarySparseInstance",
+255:       "weka.core.Instances",
+256:       "weka.core.converters.ArffLoader$ArffReader",
+257:       "weka.core.UnassignedDatasetException",
+258:       "weka.core.neighboursearch.CoverTree",
+259:       "weka.core.neighboursearch.balltrees.BallNode",
+260:       "weka.classifiers.misc.SerializedClassifier",
+261:       "weka.core.Stopwords",
+262:       "weka.attributeSelection.ASEvaluation",
+263:       "weka.attributeSelection.UnsupervisedAttributeEvaluator",
+264:       "weka.attributeSelection.PrincipalComponents",
+265:       "weka.attributeSelection.AttributeSelection",
+266:       "weka.core.TestInstances",
+267:       "weka.core.DenseInstance",
+268:       "weka.classifiers.RandomizableSingleClassifierEnhancer",
+269:       "weka.classifiers.meta.CostSensitiveClassifier",
+270:       "weka.classifiers.CostMatrix",
+271:       "weka.classifiers.bayes.NaiveBayes",
+272:       "weka.core.neighboursearch.BallTree",
+273:       "weka.core.neighboursearch.balltrees.BallTreeConstructor",
+274:       "weka.core.neighboursearch.balltrees.TopDownConstructor",
+275:       "weka.core.neighboursearch.balltrees.BallSplitter",
+276:       "weka.core.neighboursearch.balltrees.PointsClosestToFurthestChildren",
+277:       "weka.core.neighboursearch.NearestNeighbourSearch$MyHeap",
+278:       "weka.core.neighboursearch.NearestNeighbourSearch$MyHeapElement",
+279:       "weka.core.Attribute",
+280:       "weka.core.ProtectedProperties",
+281:       "weka.core.stemmers.LovinsStemmer",
+282:       "weka.core.stemmers.Stemming",
+283:       "weka.classifiers.lazy.IBk",
+284:       "weka.core.neighboursearch.LinearNNSearch",
+285:       "weka.core.SelectedTag",
+286:       "weka.core.stemmers.SnowballStemmer",
+287:       "weka.core.tokenizers.AlphabeticTokenizer",
+288:       "weka.classifiers.functions.SMO",
+289:       "weka.classifiers.functions.supportVector.Kernel",
+290:       "weka.classifiers.functions.supportVector.CachedKernel",
+291:       "weka.classifiers.functions.supportVector.PolyKernel",
+292:       "weka.classifiers.meta.MultiClassClassifier",
+293:       "weka.classifiers.functions.Logistic",
+294:       "weka.classifiers.bayes.BayesNet",
+295:       "weka.classifiers.bayes.net.search.SearchAlgorithm",
+296:       "weka.classifiers.bayes.net.search.local.LocalScoreSearchAlgorithm",
+297:       "weka.classifiers.bayes.net.search.local.K2",
+298:       "weka.classifiers.bayes.net.estimate.BayesNetEstimator",
+299:       "weka.classifiers.bayes.net.estimate.SimpleEstimator",
+300:       "weka.classifiers.functions.GaussianProcesses",
+301:       "weka.filters.unsupervised.attribute.PotentialClassIgnorer",
+302:       "weka.filters.unsupervised.attribute.ReplaceMissingValues",
+303:       "weka.classifiers.functions.SimpleLinearRegression",
+304:       "weka.classifiers.IteratedSingleClassifierEnhancer",
+305:       "weka.classifiers.ParallelIteratedSingleClassifierEnhancer",
+306:       "weka.classifiers.RandomizableParallelIteratedSingleClassifierEnhancer",
+307:       "weka.classifiers.meta.RandomCommittee",
+308:       "weka.classifiers.trees.RandomTree",
+309:       "weka.classifiers.rules.JRip",
+310:       "weka.core.WekaException",
+311:       "weka.core.stemmers.IteratedLovinsStemmer",
+312:       "weka.core.neighboursearch.balltrees.BottomUpConstructor",
+313:       "weka.classifiers.bayes.NaiveBayesMultinomial",
+314:       "weka.classifiers.trees.LMT",
+315:       "weka.classifiers.functions.supportVector.PrecomputedKernelMatrixKernel",
+316:       "weka.classifiers.bayes.net.BIFReader",
+317:       "weka.classifiers.functions.LinearRegression",
+318:       "weka.core.TechnicalInformation",
+319:       "weka.core.TechnicalInformation$Type",
+320:       "weka.core.TechnicalInformation$Field",
+321:       "weka.core.FindWithCapabilities",
+322:       "weka.core.SingleIndex",
+323:       "weka.classifiers.functions.SMOreg",
+324:       "weka.classifiers.functions.supportVector.RegOptimizer",
+325:       "weka.classifiers.functions.supportVector.RegSMO",
+326:       "weka.classifiers.functions.supportVector.RegSMOImproved",
+327:       "weka.core.UnsupportedAttributeTypeException",
+328:       "weka.core.WekaEnumeration",
+329:       "weka.core.Attribute$1",
+330:       "weka.core.neighboursearch.balltrees.MiddleOutConstructor",
+331:       "weka.classifiers.trees.m5.M5Base",
+332:       "weka.classifiers.rules.M5Rules",
+333:       "weka.estimators.Estimator",
+334:       "weka.estimators.NormalEstimator",
+335:       "weka.classifiers.trees.REPTree",
+336:       "weka.classifiers.functions.MultilayerPerceptron",
+337:       "weka.core.FastVector",
+338:       "weka.filters.unsupervised.attribute.NominalToBinary",
+339:       "weka.classifiers.functions.neural.SigmoidUnit",
+340:       "weka.classifiers.functions.neural.LinearUnit",
+341:       "weka.classifiers.meta.AttributeSelectedClassifier",
+342:       "weka.attributeSelection.CfsSubsetEval",
+343:       "weka.attributeSelection.ASSearch",
+344:       "weka.attributeSelection.BestFirst",
+345:       "weka.classifiers.trees.J48",
+346:       "weka.attributeSelection.InfoGainAttributeEval",
+347:       "weka.attributeSelection.CorrelationAttributeEval",
+348:       "weka.classifiers.MultipleClassifiersCombiner",
+349:       "weka.classifiers.RandomizableMultipleClassifiersCombiner",
+350:       "weka.classifiers.meta.MultiScheme",
+351:       "weka.core.Javadoc",
+352:       "weka.core.TechnicalInformationHandlerJavadoc",
+353:       "weka.classifiers.lazy.KStar",
+354:       "weka.core.UnassignedClassException",
+355:       "weka.classifiers.meta.FilteredClassifier",
+356:       "weka.filters.supervised.attribute.AttributeSelection",
+357:       "weka.attributeSelection.GreedyStepwise",
+358:       "weka.core.MinkowskiDistance",
+359:       "weka.filters.SimpleFilter",
+360:       "weka.filters.SimpleStreamFilter",
+361:       "weka.filters.MultiFilter",
+362:       "weka.filters.AllFilter",
+363:       "weka.classifiers.meta.AdditiveRegression",
+364:       "weka.classifiers.trees.DecisionStump",
+365:       "weka.classifiers.meta.ClassificationViaRegression",
+366:       "weka.classifiers.trees.M5P",
+367:       "weka.classifiers.meta.Bagging",
+368:       "weka.classifiers.functions.supportVector.Puk",
+369:       "weka.attributeSelection.WrapperSubsetEval",
+370:       "weka.core.ChebyshevDistance",
+371:       "weka.core.SerializationHelper",
+372:       "weka.core.ListOptions",
+373:       "weka.core.ManhattanDistance",
+374:       "weka.attributeSelection.ReliefFAttributeEval",
+375:       "weka.core.ClassDiscovery",
+376:       "weka.core.ClassCache",
+377:       "weka.core.AllJavadoc",
+378:       "weka.core.Check",
+379:       "weka.core.CheckGOE",
+380:       "weka.classifiers.meta.CVParameterSelection",
+381:       "weka.core.CheckOptionHandler",
+382:       "weka.estimators.DiscreteEstimator",
+383:       "weka.classifiers.trees.RandomForest",
+384:       "weka.attributeSelection.GainRatioAttributeEval",
+385:       "weka.core.OptionHandlerJavadoc",
+386:       "weka.estimators.PoissonEstimator",
+387:       "weka.core.Queue",
+388:       "weka.core.AttributeLocator",
+389:       "weka.core.StringLocator",
+390:       "weka.core.RelationalLocator",
+391:       "weka.classifiers.meta.Vote",
+392:       "weka.core.GlobalInfoJavadoc",
+393:       "weka.classifiers.RandomizableIteratedSingleClassifierEnhancer",
+394:       "weka.classifiers.meta.LogitBoost",
+395:       "weka.attributeSelection.OneRAttributeEval",
+396:       "weka.classifiers.functions.SimpleLogistic",
+397:       "weka.classifiers.meta.AdaBoostM1",
+398:       "weka.classifiers.bayes.NaiveBayesMultinomialUpdateable",
+399:       "weka.classifiers.functions.supportVector.RBFKernel",
+400:       "weka.core.ContingencyTables",
+401:       "weka.core.Queue$QueueNode",
+402:       "weka.core.AttributeStats",
+403:       "weka.experiment.Stats",
+404:       "weka.classifiers.trees.j48.ClassifierTree",
+405:       "weka.classifiers.trees.j48.C45PruneableClassifierTree",
+406:       "weka.attributeSelection.SymmetricalUncertAttributeEval",
+407:       "weka.classifiers.lazy.LWL",
+408:       "weka.classifiers.ParallelMultipleClassifiersCombiner",
+409:       "weka.classifiers.RandomizableParallelMultipleClassifiersCombiner",
+410:       "weka.classifiers.meta.Stacking",
+411:       "weka.classifiers.functions.supportVector.StringKernel",
+412:       "weka.classifiers.rules.DecisionTable",
+413:       "weka.classifiers.functions.SGD",
+414:       "weka.classifiers.meta.MultiClassClassifierUpdateable",
+415:       "weka.classifiers.bayes.NaiveBayesUpdateable"
+416:     );
+417:   }
+418: }
+
+[MASTER] 03:01:44.660 [logback-2] ERROR JUnitAnalyzer - Failed to compile test case:
+NaiveBayesMultinomialText naiveBayesMultinomialText0 = new NaiveBayesMultinomialText();
+LinkedHashMap<String, NaiveBayesMultinomialText.Count> linkedHashMap0 = new LinkedHashMap<String, NaiveBayesMultinomialText.Count>();
+boolean boolean0 = true;
+naiveBayesMultinomialText0.setLowercaseTokens(true);
+naiveBayesMultinomialText0.setLNorm((-4.57826535));
+AbstractClassifier.runClassifier(naiveBayesMultinomialText0, (String[]) null);
+naiveBayesMultinomialText0.setNorm((-770.98458392261));
+naiveBayesMultinomialText0.getOptions();
+naiveBayesMultinomialText0.setNorm((-770.98458392261));
+naiveBayesMultinomialText0.getLowercaseTokens();
+naiveBayesMultinomialText0.pruneDictionary();
+naiveBayesMultinomialText0.getNormalizeDocLength();
+naiveBayesMultinomialText0.setLNorm((-4.57826535));
+naiveBayesMultinomialText0.setNorm((-770.0401563));
+BallTree ballTree0 = new BallTree();
+int int0 = 15;
+int int1 = 1;
+int[] intArray0 = new int[5];
+intArray0[0] = 1;
+intArray0[1] = 1;
+intArray0[2] = 1;
+intArray0[3] = 7;
+intArray0[4] = 1;
+CostMatrix costMatrix0 = new CostMatrix(1);
+TestInstances testInstances0 = new TestInstances();
+Instances instances0 = testInstances0.generate("mZ!Q<\"CoO8pX $;$Sx");
+MockRandom mockRandom0 = new MockRandom((-2858L));
+costMatrix0.applyCostMatrix(instances0, mockRandom0);
+
+[MASTER] 03:01:45.150 [logback-2] ERROR JUnitAnalyzer - Compilation failed on compilation units: [RegularFileObject[/tmp/EvoSuite_50_1575601305123/weka/classifiers/bayes/NaiveBayesMultinomialText_50_tmp__ESTest.java], RegularFileObject[/tmp/EvoSuite_50_1575601305123/weka/classifiers/bayes/NaiveBayesMultinomialText_50_tmp__ESTest_scaffolding.java]]
+[MASTER] 03:01:45.151 [logback-2] ERROR JUnitAnalyzer - Classpath: /home/ubuntu/termite/projects/107_weka/weka.jar:/home/ubuntu/termite/projects/107_weka/lib/packageManager.jar:/home/ubuntu/termite/projects/107_weka/lib/JFlex.jar:/home/ubuntu/termite/projects/107_weka/lib/java-cup.jar:/home/ubuntu/termite/evosuite.jar:/home/ubuntu/termite/projects/107_weka/weka.jar:/home/ubuntu/termite/projects/107_weka/lib/packageManager.jar:/home/ubuntu/termite/projects/107_weka/lib/JFlex.jar:/home/ubuntu/termite/projects/107_weka/lib/java-cup.jar
+[MASTER] 03:01:45.151 [logback-2] ERROR JUnitAnalyzer - evosuiteCP: /home/ubuntu/termite/evosuite.jar:/home/ubuntu/termite/projects/107_weka/weka.jar:/home/ubuntu/termite/projects/107_weka/lib/packageManager.jar:/home/ubuntu/termite/projects/107_weka/lib/JFlex.jar:/home/ubuntu/termite/projects/107_weka/lib/java-cup.jar
+[MASTER] 03:01:45.151 [logback-2] ERROR JUnitAnalyzer - Diagnostic: weka.classifiers.bayes.NaiveBayesMultinomialText.Count has private access in weka.classifiers.bayes.NaiveBayesMultinomialText: 36
+[MASTER] 03:01:45.151 [logback-2] ERROR JUnitAnalyzer - Diagnostic: weka.classifiers.bayes.NaiveBayesMultinomialText.Count has private access in weka.classifiers.bayes.NaiveBayesMultinomialText: 36
+[MASTER] 03:01:45.152 [logback-2] ERROR JUnitAnalyzer - RegularFileObject[/tmp/EvoSuite_50_1575601305123/weka/classifiers/bayes/NaiveBayesMultinomialText_50_tmp__ESTest.java]
+1: /*
+2:  * This file was automatically generated by EvoSuite
+3:  * Fri Dec 06 03:01:45 GMT 2019
+4:  */
+5: 
+6: package weka.classifiers.bayes;
+7: 
+8: import org.junit.Test;
+9: import static org.junit.Assert.*;
+10: import java.io.File;
+11: import java.util.LinkedHashMap;
+12: import org.evosuite.runtime.EvoRunner;
+13: import org.evosuite.runtime.EvoRunnerParameters;
+14: import org.evosuite.runtime.mock.java.io.MockFile;
+15: import org.junit.runner.RunWith;
+16: import weka.classifiers.bayes.NaiveBayesMultinomialText;
+17: import weka.classifiers.misc.SerializedClassifier;
+18: 
+19: @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, useJEE = true) 
+20: public class NaiveBayesMultinomialText_50_tmp__ESTest extends NaiveBayesMultinomialText_50_tmp__ESTest_scaffolding {
+21: 
+22:   /**
+23:   //Test case number: 0
+24:   /*Coverage entropy=2.5500297769739535
+25:   */
+26:   @Test(timeout = 4000)
+27:   public void test0()  throws Throwable  {
+28:       NaiveBayesMultinomialText naiveBayesMultinomialText0 = new NaiveBayesMultinomialText();
+29:       naiveBayesMultinomialText0.m_norm = (-1869.822);
+30:       File file0 = naiveBayesMultinomialText0.getStopwords();
+31:       naiveBayesMultinomialText0.m_stopwordsFile = file0;
+32:       naiveBayesMultinomialText0.periodicPruningTipText();
+33:       SerializedClassifier serializedClassifier0 = new SerializedClassifier();
+34:       MockFile.createTempFile("}s]95@ZI\"9a6#XT40lL", "", file0);
+35:       naiveBayesMultinomialText0.normTipText();
+36:       LinkedHashMap<String, NaiveBayesMultinomialText.Count> linkedHashMap0 = new LinkedHashMap<String, NaiveBayesMultinomialText.Count>();
+37:       naiveBayesMultinomialText0.m_inputVector = linkedHashMap0;
+38:       naiveBayesMultinomialText0.globalInfo();
+39:       naiveBayesMultinomialText0.getRevision();
+40:       naiveBayesMultinomialText0.getNorm();
+41:       naiveBayesMultinomialText0.listOptions();
+42:       assertEquals((-1869.822), naiveBayesMultinomialText0.getNorm(), 0.01);
+43:   }
+44: }
+RegularFileObject[/tmp/EvoSuite_50_1575601305123/weka/classifiers/bayes/NaiveBayesMultinomialText_50_tmp__ESTest.java]
+1: /**
+2:  * Scaffolding file used to store all the setups needed to run 
+3:  * tests automatically generated by EvoSuite
+4:  * Fri Dec 06 03:01:45 GMT 2019
+5:  */
+6: 
+7: package weka.classifiers.bayes;
+8: 
+9: import org.evosuite.runtime.annotation.EvoSuiteClassExclude;
+10: import org.junit.BeforeClass;
+11: import org.junit.Before;
+12: import org.junit.After;
+13: import org.junit.AfterClass;
+14: import org.evosuite.runtime.sandbox.Sandbox;
+15: import org.evosuite.runtime.sandbox.Sandbox.SandboxMode;
+16: 
+17: @EvoSuiteClassExclude
+18: public class NaiveBayesMultinomialText_50_tmp__ESTest_scaffolding {
+19: 
+20:   @org.junit.Rule 
+21:   public org.evosuite.runtime.vnet.NonFunctionalRequirementRule nfr = new org.evosuite.runtime.vnet.NonFunctionalRequirementRule();
+22: 
+23:   private static final java.util.Properties defaultProperties = (java.util.Properties) java.lang.System.getProperties().clone(); 
+24: 
+25:   private org.evosuite.runtime.thread.ThreadStopper threadStopper =  new org.evosuite.runtime.thread.ThreadStopper (org.evosuite.runtime.thread.KillSwitchHandler.getInstance(), 3000);
+26: 
+27: 
+28:   @BeforeClass 
+29:   public static void initEvoSuiteFramework() { 
+30:     org.evosuite.runtime.RuntimeSettings.className = "weka.classifiers.bayes.NaiveBayesMultinomialText"; 
+31:     org.evosuite.runtime.GuiSupport.initialize(); 
+32:     org.evosuite.runtime.RuntimeSettings.maxNumberOfThreads = 100; 
+33:     org.evosuite.runtime.RuntimeSettings.maxNumberOfIterationsPerLoop = 10000; 
+34:     org.evosuite.runtime.RuntimeSettings.mockSystemIn = true; 
+35:     org.evosuite.runtime.RuntimeSettings.sandboxMode = org.evosuite.runtime.sandbox.Sandbox.SandboxMode.RECOMMENDED; 
+36:     org.evosuite.runtime.sandbox.Sandbox.initializeSecurityManagerForSUT(); 
+37:     org.evosuite.runtime.classhandling.JDKClassResetter.init();
+38:     setSystemProperties();
+39:     initializeClasses();
+40:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+41:   } 
+42: 
+43:   @AfterClass 
+44:   public static void clearEvoSuiteFramework(){ 
+45:     Sandbox.resetDefaultSecurityManager(); 
+46:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+47:   } 
+48: 
+49:   @Before 
+50:   public void initTestCase(){ 
+51:     threadStopper.storeCurrentThreads();
+52:     threadStopper.startRecordingTime();
+53:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().initHandler(); 
+54:     org.evosuite.runtime.sandbox.Sandbox.goingToExecuteSUTCode(); 
+55:     setSystemProperties(); 
+56:     org.evosuite.runtime.GuiSupport.setHeadless(); 
+57:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+58:     org.evosuite.runtime.agent.InstrumentingAgent.activate(); 
+59:   } 
+60: 
+61:   @After 
+62:   public void doneWithTestCase(){ 
+63:     threadStopper.killAndJoinClientThreads();
+64:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().safeExecuteAddedHooks(); 
+65:     org.evosuite.runtime.classhandling.JDKClassResetter.reset(); 
+66:     resetClasses(); 
+67:     org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(); 
+68:     org.evosuite.runtime.agent.InstrumentingAgent.deactivate(); 
+69:     org.evosuite.runtime.GuiSupport.restoreHeadlessMode(); 
+70:   } 
+71: 
+72:   public static void setSystemProperties() {
+73:  
+74:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+75:     java.lang.System.setProperty("file.encoding", "UTF-8"); 
+76:     java.lang.System.setProperty("java.awt.headless", "true"); 
+77:     java.lang.System.setProperty("java.io.tmpdir", "/tmp"); 
+78:     java.lang.System.setProperty("user.country", "US"); 
+79:     java.lang.System.setProperty("user.dir", "/home/ubuntu/termite/projects/107_weka"); 
+80:     java.lang.System.setProperty("user.home", "/home/ubuntu"); 
+81:     java.lang.System.setProperty("user.language", "en"); 
+82:     java.lang.System.setProperty("user.name", "ubuntu"); 
+83:     java.lang.System.setProperty("user.timezone", "Etc/UTC"); 
+84:   }
+85: 
+86:   private static void initializeClasses() {
+87:     org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(NaiveBayesMultinomialText_50_tmp__ESTest_scaffolding.class.getClassLoader() ,
+88:       "weka.core.Environment",
+89:       "weka.core.TestInstances",
+90:       "weka.filters.unsupervised.attribute.NominalToBinary",
+91:       "weka.core.DistanceFunction",
+92:       "org.pentaho.packageManagement.PackageConstraint",
+93:       "weka.attributeSelection.AttributeEvaluator",
+94:       "org.pentaho.packageManagement.Package",
+95:       "weka.core.xml.XMLBasicSerialization",
+96:       "weka.classifiers.CostMatrix",
+97:       "weka.core.neighboursearch.BallTree",
+98:       "weka.filters.UnsupervisedFilter",
+99:       "weka.core.logging.Logger$Level",
+100:       "weka.classifiers.evaluation.output.prediction.AbstractOutput",
+101:       "weka.core.DenseInstance",
+102:       "weka.core.stemmers.Stemmer",
+103:       "org.pentaho.packageManagement.DefaultPackageManager",
+104:       "org.bounce.net.DefaultAuthenticator",
+105:       "weka.estimators.IncrementalEstimator",
+106:       "weka.estimators.Estimator$Builder",
+107:       "weka.core.stemmers.NullStemmer",
+108:       "weka.classifiers.functions.SGDText",
+109:       "weka.core.Utils",
+110:       "weka.core.CustomDisplayStringProvider",
+111:       "weka.core.tokenizers.Tokenizer",
+112:       "weka.core.NormalizableDistance",
+113:       "weka.core.NoSupportForMissingValuesException",
+114:       "weka.classifiers.functions.SMOreg",
+115:       "weka.classifiers.UpdateableClassifier",
+116:       "weka.classifiers.bayes.NaiveBayesMultinomialText",
+117:       "weka.core.MultiInstanceCapabilitiesHandler",
+118:       "weka.core.Copyable",
+119:       "weka.core.Capabilities",
+120:       "weka.core.neighboursearch.balltrees.TopDownConstructor",
+121:       "weka.core.BinarySparseInstance",
+122:       "weka.classifiers.bayes.NaiveBayesMultinomialText$Count",
+123:       "weka.classifiers.functions.supportVector.CachedKernel",
+124:       "weka.core.SerializedObject",
+125:       "weka.clusterers.UpdateableClusterer",
+126:       "weka.core.Summarizable",
+127:       "weka.core.AdditionalMeasureProducer",
+128:       "weka.core.neighboursearch.balltrees.BallNode",
+129:       "org.pentaho.packageManagement.PackageManager$1",
+130:       "weka.core.Drawable",
+131:       "weka.core.CapabilitiesHandler",
+132:       "weka.core.neighboursearch.NearestNeighbourSearch$MyHeap",
+133:       "weka.attributeSelection.ASEvaluation",
+134:       "weka.core.AbstractInstance",
+135:       "weka.core.scripting.JythonObject",
+136:       "weka.core.SelectedTag",
+137:       "weka.classifiers.functions.supportVector.RegOptimizer",
+138:       "org.pentaho.packageManagement.DefaultPackage",
+139:       "weka.core.neighboursearch.balltrees.BallSplitter",
+140:       "weka.core.Version",
+141:       "weka.core.Tag",
+142:       "weka.classifiers.AbstractClassifier",
+143:       "weka.filters.unsupervised.attribute.Center",
+144:       "weka.core.OptionHandler",
+145:       "weka.core.WekaException",
+146:       "weka.filters.StreamableFilter",
+147:       "weka.core.Range",
+148:       "weka.core.neighboursearch.NearestNeighbourSearch$MyHeapElement",
+149:       "weka.core.scripting.JythonSerializableObject",
+150:       "weka.classifiers.Classifier",
+151:       "weka.core.Capabilities$Capability",
+152:       "weka.core.SparseInstance",
+153:       "org.pentaho.packageManagement.PackageManager",
+154:       "weka.estimators.PoissonEstimator",
+155:       "weka.attributeSelection.AttributeTransformer",
+156:       "weka.core.tokenizers.WordTokenizer",
+157:       "weka.classifiers.misc.SerializedClassifier",
+158:       "weka.filters.unsupervised.attribute.ReplaceMissingValues",
+159:       "weka.attributeSelection.PrincipalComponents",
+160:       "weka.core.stemmers.SnowballStemmer",
+161:       "weka.core.stemmers.LovinsStemmer",
+162:       "weka.classifiers.Evaluation",
+163:       "weka.classifiers.functions.supportVector.Kernel",
+164:       "weka.core.WekaPackageManager",
+165:       "weka.core.TechnicalInformationHandler",
+166:       "weka.core.neighboursearch.LinearNNSearch",
+167:       "weka.core.tokenizers.CharacterDelimitedTokenizer",
+168:       "weka.core.Option",
+169:       "weka.core.neighboursearch.PerformanceStats",
+170:       "weka.filters.unsupervised.attribute.PotentialClassIgnorer",
+171:       "weka.filters.Sourcable",
+172:       "weka.core.Attribute",
+173:       "weka.core.Stopwords",
+174:       "weka.core.FastVector",
+175:       "weka.core.neighboursearch.balltrees.PointsClosestToFurthestChildren",
+176:       "weka.core.UnassignedDatasetException",
+177:       "weka.core.neighboursearch.balltrees.BallTreeConstructor",
+178:       "weka.classifiers.functions.supportVector.RegSMOImproved",
+179:       "weka.classifiers.RandomizableClassifier",
+180:       "weka.core.RevisionUtils",
+181:       "weka.core.Instance",
+182:       "weka.classifiers.functions.supportVector.RegSMO",
+183:       "weka.classifiers.functions.supportVector.PolyKernel",
+184:       "weka.core.ProtectedProperties",
+185:       "weka.estimators.Estimator",
+186:       "weka.core.AttributeStats",
+187:       "weka.core.WeightedInstancesHandler",
+188:       "weka.core.neighboursearch.NearestNeighbourSearch",
+189:       "weka.filters.unsupervised.attribute.Remove",
+190:       "weka.core.Randomizable",
+191:       "weka.core.EuclideanDistance",
+192:       "weka.core.Instances",
+193:       "weka.classifiers.bayes.NaiveBayesMultinomial",
+194:       "weka.filters.unsupervised.attribute.Normalize",
+195:       "weka.core.UnassignedClassException",
+196:       "weka.classifiers.rules.ZeroR",
+197:       "weka.filters.unsupervised.attribute.Standardize",
+198:       "weka.attributeSelection.UnsupervisedAttributeEvaluator",
+199:       "weka.core.stemmers.Stemming",
+200:       "weka.core.TechnicalInformation",
+201:       "weka.core.UnsupportedAttributeTypeException",
+202:       "weka.classifiers.Sourcable",
+203:       "weka.core.RevisionHandler",
+204:       "weka.classifiers.evaluation.output.prediction.PlainText",
+205:       "weka.core.neighboursearch.TreePerformanceStats",
+206:       "weka.core.xml.XMLSerialization",
+207:       "weka.classifiers.xml.XMLClassifier",
+208:       "weka.classifiers.lazy.IBk",
+209:       "weka.filters.Filter"
+210:     );
+211:   } 
+212: 
+213:   private static void resetClasses() {
+214:     org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(NaiveBayesMultinomialText_50_tmp__ESTest_scaffolding.class.getClassLoader()); 
+215: 
+216:     org.evosuite.runtime.classhandling.ClassStateSupport.resetClasses(
+217:       "weka.classifiers.AbstractClassifier",
+218:       "weka.classifiers.bayes.NaiveBayesMultinomialText",
+219:       "weka.classifiers.bayes.NaiveBayesMultinomialText$Count",
+220:       "weka.core.Capabilities$Capability",
+221:       "weka.core.tokenizers.Tokenizer",
+222:       "weka.core.tokenizers.CharacterDelimitedTokenizer",
+223:       "weka.core.tokenizers.WordTokenizer",
+224:       "weka.core.stemmers.NullStemmer",
+225:       "weka.core.Utils",
+226:       "weka.classifiers.Evaluation",
+227:       "weka.core.Option",
+228:       "weka.core.RevisionUtils",
+229:       "weka.filters.Filter",
+230:       "weka.filters.supervised.attribute.Discretize",
+231:       "weka.core.Range",
+232:       "weka.core.Capabilities",
+233:       "org.pentaho.packageManagement.PackageManager",
+234:       "org.pentaho.packageManagement.DefaultPackageManager",
+235:       "weka.core.Version",
+236:       "weka.core.Environment",
+237:       "weka.core.WekaPackageManager",
+238:       "weka.core.tokenizers.NGramTokenizer",
+239:       "weka.core.SerializedObject",
+240:       "weka.classifiers.RandomizableClassifier",
+241:       "weka.core.Tag",
+242:       "weka.classifiers.functions.SGDText",
+243:       "weka.core.neighboursearch.NearestNeighbourSearch",
+244:       "weka.core.neighboursearch.KDTree",
+245:       "weka.core.NormalizableDistance",
+246:       "weka.core.EuclideanDistance",
+247:       "weka.core.neighboursearch.kdtrees.KDTreeNodeSplitter",
+248:       "weka.core.neighboursearch.kdtrees.SlidingMidPointOfWidestSide",
+249:       "weka.classifiers.SingleClassifierEnhancer",
+250:       "weka.classifiers.misc.InputMappedClassifier",
+251:       "weka.classifiers.rules.ZeroR",
+252:       "weka.core.AbstractInstance",
+253:       "weka.core.SparseInstance",
+254:       "weka.core.BinarySparseInstance",
+255:       "weka.core.Instances",
+256:       "weka.core.converters.ArffLoader$ArffReader",
+257:       "weka.core.UnassignedDatasetException",
+258:       "weka.core.neighboursearch.CoverTree",
+259:       "weka.core.neighboursearch.balltrees.BallNode",
+260:       "weka.classifiers.misc.SerializedClassifier",
+261:       "weka.core.Stopwords",
+262:       "weka.attributeSelection.ASEvaluation",
+263:       "weka.attributeSelection.UnsupervisedAttributeEvaluator",
+264:       "weka.attributeSelection.PrincipalComponents",
+265:       "weka.attributeSelection.AttributeSelection",
+266:       "weka.core.TestInstances",
+267:       "weka.core.DenseInstance",
+268:       "weka.classifiers.RandomizableSingleClassifierEnhancer",
+269:       "weka.classifiers.meta.CostSensitiveClassifier",
+270:       "weka.classifiers.CostMatrix",
+271:       "weka.classifiers.bayes.NaiveBayes",
+272:       "weka.core.neighboursearch.BallTree",
+273:       "weka.core.neighboursearch.balltrees.BallTreeConstructor",
+274:       "weka.core.neighboursearch.balltrees.TopDownConstructor",
+275:       "weka.core.neighboursearch.balltrees.BallSplitter",
+276:       "weka.core.neighboursearch.balltrees.PointsClosestToFurthestChildren",
+277:       "weka.core.neighboursearch.NearestNeighbourSearch$MyHeap",
+278:       "weka.core.neighboursearch.NearestNeighbourSearch$MyHeapElement",
+279:       "weka.core.Attribute",
+280:       "weka.core.ProtectedProperties",
+281:       "weka.core.stemmers.LovinsStemmer",
+282:       "weka.core.stemmers.Stemming",
+283:       "weka.classifiers.lazy.IBk",
+284:       "weka.core.neighboursearch.LinearNNSearch",
+285:       "weka.core.SelectedTag",
+286:       "weka.core.stemmers.SnowballStemmer",
+287:       "weka.core.tokenizers.AlphabeticTokenizer",
+288:       "weka.classifiers.functions.SMO",
+289:       "weka.classifiers.functions.supportVector.Kernel",
+290:       "weka.classifiers.functions.supportVector.CachedKernel",
+291:       "weka.classifiers.functions.supportVector.PolyKernel",
+292:       "weka.classifiers.meta.MultiClassClassifier",
+293:       "weka.classifiers.functions.Logistic",
+294:       "weka.classifiers.bayes.BayesNet",
+295:       "weka.classifiers.bayes.net.search.SearchAlgorithm",
+296:       "weka.classifiers.bayes.net.search.local.LocalScoreSearchAlgorithm",
+297:       "weka.classifiers.bayes.net.search.local.K2",
+298:       "weka.classifiers.bayes.net.estimate.BayesNetEstimator",
+299:       "weka.classifiers.bayes.net.estimate.SimpleEstimator",
+300:       "weka.classifiers.functions.GaussianProcesses",
+301:       "weka.filters.unsupervised.attribute.PotentialClassIgnorer",
+302:       "weka.filters.unsupervised.attribute.ReplaceMissingValues",
+303:       "weka.classifiers.functions.SimpleLinearRegression",
+304:       "weka.classifiers.IteratedSingleClassifierEnhancer",
+305:       "weka.classifiers.ParallelIteratedSingleClassifierEnhancer",
+306:       "weka.classifiers.RandomizableParallelIteratedSingleClassifierEnhancer",
+307:       "weka.classifiers.meta.RandomCommittee",
+308:       "weka.classifiers.trees.RandomTree",
+309:       "weka.classifiers.rules.JRip",
+310:       "weka.core.WekaException",
+311:       "weka.core.stemmers.IteratedLovinsStemmer",
+312:       "weka.core.neighboursearch.balltrees.BottomUpConstructor",
+313:       "weka.classifiers.bayes.NaiveBayesMultinomial",
+314:       "weka.classifiers.trees.LMT",
+315:       "weka.classifiers.functions.supportVector.PrecomputedKernelMatrixKernel",
+316:       "weka.classifiers.bayes.net.BIFReader",
+317:       "weka.classifiers.functions.LinearRegression",
+318:       "weka.core.TechnicalInformation",
+319:       "weka.core.TechnicalInformation$Type",
+320:       "weka.core.TechnicalInformation$Field",
+321:       "weka.core.FindWithCapabilities",
+322:       "weka.core.SingleIndex",
+323:       "weka.classifiers.functions.SMOreg",
+324:       "weka.classifiers.functions.supportVector.RegOptimizer",
+325:       "weka.classifiers.functions.supportVector.RegSMO",
+326:       "weka.classifiers.functions.supportVector.RegSMOImproved",
+327:       "weka.core.UnsupportedAttributeTypeException",
+328:       "weka.core.WekaEnumeration",
+329:       "weka.core.Attribute$1",
+330:       "weka.core.neighboursearch.balltrees.MiddleOutConstructor",
+331:       "weka.classifiers.trees.m5.M5Base",
+332:       "weka.classifiers.rules.M5Rules",
+333:       "weka.estimators.Estimator",
+334:       "weka.estimators.NormalEstimator",
+335:       "weka.classifiers.trees.REPTree",
+336:       "weka.classifiers.functions.MultilayerPerceptron",
+337:       "weka.core.FastVector",
+338:       "weka.filters.unsupervised.attribute.NominalToBinary",
+339:       "weka.classifiers.functions.neural.SigmoidUnit",
+340:       "weka.classifiers.functions.neural.LinearUnit",
+341:       "weka.classifiers.meta.AttributeSelectedClassifier",
+342:       "weka.attributeSelection.CfsSubsetEval",
+343:       "weka.attributeSelection.ASSearch",
+344:       "weka.attributeSelection.BestFirst",
+345:       "weka.classifiers.trees.J48",
+346:       "weka.attributeSelection.InfoGainAttributeEval",
+347:       "weka.attributeSelection.CorrelationAttributeEval",
+348:       "weka.classifiers.MultipleClassifiersCombiner",
+349:       "weka.classifiers.RandomizableMultipleClassifiersCombiner",
+350:       "weka.classifiers.meta.MultiScheme",
+351:       "weka.core.Javadoc",
+352:       "weka.core.TechnicalInformationHandlerJavadoc",
+353:       "weka.classifiers.lazy.KStar",
+354:       "weka.core.UnassignedClassException",
+355:       "weka.classifiers.meta.FilteredClassifier",
+356:       "weka.filters.supervised.attribute.AttributeSelection",
+357:       "weka.attributeSelection.GreedyStepwise",
+358:       "weka.core.MinkowskiDistance",
+359:       "weka.filters.SimpleFilter",
+360:       "weka.filters.SimpleStreamFilter",
+361:       "weka.filters.MultiFilter",
+362:       "weka.filters.AllFilter",
+363:       "weka.classifiers.meta.AdditiveRegression",
+364:       "weka.classifiers.trees.DecisionStump",
+365:       "weka.classifiers.meta.ClassificationViaRegression",
+366:       "weka.classifiers.trees.M5P",
+367:       "weka.classifiers.meta.Bagging",
+368:       "weka.classifiers.functions.supportVector.Puk",
+369:       "weka.attributeSelection.WrapperSubsetEval",
+370:       "weka.core.ChebyshevDistance",
+371:       "weka.core.SerializationHelper",
+372:       "weka.core.ListOptions",
+373:       "weka.core.ManhattanDistance",
+374:       "weka.attributeSelection.ReliefFAttributeEval",
+375:       "weka.core.ClassDiscovery",
+376:       "weka.core.ClassCache",
+377:       "weka.core.AllJavadoc",
+378:       "weka.core.Check",
+379:       "weka.core.CheckGOE",
+380:       "weka.classifiers.meta.CVParameterSelection",
+381:       "weka.core.CheckOptionHandler",
+382:       "weka.estimators.DiscreteEstimator",
+383:       "weka.classifiers.trees.RandomForest",
+384:       "weka.attributeSelection.GainRatioAttributeEval",
+385:       "weka.core.OptionHandlerJavadoc",
+386:       "weka.estimators.PoissonEstimator",
+387:       "weka.core.Queue",
+388:       "weka.core.AttributeLocator",
+389:       "weka.core.StringLocator",
+390:       "weka.core.RelationalLocator",
+391:       "weka.classifiers.meta.Vote",
+392:       "weka.core.GlobalInfoJavadoc",
+393:       "weka.classifiers.RandomizableIteratedSingleClassifierEnhancer",
+394:       "weka.classifiers.meta.LogitBoost",
+395:       "weka.attributeSelection.OneRAttributeEval",
+396:       "weka.classifiers.functions.SimpleLogistic",
+397:       "weka.classifiers.meta.AdaBoostM1",
+398:       "weka.classifiers.bayes.NaiveBayesMultinomialUpdateable",
+399:       "weka.classifiers.functions.supportVector.RBFKernel",
+400:       "weka.core.ContingencyTables",
+401:       "weka.core.Queue$QueueNode",
+402:       "weka.core.AttributeStats",
+403:       "weka.experiment.Stats",
+404:       "weka.classifiers.trees.j48.ClassifierTree",
+405:       "weka.classifiers.trees.j48.C45PruneableClassifierTree",
+406:       "weka.attributeSelection.SymmetricalUncertAttributeEval",
+407:       "weka.classifiers.lazy.LWL",
+408:       "weka.classifiers.ParallelMultipleClassifiersCombiner",
+409:       "weka.classifiers.RandomizableParallelMultipleClassifiersCombiner",
+410:       "weka.classifiers.meta.Stacking",
+411:       "weka.classifiers.functions.supportVector.StringKernel",
+412:       "weka.classifiers.rules.DecisionTable",
+413:       "weka.classifiers.functions.SGD",
+414:       "weka.classifiers.meta.MultiClassClassifierUpdateable",
+415:       "weka.classifiers.bayes.NaiveBayesUpdateable"
+416:     );
+417:   }
+418: }
+
+[MASTER] 03:01:45.153 [logback-2] ERROR JUnitAnalyzer - Failed to compile test case:
+NaiveBayesMultinomialText naiveBayesMultinomialText0 = new NaiveBayesMultinomialText();
+naiveBayesMultinomialText0.m_norm = (-1869.822);
+File file0 = naiveBayesMultinomialText0.getStopwords();
+naiveBayesMultinomialText0.m_stopwordsFile = file0;
+naiveBayesMultinomialText0.periodicPruningTipText();
+SerializedClassifier serializedClassifier0 = new SerializedClassifier();
+MockFile.createTempFile("}s]95@ZI\"9a6#XT40lL", "", file0);
+naiveBayesMultinomialText0.normTipText();
+LinkedHashMap<String, NaiveBayesMultinomialText.Count> linkedHashMap0 = new LinkedHashMap<String, NaiveBayesMultinomialText.Count>();
+naiveBayesMultinomialText0.m_inputVector = linkedHashMap0;
+naiveBayesMultinomialText0.globalInfo();
+naiveBayesMultinomialText0.getRevision();
+naiveBayesMultinomialText0.getNorm();
+naiveBayesMultinomialText0.listOptions();
+assertEquals((-1869.822), naiveBayesMultinomialText0.getNorm(), 0.01);
+
+
+[MASTER] 03:01:48.416 [logback-2] ERROR ClassStateSupport - Could not initialize weka.core.AllJavadoc: null
+[MASTER] 03:01:48.523 [logback-2] ERROR ClassResetter - java.lang.NoClassDefFoundError: Could not initialize class weka.core.AllJavadoc
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 9
+* Writing JUnit test case 'NaiveBayesMultinomialText_ESTest' to /home/ubuntu/termite/rmosa/tests/s1014/107_weka/evosuite-tests
+* Done!
+
+* Computation finished
+[MASTER] 03:03:28.833 [logback-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.6827291666666667% of time used, but only 42/132 tests minimized), falling back to using all assertions
+* Resulting test suite's mutation score: 15%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 10
+[MASTER] 03:05:09.653 [logback-2] ERROR JUnitAnalyzer - Ran out of time while checking tests
+* Writing JUnit test case 'ResultMatrix_ESTest' to /home/ubuntu/termite/rmosa/tests/s1014/107_weka/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: weka.core.stemmers.LovinsStemmer
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/107_weka/evosuite-files/evosuite.properties
+* Connecting to master process on port 7490
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class weka.core.stemmers.LovinsStemmer
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1014
+* Starting evolution
+* Search finished after 126s and 117 generations, 56442 statements, best individual has fitness: 3120.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 82%
+* Total number of goals: 217
+* Number of covered goals: 178
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 63%
+* Total number of goals: 428
+* Number of covered goals: 268
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 92%
+* Total number of goals: 260
+* Number of covered goals: 239
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 44%
+* Total number of goals: 18
+* Number of covered goals: 8
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 63%
+* Total number of goals: 428
+* Number of covered goals: 268
+* Generated 83 tests with total length 248
+* Resulting test suite's coverage: 72% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 83%
+* Compiling and checking tests
+* Writing JUnit test case 'LovinsStemmer_ESTest' to /home/ubuntu/termite/rmosa/tests/s1014/107_weka/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: weka.classifiers.Evaluation
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/107_weka/evosuite-files/evosuite.properties
+* Connecting to master process on port 7484
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 03:13:55.439 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 03:13:55.445 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 03:13:55.447 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 03:13:56.606 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 03:13:58.279 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 03:13:58.280 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 03:14:01.336 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 03:14:01.376 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 03:14:01.377 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 03:14:01.377 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 03:14:01.378 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 03:14:01.378 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 03:14:01.379 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 03:14:01.380 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 03:14:01.380 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 03:14:01.441 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 03:14:01.453 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class weka.classifiers.Evaluation
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1014
+* Starting evolution
+[MASTER] 03:14:07.268 [logback-1] WARN  ClassResetter - class java.lang.NoClassDefFoundError thrown during execution of method  __STATIC_RESET() for class weka.core.converters.ConverterUtils, null
+[MASTER] 03:14:44.248 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 03:15:11.510 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch weka.classifiers.Evaluation.weightedAreaUnderROC()D: I18 Branch 8 IF_ICMPGE L493 - false in context: weka.classifiers.Evaluation:weightedAreaUnderROC()D
+[MASTER] 03:15:11.510 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch weka.classifiers.Evaluation.weightedAreaUnderROC()D: I81 Branch 11 IFNE L503 - true in context: weka.classifiers.Evaluation:weightedAreaUnderROC()D
+[MASTER] 03:15:11.510 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch weka.classifiers.Evaluation.weightedAreaUnderROC()D: I27 Branch 9 IF_ICMPGE L494 - false in context: weka.classifiers.Evaluation:weightedAreaUnderROC()D
+[MASTER] 03:15:11.510 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch weka.classifiers.Evaluation.weightedAreaUnderROC()D: I27 Branch 9 IF_ICMPGE L494 - true in context: weka.classifiers.Evaluation:weightedAreaUnderROC()D
+[MASTER] 03:15:11.510 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch weka.classifiers.Evaluation.weightedAreaUnderROC()D: I70 Branch 10 IF_ICMPGE L501 - false in context: weka.classifiers.Evaluation:weightedAreaUnderROC()D
+* Search finished after 130s and 47 generations, 30137 statements, best individual has fitness: 16192.0
+[MASTER] 03:16:17.851 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 14 seconds more than allowed.
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 52%
+* Total number of goals: 1378
+* Number of covered goals: 719
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 43%
+* Total number of goals: 809
+* Number of covered goals: 344
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 53
+* Number of covered goals: 53
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 61%
+* Total number of goals: 424
+* Number of covered goals: 258
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 21%
+* Total number of goals: 278
+* Number of covered goals: 59
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 96%
+* Total number of goals: 103
+* Number of covered goals: 99
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 96%
+* Total number of goals: 103
+* Number of covered goals: 99
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 39%
+* Total number of goals: 809
+* Number of covered goals: 319
+* Generated 131 tests with total length 1628
+* Resulting test suite's coverage: 49% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 7%
+* Compiling and checking tests
+[MASTER] 03:23:10.966 [logback-2] ERROR JUnitAnalyzer - Compilation failed on compilation units: [RegularFileObject[/tmp/EvoSuite_114_1575602590939/weka/classifiers/Evaluation_114_tmp__ESTest.java], RegularFileObject[/tmp/EvoSuite_114_1575602590939/weka/classifiers/Evaluation_114_tmp__ESTest_scaffolding.java]]
+[MASTER] 03:23:10.966 [logback-2] ERROR JUnitAnalyzer - Classpath: /home/ubuntu/termite/projects/107_weka/weka.jar:/home/ubuntu/termite/projects/107_weka/lib/packageManager.jar:/home/ubuntu/termite/projects/107_weka/lib/JFlex.jar:/home/ubuntu/termite/projects/107_weka/lib/java-cup.jar:/home/ubuntu/termite/evosuite.jar:/home/ubuntu/termite/projects/107_weka/weka.jar:/home/ubuntu/termite/projects/107_weka/lib/packageManager.jar:/home/ubuntu/termite/projects/107_weka/lib/JFlex.jar:/home/ubuntu/termite/projects/107_weka/lib/java-cup.jar
+[MASTER] 03:23:10.966 [logback-2] ERROR JUnitAnalyzer - evosuiteCP: /home/ubuntu/termite/evosuite.jar:/home/ubuntu/termite/projects/107_weka/weka.jar:/home/ubuntu/termite/projects/107_weka/lib/packageManager.jar:/home/ubuntu/termite/projects/107_weka/lib/JFlex.jar:/home/ubuntu/termite/projects/107_weka/lib/java-cup.jar
+[MASTER] 03:23:10.970 [logback-2] ERROR JUnitAnalyzer - Diagnostic: cannot find symbol
+  symbol:   variable double1
+  location: class weka.classifiers.Evaluation_114_tmp__ESTest: 57
+[MASTER] 03:23:10.971 [logback-2] ERROR JUnitAnalyzer - RegularFileObject[/tmp/EvoSuite_114_1575602590939/weka/classifiers/Evaluation_114_tmp__ESTest.java]
+1: /*
+2:  * This file was automatically generated by EvoSuite
+3:  * Fri Dec 06 03:23:10 GMT 2019
+4:  */
+5: 
+6: package weka.classifiers;
+7: 
+8: import org.junit.Test;
+9: import static org.junit.Assert.*;
+10: import org.evosuite.runtime.EvoRunner;
+11: import org.evosuite.runtime.EvoRunnerParameters;
+12: import org.junit.runner.RunWith;
+13: import weka.classifiers.Evaluation;
+14: import weka.classifiers.evaluation.NumericPrediction;
+15: import weka.classifiers.lazy.LWL;
+16: import weka.core.Instances;
+17: import weka.core.converters.DatabaseLoader;
+18: import weka.core.converters.TextDirectoryLoader;
+19: 
+20: @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, useJEE = true) 
+21: public class Evaluation_114_tmp__ESTest extends Evaluation_114_tmp__ESTest_scaffolding {
+22: 
+23:   /**
+24:   //Test case number: 0
+25:   /*Coverage entropy=1.1779956654084303
+26:   */
+27:   @Test(timeout = 4000)
+28:   public void test0()  throws Throwable  {
+29:       TextDirectoryLoader textDirectoryLoader0 = new TextDirectoryLoader();
+30:       Instances instances0 = textDirectoryLoader0.getStructure();
+31:       Evaluation evaluation0 = new Evaluation(instances0);
+32:       evaluation0.m_WithClass = 4307.0;
+33:       evaluation0.unweightedMacroFmeasure();
+34:       evaluation0.KBMeanInformation();
+35:       Evaluation evaluation1 = new Evaluation(instances0);
+36:       int[] intArray0 = new int[7];
+37:       intArray0[0] = 2146908646;
+38:       Evaluation evaluation2 = new Evaluation(instances0);
+39:       evaluation2.setNumericPriorsFromBuffer();
+40:       LWL lWL0 = new LWL();
+41:       double[] doubleArray0 = new double[9];
+42:       doubleArray0[1] = (double) 116;
+43:       doubleArray0[2] = Double.NaN;
+44:       doubleArray0[3] = (double) 3;
+45:       doubleArray0[5] = (double) 2;
+46:       doubleArray0[6] = (double) 4;
+47:       doubleArray0[7] = (double) 3;
+48:       doubleArray0[8] = 4307.0;
+49:       evaluation0.updateNumericScores(doubleArray0, doubleArray0, Double.NaN);
+50:       evaluation0.recall(1);
+51:       DatabaseLoader databaseLoader0 = new DatabaseLoader();
+52:       NumericPrediction numericPrediction0 = new NumericPrediction(593.9329248316561, 865.389094396363);
+53:       evaluation0.equals(evaluation1);
+54:       assertEquals(0.0, evaluation0.sizeOfPredictedRegions(), 0.01);
+55:       
+56:       double double0 = evaluation2.m_MinTarget;
+57:       assertEquals(double0, double1, 0.01);
+58:   }
+59: }
+RegularFileObject[/tmp/EvoSuite_114_1575602590939/weka/classifiers/Evaluation_114_tmp__ESTest.java]
+1: /**
+2:  * Scaffolding file used to store all the setups needed to run 
+3:  * tests automatically generated by EvoSuite
+4:  * Fri Dec 06 03:23:10 GMT 2019
+5:  */
+6: 
+7: package weka.classifiers;
+8: 
+9: import org.evosuite.runtime.annotation.EvoSuiteClassExclude;
+10: import org.junit.BeforeClass;
+11: import org.junit.Before;
+12: import org.junit.After;
+13: import org.junit.AfterClass;
+14: import org.evosuite.runtime.sandbox.Sandbox;
+15: import org.evosuite.runtime.sandbox.Sandbox.SandboxMode;
+16: 
+17: @EvoSuiteClassExclude
+18: public class Evaluation_114_tmp__ESTest_scaffolding {
+19: 
+20:   @org.junit.Rule 
+21:   public org.evosuite.runtime.vnet.NonFunctionalRequirementRule nfr = new org.evosuite.runtime.vnet.NonFunctionalRequirementRule();
+22: 
+23:   private static final java.util.Properties defaultProperties = (java.util.Properties) java.lang.System.getProperties().clone(); 
+24: 
+25:   private org.evosuite.runtime.thread.ThreadStopper threadStopper =  new org.evosuite.runtime.thread.ThreadStopper (org.evosuite.runtime.thread.KillSwitchHandler.getInstance(), 3000);
+26: 
+27: 
+28:   @BeforeClass 
+29:   public static void initEvoSuiteFramework() { 
+30:     org.evosuite.runtime.RuntimeSettings.className = "weka.classifiers.Evaluation"; 
+31:     org.evosuite.runtime.GuiSupport.initialize(); 
+32:     org.evosuite.runtime.RuntimeSettings.maxNumberOfThreads = 100; 
+33:     org.evosuite.runtime.RuntimeSettings.maxNumberOfIterationsPerLoop = 10000; 
+34:     org.evosuite.runtime.RuntimeSettings.mockSystemIn = true; 
+35:     org.evosuite.runtime.RuntimeSettings.sandboxMode = org.evosuite.runtime.sandbox.Sandbox.SandboxMode.RECOMMENDED; 
+36:     org.evosuite.runtime.sandbox.Sandbox.initializeSecurityManagerForSUT(); 
+37:     org.evosuite.runtime.classhandling.JDKClassResetter.init();
+38:     setSystemProperties();
+39:     initializeClasses();
+40:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+41:   } 
+42: 
+43:   @AfterClass 
+44:   public static void clearEvoSuiteFramework(){ 
+45:     Sandbox.resetDefaultSecurityManager(); 
+46:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+47:   } 
+48: 
+49:   @Before 
+50:   public void initTestCase(){ 
+51:     threadStopper.storeCurrentThreads();
+52:     threadStopper.startRecordingTime();
+53:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().initHandler(); 
+54:     org.evosuite.runtime.sandbox.Sandbox.goingToExecuteSUTCode(); 
+55:     setSystemProperties(); 
+56:     org.evosuite.runtime.GuiSupport.setHeadless(); 
+57:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+58:     org.evosuite.runtime.agent.InstrumentingAgent.activate(); 
+59:   } 
+60: 
+61:   @After 
+62:   public void doneWithTestCase(){ 
+63:     threadStopper.killAndJoinClientThreads();
+64:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().safeExecuteAddedHooks(); 
+65:     org.evosuite.runtime.classhandling.JDKClassResetter.reset(); 
+66:     resetClasses(); 
+67:     org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(); 
+68:     org.evosuite.runtime.agent.InstrumentingAgent.deactivate(); 
+69:     org.evosuite.runtime.GuiSupport.restoreHeadlessMode(); 
+70:   } 
+71: 
+72:   public static void setSystemProperties() {
+73:  
+74:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+75:     java.lang.System.setProperty("file.encoding", "UTF-8"); 
+76:     java.lang.System.setProperty("java.awt.headless", "true"); 
+77:     java.lang.System.setProperty("java.io.tmpdir", "/tmp"); 
+78:     java.lang.System.setProperty("user.country", "US"); 
+79:     java.lang.System.setProperty("user.dir", "/home/ubuntu/termite/projects/107_weka"); 
+80:     java.lang.System.setProperty("user.home", "/home/ubuntu"); 
+81:     java.lang.System.setProperty("user.language", "en"); 
+82:     java.lang.System.setProperty("user.name", "ubuntu"); 
+83:     java.lang.System.setProperty("user.timezone", "Etc/UTC"); 
+84:   }
+85: 
+86:   private static void initializeClasses() {
+87:     org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(Evaluation_114_tmp__ESTest_scaffolding.class.getClassLoader() ,
+88:       "weka.core.Environment",
+89:       "weka.clusterers.AbstractClusterer",
+90:       "weka.filters.unsupervised.attribute.NominalToBinary",
+91:       "weka.classifiers.functions.MultilayerPerceptron$ControlPanel",
+92:       "weka.core.converters.TextDirectoryLoader",
+93:       "org.pentaho.packageManagement.PackageConstraint",
+94:       "weka.core.xml.XMLBasicSerialization",
+95:       "weka.classifiers.evaluation.output.prediction.XML",
+96:       "weka.filters.UnsupervisedFilter",
+97:       "weka.core.neighboursearch.BallTree",
+98:       "weka.classifiers.evaluation.output.prediction.AbstractOutput",
+99:       "weka.core.DenseInstance",
+100:       "weka.core.converters.DatabaseConverter",
+101:       "weka.classifiers.trees.J48",
+102:       "weka.classifiers.functions.SimpleLinearRegression",
+103:       "org.pentaho.packageManagement.DefaultPackageManager",
+104:       "weka.estimators.UnivariateIntervalEstimator",
+105:       "org.bounce.net.DefaultAuthenticator",
+106:       "weka.core.converters.JSONLoader",
+107:       "weka.estimators.IncrementalEstimator",
+108:       "weka.clusterers.NumberOfClustersRequestable",
+109:       "weka.core.stemmers.NullStemmer",
+110:       "weka.classifiers.functions.SGDText",
+111:       "weka.core.CustomDisplayStringProvider",
+112:       "weka.core.NormalizableDistance",
+113:       "weka.clusterers.SimpleKMeans",
+114:       "weka.core.Copyable",
+115:       "weka.filters.supervised.attribute.NominalToBinary",
+116:       "weka.core.BinarySparseInstance",
+117:       "weka.classifiers.RandomizableMultipleClassifiersCombiner",
+118:       "weka.core.SerializedObject",
+119:       "weka.clusterers.UpdateableClusterer",
+120:       "weka.core.AdditionalMeasureProducer",
+121:       "weka.core.neighboursearch.balltrees.BallNode",
+122:       "weka.classifiers.RandomizableIteratedSingleClassifierEnhancer",
+123:       "weka.classifiers.meta.MultiClassClassifier",
+124:       "weka.core.Optimization",
+125:       "weka.classifiers.lazy.kstar.KStarConstants",
+126:       "weka.classifiers.misc.InputMappedClassifier",
+127:       "weka.experiment.ResultProducer",
+128:       "weka.classifiers.functions.neural.NeuralConnection",
+129:       "weka.core.Version",
+130:       "weka.classifiers.meta.MultiClassClassifier$Code",
+131:       "weka.classifiers.bayes.net.estimate.SimpleEstimator",
+132:       "weka.core.neighboursearch.CoverTree",
+133:       "weka.classifiers.AbstractClassifier",
+134:       "weka.core.WekaException",
+135:       "weka.classifiers.functions.neural.NeuralNode",
+136:       "weka.filters.StreamableFilter",
+137:       "weka.core.Attribute$1",
+138:       "weka.core.PartitionGenerator",
+139:       "weka.classifiers.functions.MultilayerPerceptron$NeuralEnd",
+140:       "weka.core.SparseInstance",
+141:       "weka.core.tokenizers.WordTokenizer",
+142:       "weka.classifiers.trees.j48.ClassifierTree",
+143:       "weka.classifiers.functions.MultilayerPerceptron",
+144:       "weka.filters.unsupervised.attribute.ReplaceMissingValues",
+145:       "weka.classifiers.trees.j48.PruneableClassifierTree",
+146:       "weka.classifiers.Evaluation",
+147:       "weka.core.converters.CSVLoader",
+148:       "weka.classifiers.functions.supportVector.Kernel",
+149:       "weka.classifiers.functions.neural.LinearUnit",
+150:       "weka.classifiers.evaluation.ThresholdCurve",
+151:       "weka.classifiers.bayes.net.search.SearchAlgorithm",
+152:       "weka.core.converters.FileSourcedConverter",
+153:       "weka.core.converters.URLSourcedLoader",
+154:       "weka.core.neighboursearch.LinearNNSearch",
+155:       "weka.clusterers.Clusterer",
+156:       "weka.core.neighboursearch.PerformanceStats",
+157:       "weka.classifiers.bayes.NaiveBayesMultinomialUpdateable",
+158:       "weka.core.neighboursearch.balltrees.PointsClosestToFurthestChildren",
+159:       "weka.estimators.UnivariateKernelEstimator",
+160:       "weka.core.UnassignedDatasetException",
+161:       "weka.core.tokenizers.NGramTokenizer",
+162:       "weka.core.neighboursearch.balltrees.BallTreeConstructor",
+163:       "weka.classifiers.RandomizableClassifier",
+164:       "weka.core.RevisionUtils",
+165:       "weka.core.converters.Loader",
+166:       "weka.estimators.Estimator",
+167:       "weka.core.ProtectedProperties",
+168:       "weka.core.converters.C45Loader",
+169:       "weka.core.StringLocator",
+170:       "weka.core.AttributeStats",
+171:       "weka.classifiers.trees.DecisionStump",
+172:       "weka.estimators.UnivariateQuantileEstimator",
+173:       "weka.classifiers.bayes.net.search.local.LocalScoreSearchAlgorithm",
+174:       "weka.filters.unsupervised.attribute.Remove",
+175:       "weka.core.Randomizable",
+176:       "weka.classifiers.trees.LMT",
+177:       "weka.classifiers.rules.M5Rules",
+178:       "weka.core.EuclideanDistance",
+179:       "weka.core.Instances",
+180:       "weka.core.converters.AbstractFileLoader",
+181:       "weka.classifiers.bayes.NaiveBayesMultinomial",
+182:       "weka.core.converters.ConverterUtils$DataSink",
+183:       "weka.classifiers.bayes.net.ParentSet",
+184:       "weka.core.xml.XMLInstances",
+185:       "weka.core.converters.DatabaseConnection",
+186:       "weka.core.TechnicalInformation",
+187:       "weka.core.UnsupportedAttributeTypeException",
+188:       "weka.classifiers.functions.Logistic$OptEngCG",
+189:       "weka.core.RevisionHandler",
+190:       "weka.experiment.Stats",
+191:       "weka.core.converters.ConverterUtils$DataSource",
+192:       "weka.classifiers.xml.XMLClassifier",
+193:       "weka.filters.Filter",
+194:       "weka.filters.supervised.attribute.Discretize",
+195:       "weka.core.TestInstances",
+196:       "weka.core.converters.ConverterUtils",
+197:       "weka.core.DistanceFunction",
+198:       "org.pentaho.packageManagement.Package",
+199:       "weka.classifiers.trees.m5.M5Base",
+200:       "weka.classifiers.CostMatrix",
+201:       "weka.classifiers.evaluation.NumericPrediction",
+202:       "weka.classifiers.bayes.net.search.local.K2",
+203:       "weka.core.logging.Logger$Level",
+204:       "weka.core.ConjugateGradientOptimization",
+205:       "weka.classifiers.functions.LinearRegression",
+206:       "weka.core.stemmers.Stemmer",
+207:       "weka.core.converters.IncrementalConverter",
+208:       "weka.classifiers.RandomizableSingleClassifierEnhancer",
+209:       "weka.classifiers.meta.LogitBoost",
+210:       "weka.classifiers.bayes.NaiveBayes",
+211:       "weka.clusterers.HierarchicalClusterer",
+212:       "weka.classifiers.meta.MultiClassClassifier$RandomCode",
+213:       "weka.estimators.Estimator$Builder",
+214:       "weka.core.EnvironmentHandler",
+215:       "weka.classifiers.trees.j48.C45ModelSelection",
+216:       "weka.classifiers.trees.m5.RuleNode",
+217:       "weka.classifiers.functions.Logistic",
+218:       "weka.core.RelationalLocator",
+219:       "weka.core.Utils",
+220:       "weka.core.converters.XRFFLoader",
+221:       "weka.core.tokenizers.Tokenizer",
+222:       "weka.filters.unsupervised.instance.RemoveWithValues",
+223:       "weka.core.NoSupportForMissingValuesException",
+224:       "weka.classifiers.UpdateableClassifier",
+225:       "weka.classifiers.bayes.NaiveBayesMultinomialText",
+226:       "weka.core.MultiInstanceCapabilitiesHandler",
+227:       "weka.classifiers.meta.MultiClassClassifier$ExhaustiveCode",
+228:       "weka.core.Capabilities",
+229:       "weka.core.neighboursearch.balltrees.TopDownConstructor",
+230:       "weka.core.AttributeLocator",
+231:       "weka.classifiers.functions.supportVector.CachedKernel",
+232:       "weka.classifiers.meta.RegressionByDiscretization",
+233:       "weka.core.Summarizable",
+234:       "weka.classifiers.trees.j48.ModelSelection",
+235:       "org.pentaho.packageManagement.PackageManager$1",
+236:       "weka.core.Drawable",
+237:       "weka.core.matrix.Matrix",
+238:       "weka.classifiers.ConditionalDensityEstimator",
+239:       "weka.core.CapabilitiesHandler",
+240:       "weka.classifiers.trees.REPTree",
+241:       "weka.core.AbstractInstance",
+242:       "weka.core.converters.LibSVMLoader",
+243:       "weka.core.scripting.JythonObject",
+244:       "weka.core.SelectedTag",
+245:       "org.pentaho.packageManagement.DefaultPackage",
+246:       "weka.estimators.DiscreteEstimator",
+247:       "weka.classifiers.bayes.NaiveBayesUpdateable",
+248:       "weka.core.neighboursearch.balltrees.BallSplitter",
+249:       "weka.classifiers.bayes.BayesNet",
+250:       "weka.classifiers.trees.j48.C45PruneableClassifierTree",
+251:       "weka.classifiers.ParallelIteratedSingleClassifierEnhancer",
+252:       "weka.clusterers.RandomizableClusterer",
+253:       "weka.classifiers.evaluation.Prediction",
+254:       "weka.core.converters.AbstractLoader",
+255:       "weka.classifiers.trees.lmt.ResidualModelSelection",
+256:       "weka.filters.AllFilter",
+257:       "weka.filters.unsupervised.attribute.RemoveUseless",
+258:       "weka.core.converters.BatchConverter",
+259:       "weka.core.Tag",
+260:       "weka.classifiers.IteratedSingleClassifierEnhancer",
+261:       "weka.classifiers.trees.j48.BinC45ModelSelection",
+262:       "weka.estimators.UnivariateDensityEstimator",
+263:       "weka.core.OptionHandler",
+264:       "weka.core.Range",
+265:       "weka.core.scripting.JythonSerializableObject",
+266:       "weka.classifiers.Classifier",
+267:       "weka.core.Capabilities$Capability",
+268:       "org.pentaho.packageManagement.PackageManager",
+269:       "weka.core.WekaEnumeration",
+270:       "weka.clusterers.HierarchicalClusterer$Node",
+271:       "weka.core.WekaPackageManager",
+272:       "weka.filters.SupervisedFilter",
+273:       "weka.core.TechnicalInformationHandler",
+274:       "weka.experiment.DatabaseUtils",
+275:       "weka.classifiers.lazy.LWL",
+276:       "weka.classifiers.meta.CostSensitiveClassifier",
+277:       "weka.core.tokenizers.CharacterDelimitedTokenizer",
+278:       "weka.core.Option",
+279:       "weka.filters.unsupervised.attribute.PotentialClassIgnorer",
+280:       "weka.estimators.NormalEstimator",
+281:       "weka.classifiers.functions.neural.NeuralMethod",
+282:       "weka.filters.Sourcable",
+283:       "weka.classifiers.meta.MultiClassClassifier$StandardCode",
+284:       "weka.classifiers.meta.RandomSubSpace",
+285:       "weka.core.Attribute",
+286:       "weka.classifiers.functions.MultilayerPerceptron$NodePanel",
+287:       "weka.classifiers.meta.MultiScheme",
+288:       "weka.core.FastVector",
+289:       "weka.core.xml.XMLDocument",
+290:       "weka.classifiers.MultipleClassifiersCombiner",
+291:       "weka.classifiers.bayes.net.estimate.BayesNetEstimator",
+292:       "weka.core.BatchPredictor",
+293:       "weka.classifiers.functions.neural.SigmoidUnit",
+294:       "weka.classifiers.trees.RandomTree",
+295:       "weka.classifiers.SingleClassifierEnhancer",
+296:       "weka.core.Instance",
+297:       "weka.core.converters.SerializedInstancesLoader",
+298:       "weka.classifiers.functions.supportVector.PolyKernel",
+299:       "weka.classifiers.lazy.KStar",
+300:       "weka.classifiers.IntervalEstimator",
+301:       "weka.core.Matchable",
+302:       "weka.classifiers.bayes.net.ADNode",
+303:       "weka.core.WeightedInstancesHandler",
+304:       "weka.core.neighboursearch.NearestNeighbourSearch",
+305:       "weka.classifiers.functions.GaussianProcesses",
+306:       "weka.core.converters.DatabaseLoader",
+307:       "weka.filters.unsupervised.attribute.Discretize",
+308:       "weka.classifiers.functions.SGD",
+309:       "weka.filters.unsupervised.attribute.Normalize",
+310:       "weka.core.UnassignedClassException",
+311:       "weka.classifiers.rules.ZeroR",
+312:       "weka.filters.unsupervised.attribute.Standardize",
+313:       "weka.classifiers.Sourcable",
+314:       "weka.classifiers.functions.Logistic$OptEng",
+315:       "weka.classifiers.evaluation.output.prediction.PlainText",
+316:       "weka.core.xml.XMLSerialization",
+317:       "weka.core.neighboursearch.TreePerformanceStats",
+318:       "weka.filters.unsupervised.attribute.MakeIndicator",
+319:       "weka.classifiers.meta.ClassificationViaRegression",
+320:       "weka.classifiers.RandomizableParallelIteratedSingleClassifierEnhancer"
+321:     );
+322:   } 
+323: 
+324:   private static void resetClasses() {
+325:     org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(Evaluation_114_tmp__ESTest_scaffolding.class.getClassLoader()); 
+326: 
+327:     org.evosuite.runtime.classhandling.ClassStateSupport.resetClasses(
+328:       "weka.classifiers.Evaluation",
+329:       "weka.core.pmml.PMMLFactory$ModelType",
+330:       "weka.core.pmml.PMMLFactory$1",
+331:       "weka.core.xml.KOML",
+332:       "weka.core.Version",
+333:       "weka.core.Utils",
+334:       "weka.core.converters.AbstractLoader",
+335:       "weka.core.converters.AbstractFileLoader",
+336:       "weka.core.converters.SerializedInstancesLoader",
+337:       "weka.core.converters.JSONLoader",
+338:       "weka.classifiers.evaluation.output.prediction.AbstractOutput",
+339:       "weka.classifiers.evaluation.output.prediction.HTML",
+340:       "weka.classifiers.CostMatrix",
+341:       "weka.core.xml.XMLDocument",
+342:       "weka.core.xml.XMLInstances",
+343:       "weka.core.converters.XRFFLoader",
+344:       "weka.core.Instances",
+345:       "weka.core.converters.MatlabLoader",
+346:       "weka.core.converters.ConverterUtils$DataSource",
+347:       "weka.core.converters.ArffLoader",
+348:       "org.pentaho.packageManagement.PackageManager",
+349:       "org.pentaho.packageManagement.DefaultPackageManager",
+350:       "weka.core.Environment",
+351:       "weka.core.WekaPackageManager",
+352:       "weka.gui.GenericPropertiesCreator",
+353:       "weka.core.ClassDiscovery",
+354:       "weka.core.ClassCache",
+355:       "weka.gui.GenericObjectEditor",
+356:       "weka.core.converters.ConverterUtils",
+357:       "weka.core.converters.SVMLightLoader",
+358:       "weka.classifiers.AbstractClassifier",
+359:       "weka.classifiers.RandomizableClassifier",
+360:       "weka.core.Tag",
+361:       "weka.classifiers.functions.SGDText",
+362:       "weka.core.tokenizers.Tokenizer",
+363:       "weka.core.tokenizers.CharacterDelimitedTokenizer",
+364:       "weka.core.tokenizers.WordTokenizer",
+365:       "weka.core.stemmers.NullStemmer",
+366:       "weka.core.neighboursearch.NearestNeighbourSearch",
+367:       "weka.core.neighboursearch.CoverTree",
+368:       "weka.core.NormalizableDistance",
+369:       "weka.core.EuclideanDistance",
+370:       "weka.core.Range",
+371:       "weka.core.AbstractInstance",
+372:       "weka.core.SparseInstance",
+373:       "weka.core.BinarySparseInstance",
+374:       "weka.core.converters.TextDirectoryLoader",
+375:       "weka.core.Attribute",
+376:       "weka.core.ProtectedProperties",
+377:       "weka.core.WekaEnumeration",
+378:       "weka.core.Attribute$1",
+379:       "weka.core.TestInstances",
+380:       "weka.attributeSelection.ASEvaluation",
+381:       "weka.attributeSelection.UnsupervisedAttributeEvaluator",
+382:       "weka.attributeSelection.PrincipalComponents",
+383:       "weka.classifiers.SingleClassifierEnhancer",
+384:       "weka.classifiers.IteratedSingleClassifierEnhancer",
+385:       "weka.classifiers.ParallelIteratedSingleClassifierEnhancer",
+386:       "weka.classifiers.RandomizableParallelIteratedSingleClassifierEnhancer",
+387:       "weka.classifiers.meta.RandomCommittee",
+388:       "weka.classifiers.rules.ZeroR",
+389:       "weka.classifiers.trees.RandomTree",
+390:       "weka.core.Capabilities",
+391:       "weka.core.Capabilities$Capability",
+392:       "weka.classifiers.misc.InputMappedClassifier",
+393:       "weka.clusterers.AbstractClusterer",
+394:       "weka.clusterers.RandomizableClusterer",
+395:       "weka.clusterers.SimpleKMeans",
+396:       "weka.classifiers.lazy.IBk",
+397:       "weka.core.neighboursearch.LinearNNSearch",
+398:       "weka.core.UnassignedDatasetException",
+399:       "weka.core.converters.DatabaseLoader",
+400:       "weka.experiment.DatabaseUtils",
+401:       "weka.core.converters.DatabaseConnection",
+402:       "weka.experiment.InstanceQuery",
+403:       "weka.core.Option",
+404:       "weka.core.converters.C45Loader",
+405:       "weka.classifiers.bayes.BayesNet",
+406:       "weka.classifiers.bayes.net.search.SearchAlgorithm",
+407:       "weka.classifiers.bayes.net.search.local.LocalScoreSearchAlgorithm",
+408:       "weka.classifiers.bayes.net.search.local.K2",
+409:       "weka.classifiers.bayes.net.estimate.BayesNetEstimator",
+410:       "weka.classifiers.bayes.net.estimate.SimpleEstimator",
+411:       "weka.filters.Filter",
+412:       "weka.filters.AllFilter",
+413:       "weka.classifiers.bayes.NaiveBayesMultinomial",
+414:       "weka.classifiers.bayes.NaiveBayesMultinomialUpdateable",
+415:       "weka.core.converters.LibSVMLoader",
+416:       "weka.core.UnassignedClassException",
+417:       "weka.attributeSelection.WrapperSubsetEval",
+418:       "weka.classifiers.functions.SGD",
+419:       "weka.classifiers.bayes.NaiveBayes",
+420:       "weka.classifiers.bayes.NaiveBayesUpdateable",
+421:       "weka.core.converters.CSVLoader",
+422:       "weka.core.RevisionUtils",
+423:       "weka.core.converters.ArffLoader$ArffReader",
+424:       "weka.core.TechnicalInformation",
+425:       "weka.core.TechnicalInformation$Type",
+426:       "weka.core.TechnicalInformation$Field",
+427:       "weka.classifiers.trees.m5.M5Base",
+428:       "weka.classifiers.rules.M5Rules",
+429:       "weka.core.neighboursearch.BallTree",
+430:       "weka.core.neighboursearch.balltrees.BallTreeConstructor",
+431:       "weka.core.neighboursearch.balltrees.TopDownConstructor",
+432:       "weka.core.neighboursearch.balltrees.BallSplitter",
+433:       "weka.core.neighboursearch.balltrees.PointsClosestToFurthestChildren",
+434:       "weka.classifiers.trees.DecisionStump",
+435:       "weka.core.neighboursearch.KDTree",
+436:       "weka.core.neighboursearch.kdtrees.KDTreeNodeSplitter",
+437:       "weka.core.neighboursearch.kdtrees.SlidingMidPointOfWidestSide",
+438:       "weka.classifiers.RandomizableSingleClassifierEnhancer",
+439:       "weka.classifiers.meta.CVParameterSelection",
+440:       "weka.core.FastVector",
+441:       "weka.core.DenseInstance",
+442:       "weka.classifiers.meta.RegressionByDiscretization",
+443:       "weka.filters.unsupervised.attribute.PotentialClassIgnorer",
+444:       "weka.filters.unsupervised.attribute.Discretize",
+445:       "weka.classifiers.trees.J48",
+446:       "weka.classifiers.functions.SMOreg",
+447:       "weka.classifiers.functions.supportVector.RegOptimizer",
+448:       "weka.classifiers.functions.supportVector.RegSMO",
+449:       "weka.classifiers.functions.supportVector.RegSMOImproved",
+450:       "weka.classifiers.functions.supportVector.Kernel",
+451:       "weka.classifiers.functions.supportVector.CachedKernel",
+452:       "weka.classifiers.functions.supportVector.PolyKernel",
+453:       "weka.core.SerializedObject",
+454:       "weka.classifiers.RandomizableIteratedSingleClassifierEnhancer",
+455:       "weka.classifiers.meta.LogitBoost",
+456:       "weka.classifiers.evaluation.output.prediction.Null",
+457:       "weka.classifiers.meta.FilteredClassifier",
+458:       "weka.filters.supervised.attribute.AttributeSelection",
+459:       "weka.attributeSelection.AttributeSelection",
+460:       "weka.attributeSelection.CfsSubsetEval",
+461:       "weka.attributeSelection.ASSearch",
+462:       "weka.attributeSelection.GreedyStepwise",
+463:       "weka.attributeSelection.BestFirst",
+464:       "weka.filters.supervised.attribute.Discretize",
+465:       "weka.classifiers.meta.CostSensitiveClassifier",
+466:       "weka.classifiers.MultipleClassifiersCombiner",
+467:       "weka.classifiers.RandomizableMultipleClassifiersCombiner",
+468:       "weka.classifiers.meta.MultiScheme",
+469:       "weka.classifiers.evaluation.output.prediction.PlainText",
+470:       "weka.classifiers.trees.M5P",
+471:       "weka.classifiers.meta.RandomSubSpace",
+472:       "weka.classifiers.trees.REPTree",
+473:       "weka.classifiers.lazy.LWL",
+474:       "weka.classifiers.meta.MultiClassClassifier",
+475:       "weka.classifiers.meta.MultiClassClassifierUpdateable",
+476:       "weka.classifiers.functions.Logistic",
+477:       "weka.classifiers.rules.DecisionTable",
+478:       "weka.classifiers.ParallelMultipleClassifiersCombiner",
+479:       "weka.classifiers.RandomizableParallelMultipleClassifiersCombiner",
+480:       "weka.classifiers.meta.Stacking",
+481:       "weka.classifiers.evaluation.output.prediction.CSV",
+482:       "weka.classifiers.rules.PART",
+483:       "weka.classifiers.functions.GaussianProcesses",
+484:       "weka.classifiers.lazy.KStar",
+485:       "weka.classifiers.bayes.NaiveBayesMultinomialText",
+486:       "weka.classifiers.misc.SerializedClassifier",
+487:       "weka.classifiers.functions.SimpleLinearRegression",
+488:       "weka.core.neighboursearch.balltrees.BallNode",
+489:       "weka.core.tokenizers.AlphabeticTokenizer",
+490:       "weka.clusterers.HierarchicalClusterer",
+491:       "weka.classifiers.rules.JRip",
+492:       "weka.classifiers.functions.VotedPerceptron",
+493:       "weka.classifiers.trees.LMT",
+494:       "weka.filters.SimpleFilter",
+495:       "weka.filters.SimpleStreamFilter",
+496:       "weka.filters.MultiFilter",
+497:       "weka.classifiers.evaluation.NumericPrediction",
+498:       "weka.classifiers.evaluation.Prediction",
+499:       "weka.estimators.UnivariateKernelEstimator",
+500:       "weka.experiment.Stats",
+501:       "weka.clusterers.Cobweb",
+502:       "weka.classifiers.functions.SimpleLogistic",
+503:       "weka.core.SelectedTag",
+504:       "weka.classifiers.functions.supportVector.PrecomputedKernelMatrixKernel",
+505:       "weka.core.Javadoc",
+506:       "weka.core.GlobalInfoJavadoc",
+507:       "weka.classifiers.meta.Bagging",
+508:       "weka.estimators.Estimator",
+509:       "weka.estimators.DiscreteEstimator",
+510:       "weka.classifiers.rules.OneR",
+511:       "weka.classifiers.rules.OneR$OneRRule",
+512:       "weka.classifiers.meta.Vote",
+513:       "weka.core.neighboursearch.balltrees.BottomUpConstructor",
+514:       "weka.classifiers.evaluation.output.prediction.XML",
+515:       "weka.estimators.KernelEstimator",
+516:       "weka.core.tokenizers.NGramTokenizer",
+517:       "weka.classifiers.functions.LinearRegression",
+518:       "weka.estimators.UnivariateEqualFrequencyHistogramEstimator",
+519:       "weka.classifiers.meta.AdditiveRegression",
+520:       "weka.attributeSelection.OneRAttributeEval",
+521:       "weka.attributeSelection.GainRatioAttributeEval",
+522:       "weka.core.neighboursearch.NearestNeighbourSearch$MyHeap",
+523:       "weka.core.neighboursearch.NearestNeighbourSearch$MyHeapElement",
+524:       "weka.core.matrix.Matrix",
+525:       "weka.classifiers.functions.MultilayerPerceptron",
+526:       "weka.filters.unsupervised.attribute.NominalToBinary",
+527:       "weka.classifiers.functions.neural.SigmoidUnit",
+528:       "weka.classifiers.functions.neural.LinearUnit",
+529:       "weka.core.WekaException",
+530:       "weka.clusterers.SingleClustererEnhancer",
+531:       "weka.clusterers.FilteredClusterer",
+532:       "weka.estimators.PoissonEstimator",
+533:       "weka.core.FindWithCapabilities",
+534:       "weka.core.SingleIndex",
+535:       "weka.clusterers.ClusterEvaluation",
+536:       "weka.classifiers.functions.supportVector.Puk",
+537:       "weka.attributeSelection.ReliefFAttributeEval",
+538:       "weka.core.UnsupportedAttributeTypeException",
+539:       "weka.attributeSelection.InfoGainAttributeEval",
+540:       "weka.estimators.NormalEstimator",
+541:       "weka.classifiers.functions.SMO",
+542:       "weka.classifiers.evaluation.ThresholdCurve"
+543:     );
+544:   }
+545: }
+
+[MASTER] 03:23:10.972 [logback-2] ERROR JUnitAnalyzer - Failed to compile test case:
+TextDirectoryLoader textDirectoryLoader0 = new TextDirectoryLoader();
+Instances instances0 = textDirectoryLoader0.getStructure();
+Evaluation evaluation0 = new Evaluation(instances0);
+evaluation0.m_WithClass = 4307.0;
+evaluation0.unweightedMacroFmeasure();
+evaluation0.KBMeanInformation();
+Evaluation evaluation1 = new Evaluation(instances0);
+int[] intArray0 = new int[7];
+intArray0[0] = 2146908646;
+Evaluation evaluation2 = new Evaluation(instances0);
+evaluation2.setNumericPriorsFromBuffer();
+LWL lWL0 = new LWL();
+double[] doubleArray0 = new double[9];
+doubleArray0[1] = (double) 116;
+doubleArray0[2] = Double.NaN;
+doubleArray0[3] = (double) 3;
+doubleArray0[5] = (double) 2;
+doubleArray0[6] = (double) 4;
+doubleArray0[7] = (double) 3;
+doubleArray0[8] = 4307.0;
+evaluation0.updateNumericScores(doubleArray0, doubleArray0, Double.NaN);
+evaluation0.recall(1);
+DatabaseLoader databaseLoader0 = new DatabaseLoader();
+NumericPrediction numericPrediction0 = new NumericPrediction(593.9329248316561, 865.389094396363);
+evaluation0.equals(evaluation1);
+assertEquals(0.0, evaluation0.sizeOfPredictedRegions(), 0.01);
+
+double double0 = evaluation2.m_MinTarget;
+assertEquals(double0, double1, 0.01);
+
+
+[MASTER] 03:23:12.390 [logback-2] ERROR ClassStateSupport - Could not initialize weka.core.converters.ConverterUtils: null
+[MASTER] 03:23:12.779 [logback-2] ERROR ClassResetter - java.lang.NoClassDefFoundError: Could not initialize class weka.gui.GenericObjectEditor
+[MASTER] 03:23:12.780 [logback-2] ERROR ClassResetter - java.lang.NoClassDefFoundError: Could not initialize class weka.core.converters.ConverterUtils
+[MASTER] 03:23:13.935 [logback-2] ERROR ClassStateSupport - Could not initialize weka.gui.GenericObjectEditor: Could not initialize class weka.gui.GenericObjectEditor
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 9
+* Writing JUnit test case 'Evaluation_ESTest' to /home/ubuntu/termite/rmosa/tests/s1014/107_weka/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: weka.classifiers.rules.JRip
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/107_weka/evosuite-files/evosuite.properties
+* Connecting to master process on port 7488
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 03:24:24.489 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 03:24:24.522 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 03:24:24.533 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 03:24:28.713 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 03:24:29.501 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 03:24:29.503 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+* Finished analyzing classpath
+* Generating tests for class weka.classifiers.rules.JRip
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1014
+* Starting evolution
+[MASTER] 03:24:58.832 [logback-1] WARN  ClassResetter - class java.lang.NoClassDefFoundError thrown during execution of method  __STATIC_RESET() for class weka.core.converters.ConverterUtils, null
+[MASTER] 03:25:18.468 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] weka.classifiers.rules.JRip.NominalAntd.toString()Ljava/lang/String;
+[MASTER] 03:25:30.756 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+* Search finished after 125s and 111 generations, 48856 statements, best individual has fitness: 13568.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 32%
+* Total number of goals: 705
+* Number of covered goals: 226
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 24%
+* Total number of goals: 416
+* Number of covered goals: 99
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 12
+* Number of covered goals: 12
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 49%
+* Total number of goals: 993
+* Number of covered goals: 483
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 29%
+* Total number of goals: 93
+* Number of covered goals: 27
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 72
+* Number of covered goals: 72
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 72
+* Number of covered goals: 72
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 24%
+* Total number of goals: 416
+* Number of covered goals: 99
+* Generated 66 tests with total length 593
+* Resulting test suite's coverage: 39% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 21%
+* Compiling and checking tests
+[MASTER] 03:27:53.052 [logback-2] ERROR ClassStateSupport - Could not initialize weka.core.converters.ConverterUtils: null
+[MASTER] 03:27:53.194 [logback-2] ERROR ClassStateSupport - Could not initialize weka.gui.GenericObjectEditor: Could not initialize class weka.gui.GenericObjectEditor
+[MASTER] 03:27:53.331 [logback-2] ERROR ClassResetter - java.lang.NoClassDefFoundError: Could not initialize class weka.gui.GenericObjectEditor
+[MASTER] 03:27:53.332 [logback-2] ERROR ClassResetter - java.lang.NoClassDefFoundError: Could not initialize class weka.core.converters.ConverterUtils
+* Writing JUnit test case 'JRip_ESTest' to /home/ubuntu/termite/rmosa/tests/s1014/107_weka/evosuite-tests
+* Done!
+
+* Computation finished

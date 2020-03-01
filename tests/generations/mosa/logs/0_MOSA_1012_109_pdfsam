@@ -1,0 +1,111 @@
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: org.pdfsam.guiclient.commons.models.VisualListModel
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/109_pdfsam/evosuite-files/evosuite.properties
+* Connecting to master process on port 2870
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 09:27:49.066 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 09:27:49.103 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 09:27:49.105 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 09:27:50.655 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 09:27:53.426 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 09:27:53.441 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 09:28:01.205 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 09:28:02.384 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 09:28:02.384 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 09:28:02.384 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 09:28:02.387 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 09:28:02.388 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 09:28:02.389 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 09:28:02.389 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 09:28:02.390 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 09:28:02.660 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 09:28:02.735 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class org.pdfsam.guiclient.commons.models.VisualListModel
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 1248
+* Using seed 1012
+* Starting evolution
+[MASTER] 09:28:13.475 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.pdfsam.guiclient.commons.models.VisualListModel.rotateAnticlockwiseElements([I)V: Line 352
+[MASTER] 09:28:13.475 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.pdfsam.guiclient.commons.models.VisualListModel.rotateAnticlockwiseElements([I)V: Line 359
+[MASTER] 09:28:13.475 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.pdfsam.guiclient.commons.models.VisualListModel.getValidElements()Ljava/util/List;: Line 431
+[MASTER] 09:28:13.475 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.pdfsam.guiclient.commons.models.VisualListModel.getValidElements()Ljava/util/List;: Line 432
+[MASTER] 09:28:13.475 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.pdfsam.guiclient.commons.models.VisualListModel.getValidElements()Ljava/util/List;: Line 440
+[MASTER] 09:28:13.475 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.pdfsam.guiclient.commons.models.VisualListModel.getValidElements()Ljava/util/List;: I8 Branch 66 IFNULL L432 - false
+[MASTER] 09:28:13.475 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.pdfsam.guiclient.commons.models.VisualListModel.getValidElements()Ljava/util/List;: I12 Branch 67 IFLE L432 - true
+[MASTER] 09:28:13.475 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.pdfsam.guiclient.commons.models.VisualListModel.rotateAnticlockwiseElements([I)V: I4 Branch 49 IFLE L352 - false
+[MASTER] 09:28:13.476 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.pdfsam.guiclient.commons.models.VisualListModel.rotateAnticlockwiseElements([I)V: I10 Branch 50 IF_ICMPGT L352 - true
+[MASTER] 09:28:13.477 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 451: org.pdfsam.guiclient.commons.models.VisualListModel.rotateAnticlockwiseElements([I)V:352 - ReplaceComparisonOperator <= -> -1
+[MASTER] 09:28:13.477 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 455: org.pdfsam.guiclient.commons.models.VisualListModel.rotateAnticlockwiseElements([I)V:352 - ReplaceComparisonOperator > -> -2
+[MASTER] 09:28:13.478 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 704: org.pdfsam.guiclient.commons.models.VisualListModel.getValidElements()Ljava/util/List;:432 - ReplaceComparisonOperator = null -> != null
+[MASTER] 09:28:13.478 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 707: org.pdfsam.guiclient.commons.models.VisualListModel.getValidElements()Ljava/util/List;:432 - ReplaceComparisonOperator <= -> <
+[MASTER] 09:28:13.478 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: org.pdfsam.guiclient.commons.models.VisualListModel.getValidElements()Ljava/util/List;:Null
+[MASTER] 09:28:13.479 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.pdfsam.guiclient.commons.models.VisualListModel.rotateAnticlockwiseElements([I)V
+[MASTER] 09:28:13.479 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.pdfsam.guiclient.commons.models.VisualListModel.getValidElements()Ljava/util/List;
+[MASTER] 09:28:13.481 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.pdfsam.guiclient.commons.models.VisualListModel.rotateAnticlockwiseElements([I)V
+[MASTER] 09:28:13.481 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.pdfsam.guiclient.commons.models.VisualListModel.getValidElements()Ljava/util/List;
+[MASTER] 09:28:13.481 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.pdfsam.guiclient.commons.models.VisualListModel.rotateAnticlockwiseElements([I)V: I4 Branch 49 IFLE L352 - false in context: org.pdfsam.guiclient.commons.models.VisualListModel:rotateAnticlockwiseElements([I)V
+[MASTER] 09:28:13.481 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.pdfsam.guiclient.commons.models.VisualListModel.rotateAnticlockwiseElements([I)V: I10 Branch 50 IF_ICMPGT L352 - true in context: org.pdfsam.guiclient.commons.models.VisualListModel:rotateAnticlockwiseElements([I)V
+[MASTER] 09:28:13.482 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.pdfsam.guiclient.commons.models.VisualListModel.getValidElements()Ljava/util/List;: I8 Branch 66 IFNULL L432 - false in context: org.pdfsam.guiclient.commons.models.VisualListModel:getValidElements()Ljava/util/List;
+[MASTER] 09:28:13.482 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.pdfsam.guiclient.commons.models.VisualListModel.getValidElements()Ljava/util/List;: I12 Branch 67 IFLE L432 - true in context: org.pdfsam.guiclient.commons.models.VisualListModel:getValidElements()Ljava/util/List;
+[MASTER] 09:28:21.518 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 09:29:23.050 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 09:30:02.435 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+[MASTER] 09:30:31.634 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+* Search finished after 270s and 601 generations, 233555 statements, best individual has fitness: 1536.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 93%
+* Total number of goals: 162
+* Number of covered goals: 150
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 84%
+* Total number of goals: 143
+* Number of covered goals: 120
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 36
+* Number of covered goals: 36
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 82%
+* Total number of goals: 722
+* Number of covered goals: 595
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 61%
+* Total number of goals: 18
+* Number of covered goals: 11
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 30
+* Number of covered goals: 30
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 30
+* Number of covered goals: 30
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 84%
+* Total number of goals: 143
+* Number of covered goals: 120
+* Generated 120 tests with total length 523
+* Resulting test suite's coverage: 85% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 36%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 2
+* Writing JUnit test case 'VisualListModel_ESTest' to /home/ubuntu/termite/mosa/tests/s1012/109_pdfsam/evosuite-tests
+* Done!
+
+* Computation finished

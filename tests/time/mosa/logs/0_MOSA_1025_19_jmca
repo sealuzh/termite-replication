@@ -1,0 +1,288 @@
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/19_jmca/evosuite-files/evosuite.properties
+* Connecting to master process on port 21007
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 08:48:54.081 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 08:48:54.083 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 08:48:54.089 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 08:48:54.106 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 4855
+* Using seed 1025
+* Starting evolution
+[MASTER] 08:48:59.031 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.ReInit(Lcom/soops/CEN4010/JMCA/JParser/JavaCharStream;I)V: Line 1550
+[MASTER] 08:48:59.031 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.SwitchTo(I)V: Line 1556
+[MASTER] 08:48:59.031 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.SwitchTo(I)V: Line 1557
+[MASTER] 08:48:59.036 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.SwitchTo(I)V: I6 Branch 811 IFGE L1553 - true
+[MASTER] 08:48:59.037 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 8184: com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.SwitchTo(I)V:1553 - ReplaceComparisonOperator >= -> >
+[MASTER] 08:48:59.040 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] com.soops.CEN4010.JMCA.JParser.JavaParserTokenManager.ReInit(Lcom/soops/CEN4010/JMCA/JParser/JavaCharStream;I)V
+* Search finished after 132s and 49 generations, 29444 statements, best individual has fitness: 18040.0
+[MASTER] 08:51:09.699 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 14 seconds more than allowed.
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 49%
+* Total number of goals: 981
+* Number of covered goals: 481
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 56%
+* Total number of goals: 1707
+* Number of covered goals: 953
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 9
+* Number of covered goals: 9
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 44%
+* Total number of goals: 434
+* Number of covered goals: 191
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 50%
+* Total number of goals: 4
+* Number of covered goals: 2
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 56%
+* Total number of goals: 1707
+* Number of covered goals: 951
+* Generated 119 tests with total length 963
+* Resulting test suite's coverage: 54% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 17%
+* Compiling and checking tests
+[MASTER] 08:52:19.833 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.junit.ComparisonFailure: expected:<3l[O]> but was:<3l[]>
+[MASTER] 08:52:19.833 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ int int0 = JavaParserConstants.PUBLIC;
+Token token0 = new Token();
+StringReader stringReader0 = new StringReader(":Y]$I23>3lO*6t7bwKp");
+JavaCharStream javaCharStream0 = new JavaCharStream(stringReader0, 39, 0);
+char[] charArray0 = new char[7];
+charArray0[0] = 'M';
+charArray0[1] = 'A';
+charArray0[2] = '$';
+charArray0[3] = 'F';
+charArray0[4] = '?';
+charArray0[5] = 'D';
+charArray0[6] = 'u';
+CharBuffer charBuffer0 = CharBuffer.wrap(charArray0);
+stringReader0.read(charBuffer0);
+JavaCharStream javaCharStream1 = new JavaCharStream(stringReader0, 113, 1923);
+JavaParserTokenManager javaParserTokenManager0 = new JavaParserTokenManager(javaCharStream1);
+javaParserTokenManager0.getNextToken();
+Token token1 = javaParserTokenManager0.getNextToken();
+assertEquals(1924, javaCharStream1.getBeginColumn());
+assertEquals("3lO", token1.toString());
+
+
+* Writing JUnit test case 'JavaParserTokenManager_ESTest' to /home/ubuntu/termite/mosa/tests/s1025/19_jmca/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: com.soops.CEN4010.JMCA.JParser.JavaCharStream
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/19_jmca/evosuite-files/evosuite.properties
+* Connecting to master process on port 21010
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class com.soops.CEN4010.JMCA.JParser.JavaCharStream
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 1743
+* Using seed 1025
+* Starting evolution
+[MASTER] 09:11:47.053 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.JavaCharStream.hexval(C)I: Line 35
+[MASTER] 09:11:47.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 34: com.soops.CEN4010.JMCA.JParser.JavaCharStream.hexval(C)I:35 - ReplaceConstant - 8 -> 0
+[MASTER] 09:11:47.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 35: com.soops.CEN4010.JMCA.JParser.JavaCharStream.hexval(C)I:35 - ReplaceConstant - 8 -> 1
+[MASTER] 09:11:47.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 36: com.soops.CEN4010.JMCA.JParser.JavaCharStream.hexval(C)I:35 - ReplaceConstant - 8 -> -1
+[MASTER] 09:11:47.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 37: com.soops.CEN4010.JMCA.JParser.JavaCharStream.hexval(C)I:35 - ReplaceConstant - 8 -> 7
+[MASTER] 09:11:47.055 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 38: com.soops.CEN4010.JMCA.JParser.JavaCharStream.hexval(C)I:35 - ReplaceConstant - 8 -> 9
+[MASTER] 09:11:47.058 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] com.soops.CEN4010.JMCA.JParser.JavaCharStream.ReadByte()C
+[MASTER] 09:11:47.058 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] com.soops.CEN4010.JMCA.JParser.JavaCharStream.ReadByte()C
+[MASTER] 09:11:47.059 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.JavaCharStream.hexval(C)I: I3 Branch 9 TABLESWITCH L16 Case 56 - true in context: 
+[MASTER] 09:12:07.649 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] com.soops.CEN4010.JMCA.JParser.JavaCharStream.FillBuff()V
+* Search finished after 127s and 44 generations, 20111 statements, best individual has fitness: 2264.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 79%
+* Total number of goals: 239
+* Number of covered goals: 188
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 85%
+* Total number of goals: 216
+* Number of covered goals: 184
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 35
+* Number of covered goals: 35
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 83%
+* Total number of goals: 974
+* Number of covered goals: 811
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 86%
+* Total number of goals: 36
+* Number of covered goals: 31
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 31
+* Number of covered goals: 31
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 31
+* Number of covered goals: 31
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 85%
+* Total number of goals: 216
+* Number of covered goals: 184
+* Generated 141 tests with total length 726
+* Resulting test suite's coverage: 84% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 39%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 8
+* Writing JUnit test case 'JavaCharStream_ESTest' to /home/ubuntu/termite/mosa/tests/s1025/19_jmca/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: com.soops.CEN4010.JMCA.JParser.SimpleNode
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/19_jmca/evosuite-files/evosuite.properties
+* Connecting to master process on port 21001
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 09:19:43.999 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 09:19:44.053 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 09:19:44.053 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 09:19:44.387 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class com.soops.CEN4010.JMCA.JParser.SimpleNode
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 360
+* Using seed 1025
+* Starting evolution
+[MASTER] 09:19:50.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V: Line 148
+[MASTER] 09:19:50.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V: Line 152
+[MASTER] 09:19:50.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V: Line 153
+[MASTER] 09:19:50.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V: Line 154
+[MASTER] 09:19:50.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V: Line 155
+[MASTER] 09:19:50.640 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V: I231 Branch 26 IFNULL L154 - false in context: com.soops.CEN4010.JMCA.JParser.SimpleNode:dump(Ljava/lang/String;Ljava/io/Writer;)V
+[MASTER] 09:19:50.640 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V: I219 Branch 25 IF_ICMPGE L152 - false in context: com.soops.CEN4010.JMCA.JParser.SimpleNode:dump(Ljava/lang/String;Ljava/io/Writer;)V
+[MASTER] 09:19:50.640 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V: I187 Branch 23 IFLE L147 - false in context: com.soops.CEN4010.JMCA.JParser.SimpleNode:dump(Ljava/lang/String;Ljava/io/Writer;)V
+[MASTER] 09:19:50.641 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V: I183 Branch 22 IFNULL L147 - false in context: com.soops.CEN4010.JMCA.JParser.SimpleNode:dump(Ljava/lang/String;Ljava/io/Writer;)V
+[MASTER] 09:19:50.641 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch com.soops.CEN4010.JMCA.JParser.SimpleNode.dump(Ljava/lang/String;Ljava/io/Writer;)V: I209 Branch 24 IFNULL L151 - false in context: com.soops.CEN4010.JMCA.JParser.SimpleNode:dump(Ljava/lang/String;Ljava/io/Writer;)V
+[MASTER] 09:20:10.170 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+* Search finished after 122s and 198 generations, 80191 statements, best individual has fitness: 160.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 62
+* Number of covered goals: 62
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 67
+* Number of covered goals: 67
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 12
+* Number of covered goals: 12
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 91%
+* Total number of goals: 121
+* Number of covered goals: 110
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 47%
+* Total number of goals: 17
+* Number of covered goals: 8
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 13
+* Number of covered goals: 13
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 13
+* Number of covered goals: 13
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 67
+* Number of covered goals: 67
+* Generated 44 tests with total length 237
+* Resulting test suite's coverage: 95% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 95%
+* Compiling and checking tests
+[MASTER] 09:26:03.863 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test32 -> class java.lang.StackOverflowError: null
+[MASTER] 09:26:03.863 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ SimpleNode simpleNode0 = new SimpleNode(47);
+StringWriter stringWriter0 = new StringWriter();
+Node[] nodeArray0 = new Node[5];
+nodeArray0[0] = (Node) simpleNode0;
+nodeArray0[1] = (Node) simpleNode0;
+simpleNode0.jjtGetParent();
+nodeArray0[2] = null;
+nodeArray0[3] = (Node) simpleNode0;
+nodeArray0[4] = (Node) simpleNode0;
+simpleNode0.children = nodeArray0;
+simpleNode0.setIdentifier("<");
+String string0 = ".(%<#geIxD~LVAG{PjX";
+simpleNode0.dump(string0, stringWriter0);
+
+[MASTER] 09:26:03.863 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test22 -> class java.lang.StackOverflowError: null
+[MASTER] 09:26:03.864 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ SimpleNode simpleNode0 = new SimpleNode(54);
+StringWriter stringWriter0 = new StringWriter();
+String string0 = "<";
+Node[] nodeArray0 = new Node[1];
+nodeArray0[0] = (Node) simpleNode0;
+simpleNode0.children = nodeArray0;
+simpleNode0.setIdentifier("<");
+simpleNode0.dump(string0, stringWriter0);
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 8
+* Writing JUnit test case 'SimpleNode_ESTest' to /home/ubuntu/termite/mosa/tests/s1025/19_jmca/evosuite-tests
+* Done!
+
+* Computation finished

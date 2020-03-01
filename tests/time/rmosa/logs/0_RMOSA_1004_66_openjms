@@ -1,0 +1,359 @@
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: org.exolab.jms.config.ConnectionFactories
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/66_openjms/evosuite-files/evosuite.properties
+* Connecting to master process on port 10010
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 19:35:48.325 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 19:35:48.360 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 19:35:48.361 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 19:35:48.543 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class org.exolab.jms.config.ConnectionFactories
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1004
+* Starting evolution
+* Search finished after 124s and 321 generations, 61434 statements, best individual has fitness: 688.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 97%
+* Total number of goals: 177
+* Number of covered goals: 171
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 114
+* Number of covered goals: 114
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 30
+* Number of covered goals: 30
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 95%
+* Total number of goals: 410
+* Number of covered goals: 390
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 47%
+* Total number of goals: 93
+* Number of covered goals: 44
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 66
+* Number of covered goals: 66
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 66
+* Number of covered goals: 66
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 99%
+* Total number of goals: 114
+* Number of covered goals: 113
+* Generated 111 tests with total length 433
+* Resulting test suite's coverage: 92% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 42%
+* Compiling and checking tests
+[MASTER] 19:38:16.925 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:16.925 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+connectionFactories0.addXAQueueConnectionFactory(2, (XAQueueConnectionFactory) null);
+
+[MASTER] 19:38:17.969 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:17.969 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+int int0 = connectionFactories0.getXAQueueConnectionFactoryCount();
+assertEquals(0, int0);
+
+
+[MASTER] 19:38:19.749 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.749 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+TopicConnectionFactory[] topicConnectionFactoryArray0 = connectionFactories0.getTopicConnectionFactory();
+assertEquals(0, topicConnectionFactoryArray0.length);
+
+
+[MASTER] 19:38:20.692 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:20.692 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+XATopicConnectionFactory[] xATopicConnectionFactoryArray0 = connectionFactories0.getXATopicConnectionFactory();
+assertEquals(0, xATopicConnectionFactoryArray0.length);
+
+
+[MASTER] 19:38:22.360 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:22.360 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+connectionFactories0.clearTopicConnectionFactory();
+XAConnectionFactory xAConnectionFactory0 = new XAConnectionFactory();
+assertNull(xAConnectionFactory0.getName());
+
+
+[MASTER] 19:38:22.715 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:22.715 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+Enumeration enumeration0 = connectionFactories0.enumerateXATopicConnectionFactory();
+assertNotNull(enumeration0);
+
+
+[MASTER] 19:38:23.023 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:23.024 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+connectionFactories0.getConnectionFactory(0);
+
+[MASTER] 19:38:24.333 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:24.333 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+int int0 = connectionFactories0.getXATopicConnectionFactoryCount();
+assertEquals(0, int0);
+
+
+[MASTER] 19:38:24.661 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:24.662 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FileSystemHandling.setPermissions((EvoSuiteFile) null, false, false, false);
+ConnectionFactories connectionFactories0 = new ConnectionFactories();
+int int0 = 1877;
+XAConnectionFactory xAConnectionFactory0 = new XAConnectionFactory();
+connectionFactories0.addXAConnectionFactory(xAConnectionFactory0);
+QueueConnectionFactory queueConnectionFactory0 = new QueueConnectionFactory();
+ParserAdapter parserAdapter0 = new ParserAdapter();
+
+[MASTER] 19:38:25.626 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:25.626 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+ConnectionFactory connectionFactory0 = new ConnectionFactory();
+connectionFactories0.addConnectionFactory((-3175), connectionFactory0);
+
+[MASTER] 19:38:25.940 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:25.941 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+connectionFactories0.getQueueConnectionFactory(0);
+
+[MASTER] 19:38:30.443 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:30.443 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+Enumeration enumeration0 = connectionFactories0.enumerateXAQueueConnectionFactory();
+assertNotNull(enumeration0);
+
+
+[MASTER] 19:38:33.055 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:33.056 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+ConnectionFactory connectionFactory0 = new ConnectionFactory();
+connectionFactories0.setConnectionFactory(0, connectionFactory0);
+
+[MASTER] 19:38:33.976 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:33.976 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+XAQueueConnectionFactory xAQueueConnectionFactory0 = new XAQueueConnectionFactory();
+connectionFactories0.addXAQueueConnectionFactory(xAQueueConnectionFactory0);
+ConnectionFactory connectionFactory0 = new ConnectionFactory();
+assertNull(connectionFactory0.getName());
+
+
+[MASTER] 19:38:35.094 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:35.094 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+connectionFactories0.setQueueConnectionFactory((QueueConnectionFactory[]) null);
+
+[MASTER] 19:38:35.443 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:35.443 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+int int0 = connectionFactories0.getXAConnectionFactoryCount();
+assertEquals(0, int0);
+
+
+[MASTER] 19:38:36.458 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:36.459 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+connectionFactories0.clearXAQueueConnectionFactory();
+ConnectionFactory[] connectionFactoryArray0 = new ConnectionFactory[1];
+StringReader stringReader0 = new StringReader("w+:<ZQrt66Ui4QvpS");
+ConnectionFactory.unmarshal(stringReader0);
+
+[MASTER] 19:38:36.812 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:36.812 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+XAConnectionFactory xAConnectionFactory0 = new XAConnectionFactory();
+connectionFactories0.setXAConnectionFactory(69, xAConnectionFactory0);
+
+[MASTER] 19:38:38.871 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:38.872 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+TopicConnectionFactory topicConnectionFactory0 = new TopicConnectionFactory();
+boolean boolean0 = connectionFactories0.removeTopicConnectionFactory(topicConnectionFactory0);
+assertFalse(boolean0);
+
+
+[MASTER] 19:38:39.183 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:39.183 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+ConnectionFactory connectionFactory0 = new ConnectionFactory();
+boolean boolean0 = connectionFactories0.removeConnectionFactory(connectionFactory0);
+assertFalse(boolean0);
+
+
+[MASTER] 19:38:39.507 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:39.507 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+TopicConnectionFactory topicConnectionFactory0 = new TopicConnectionFactory();
+connectionFactories0.addTopicConnectionFactory((-2031), topicConnectionFactory0);
+
+[MASTER] 19:38:40.268 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:40.268 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+XAQueueConnectionFactory xAQueueConnectionFactory0 = new XAQueueConnectionFactory();
+QueueConnectionFactory queueConnectionFactory0 = new QueueConnectionFactory();
+boolean boolean0 = connectionFactories0.removeQueueConnectionFactory(queueConnectionFactory0);
+assertFalse(boolean0);
+
+
+[MASTER] 19:38:40.920 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:40.920 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+connectionFactories0.setConnectionFactory((ConnectionFactory[]) null);
+
+[MASTER] 19:38:43.858 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:43.858 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+ConnectionFactory[] connectionFactoryArray0 = new ConnectionFactory[2];
+connectionFactories0.setConnectionFactory(connectionFactoryArray0);
+connectionFactories0.getConnectionFactory();
+assertEquals(2, connectionFactories0.getConnectionFactoryCount());
+
+
+[MASTER] 19:38:44.521 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:44.521 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+connectionFactories0.setXATopicConnectionFactory((XATopicConnectionFactory[]) null);
+
+[MASTER] 19:38:44.804 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:44.804 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+connectionFactories0.marshal((Writer) null);
+
+[MASTER] 19:38:45.141 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:45.141 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+connectionFactories0.addXATopicConnectionFactory(4120, (XATopicConnectionFactory) null);
+
+[MASTER] 19:38:45.470 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:45.471 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ XAQueueConnectionFactory xAQueueConnectionFactory0 = new XAQueueConnectionFactory();
+ConnectionFactories connectionFactories0 = new ConnectionFactories();
+XAQueueConnectionFactory[] xAQueueConnectionFactoryArray0 = new XAQueueConnectionFactory[5];
+FileSystemHandling.appendLineToFile((EvoSuiteFile) null, ")rhm");
+xAQueueConnectionFactoryArray0[0] = xAQueueConnectionFactory0;
+xAQueueConnectionFactoryArray0[1] = xAQueueConnectionFactory0;
+xAQueueConnectionFactoryArray0[3] = xAQueueConnectionFactory0;
+xAQueueConnectionFactoryArray0[4] = xAQueueConnectionFactory0;
+connectionFactories0.setXAQueueConnectionFactory(xAQueueConnectionFactoryArray0);
+StringWriter stringWriter0 = new StringWriter();
+connectionFactories0.marshal((Writer) stringWriter0);
+
+[MASTER] 19:38:45.782 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:45.783 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+XAQueueConnectionFactory xAQueueConnectionFactory0 = new XAQueueConnectionFactory();
+XAConnectionFactory xAConnectionFactory0 = new XAConnectionFactory();
+connectionFactories0.isValid();
+int int0 = (-422);
+XAQueueConnectionFactory[] xAQueueConnectionFactoryArray0 = new XAQueueConnectionFactory[7];
+xAQueueConnectionFactoryArray0[0] = xAQueueConnectionFactory0;
+XAQueueConnectionFactory xAQueueConnectionFactory1 = new XAQueueConnectionFactory();
+xAQueueConnectionFactoryArray0[1] = xAQueueConnectionFactory1;
+xAQueueConnectionFactoryArray0[2] = xAQueueConnectionFactory0;
+xAQueueConnectionFactoryArray0[3] = xAQueueConnectionFactory0;
+XAQueueConnectionFactory xAQueueConnectionFactory2 = new XAQueueConnectionFactory();
+xAQueueConnectionFactoryArray0[4] = xAQueueConnectionFactory2;
+xAQueueConnectionFactoryArray0[5] = xAQueueConnectionFactory0;
+xAQueueConnectionFactoryArray0[6] = xAQueueConnectionFactory0;
+connectionFactories0.setXAQueueConnectionFactory(xAQueueConnectionFactoryArray0);
+connectionFactories0.getXAQueueConnectionFactory();
+connectionFactories0.removeXAConnectionFactory(xAConnectionFactory0);
+TopicConnectionFactory[] topicConnectionFactoryArray0 = new TopicConnectionFactory[4];
+Reader reader0 = null;
+TopicConnectionFactory.unmarshal((Reader) null);
+
+[MASTER] 19:38:46.133 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:46.133 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+connectionFactories0.setXAConnectionFactory((XAConnectionFactory[]) null);
+
+[MASTER] 19:38:47.533 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:47.533 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+TopicConnectionFactory topicConnectionFactory0 = new TopicConnectionFactory();
+TopicConnectionFactory[] topicConnectionFactoryArray0 = new TopicConnectionFactory[2];
+topicConnectionFactoryArray0[1] = topicConnectionFactory0;
+connectionFactories0.setTopicConnectionFactory(topicConnectionFactoryArray0);
+boolean boolean0 = connectionFactories0.removeTopicConnectionFactory(topicConnectionFactory0);
+assertEquals(1, connectionFactories0.getTopicConnectionFactoryCount());
+assertTrue(boolean0);
+
+
+[MASTER] 19:38:49.598 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:49.598 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+XATopicConnectionFactory[] xATopicConnectionFactoryArray0 = new XATopicConnectionFactory[2];
+XATopicConnectionFactory xATopicConnectionFactory0 = new XATopicConnectionFactory();
+xATopicConnectionFactoryArray0[0] = xATopicConnectionFactory0;
+XATopicConnectionFactory xATopicConnectionFactory1 = new XATopicConnectionFactory();
+xATopicConnectionFactoryArray0[1] = xATopicConnectionFactory1;
+connectionFactories0.setXATopicConnectionFactory(xATopicConnectionFactoryArray0);
+boolean boolean0 = connectionFactories0.isValid();
+assertEquals(2, connectionFactories0.getXATopicConnectionFactoryCount());
+assertFalse(boolean0);
+
+
+[MASTER] 19:38:49.962 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:49.963 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+XATopicConnectionFactory[] xATopicConnectionFactoryArray0 = new XATopicConnectionFactory[1];
+XATopicConnectionFactory xATopicConnectionFactory0 = new XATopicConnectionFactory();
+xATopicConnectionFactoryArray0[0] = xATopicConnectionFactory0;
+connectionFactories0.setXATopicConnectionFactory(xATopicConnectionFactoryArray0);
+connectionFactories0.getConnectionFactory();
+connectionFactories0.getXATopicConnectionFactoryCount();
+int int0 = 1360;
+StringReader stringReader0 = new StringReader("java.lang.Short");
+QueueConnectionFactory.unmarshal(stringReader0);
+
+[MASTER] 19:38:50.311 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:50.312 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+XATopicConnectionFactory[] xATopicConnectionFactoryArray0 = new XATopicConnectionFactory[2];
+XATopicConnectionFactory xATopicConnectionFactory0 = new XATopicConnectionFactory();
+xATopicConnectionFactoryArray0[0] = xATopicConnectionFactory0;
+XATopicConnectionFactory xATopicConnectionFactory1 = new XATopicConnectionFactory();
+xATopicConnectionFactoryArray0[1] = xATopicConnectionFactory1;
+connectionFactories0.setXATopicConnectionFactory(xATopicConnectionFactoryArray0);
+boolean boolean0 = connectionFactories0.removeXATopicConnectionFactory(xATopicConnectionFactory1);
+assertEquals(1, connectionFactories0.getXATopicConnectionFactoryCount());
+assertTrue(boolean0);
+
+
+[MASTER] 19:38:50.968 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:50.969 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ConnectionFactories connectionFactories0 = new ConnectionFactories();
+TopicConnectionFactory[] topicConnectionFactoryArray0 = new TopicConnectionFactory[1];
+TopicConnectionFactory topicConnectionFactory0 = new TopicConnectionFactory();
+topicConnectionFactoryArray0[0] = topicConnectionFactory0;
+connectionFactories0.setTopicConnectionFactory(topicConnectionFactoryArray0);
+connectionFactories0.getTopicConnectionFactory();
+assertEquals(1, connectionFactories0.getTopicConnectionFactoryCount());
+
+
+* Writing JUnit test case 'ConnectionFactories_ESTest' to /home/ubuntu/termite/rmosa/tests/s1004/66_openjms/evosuite-tests
+* Done!
+
+* Computation finished
+[MASTER] 19:38:53.401 [Thread-3] ERROR ExternalProcessHandler - Exception while reading output of client process. Stream closed

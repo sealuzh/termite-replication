@@ -1,0 +1,146 @@
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: org.jsecurity.web.DefaultWebSecurityManager
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/18_jsecurity/evosuite-files/evosuite.properties
+* Connecting to master process on port 2249
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 16:21:29.140 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 16:21:29.158 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 16:21:29.159 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 16:21:29.347 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class org.jsecurity.web.DefaultWebSecurityManager
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 468
+* Using seed 1002
+* Starting evolution
+[MASTER] 16:21:40.974 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 16:21:42.804 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 16:21:42.805 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+* Search finished after 122s and 83 generations, 23044 statements, best individual has fitness: 880.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 80%
+* Total number of goals: 97
+* Number of covered goals: 78
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 72%
+* Total number of goals: 67
+* Number of covered goals: 48
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 17
+* Number of covered goals: 17
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 81%
+* Total number of goals: 162
+* Number of covered goals: 132
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 38%
+* Total number of goals: 29
+* Number of covered goals: 11
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 23
+* Number of covered goals: 23
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 96%
+* Total number of goals: 23
+* Number of covered goals: 22
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 69%
+* Total number of goals: 67
+* Number of covered goals: 46
+* Generated 35 tests with total length 199
+* Resulting test suite's coverage: 77% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 35%
+* Compiling and checking tests
+[MASTER] 16:24:52.846 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockIllegalStateException: No ServletRequest found in ThreadContext. Make sure WebUtils.bind() is being called. (typically called by JSecurityFilter)  This could also happen when running integration tests that don't properly call WebUtils.bind().
+[MASTER] 16:24:52.847 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ DefaultWebSecurityManager defaultWebSecurityManager0 = new DefaultWebSecurityManager();
+SimpleAccountRealm simpleAccountRealm0 = new SimpleAccountRealm();
+DefaultWebSecurityManager defaultWebSecurityManager1 = new DefaultWebSecurityManager(simpleAccountRealm0);
+Subject subject0 = defaultWebSecurityManager1.getSubject();
+defaultWebSecurityManager0.bind(subject0, (ServletRequest) null, (ServletResponse) null);
+assertTrue(defaultWebSecurityManager1.isHttpSessionMode());
+assertEquals("http", defaultWebSecurityManager0.getSessionMode());
+
+
+* Writing JUnit test case 'DefaultWebSecurityManager_ESTest' to /home/ubuntu/termite/mosa/tests/s1002/18_jsecurity/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: org.jsecurity.authc.UsernamePasswordToken
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/18_jsecurity/evosuite-files/evosuite.properties
+* Connecting to master process on port 2249
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class org.jsecurity.authc.UsernamePasswordToken
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 213
+* Using seed 1002
+* Starting evolution
+* Search finished after 121s and 1821 generations, 684223 statements, best individual has fitness: 64.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 54
+* Number of covered goals: 54
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 29
+* Number of covered goals: 29
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100% (no goals)
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 96%
+* Total number of goals: 23
+* Number of covered goals: 22
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 81%
+* Total number of goals: 36
+* Number of covered goals: 29
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 21
+* Number of covered goals: 21
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 21
+* Number of covered goals: 21
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 29
+* Number of covered goals: 29
+* Generated 33 tests with total length 79
+* Resulting test suite's coverage: 96% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 64%
+* Compiling and checking tests
+* Writing JUnit test case 'UsernamePasswordToken_ESTest' to /home/ubuntu/termite/mosa/tests/s1002/18_jsecurity/evosuite-tests
+* Done!
+
+* Computation finished

@@ -1,0 +1,511 @@
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: com.ib.client.EWrapperMsgGenerator
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/1_tullibee/evosuite-files/evosuite.properties
+* Connecting to master process on port 10001
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 19:35:43.333 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 19:35:43.371 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 19:35:43.372 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 19:35:43.489 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class com.ib.client.EWrapperMsgGenerator
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1004
+* Starting evolution
+* Search finished after 123s and 231 generations, 167321 statements, best individual has fitness: 568.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 71
+* Number of covered goals: 71
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 67
+* Number of covered goals: 67
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 10
+* Number of covered goals: 10
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 100%
+* Total number of goals: 908
+* Number of covered goals: 905
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 33%
+* Total number of goals: 102
+* Number of covered goals: 34
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 35
+* Number of covered goals: 35
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 35
+* Number of covered goals: 35
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 67
+* Number of covered goals: 67
+* Generated 83 tests with total length 193
+* Resulting test suite's coverage: 95% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 88%
+* Compiling and checking tests
+[MASTER] 19:38:12.332 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:12.332 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Order order0 = new Order();
+String string0 = EWrapperMsgGenerator.tickSize(0, Integer.MAX_VALUE, 'b');
+assertEquals("id=0  unknown=98", string0);
+
+
+[MASTER] 19:38:12.431 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:12.431 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ContractDetails contractDetails0 = new ContractDetails();
+String string0 = EWrapperMsgGenerator.bondContractDetails(679, contractDetails0);
+assertEquals("reqId = 679 ===================================\n ---- Bond Contract Details begin ----\nsymbol = null\nsecType = null\ncusip = null\ncoupon = 0.0\nmaturity = null\nissueDate = null\nratings = null\nbondType = null\ncouponType = null\nconvertible = false\ncallable = false\nputable = false\ndescAppend = null\nexchange = null\ncurrency = null\nmarketName = null\ntradingClass = null\nconid = 0\nminTick = 0.0\norderTypes = null\nvalidExchanges = null\nnextOptionDate = null\nnextOptionType = null\nnextOptionPartial = false\nnotes = null\nlongName = null\n ---- Bond Contract Details End ----\n", string0);
+
+
+[MASTER] 19:38:14.168 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:14.168 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = EWrapperMsgGenerator.scannerParameters("(. o-ksGUe8k");
+assertEquals("SCANNER PARAMETERS:\n(. o-ksGUe8k", string0);
+
+
+[MASTER] 19:38:15.292 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:15.293 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = EWrapperMsgGenerator.realtimeBar(13, 13, 230.51931, 230.51931, 13, 2212.9847829441, 0L, 0L, 13);
+assertEquals("id=13 time = 13 open=230.51931 high=230.51931 low=13.0 close=2212.9847829441 volume=0 count=13 WAP=0.0", string0);
+
+
+[MASTER] 19:38:15.416 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:15.416 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ UnderComp underComp0 = new UnderComp();
+String string0 = EWrapperMsgGenerator.deltaNeutralValidation((-1577), underComp0);
+assertEquals("id = -1577 underComp.conId =0 underComp.delta =0.0 underComp.price =0.0", string0);
+
+
+[MASTER] 19:38:15.526 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:15.527 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = EWrapperMsgGenerator.nextValidId(627);
+assertEquals("Next Valid Order ID: 627", string0);
+
+
+[MASTER] 19:38:15.589 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:15.589 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Order order0 = new Order();
+String string0 = EWrapperMsgGenerator.updateAccountValue("", (String) null, (String) null, (String) null);
+assertEquals("updateAccountValue:  null null null", string0);
+
+
+[MASTER] 19:38:15.709 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:15.709 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = EWrapperMsgGenerator.updateAccountValue("ne)$a<W", (String) null, (String) null, "ne)$a<W");
+assertEquals("updateAccountValue: ne)$a<W null null ne)$a<W", string0);
+
+
+[MASTER] 19:38:16.086 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:16.087 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Order order0 = new Order();
+String string0 = EWrapperMsgGenerator.updateMktDepth('y', Integer.MAX_VALUE, 0, Integer.MAX_VALUE, 1.7976931348623157E308, 1);
+assertEquals("updateMktDepth: 121 2147483647 0 2147483647 1.7976931348623157E308 1", string0);
+
+
+[MASTER] 19:38:16.215 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:16.215 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = EWrapperMsgGenerator.updateMktDepthL2(0, 0, "bidPrice", 0, (-2141128008), 0, 0);
+assertEquals("updateMktDepth: 0 0 bidPrice 0 -2141128008 0.0 0", string0);
+
+
+[MASTER] 19:38:16.286 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:16.286 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Order order0 = new Order();
+String string0 = EWrapperMsgGenerator.tickPrice(0, 1, 3, 0);
+assertEquals("id=0  bidPrice=3.0  noAutoExecute", string0);
+
+
+[MASTER] 19:38:16.520 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:16.521 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Contract contract0 = new Contract();
+Execution execution0 = new Execution();
+String string0 = EWrapperMsgGenerator.execDetails(71, contract0, execution0);
+assertEquals(" ---- Execution Details begin ----\nreqId = 71\norderId = 0\nclientId = 0\nsymbol = null\nsecType = null\nexpiry = null\nstrike = 0.0\nright = null\ncontractExchange = null\ncurrency = null\nlocalSymbol = null\nexecId = null\ntime = null\nacctNumber = null\nexecutionExchange = null\nside = null\nshares = 0\nprice = 0.0\npermId = 0\nliquidation = 0\ncumQty = 0\navgPrice = 0.0\n ---- Execution Details end ----\n", string0);
+
+
+[MASTER] 19:38:17.095 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:17.095 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Order order0 = new Order();
+String string0 = EWrapperMsgGenerator.orderStatus('n', (String) null, 1, 1, 1, 3, 'f', 1, 2139095040, (String) null);
+assertEquals("order status: orderId=110 clientId=2139095040 permId=3 status=null filled=1 remaining=1 avgFillPrice=1.0 lastFillPrice=1.0 parent Id=102 whyHeld=null", string0);
+
+
+[MASTER] 19:38:17.168 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:17.169 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ EWrapperMsgGenerator.tickOptionComputation(13, 13, 1.7976931348623157E308, 13, 1.7976931348623157E308, 1.7976931348623157E308);
+EWrapperMsgGenerator.updatePortfolio((Contract) null, (-2147483645), (-2147483645), 2421.6971233972, 3353.79325, (-2147483645), 1.7976931348623157E308, "id=13  modelOptComp: vol = N/A delta = N/A: modelPrice = N/A: pvDividend = N/A");
+
+[MASTER] 19:38:17.361 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:17.361 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Contract contract0 = new Contract();
+String string0 = EWrapperMsgGenerator.updatePortfolio(contract0, 0, 0.0, 0.0, (-1538.2563319531), (-1538.2563319531), 0.0, (String) null);
+assertNotNull(string0);
+assertEquals("updatePortfolio: conid = 0\nsymbol = null\nsecType = null\nexpiry = null\nstrike = 0.0\nright = null\nmultiplier = null\nexchange = null\nprimaryExch = null\ncurrency = null\nlocalSymbol = null\n0 0.0 0.0 -1538.2563319531 -1538.2563319531 0.0 null", string0);
+
+
+[MASTER] 19:38:17.755 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:17.755 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = EWrapperMsgGenerator.tickOptionComputation(13, 13, (-204.191339), 13, (-204.191339), (-204.191339));
+assertEquals("id=13  modelOptComp: vol = N/A delta = N/A: modelPrice = N/A: pvDividend = N/A", string0);
+
+
+[MASTER] 19:38:17.936 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:17.937 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = EWrapperMsgGenerator.tickOptionComputation(13, 13, 2368, (-2200.700963116008), 13, 0.0);
+assertEquals("id=13  modelOptComp: vol = 2368.0 delta = N/A: modelPrice = 13.0: pvDividend = 0.0", string0);
+
+
+[MASTER] 19:38:19.121 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test46 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.122 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = EWrapperMsgGenerator.orderStatus(2147483645, "EB0", 2147483645, 1018, 1018, (-1972), 1018, 2147483645, (-1972), "EB0");
+assertEquals("order status: orderId=2147483645 clientId=-1972 permId=-1972 status=EB0 filled=2147483645 remaining=1018 avgFillPrice=1018.0 lastFillPrice=2.147483645E9 parent Id=1018 whyHeld=EB0", string0);
+
+
+[MASTER] 19:38:19.122 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test03 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.122 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = EWrapperMsgGenerator.contractDetailsEnd(22);
+assertEquals("reqId = 22 =============== end ===============", string0);
+
+
+[MASTER] 19:38:19.122 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test47 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.123 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = EWrapperMsgGenerator.execDetailsEnd(121);
+assertEquals("reqId = 121 =============== end ===============", string0);
+
+
+[MASTER] 19:38:19.123 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test04 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.123 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Order order0 = new Order();
+String string0 = EWrapperMsgGenerator.receiveFA(1, (String) null);
+assertEquals("FA: GROUPS null", string0);
+
+
+[MASTER] 19:38:19.123 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test48 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.123 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Order order0 = new Order();
+Contract contract0 = new Contract();
+UnderComp underComp0 = new UnderComp();
+contract0.m_underComp = underComp0;
+EWrapperMsgGenerator.openOrder(109, contract0, order0, (OrderState) null);
+
+[MASTER] 19:38:19.123 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test05 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.124 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Order order0 = new Order();
+String string0 = EWrapperMsgGenerator.historicalData(3, (String) null, 0.0, Integer.MAX_VALUE, 0, 1.7976931348623157E308, 0, Integer.MAX_VALUE, Integer.MAX_VALUE, false);
+assertEquals("id=3 date = null open=0.0 high=2.147483647E9 low=0.0 close=1.7976931348623157E308 volume=0 count=2147483647 WAP=2.147483647E9 hasGaps=false", string0);
+
+
+[MASTER] 19:38:19.124 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test49 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.124 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = EWrapperMsgGenerator.tickOptionComputation(13, 13, 13, 13, 13, 1.7976931348623157E308);
+assertEquals("id=13  modelOptComp: vol = 13.0 delta = N/A: modelPrice = 13.0: pvDividend = N/A", string0);
+
+
+[MASTER] 19:38:19.124 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test42 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.124 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Order order0 = new Order();
+String string0 = EWrapperMsgGenerator.orderStatus(0, (String) null, 0, (-391), 0.0, (-2317), 0, 0, (-95), "O");
+assertEquals("order status: orderId=0 clientId=-95 permId=-2317 status=null filled=0 remaining=-391 avgFillPrice=0.0 lastFillPrice=0.0 parent Id=0 whyHeld=O", string0);
+
+
+[MASTER] 19:38:19.124 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test43 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.124 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ OrderState orderState0 = new OrderState();
+Order order0 = new Order();
+Contract contract0 = new Contract();
+String string0 = EWrapperMsgGenerator.updatePortfolio(contract0, 1, 0.0, 1.7976931348623157E308, 0, 0, 0, (String) null);
+assertEquals("updatePortfolio: conid = 0\nsymbol = null\nsecType = null\nexpiry = null\nstrike = 0.0\nright = null\nmultiplier = null\nexchange = null\nprimaryExch = null\ncurrency = null\nlocalSymbol = null\n1 0.0 1.7976931348623157E308 0.0 0.0 0.0 null", string0);
+assertNotNull(string0);
+
+
+[MASTER] 19:38:19.125 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test00 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.125 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ EWrapperMsgGenerator.tickOptionComputation(13, 13, 13, 1.7976931348623157E308, 1.7976931348623157E308, 1.7976931348623157E308);
+ContractDetails contractDetails0 = new ContractDetails((Contract) null, "  It does not support SSHORT flag for combo legs.", "id=13  modelOptComp: vol = 13.0 delta = N/A: modelPrice = N/A: pvDividend = N/A", (-420.469947785905), "id=13  modelOptComp: vol = 13.0 delta = N/A: modelPrice = N/A: pvDividend = N/A", "id=13  modelOptComp: vol = 13.0 delta = N/A: modelPrice = N/A: pvDividend = N/A", (-3498), "  It does not support SSHORT flag for combo legs.", "id=13  modelOptComp: vol = 13.0 delta = N/A: modelPrice = N/A: pvDividend = N/A", "id=13  modelOptComp: vol = 13.0 delta = N/A: modelPrice = N/A: pvDividend = N/A", " exchange=", "9]8?+*", "9]8?+*", (String) null, "halted");
+EWrapperMsgGenerator.contractDetails(13, contractDetails0);
+
+[MASTER] 19:38:19.125 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test44 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.125 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Order order0 = new Order();
+String string0 = EWrapperMsgGenerator.tickGeneric(1, 0, 0);
+assertEquals("id=1  bidSize=0.0", string0);
+
+
+[MASTER] 19:38:19.125 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test45 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.125 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = EWrapperMsgGenerator.tickOptionComputation(13, 13, 13, 13, 13, 580.9963196061323);
+assertEquals("id=13  modelOptComp: vol = 13.0 delta = N/A: modelPrice = 13.0: pvDividend = 580.9963196061323", string0);
+
+
+[MASTER] 19:38:19.125 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test40 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.125 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Order order0 = new Order();
+order0.m_volatilityType = (-691);
+String string0 = EWrapperMsgGenerator.orderStatus(0, (String) null, 0, 0, 1, (-691), 0, 'm', 'c', (String) null);
+assertEquals("order status: orderId=0 clientId=99 permId=-691 status=null filled=0 remaining=0 avgFillPrice=1.0 lastFillPrice=109.0 parent Id=0 whyHeld=null", string0);
+
+
+[MASTER] 19:38:19.125 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test41 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.126 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Order order0 = new Order();
+String string0 = EWrapperMsgGenerator.tickEFP(0, 0, 3, (String) null, 1.7976931348623157E308, 'n', (String) null, 0, 0);
+assertEquals("id=0  bidSize: basisPoints = 3.0/null impliedFuture = 1.7976931348623157E308 holdDays = 110 futureExpiry = null dividendImpact = 0.0 dividends to expiry = 0.0", string0);
+
+
+[MASTER] 19:38:19.126 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test17 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.126 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = EWrapperMsgGenerator.currentTime(1000L);
+assertEquals("current time = 1000 (Jan 1, 1970 12:16:40 AM)", string0);
+
+
+[MASTER] 19:38:19.126 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test18 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.126 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Order order0 = new Order();
+String string0 = EWrapperMsgGenerator.tickOptionComputation(1, 0, 1.7976931348623157E308, 0.0, 0, 0);
+assertEquals("id=1  bidSize: vol = N/A delta = 0.0", string0);
+
+
+[MASTER] 19:38:19.126 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test19 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.126 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Order order0 = new Order();
+String string0 = EWrapperMsgGenerator.tickOptionComputation(Integer.MAX_VALUE, 0, Integer.MAX_VALUE, 0, 0.0, Integer.MAX_VALUE);
+assertEquals("id=2147483647  bidSize: vol = 2.147483647E9 delta = 0.0", string0);
+
+
+[MASTER] 19:38:19.126 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test13 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.126 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Order order0 = new Order();
+String string0 = EWrapperMsgGenerator.tickString(0, Integer.MAX_VALUE, "");
+assertEquals("id=0  unknown=", string0);
+
+
+[MASTER] 19:38:19.127 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test58 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.127 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test15 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.127 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = EWrapperMsgGenerator.scannerDataEnd(2129735849);
+assertEquals("id = 2129735849 =============== end ===============", string0);
+
+
+[MASTER] 19:38:19.127 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test59 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.127 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test16 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.127 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Order order0 = new Order();
+String string0 = EWrapperMsgGenerator.tickOptionComputation(0, 0, 0, 0, 0.0, Integer.MAX_VALUE);
+assertEquals("id=0  bidSize: vol = 0.0 delta = 0.0", string0);
+
+
+[MASTER] 19:38:19.127 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test53 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.127 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test10 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.127 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Order order0 = new Order();
+String string0 = EWrapperMsgGenerator.updateNewsBulletin(Integer.MAX_VALUE, 3, "", "O");
+assertEquals("MsgId=2147483647 :: MsgType=3 :: Origin=O :: Message=", string0);
+
+
+[MASTER] 19:38:19.127 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test54 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.127 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test11 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.128 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = EWrapperMsgGenerator.tickOptionComputation((-1), (-1), (-1), (-1), (-1), (-1));
+assertEquals("id=-1  unknown: vol = N/A delta = -1.0", string0);
+
+
+[MASTER] 19:38:19.128 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test55 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.128 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test12 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.128 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Order order0 = new Order();
+String string0 = EWrapperMsgGenerator.updateMktDepthL2(Integer.MAX_VALUE, 0, (String) null, 0, 0, 2, Integer.MAX_VALUE);
+assertEquals("updateMktDepth: 2147483647 0 null 0 0 2.0 2147483647", string0);
+
+
+[MASTER] 19:38:19.128 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test56 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.128 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test50 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.128 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test51 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.128 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test52 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.333 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test40 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.334 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = EWrapperMsgGenerator.managedAccounts((String) null);
+assertEquals("Connected : The list of managed accounts are : [null]", string0);
+
+
+[MASTER] 19:38:19.334 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test41 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.334 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = EWrapperMsgGenerator.tickOptionComputation(13, 13, 13, 1.7976931348623157E308, 13, 1.7976931348623157E308);
+assertEquals("id=13  modelOptComp: vol = 13.0 delta = N/A: modelPrice = 13.0: pvDividend = N/A", string0);
+
+ContractDetails contractDetails0 = new ContractDetails();
+String string1 = EWrapperMsgGenerator.contractDetails(13, contractDetails0);
+assertEquals("reqId = 13 ===================================\n ---- Contract Details begin ----\nconid = 0\nsymbol = null\nsecType = null\nexpiry = null\nstrike = 0.0\nright = null\nmultiplier = null\nexchange = null\nprimaryExch = null\ncurrency = null\nlocalSymbol = null\nmarketName = null\ntradingClass = null\nminTick = 0.0\nprice magnifier = 0\norderTypes = null\nvalidExchanges = null\nunderConId = 0\nlongName = null\ncontractMonth = null\nindustry = null\ncategory = null\nsubcategory = null\ntimeZoneId = null\ntradingHours = null\nliquidHours = null\n ---- Contract Details End ----\n", string1);
+
+
+[MASTER] 19:38:19.334 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test20 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.334 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ EWrapperMsgGenerator eWrapperMsgGenerator0 = new EWrapperMsgGenerator();
+String string0 = EWrapperMsgGenerator.updateMktDepthL2(3221, 3221, "@}D0,q5KJ5*v\"hPH", 0, 3221, 0, 3221);
+assertEquals("updateMktDepth: 3221 3221 @}D0,q5KJ5*v\"hPH 0 3221 0.0 3221", string0);
+
+String string1 = EWrapperMsgGenerator.historicalData(1584, "]_4Xa[[fYXwboZ", 1584, 1.0, 1584, 0, (-1), 0, 0.0, true);
+assertEquals("id=1584 date = ]_4Xa[[fYXwboZ open=1584.0 high=1.0 low=1584.0 close=0.0 volume=-1 count=0 WAP=0.0 hasGaps=true", string1);
+
+
+[MASTER] 19:38:19.334 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test42 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.334 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test21 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.334 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = EWrapperMsgGenerator.openOrderEnd();
+assertEquals(" =============== end ===============", string0);
+
+
+[MASTER] 19:38:19.334 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test00 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.335 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Vector<Object> vector0 = new Vector<Object>();
+Contract contract0 = new Contract(44, "lastEFP", "lastEFP", "lastEFP", 44, "lastEFP", "lastEFP", "lastEFP", "lastEFP", "lastEFP", vector0, "lastEFP", true, "lastEFP", "lastEFP");
+Order order0 = new Order();
+order0.m_algoParams = contract0.m_comboLegs;
+TagValue tagValue0 = new TagValue();
+order0.m_volatilityType = 419;
+vector0.add((Object) tagValue0);
+order0.m_algoStrategy = "lastEFP";
+TagValue tagValue1 = new TagValue((String) null, "lastEFP");
+vector0.add((Object) tagValue1);
+contract0.m_secIdType = "lastEFP";
+OrderState orderState0 = new OrderState();
+EWrapperMsgGenerator.openOrder(44, contract0, order0, orderState0);
+System.setCurrentTimeMillis(Integer.MAX_VALUE);
+
+[MASTER] 19:38:19.335 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test22 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.335 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = EWrapperMsgGenerator.fundamentalData(3193, "+7jSr");
+assertEquals("id  = 3193 len = 5\n+7jSr", string0);
+
+
+[MASTER] 19:38:19.335 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test01 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.337 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Vector<Object> vector0 = new Vector<Object>();
+Contract contract0 = new Contract((-4), "BAG", "BAG", "BAG", (-4), "com.ib.client.Co+tract", "com.ib.client.Co+tract", "com.ib.client.Co+tract", "com.ib.client.Co+tract", "BAG", vector0, "BAG", true, "com.ib.client.Co+tract", "com.ib.client.Co+tract");
+Order order0 = new Order();
+OrderState orderState0 = new OrderState();
+UnderComp underComp0 = contract0.m_underComp;
+contract0.m_underComp = null;
+order0.m_basisPoints = 0.0;
+String string0 = EWrapperMsgGenerator.openOrder((-216), contract0, order0, orderState0);
+assertNotNull(string0);
+
+
+[MASTER] 19:38:19.342 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test23 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.342 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Order order0 = new Order();
+Contract contract0 = new Contract();
+String string0 = EWrapperMsgGenerator.updateMktDepthL2(0, '?', (String) null, 0, 0, Integer.MAX_VALUE, Integer.MAX_VALUE);
+assertEquals("updateMktDepth: 0 63 null 0 0 2.147483647E9 2147483647", string0);
+
+
+[MASTER] 19:38:19.342 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test02 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.342 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Vector<Object> vector0 = new Vector<Object>();
+Contract contract0 = new Contract(8, "BAG", "BAG", "BAG", 8, "com.ib.client.Co+tract", "com.ib.client.Co+tract", "com.ib.client.Co+tract", "com.ib.client.Co+tract", "BAG", vector0, "BAG", false, "com.ib.client.Co+tract", "com.ib.client.Co+tract");
+contract0.m_comboLegsDescrip = "BAG";
+contract0.m_expiry = "com.ib.client.Co+tract";
+Order order0 = new Order();
+OrderState orderState0 = new OrderState();
+String string0 = EWrapperMsgGenerator.openOrder(0, contract0, order0, orderState0);
+assertNotNull(string0);
+
+
+[MASTER] 19:38:19.342 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test24 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.342 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = EWrapperMsgGenerator.accountDownloadEnd("=p7Vlwz;p.7");
+assertEquals("accountDownloadEnd: =p7Vlwz;p.7", string0);
+
+
+[MASTER] 19:38:19.342 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test03 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.342 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = EWrapperMsgGenerator.tickOptionComputation(2144816936, 13, 13, 0.0, 0.0, 2144816936);
+assertEquals("id=2144816936  modelOptComp: vol = 13.0 delta = 0.0: modelPrice = 0.0: pvDividend = 2.144816936E9", string0);
+
+
+[MASTER] 19:38:19.342 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test25 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.343 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Contract contract0 = new Contract();
+Order order0 = new Order();
+OrderState orderState0 = new OrderState();
+String string0 = EWrapperMsgGenerator.openOrder(0, contract0, order0, orderState0);
+assertNotNull(string0);
+
+
+[MASTER] 19:38:19.343 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test26 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.343 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = EWrapperMsgGenerator.historicalData(12, " exchange=", 12, 12, (-1298.25), 12, 12, 12, 12, true);
+assertEquals("id=12 date =  exchange= open=12.0 high=12.0 low=-1298.25 close=12.0 volume=12 count=12 WAP=12.0 hasGaps=true", string0);
+
+
+[MASTER] 19:38:19.343 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test05 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.343 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = EWrapperMsgGenerator.tickOptionComputation(13, 13, 734.9655128486809, 13, 13, 13);
+assertEquals("id=13  modelOptComp: vol = 734.9655128486809 delta = N/A: modelPrice = 13.0: pvDividend = 13.0", string0);
+
+
+[MASTER] 19:38:19.343 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test27 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.343 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Order order0 = new Order();
+String string0 = EWrapperMsgGenerator.updateMktDepth(3, 'b', 0, 0, 1.7976931348623157E308, '?');
+assertEquals("updateMktDepth: 3 98 0 0 1.7976931348623157E308 63", string0);
+
+
+[MASTER] 19:38:19.343 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test06 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.343 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = EWrapperMsgGenerator.tickOptionComputation(13, 13, 1.7976931348623157E308, 13, 1.7976931348623157E308, 1.7976931348623157E308);
+assertEquals("id=13  modelOptComp: vol = N/A delta = N/A: modelPrice = N/A: pvDividend = N/A", string0);
+
+Vector<Object> vector0 = new Vector<Object>();
+Contract contract0 = new Contract(13, "underConId = ", "underConId = ", "cumQty = ", 946.91591, "Z>*I", "cumQty = ", "id=13  modelOptComp: vol = N/A delta = N/A: modelPrice = N/A: pvDividend = N/A", "id=13  modelOptComp: vol = N/A delta = N/A: modelPrice = N/A: pvDividend = N/A", "Z>*I", vector0, "Z>*I", true, "2H)^", "cumQty = ");
+String string1 = EWrapperMsgGenerator.updatePortfolio(contract0, 42, 946.91591, 413.488212227, 13, 413.488212227, 413.488212227, "com.ib.client.Co+tract");
+assertEquals("updatePortfolio: conid = 13\nsymbol = underConId = \nsecType = underConId = \nexpiry = cumQty = \nstrike = 946.91591\nright = Z>*I\nmultiplier = cumQty = \nexchange = id=13  modelOptComp: vol = N/A delta = N/A: modelPrice = N/A: pvDividend = N/A\nprimaryExch = Z>*I\ncurrency = id=13  modelOptComp: vol = N/A delta = N/A: modelPrice = N/A: pvDividend = N/A\nlocalSymbol = Z>*I\n42 946.91591 413.488212227 13.0 413.488212227 413.488212227 com.ib.client.Co+tract", string1);
+
+
+[MASTER] 19:38:19.343 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test28 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.343 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test07 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.344 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ int int0 = (-104);
+EWrapperMsgGenerator.bondContractDetails((-104), (ContractDetails) null);
+
+[MASTER] 19:38:19.344 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test29 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.344 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test08 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.344 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ ContractDetails contractDetails0 = new ContractDetails();
+String string0 = EWrapperMsgGenerator.scannerData(688, 0, contractDetails0, (String) null, (String) null, "openEFP", (String) null);
+assertEquals("id = 688 rank=0 symbol=null secType=null expiry=null strike=0.0 right=null exchange=null currency=null localSymbol=null marketName=null tradingClass=null distance=null benchmark=null projection=openEFP legsStr=null", string0);
+
+
+[MASTER] 19:38:19.344 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test09 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.344 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Order order0 = new Order();
+String string0 = EWrapperMsgGenerator.tickPrice('?', 'b', Integer.MAX_VALUE, 'n');
+assertEquals("id=63  unknown=2.147483647E9  canAutoExecute", string0);
+
+
+[MASTER] 19:38:19.344 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test30 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 19:38:19.344 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test31 -> class java.lang.OutOfMemoryError: unable to create new native thread
+* Writing JUnit test case 'EWrapperMsgGenerator_ESTest' to /home/ubuntu/termite/rmosa/tests/s1004/1_tullibee/evosuite-tests
+* Done!
+
+* Computation finished
+[MASTER] 19:38:19.488 [Thread-3] ERROR ExternalProcessHandler - Exception while reading output of client process. Stream closed

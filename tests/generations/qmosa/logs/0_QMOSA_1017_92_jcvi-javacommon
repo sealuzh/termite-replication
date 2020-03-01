@@ -1,0 +1,996 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/92_jcvi-javacommon/evosuite-files/evosuite.properties
+* Connecting to master process on port 10117
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 13:05:14.435 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 13:05:14.443 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 13:05:14.444 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 13:05:14.484 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/92_jcvi-javacommon/src/main/java/org/jcvi/jillion/core/residue/nt/DefaultNucleotideCodec.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1017
+* Starting evolution
+[MASTER] 13:05:15.834 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleEntry<K, V> : Type points to itself
+[MASTER] 13:05:15.834 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleImmutableEntry<K, V> : Type points to itself
+[MASTER] 13:17:12.125 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+* Search finished after 841s and 151 generations, 123876 statements, best individual has fitness: 376.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 99%
+* Total number of goals: 131
+* Number of covered goals: 130
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 97%
+* Total number of goals: 74
+* Number of covered goals: 72
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 46
+* Number of covered goals: 46
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 99%
+* Total number of goals: 469
+* Number of covered goals: 464
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 63%
+* Total number of goals: 52
+* Number of covered goals: 33
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 83%
+* Total number of goals: 18
+* Number of covered goals: 15
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 83%
+* Total number of goals: 18
+* Number of covered goals: 15
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 81%
+* Total number of goals: 74
+* Number of covered goals: 60
+* Generated 72 tests with total length 1547
+* Resulting test suite's coverage: 95% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 69%
+* Compiling and checking tests
+[MASTER] 13:20:03.084 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: Java heap space
+[MASTER] 13:20:03.085 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ DefaultNucleotideCodec defaultNucleotideCodec0 = DefaultNucleotideCodec.INSTANCE;
+Nucleotide nucleotide0 = Nucleotide.Keto;
+byte[] byteArray0 = new byte[7];
+byteArray0[0] = (byte)51;
+byteArray0[1] = (byte)2;
+byteArray0[2] = (byte)77;
+byteArray0[3] = (byte)12;
+byteArray0[4] = (byte)105;
+byteArray0[5] = (byte)0;
+byteArray0[6] = (byte) (-75);
+defaultNucleotideCodec0.toString(byteArray0);
+
+* Writing JUnit test case 'DefaultNucleotideCodec_ESTest' to /home/ubuntu/termite/qmosa/tests/s1017/92_jcvi-javacommon/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.jcvi.jillion.core.util.FileIterator
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/92_jcvi-javacommon/evosuite-files/evosuite.properties
+* Connecting to master process on port 10119
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 13:20:56.401 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 13:20:56.511 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 13:20:56.512 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 13:20:56.519 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class org.jcvi.jillion.core.util.FileIterator
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/92_jcvi-javacommon/src/main/java/org/jcvi/jillion/core/util/FileIterator.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1017
+* Starting evolution
+[MASTER] 13:31:32.468 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.jcvi.jillion.core.util.FileIterator.remove()V
+* Search finished after 849s and 62 generations, 68020 statements, best individual has fitness: 656.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 95%
+* Total number of goals: 107
+* Number of covered goals: 102
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 97%
+* Total number of goals: 67
+* Number of covered goals: 65
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 96%
+* Total number of goals: 53
+* Number of covered goals: 51
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 50%
+* Total number of goals: 74
+* Number of covered goals: 37
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 50%
+* Total number of goals: 28
+* Number of covered goals: 14
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 50%
+* Total number of goals: 28
+* Number of covered goals: 14
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 88%
+* Total number of goals: 67
+* Number of covered goals: 59
+* Generated 23 tests with total length 508
+* Resulting test suite's coverage: 81% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 59%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 6
+* Writing JUnit test case 'FileIterator_ESTest' to /home/ubuntu/termite/qmosa/tests/s1017/92_jcvi-javacommon/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.jcvi.jillion.assembly.consed.phd.PhdBuilder
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/92_jcvi-javacommon/evosuite-files/evosuite.properties
+* Connecting to master process on port 10118
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 13:37:13.950 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 13:37:13.950 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 13:37:13.970 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 13:37:14.005 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 13:37:14.009 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 13:37:14.012 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 13:37:14.092 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 13:37:14.098 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 13:37:14.107 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 13:37:14.107 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 13:37:14.109 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 13:37:14.110 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 13:37:14.110 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 13:37:14.119 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 13:37:14.120 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+* Finished analyzing classpath
+* Generating tests for class org.jcvi.jillion.assembly.consed.phd.PhdBuilder
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/92_jcvi-javacommon/src/main/java/org/jcvi/jillion/assembly/consed/phd/PhdBuilder.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1017
+* Starting evolution
+[MASTER] 13:41:49.312 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+[MASTER] 13:46:03.889 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+* Search finished after 742s and 1172 generations, 603379 statements, best individual has fitness: 240.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 92%
+* Total number of goals: 93
+* Number of covered goals: 86
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 81%
+* Total number of goals: 27
+* Number of covered goals: 22
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 9
+* Number of covered goals: 9
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 91%
+* Total number of goals: 47
+* Number of covered goals: 43
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 50%
+* Total number of goals: 16
+* Number of covered goals: 8
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 81%
+* Total number of goals: 27
+* Number of covered goals: 22
+* Generated 22 tests with total length 328
+* Resulting test suite's coverage: 88% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 7%
+* Compiling and checking tests
+[MASTER] 13:49:41.358 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 13:49:41.359 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ long long0 = 0L;
+PhdBuilder phdBuilder0 = new PhdBuilder((Phd) null);
+
+[MASTER] 13:49:41.779 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 13:49:41.779 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ LinkedList<PhdWholeReadItem> linkedList0 = new LinkedList<PhdWholeReadItem>();
+LinkedList<PhdWholeReadItem> linkedList1 = new LinkedList<PhdWholeReadItem>();
+LinkedList<Locale.LanguageRange> linkedList2 = new LinkedList<Locale.LanguageRange>();
+Set<String> set0 = ZoneId.getAvailableZoneIds();
+List<String> list0 = Locale.filterTags((List<Locale.LanguageRange>) linkedList2, (Collection<String>) set0);
+DefaultPhdWholeReadItem defaultPhdWholeReadItem0 = new DefaultPhdWholeReadItem(list0);
+linkedList1.add((PhdWholeReadItem) defaultPhdWholeReadItem0);
+LinkedList<String> linkedList3 = new LinkedList<String>();
+DefaultPhdWholeReadItem defaultPhdWholeReadItem1 = new DefaultPhdWholeReadItem(linkedList3);
+linkedList1.add((PhdWholeReadItem) defaultPhdWholeReadItem1);
+NucleotideSequence nucleotideSequence0 = mock(NucleotideSequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L).when(nucleotideSequence0).getLength();
+ArtificialPhd artificialPhd0 = new ArtificialPhd("@$'39LI5Hs", nucleotideSequence0, (QualitySequence) null, (-288));
+PhdBuilder phdBuilder0 = new PhdBuilder(artificialPhd0);
+
+[MASTER] 13:49:41.972 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 13:49:41.973 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NucleotideSequence nucleotideSequence0 = mock(NucleotideSequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L).when(nucleotideSequence0).getLength();
+LinkedList<PhdWholeReadItem> linkedList0 = new LinkedList<PhdWholeReadItem>();
+LinkedList<PhdWholeReadItem> linkedList1 = new LinkedList<PhdWholeReadItem>();
+LinkedList<String> linkedList2 = new LinkedList<String>();
+DefaultPhdWholeReadItem defaultPhdWholeReadItem0 = new DefaultPhdWholeReadItem(linkedList2);
+linkedList1.add((PhdWholeReadItem) defaultPhdWholeReadItem0);
+LinkedList<String> linkedList3 = new LinkedList<String>();
+linkedList3.add("chromatogram can not be null");
+DefaultPhdWholeReadItem defaultPhdWholeReadItem1 = new DefaultPhdWholeReadItem(linkedList3);
+linkedList1.add((PhdWholeReadItem) defaultPhdWholeReadItem1);
+QualitySequence qualitySequence0 = mock(QualitySequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L).when(qualitySequence0).getLength();
+PhdBuilder phdBuilder0 = new PhdBuilder("0{", nucleotideSequence0, qualitySequence0);
+phdBuilder0.comments((Map<String, String>) null);
+
+[MASTER] 13:49:42.787 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 13:49:42.787 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ System.setCurrentTimeMillis((-10L));
+System.setCurrentTimeMillis(1219L);
+System.setCurrentTimeMillis(1219L);
+System.setCurrentTimeMillis((-10L));
+System.setCurrentTimeMillis((-1875L));
+System.setCurrentTimeMillis((-1192L));
+System.setCurrentTimeMillis((-330L));
+NucleotideSequence nucleotideSequence0 = mock(NucleotideSequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L).when(nucleotideSequence0).getLength();
+QualitySequence qualitySequence0 = mock(QualitySequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L).when(qualitySequence0).getLength();
+PhdBuilder phdBuilder0 = new PhdBuilder("E#(bD", nucleotideSequence0, qualitySequence0);
+int int0 = 3;
+phdBuilder0.fakePeaks(1, 3);
+phdBuilder0.fakePeaks(1476, 255);
+phdBuilder0.fakePeaks((-757), 1476);
+
+[MASTER] 13:49:43.341 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 13:49:43.342 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NucleotideSequence nucleotideSequence0 = mock(NucleotideSequence.class, new ViolatedAssumptionAnswer());
+PhdBuilder phdBuilder0 = new PhdBuilder("", nucleotideSequence0, (QualitySequence) null);
+
+[MASTER] 13:49:43.481 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 13:49:43.481 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ QualitySequence qualitySequence0 = mock(QualitySequence.class, new ViolatedAssumptionAnswer());
+byte[] byteArray0 = new byte[2];
+short[] shortArray0 = new short[7];
+shortArray0[0] = (short)15;
+shortArray0[1] = (short)15;
+shortArray0[2] = (short)66;
+shortArray0[3] = (short)15;
+shortArray0[4] = (short)66;
+shortArray0[5] = (short)15;
+shortArray0[6] = (short)15;
+DefaultChannel defaultChannel0 = new DefaultChannel(byteArray0, shortArray0);
+Object object0 = new Object();
+defaultChannel0.equals(object0);
+DefaultChannelGroup defaultChannelGroup0 = new DefaultChannelGroup(defaultChannel0, defaultChannel0, defaultChannel0, defaultChannel0);
+Map<String, String> map0 = ZoneId.SHORT_IDS;
+System.setCurrentTimeMillis((short)15);
+PhdBuilder phdBuilder0 = new PhdBuilder("w*!", (NucleotideSequence) null, qualitySequence0);
+
+[MASTER] 13:49:43.664 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 13:49:43.665 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ System.setCurrentTimeMillis((-8L));
+System.setCurrentTimeMillis(1219L);
+System.setCurrentTimeMillis(1283L);
+System.setCurrentTimeMillis(1283L);
+System.setCurrentTimeMillis((-1875L));
+System.setCurrentTimeMillis((-1192L));
+System.setCurrentTimeMillis(1279L);
+NucleotideSequence nucleotideSequence0 = mock(NucleotideSequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L).when(nucleotideSequence0).getLength();
+QualitySequence qualitySequence0 = mock(QualitySequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L).when(qualitySequence0).getLength();
+PhdBuilder phdBuilder0 = new PhdBuilder("", nucleotideSequence0, qualitySequence0);
+HashMap<String, String> hashMap0 = new HashMap<String, String>();
+phdBuilder0.comments(hashMap0);
+System.setCurrentTimeMillis((-1L));
+System.setCurrentTimeMillis(505L);
+System.setCurrentTimeMillis(1L);
+
+[MASTER] 13:49:43.810 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 13:49:43.811 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ BiFunction<Object, Object, String> biFunction0 = (BiFunction<Object, Object, String>) mock(BiFunction.class, new ViolatedAssumptionAnswer());
+NucleotideSequence nucleotideSequence0 = mock(NucleotideSequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L).when(nucleotideSequence0).getLength();
+QualitySequence qualitySequence0 = mock(QualitySequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L).when(qualitySequence0).getLength();
+PhdBuilder phdBuilder0 = new PhdBuilder("cu", nucleotideSequence0, qualitySequence0);
+phdBuilder0.wholeReadItems((List<PhdWholeReadItem>) null);
+
+[MASTER] 13:49:43.974 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 13:49:43.974 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NucleotideSequence nucleotideSequence0 = mock(NucleotideSequence.class, new ViolatedAssumptionAnswer());
+QualitySequence qualitySequence0 = mock(QualitySequence.class, new ViolatedAssumptionAnswer());
+HashMap<String, String> hashMap0 = new HashMap<String, String>();
+BiFunction<Object, Object, String> biFunction0 = (BiFunction<Object, Object, String>) mock(BiFunction.class, new ViolatedAssumptionAnswer());
+hashMap0.computeIfPresent("'uE[4?P4h`~Bl-", biFunction0);
+hashMap0.clear();
+DefaultPhd defaultPhd0 = new DefaultPhd("'uE[4?P4h`~Bl-", nucleotideSequence0, qualitySequence0, (PositionSequence) null, hashMap0);
+PhdBuilder phdBuilder0 = new PhdBuilder(defaultPhd0);
+
+[MASTER] 13:49:44.809 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 13:49:44.809 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = "";
+NucleotideSequence nucleotideSequence0 = mock(NucleotideSequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L).when(nucleotideSequence0).getLength();
+QualitySequence qualitySequence0 = mock(QualitySequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L).when(qualitySequence0).getLength();
+PhdBuilder phdBuilder0 = new PhdBuilder("", nucleotideSequence0, qualitySequence0);
+phdBuilder0.peaks((PositionSequence) null);
+LinkedList<Locale.LanguageRange> linkedList0 = new LinkedList<Locale.LanguageRange>();
+String string1 = "";
+Locale.LanguageRange locale_LanguageRange0 = new Locale.LanguageRange("");
+
+[MASTER] 13:49:44.972 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 13:49:44.972 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NucleotideSequence nucleotideSequence0 = mock(NucleotideSequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L, 0L).when(nucleotideSequence0).getLength();
+QualitySequence qualitySequence0 = mock(QualitySequence.class, new ViolatedAssumptionAnswer());
+ArtificialPhd artificialPhd0 = new ArtificialPhd("", nucleotideSequence0, qualitySequence0, 3044);
+List<PhdWholeReadItem> list0 = artificialPhd0.getWholeReadItems();
+List<PhdReadTag> list1 = artificialPhd0.getReadTags();
+ArtificialPhd artificialPhd1 = new ArtificialPhd("", nucleotideSequence0, qualitySequence0, (Map<String, String>) null, list0, list1, 13, (-797));
+artificialPhd1.getComments();
+DefaultPhd defaultPhd0 = new DefaultPhd("", nucleotideSequence0, qualitySequence0, (PositionSequence) null, (Map<String, String>) null);
+PhdBuilder phdBuilder0 = new PhdBuilder(defaultPhd0);
+
+[MASTER] 13:49:45.206 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test09 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 13:49:45.207 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NucleotideSequence nucleotideSequence0 = mock(NucleotideSequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L).when(nucleotideSequence0).getLength();
+QualitySequence qualitySequence0 = mock(QualitySequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L).when(qualitySequence0).getLength();
+PhdBuilder phdBuilder0 = new PhdBuilder("@", nucleotideSequence0, qualitySequence0);
+PhdBuilder phdBuilder1 = phdBuilder0.fakePeaks();
+PhdBuilder phdBuilder2 = phdBuilder1.fakePeaks(297, 297);
+PhdBuilder phdBuilder3 = phdBuilder1.fakePeaks(297, 297);
+phdBuilder3.fakePeaks(297, 297);
+phdBuilder2.fakePeaks(3, (-1));
+
+[MASTER] 13:49:45.207 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test06 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 13:49:45.207 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test07 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 13:49:45.207 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test04 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 13:49:45.207 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test05 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 13:49:45.207 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test01 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 13:49:45.207 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test10 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 13:49:45.415 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test1 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 13:49:45.416 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NucleotideSequence nucleotideSequence0 = mock(NucleotideSequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L, 0L).when(nucleotideSequence0).getLength();
+QualitySequence qualitySequence0 = mock(QualitySequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L).when(qualitySequence0).getLength();
+PhdBuilder phdBuilder0 = new PhdBuilder("", nucleotideSequence0, qualitySequence0);
+PhdBuilder phdBuilder1 = phdBuilder0.fakePeaks(8, 8);
+byte[] byteArray0 = new byte[2];
+short[] shortArray0 = new short[7];
+shortArray0[0] = (short)0;
+shortArray0[1] = (short)0;
+shortArray0[2] = (short)66;
+shortArray0[3] = (short)0;
+shortArray0[4] = (short)66;
+shortArray0[5] = (short)0;
+shortArray0[6] = (short)0;
+DefaultChannel defaultChannel0 = new DefaultChannel(byteArray0, shortArray0);
+DefaultChannelGroup defaultChannelGroup0 = new DefaultChannelGroup(defaultChannel0, defaultChannel0, defaultChannel0, defaultChannel0);
+Map<String, String> map0 = ZoneId.SHORT_IDS;
+Phd phd0 = phdBuilder1.build();
+assertEquals("", phd0.getId());
+
+
+[MASTER] 13:49:45.416 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 13:49:45.416 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = "";
+NucleotideSequence nucleotideSequence0 = mock(NucleotideSequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L).when(nucleotideSequence0).getLength();
+QualitySequence qualitySequence0 = mock(QualitySequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L).when(qualitySequence0).getLength();
+PhdBuilder phdBuilder0 = new PhdBuilder("", nucleotideSequence0, qualitySequence0);
+phdBuilder0.peaks((PositionSequence) null);
+LinkedList<Locale.LanguageRange> linkedList0 = new LinkedList<Locale.LanguageRange>();
+String string1 = "";
+Locale.LanguageRange locale_LanguageRange0 = new Locale.LanguageRange("");
+
+[MASTER] 13:49:45.416 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test5 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 13:49:45.416 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NucleotideSequence nucleotideSequence0 = mock(NucleotideSequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L).when(nucleotideSequence0).getLength();
+QualitySequence qualitySequence0 = mock(QualitySequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L).when(qualitySequence0).getLength();
+PhdBuilder phdBuilder0 = new PhdBuilder("7c_QVy", nucleotideSequence0, qualitySequence0);
+BiFunction<Object, Object, String> biFunction0 = (BiFunction<Object, Object, String>) mock(BiFunction.class, new ViolatedAssumptionAnswer());
+PhdBuilder phdBuilder1 = phdBuilder0.copy();
+assertNotSame(phdBuilder0, phdBuilder1);
+
+
+[MASTER] 13:49:45.416 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test4 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 13:49:45.417 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ String string0 = "";
+NucleotideSequence nucleotideSequence0 = mock(NucleotideSequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L).when(nucleotideSequence0).getLength();
+QualitySequence qualitySequence0 = mock(QualitySequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L).when(qualitySequence0).getLength();
+PhdBuilder phdBuilder0 = new PhdBuilder("", nucleotideSequence0, qualitySequence0);
+LinkedList<PhdReadTag> linkedList0 = new LinkedList<PhdReadTag>();
+phdBuilder0.readTags(linkedList0);
+LinkedList<Locale.LanguageRange> linkedList1 = new LinkedList<Locale.LanguageRange>();
+String string1 = "zF?]-uU 3G8l!sfB";
+Locale.LanguageRange locale_LanguageRange0 = new Locale.LanguageRange("zF?]-uU 3G8l!sfB");
+
+[MASTER] 13:49:45.417 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test3 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 13:49:45.417 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ NucleotideSequence nucleotideSequence0 = mock(NucleotideSequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L).when(nucleotideSequence0).getLength();
+QualitySequence qualitySequence0 = mock(QualitySequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L).when(qualitySequence0).getLength();
+PhdBuilder phdBuilder0 = new PhdBuilder("", nucleotideSequence0, qualitySequence0);
+NucleotideSequence nucleotideSequence1 = mock(NucleotideSequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L).when(nucleotideSequence1).getLength();
+QualitySequence qualitySequence1 = mock(QualitySequence.class, new ViolatedAssumptionAnswer());
+ArtificialPhd artificialPhd0 = new ArtificialPhd("", nucleotideSequence1, qualitySequence1, 68);
+List<PhdWholeReadItem> list0 = artificialPhd0.getWholeReadItems();
+phdBuilder0.wholeReadItems(list0);
+HashMap<String, String> hashMap0 = new HashMap<String, String>();
+assertTrue(hashMap0.isEmpty());
+
+
+[MASTER] 13:49:45.417 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test2 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 13:49:45.417 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ System.setCurrentTimeMillis((-10L));
+System.setCurrentTimeMillis((-10L));
+System.setCurrentTimeMillis(1283L);
+System.setCurrentTimeMillis(1283L);
+System.setCurrentTimeMillis((-1875L));
+System.setCurrentTimeMillis((-1192L));
+System.setCurrentTimeMillis(1279L);
+NucleotideSequence nucleotideSequence0 = mock(NucleotideSequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L).when(nucleotideSequence0).getLength();
+QualitySequence qualitySequence0 = mock(QualitySequence.class, new ViolatedAssumptionAnswer());
+doReturn(0L).when(qualitySequence0).getLength();
+PhdBuilder phdBuilder0 = new PhdBuilder("'(", nucleotideSequence0, qualitySequence0);
+System.setCurrentTimeMillis((-1L));
+Phd phd0 = phdBuilder0.build();
+assertEquals("'(", phd0.getId());
+
+
+[MASTER] 13:49:45.417 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test8 -> class java.lang.OutOfMemoryError: unable to create new native thread
+[MASTER] 13:49:45.417 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test6 -> class java.lang.OutOfMemoryError: unable to create new native thread
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 2
+* Writing JUnit test case 'PhdBuilder_ESTest' to /home/ubuntu/termite/qmosa/tests/s1017/92_jcvi-javacommon/evosuite-tests
+* Done!
+
+* Computation finished
+[MASTER] 13:49:45.466 [Thread-3] ERROR ExternalProcessHandler - Exception while reading output of client process. Stream closed
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.jcvi.jillion.core.Range
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/92_jcvi-javacommon/evosuite-files/evosuite.properties
+* Connecting to master process on port 10116
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 15:09:17.371 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 15:09:17.392 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 15:09:17.393 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToDoubleFunction
+[MASTER] 15:09:17.394 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToIntFunction
+[MASTER] 15:09:17.394 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToLongFunction
+[MASTER] 15:09:17.422 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 15:09:17.423 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+* Finished analyzing classpath
+* Generating tests for class org.jcvi.jillion.core.Range
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/92_jcvi-javacommon/src/main/java/org/jcvi/jillion/core/Range.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1017
+* Starting evolution
+[MASTER] 15:12:09.466 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 201: org.jcvi.jillion.core.Range.canFitInSignedInt(JJ)Z:501 - ReplaceComparisonOperator < -> <=
+[MASTER] 15:13:01.953 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.jcvi.jillion.core.Range.parseRange(Ljava/lang/String;)Lorg/jcvi/jillion/core/Range;
+[MASTER] 15:13:39.610 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range.buildNewSignedRange(JJ)Lorg/jcvi/jillion/core/Range;: Line 486
+[MASTER] 15:13:39.611 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range.buildNewSignedRange(JJ)Lorg/jcvi/jillion/core/Range;: Line 487
+[MASTER] 15:13:39.612 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range.buildNewSignedRange(JJ)Lorg/jcvi/jillion/core/Range;: Line 489
+[MASTER] 15:13:39.613 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range.canFitInSignedInt(JJ)Z: Line 501
+[MASTER] 15:13:39.619 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range.split(J)Ljava/util/List;: Line 947
+[MASTER] 15:13:39.620 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range.split(J)Ljava/util/List;: Line 950
+[MASTER] 15:13:39.620 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range.split(J)Ljava/util/List;: Line 951
+[MASTER] 15:13:39.621 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range.split(J)Ljava/util/List;: Line 954
+[MASTER] 15:13:39.622 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range.split(J)Ljava/util/List;: Line 955
+[MASTER] 15:13:39.622 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range.split(J)Ljava/util/List;: Line 956
+[MASTER] 15:13:39.623 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range.split(J)Ljava/util/List;: Line 957
+[MASTER] 15:13:39.624 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range.split(J)Ljava/util/List;: Line 958
+[MASTER] 15:13:39.624 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range.split(J)Ljava/util/List;: Line 959
+[MASTER] 15:13:39.625 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range.split(J)Ljava/util/List;: Line 960
+[MASTER] 15:13:39.626 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range.getLength()J: Line 971
+[MASTER] 15:13:39.629 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$LongRange.<init>(JJ)V: Line 1044
+[MASTER] 15:13:39.630 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$LongRange.<init>(JJ)V: Line 1045
+[MASTER] 15:13:39.632 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$LongRange.<init>(JJ)V: Line 1046
+[MASTER] 15:13:39.632 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$LongRange.<init>(JJ)V: Line 1047
+[MASTER] 15:13:39.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$LongRange.getBegin()J: Line 1059
+[MASTER] 15:13:39.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$LongRange.getEnd()J: Line 1070
+[MASTER] 15:13:39.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$IntRange.<init>(II)V: Line 1123
+[MASTER] 15:13:39.635 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$IntRange.<init>(II)V: Line 1124
+[MASTER] 15:13:39.636 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$IntRange.<init>(II)V: Line 1125
+[MASTER] 15:13:39.637 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$IntRange.<init>(II)V: Line 1126
+[MASTER] 15:13:39.637 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$IntRange.getBegin()J: Line 1138
+[MASTER] 15:13:39.638 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$IntRange.getEnd()J: Line 1149
+[MASTER] 15:13:39.641 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 69: org.jcvi.jillion.core.Range.buildNewSignedRange(JJ)Lorg/jcvi/jillion/core/Range;:486 - ReplaceComparisonOperator == -> !=
+[MASTER] 15:13:39.644 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 137: org.jcvi.jillion.core.Range.canFitInSignedShort(JJ)Z:497 - ReplaceComparisonOperator < -> -2
+[MASTER] 15:13:39.644 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 170: org.jcvi.jillion.core.Range.canFitInSignedInt(JJ)Z:501 - ReplaceComparisonOperator > -> !=
+[MASTER] 15:13:39.645 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 179: org.jcvi.jillion.core.Range.canFitInSignedInt(JJ)Z:501 - ReplaceComparisonOperator < -> -2
+[MASTER] 15:13:39.646 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 180: org.jcvi.jillion.core.Range.canFitInSignedInt(JJ)Z:501 - ReplaceComparisonOperator < -> !=
+[MASTER] 15:13:39.646 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 190: org.jcvi.jillion.core.Range.canFitInSignedInt(JJ)Z:501 - ReplaceComparisonOperator > -> !=
+[MASTER] 15:13:39.647 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 200: org.jcvi.jillion.core.Range.canFitInSignedInt(JJ)Z:501 - ReplaceComparisonOperator < -> !=
+[MASTER] 15:13:39.649 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 564: org.jcvi.jillion.core.Range.split(J)Ljava/util/List;:947 - ReplaceComparisonOperator >= -> ==
+[MASTER] 15:13:39.650 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 569: org.jcvi.jillion.core.Range.split(J)Ljava/util/List;:951 - ReplaceComparisonOperator >= -> ==
+[MASTER] 15:13:39.651 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 578: org.jcvi.jillion.core.Range.split(J)Ljava/util/List;:956 - ReplaceComparisonOperator > -> !=
+[MASTER] 15:13:39.652 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 589: org.jcvi.jillion.core.Range.split(J)Ljava/util/List;:957 - ReplaceArithmeticOperator + -> %
+[MASTER] 15:13:39.652 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 590: org.jcvi.jillion.core.Range.split(J)Ljava/util/List;:957 - ReplaceArithmeticOperator + -> -
+[MASTER] 15:13:39.653 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 591: org.jcvi.jillion.core.Range.split(J)Ljava/util/List;:957 - ReplaceArithmeticOperator + -> *
+[MASTER] 15:13:39.654 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 592: org.jcvi.jillion.core.Range.split(J)Ljava/util/List;:957 - ReplaceArithmeticOperator + -> /
+[MASTER] 15:13:39.654 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 596: org.jcvi.jillion.core.Range.split(J)Ljava/util/List;:957 - ReplaceArithmeticOperator - -> +
+[MASTER] 15:13:39.655 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 597: org.jcvi.jillion.core.Range.split(J)Ljava/util/List;:957 - ReplaceArithmeticOperator - -> %
+[MASTER] 15:13:39.656 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 598: org.jcvi.jillion.core.Range.split(J)Ljava/util/List;:957 - ReplaceArithmeticOperator - -> *
+[MASTER] 15:13:39.656 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 599: org.jcvi.jillion.core.Range.split(J)Ljava/util/List;:957 - ReplaceArithmeticOperator - -> /
+[MASTER] 15:13:39.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 616: org.jcvi.jillion.core.Range.split(J)Ljava/util/List;:959 - ReplaceArithmeticOperator + -> %
+[MASTER] 15:13:39.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 617: org.jcvi.jillion.core.Range.split(J)Ljava/util/List;:959 - ReplaceArithmeticOperator + -> -
+[MASTER] 15:13:39.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 618: org.jcvi.jillion.core.Range.split(J)Ljava/util/List;:959 - ReplaceArithmeticOperator + -> *
+[MASTER] 15:13:39.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 619: org.jcvi.jillion.core.Range.split(J)Ljava/util/List;:959 - ReplaceArithmeticOperator + -> /
+[MASTER] 15:13:39.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 620: org.jcvi.jillion.core.Range.getLength()J:971 - ReplaceArithmeticOperator - -> +
+[MASTER] 15:13:39.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 621: org.jcvi.jillion.core.Range.getLength()J:971 - ReplaceArithmeticOperator - -> %
+[MASTER] 15:13:39.661 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 622: org.jcvi.jillion.core.Range.getLength()J:971 - ReplaceArithmeticOperator - -> *
+[MASTER] 15:13:39.662 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 623: org.jcvi.jillion.core.Range.getLength()J:971 - ReplaceArithmeticOperator - -> /
+[MASTER] 15:13:39.662 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 627: org.jcvi.jillion.core.Range.getLength()J:971 - ReplaceArithmeticOperator + -> %
+[MASTER] 15:13:39.663 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 628: org.jcvi.jillion.core.Range.getLength()J:971 - ReplaceArithmeticOperator + -> -
+[MASTER] 15:13:39.663 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 629: org.jcvi.jillion.core.Range.getLength()J:971 - ReplaceArithmeticOperator + -> *
+[MASTER] 15:13:39.664 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 630: org.jcvi.jillion.core.Range.getLength()J:971 - ReplaceArithmeticOperator + -> /
+[MASTER] 15:13:39.678 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2189: org.jcvi.jillion.core.Range$CoordinateSystem.getStart(J)J:379 - ReplaceArithmeticOperator + -> -
+[MASTER] 15:13:39.679 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2190: org.jcvi.jillion.core.Range$CoordinateSystem.getStart(J)J:379 - ReplaceArithmeticOperator + -> *
+[MASTER] 15:13:39.683 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.jcvi.jillion.core.Range.split(J)Ljava/util/List;
+[MASTER] 15:13:39.685 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.jcvi.jillion.core.Range.split(J)Ljava/util/List;
+[MASTER] 15:13:39.688 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.Range.canFitInSignedInt(JJ)Z: I5 Branch 13 IFGT L501 - false in context: 
+[MASTER] 15:13:39.690 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.Range.split(J)Ljava/util/List;: I5 Branch 60 IFGE L947 - true in context: org.jcvi.jillion.core.Range:split(J)Ljava/util/List;
+[MASTER] 15:13:39.691 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.Range$IntRange.getEnd()J: root-Branch in context: 
+[MASTER] 15:13:39.692 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.Range$IntRange.getBegin()J: root-Branch in context: 
+[MASTER] 15:13:39.693 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.Range.canFitInSignedInt(JJ)Z: I17 Branch 16 IFLT L501 - false in context: 
+[MASTER] 15:13:39.694 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.Range.split(J)Ljava/util/List;: I61 Branch 62 IFGT L956 - false in context: org.jcvi.jillion.core.Range:split(J)Ljava/util/List;
+[MASTER] 15:13:39.695 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.Range.canFitInSignedInt(JJ)Z: I13 Branch 15 IFGT L501 - false in context: 
+[MASTER] 15:13:39.696 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.Range.buildNewSignedRange(JJ)Lorg/jcvi/jillion/core/Range;: I43 Branch 4 IFEQ L486 - true in context: 
+[MASTER] 15:13:39.697 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.Range.buildNewSignedRange(JJ)Lorg/jcvi/jillion/core/Range;: I24 Branch 3 IFEQ L484 - true in context: 
+[MASTER] 15:13:39.697 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.Range$LongRange.getEnd()J: root-Branch in context: 
+[MASTER] 15:13:39.698 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.Range.canFitInSignedInt(JJ)Z: I9 Branch 14 IFLT L501 - false in context: 
+[MASTER] 15:13:39.699 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.Range.split(J)Ljava/util/List;: I38 Branch 61 IFGE L951 - true in context: org.jcvi.jillion.core.Range:split(J)Ljava/util/List;
+[MASTER] 15:13:39.700 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.Range.canFitInSignedInt(JJ)Z: I9 Branch 14 IFLT L501 - true in context: 
+[MASTER] 15:13:39.700 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.Range$LongRange.getBegin()J: root-Branch in context: 
+[MASTER] 15:13:39.702 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.Range.canFitInSignedShort(JJ)Z: I9 Branch 10 IFLT L497 - true in context: 
+[MASTER] 15:20:43.275 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range.buildNewUnsignedRange(JJJ)Lorg/jcvi/jillion/core/Range;: Line 528
+[MASTER] 15:20:43.303 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$UnsignedByteStartLongLengthRange.<init>(SJ)V: Line 1541
+[MASTER] 15:20:43.303 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$UnsignedByteStartLongLengthRange.<init>(SJ)V: Line 1542
+[MASTER] 15:20:43.304 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$UnsignedByteStartLongLengthRange.<init>(SJ)V: Line 1543
+[MASTER] 15:20:43.304 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$UnsignedByteStartLongLengthRange.<init>(SJ)V: Line 1545
+[MASTER] 15:20:43.305 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$UnsignedByteStartLongLengthRange.getBegin()J: Line 1557
+[MASTER] 15:20:43.305 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$UnsignedByteStartLongLengthRange.getLength()J: Line 1562
+[MASTER] 15:20:43.306 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$UnsignedByteStartLongLengthRange.getEnd()J: Line 1567
+[MASTER] 15:20:43.317 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 240: org.jcvi.jillion.core.Range.buildNewUnsignedRange(JJJ)Lorg/jcvi/jillion/core/Range;:525 - ReplaceComparisonOperator > -> -2
+[MASTER] 15:20:43.335 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1113: org.jcvi.jillion.core.Range$UnsignedByteStartLongLengthRange.getEnd()J:1567 - ReplaceArithmeticOperator + -> %
+[MASTER] 15:20:43.335 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1114: org.jcvi.jillion.core.Range$UnsignedByteStartLongLengthRange.getEnd()J:1567 - ReplaceArithmeticOperator + -> -
+[MASTER] 15:20:43.336 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1115: org.jcvi.jillion.core.Range$UnsignedByteStartLongLengthRange.getEnd()J:1567 - ReplaceArithmeticOperator + -> *
+[MASTER] 15:20:43.336 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1116: org.jcvi.jillion.core.Range$UnsignedByteStartLongLengthRange.getEnd()J:1567 - ReplaceArithmeticOperator + -> /
+[MASTER] 15:20:43.337 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1120: org.jcvi.jillion.core.Range$UnsignedByteStartLongLengthRange.getEnd()J:1567 - ReplaceArithmeticOperator - -> +
+[MASTER] 15:20:43.338 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1121: org.jcvi.jillion.core.Range$UnsignedByteStartLongLengthRange.getEnd()J:1567 - ReplaceArithmeticOperator - -> %
+[MASTER] 15:20:43.338 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1122: org.jcvi.jillion.core.Range$UnsignedByteStartLongLengthRange.getEnd()J:1567 - ReplaceArithmeticOperator - -> *
+[MASTER] 15:20:43.339 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1123: org.jcvi.jillion.core.Range$UnsignedByteStartLongLengthRange.getEnd()J:1567 - ReplaceArithmeticOperator - -> /
+[MASTER] 15:20:43.365 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2126: org.jcvi.jillion.core.Range$Builder.build()Lorg/jcvi/jillion/core/Range;:2555 - ReplaceComparisonOperator >= -> >
+[MASTER] 15:20:43.373 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.Range$UnsignedByteStartLongLengthRange.getBegin()J: root-Branch in context: 
+[MASTER] 15:20:43.378 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.Range$UnsignedByteStartLongLengthRange.getLength()J: root-Branch in context: 
+[MASTER] 15:20:43.389 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.Range.buildNewUnsignedRange(JJJ)Lorg/jcvi/jillion/core/Range;: I29 Branch 19 IFGT L525 - true in context: 
+[MASTER] 15:20:43.391 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.Range$UnsignedByteStartLongLengthRange.getEnd()J: root-Branch in context: 
+[MASTER] 15:21:52.611 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range.buildNewUnsignedRange(JJJ)Lorg/jcvi/jillion/core/Range;: Line 544
+[MASTER] 15:21:52.630 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$UnsignedIntStartLongLengthRange.<init>(JJ)V: Line 1974
+[MASTER] 15:21:52.631 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$UnsignedIntStartLongLengthRange.<init>(JJ)V: Line 1975
+[MASTER] 15:21:52.631 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$UnsignedIntStartLongLengthRange.<init>(JJ)V: Line 1976
+[MASTER] 15:21:52.632 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$UnsignedIntStartLongLengthRange.<init>(JJ)V: Line 1977
+[MASTER] 15:21:52.632 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$UnsignedIntStartLongLengthRange.getLength()J: Line 1981
+[MASTER] 15:21:52.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$UnsignedIntStartLongLengthRange.getBegin()J: Line 1994
+[MASTER] 15:21:52.634 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.Range$UnsignedIntStartLongLengthRange.getEnd()J: Line 2005
+[MASTER] 15:21:52.655 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 325: org.jcvi.jillion.core.Range.buildNewUnsignedRange(JJJ)Lorg/jcvi/jillion/core/Range;:541 - ReplaceComparisonOperator > -> -2
+[MASTER] 15:21:52.717 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1559: org.jcvi.jillion.core.Range$UnsignedIntStartLongLengthRange.getEnd()J:2005 - ReplaceArithmeticOperator + -> %
+[MASTER] 15:21:52.717 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1560: org.jcvi.jillion.core.Range$UnsignedIntStartLongLengthRange.getEnd()J:2005 - ReplaceArithmeticOperator + -> -
+[MASTER] 15:21:52.718 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1561: org.jcvi.jillion.core.Range$UnsignedIntStartLongLengthRange.getEnd()J:2005 - ReplaceArithmeticOperator + -> *
+[MASTER] 15:21:52.719 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1562: org.jcvi.jillion.core.Range$UnsignedIntStartLongLengthRange.getEnd()J:2005 - ReplaceArithmeticOperator + -> /
+[MASTER] 15:21:52.719 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1566: org.jcvi.jillion.core.Range$UnsignedIntStartLongLengthRange.getEnd()J:2005 - ReplaceArithmeticOperator - -> +
+[MASTER] 15:21:52.720 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1567: org.jcvi.jillion.core.Range$UnsignedIntStartLongLengthRange.getEnd()J:2005 - ReplaceArithmeticOperator - -> %
+[MASTER] 15:21:52.721 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1568: org.jcvi.jillion.core.Range$UnsignedIntStartLongLengthRange.getEnd()J:2005 - ReplaceArithmeticOperator - -> *
+[MASTER] 15:21:52.721 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1569: org.jcvi.jillion.core.Range$UnsignedIntStartLongLengthRange.getEnd()J:2005 - ReplaceArithmeticOperator - -> /
+[MASTER] 15:21:52.764 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.Range$UnsignedIntStartLongLengthRange.getEnd()J: root-Branch in context: 
+[MASTER] 15:21:52.776 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.Range$UnsignedIntStartLongLengthRange.getBegin()J: root-Branch in context: 
+[MASTER] 15:21:52.777 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.Range$UnsignedIntStartLongLengthRange.getLength()J: root-Branch in context: 
+[MASTER] 15:21:52.780 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.Range.buildNewUnsignedRange(JJJ)Lorg/jcvi/jillion/core/Range;: I112 Branch 24 IFGT L541 - true in context: 
+* Search finished after 845s and 69 generations, 44267 statements, best individual has fitness: 8320.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 66%
+* Total number of goals: 632
+* Number of covered goals: 419
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 69%
+* Total number of goals: 426
+* Number of covered goals: 292
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 25
+* Number of covered goals: 25
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 52%
+* Total number of goals: 802
+* Number of covered goals: 417
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 51%
+* Total number of goals: 77
+* Number of covered goals: 39
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 37%
+* Total number of goals: 107
+* Number of covered goals: 40
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 37%
+* Total number of goals: 107
+* Number of covered goals: 40
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 68%
+* Total number of goals: 426
+* Number of covered goals: 290
+* Generated 149 tests with total length 2001
+* Resulting test suite's coverage: 60% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 28%
+* Compiling and checking tests
+[MASTER] 15:26:22.937 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: null
+[MASTER] 15:26:22.937 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Range.CoordinateSystem range_CoordinateSystem0 = Range.CoordinateSystem.SPACE_BASED;
+Range range0 = Range.of(range_CoordinateSystem0, 32767L, 32767L);
+Range range1 = Range.ofLength(32767L);
+boolean boolean0 = range0.isSubRangeOf(range1);
+assertFalse(boolean0);
+
+Consumer<Object> consumer0 = (Consumer<Object>) mock(Consumer.class, new ViolatedAssumptionAnswer());
+range0.forEach(consumer0);
+boolean boolean1 = range0.isEmpty();
+assertFalse(boolean1);
+
+
+[MASTER] 15:26:23.267 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: null
+[MASTER] 15:26:23.268 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Range.CoordinateSystem range_CoordinateSystem0 = Range.CoordinateSystem.RESIDUE_BASED;
+Range range0 = Range.of(range_CoordinateSystem0, (-1380L), 4294967295L);
+Range range1 = Range.of(127L, 127L);
+Long long0 = new Long(127L);
+boolean boolean0 = range1.isSubRangeOf(range0);
+Range.of(range_CoordinateSystem0, (-2151L), (-845L));
+boolean boolean1 = range1.intersects(range0);
+assertFalse(boolean1 == boolean0);
+
+Range.ofLength(375L);
+List<Range> list0 = new LinkedList<Range>();
+Range range2 = Range.of((-2206L), (-845L));
+boolean boolean2 = range0.startsBefore(range2);
+assertFalse(boolean2);
+
+List<Range> list1 = range0.complement(range1);
+assertTrue(list1.contains(range0));
+
+
+[MASTER] 15:26:23.777 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Expecting exception: IndexOutOfBoundsException
+[MASTER] 15:26:23.778 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Range.Builder range_Builder0 = new Range.Builder(9223372032559808513L, 9223372032559808513L);
+Range range0 = range_Builder0.build();
+range_Builder0.build();
+Range range1 = Range.ofLength(9223372032559808513L);
+Range range2 = range_Builder0.build();
+Range range3 = range0.intersection(range1);
+Range.CoordinateSystem range_CoordinateSystem0 = Range.CoordinateSystem.ZERO_BASED;
+Range.of(range_CoordinateSystem0, 1791L, 1791L);
+range3.complement(range2);
+range_Builder0.contractEnd((-85L));
+range1.split(9223372032559808513L);
+
+[MASTER] 15:26:24.675 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: null
+[MASTER] 15:26:24.675 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Range range0 = Range.of(9223372036854775807L);
+Range range1 = Range.of(9223372036854775807L);
+Range range2 = range0.intersection(range1);
+range0.spliterator();
+Range range3 = Range.of(127L);
+Range range4 = range1.intersection(range3);
+LinkedList<Range> linkedList0 = new LinkedList<Range>();
+range2.complementFrom(linkedList0);
+Range.Builder range_Builder0 = new Range.Builder(127L);
+List<Range> list0 = range0.complement(range3);
+assertTrue(range3.isEmpty());
+assertSame(range3, range4);
+assertTrue(list0.contains(range2));
+
+
+[MASTER] 15:26:26.129 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.IndexOutOfBoundsException: given length -9223372036854775776 would make range [1066 - ? ] beyond max allowed end offset
+[MASTER] 15:26:26.129 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Range range0 = Range.of((-9223372036854775776L));
+Range.CoordinateSystem range_CoordinateSystem0 = Range.CoordinateSystem.ZERO_BASED;
+Range range1 = range0.intersection(range0);
+range0.spliterator();
+Range range2 = Range.of(range_CoordinateSystem0, (-9223372036854775776L), (-9223372036854775776L));
+Object object0 = new Object();
+Range.ofLength(1066L);
+long long0 = 65535L;
+Range range3 = Range.of(range_CoordinateSystem0, 1066L, 65535L);
+range2.equals(range1);
+range3.intersects(range0);
+range2.complement(range3);
+
+[MASTER] 15:26:26.626 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.IndexOutOfBoundsException: given length -9223372036854775808 would make range [98 - ? ] beyond max allowed end offset
+[MASTER] 15:26:26.626 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Range.of((-1L), 3514L);
+LinkedList<Range> linkedList0 = new LinkedList<Range>();
+Range.CoordinateSystem.values();
+Range.of(98L, (-9223372036854775808L));
+
+[MASTER] 15:26:27.203 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: Expecting exception: IllegalArgumentException
+[MASTER] 15:26:27.203 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ long long0 = (-9223372036854775776L);
+Range range0 = Range.of((-9223372036854775776L));
+Range.CoordinateSystem range_CoordinateSystem0 = Range.CoordinateSystem.ZERO_BASED;
+Range range1 = range0.intersection(range0);
+range0.spliterator();
+range0.isSubRangeOf(range0);
+range1.toString();
+range1.startsBefore(range0);
+range0.endsBefore(range0);
+range0.toString(range_CoordinateSystem0);
+range_CoordinateSystem0.toString();
+range0.toString();
+List<Range> list0 = range1.complement(range0);
+List<Range> list1 = range1.complementFrom(list0);
+Range range2 = Range.of(2139L, 2139L);
+range2.complementFrom(list1);
+
+[MASTER] 15:26:27.434 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<2> but was:<1>
+[MASTER] 15:26:27.435 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Range range0 = Range.of(69L, 32767L);
+Range range1 = Range.of(69L, 9223372036854775807L);
+Range range2 = Range.ofLength(9223372036854775807L);
+assertFalse(range2.isEmpty());
+
+Range.of(4294967294L);
+List<Range> list0 = range1.complement(range0);
+Range.CoordinateSystem range_CoordinateSystem0 = Range.CoordinateSystem.RESIDUE_BASED;
+Range range3 = Range.of(range_CoordinateSystem0, 32767L, 4294967294L);
+List<Range> list1 = range3.complementFrom(list0);
+assertFalse(list1.equals((Object)list0));
+assertEquals(2, list1.size());
+assertEquals(2, list0.size());
+
+Range.Builder range_Builder0 = new Range.Builder(32767L);
+Range.Builder range_Builder1 = new Range.Builder(0L);
+Range.Builder range_Builder2 = new Range.Builder(2147483647L);
+Range range4 = Range.ofLength(2147483647L);
+assertFalse(range4.isEmpty());
+
+
+[MASTER] 15:26:27.711 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<1> but was:<0>
+[MASTER] 15:26:27.711 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Range.Builder range_Builder0 = new Range.Builder(9223372032559808513L);
+Range range0 = range_Builder0.build();
+Range range1 = range_Builder0.build();
+Range range2 = Range.ofLength(9223372032559808513L);
+Range range3 = Range.of(9223372032559808513L, 9223372032559808513L);
+Range range4 = range0.intersection(range2);
+Range.CoordinateSystem range_CoordinateSystem0 = Range.CoordinateSystem.SPACE_BASED;
+Range range5 = Range.of(range_CoordinateSystem0, 1791L, 1791L);
+assertTrue(range5.isEmpty());
+
+List<Range> list0 = range4.complement(range3);
+assertEquals(1, list0.size());
+
+Range range6 = range1.intersection(range0);
+List<Range> list1 = range1.complement(range2);
+assertFalse(list1.equals((Object)list0));
+assertEquals(1, list1.size());
+assertSame(range2, range6);
+
+range_Builder0.build();
+Range range7 = range_Builder0.build();
+assertFalse(range7.equals((Object)range5));
+
+
+[MASTER] 15:26:30.967 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockIllegalArgumentException: can not parse ,2 into a Range
+[MASTER] 15:26:30.967 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Range range0 = Range.of(69L, 32767L);
+Range.CoordinateSystem range_CoordinateSystem0 = Range.CoordinateSystem.ZERO_BASED;
+List<Range> list0 = range0.split(69L);
+long long0 = (-1410L);
+Range range1 = Range.of(range_CoordinateSystem0, (-1410L), 69L);
+range0.isSubRangeOf(range1);
+Range range2 = Range.of((-1410L), 69L);
+range2.complementFrom(list0);
+String string0 = ",2";
+Range.CoordinateSystem range_CoordinateSystem1 = Range.CoordinateSystem.SPACE_BASED;
+Range.parseRange(string0, range_CoordinateSystem1);
+Range range3 = Range.ofLength(long0);
+Consumer<Long> consumer0 = (Consumer<Long>) mock(Consumer.class, new ViolatedAssumptionAnswer());
+range0.forEach(consumer0);
+Range.of(long0);
+long long1 = (-2147483648L);
+Range.Builder range_Builder0 = new Range.Builder(range_CoordinateSystem0, long1, long1);
+long long2 = (-11L);
+range_Builder0.contractEnd(long2);
+Range.CoordinateSystem.values();
+range3.split(long1);
+
+[MASTER] 15:26:34.494 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class org.evosuite.runtime.mock.java.lang.MockIllegalArgumentException: must be >=0
+[MASTER] 15:26:34.495 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Consumer<Long> consumer0 = (Consumer<Long>) mock(Consumer.class, new ViolatedAssumptionAnswer());
+Range range0 = Range.of((-1567L), 1775L);
+range0.split(1L);
+range0.equals(consumer0);
+long long0 = (-1084L);
+long long1 = 127L;
+long long2 = 9223372036854775446L;
+Range range1 = Range.of(long1, long2);
+Range.Builder range_Builder0 = new Range.Builder(range0);
+Range range2 = range_Builder0.build();
+Range.ofLength(long0);
+range2.intersection(range1);
+Consumer<Object> consumer1 = (Consumer<Object>) mock(Consumer.class, new ViolatedAssumptionAnswer());
+range1.forEach(consumer1);
+long long3 = 670L;
+Range range3 = Range.of(long3);
+range3.complement(range2);
+
+[MASTER] 15:26:34.541 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.IndexOutOfBoundsException: given length -9223372036854775802 would make range [69 - ? ] beyond max allowed end offset
+[MASTER] 15:26:34.541 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Range range0 = Range.of(69L, 32767L);
+long long0 = (-9223372036854775802L);
+long long1 = (-2442L);
+range0.spliterator();
+Spliterator<Long> spliterator0 = range0.spliterator();
+Range.of(32767L, 32767L);
+range0.complement(range0);
+range0.equals(spliterator0);
+Long long2 = new Long((-9223372036854775802L));
+Range range1 = Range.of((-9223372036854775802L));
+range0.intersection(range0);
+range1.intersection(range0);
+
+[MASTER] 15:26:35.067 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: null
+[MASTER] 15:26:35.068 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Range.Builder range_Builder0 = new Range.Builder(9223372032559808513L, 9223372032559808513L);
+Range range0 = range_Builder0.build();
+boolean boolean0 = range0.equals(range_Builder0);
+Range range1 = Range.of(9223372032559808513L, 9223372032559808513L);
+Range.CoordinateSystem range_CoordinateSystem0 = Range.CoordinateSystem.SPACE_BASED;
+Range range2 = Range.of(range_CoordinateSystem0, 2147483647L, 9223372032559808513L);
+range2.split(9223372032559808513L);
+boolean boolean1 = range1.intersects(range2);
+assertFalse(boolean1 == boolean0);
+
+Range range3 = Range.of(265L, 265L);
+range1.isSubRangeOf(range3);
+Range.CoordinateSystem range_CoordinateSystem1 = Range.CoordinateSystem.ZERO_BASED;
+Range range4 = Range.of(range_CoordinateSystem1, 2147483647L, 9223372032559808513L);
+range4.equals(range_Builder0);
+range4.equals(range_CoordinateSystem1);
+assertTrue(range4.equals((Object)range2));
+
+Long long0 = new Long(0L);
+Range range5 = Range.ofLength(1933L);
+Range range6 = range2.intersection(range5);
+Range range7 = Range.of(0L);
+assertFalse(range7.isEmpty());
+
+Range.of(1933L);
+range6.complement(range1);
+Range range8 = range_Builder0.build();
+assertFalse(range8.equals((Object)range2));
+
+
+[MASTER] 15:26:35.120 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: null
+[MASTER] 15:26:35.129 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Range.Builder range_Builder0 = new Range.Builder(9223372032559808513L, 9223372032559808513L);
+Range range0 = range_Builder0.build();
+range0.equals(range_Builder0);
+Range range1 = Range.of(9223372032559808513L, 9223372032559808513L);
+Range range2 = Range.of(265L, 265L);
+boolean boolean0 = range1.isSubRangeOf(range2);
+assertFalse(boolean0);
+
+Range.CoordinateSystem range_CoordinateSystem0 = Range.CoordinateSystem.ZERO_BASED;
+Range range3 = Range.of(range_CoordinateSystem0, 2147483647L, 9223372032559808513L);
+Range range4 = Range.of(65535L);
+Object object0 = new Object();
+range4.equals(object0);
+Range.CoordinateSystem range_CoordinateSystem1 = Range.CoordinateSystem.RESIDUE_BASED;
+List<Range> list0 = range3.complement(range0);
+assertTrue(list0.contains(range3));
+
+boolean boolean1 = range1.intersects(range0);
+assertTrue(boolean1);
+
+range0.complement(range3);
+Range range5 = Range.of(range_CoordinateSystem1, 9223372032559808513L, 9223372032559808513L);
+Range range6 = Range.ofLength(65535L);
+range5.startsBefore(range6);
+assertFalse(range6.isEmpty());
+
+List<Range> list1 = range5.complement(range0);
+assertFalse(list1.contains(range3));
+assertTrue(list1.contains(range0));
+
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 3
+* Writing JUnit test case 'Range_ESTest' to /home/ubuntu/termite/qmosa/tests/s1017/92_jcvi-javacommon/evosuite-tests
+* Done!
+
+* Computation finished

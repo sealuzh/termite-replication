@@ -1,0 +1,140 @@
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: org.jsecurity.web.DefaultWebSecurityManager
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/18_jsecurity/evosuite-files/evosuite.properties
+* Connecting to master process on port 10122
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 05:02:57.431 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 05:02:57.499 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 05:02:57.500 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 05:02:58.103 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class org.jsecurity.web.DefaultWebSecurityManager
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1017
+* Starting evolution
+[MASTER] 05:04:46.325 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 05:04:46.327 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 05:05:13.130 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jsecurity.web.DefaultWebSecurityManager.bind(Lorg/jsecurity/subject/Subject;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V: Line 255
+[MASTER] 05:05:13.130 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jsecurity.web.DefaultWebSecurityManager.bind(Lorg/jsecurity/subject/Subject;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V: Line 256
+[MASTER] 05:05:13.131 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 154: org.jsecurity.web.DefaultWebSecurityManager.bind(Lorg/jsecurity/subject/Subject;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:255 - ReplaceVariable AUTHENTICATED_SESSION_KEY -> JSECURITY_SESSION_MODE
+[MASTER] 05:05:13.131 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 155: org.jsecurity.web.DefaultWebSecurityManager.bind(Lorg/jsecurity/subject/Subject;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:255 - ReplaceVariable AUTHENTICATED_SESSION_KEY -> HTTP_SESSION_MODE
+[MASTER] 05:05:13.131 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 156: org.jsecurity.web.DefaultWebSecurityManager.bind(Lorg/jsecurity/subject/Subject;Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V:255 - ReplaceVariable AUTHENTICATED_SESSION_KEY -> PRINCIPALS_SESSION_KEY
+* Search finished after 137s and 62 generations, 17062 statements, best individual has fitness: 880.0
+[MASTER] 05:05:18.414 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 19 seconds more than allowed.
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 79%
+* Total number of goals: 97
+* Number of covered goals: 77
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 73%
+* Total number of goals: 67
+* Number of covered goals: 49
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 17
+* Number of covered goals: 17
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 78%
+* Total number of goals: 162
+* Number of covered goals: 127
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 34%
+* Total number of goals: 29
+* Number of covered goals: 10
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 23
+* Number of covered goals: 23
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 96%
+* Total number of goals: 23
+* Number of covered goals: 22
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 70%
+* Total number of goals: 67
+* Number of covered goals: 47
+* Generated 40 tests with total length 217
+* Resulting test suite's coverage: 77% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 35%
+* Compiling and checking tests
+* Writing JUnit test case 'DefaultWebSecurityManager_ESTest' to /home/ubuntu/termite/rmosa/tests/s1017/18_jsecurity/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: RMOSA
+* Going to generate test cases for class: org.jsecurity.authc.UsernamePasswordToken
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/18_jsecurity/evosuite-files/evosuite.properties
+* Connecting to master process on port 10124
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class org.jsecurity.authc.UsernamePasswordToken
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.EntropyBasedPreferenceSorting
+* Using seed 1017
+* Starting evolution
+* Search finished after 121s and 686 generations, 423404 statements, best individual has fitness: 72.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 54
+* Number of covered goals: 54
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 29
+* Number of covered goals: 29
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100% (no goals)
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 96%
+* Total number of goals: 23
+* Number of covered goals: 22
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 78%
+* Total number of goals: 36
+* Number of covered goals: 28
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 21
+* Number of covered goals: 21
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 21
+* Number of covered goals: 21
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 29
+* Number of covered goals: 29
+* Generated 30 tests with total length 90
+* Resulting test suite's coverage: 96% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 68%
+* Compiling and checking tests
+* Writing JUnit test case 'UsernamePasswordToken_ESTest' to /home/ubuntu/termite/rmosa/tests/s1017/18_jsecurity/evosuite-tests
+* Done!
+
+* Computation finished

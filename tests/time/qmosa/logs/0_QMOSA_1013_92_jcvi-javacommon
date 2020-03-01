@@ -1,0 +1,541 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.jcvi.jillion.core.util.FileIterator
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/92_jcvi-javacommon/evosuite-files/evosuite.properties
+* Connecting to master process on port 13272
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 23:27:05.264 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 23:27:05.505 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 23:27:05.506 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 23:27:05.527 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class org.jcvi.jillion.core.util.FileIterator
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/92_jcvi-javacommon/src/main/java/org/jcvi/jillion/core/util/FileIterator.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1013
+* Starting evolution
+* Search finished after 121s and 43 generations, 47559 statements, best individual has fitness: 664.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 94%
+* Total number of goals: 107
+* Number of covered goals: 101
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 96%
+* Total number of goals: 67
+* Number of covered goals: 64
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 4
+* Number of covered goals: 4
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 96%
+* Total number of goals: 53
+* Number of covered goals: 51
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 51%
+* Total number of goals: 74
+* Number of covered goals: 38
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 50%
+* Total number of goals: 28
+* Number of covered goals: 14
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 50%
+* Total number of goals: 28
+* Number of covered goals: 14
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 90%
+* Total number of goals: 67
+* Number of covered goals: 60
+* Generated 27 tests with total length 720
+* Resulting test suite's coverage: 81% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 59%
+* Compiling and checking tests
+* Writing JUnit test case 'FileIterator_ESTest' to /home/ubuntu/termite/qmosa/tests/s1013/92_jcvi-javacommon/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.jcvi.jillion.assembly.consed.phd.PhdBuilder
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/92_jcvi-javacommon/evosuite-files/evosuite.properties
+* Connecting to master process on port 13270
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 23:36:06.516 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 23:36:06.517 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 23:36:06.520 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 23:36:06.559 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 23:36:06.595 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 23:36:06.596 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 23:36:06.763 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 23:36:06.764 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 23:36:06.786 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 23:36:06.787 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 23:36:06.790 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 23:36:06.791 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 23:36:06.792 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 23:36:06.812 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 23:36:06.815 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+* Finished analyzing classpath
+* Generating tests for class org.jcvi.jillion.assembly.consed.phd.PhdBuilder
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/92_jcvi-javacommon/src/main/java/org/jcvi/jillion/assembly/consed/phd/PhdBuilder.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1013
+* Starting evolution
+* Search finished after 121s and 78 generations, 42517 statements, best individual has fitness: 240.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 92%
+* Total number of goals: 93
+* Number of covered goals: 86
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 81%
+* Total number of goals: 27
+* Number of covered goals: 22
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 91%
+* Total number of goals: 47
+* Number of covered goals: 43
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 50%
+* Total number of goals: 16
+* Number of covered goals: 8
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 81%
+* Total number of goals: 27
+* Number of covered goals: 22
+* Generated 16 tests with total length 291
+* Resulting test suite's coverage: 88% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 11%
+* Compiling and checking tests
+* Writing JUnit test case 'PhdBuilder_ESTest' to /home/ubuntu/termite/qmosa/tests/s1013/92_jcvi-javacommon/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.jcvi.jillion.core.Range
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/92_jcvi-javacommon/evosuite-files/evosuite.properties
+* Connecting to master process on port 13269
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/92_jcvi-javacommon/evosuite-files/evosuite.properties
+* Connecting to master process on port 13275
+* Analyzing classpath: 
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 23:56:35.733 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 23:56:35.784 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 23:56:35.803 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 23:56:35.914 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+Production Code Path: /home/ubuntu/termite/SF110/92_jcvi-javacommon/src/main/java/org/jcvi/jillion/core/residue/nt/DefaultNucleotideCodec.java
+[MASTER] 23:56:37.088 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 23:56:37.216 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 23:56:37.237 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToDoubleFunction
+[MASTER] 23:56:37.238 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToIntFunction
+[MASTER] 23:56:37.241 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.ToLongFunction
+[MASTER] 23:56:37.436 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 23:56:37.437 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+* Finished analyzing classpath
+* Generating tests for class org.jcvi.jillion.core.Range
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1013
+* Starting evolution
+Production Code Path: /home/ubuntu/termite/SF110/92_jcvi-javacommon/src/main/java/org/jcvi/jillion/core/Range.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1013
+* Starting evolution
+[MASTER] 23:56:53.327 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encode(Ljava/util/Collection;)[B: Line 149
+[MASTER] 23:56:53.350 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encode(Ljava/util/Collection;)[B: Line 151
+[MASTER] 23:56:53.352 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encode(Ljava/util/Collection;)[B: Line 152
+[MASTER] 23:56:53.353 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeGlyphs(Ljava/util/Iterator;II)[B: Line 170
+[MASTER] 23:56:53.354 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeGlyphs(Ljava/util/Iterator;II)[B: Line 171
+[MASTER] 23:56:53.355 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeGlyphs(Ljava/util/Iterator;II)[B: Line 172
+[MASTER] 23:56:53.355 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeGlyphs(Ljava/util/Iterator;II)[B: Line 173
+[MASTER] 23:56:53.356 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeGlyphs(Ljava/util/Iterator;II)[B: Line 174
+[MASTER] 23:56:53.357 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeAllButTheLastByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V: Line 186
+[MASTER] 23:56:53.357 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeAllButTheLastByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V: Line 189
+[MASTER] 23:56:53.366 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeFinalByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V: Line 200
+[MASTER] 23:56:53.367 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeFinalByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V: Line 201
+[MASTER] 23:56:53.369 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeFinalByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V: Line 202
+[MASTER] 23:56:53.378 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeFinalByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V: Line 203
+[MASTER] 23:56:53.378 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeFinalByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V: Line 209
+[MASTER] 23:56:53.379 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I: Line 211
+[MASTER] 23:56:53.380 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V: Line 221
+[MASTER] 23:56:53.380 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V: Line 222
+[MASTER] 23:56:53.382 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V: Line 223
+[MASTER] 23:56:53.383 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V: Line 224
+[MASTER] 23:56:53.397 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I: Line 299
+[MASTER] 23:56:53.404 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I: Line 300
+[MASTER] 23:56:53.405 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I: Line 301
+[MASTER] 23:56:53.406 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I: Line 302
+[MASTER] 23:56:53.407 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I: Line 309
+[MASTER] 23:56:53.480 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 68: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encode(Ljava/util/Collection;)[B:151 - InsertUnaryOp Negation of unEncodedSize
+[MASTER] 23:56:53.481 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 69: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encode(Ljava/util/Collection;)[B:151 - InsertUnaryOp IINC 1 unEncodedSize
+[MASTER] 23:56:53.482 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 70: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encode(Ljava/util/Collection;)[B:151 - InsertUnaryOp IINC -1 unEncodedSize
+[MASTER] 23:56:53.483 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 71: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encode(Ljava/util/Collection;)[B:152 - ReplaceVariable unEncodedSize -> encodedSize
+[MASTER] 23:56:53.484 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 72: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encode(Ljava/util/Collection;)[B:152 - InsertUnaryOp Negation of unEncodedSize
+[MASTER] 23:56:53.486 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 73: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encode(Ljava/util/Collection;)[B:152 - InsertUnaryOp IINC 1 unEncodedSize
+[MASTER] 23:56:53.499 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 74: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encode(Ljava/util/Collection;)[B:152 - InsertUnaryOp IINC -1 unEncodedSize
+[MASTER] 23:56:53.500 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 75: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encode(Ljava/util/Collection;)[B:152 - ReplaceVariable encodedSize -> unEncodedSize
+[MASTER] 23:56:53.502 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 76: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encode(Ljava/util/Collection;)[B:152 - InsertUnaryOp Negation of encodedSize
+[MASTER] 23:56:53.503 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 77: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encode(Ljava/util/Collection;)[B:152 - InsertUnaryOp IINC 1 encodedSize
+[MASTER] 23:56:53.506 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 78: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encode(Ljava/util/Collection;)[B:152 - InsertUnaryOp IINC -1 encodedSize
+[MASTER] 23:56:53.507 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 83: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeGlyphs(Ljava/util/Iterator;II)[B:170 - ReplaceVariable encodedSize -> unEncodedSize
+[MASTER] 23:56:53.507 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 84: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeGlyphs(Ljava/util/Iterator;II)[B:170 - InsertUnaryOp Negation of encodedSize
+[MASTER] 23:56:53.509 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 85: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeGlyphs(Ljava/util/Iterator;II)[B:170 - InsertUnaryOp IINC 1 encodedSize
+[MASTER] 23:56:53.516 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 86: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeGlyphs(Ljava/util/Iterator;II)[B:170 - InsertUnaryOp IINC -1 encodedSize
+[MASTER] 23:56:53.517 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 87: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeGlyphs(Ljava/util/Iterator;II)[B:171 - ReplaceVariable unEncodedSize -> encodedSize
+[MASTER] 23:56:53.517 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 88: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeGlyphs(Ljava/util/Iterator;II)[B:171 - InsertUnaryOp Negation of unEncodedSize
+[MASTER] 23:56:53.531 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 89: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeGlyphs(Ljava/util/Iterator;II)[B:171 - InsertUnaryOp IINC 1 unEncodedSize
+[MASTER] 23:56:53.532 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 90: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeGlyphs(Ljava/util/Iterator;II)[B:171 - InsertUnaryOp IINC -1 unEncodedSize
+[MASTER] 23:56:53.532 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 91: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeGlyphs(Ljava/util/Iterator;II)[B:172 - ReplaceVariable unEncodedSize -> encodedSize
+[MASTER] 23:56:53.533 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 92: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeGlyphs(Ljava/util/Iterator;II)[B:172 - InsertUnaryOp Negation of unEncodedSize
+[MASTER] 23:56:53.535 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 93: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeGlyphs(Ljava/util/Iterator;II)[B:172 - InsertUnaryOp IINC 1 unEncodedSize
+[MASTER] 23:56:53.536 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 94: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeGlyphs(Ljava/util/Iterator;II)[B:172 - InsertUnaryOp IINC -1 unEncodedSize
+[MASTER] 23:56:53.536 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 95: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeGlyphs(Ljava/util/Iterator;II)[B:173 - ReplaceVariable unEncodedSize -> encodedSize
+[MASTER] 23:56:53.546 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 96: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeGlyphs(Ljava/util/Iterator;II)[B:173 - InsertUnaryOp Negation of unEncodedSize
+[MASTER] 23:56:53.548 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 97: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeGlyphs(Ljava/util/Iterator;II)[B:173 - InsertUnaryOp IINC 1 unEncodedSize
+[MASTER] 23:56:53.549 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 98: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeGlyphs(Ljava/util/Iterator;II)[B:173 - InsertUnaryOp IINC -1 unEncodedSize
+[MASTER] 23:56:53.549 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 99: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeAllButTheLastByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:186 - ReplaceConstant - 0 -> 1
+[MASTER] 23:56:53.550 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 100: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeAllButTheLastByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:186 - ReplaceVariable i -> unEncodedSize
+[MASTER] 23:56:53.551 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 101: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeAllButTheLastByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:186 - InsertUnaryOp Negation of i
+[MASTER] 23:56:53.552 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 102: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeAllButTheLastByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:186 - InsertUnaryOp IINC 1 i
+[MASTER] 23:56:53.553 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 103: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeAllButTheLastByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:186 - InsertUnaryOp IINC -1 i
+[MASTER] 23:56:53.554 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 104: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeAllButTheLastByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:186 - ReplaceVariable unEncodedSize -> i
+[MASTER] 23:56:53.554 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 105: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeAllButTheLastByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:186 - InsertUnaryOp Negation of unEncodedSize
+[MASTER] 23:56:53.556 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 106: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeAllButTheLastByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:186 - InsertUnaryOp IINC 1 unEncodedSize
+[MASTER] 23:56:53.562 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 107: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeAllButTheLastByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:186 - InsertUnaryOp IINC -1 unEncodedSize
+[MASTER] 23:56:53.563 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 108: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeAllButTheLastByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:186 - ReplaceConstant - 2 -> 0
+[MASTER] 23:56:53.564 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 109: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeAllButTheLastByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:186 - ReplaceConstant - 2 -> 1
+[MASTER] 23:56:53.565 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 110: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeAllButTheLastByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:186 - ReplaceConstant - 2 -> -1
+[MASTER] 23:56:53.571 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 111: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeAllButTheLastByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:186 - ReplaceConstant - 2 -> 3
+[MASTER] 23:56:53.572 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 112: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeAllButTheLastByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:186 - ReplaceArithmeticOperator - -> +
+[MASTER] 23:56:53.573 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 114: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeAllButTheLastByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:186 - ReplaceArithmeticOperator - -> *
+[MASTER] 23:56:53.574 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 115: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeAllButTheLastByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:186 - ReplaceArithmeticOperator - -> /
+[MASTER] 23:56:53.575 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 117: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeAllButTheLastByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:186 - ReplaceComparisonOperator >= -> >
+[MASTER] 23:56:53.575 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 120: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeFinalByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:200 - InsertUnaryOp Negation of unEncodedSize
+[MASTER] 23:56:53.577 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 121: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeFinalByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:200 - InsertUnaryOp IINC 1 unEncodedSize
+[MASTER] 23:56:53.577 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 122: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeFinalByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:200 - InsertUnaryOp IINC -1 unEncodedSize
+[MASTER] 23:56:53.582 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 123: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeFinalByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:200 - ReplaceComparisonOperator <= -> -1
+[MASTER] 23:56:53.583 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 126: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeFinalByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:201 - InsertUnaryOp Negation of unEncodedSize
+[MASTER] 23:56:53.583 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 127: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeFinalByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:201 - InsertUnaryOp IINC 1 unEncodedSize
+[MASTER] 23:56:53.595 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 128: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeFinalByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:201 - InsertUnaryOp IINC -1 unEncodedSize
+[MASTER] 23:56:53.596 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 129: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeFinalByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:202 - InsertUnaryOp Negation of even
+[MASTER] 23:56:53.603 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 130: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeFinalByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V:202 - ReplaceComparisonOperator == -> !=
+[MASTER] 23:56:53.605 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 131: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - ReplaceConstant - 4 -> 0
+[MASTER] 23:56:53.605 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 132: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - ReplaceConstant - 4 -> 1
+[MASTER] 23:56:53.606 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 133: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - ReplaceConstant - 4 -> -1
+[MASTER] 23:56:53.607 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 134: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - ReplaceConstant - 4 -> 3
+[MASTER] 23:56:53.607 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 135: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - ReplaceConstant - 4 -> 5
+[MASTER] 23:56:53.609 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 136: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - InsertUnaryOp Negation of size
+[MASTER] 23:56:53.609 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 137: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - InsertUnaryOp IINC 1 size
+[MASTER] 23:56:53.610 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 138: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - InsertUnaryOp IINC -1 size
+[MASTER] 23:56:53.611 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 139: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - ReplaceConstant - 2 -> 0
+[MASTER] 23:56:53.612 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 140: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - ReplaceConstant - 2 -> 1
+[MASTER] 23:56:53.622 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 141: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - ReplaceConstant - 2 -> -1
+[MASTER] 23:56:53.623 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 142: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - ReplaceConstant - 2 -> 3
+[MASTER] 23:56:53.642 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 143: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - ReplaceArithmeticOperator / -> +
+[MASTER] 23:56:53.644 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 144: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - ReplaceArithmeticOperator / -> %
+[MASTER] 23:56:53.644 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 145: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - ReplaceArithmeticOperator / -> -
+[MASTER] 23:56:53.654 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 146: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - ReplaceArithmeticOperator / -> *
+[MASTER] 23:56:53.655 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 147: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - ReplaceArithmeticOperator + -> %
+[MASTER] 23:56:53.656 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 148: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - ReplaceArithmeticOperator + -> -
+[MASTER] 23:56:53.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 149: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - ReplaceArithmeticOperator + -> *
+[MASTER] 23:56:53.657 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 150: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - ReplaceArithmeticOperator + -> /
+[MASTER] 23:56:53.658 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 151: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - InsertUnaryOp Negation of size
+[MASTER] 23:56:53.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 152: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - InsertUnaryOp IINC 1 size
+[MASTER] 23:56:53.659 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 153: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - InsertUnaryOp IINC -1 size
+[MASTER] 23:56:53.660 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 154: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - ReplaceComparisonOperator == -> !=
+[MASTER] 23:56:53.661 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 155: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - ReplaceConstant - 0 -> 1
+[MASTER] 23:56:53.662 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 157: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - ReplaceArithmeticOperator + -> %
+[MASTER] 23:56:53.669 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 160: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I:211 - ReplaceArithmeticOperator + -> /
+[MASTER] 23:56:53.686 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 194: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V:223 - ReplaceVariable hi -> low
+[MASTER] 23:56:53.705 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 195: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V:223 - InsertUnaryOp Negation of hi
+[MASTER] 23:56:53.706 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 196: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V:223 - InsertUnaryOp IINC 1 hi
+[MASTER] 23:56:53.707 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 197: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V:223 - InsertUnaryOp IINC -1 hi
+[MASTER] 23:56:53.708 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 198: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V:223 - ReplaceConstant - 4 -> 0
+[MASTER] 23:56:53.710 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 199: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V:223 - ReplaceConstant - 4 -> 1
+[MASTER] 23:56:53.710 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 200: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V:223 - ReplaceConstant - 4 -> -1
+[MASTER] 23:56:53.711 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 201: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V:223 - ReplaceConstant - 4 -> 3
+[MASTER] 23:56:53.718 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 202: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V:223 - ReplaceConstant - 4 -> 5
+[MASTER] 23:56:53.719 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 203: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V:223 - ReplaceBitwiseOperator << I -> >> I
+[MASTER] 23:56:53.720 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 204: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V:223 - ReplaceBitwiseOperator << I -> >>> I
+[MASTER] 23:56:53.721 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 205: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V:223 - ReplaceVariable low -> hi
+[MASTER] 23:56:53.723 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 206: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V:223 - InsertUnaryOp Negation of low
+[MASTER] 23:56:53.724 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 207: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V:223 - InsertUnaryOp IINC 1 low
+[MASTER] 23:56:53.730 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 208: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V:223 - InsertUnaryOp IINC -1 low
+[MASTER] 23:56:53.732 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 210: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V:223 - ReplaceBitwiseOperator | -> &
+[MASTER] 23:56:53.734 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 211: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V:223 - ReplaceConstant - 255 -> 0
+[MASTER] 23:56:53.739 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 212: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V:223 - ReplaceConstant - 255 -> 1
+[MASTER] 23:56:53.739 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 213: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V:223 - ReplaceConstant - 255 -> -1
+[MASTER] 23:56:53.754 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 214: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V:223 - ReplaceConstant - 255 -> 254
+[MASTER] 23:56:53.755 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 215: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V:223 - ReplaceConstant - 255 -> 256
+[MASTER] 23:56:53.756 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 216: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V:223 - ReplaceBitwiseOperator & -> |
+[MASTER] 23:56:53.756 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 217: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V:223 - ReplaceBitwiseOperator & -> ^
+[MASTER] 23:56:53.839 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 296: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I:299 - ReplaceConstant - 0 -> 1
+[MASTER] 23:56:53.854 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 297: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I:300 - ReplaceConstant - 0 -> 1
+[MASTER] 23:56:53.856 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 298: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I:302 - ReplaceComparisonOperator == -> !=
+[MASTER] 23:56:53.856 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 299: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I:302 - ReplaceVariable ungappedOffset -> currentGappedOffset
+[MASTER] 23:56:53.857 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 300: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I:302 - ReplaceVariable ungappedOffset -> currentUngappedOffset
+[MASTER] 23:56:53.858 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 301: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I:302 - InsertUnaryOp Negation of ungappedOffset
+[MASTER] 23:56:53.859 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 302: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I:302 - InsertUnaryOp IINC 1 ungappedOffset
+[MASTER] 23:56:53.860 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 303: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I:302 - InsertUnaryOp IINC -1 ungappedOffset
+[MASTER] 23:56:53.860 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 305: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I:302 - ReplaceVariable currentUngappedOffset -> ungappedOffset
+[MASTER] 23:56:53.861 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 306: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I:302 - InsertUnaryOp Negation of currentUngappedOffset
+[MASTER] 23:56:53.862 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 307: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I:302 - InsertUnaryOp IINC 1 currentUngappedOffset
+[MASTER] 23:56:53.862 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 308: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I:302 - InsertUnaryOp IINC -1 currentUngappedOffset
+[MASTER] 23:56:53.863 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 311: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I:302 - ReplaceComparisonOperator >= -> ==
+[MASTER] 23:56:53.865 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 318: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I:309 - ReplaceVariable currentGappedOffset -> ungappedOffset
+[MASTER] 23:56:53.866 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 319: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I:309 - InsertUnaryOp Negation of currentGappedOffset
+[MASTER] 23:56:53.867 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 320: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I:309 - InsertUnaryOp IINC 1 currentGappedOffset
+[MASTER] 23:56:53.877 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 321: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I:309 - InsertUnaryOp IINC -1 currentGappedOffset
+[MASTER] 23:56:53.890 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I
+[MASTER] 23:56:53.898 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encode(Ljava/util/Collection;)[B
+[MASTER] 23:56:53.899 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I
+[MASTER] 23:56:53.906 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.toString([B)Ljava/lang/String;
+[MASTER] 23:56:53.907 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encode(Ljava/util/Collection;)[B
+[MASTER] 23:56:53.908 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encode(Ljava/util/Collection;)[B: root-Branch in context: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec:encode(Ljava/util/Collection;)[B
+[MASTER] 23:56:53.909 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeFinalByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V: I14 Branch 6 IFEQ L202 - false in context: 
+[MASTER] 23:56:53.909 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeGlyphs(Ljava/util/Iterator;II)[B: root-Branch in context: 
+[MASTER] 23:56:53.910 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeNext2Values(Ljava/util/Iterator;Ljava/nio/ByteBuffer;)V: root-Branch in context: 
+[MASTER] 23:56:53.911 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.computeEncodedSize(I)I: I11 Branch 7 IFEQ L211 - false in context: 
+[MASTER] 23:56:53.911 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I: I18 Branch 14 IFEQ L302 - false in context: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec:getGappedOffsetFor([BI)I
+[MASTER] 23:56:53.913 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeFinalByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V: I3 Branch 5 IFLE L200 - false in context: 
+[MASTER] 23:56:53.914 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.encodeAllButTheLastByte(Ljava/util/Iterator;ILjava/nio/ByteBuffer;)V: I9 Branch 4 IF_ICMPGE L186 - true in context: 
+[MASTER] 23:56:53.924 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec.getGappedOffsetFor([BI)I: I21 Branch 15 IF_ICMPGE L302 - true in context: org.jcvi.jillion.core.residue.nt.DefaultNucleotideCodec:getGappedOffsetFor([BI)I
+[MASTER] 23:57:36.933 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleEntry<K, V> : Type points to itself
+[MASTER] 23:57:36.933 [logback-2] ERROR TestCluster - Failed to check cache for java.util.AbstractMap<K, V>.SimpleImmutableEntry<K, V> : Type points to itself
+* Search finished after 123s and 17 generations, 11971 statements, best individual has fitness: 472.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 98%
+* Total number of goals: 131
+* Number of covered goals: 129
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 96%
+* Total number of goals: 74
+* Number of covered goals: 71
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 41
+* Number of covered goals: 41
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 97%
+* Total number of goals: 469
+* Number of covered goals: 456
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 62%
+* Total number of goals: 52
+* Number of covered goals: 32
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 83%
+* Total number of goals: 18
+* Number of covered goals: 15
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 83%
+* Total number of goals: 18
+* Number of covered goals: 15
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 80%
+* Total number of goals: 74
+* Number of covered goals: 59
+* Generated 63 tests with total length 1047
+* Resulting test suite's coverage: 93% (average coverage for all fitness functions)
+* Generating assertions
+* Search finished after 126s and 9 generations, 5603 statements, best individual has fitness: 10176.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 56%
+* Total number of goals: 632
+* Number of covered goals: 356
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 55%
+* Total number of goals: 426
+* Number of covered goals: 236
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 16
+* Number of covered goals: 16
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 46%
+* Total number of goals: 802
+* Number of covered goals: 366
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 49%
+* Total number of goals: 77
+* Number of covered goals: 38
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 37%
+* Total number of goals: 107
+* Number of covered goals: 40
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 37%
+* Total number of goals: 107
+* Number of covered goals: 40
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 54%
+* Total number of goals: 426
+* Number of covered goals: 230
+* Generated 82 tests with total length 1377
+* Resulting test suite's coverage: 51% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 62%
+* Compiling and checking tests
+[MASTER] 23:59:43.855 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: Java heap space
+[MASTER] 23:59:43.856 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ DefaultNucleotideCodec defaultNucleotideCodec0 = DefaultNucleotideCodec.INSTANCE;
+byte[] byteArray0 = new byte[8];
+byteArray0[0] = (byte)65;
+byteArray0[1] = (byte)0;
+byteArray0[2] = (byte)0;
+byteArray0[3] = (byte)11;
+byteArray0[4] = (byte) (-37);
+byteArray0[5] = (byte)3;
+byteArray0[6] = (byte)51;
+byteArray0[7] = (byte)0;
+defaultNucleotideCodec0.toString(byteArray0);
+
+* Writing JUnit test case 'DefaultNucleotideCodec_ESTest' to /home/ubuntu/termite/qmosa/tests/s1013/92_jcvi-javacommon/evosuite-tests
+* Done!
+
+* Computation finished
+* Resulting test suite's mutation score: 19%
+* Compiling and checking tests
+[MASTER] 00:00:42.653 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: null
+[MASTER] 00:00:42.654 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Range range0 = Range.of(0L);
+Range range1 = Range.of(0L, 0L);
+Range.of((-834L), (-834L));
+range1.getEnd();
+Range.CoordinateSystem range_CoordinateSystem0 = Range.CoordinateSystem.SPACE_BASED;
+Range range2 = Range.of(range_CoordinateSystem0, 1L, 610L);
+Range range3 = range2.intersection(range1);
+assertSame(range1, range0);
+assertFalse(range3.isEmpty());
+
+Range.CoordinateSystem range_CoordinateSystem1 = Range.CoordinateSystem.RESIDUE_BASED;
+Range range4 = Range.of(range_CoordinateSystem1, 0L, 0L);
+assertFalse(range4.isEmpty());
+
+Range.CoordinateSystem range_CoordinateSystem2 = Range.CoordinateSystem.ZERO_BASED;
+long long0 = range2.getEnd(range_CoordinateSystem2);
+assertEquals(609L, long0);
+
+
+[MASTER] 00:00:47.409 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.IndexOutOfBoundsException: given length -9223372036854775808 would make range [1077 - ? ] beyond max allowed end offset
+[MASTER] 00:00:47.409 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ long long0 = 959L;
+Range.Builder range_Builder0 = new Range.Builder(959L);
+Range range0 = range_Builder0.build();
+Range.CoordinateSystem range_CoordinateSystem0 = Range.CoordinateSystem.ZERO_BASED;
+Range.Builder range_Builder1 = new Range.Builder(range_CoordinateSystem0, 959L, 1077L);
+long long1 = (-1L);
+Range.of((-1L), 0L);
+Range.CoordinateSystem range_CoordinateSystem1 = Range.CoordinateSystem.ZERO_BASED;
+range0.toString(range_CoordinateSystem1);
+long long2 = (-9223372036854775808L);
+Range.of(range_CoordinateSystem0, 1077L, (-9223372036854775808L));
+
+[MASTER] 00:00:47.664 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: null
+[MASTER] 00:00:47.664 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ Range range0 = Range.ofLength(774L);
+Range.Builder range_Builder0 = new Range.Builder();
+Range range1 = Range.ofLength(0L);
+range_Builder0.contractBegin(0L);
+range_Builder0.expandEnd(0L);
+range_Builder0.shift(774L);
+long long0 = range0.getBegin();
+assertEquals(0L, long0);
+
+Range range2 = Range.ofLength(774L);
+Range range3 = Range.of(0L);
+assertFalse(range3.isEmpty());
+
+Range range4 = Range.ofLength(1955L);
+range0.intersects(range2);
+Range range5 = Range.of(774L);
+Range range6 = Range.ofLength(0L);
+Object object0 = new Object();
+range6.isEmpty();
+Range.Builder range_Builder1 = new Range.Builder();
+Range range7 = Range.of(0L, 0L);
+Range.Builder range_Builder2 = new Range.Builder(range7);
+range_Builder2.shift(9223372036854774666L);
+assertNotSame(range7, range4);
+
+Range range8 = range_Builder0.build();
+boolean boolean0 = range8.intersects(range5);
+assertTrue(range5.equals((Object)range8));
+assertTrue(boolean0);
+
+Range.CoordinateSystem range_CoordinateSystem0 = Range.CoordinateSystem.ZERO_BASED;
+long long1 = range1.getEnd(range_CoordinateSystem0);
+assertEquals((-1L), long1);
+
+
+* Writing JUnit test case 'Range_ESTest' to /home/ubuntu/termite/qmosa/tests/s1013/92_jcvi-javacommon/evosuite-tests
+* Done!
+
+* Computation finished

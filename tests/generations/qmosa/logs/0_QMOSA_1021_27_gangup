@@ -1,0 +1,125 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: state.Player
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/27_gangup/evosuite-files/evosuite.properties
+* Connecting to master process on port 18809
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 01:53:08.629 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 01:53:08.639 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 01:53:08.639 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 01:53:08.654 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class state.Player
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/27_gangup/src/main/java/state/Player.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1021
+* Starting evolution
+[MASTER] 01:53:10.361 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.<init>()V: Line 93
+[MASTER] 01:53:10.361 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.<init>()V: Line 94
+[MASTER] 01:53:10.376 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was state.Player.<init>()V: root-Branch
+[MASTER] 01:53:10.377 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] state.Player.<init>()V
+[MASTER] 01:53:10.378 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] state.Player.<init>()V
+[MASTER] 01:53:10.378 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch state.Player.<init>()V: root-Branch in context: state.Player:<init>()V
+[MASTER] 01:57:59.100 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 01:57:59.102 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 01:59:31.813 [logback-2] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+* Search finished after 515s and 144 generations, 165672 statements, best individual has fitness: 72.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 98%
+* Total number of goals: 130
+* Number of covered goals: 127
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 44
+* Number of covered goals: 44
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 99%
+* Total number of goals: 270
+* Number of covered goals: 268
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 91%
+* Total number of goals: 47
+* Number of covered goals: 43
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 34
+* Number of covered goals: 34
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 34
+* Number of covered goals: 34
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 44
+* Number of covered goals: 44
+* Generated 63 tests with total length 832
+* Resulting test suite's coverage: 99% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 81%
+* Compiling and checking tests
+[MASTER] 02:02:10.406 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.StackOverflowError: null
+[MASTER] 02:02:10.407 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FileSystemHandling.shouldAllThrowIOExceptions();
+FileSystemHandling.appendStringToFile((EvoSuiteFile) null, "state.Party");
+Player player0 = new Player((-16963), "P/#)X`", 1200);
+player0.getZ();
+player0.setX(0.0F);
+player0.setX((-16963));
+FileSystemHandling.shouldThrowIOException((EvoSuiteFile) null);
+float float0 = Player.TOLERANCE;
+System.setCurrentTimeMillis(3);
+Party party0 = player0.gangBoss();
+player0.boss = party0;
+player0.gangStrength();
+
+[MASTER] 02:02:10.689 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.StackOverflowError: null
+[MASTER] 02:02:10.690 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ byte[] byteArray0 = new byte[6];
+byteArray0[1] = (byte)0;
+byteArray0[1] = (byte) (-1);
+FileSystemHandling.createFolder((EvoSuiteFile) null);
+byteArray0[4] = (byte)55;
+FileSystemHandling.createFolder((EvoSuiteFile) null);
+FileSystemHandling.appendStringToFile((EvoSuiteFile) null, "6+<-n!#sbi?!$XKGN");
+byteArray0[5] = (byte) (-7);
+FileSystemHandling fileSystemHandling0 = new FileSystemHandling();
+FileSystemHandling.appendDataToFile((EvoSuiteFile) null, byteArray0);
+Player player0 = new Player(1241, "6+<-n!#sbi?!$XKGN", "6+<-n!#sbi?!$XKGN", 3850, 2562);
+LinkedList<Party> linkedList0 = new LinkedList<Party>();
+LinkedList<Party> linkedList1 = new LinkedList<Party>();
+player0.setJoinOK(player0, false);
+FileSystemHandling.shouldAllThrowIOExceptions();
+FileSystemHandling fileSystemHandling1 = new FileSystemHandling();
+player0.add(player0);
+FileSystemHandling.appendLineToFile((EvoSuiteFile) null, "NZxw.WlMC");
+player0.isJoinOK(player0, false);
+System.setCurrentTimeMillis((-472L));
+System.setCurrentTimeMillis((-472L));
+System.setCurrentTimeMillis(1392409296320L);
+player0.isJoinOK(player0, false);
+FileSystemHandling.createFolder((EvoSuiteFile) null);
+player0.gangStrength();
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 9
+* Writing JUnit test case 'Player_ESTest' to /home/ubuntu/termite/qmosa/tests/s1021/27_gangup/evosuite-tests
+* Done!
+
+* Computation finished

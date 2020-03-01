@@ -1,0 +1,266 @@
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.firebirdsql.encodings.EncodingFactory
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/110_firebird/evosuite-files/evosuite.properties
+* Connecting to master process on port 13270
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class org.firebirdsql.encodings.EncodingFactory
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/110_firebird/src/main/java/org/firebirdsql/encodings/EncodingFactory.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1013
+* Starting evolution
+* Search finished after 842s and 321 generations, 115462 statements, best individual has fitness: 680.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 94%
+* Total number of goals: 242
+* Number of covered goals: 227
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 96%
+* Total number of goals: 195
+* Number of covered goals: 187
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 5
+* Number of covered goals: 5
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 90%
+* Total number of goals: 387
+* Number of covered goals: 347
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 48%
+* Total number of goals: 25
+* Number of covered goals: 12
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 11
+* Number of covered goals: 11
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 96%
+* Total number of goals: 195
+* Number of covered goals: 187
+* Generated 103 tests with total length 485
+* Resulting test suite's coverage: 92% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 39%
+* Compiling and checking tests
+* Writing JUnit test case 'EncodingFactory_ESTest' to /home/ubuntu/termite/qmosa/tests/s1013/110_firebird/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.firebirdsql.jdbc.FBCachedFetcher
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/110_firebird/evosuite-files/evosuite.properties
+* Connecting to master process on port 13272
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 01:46:09.287 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 01:46:09.295 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 01:46:09.297 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 01:46:09.418 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.sql.SQLType
+[MASTER] 01:46:10.037 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 01:46:10.038 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 01:46:10.040 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 01:46:10.898 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 01:46:10.902 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 01:46:10.902 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 01:46:10.969 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 01:46:10.970 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 01:46:10.970 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 01:46:10.970 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 01:46:10.971 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 01:46:10.972 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 01:46:11.239 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 01:46:11.378 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class org.firebirdsql.jdbc.FBCachedFetcher
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/110_firebird/src/main/java/org/firebirdsql/jdbc/FBCachedFetcher.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1013
+* Starting evolution
+[MASTER] 01:46:21.481 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 01:46:50.980 [logback-2] ERROR TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself
+[MASTER] 01:46:54.699 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.firebirdsql.gds.impl.GDSHelper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class org.firebirdsql.jdbc.FBConnection canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 01:47:20.148 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Have no generator for class org.firebirdsql.jdbc.FBConnection canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 01:57:54.248 [logback-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: Failed to add constructor for org.firebirdsql.gds.impl.GDSHelper due to org.evosuite.ga.ConstructionFailedException: Have no generator for class org.firebirdsql.gds.impl.wire.isc_stmt_handle_impl canUseFunctionalMocks=false, canBeMocked: true
+[MASTER] 01:58:26.666 [logback-2] ERROR AbstractStatement - Error assigning value of type Callable[] defined at statement Callable<String>[] callableArray0 = (Callable<String>[]) Array.newInstance(Callable.class, 8), assignment statement: callableArray0[0] = (Callable<String>) callableArray0; SUT=org.firebirdsql.jdbc.FBCachedFetcher
+* Search finished after 841s and 330 generations, 313213 statements, best individual has fitness: 1624.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 63%
+* Total number of goals: 158
+* Number of covered goals: 100
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 51%
+* Total number of goals: 118
+* Number of covered goals: 60
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 13
+* Number of covered goals: 13
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 97%
+* Total number of goals: 347
+* Number of covered goals: 335
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 89%
+* Total number of goals: 28
+* Number of covered goals: 25
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 22
+* Number of covered goals: 22
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 22
+* Number of covered goals: 22
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 40%
+* Total number of goals: 118
+* Number of covered goals: 47
+* Generated 51 tests with total length 1682
+* Resulting test suite's coverage: 75% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 59%
+* Compiling and checking tests
+[MASTER] 02:00:26.211 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.LocalGDSImpl: no jaybird22_x64 in java.library.path
+[MASTER] 02:00:26.371 [logback-2] ERROR ClassStateSupport - Could not initialize org.firebirdsql.gds.impl.jni.JniGDSImpl: Could not initialize class org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 02:00:26.418 [logback-2] ERROR ClassResetter - java.lang.NoClassDefFoundError: Could not initialize class org.firebirdsql.gds.impl.jni.JniGDSImpl
+[MASTER] 02:00:43.372 [logback-1] WARN  ClassResetter - java.lang.reflect.InvocationTargetException, caused by: java.lang.NoClassDefFoundError: Could not initialize class org.firebirdsql.gds.impl.jni.JniGDSImpl
+* Permissions denied during test execution: 
+  - javax.security.auth.AuthPermission: 
+         getSubject: 2
+* Writing JUnit test case 'FBCachedFetcher_ESTest' to /home/ubuntu/termite/qmosa/tests/s1013/110_firebird/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: QMOSA
+* Going to generate test cases for class: org.firebirdsql.jdbc.FBProcedureCall
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/110_firebird/evosuite-files/evosuite.properties
+* Connecting to master process on port 13271
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Finished analyzing classpath
+* Generating tests for class org.firebirdsql.jdbc.FBProcedureCall
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+Production Code Path: /home/ubuntu/termite/SF110/110_firebird/src/main/java/org/firebirdsql/jdbc/FBProcedureCall.java
+Ranking Type: org.evosuite.ga.metaheuristics.mosa.QualityBasedPreferenceSorting
+* Using seed 1013
+* Starting evolution
+* Search finished after 841s and 439 generations, 474850 statements, best individual has fitness: 680.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 95%
+* Total number of goals: 117
+* Number of covered goals: 111
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 87%
+* Total number of goals: 98
+* Number of covered goals: 85
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 17
+* Number of covered goals: 17
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 91%
+* Total number of goals: 347
+* Number of covered goals: 316
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 71%
+* Total number of goals: 70
+* Number of covered goals: 50
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 94%
+* Total number of goals: 18
+* Number of covered goals: 17
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 94%
+* Total number of goals: 18
+* Number of covered goals: 17
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 87%
+* Total number of goals: 98
+* Number of covered goals: 85
+* Generated 58 tests with total length 1322
+* Resulting test suite's coverage: 89% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 71%
+* Compiling and checking tests
+[MASTER] 02:16:01.356 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: null
+[MASTER] 02:16:01.356 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FBProcedureCall fBProcedureCall0 = new FBProcedureCall();
+FBProcedureCall fBProcedureCall1 = new FBProcedureCall();
+fBProcedureCall1.setName("/$3mMs");
+boolean boolean0 = fBProcedureCall0.equals(fBProcedureCall1);
+assertFalse(boolean0);
+
+fBProcedureCall1.getName();
+assertTrue(fBProcedureCall1.equals((Object)fBProcedureCall0));
+
+
+[MASTER] 02:16:01.843 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.AssertionError: expected:<2149> but was:<-1>
+[MASTER] 02:16:01.843 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ FBProcedureParam fBProcedureParam0 = new FBProcedureParam();
+FBProcedureCall fBProcedureCall0 = new FBProcedureCall();
+fBProcedureParam0.setIndex(5);
+fBProcedureParam0.setIndex(5);
+fBProcedureParam0.setIndex(30);
+FBProcedureParam fBProcedureParam1 = new FBProcedureParam((-908), "org.firebirdsql.jdbc.FBSQLException");
+FBProcedureParam fBProcedureParam2 = new FBProcedureParam(634, "xwUfE C1Y");
+fBProcedureCall0.addOutputParam(fBProcedureParam0);
+fBProcedureParam0.setType(2);
+FBProcedureParam fBProcedureParam3 = fBProcedureCall0.addParam(30, "1n4RBiM3~\"6])59^'");
+fBProcedureParam3.setType((-1745));
+fBProcedureCall0.addInputParam(fBProcedureParam3);
+fBProcedureCall0.addOutputParam(fBProcedureParam2);
+FBProcedureParam fBProcedureParam4 = fBProcedureCall0.getInputParam((-1));
+assertEquals(30, fBProcedureParam4.getPosition());
+
+FBProcedureParam fBProcedureParam5 = new FBProcedureParam();
+fBProcedureCall0.addOutputParam(fBProcedureParam5);
+Object object0 = new Object();
+FBProcedureParam fBProcedureParam6 = fBProcedureCall0.getInputParam(958);
+assertEquals(2149, fBProcedureParam6.getIndex());
+
+
+* Writing JUnit test case 'FBProcedureCall_ESTest' to /home/ubuntu/termite/qmosa/tests/s1013/110_firebird/evosuite-tests
+* Done!
+
+* Computation finished

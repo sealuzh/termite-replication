@@ -1,0 +1,856 @@
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: wheel.asm.Frame
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/80_wheelwebtool/evosuite-files/evosuite.properties
+* Connecting to master process on port 19149
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 14:33:46.554 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 14:33:46.568 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 14:33:46.568 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 14:33:46.598 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 14:33:46.600 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 14:33:46.601 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 14:33:46.602 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 14:33:46.609 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 14:33:46.611 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 14:33:46.636 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 14:33:46.639 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 14:33:46.641 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 14:33:46.643 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 14:33:46.774 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 14:33:46.782 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+* Finished analyzing classpath
+* Generating tests for class wheel.asm.Frame
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 2559
+* Using seed 1016
+* Starting evolution
+[MASTER] 14:34:06.170 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.Frame.execute(IILwheel/asm/ClassWriter;Lwheel/asm/Item;)V: I3 Branch 252 TABLESWITCH L829 Case 167 - true
+[MASTER] 14:34:06.189 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.asm.Frame.execute(IILwheel/asm/ClassWriter;Lwheel/asm/Item;)V: I3 Branch 252 TABLESWITCH L829 Case 167 - true in context: 
+[MASTER] 14:34:06.334 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.asm.Frame.initInputFrame(Lwheel/asm/ClassWriter;I[Lwheel/asm/Type;I)V
+[MASTER] 14:34:06.334 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.asm.Frame.merge(Lwheel/asm/ClassWriter;Lwheel/asm/Frame;I)Z
+[MASTER] 14:34:37.664 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.Frame.set(II)V: Line 544
+[MASTER] 14:34:37.664 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.Frame.set(II)V: Line 545
+[MASTER] 14:34:37.664 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.Frame.set(II)V: Line 547
+[MASTER] 14:34:37.664 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.Frame.set(II)V: Line 548
+[MASTER] 14:34:37.664 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.Frame.set(II)V: Line 549
+[MASTER] 14:34:37.665 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.Frame.execute(IILwheel/asm/ClassWriter;Lwheel/asm/Item;)V: Line 1114
+[MASTER] 14:34:37.665 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 208: wheel.asm.Frame.set(II)V:544 - ReplaceComparisonOperator != null -> = null
+[MASTER] 14:34:37.665 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 209: wheel.asm.Frame.set(II)V:545 - ReplaceConstant - 10 -> 0
+[MASTER] 14:34:37.665 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 210: wheel.asm.Frame.set(II)V:545 - ReplaceConstant - 10 -> 1
+[MASTER] 14:34:37.665 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 211: wheel.asm.Frame.set(II)V:545 - ReplaceConstant - 10 -> -1
+[MASTER] 14:34:37.665 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 212: wheel.asm.Frame.set(II)V:545 - ReplaceConstant - 10 -> 9
+[MASTER] 14:34:37.665 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 213: wheel.asm.Frame.set(II)V:545 - ReplaceConstant - 10 -> 11
+[MASTER] 14:34:37.665 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 269: wheel.asm.Frame.set(II)V:548 - ReplaceComparisonOperator < -> !=
+[MASTER] 14:34:37.665 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 298: wheel.asm.Frame.set(II)V:549 - ReplaceConstant - 1 -> 0
+[MASTER] 14:34:37.665 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 299: wheel.asm.Frame.set(II)V:549 - ReplaceArithmeticOperator + -> %
+[MASTER] 14:34:37.665 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 300: wheel.asm.Frame.set(II)V:549 - ReplaceArithmeticOperator + -> -
+[MASTER] 14:34:37.665 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 301: wheel.asm.Frame.set(II)V:549 - ReplaceArithmeticOperator + -> *
+[MASTER] 14:34:37.665 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 302: wheel.asm.Frame.set(II)V:549 - ReplaceArithmeticOperator + -> /
+[MASTER] 14:34:37.665 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 303: wheel.asm.Frame.set(II)V:549 - ReplaceConstant - 2 -> 0
+[MASTER] 14:34:37.665 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 304: wheel.asm.Frame.set(II)V:549 - ReplaceConstant - 2 -> 1
+[MASTER] 14:34:37.665 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 305: wheel.asm.Frame.set(II)V:549 - ReplaceConstant - 2 -> -1
+[MASTER] 14:34:37.665 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 306: wheel.asm.Frame.set(II)V:549 - ReplaceConstant - 2 -> 3
+[MASTER] 14:34:37.665 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 333: wheel.asm.Frame.set(II)V:549 - ReplaceArithmeticOperator * -> +
+[MASTER] 14:34:37.665 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 334: wheel.asm.Frame.set(II)V:549 - ReplaceArithmeticOperator * -> %
+[MASTER] 14:34:37.665 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 335: wheel.asm.Frame.set(II)V:549 - ReplaceArithmeticOperator * -> -
+[MASTER] 14:34:37.665 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 336: wheel.asm.Frame.set(II)V:549 - ReplaceArithmeticOperator * -> /
+[MASTER] 14:34:37.666 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.asm.Frame.set(II)V: I4 Branch 4 IFNONNULL L544 - false in context: 
+[MASTER] 14:34:37.667 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.asm.Frame.set(II)V: I21 Branch 5 IF_ICMPLT L548 - false in context: 
+[MASTER] 14:34:37.667 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.asm.Frame.execute(IILwheel/asm/ClassWriter;Lwheel/asm/Item;)V: I3 Branch 217 TABLESWITCH L829 Case 132 - true in context: 
+[MASTER] 14:35:24.229 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.Frame.execute(IILwheel/asm/ClassWriter;Lwheel/asm/Item;)V: Line 1115
+[MASTER] 14:36:53.614 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.Frame.execute(IILwheel/asm/ClassWriter;Lwheel/asm/Item;)V: I3 Branch 142 TABLESWITCH L829 Case 57 - true
+[MASTER] 14:36:53.639 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.asm.Frame.execute(IILwheel/asm/ClassWriter;Lwheel/asm/Item;)V: I3 Branch 142 TABLESWITCH L829 Case 57 - true in context: 
+* Search finished after 235s and 133 generations, 68291 statements, best individual has fitness: 8536.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 41%
+* Total number of goals: 414
+* Number of covered goals: 170
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 70%
+* Total number of goals: 687
+* Number of covered goals: 484
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 45%
+* Total number of goals: 761
+* Number of covered goals: 342
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 50%
+* Total number of goals: 2
+* Number of covered goals: 1
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 4
+* Number of covered goals: 4
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 4
+* Number of covered goals: 4
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 70%
+* Total number of goals: 687
+* Number of covered goals: 484
+* Generated 178 tests with total length 1315
+* Resulting test suite's coverage: 58% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 9%
+* Compiling and checking tests
+[MASTER] 14:39:03.288 [logback-2] ERROR JUnitAnalyzer - Compilation failed on compilation units: [RegularFileObject[/tmp/EvoSuite_148_1573742343258/wheel/asm/Frame_148_tmp__ESTest.java], RegularFileObject[/tmp/EvoSuite_148_1573742343258/wheel/asm/Frame_148_tmp__ESTest_scaffolding.java]]
+[MASTER] 14:39:03.289 [logback-2] ERROR JUnitAnalyzer - Classpath: /home/ubuntu/termite/projects/80_wheelwebtool/wheelwebtool.jar:/home/ubuntu/termite/projects/80_wheelwebtool/lib/slf4j-simple-1.4.3.jar:/home/ubuntu/termite/projects/80_wheelwebtool/lib/servlet-api-2.4.jar:/home/ubuntu/termite/projects/80_wheelwebtool/lib/xpp3-1.1.4c.jar:/home/ubuntu/termite/projects/80_wheelwebtool/lib/logback-classic-0.9.27.jar:/home/ubuntu/termite/projects/80_wheelwebtool/lib/commons-io-1.3.2.jar:/home/ubuntu/termite/projects/80_wheelwebtool/lib/mvel-1.3.2-java1.5.jar:/home/ubuntu/termite/projects/80_wheelwebtool/lib/commons-fileupload-1.2.jar:/home/ubuntu/termite/projects/80_wheelwebtool/lib/slf4j-api-1.5.8.jar:/home/ubuntu/termite/evosuite.jar:/home/ubuntu/termite/projects/80_wheelwebtool/wheelwebtool.jar:/home/ubuntu/termite/projects/80_wheelwebtool/lib/slf4j-simple-1.4.3.jar:/home/ubuntu/termite/projects/80_wheelwebtool/lib/servlet-api-2.4.jar:/home/ubuntu/termite/projects/80_wheelwebtool/lib/xpp3-1.1.4c.jar:/home/ubuntu/termite/projects/80_wheelwebtool/lib/logback-classic-0.9.27.jar:/home/ubuntu/termite/projects/80_wheelwebtool/lib/commons-io-1.3.2.jar:/home/ubuntu/termite/projects/80_wheelwebtool/lib/mvel-1.3.2-java1.5.jar:/home/ubuntu/termite/projects/80_wheelwebtool/lib/commons-fileupload-1.2.jar:/home/ubuntu/termite/projects/80_wheelwebtool/lib/slf4j-api-1.5.8.jar
+[MASTER] 14:39:03.289 [logback-2] ERROR JUnitAnalyzer - evosuiteCP: /home/ubuntu/termite/evosuite.jar:/home/ubuntu/termite/projects/80_wheelwebtool/wheelwebtool.jar:/home/ubuntu/termite/projects/80_wheelwebtool/lib/slf4j-simple-1.4.3.jar:/home/ubuntu/termite/projects/80_wheelwebtool/lib/servlet-api-2.4.jar:/home/ubuntu/termite/projects/80_wheelwebtool/lib/xpp3-1.1.4c.jar:/home/ubuntu/termite/projects/80_wheelwebtool/lib/logback-classic-0.9.27.jar:/home/ubuntu/termite/projects/80_wheelwebtool/lib/commons-io-1.3.2.jar:/home/ubuntu/termite/projects/80_wheelwebtool/lib/mvel-1.3.2-java1.5.jar:/home/ubuntu/termite/projects/80_wheelwebtool/lib/commons-fileupload-1.2.jar:/home/ubuntu/termite/projects/80_wheelwebtool/lib/slf4j-api-1.5.8.jar
+[MASTER] 14:39:03.293 [logback-2] ERROR JUnitAnalyzer - Diagnostic: cannot find symbol
+  symbol:   variable item2
+  location: class wheel.asm.Frame_148_tmp__ESTest: 38
+[MASTER] 14:39:03.294 [logback-2] ERROR JUnitAnalyzer - RegularFileObject[/tmp/EvoSuite_148_1573742343258/wheel/asm/Frame_148_tmp__ESTest.java]
+1: /*
+2:  * This file was automatically generated by EvoSuite
+3:  * Thu Nov 14 14:39:03 GMT 2019
+4:  */
+5: 
+6: package wheel.asm;
+7: 
+8: import org.junit.Test;
+9: import static org.junit.Assert.*;
+10: import org.evosuite.runtime.EvoRunner;
+11: import org.evosuite.runtime.EvoRunnerParameters;
+12: import org.junit.runner.RunWith;
+13: import wheel.asm.ClassWriter;
+14: import wheel.asm.Frame;
+15: import wheel.asm.Item;
+16: import wheel.asm.Label;
+17: import wheel.asm.Type;
+18: 
+19: @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, useJEE = true) 
+20: public class Frame_148_tmp__ESTest extends Frame_148_tmp__ESTest_scaffolding {
+21: 
+22:   /**
+23:   //Test case number: 0
+24:   /*Coverage entropy=0.4444444444444445
+25:   */
+26:   @Test(timeout = 4000)
+27:   public void test0()  throws Throwable  {
+28:       Frame frame0 = new Frame();
+29:       ClassWriter classWriter0 = new ClassWriter((-791));
+30:       Type type0 = Type.LONG_TYPE;
+31:       Label label0 = new Label();
+32:       frame0.owner = label0;
+33:       Type type1 = Type.BYTE_TYPE;
+34:       classWriter0.newMethodItem("pR5", "*z;sJZ2FCf/?)", "*z;sJZ2FCf/?)", false);
+35:       Item item0 = classWriter0.newClassItem("pR5");
+36:       frame0.execute(9, 5, classWriter0, item0);
+37:       Item item1 = classWriter0.key3;
+38:       assertFalse(item1.equals((Object)item2));
+39:   }
+40: }
+RegularFileObject[/tmp/EvoSuite_148_1573742343258/wheel/asm/Frame_148_tmp__ESTest.java]
+1: /**
+2:  * Scaffolding file used to store all the setups needed to run 
+3:  * tests automatically generated by EvoSuite
+4:  * Thu Nov 14 14:39:03 GMT 2019
+5:  */
+6: 
+7: package wheel.asm;
+8: 
+9: import org.evosuite.runtime.annotation.EvoSuiteClassExclude;
+10: import org.junit.BeforeClass;
+11: import org.junit.Before;
+12: import org.junit.After;
+13: import org.junit.AfterClass;
+14: import org.evosuite.runtime.sandbox.Sandbox;
+15: import org.evosuite.runtime.sandbox.Sandbox.SandboxMode;
+16: 
+17: @EvoSuiteClassExclude
+18: public class Frame_148_tmp__ESTest_scaffolding {
+19: 
+20:   @org.junit.Rule 
+21:   public org.evosuite.runtime.vnet.NonFunctionalRequirementRule nfr = new org.evosuite.runtime.vnet.NonFunctionalRequirementRule();
+22: 
+23:   private static final java.util.Properties defaultProperties = (java.util.Properties) java.lang.System.getProperties().clone(); 
+24: 
+25:   private org.evosuite.runtime.thread.ThreadStopper threadStopper =  new org.evosuite.runtime.thread.ThreadStopper (org.evosuite.runtime.thread.KillSwitchHandler.getInstance(), 3000);
+26: 
+27: 
+28:   @BeforeClass 
+29:   public static void initEvoSuiteFramework() { 
+30:     org.evosuite.runtime.RuntimeSettings.className = "wheel.asm.Frame"; 
+31:     org.evosuite.runtime.GuiSupport.initialize(); 
+32:     org.evosuite.runtime.RuntimeSettings.maxNumberOfThreads = 100; 
+33:     org.evosuite.runtime.RuntimeSettings.maxNumberOfIterationsPerLoop = 10000; 
+34:     org.evosuite.runtime.RuntimeSettings.mockSystemIn = true; 
+35:     org.evosuite.runtime.RuntimeSettings.sandboxMode = org.evosuite.runtime.sandbox.Sandbox.SandboxMode.RECOMMENDED; 
+36:     org.evosuite.runtime.sandbox.Sandbox.initializeSecurityManagerForSUT(); 
+37:     org.evosuite.runtime.classhandling.JDKClassResetter.init();
+38:     setSystemProperties();
+39:     initializeClasses();
+40:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+41:   } 
+42: 
+43:   @AfterClass 
+44:   public static void clearEvoSuiteFramework(){ 
+45:     Sandbox.resetDefaultSecurityManager(); 
+46:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+47:   } 
+48: 
+49:   @Before 
+50:   public void initTestCase(){ 
+51:     threadStopper.storeCurrentThreads();
+52:     threadStopper.startRecordingTime();
+53:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().initHandler(); 
+54:     org.evosuite.runtime.sandbox.Sandbox.goingToExecuteSUTCode(); 
+55:     setSystemProperties(); 
+56:     org.evosuite.runtime.GuiSupport.setHeadless(); 
+57:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+58:     org.evosuite.runtime.agent.InstrumentingAgent.activate(); 
+59:   } 
+60: 
+61:   @After 
+62:   public void doneWithTestCase(){ 
+63:     threadStopper.killAndJoinClientThreads();
+64:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().safeExecuteAddedHooks(); 
+65:     org.evosuite.runtime.classhandling.JDKClassResetter.reset(); 
+66:     resetClasses(); 
+67:     org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(); 
+68:     org.evosuite.runtime.agent.InstrumentingAgent.deactivate(); 
+69:     org.evosuite.runtime.GuiSupport.restoreHeadlessMode(); 
+70:   } 
+71: 
+72:   public static void setSystemProperties() {
+73:  
+74:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+75:     java.lang.System.setProperty("file.encoding", "UTF-8"); 
+76:     java.lang.System.setProperty("java.awt.headless", "true"); 
+77:     java.lang.System.setProperty("java.io.tmpdir", "/tmp"); 
+78:     java.lang.System.setProperty("user.country", "US"); 
+79:     java.lang.System.setProperty("user.dir", "/home/ubuntu/termite/projects/80_wheelwebtool"); 
+80:     java.lang.System.setProperty("user.home", "/home/ubuntu"); 
+81:     java.lang.System.setProperty("user.language", "en"); 
+82:     java.lang.System.setProperty("user.name", "ubuntu"); 
+83:     java.lang.System.setProperty("user.timezone", "Etc/UTC"); 
+84:   }
+85: 
+86:   private static void initializeClasses() {
+87:     org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(Frame_148_tmp__ESTest_scaffolding.class.getClassLoader() ,
+88:       "wheel.asm.FieldVisitor",
+89:       "wheel.asm.ClassVisitor",
+90:       "wheel.asm.Attribute",
+91:       "wheel.asm.MethodWriter",
+92:       "wheel.asm.ClassReader",
+93:       "wheel.asm.Label",
+94:       "wheel.asm.Item",
+95:       "wheel.asm.AnnotationWriter",
+96:       "wheel.asm.ByteVector",
+97:       "wheel.asm.AnnotationVisitor",
+98:       "wheel.asm.ClassWriter",
+99:       "wheel.asm.FieldWriter",
+100:       "wheel.asm.Type",
+101:       "wheel.asm.MethodVisitor",
+102:       "wheel.asm.Frame"
+103:     );
+104:   } 
+105: 
+106:   private static void resetClasses() {
+107:     org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(Frame_148_tmp__ESTest_scaffolding.class.getClassLoader()); 
+108: 
+109:     org.evosuite.runtime.classhandling.ClassStateSupport.resetClasses(
+110:       "wheel.asm.Frame",
+111:       "wheel.asm.ClassWriter",
+112:       "wheel.asm.ByteVector",
+113:       "wheel.asm.Item",
+114:       "wheel.asm.ClassReader",
+115:       "wheel.asm.Type",
+116:       "wheel.asm.Label",
+117:       "wheel.asm.Edge",
+118:       "wheel.asm.MethodWriter",
+119:       "wheel.asm.AnnotationWriter",
+120:       "wheel.asm.Attribute",
+121:       "wheel.asm.FieldWriter"
+122:     );
+123:   }
+124: }
+
+[MASTER] 14:39:03.294 [logback-2] ERROR JUnitAnalyzer - Failed to compile test case:
+Frame frame0 = new Frame();
+ClassWriter classWriter0 = new ClassWriter((-791));
+Type type0 = Type.LONG_TYPE;
+Label label0 = new Label();
+frame0.owner = label0;
+Type type1 = Type.BYTE_TYPE;
+classWriter0.newMethodItem("pR5", "*z;sJZ2FCf/?)", "*z;sJZ2FCf/?)", false);
+Item item0 = classWriter0.newClassItem("pR5");
+frame0.execute(9, 5, classWriter0, item0);
+Item item1 = classWriter0.key3;
+assertFalse(item1.equals((Object)item2));
+
+
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 5
+* Writing JUnit test case 'Frame_ESTest' to /home/ubuntu/termite/mosa/tests/s1016/80_wheelwebtool/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: wheel.asm.FieldWriter
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: wheel.util.DynamicSelectModel
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/80_wheelwebtool/evosuite-files/evosuite.properties
+* Connecting to master process on port 19151
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/80_wheelwebtool/evosuite-files/evosuite.properties
+* Connecting to master process on port 19153
+* Analyzing classpath: 
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 14:58:31.830 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 14:58:31.890 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 14:58:31.909 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 14:58:32.939 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 14:58:32.951 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 14:58:32.952 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 14:58:32.984 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 14:58:32.988 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 14:58:32.990 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 14:58:32.990 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 14:58:32.992 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 14:58:32.993 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 14:58:32.994 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 14:58:33.000 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 14:58:33.001 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 14:58:33.003 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 14:58:33.241 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 14:58:33.243 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 14:58:33.432 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+* Finished analyzing classpath
+* Generating tests for class wheel.asm.FieldWriter
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 418
+* Using seed 1016
+* Starting evolution
+[MASTER] 14:58:34.742 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 14:58:34.743 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 14:58:34.772 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 14:58:34.773 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 14:58:34.774 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 14:58:34.774 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 14:58:34.775 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 14:58:34.795 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 14:58:34.817 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 14:58:34.890 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 14:58:34.891 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+* Finished analyzing classpath
+* Generating tests for class wheel.util.DynamicSelectModel
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 297
+* Using seed 1016
+* Starting evolution
+[MASTER] 14:58:35.954 [logback-2] ERROR TestCluster - Failed to check cache for java.util.LinkedList<E> : Type points to itself
+[MASTER] 14:58:36.273 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.asm.FieldWriter.put(Lwheel/asm/ByteVector;)V
+[MASTER] 14:58:36.345 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.asm.FieldWriter.visitAttribute(Lwheel/asm/Attribute;)V
+[MASTER] 14:58:36.861 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.asm.FieldWriter.visitAnnotation(Ljava/lang/String;Z)Lwheel/asm/AnnotationVisitor;
+[MASTER] 14:58:38.000 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.<init>(Lwheel/asm/ClassWriter;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V: Line 118
+[MASTER] 14:58:38.001 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.asm.FieldWriter.<init>(Lwheel/asm/ClassWriter;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V: I8 Branch 1 IFNONNULL L115 - true
+[MASTER] 14:58:38.002 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.asm.FieldWriter.<init>(Lwheel/asm/ClassWriter;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V: I8 Branch 1 IFNONNULL L115 - true in context: 
+[MASTER] 14:58:38.147 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.asm.FieldWriter.getSize()I
+* Search finished after 314s and 1489 generations, 395652 statements, best individual has fitness: 200.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 95%
+* Total number of goals: 75
+* Number of covered goals: 71
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 40
+* Number of covered goals: 40
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 43
+* Number of covered goals: 43
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 96%
+* Total number of goals: 69
+* Number of covered goals: 66
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 51%
+* Total number of goals: 35
+* Number of covered goals: 18
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 19
+* Number of covered goals: 19
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 19
+* Number of covered goals: 19
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 40
+* Number of covered goals: 40
+* Generated 63 tests with total length 251
+* Resulting test suite's coverage: 93% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 36%
+* Compiling and checking tests
+* Search finished after 331s and 259 generations, 125854 statements, best individual has fitness: 72.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 85
+* Number of covered goals: 85
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 58
+* Number of covered goals: 58
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 97%
+* Total number of goals: 200
+* Number of covered goals: 194
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 40%
+* Total number of goals: 5
+* Number of covered goals: 2
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 6
+* Number of covered goals: 6
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 6
+* Number of covered goals: 6
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 58
+* Number of covered goals: 58
+* Generated 25 tests with total length 119
+* Resulting test suite's coverage: 98% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 39%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 2
+* Writing JUnit test case 'FieldWriter_ESTest' to /home/ubuntu/termite/mosa/tests/s1016/80_wheelwebtool/evosuite-tests
+* Done!
+
+* Computation finished
+[MASTER] 15:04:23.840 [logback-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.NullPointerException: null
+[MASTER] 15:04:23.841 [logback-1] WARN  JUnitAnalyzer - Failing test:
+ DynamicSelectModel dynamicSelectModel0 = new DynamicSelectModel();
+DynamicSelectModel dynamicSelectModel1 = dynamicSelectModel0.collection("[8 05FXH4jeGbJ4]F");
+DynamicSelectModel dynamicSelectModel2 = dynamicSelectModel1.value("[8 05FXH4jeGbJ4]F");
+dynamicSelectModel2.translator("[8 05FXH4jeGbJ4]F");
+FastList fastList0 = (FastList)dynamicSelectModel1.translateValue("org.mvel.util.FastList@0000000067");
+assertEquals(1, fastList0.size());
+
+
+* Writing JUnit test case 'DynamicSelectModel_ESTest' to /home/ubuntu/termite/mosa/tests/s1016/80_wheelwebtool/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: wheel.components.Component
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/80_wheelwebtool/evosuite-files/evosuite.properties
+* Connecting to master process on port 19146
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 15:13:08.019 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 15:13:08.025 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 15:13:08.026 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 15:13:08.247 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 15:13:08.248 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 15:13:08.259 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+[MASTER] 15:13:08.379 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.ZoneId
+[MASTER] 15:13:08.392 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAccessor
+[MASTER] 15:13:08.425 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.Clock
+[MASTER] 15:13:08.456 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.Temporal
+[MASTER] 15:13:08.457 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalField
+[MASTER] 15:13:08.459 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalUnit
+[MASTER] 15:13:08.459 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAmount
+[MASTER] 15:13:08.472 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalQuery
+[MASTER] 15:13:08.475 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.temporal.TemporalAdjuster
+[MASTER] 15:13:08.861 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Chronology
+[MASTER] 15:13:09.410 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.time.chrono.Era
+* Finished analyzing classpath
+* Generating tests for class wheel.components.Component
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 3544
+* Using seed 1016
+* Starting evolution
+[MASTER] 15:13:18.124 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.components.Component.dfn()Lwheel/components/Component;
+[MASTER] 15:13:50.135 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.components.Component.pre()Lwheel/components/Component;
+[MASTER] 15:13:50.135 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.components.Component.h1(Ljava/lang/Object;)Lwheel/components/Component;
+[MASTER] 15:14:14.368 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.components.Component.find(Ljava/lang/String;)Lwheel/components/Component;
+[MASTER] 15:14:37.014 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.components.Component.dt()Lwheel/components/Component;
+[MASTER] 15:14:47.041 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.components.Component.small(Ljava/lang/Object;)Lwheel/components/Component;
+[MASTER] 15:14:50.359 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component._getVisibleForm(Z)Lwheel/components/Form;: I3 Branch 56 IFEQ L1701 - false
+[MASTER] 15:14:50.360 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component._getVisibleForm(Z)Lwheel/components/Form;: I6 Branch 57 IFEQ L1701 - true
+[MASTER] 15:14:50.361 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 290: wheel.components.Component._getVisibleForm(Z)Lwheel/components/Form;:1701 - ReplaceComparisonOperator == -> !=
+[MASTER] 15:14:50.366 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.components.Component._getVisibleForm(Z)Lwheel/components/Form;: I3 Branch 56 IFEQ L1701 - false in context: wheel.components.Component:_getVisibleForm(Z)Lwheel/components/Form;
+[MASTER] 15:14:50.367 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.components.Component._getVisibleForm(Z)Lwheel/components/Form;: I6 Branch 57 IFEQ L1701 - true in context: wheel.components.Component:_getVisibleForm(Z)Lwheel/components/Form;
+[MASTER] 15:15:28.153 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.addChild(Lwheel/components/Component;Z)Lwheel/components/Component;: Line 1804
+[MASTER] 15:15:28.153 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.addChild(Lwheel/components/Component;Z)Lwheel/components/Component;: Line 1806
+[MASTER] 15:15:28.153 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.addChild(Lwheel/components/Component;Z)Lwheel/components/Component;: Line 1809
+[MASTER] 15:15:28.153 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.addChild(Lwheel/components/Component;Z)Lwheel/components/Component;: Line 1811
+[MASTER] 15:15:28.155 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 333: wheel.components.Component.addChild(Lwheel/components/Component;Z)Lwheel/components/Component;:1806 - InsertUnaryOp Negation
+[MASTER] 15:15:28.155 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 334: wheel.components.Component.addChild(Lwheel/components/Component;Z)Lwheel/components/Component;:1806 - ReplaceComparisonOperator == -> !=
+[MASTER] 15:15:28.160 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.components.Component.addChild(Lwheel/components/Component;Z)Lwheel/components/Component;: I22 Branch 72 IFEQ L1803 - false in context: 
+[MASTER] 15:15:28.160 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.components.Component.addChild(Lwheel/components/Component;Z)Lwheel/components/Component;: I32 Branch 73 IFEQ L1806 - true in context: 
+[MASTER] 15:15:30.018 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component._getVisibleForm(Z)Lwheel/components/Form;: I3 Branch 56 IFEQ L1701 - true
+[MASTER] 15:15:30.023 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.components.Component._getVisibleForm(Z)Lwheel/components/Form;: I3 Branch 56 IFEQ L1701 - true in context: wheel.components.Component:_getVisibleForm(Z)Lwheel/components/Form;
+[MASTER] 15:15:34.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.getComponentName()Ljava/lang/String;: Line 126
+[MASTER] 15:15:34.633 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.getComponentName()Ljava/lang/String;: Line 127
+[MASTER] 15:15:34.639 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 0: wheel.components.Component.getComponentName()Ljava/lang/String;:127 - ReplaceConstant - . -> 
+[MASTER] 15:15:34.640 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 1: wheel.components.Component.getComponentName()Ljava/lang/String;:127 - ReplaceConstant - 1 -> 0
+[MASTER] 15:15:34.641 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 2: wheel.components.Component.getComponentName()Ljava/lang/String;:127 - ReplaceArithmeticOperator + -> %
+[MASTER] 15:15:34.641 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 3: wheel.components.Component.getComponentName()Ljava/lang/String;:127 - ReplaceArithmeticOperator + -> -
+[MASTER] 15:15:34.642 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 4: wheel.components.Component.getComponentName()Ljava/lang/String;:127 - ReplaceArithmeticOperator + -> *
+[MASTER] 15:15:34.642 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 5: wheel.components.Component.getComponentName()Ljava/lang/String;:127 - ReplaceArithmeticOperator + -> /
+[MASTER] 15:15:34.644 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 332: wheel.components.Component.addChild(Lwheel/components/Component;Z)Lwheel/components/Component;:1804 - ReplaceVariable component -> this
+[MASTER] 15:15:34.649 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.components.Component.addFirst(Lwheel/components/Component;)Lwheel/components/Component;
+[MASTER] 15:15:44.581 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [Output]: wheel.components.Component._getForm(Z)Lwheel/components/Form;:Null
+[MASTER] 15:15:44.582 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.components.Component._getForm(Z)Lwheel/components/Form;
+[MASTER] 15:15:44.583 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.components.Component._getForm(Z)Lwheel/components/Form;
+[MASTER] 15:15:44.583 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.components.Component._getForm(Z)Lwheel/components/Form;: I6 Branch 53 IFEQ L1684 - true in context: wheel.components.Component:_getForm(Z)Lwheel/components/Form;
+[MASTER] 15:15:44.584 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.components.Component._getForm(Z)Lwheel/components/Form;: I20 Branch 54 IFNULL L1689 - true in context: wheel.components.Component:_getForm(Z)Lwheel/components/Form;
+[MASTER] 15:15:44.584 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.components.Component._getForm(Z)Lwheel/components/Form;: I3 Branch 52 IFEQ L1684 - false in context: wheel.components.Component:_getForm(Z)Lwheel/components/Form;
+[MASTER] 15:15:50.023 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.components.Component.big(Ljava/lang/Object;)Lwheel/components/Component;
+[MASTER] 15:15:50.026 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.components.Component.big(Ljava/lang/Object;)Lwheel/components/Component;
+[MASTER] 15:16:36.675 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.components.Component.colgroup()Lwheel/components/Component;
+[MASTER] 15:16:47.647 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.components.Component.fileInput(Ljava/lang/String;)Lwheel/components/FormElement;
+[MASTER] 15:17:00.129 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.components.Component.imageSubmit(Ljava/lang/String;Ljava/lang/String;)Lwheel/components/FormElement;
+[MASTER] 15:17:05.880 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.getPage()Lwheel/components/StandaloneComponent;: Line 1760
+[MASTER] 15:17:05.880 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was wheel.components.Component.getPage()Lwheel/components/StandaloneComponent;: Line 1761
+[MASTER] 15:17:05.882 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Weak Mutation 317: wheel.components.Component.getPage()Lwheel/components/StandaloneComponent;:1760 - ReplaceComparisonOperator = null -> != null
+[MASTER] 15:17:05.882 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.components.Component.add(Lwheel/components/Component;)Lwheel/components/Component;
+[MASTER] 15:17:05.883 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] wheel.components.Component.add(Lwheel/components/Component;)Lwheel/components/Component;
+[MASTER] 15:17:05.883 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was Branch wheel.components.Component.add(Lwheel/components/Component;)Lwheel/components/Component;: root-Branch in context: wheel.components.Component:add(Lwheel/components/Component;)Lwheel/components/Component;
+* Search finished after 279s and 161 generations, 59486 statements, best individual has fitness: 8064.0
+[MASTER] 15:18:04.328 [logback-2] ERROR ClientNodeImpl - Cannot inform master of change of state
+java.rmi.MarshalException: error marshalling arguments; nested exception is: 
+	java.net.SocketException: Broken pipe (Write failed)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:157) ~[na:1.8.0_201]
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227) ~[na:1.8.0_201]
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179) ~[na:1.8.0_201]
+	at com.sun.proxy.$Proxy7.evosuite_collectStatistics(Unknown Source) ~[na:na]
+	at org.evosuite.rmi.service.ClientNodeImpl.updateStatistics(ClientNodeImpl.java:237) ~[evosuite.jar:1.0.6]
+	at org.evosuite.statistics.StatisticsSender.sendIndividualToMaster(StatisticsSender.java:77) [evosuite.jar:1.0.6]
+	at org.evosuite.statistics.StatisticsListener$1.run(StatisticsListener.java:71) [evosuite.jar:1.0.6]
+Caused by: java.net.SocketException: Broken pipe (Write failed)
+	at java.net.SocketOutputStream.socketWrite0(Native Method) ~[na:1.8.0_201]
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111) ~[na:1.8.0_201]
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155) ~[na:1.8.0_201]
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82) ~[na:1.8.0_201]
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:126) ~[na:1.8.0_201]
+	at java.io.ObjectOutputStream$BlockDataOutputStream.drain(ObjectOutputStream.java:1877) ~[na:1.8.0_201]
+	at java.io.ObjectOutputStream$BlockDataOutputStream.setBlockDataMode(ObjectOutputStream.java:1786) ~[na:1.8.0_201]
+	at java.io.ObjectOutputStream.writeFatalException(ObjectOutputStream.java:1580) ~[na:1.8.0_201]
+	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:351) ~[na:1.8.0_201]
+	at sun.rmi.server.UnicastRef.marshalValue(UnicastRef.java:290) ~[na:1.8.0_201]
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:152) ~[na:1.8.0_201]
+	... 6 common frames omitted
+[MASTER] 15:21:26.049 [logback-2] ERROR ClientNodeImpl - Cannot inform master of change of state
+java.rmi.ServerError: Error occurred in server thread; nested exception is: 
+	java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:386) ~[na:1.8.0_201]
+	at sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:1.8.0_201]
+	at sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:1.8.0_201]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_201]
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:1.8.0_201]
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:573) ~[na:1.8.0_201]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:834) ~[na:1.8.0_201]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:688) ~[na:1.8.0_201]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_201]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:687) ~[na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+	at sun.rmi.transport.StreamRemoteCall.exceptionReceivedFromServer(StreamRemoteCall.java:283) ~[na:1.8.0_201]
+	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:260) ~[na:1.8.0_201]
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:161) ~[na:1.8.0_201]
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227) ~[na:1.8.0_201]
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179) ~[na:1.8.0_201]
+	at com.sun.proxy.$Proxy7.evosuite_collectStatistics(Unknown Source) ~[na:na]
+	at org.evosuite.rmi.service.ClientNodeImpl.updateStatistics(ClientNodeImpl.java:237) ~[evosuite.jar:1.0.6]
+	at org.evosuite.statistics.StatisticsSender.sendIndividualToMaster(StatisticsSender.java:77) [evosuite.jar:1.0.6]
+	at org.evosuite.statistics.StatisticsSender.executedAndThenSendIndividualToMaster(StatisticsSender.java:107) [evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.generateTests(TestSuiteGenerator.java:659) [evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:236) [evosuite.jar:1.0.6]
+	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:145) [evosuite.jar:1.0.6]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_201]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+Caused by: java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.LinkedHashMap.newNode(LinkedHashMap.java:256) ~[na:1.8.0_201]
+	at java.util.HashMap.putVal(HashMap.java:631) ~[na:1.8.0_201]
+	at java.util.HashMap.readObject(HashMap.java:1413) ~[na:1.8.0_201]
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1170) ~[na:1.8.0_201]
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2178) ~[na:1.8.0_201]
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2069) ~[na:1.8.0_201]
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1573) ~[na:1.8.0_201]
+	at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2287) ~[na:1.8.0_201]
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2211) ~[na:1.8.0_201]
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2069) ~[na:1.8.0_201]
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1573) ~[na:1.8.0_201]
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:431) ~[na:1.8.0_201]
+	at java.util.ArrayList.readObject(ArrayList.java:797) ~[na:1.8.0_201]
+	at sun.reflect.GeneratedMethodAccessor24.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1170) ~[na:1.8.0_201]
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2178) ~[na:1.8.0_201]
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2069) ~[na:1.8.0_201]
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1573) ~[na:1.8.0_201]
+	at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2287) ~[na:1.8.0_201]
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2211) ~[na:1.8.0_201]
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2069) ~[na:1.8.0_201]
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1573) ~[na:1.8.0_201]
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:431) ~[na:1.8.0_201]
+	at sun.rmi.server.UnicastRef.unmarshalValue(UnicastRef.java:322) ~[na:1.8.0_201]
+	at sun.rmi.server.UnicastServerRef.unmarshalParametersUnchecked(UnicastServerRef.java:628) ~[na:1.8.0_201]
+	at sun.rmi.server.UnicastServerRef.unmarshalParameters(UnicastServerRef.java:616) ~[na:1.8.0_201]
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:338) ~[na:1.8.0_201]
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 88%
+* Total number of goals: 909
+* Number of covered goals: 804
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 79%
+* Total number of goals: 480
+* Number of covered goals: 377
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 321
+* Number of covered goals: 321
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 78%
+* Total number of goals: 569
+* Number of covered goals: 441
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 27%
+* Total number of goals: 708
+* Number of covered goals: 192
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 98%
+* Total number of goals: 199
+* Number of covered goals: 196
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 97%
+* Total number of goals: 199
+* Number of covered goals: 193
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 76%
+* Total number of goals: 480
+* Number of covered goals: 363
+[MASTER] 15:22:16.773 [logback-2] ERROR ClientNodeImpl - Cannot inform master of change of state
+java.rmi.ServerError: Error occurred in server thread; nested exception is: 
+	java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:386) ~[na:1.8.0_201]
+	at sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:1.8.0_201]
+	at sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:1.8.0_201]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_201]
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:1.8.0_201]
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:573) ~[na:1.8.0_201]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:834) ~[na:1.8.0_201]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:688) ~[na:1.8.0_201]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_201]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:687) ~[na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+	at sun.rmi.transport.StreamRemoteCall.exceptionReceivedFromServer(StreamRemoteCall.java:283) ~[na:1.8.0_201]
+	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:260) ~[na:1.8.0_201]
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:161) ~[na:1.8.0_201]
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227) ~[na:1.8.0_201]
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179) ~[na:1.8.0_201]
+	at com.sun.proxy.$Proxy7.evosuite_collectStatistics(Unknown Source) ~[na:na]
+	at org.evosuite.rmi.service.ClientNodeImpl.updateStatistics(ClientNodeImpl.java:237) ~[evosuite.jar:1.0.6]
+	at org.evosuite.statistics.StatisticsSender.sendIndividualToMaster(StatisticsSender.java:77) [evosuite.jar:1.0.6]
+	at org.evosuite.statistics.StatisticsSender.executedAndThenSendIndividualToMaster(StatisticsSender.java:107) [evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.postProcessTests(TestSuiteGenerator.java:463) [evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:238) [evosuite.jar:1.0.6]
+	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:145) [evosuite.jar:1.0.6]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_201]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+Caused by: java.lang.OutOfMemoryError: GC overhead limit exceeded
+* Generated 490 tests with total length 3978
+* Resulting test suite's coverage: 74% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 27%
+* Compiling and checking tests
+[MASTER] 15:25:34.196 [logback-2] ERROR ClientNodeImpl - Cannot inform master of change of state
+java.rmi.ServerError: Error occurred in server thread; nested exception is: 
+	java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:386) ~[na:1.8.0_201]
+	at sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:1.8.0_201]
+	at sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:1.8.0_201]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_201]
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:1.8.0_201]
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:573) ~[na:1.8.0_201]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:834) ~[na:1.8.0_201]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:688) ~[na:1.8.0_201]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_201]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:687) ~[na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+	at sun.rmi.transport.StreamRemoteCall.exceptionReceivedFromServer(StreamRemoteCall.java:283) ~[na:1.8.0_201]
+	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:260) ~[na:1.8.0_201]
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:161) ~[na:1.8.0_201]
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227) ~[na:1.8.0_201]
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179) ~[na:1.8.0_201]
+	at com.sun.proxy.$Proxy7.evosuite_collectStatistics(Unknown Source) ~[na:na]
+	at org.evosuite.rmi.service.ClientNodeImpl.updateStatistics(ClientNodeImpl.java:237) ~[evosuite.jar:1.0.6]
+	at org.evosuite.statistics.StatisticsSender.sendIndividualToMaster(StatisticsSender.java:77) [evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.postProcessTests(TestSuiteGenerator.java:522) [evosuite.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:238) [evosuite.jar:1.0.6]
+	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:145) [evosuite.jar:1.0.6]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_201]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+Caused by: java.lang.OutOfMemoryError: GC overhead limit exceeded
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 1
+* Writing JUnit test case 'Component_ESTest' to /home/ubuntu/termite/mosa/tests/s1016/80_wheelwebtool/evosuite-tests
+* Done!
+
+* Computation finished
+* EvoSuite 1.0.6
+* Configuration: MOSA
+* Going to generate test cases for class: wheel.json.JSONObject
+* Starting client
+* Properties loaded from /home/ubuntu/termite/projects/80_wheelwebtool/evosuite-files/evosuite.properties
+* Connecting to master process on port 19147
+* Analyzing classpath: 
+* Inheritance tree loaded from evosuite-files/inheritance.xml.gz
+[MASTER] 15:32:38.098 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Consumer
+[MASTER] 15:32:38.151 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Predicate
+[MASTER] 15:32:38.159 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.UnaryOperator
+[MASTER] 15:32:38.239 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiFunction
+[MASTER] 15:32:38.240 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.Function
+[MASTER] 15:32:38.253 [logback-1] WARN  InheritanceTree - Class not in inheritance graph: java.util.function.BiConsumer
+* Finished analyzing classpath
+* Generating tests for class wheel.json.JSONObject
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Total number of test goals for MOSA: 1995
+* Using seed 1016
+* Starting evolution
+[MASTER] 15:32:39.605 [logback-2] ERROR TestCluster - Failed to check cache for java.util.LinkedList<E> : Type points to itself
+[MASTER] 15:32:39.605 [logback-2] ERROR TestCluster - Failed to check cache for java.util.HashMap<K, V> : Type points to itself
+[MASTER] 15:32:41.609 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.json.JSONObject.optInt(Ljava/lang/String;)I
+[MASTER] 15:32:52.807 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.json.JSONObject.optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+[MASTER] 15:33:01.750 [logback-2] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 15:33:18.281 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] wheel.json.JSONObject.length()I
+* Search finished after 260s and 372 generations, 115711 statements, best individual has fitness: 2112.0
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 90%
+* Total number of goals: 363
+* Number of covered goals: 327
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 86%
+* Total number of goals: 294
+* Number of covered goals: 254
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 36
+* Number of covered goals: 36
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 90%
+* Total number of goals: 771
+* Number of covered goals: 693
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 59%
+* Total number of goals: 153
+* Number of covered goals: 90
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 95%
+* Total number of goals: 60
+* Number of covered goals: 57
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 95%
+* Total number of goals: 60
+* Number of covered goals: 57
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 86%
+* Total number of goals: 294
+* Number of covered goals: 253
+* Generated 175 tests with total length 670
+* Resulting test suite's coverage: 87% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 48%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 4
+* Writing JUnit test case 'JSONObject_ESTest' to /home/ubuntu/termite/mosa/tests/s1016/80_wheelwebtool/evosuite-tests
+* Done!
+
+* Computation finished
