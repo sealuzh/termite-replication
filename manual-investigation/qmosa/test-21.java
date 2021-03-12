@@ -1,0 +1,11 @@
+  public void test03()  throws Throwable  {
+      double[][] doubleArray0 = new double[1][7];
+      double[] doubleArray1 = new double[1];
+      doubleArray1[0] = (-1773.857956);
+      doubleArray0[0] = doubleArray1;
+      weka.core.matrix.Matrix matrix0 = new weka.core.matrix.Matrix(doubleArray0, (-2120), 2922);
+      boolean[] booleanArray0 = new boolean[9];
+      double[] doubleArray2 = Optimization.solveTriangle(matrix0, doubleArray1, true, booleanArray0);
+      assertArrayEquals(new double[] {1.0}, doubleArray2, 0.01);
+      assertArrayEquals(new double[] {(-1773.857956)}, doubleArray1, 0.01);
+  }

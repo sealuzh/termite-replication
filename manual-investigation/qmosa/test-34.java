@@ -1,0 +1,13 @@
+  public void test52()  throws Throwable  {
+      Player player0 = new Player();
+      boolean boolean0 = player0.isConnected();
+      assertEquals(10.0F, player0.getX(), 0.01F);
+      assertEquals(0L, player0.getTimeOfDeath());
+      assertFalse(player0.isDead());
+      assertEquals("0.0.0.0", player0.getIP());
+      assertEquals("Player-1", player0.toString());
+      assertTrue(boolean0);
+      assertEquals(1, player0.getStrength());
+      assertEquals(0, player0.getPictureId());
+      assertEquals(0.0F, player0.getY(), 0.01F);
+  }
